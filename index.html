@@ -95,8 +95,19 @@
   .join-hint{
     margin-top:40px;color:var(--ink-dim);font-size:14px;text-align:center;line-height:1.6;
   }
-  .join-hint a{color:var(--spot);font-weight:600;text-decoration:none}
-  .join-hint a:hover{text-decoration:underline}
+  .join-hint a{
+    display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+    padding:13px 24px;
+    background:linear-gradient(180deg,var(--stage-3),var(--stage-2));
+    border:2px solid #3A2A72;border-bottom-width:4px;
+    border-radius:var(--radius);
+    color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;
+    transition:transform .08s, border-color .15s, box-shadow .15s;
+  }
+  .join-hint a:hover{
+    border-color:var(--bulb);box-shadow:0 0 24px #FFC42E22;transform:translateY(-2px);
+  }
+  .join-hint a:active{transform:translateY(1px);border-bottom-width:2px}
 
   /* ---------- generic panel screens ---------- */
   .topbar{width:100%;max-width:560px;display:flex;align-items:center;gap:14px;margin-bottom:28px}
@@ -285,6 +296,8 @@
     padding:3px 8px;border-radius:6px;border:1px solid}
   .badge.jeopardy{color:var(--bulb);border-color:#7A5A10;background:#FFC42E14}
   .badge.trivia{color:var(--spot);border-color:#7A2450;background:#FF4D9D14}
+  .badge.feud{color:var(--ok);border-color:#2E6B3A;background:#7EE78714}
+  .badge.closest{color:#6FD3FF;border-color:#2A5E7A;background:#6FD3FF14}
   .gc-actions{display:flex;gap:8px}
   .empty-state{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
@@ -361,6 +374,73 @@
   }
   .tq-choice.correct input[type=text]{border-color:#2E7A50}
   .tq-foot{color:#5D4F86;font-size:12px;margin-top:4px}
+
+  /* ---------- question images & final jeopardy (editor) ---------- */
+  .img-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .img-thumb{width:72px;height:52px;object-fit:cover;border-radius:8px;border:2px solid #3A2A72;background:#150E2D}
+  .fin-section{width:100%;background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);padding:16px;margin-top:22px}
+  .fin-section h3{font-family:var(--display);font-size:15px;color:var(--bulb);letter-spacing:.04em;margin-bottom:12px}
+  .fin-input{width:100%;padding:11px 13px;font-size:16px;font-family:var(--body);background:#150E2D;border:2px solid #3A2A72;border-radius:10px;color:var(--ink);margin-bottom:10px}
+  .fin-input::placeholder{color:#5D4F86}
+  .jb-cell.dd{border-color:var(--spot)}
+  .dd-row{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink);cursor:pointer;text-align:left}
+  .dd-row input{width:18px;height:18px;accent-color:var(--spot);cursor:pointer;flex:none}
+
+  /* ---------- stage: images, daily double, final judging ---------- */
+  .stage-img{max-width:min(100%,560px);max-height:320px;object-fit:contain;border-radius:12px;border:2px solid #3A2A72;background:#150E2D}
+  .dd-banner{font-family:var(--display);font-size:clamp(16px,3.4vw,22px);color:var(--spot);text-shadow:0 0 18px #FF4D9D66;letter-spacing:.06em}
+  .fj-list{display:flex;flex-direction:column;gap:10px;width:100%;align-items:center}
+  .fj-row{display:flex;align-items:center;gap:12px;width:100%;max-width:640px;padding:12px 16px;border-radius:12px;background:var(--stage-2);border:2px solid #3A2A72;flex-wrap:wrap}
+  .fj-name{font-weight:700;min-width:80px;text-align:left}
+  .fj-ans{flex:1;min-width:120px;text-align:left;font-size:15px}
+  .fj-ans.blank{color:#5D4F86;font-style:italic}
+  .fj-wager{color:var(--ink-dim);font-size:13px;white-space:nowrap}
+  .fj-delta{font-weight:700;font-variant-numeric:tabular-nums;font-size:16px}
+  .fj-delta.up{color:var(--ok)}
+  .fj-delta.down{color:var(--spot)}
+
+  /* ---------- player: wagers & typed answers ---------- */
+  .pv-cat{color:var(--spot);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px}
+  .pv-form{width:100%;max-width:340px;display:flex;flex-direction:column;gap:12px}
+  .pv-form input{width:100%;padding:14px 16px;font-size:18px;font-family:var(--body);background:#150E2D;border:2px solid #3A2A72;border-radius:10px;color:var(--ink);text-align:center}
+  .pv-form input::placeholder{color:#5D4F86}
+  .pv-form input:disabled{opacity:.5}
+  .join-btn:disabled{opacity:.55;filter:grayscale(.4);cursor:default}
+  .pv-gain.neg{color:var(--spot)}
+
+  /* ---------- feud survey ---------- */
+  .fs-board{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:660px;margin:6px 0}
+  .fs-slot{
+    display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;
+    padding:10px 14px;border-radius:12px;font-family:var(--display);font-size:17px;
+    background:linear-gradient(180deg,var(--stage-3),var(--stage-2));
+    border:2px solid #3A2A72;color:var(--ink-dim);letter-spacing:.04em;
+    transition:border-color .15s, transform .08s;
+  }
+  .fs-slot.hot{cursor:pointer;border-color:#5A4AAC}
+  .fs-slot.hot:hover{border-color:var(--bulb);transform:translateY(-1px)}
+  .fs-slot.revealed{border-color:#7A5A10;background:#FFC42E14;color:var(--ink);justify-content:space-between;font-size:15px}
+  .fs-slot.dead{opacity:.55}
+  .fs-slot .fs-pts{color:var(--bulb);font-variant-numeric:tabular-nums;flex:none}
+  .fs-ans-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  .fs-ans-row input{margin-bottom:0}
+  .fs-ans-row .fs-text{flex:1;min-width:0}
+  .fs-ans-row .fs-pts-in{width:76px;flex:none;text-align:center}
+
+  /* ---------- closest wins ---------- */
+  .cw-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+  .cw-row label{color:var(--ink-dim);font-size:13px;display:flex;align-items:center;gap:8px}
+  .cw-row input{width:140px;margin-bottom:0}
+  .cw-list{display:flex;flex-direction:column;gap:8px;width:100%;max-width:560px;margin:6px 0}
+  .cw-guess-row{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:12px;
+    background:var(--stage-2);border:2px solid #3A2A72}
+  .cw-guess-row.win{border-color:#7A5A10;background:#FFC42E14}
+  .cw-guess-row.over{opacity:.6}
+  .cw-guess-row .nm{font-weight:700;flex:1;text-align:left;min-width:80px}
+  .cw-guess-row .gv{font-variant-numeric:tabular-nums;font-family:var(--display);font-size:16px}
+  .cw-guess-row .tag{font-size:12px;font-weight:700;letter-spacing:.08em;flex:none}
+  .cw-guess-row .tag.win{color:var(--bulb)}
+  .cw-guess-row .tag.over{color:var(--spot)}
 
   /* ---------- modal ---------- */
   .modal-backdrop{
@@ -658,6 +738,16 @@
       <label for="modal-answer">Correct response</label>
       <input id="modal-answer" placeholder="The Titanic" autocomplete="off">
     </div>
+    <div class="img-row">
+      <img class="img-thumb" id="modal-thumb" alt="" hidden>
+      <button class="slot-btn" id="modal-img-up">📷 Add image</button>
+      <button class="slot-btn" id="modal-img-rm" hidden>✕ Image</button>
+      <input type="file" id="modal-img-file" accept="image/*" hidden>
+    </div>
+    <label class="dd-row">
+      <input type="checkbox" id="modal-dd">
+      Daily Double — this clue is worth 2× points
+    </label>
     <div class="modal-actions">
       <button class="slot-btn" id="modal-clear">Clear cell</button>
       <span style="flex:1"></span>
@@ -1026,17 +1116,85 @@
       st.appendChild(pvEl('div','pv-note','Waiting for the reveal\u2026'));
     }
     else if(m === 'result'){
+      var gained = s.gained || 0;
       st.appendChild(pvEl('div','pv-result-icon', s.correct ? '\uD83C\uDF89' : '\u274C'));
       st.appendChild(pvEl('div','pv-big' + (s.correct ? ' gold' : ''),
                           s.correct ? 'Correct!' : 'Not this time'));
-      st.appendChild(pvEl('div','pv-gain' + (s.gained ? '' : ' zero'),
-                          '+' + (s.gained || 0) + ' pts'));
+      st.appendChild(pvEl('div','pv-gain' + (gained > 0 ? '' : gained < 0 ? ' neg' : ' zero'),
+                          (gained >= 0 ? '+' : '') + gained + ' pts'));
       if(s.correctText){
         var line = pvEl('div','pv-correct-line','Answer: ');
         line.appendChild(pvEl('b','', s.correctText));
         st.appendChild(line);
       }
       if(pv.lastMode !== 'result') pvHaptic(s.correct ? [30,40,30] : 60);
+    }
+    else if(m === 'wager'){
+      st.appendChild(pvEl('div','pv-big gold','Final Jeopardy'));
+      if(s.cat && s.cat.trim()) st.appendChild(pvEl('div','pv-cat', s.cat));
+      var wform = pvEl('div','pv-form');
+      var winp = document.createElement('input');
+      winp.type = 'number'; winp.min = 0; winp.max = s.max;
+      winp.inputMode = 'numeric'; winp.placeholder = '0';
+      var wnote = pvEl('div','pv-note',
+        'Wager up to ' + s.max + ' pts. Right answer adds it \u2014 wrong subtracts it!');
+      var wgo = pvEl('button','join-btn','Lock in wager');
+      var sendWager = function(){
+        var n = parseInt(winp.value, 10);
+        if(isNaN(n) || n < 0){ wnote.textContent = 'Enter a number from 0 to ' + s.max + '.'; return; }
+        if(n > s.max) n = s.max;
+        pvSend({ t:'wager', amount: n });
+        winp.disabled = true; wgo.disabled = true;
+      };
+      wgo.addEventListener('click', sendWager);
+      winp.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendWager(); });
+      wform.appendChild(winp); wform.appendChild(wgo);
+      st.appendChild(wform);
+      st.appendChild(wnote);
+    }
+    else if(m === 'text'){
+      st.appendChild(pvEl('div','pv-big gold', s.title || 'Final Jeopardy'));
+      if(s.cat && s.cat.trim()) st.appendChild(pvEl('div','pv-cat', s.cat));
+      var tform = pvEl('div','pv-form');
+      var tinp = document.createElement('input');
+      tinp.type = 'text'; tinp.maxLength = 120;
+      tinp.placeholder = 'Your answer\u2026'; tinp.autocomplete = 'off';
+      var tnote = pvEl('div','pv-note','Type your answer before the timer runs out!');
+      var tgo = pvEl('button','join-btn','Lock in answer');
+      var sendText = function(){
+        var val = tinp.value.trim();
+        if(!val){ tnote.textContent = 'Type your answer first.'; return; }
+        pvSend({ t:'text', answer: val });
+        tinp.disabled = true; tgo.disabled = true;
+      };
+      tgo.addEventListener('click', sendText);
+      tinp.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendText(); });
+      tform.appendChild(tinp); tform.appendChild(tgo);
+      st.appendChild(tform);
+      st.appendChild(tnote);
+      tinp.focus();
+    }
+    else if(m === 'guess'){
+      st.appendChild(pvEl('div','pv-big gold','Closest Wins'));
+      if(s.cat && s.cat.trim()) st.appendChild(pvEl('div','pv-cat', s.cat));
+      var gform = pvEl('div','pv-form');
+      var ginp = document.createElement('input');
+      ginp.type = 'number'; ginp.step = 'any';
+      ginp.inputMode = 'decimal'; ginp.placeholder = '0';
+      var gnote = pvEl('div','pv-note','Closest without going over wins \u2014 don\u2019t bust!');
+      var ggo = pvEl('button','join-btn','Lock in guess');
+      var sendGuess = function(){
+        var n = parseFloat(ginp.value);
+        if(!isFinite(n)){ gnote.textContent = 'Enter a number first.'; return; }
+        pvSend({ t:'guess', value: n });
+        ginp.disabled = true; ggo.disabled = true;
+      };
+      ggo.addEventListener('click', sendGuess);
+      ginp.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendGuess(); });
+      gform.appendChild(ginp); gform.appendChild(ggo);
+      st.appendChild(gform);
+      st.appendChild(gnote);
+      ginp.focus();
     }
     else if(m === 'scores'){
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
@@ -1116,9 +1274,11 @@
      Bulbs are placed around the logo frame, then a chase
      pattern lights them in sequence. Skipped entirely when
      the user prefers reduced motion.                          */
+  var bulbW = 0, bulbH = 0;   /* last size the bulbs were laid out for */
   function buildBulbs(){
     var wrap = document.getElementById('bulbs');
     var box  = wrap.parentElement.getBoundingClientRect();
+    bulbW = box.width; bulbH = box.height;
     wrap.innerHTML = '';
     var gap = 26, bulbs = [], i, n;
 
@@ -1160,6 +1320,29 @@
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(startMarquee, 200);
   });
+
+  /* The logo webfont (Bungee) lands after first paint and changes the
+     marquee's size, which strands the bulbs at their pre-font positions.
+     A ResizeObserver on the marquee re-places them the moment its box
+     actually changes for any reason (font swap, first display, iframe
+     sizing) — fonts.ready and window-load stay as fallbacks for older
+     browsers, and we explicitly kick off the Bungee load so its
+     completion is guaranteed to be observable. */
+  if(window.ResizeObserver){
+    new ResizeObserver(function(){
+      var mq = document.getElementById('bulbs').parentElement;
+      var r = mq.getBoundingClientRect();
+      if(Math.abs(r.width - bulbW) > 1 || Math.abs(r.height - bulbH) > 1) startMarquee();
+    }).observe(document.getElementById('bulbs').parentElement);
+  }
+  if(document.fonts){
+    if(document.fonts.load){
+      document.fonts.load('1em Bungee').then(function(){ startMarquee(); })
+                                       .catch(function(){});
+    }
+    if(document.fonts.ready) document.fonts.ready.then(function(){ startMarquee(); });
+  }
+  window.addEventListener('load', function(){ startMarquee(); });
 
   /* ================ SETTINGS (build step 2) ================ */
 
@@ -1204,29 +1387,38 @@
   });
   showVol();
 
-  /* ---- music: IndexedDB ----
-     Store 'music', keyed by slot id, value {name,type,size,blob}. */
+  /* ---- music & images: IndexedDB ----
+     Store 'music' keyed by slot id, value {name,type,size,blob}.
+     Store 'images' keyed by image id, value {blob} — question
+     pictures live here; game JSON only stores the id.          */
   function idb(){
     return new Promise(function(res, rej){
-      var r = indexedDB.open('duelcrate', 1);
-      r.onupgradeneeded = function(){ r.result.createObjectStore('music'); };
+      var r = indexedDB.open('duelcrate', 2);
+      r.onupgradeneeded = function(){
+        var db = r.result;
+        if(!db.objectStoreNames.contains('music'))  db.createObjectStore('music');
+        if(!db.objectStoreNames.contains('images')) db.createObjectStore('images');
+      };
       r.onsuccess = function(){ res(r.result); };
       r.onerror   = function(){ rej(r.error); };
     });
   }
-  function idbOp(mode, fn){
+  function idbOp(store, mode, fn){
     return idb().then(function(db){
       return new Promise(function(res, rej){
-        var tx = db.transaction('music', mode);
-        var out = fn(tx.objectStore('music'));
+        var tx = db.transaction(store, mode);
+        var out = fn(tx.objectStore(store));
         tx.oncomplete = function(){ res(out && out.result); db.close(); };
         tx.onerror = function(){ rej(tx.error); db.close(); };
       });
     });
   }
-  DC.musicGet    = function(slot){ return idbOp('readonly',  function(s){ return s.get(slot); }); };
-  DC.musicPut    = function(slot, rec){ return idbOp('readwrite', function(s){ s.put(rec, slot); }); };
-  DC.musicDelete = function(slot){ return idbOp('readwrite', function(s){ s.delete(slot); }); };
+  DC.musicGet    = function(slot){ return idbOp('music','readonly',  function(s){ return s.get(slot); }); };
+  DC.musicPut    = function(slot, rec){ return idbOp('music','readwrite', function(s){ s.put(rec, slot); }); };
+  DC.musicDelete = function(slot){ return idbOp('music','readwrite', function(s){ s.delete(slot); }); };
+  DC.imgGet      = function(id){ return idbOp('images','readonly',  function(s){ return s.get(id); }); };
+  DC.imgPut      = function(id, rec){ return idbOp('images','readwrite', function(s){ s.put(rec, id); }); };
+  DC.imgDelete   = function(id){ return idbOp('images','readwrite', function(s){ s.delete(id); }); };
 
   var SLOTS = [
     { id:'correct',    name:'Correct answer', hint:'Plays when an answer is right' },
@@ -1354,6 +1546,105 @@
   function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
   DC.getGames = function(){ return games.slice(); };
 
+  /* ---- question images ----
+     Uploads are downscaled to ≤1200px JPEG and stored in the
+     IndexedDB 'images' store; the game JSON keeps only the id. */
+  function processImage(file){
+    return new Promise(function(res, rej){
+      if(!file.type || file.type.indexOf('image/') !== 0){ rej(new Error('type')); return; }
+      if(file.size > 15*1048576){ rej(new Error('size')); return; }
+      var url = URL.createObjectURL(file);
+      var img = new Image();
+      img.onload = function(){
+        try{
+          var MAXD = 1200;
+          var sc = Math.min(1, MAXD / Math.max(img.width, img.height));
+          var cw = Math.max(1, Math.round(img.width * sc));
+          var ch = Math.max(1, Math.round(img.height * sc));
+          var cv = document.createElement('canvas');
+          cv.width = cw; cv.height = ch;
+          cv.getContext('2d').drawImage(img, 0, 0, cw, ch);
+          URL.revokeObjectURL(url);
+          cv.toBlob(function(b){ if(b) res(b); else rej(new Error('encode')); }, 'image/jpeg', 0.85);
+        }catch(err){ URL.revokeObjectURL(url); rej(err); }
+      };
+      img.onerror = function(){ URL.revokeObjectURL(url); rej(new Error('load')); };
+      img.src = url;
+    });
+  }
+  function saveQuestionImage(file){
+    return processImage(file).then(function(blob){
+      var id = uid();
+      return DC.imgPut(id, { blob: blob }).then(function(){ return id; });
+    });
+  }
+  function imgErrToast(err){
+    DC.toast(err && err.message === 'size'
+      ? 'That image is over 15 MB \u2014 try a smaller one.'
+      : 'Couldn\u2019t read that image. Try another file.');
+  }
+  function loadThumb(imgEl, id){
+    DC.imgGet(id).then(function(rec){
+      if(rec){ imgEl.src = URL.createObjectURL(rec.blob); imgEl.hidden = false; }
+      else imgEl.hidden = true;
+    }).catch(function(){ imgEl.hidden = true; });
+  }
+  /* autosaving image control for editors: thumb + add/change + remove */
+  function imgControl(getId, setId){
+    var row = document.createElement('div'); row.className = 'img-row';
+    var thumb = document.createElement('img'); thumb.className = 'img-thumb'; thumb.alt = ''; thumb.hidden = true;
+    var up = document.createElement('button'); up.className = 'slot-btn';
+    var rm = document.createElement('button'); rm.className = 'slot-btn'; rm.hidden = true; rm.textContent = '\u2715 Image';
+    var file = document.createElement('input'); file.type = 'file'; file.accept = 'image/*'; file.hidden = true;
+    row.appendChild(thumb); row.appendChild(up); row.appendChild(rm); row.appendChild(file);
+    function refresh(){
+      var id = getId();
+      if(id){ loadThumb(thumb, id); up.textContent = 'Change image'; rm.hidden = false; }
+      else { thumb.hidden = true; up.textContent = '\uD83D\uDCF7 Add image'; rm.hidden = true; }
+    }
+    up.addEventListener('click', function(){ file.click(); });
+    file.addEventListener('change', function(){
+      var f = this.files[0]; this.value = '';
+      if(!f) return;
+      saveQuestionImage(f).then(function(id){
+        var old = getId();
+        if(old) DC.imgDelete(old);
+        setId(id); refresh();
+      }).catch(imgErrToast);
+    });
+    rm.addEventListener('click', function(){
+      var id = getId();
+      if(id) DC.imgDelete(id);
+      setId(null); refresh();
+    });
+    refresh();
+    return row;
+  }
+  /* board cell look: 📷 = has image, magenta border = daily double */
+  function decorateCell(cell, cl, val){
+    cell.textContent = val + (cl.img ? ' \uD83D\uDCF7' : '');
+    cell.classList.toggle('filled', !!(cl.q.trim() && cl.a.trim()));
+    cell.classList.toggle('dd', !!cl.dbl);
+    cell.title = cl.dbl ? 'Daily Double (2\u00D7 points)' : '';
+  }
+  function collectImgIds(g){
+    var ids = [];
+    if(g.type === 'jeopardy'){
+      g.data.categories.forEach(function(c){ c.clues.forEach(function(cl){ if(cl.img) ids.push(cl.img); }); });
+      if(g.data.final && g.data.final.img) ids.push(g.data.final.img);
+    }else if(g.data.questions){
+      g.data.questions.forEach(function(q){ if(q.img) ids.push(q.img); });
+    }
+    return ids;
+  }
+  function remapImgIds(g, map){
+    function re(o){ o.img = (o.img && map[o.img]) || null; }
+    if(g.type === 'jeopardy'){
+      g.data.categories.forEach(function(c){ c.clues.forEach(re); });
+      if(g.data.final) re(g.data.final);
+    }else if(g.data.questions){ g.data.questions.forEach(re); }
+  }
+
   /* ---- game type registry ----
      To add a new format later: add an entry here with blank(),
      summary(), and renderEditor(). Player + runtime hooks come
@@ -1365,10 +1656,11 @@
       blank:function(){
         var cats = [], c, r;
         for(c=0;c<5;c++){
-          var clues=[]; for(r=0;r<5;r++) clues.push({q:'',a:''});
+          var clues=[]; for(r=0;r<5;r++) clues.push({q:'',a:'',dbl:false,img:null});
           cats.push({ name:'Category '+(c+1), clues:clues });
         }
-        return { categories:cats, values:[100,200,300,400,500] };
+        return { categories:cats, values:[100,200,300,400,500],
+                 final:{ cat:'', q:'', a:'', img:null } };
       },
       summary:function(d){
         var filled=0, total=0;
@@ -1383,19 +1675,43 @@
       label:'Multiple Choice Trivia', icon:'🔠',
       blurb:'Classic questions with answer choices on every phone.',
       blank:function(){
-        return { questions:[ { q:'', choices:['','','',''], correct:0 } ] };
+        return { questions:[ { q:'', choices:['','','',''], correct:0, img:null } ] };
       },
       summary:function(d){
         var n = d.questions.filter(function(q){ return q.q.trim(); }).length;
         return n+' question'+(n===1?'':'s');
       },
       renderEditor: renderTriviaEditor
+    },
+    feud: {
+      label:'Feud Survey', icon:'📊',
+      blurb:'A board of hidden survey answers. Buzz in and guess!',
+      blank:function(){
+        return { questions:[ feudBlankQ() ] };
+      },
+      summary:function(d){
+        var n = d.questions.filter(function(q){
+          return q.q.trim() && q.answers.some(function(a){ return a.text.trim(); });
+        }).length;
+        return n+' survey'+(n===1?'':'s');
+      },
+      renderEditor: renderFeudEditor
+    },
+    closest: {
+      label:'Closest Wins', icon:'🎯',
+      blurb:'Numeric showdowns — closest without going over scores.',
+      blank:function(){
+        return { questions:[ { q:'', answer:'', pts:100, img:null } ] };
+      },
+      summary:function(d){
+        var n = d.questions.filter(function(q){
+          return q.q.trim() && isFinite(parseFloat(q.answer));
+        }).length;
+        return n+' question'+(n===1?'':'s');
+      },
+      renderEditor: renderClosestEditor
     }
   };
-  var COMING_SOON = [
-    { icon:'📊', label:'Feud Survey',   blurb:'Survey board with hidden answers — coming later' },
-    { icon:'🎯', label:'Closest Wins',  blurb:'Numeric estimation showdowns — coming later' }
-  ];
 
   /* ---- create screen state & views ---- */
   var createView = 'list';   /* list | type | editor */
@@ -1464,16 +1780,6 @@
       });
       wrap.appendChild(btn);
     });
-    COMING_SOON.forEach(function(t){
-      var d = document.createElement('div');
-      d.className = 'type-card soon';
-      d.innerHTML = '<span class="icon">'+t.icon+'</span><span></span>';
-      var span = d.querySelector('span:last-child');
-      span.appendChild(document.createTextNode(t.label));
-      var small = document.createElement('small'); small.textContent = t.blurb;
-      span.appendChild(small);
-      wrap.appendChild(d);
-    });
   })();
 
   /* ---- games list ---- */
@@ -1516,8 +1822,26 @@
         var copy = JSON.parse(JSON.stringify(g));
         copy.id = uid(); copy.name = (g.name.trim()||'Untitled game')+' copy';
         copy.created = copy.updated = Date.now();
-        games.unshift(copy); persistGames(); renderGamesList();
-        DC.toast('Game duplicated');
+        var ids = collectImgIds(copy);
+        function done(){
+          games.unshift(copy); persistGames(); renderGamesList();
+          DC.toast('Game duplicated');
+        }
+        if(!ids.length){ done(); return; }
+        /* clone image records so the copies own their pictures */
+        var map = {}, left = ids.length;
+        ids.forEach(function(id){
+          DC.imgGet(id).then(function(rec){
+            if(rec){
+              var nid = uid();
+              map[id] = nid;
+              return DC.imgPut(nid, rec);
+            }
+          }).catch(function(){}).then(function(){
+            left--;
+            if(left === 0){ remapImgIds(copy, map); done(); }
+          });
+        });
       });
       var bX = document.createElement('button'); bX.className='slot-btn'; bX.textContent='✕';
       bX.title = 'Delete'; var armed = false, armTimer = null;
@@ -1528,6 +1852,7 @@
           return;
         }
         clearTimeout(armTimer);
+        collectImgIds(g).forEach(function(id){ DC.imgDelete(id); });
         games = games.filter(function(x){ return x.id !== g.id; });
         persistGames(); renderGamesList(); DC.toast('Game deleted');
       });
@@ -1569,27 +1894,34 @@
   function renderJeopardyEditor(g, wrap){
     var bar = editorHeader(g, wrap);
     var d = g.data;
+    /* older saved games predate Final Jeopardy */
+    if(!d.final) d.final = { cat:'', q:'', a:'', img:null };
 
     bar.appendChild(toolBtn('+ Category', function(){
       if(d.categories.length >= 6){ DC.toast('Six categories max'); return; }
-      var clues=[]; for(var r=0;r<d.values.length;r++) clues.push({q:'',a:''});
+      var clues=[]; for(var r=0;r<d.values.length;r++) clues.push({q:'',a:'',dbl:false,img:null});
       d.categories.push({ name:'Category '+(d.categories.length+1), clues:clues });
       touch(); drawBoard();
     }));
     bar.appendChild(toolBtn('− Category', function(){
       if(d.categories.length <= 2){ DC.toast('Keep at least two categories'); return; }
-      d.categories.pop(); touch(); drawBoard();
+      var gone = d.categories.pop();
+      gone.clues.forEach(function(cl){ if(cl.img) DC.imgDelete(cl.img); });
+      touch(); drawBoard();
     }));
     bar.appendChild(toolBtn('+ Row', function(){
       if(d.values.length >= 6){ DC.toast('Six rows max'); return; }
       d.values.push((d.values[d.values.length-1]||0) + (d.values[1]-d.values[0] || 100));
-      d.categories.forEach(function(c){ c.clues.push({q:'',a:''}); });
+      d.categories.forEach(function(c){ c.clues.push({q:'',a:'',dbl:false,img:null}); });
       touch(); drawBoard();
     }));
     bar.appendChild(toolBtn('− Row', function(){
       if(d.values.length <= 2){ DC.toast('Keep at least two rows'); return; }
       d.values.pop();
-      d.categories.forEach(function(c){ c.clues.pop(); });
+      d.categories.forEach(function(c){
+        var cl = c.clues.pop();
+        if(cl && cl.img) DC.imgDelete(cl.img);
+      });
       touch(); drawBoard();
     }));
     bar.appendChild(savedNoteEl);
@@ -1597,8 +1929,33 @@
     var grid = document.createElement('div'); grid.className = 'jb-grid';
     wrap.appendChild(grid);
     var hint = document.createElement('p'); hint.className = 'jb-hint';
-    hint.textContent = 'Click a point value to write its clue. Gold cells are done. Point values on the left are editable.';
+    hint.textContent = 'Click a point value to write its clue. Gold cells are done, a magenta border marks a Daily Double (2\u00D7 points), and \uD83D\uDCF7 means the clue has an image. Point values on the left are editable.';
     wrap.appendChild(hint);
+
+    /* Final Jeopardy authoring */
+    var fs = document.createElement('div'); fs.className = 'fin-section';
+    var fh = document.createElement('h3'); fh.textContent = '\uD83C\uDFC6 Final Jeopardy (optional)';
+    fs.appendChild(fh);
+    var fc = document.createElement('input'); fc.className = 'fin-input'; fc.maxLength = 40;
+    fc.placeholder = 'Category (e.g. World Capitals)'; fc.value = d.final.cat || '';
+    fc.addEventListener('input', function(){ d.final.cat = this.value; touch(); });
+    fs.appendChild(fc);
+    var fq = document.createElement('textarea'); fq.className = 'tq-q'; fq.rows = 2;
+    fq.placeholder = 'Final clue shown to everyone\u2026'; fq.value = d.final.q || '';
+    fq.addEventListener('input', function(){ d.final.q = this.value; touch(); });
+    fs.appendChild(fq);
+    var fa = document.createElement('input'); fa.className = 'fin-input';
+    fa.placeholder = 'Correct response'; fa.value = d.final.a || '';
+    fa.addEventListener('input', function(){ d.final.a = this.value; touch(); });
+    fs.appendChild(fa);
+    fs.appendChild(imgControl(
+      function(){ return d.final.img || null; },
+      function(id){ d.final.img = id; touch(); }
+    ));
+    var fnote = document.createElement('div'); fnote.className = 'tq-foot';
+    fnote.textContent = 'Fill in both the clue and the response to unlock the Final Jeopardy button while hosting. Players wager points and type their answers on their phones; you judge each one.';
+    fs.appendChild(fnote);
+    wrap.appendChild(fs);
 
     function drawBoard(){
       grid.innerHTML = '';
@@ -1622,9 +1979,7 @@
         d.categories.forEach(function(cat, ci){
           var cell = document.createElement('button');
           cell.className = 'jb-cell';
-          var cl = cat.clues[ri];
-          if(cl.q.trim() && cl.a.trim()) cell.classList.add('filled');
-          cell.textContent = d.values[ri];
+          decorateCell(cell, cat.clues[ri], d.values[ri]);
           cell.addEventListener('click', function(){ openCellModal(g, ci, ri, cell); });
           grid.appendChild(cell);
         });
@@ -1633,20 +1988,203 @@
     drawBoard();
   }
 
+  /* ============ Feud Survey editor ============ */
+  function feudBlankQ(){
+    return { q:'', img:null,
+             answers:[{text:'',pts:0},{text:'',pts:0},{text:'',pts:0},{text:'',pts:0}] };
+  }
+  function renderFeudEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    bar.appendChild(toolBtn('+ Survey', function(){
+      d.questions.push(feudBlankQ());
+      touch(); draw();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bar.appendChild(savedNoteEl);
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+    function draw(){
+      list.innerHTML = '';
+      d.questions.forEach(function(q, qi){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Survey ' + (qi+1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.questions.length === 1){ DC.toast('Keep at least one survey'); return; }
+          if(q.img) DC.imgDelete(q.img);
+          d.questions.splice(qi,1); touch(); draw();
+        }));
+        card.appendChild(head);
+        var qa = document.createElement('textarea');
+        qa.className = 'tq-q'; qa.rows = 2;
+        qa.placeholder = 'Survey prompt (e.g. Name something people lose all the time)…';
+        qa.value = q.q;
+        qa.addEventListener('input', function(){ q.q = this.value; touch(); });
+        card.appendChild(qa);
+        card.appendChild(imgControl(
+          function(){ return q.img || null; },
+          function(id){ q.img = id; touch(); }
+        ));
+        q.answers.forEach(function(a, ai){
+          var row = document.createElement('div'); row.className = 'fs-ans-row';
+          var tin = document.createElement('input');
+          tin.className = 'fin-input fs-text'; tin.maxLength = 40;
+          tin.placeholder = 'Answer ' + (ai+1); tin.value = a.text;
+          tin.addEventListener('input', function(){ a.text = this.value; touch(); });
+          var pin = document.createElement('input');
+          pin.className = 'fin-input fs-pts-in';
+          pin.type = 'text'; pin.inputMode = 'numeric'; pin.placeholder = 'pts';
+          pin.value = a.pts || '';
+          pin.addEventListener('input', function(){
+            var n = parseInt(this.value.replace(/\D/g,''),10);
+            a.pts = isNaN(n) ? 0 : n; touch();
+          });
+          row.appendChild(tin); row.appendChild(pin);
+          row.appendChild(toolBtn('✕', function(){
+            if(q.answers.length === 1){ DC.toast('Keep at least one answer'); return; }
+            q.answers.splice(ai,1); touch(); draw();
+          }));
+          card.appendChild(row);
+        });
+        card.appendChild(toolBtn('+ Answer', function(){
+          if(q.answers.length >= 8){ DC.toast('Eight answers max'); return; }
+          q.answers.push({text:'',pts:0}); touch(); draw();
+        }));
+        var foot = document.createElement('div'); foot.className = 'tq-foot';
+        foot.textContent = 'Answers appear on the board in this order. Whoever guesses one wins its points.';
+        card.appendChild(foot);
+        list.appendChild(card);
+      });
+    }
+    draw();
+  }
+
+  /* ============ Closest Wins editor ============ */
+  function renderClosestEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    bar.appendChild(toolBtn('+ Question', function(){
+      d.questions.push({ q:'', answer:'', pts:100, img:null });
+      touch(); draw();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bar.appendChild(savedNoteEl);
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+    function draw(){
+      list.innerHTML = '';
+      d.questions.forEach(function(q, qi){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Question ' + (qi+1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.questions.length === 1){ DC.toast('Keep at least one question'); return; }
+          if(q.img) DC.imgDelete(q.img);
+          d.questions.splice(qi,1); touch(); draw();
+        }));
+        card.appendChild(head);
+        var qa = document.createElement('textarea');
+        qa.className = 'tq-q'; qa.rows = 2;
+        qa.placeholder = 'Numeric question (e.g. How many keys are on a full piano?)…';
+        qa.value = q.q;
+        qa.addEventListener('input', function(){ q.q = this.value; touch(); });
+        card.appendChild(qa);
+        card.appendChild(imgControl(
+          function(){ return q.img || null; },
+          function(id){ q.img = id; touch(); }
+        ));
+        var row = document.createElement('div'); row.className = 'cw-row';
+        var la = document.createElement('label'); la.textContent = 'Answer';
+        var ain = document.createElement('input');
+        ain.className = 'fin-input'; ain.type = 'text'; ain.inputMode = 'decimal';
+        ain.placeholder = '88'; ain.value = q.answer;
+        ain.addEventListener('input', function(){
+          q.answer = this.value.replace(/[^0-9.\-]/g,''); touch();
+        });
+        la.appendChild(ain);
+        var lp = document.createElement('label'); lp.textContent = 'Points';
+        var pin = document.createElement('input');
+        pin.className = 'fin-input'; pin.type = 'text'; pin.inputMode = 'numeric';
+        pin.placeholder = '100'; pin.value = q.pts || '';
+        pin.addEventListener('input', function(){
+          var n = parseInt(this.value.replace(/\D/g,''),10);
+          q.pts = isNaN(n) ? 0 : n; touch();
+        });
+        lp.appendChild(pin);
+        row.appendChild(la); row.appendChild(lp);
+        card.appendChild(row);
+        var foot = document.createElement('div'); foot.className = 'tq-foot';
+        foot.textContent = 'Everyone guesses on their phone. Closest without going over wins the points — overshoot and you\u2019re out.';
+        card.appendChild(foot);
+        list.appendChild(card);
+      });
+    }
+    draw();
+  }
+
   /* ---- modal ---- */
   var modal = document.getElementById('modal');
   var modalCtx = null;
+  var modalThumb   = document.getElementById('modal-thumb');
+  var modalImgUp   = document.getElementById('modal-img-up');
+  var modalImgRm   = document.getElementById('modal-img-rm');
+  var modalImgFile = document.getElementById('modal-img-file');
+
+  function refreshModalImg(){
+    if(!modalCtx) return;
+    if(modalCtx.pending){
+      loadThumb(modalThumb, modalCtx.pending);
+      modalImgUp.textContent = 'Change image';
+      modalImgRm.hidden = false;
+    }else{
+      modalThumb.hidden = true;
+      modalImgUp.textContent = '\uD83D\uDCF7 Add image';
+      modalImgRm.hidden = true;
+    }
+  }
+  modalImgUp.addEventListener('click', function(){ modalImgFile.click(); });
+  modalImgFile.addEventListener('change', function(){
+    var f = this.files[0]; this.value = '';
+    if(!f || !modalCtx) return;
+    saveQuestionImage(f).then(function(id){
+      if(!modalCtx){ DC.imgDelete(id); return; }
+      if(modalCtx.pending && modalCtx.pending !== modalCtx.orig) DC.imgDelete(modalCtx.pending);
+      modalCtx.pending = id;
+      refreshModalImg();
+    }).catch(imgErrToast);
+  });
+  modalImgRm.addEventListener('click', function(){
+    if(!modalCtx) return;
+    if(modalCtx.pending && modalCtx.pending !== modalCtx.orig) DC.imgDelete(modalCtx.pending);
+    modalCtx.pending = null;
+    refreshModalImg();
+  });
+
   function openCellModal(g, ci, ri, cellEl){
-    modalCtx = { g:g, ci:ci, ri:ri, cellEl:cellEl };
     var cl = g.data.categories[ci].clues[ri];
+    modalCtx = { g:g, ci:ci, ri:ri, cellEl:cellEl,
+                 orig: cl.img || null, pending: cl.img || null, committed:false };
     document.getElementById('modal-title').textContent =
       g.data.categories[ci].name + ' — ' + g.data.values[ri];
     document.getElementById('modal-clue').value = cl.q;
     document.getElementById('modal-answer').value = cl.a;
+    document.getElementById('modal-dd').checked = !!cl.dbl;
+    refreshModalImg();
     modal.hidden = false;
     document.getElementById('modal-clue').focus();
   }
-  function closeModal(){ modal.hidden = true; modalCtx = null; }
+  function closeModal(){
+    /* an uploaded-but-unsaved image would be orphaned — remove it */
+    if(modalCtx && !modalCtx.committed && modalCtx.pending && modalCtx.pending !== modalCtx.orig){
+      DC.imgDelete(modalCtx.pending);
+    }
+    modal.hidden = true; modalCtx = null;
+  }
   document.getElementById('modal-cancel').addEventListener('click', closeModal);
   modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
   document.addEventListener('keydown', function(e){
@@ -1657,14 +2195,24 @@
     var cl = modalCtx.g.data.categories[modalCtx.ci].clues[modalCtx.ri];
     cl.q = document.getElementById('modal-clue').value;
     cl.a = document.getElementById('modal-answer').value;
-    modalCtx.cellEl.classList.toggle('filled', !!(cl.q.trim() && cl.a.trim()));
+    cl.dbl = document.getElementById('modal-dd').checked;
+    if(modalCtx.pending !== modalCtx.orig){
+      if(modalCtx.orig) DC.imgDelete(modalCtx.orig);
+      cl.img = modalCtx.pending;
+    }
+    modalCtx.committed = true;
+    decorateCell(modalCtx.cellEl, cl, modalCtx.g.data.values[modalCtx.ri]);
     touch(); closeModal();
   });
   document.getElementById('modal-clear').addEventListener('click', function(){
     if(!modalCtx) return;
     var cl = modalCtx.g.data.categories[modalCtx.ci].clues[modalCtx.ri];
-    cl.q = ''; cl.a = '';
-    modalCtx.cellEl.classList.remove('filled');
+    cl.q = ''; cl.a = ''; cl.dbl = false;
+    if(modalCtx.pending && modalCtx.pending !== modalCtx.orig) DC.imgDelete(modalCtx.pending);
+    if(modalCtx.orig) DC.imgDelete(modalCtx.orig);
+    cl.img = null;
+    modalCtx.committed = true;
+    decorateCell(modalCtx.cellEl, cl, modalCtx.g.data.values[modalCtx.ri]);
     touch(); closeModal();
   });
 
@@ -1673,7 +2221,7 @@
     var bar = editorHeader(g, wrap);
     var d = g.data;
     bar.appendChild(toolBtn('+ Question', function(){
-      d.questions.push({ q:'', choices:['','','',''], correct:0 });
+      d.questions.push({ q:'', choices:['','','',''], correct:0, img:null });
       touch(); drawQuestions();
       window.scrollTo(0, document.body.scrollHeight);
     }));
@@ -1705,6 +2253,7 @@
         }));
         head.appendChild(toolBtn('✕', function(){
           if(d.questions.length === 1){ DC.toast('Keep at least one question'); return; }
+          if(q.img) DC.imgDelete(q.img);
           d.questions.splice(qi,1); touch(); drawQuestions();
         }));
         card.appendChild(head);
@@ -1714,6 +2263,11 @@
         qa.placeholder = 'Write your question…'; qa.value = q.q;
         qa.addEventListener('input', function(){ q.q = this.value; touch(); });
         card.appendChild(qa);
+
+        card.appendChild(imgControl(
+          function(){ return q.img || null; },
+          function(id){ q.img = id; touch(); }
+        ));
 
         q.choices.forEach(function(ch, ciX){
           var row = document.createElement('div');
@@ -1830,6 +2384,12 @@
     if(game.type === 'trivia' && !validTriviaQs(game.data).length){
       DC.toast('Add at least one complete question first.'); return;
     }
+    if(game.type === 'feud' && !validFeudQs(game.data).length){
+      DC.toast('Add at least one survey with a prompt and an answer.'); return;
+    }
+    if(game.type === 'closest' && !validClosestQs(game.data).length){
+      DC.toast('Add at least one question with a numeric answer.'); return;
+    }
     DC.toast('Opening room…');
     var attempts = 0;
     (function tryPeer(){
@@ -1935,6 +2495,18 @@
       var p2 = host.players[conn.peer];
       if(p2 && host.ctl && host.ctl.onAnswer) host.ctl.onAnswer(p2, d.choice);
     }
+    else if(d.t === 'wager'){
+      var p3 = host.players[conn.peer];
+      if(p3 && host.ctl && host.ctl.onWager) host.ctl.onWager(p3, d.amount);
+    }
+    else if(d.t === 'text'){
+      var p4 = host.players[conn.peer];
+      if(p4 && host.ctl && host.ctl.onText) host.ctl.onText(p4, d.answer);
+    }
+    else if(d.t === 'guess'){
+      var p5 = host.players[conn.peer];
+      if(p5 && host.ctl && host.ctl.onGuess) host.ctl.onGuess(p5, d.value);
+    }
   }
   function dropConn(conn){
     if(!host) return;
@@ -1970,7 +2542,10 @@
   document.getElementById('start-game-btn').addEventListener('click', function(){
     if(!host || this.disabled) return;
     host.phase = 'game';
-    host.ctl = host.game.type === 'jeopardy' ? jeopardyCtl() : triviaCtl();
+    host.ctl = host.game.type === 'jeopardy' ? jeopardyCtl()
+             : host.game.type === 'feud'     ? feudCtl()
+             : host.game.type === 'closest'  ? closestCtl()
+             : triviaCtl();
     showPlayView('game');
     host.ctl.start();
     renderScoreRow();
@@ -2012,6 +2587,20 @@
     return b;
   }
 
+  /* show a stored question image on the GM stage (async, cached) */
+  var stageImgUrls = {};
+  function stageImg(id, parent){
+    if(!id) return;
+    var im = document.createElement('img');
+    im.className = 'stage-img'; im.alt = '';
+    parent.appendChild(im);
+    if(stageImgUrls[id]){ im.src = stageImgUrls[id]; return; }
+    DC.imgGet(id).then(function(rec){
+      if(rec){ stageImgUrls[id] = URL.createObjectURL(rec.blob); im.src = stageImgUrls[id]; }
+      else im.remove();
+    }).catch(function(){ im.remove(); });
+  }
+
   /* ============ JEOPARDY RUNTIME ============ */
   function jeopardyCtl(){
     var d = host.game.data;
@@ -2019,17 +2608,29 @@
       return c.clues.map(function(cl){ return !(cl.q.trim() && cl.a.trim()); });
     });
     var cur = null;      /* {ci, ri} */
+    var curVal = 0;      /* effective value of open clue (2× on daily doubles) */
     var buzz = 'closed'; /* closed | open | judge */
     var buzzedP = null;
     var locked = {};     /* pid -> true for current clue */
     var timing = null;
+    /* Final Jeopardy */
+    var fmode = null;    /* null | 'wager' | 'answer' | 'judge' */
+    var wagers = {}, finAns = {}, judged = {};
+    var finNote = null;
+    function fin(){ return d.final || { cat:'', q:'', a:'', img:null }; }
+    function finalReady(){
+      var f = fin();
+      return !!(f.q && f.q.trim() && f.a && f.a.trim());
+    }
+    function wagerMax(p){ return Math.max(p.score, 100); }
+    function finPlayers(){ return roster().filter(function(p){ return wagers[p.pid] !== undefined; }); }
 
     function boardDone(){
       return used.every(function(col){ return col.every(function(u){ return u; }); });
     }
 
     function renderBoard(){
-      cur = null; buzz='closed'; buzzedP=null; locked={};
+      cur = null; buzz='closed'; buzzedP=null; locked={}; fmode=null;
       stopTimer();
       elStage.innerHTML = '';
       var grid = document.createElement('div');
@@ -2051,8 +2652,11 @@
       elStage.appendChild(grid);
       var acts = document.createElement('div'); acts.className='stage-actions';
       acts.style.marginTop = '18px';
+      if(finalReady()){
+        acts.appendChild(stageBtn('\uD83C\uDFC6 Final Jeopardy','gold', startFinal));
+      }
       if(boardDone()){
-        acts.appendChild(stageBtn('Show Final Scores','gold',finish));
+        acts.appendChild(stageBtn('Show Final Scores', finalReady() ? '' : 'gold', finish));
       }
       elStage.appendChild(acts);
       pushAll();
@@ -2062,10 +2666,18 @@
     function openClue(ci, ri){
       cur = { ci:ci, ri:ri }; buzz='closed'; buzzedP=null; locked={};
       var cat = d.categories[ci], cl = cat.clues[ri];
+      curVal = d.values[ri] * (cl.dbl ? 2 : 1);
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className='clue-view';
       var cc = document.createElement('div'); cc.className='clue-cat';
-      cc.textContent = cat.name + ' · ' + d.values[ri];
+      cc.textContent = cat.name + ' · ' + curVal;
+      v.appendChild(cc);
+      if(cl.dbl){
+        var dd = document.createElement('div'); dd.className='dd-banner';
+        dd.textContent = '\u26A1 DAILY DOUBLE \u2014 2\u00D7 POINTS \u26A1';
+        v.appendChild(dd);
+      }
+      stageImg(cl.img, v);
       var ct = document.createElement('div'); ct.className='clue-text'; ct.textContent = cl.q;
       banner = document.createElement('div'); banner.className='buzz-banner wait';
       banner.textContent = 'Buzzers are closed';
@@ -2076,7 +2688,7 @@
       var peek = document.createElement('div'); peek.className='answer-peek';
       peek.innerHTML = 'Response (hover to peek): ';
       var pb = document.createElement('b'); pb.textContent = cl.a; peek.appendChild(pb);
-      v.appendChild(cc); v.appendChild(ct); v.appendChild(banner);
+      v.appendChild(ct); v.appendChild(banner);
       v.appendChild(tb); v.appendChild(actsEl); v.appendChild(peek);
       elStage.appendChild(v);
       drawClosedActions();
@@ -2116,7 +2728,7 @@
     }
     function judge(ok){
       if(!buzzedP || !cur) return;
-      var val = d.values[cur.ri];
+      var val = curVal;
       if(ok){
         buzzedP.score += val;
         renderScoreRow();
@@ -2148,6 +2760,138 @@
       buzzedP = null;
       pushAll();
     }
+    /* ---- Final Jeopardy flow ---- */
+    function startFinal(){
+      cur = null; buzz = 'closed'; buzzedP = null; locked = {};
+      stopTimer();
+      fmode = 'wager'; wagers = {}; finAns = {}; judged = {};
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'clue-view';
+      var t = document.createElement('div'); t.className = 'final-title';
+      t.textContent = 'Final Jeopardy';
+      var cc = document.createElement('div'); cc.className = 'clue-cat';
+      cc.textContent = fin().cat.trim() ? 'Category: ' + fin().cat : 'Place your wagers!';
+      finNote = document.createElement('div'); finNote.className = 'answered-note';
+      var hint = document.createElement('div'); hint.className = 'buzz-banner wait';
+      hint.textContent = 'Players are wagering on their phones\u2026';
+      var acts = document.createElement('div'); acts.className = 'stage-actions';
+      acts.appendChild(stageBtn('Show the Clue \u25B6','gold', showFinalClue));
+      v.appendChild(t); v.appendChild(cc); v.appendChild(hint);
+      v.appendChild(finNote); v.appendChild(acts);
+      elStage.appendChild(v);
+      updateFinNote();
+      pushAll();
+    }
+    function liveRoster(){ return roster().filter(function(p){ return p.connected; }); }
+    function updateFinNote(){
+      if(!finNote) return;
+      if(fmode === 'wager'){
+        finNote.textContent = Object.keys(wagers).length + ' / ' + liveRoster().length + ' wagers in';
+      }else if(fmode === 'answer'){
+        var expecting = finPlayers().filter(function(p){ return p.connected; }).length;
+        finNote.textContent = Object.keys(finAns).length + ' / ' + expecting + ' answers in';
+      }
+    }
+    function onWager(p, amount){
+      if(fmode !== 'wager' || wagers[p.pid] !== undefined) return;
+      amount = parseInt(amount, 10);
+      if(isNaN(amount) || amount < 0) return;
+      wagers[p.pid] = Math.min(amount, wagerMax(p));
+      updateFinNote(); pushState(p);
+      var live = liveRoster();
+      var allIn = live.length && live.every(function(pl){ return wagers[pl.pid] !== undefined; });
+      if(allIn) showFinalClue();
+    }
+    function showFinalClue(){
+      if(fmode !== 'wager') return;
+      fmode = 'answer';
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'clue-view';
+      var cc = document.createElement('div'); cc.className = 'clue-cat';
+      cc.textContent = 'Final Jeopardy' + (fin().cat.trim() ? ' \u00B7 ' + fin().cat : '');
+      v.appendChild(cc);
+      stageImg(fin().img, v);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = fin().q;
+      v.appendChild(ct);
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+      tb.appendChild(timerFill);
+      v.appendChild(tb);
+      finNote = document.createElement('div'); finNote.className = 'answered-note';
+      v.appendChild(finNote);
+      var acts = document.createElement('div'); acts.className = 'stage-actions';
+      acts.appendChild(stageBtn('Judge Answers \u25B6','gold', finalJudge));
+      v.appendChild(acts);
+      var peek = document.createElement('div'); peek.className = 'answer-peek';
+      peek.innerHTML = 'Response (hover to peek): ';
+      var pb = document.createElement('b'); pb.textContent = fin().a; peek.appendChild(pb);
+      v.appendChild(peek);
+      elStage.appendChild(v);
+      updateFinNote();
+      timing = startTimer(settings.answerTime, timerFill, finalJudge);
+      pushAll();
+    }
+    function onText(p, answer){
+      if(fmode !== 'answer' || wagers[p.pid] === undefined || finAns[p.pid] !== undefined) return;
+      finAns[p.pid] = String(answer || '').trim().slice(0, 120);
+      updateFinNote(); pushState(p);
+      var expecting = finPlayers().filter(function(pl){ return pl.connected; });
+      var allIn = expecting.length && expecting.every(function(pl){ return finAns[pl.pid] !== undefined; });
+      if(allIn) finalJudge();
+    }
+    function finalJudge(){
+      if(fmode !== 'answer') return;
+      fmode = 'judge'; stopTimer();
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'clue-view';
+      var cc = document.createElement('div'); cc.className = 'clue-cat';
+      cc.textContent = 'Correct response';
+      var ra = document.createElement('div'); ra.className = 'reveal-answer';
+      ra.textContent = fin().a;
+      v.appendChild(cc); v.appendChild(ra);
+      var list = document.createElement('div'); list.className = 'fj-list';
+      var ps = finPlayers();
+      if(!ps.length){
+        var none = document.createElement('div'); none.className = 'answered-note';
+        none.textContent = 'No wagers were placed.';
+        list.appendChild(none);
+      }
+      ps.forEach(function(p){
+        var row = document.createElement('div'); row.className = 'fj-row';
+        var nm = document.createElement('span'); nm.className = 'fj-name'; nm.textContent = p.name;
+        var txt = finAns[p.pid];
+        var ans = document.createElement('span');
+        ans.className = 'fj-ans' + (txt ? '' : ' blank');
+        ans.textContent = txt || 'no answer';
+        var wg = document.createElement('span'); wg.className = 'fj-wager';
+        wg.textContent = 'wagered ' + wagers[p.pid];
+        row.appendChild(nm); row.appendChild(ans); row.appendChild(wg);
+        var bOk = stageBtn('\u2713','good', function(){ judgeFinal(p, true, row, bOk, bNo); });
+        var bNo = stageBtn('\u2717','bad',  function(){ judgeFinal(p, false, row, bOk, bNo); });
+        row.appendChild(bOk); row.appendChild(bNo);
+        list.appendChild(row);
+      });
+      v.appendChild(list);
+      var acts = document.createElement('div'); acts.className = 'stage-actions';
+      acts.appendChild(stageBtn('Show Final Scores','gold', finish));
+      v.appendChild(acts);
+      elStage.appendChild(v);
+      pushAll();
+    }
+    function judgeFinal(p, ok, row, bOk, bNo){
+      if(fmode !== 'judge' || judged[p.pid]) return;
+      var delta = (ok ? 1 : -1) * wagers[p.pid];
+      judged[p.pid] = { ok: ok, delta: delta };
+      p.score += delta;
+      bOk.remove(); bNo.remove();
+      var dl = document.createElement('span');
+      dl.className = 'fj-delta ' + (delta >= 0 ? 'up' : 'down');
+      dl.textContent = (delta >= 0 ? '+' : '') + delta;
+      row.appendChild(dl);
+      renderScoreRow(); pushState(p);
+    }
+
     function finish(){
       host.phase = 'ended'; stopTimer();
       renderFinal(); pushAll();
@@ -2156,8 +2900,36 @@
       start: renderBoard,
       onBuzz: onBuzz,
       onAnswer: function(){},
-      onRoster: function(){ renderScoreRow(); },
+      onWager: onWager,
+      onText: onText,
+      onRoster: function(){ renderScoreRow(); updateFinNote(); },
       stateFor: function(p, base){
+        if(fmode){
+          if(fmode === 'wager'){
+            if(wagers[p.pid] !== undefined){ base.mode='answered'; return base; }
+            base.mode = 'wager'; base.max = wagerMax(p); base.cat = fin().cat;
+            return base;
+          }
+          if(fmode === 'answer'){
+            if(wagers[p.pid] === undefined){
+              base.mode='locked'; base.note='No wager placed \u2014 sit this one out.';
+              return base;
+            }
+            if(finAns[p.pid] !== undefined){ base.mode='answered'; return base; }
+            base.mode = 'text'; base.cat = fin().cat;
+            return base;
+          }
+          /* judging */
+          var j = judged[p.pid];
+          if(j){
+            base.mode = 'result';
+            base.correct = j.ok; base.correctText = fin().a; base.gained = j.delta;
+            return base;
+          }
+          base.mode = 'locked';
+          base.note = wagers[p.pid] !== undefined ? 'The host is checking answers\u2026' : 'Watch the judging!';
+          return base;
+        }
         if(!cur){ base.mode='waiting'; base.note='Watch the board!'; return base; }
         if(buzz === 'open' && !locked[p.pid]){ base.mode='buzzer'; return base; }
         if(buzz === 'judge'){
@@ -2177,6 +2949,16 @@
     return d.questions.filter(function(q){
       return q.q.trim() && q.choices.filter(function(c){ return c.trim(); }).length >= 2 &&
              q.choices[q.correct] && q.choices[q.correct].trim();
+    });
+  }
+  function validFeudQs(d){
+    return (d.questions || []).filter(function(q){
+      return q.q.trim() && (q.answers || []).some(function(a){ return a.text.trim(); });
+    });
+  }
+  function validClosestQs(d){
+    return (d.questions || []).filter(function(q){
+      return q.q.trim() && isFinite(parseFloat(q.answer));
     });
   }
   function triviaCtl(){
@@ -2219,7 +3001,9 @@
       answeredNote = document.createElement('div'); answeredNote.className='answered-note';
       var acts = document.createElement('div'); acts.className='stage-actions';
       acts.appendChild(stageBtn('Reveal Now','',reveal));
-      v.appendChild(num); v.appendChild(ct); v.appendChild(grid);
+      v.appendChild(num); v.appendChild(ct);
+      stageImg(q().img, v);
+      v.appendChild(grid);
       v.appendChild(tb); v.appendChild(answeredNote); v.appendChild(acts);
       elStage.appendChild(v);
       updateAnsweredNote();
@@ -2287,6 +3071,320 @@
         base.correct = !!(a && a.choice === q().correct);
         base.correctText = q().choices[q().correct];
         base.gained = p.pts || 0;
+        return base;
+      }
+    };
+  }
+
+  /* ============ FEUD SURVEY RUNTIME ============ */
+  function feudCtl(){
+    var qs = validFeudQs(host.game.data);
+    var idx = -1;
+    var buzz = 'closed';   /* closed | open | answer | judge */
+    var buzzedP = null;
+    var locked = {};       /* pid -> true: had their shot this survey */
+    var revealed = [];
+    var banner = null, actsEl = null, timerFill = null, slotEls = [];
+
+    function q(){ return qs[idx]; }
+    function answers(){ return q().answers.filter(function(a){ return a.text.trim(); }); }
+    function allRevealed(){ return revealed.every(function(r){ return r; }); }
+
+    function next(){
+      idx++;
+      if(idx >= qs.length){ finish(); return; }
+      buzz = 'closed'; buzzedP = null; locked = {};
+      revealed = answers().map(function(){ return false; });
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'clue-view';
+      var num = document.createElement('div'); num.className = 'q-num';
+      num.textContent = 'Survey ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(num);
+      stageImg(q().img, v);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = q().q;
+      v.appendChild(ct);
+      var board = document.createElement('div'); board.className = 'fs-board';
+      slotEls = [];
+      answers().forEach(function(a, i){
+        var s = document.createElement('div'); s.className = 'fs-slot';
+        s.textContent = (i+1);
+        s.addEventListener('click', function(){ award(i); });
+        slotEls.push(s); board.appendChild(s);
+      });
+      v.appendChild(board);
+      banner = document.createElement('div'); banner.className = 'buzz-banner wait';
+      banner.textContent = 'Buzzers are closed';
+      v.appendChild(banner);
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+      tb.appendChild(timerFill); v.appendChild(tb);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      v.appendChild(actsEl);
+      elStage.appendChild(v);
+      drawClosed();
+      pushAll();
+    }
+    function drawClosed(){
+      actsEl.innerHTML = '';
+      if(allRevealed()){
+        banner.className = 'buzz-banner wait';
+        banner.textContent = 'Board cleared!';
+        actsEl.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Survey ▶','gold', next));
+        return;
+      }
+      actsEl.appendChild(stageBtn('🔔 Open Buzzers','gold', openBuzzers));
+      actsEl.appendChild(stageBtn('Reveal Rest & Close','', revealRest));
+    }
+    function openBuzzers(){
+      buzz = 'open';
+      banner.className = 'buzz-banner wait';
+      banner.textContent = 'Buzzers OPEN — waiting…';
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('Reveal Rest & Close','', revealRest));
+      startTimer(settings.buzzTime, timerFill, function(){
+        if(buzz !== 'open') return;
+        buzz = 'closed';
+        banner.textContent = 'Time! Nobody buzzed.';
+        drawClosed(); pushAll();
+      });
+      pushAll();
+    }
+    function onBuzz(p){
+      if(buzz !== 'open' || locked[p.pid]) return;
+      buzz = 'answer'; buzzedP = p;
+      stopTimer();
+      banner.className = 'buzz-banner';
+      banner.textContent = '🔔 ' + p.name + ' — typing a guess…';
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('✗ Skip / No Answer','bad', strike));
+      startTimer(settings.answerTime, timerFill, function(){
+        if(buzz === 'answer') strike();
+      });
+      pushAll();
+    }
+    function onText(p, answer){
+      if(buzz !== 'answer' || !buzzedP || p.pid !== buzzedP.pid) return;
+      var guess = String(answer || '').trim().slice(0, 60);
+      if(!guess){ strike(); return; }
+      buzz = 'judge'; stopTimer();
+      banner.className = 'buzz-banner';
+      banner.textContent = '💬 ' + buzzedP.name + ': \u201C' + guess + '\u201D';
+      slotEls.forEach(function(s, i){ if(!revealed[i]) s.classList.add('hot'); });
+      actsEl.innerHTML = '';
+      var hint = document.createElement('div'); hint.className = 'answered-note';
+      hint.textContent = 'On the board? Click the matching answer to award it — or:';
+      actsEl.appendChild(hint);
+      actsEl.appendChild(stageBtn('✗ No Match','bad', strike));
+      pushAll();
+    }
+    function award(i){
+      if(buzz !== 'judge' || revealed[i] || !buzzedP) return;
+      revealed[i] = true;
+      var a = answers()[i];
+      revealSlot(i, false);
+      buzzedP.score += (a.pts || 0);
+      renderScoreRow();
+      banner.className = 'buzz-banner wait';
+      banner.textContent = '✓ ' + buzzedP.name + ' takes ' + (a.pts || 0) + '!';
+      clearHot();
+      buzzedP = null; buzz = 'closed';
+      drawClosed();
+      pushAll();
+    }
+    function strike(){
+      if(buzz !== 'answer' && buzz !== 'judge') return;
+      stopTimer();
+      var name = buzzedP ? buzzedP.name : '';
+      if(buzzedP) locked[buzzedP.pid] = true;
+      clearHot();
+      buzzedP = null; buzz = 'closed';
+      banner.className = 'buzz-banner wait';
+      banner.textContent = '✗ ' + (name ? name + ' — ' : '') + 'not on the board!';
+      var anyLeft = roster().some(function(p){ return p.connected && !locked[p.pid]; });
+      if(anyLeft){ openBuzzers(); }
+      else {
+        banner.textContent = 'Everyone\u2019s had a turn!';
+        drawClosed(); pushAll();
+      }
+    }
+    function clearHot(){ slotEls.forEach(function(s){ s.classList.remove('hot'); }); }
+    function revealSlot(i, dead){
+      var a = answers()[i];
+      var s = slotEls[i];
+      s.classList.add('revealed');
+      if(dead) s.classList.add('dead');
+      s.classList.remove('hot');
+      s.textContent = '';
+      var tx = document.createElement('span'); tx.textContent = a.text;
+      var pt = document.createElement('span'); pt.className = 'fs-pts'; pt.textContent = a.pts || 0;
+      s.appendChild(tx); s.appendChild(pt);
+    }
+    function revealRest(){
+      stopTimer();
+      revealed.forEach(function(r, i){ if(!r){ revealed[i] = true; revealSlot(i, true); } });
+      clearHot(); buzzedP = null; buzz = 'closed';
+      banner.className = 'buzz-banner wait';
+      banner.textContent = 'All answers revealed.';
+      drawClosed();
+      pushAll();
+    }
+    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    return {
+      start: next,
+      onBuzz: onBuzz,
+      onAnswer: function(){},
+      onText: onText,
+      onRoster: function(){ renderScoreRow(); },
+      stateFor: function(p, base){
+        if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the board!'; return base; }
+        if(buzz === 'open'){
+          if(locked[p.pid]){ base.mode='locked'; base.note='You\u2019ve had your guess — watch the board!'; return base; }
+          base.mode = 'buzzer'; return base;
+        }
+        if(buzz === 'answer' || buzz === 'judge'){
+          if(buzzedP && p.pid === buzzedP.pid){
+            if(buzz === 'answer'){
+              base.mode = 'text'; base.title = 'You buzzed first!';
+              base.cat = q().q.slice(0, 90);
+              return base;
+            }
+            base.mode = 'answered'; return base;
+          }
+          base.mode = 'locked';
+          base.note = (buzzedP ? buzzedP.name : 'Someone') + ' is answering…';
+          return base;
+        }
+        base.mode = 'waiting'; base.note = 'Watch the board!'; return base;
+      }
+    };
+  }
+
+  /* ============ CLOSEST WINS RUNTIME ============ */
+  function closestCtl(){
+    var qs = validClosestQs(host.game.data);
+    var idx = -1, phase = 'ask';   /* ask | reveal */
+    var guesses = {};
+    var lastWin = {}, lastPts = 0;
+    var noteEl = null, timerFill = null;
+
+    function q(){ return qs[idx]; }
+    function qpts(){ var n = parseInt(q().pts, 10); return n > 0 ? n : 100; }
+    function liveCount(){ return roster().filter(function(p){ return p.connected; }).length; }
+
+    function next(){
+      idx++;
+      if(idx >= qs.length){ finish(); return; }
+      phase = 'ask'; guesses = {}; lastWin = {}; lastPts = 0;
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'q-view';
+      var num = document.createElement('div'); num.className = 'q-num';
+      num.textContent = 'Question ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(num);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = q().q;
+      v.appendChild(ct);
+      stageImg(q().img, v);
+      var hint = document.createElement('div'); hint.className = 'answered-note';
+      hint.textContent = 'Closest without going over wins ' + qpts() + ' pts';
+      v.appendChild(hint);
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+      tb.appendChild(timerFill); v.appendChild(tb);
+      noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      v.appendChild(noteEl);
+      var acts = document.createElement('div'); acts.className = 'stage-actions';
+      acts.appendChild(stageBtn('Reveal Now','', reveal));
+      v.appendChild(acts);
+      elStage.appendChild(v);
+      updateNote();
+      startTimer(settings.answerTime, timerFill, reveal);
+      pushAll();
+    }
+    function updateNote(){
+      if(noteEl) noteEl.textContent = Object.keys(guesses).length + ' / ' + liveCount() + ' guesses in';
+    }
+    function onGuess(p, value){
+      if(phase !== 'ask' || guesses[p.pid] !== undefined) return;
+      var n = parseFloat(value);
+      if(!isFinite(n)) return;
+      guesses[p.pid] = n;
+      updateNote(); pushState(p);
+      if(Object.keys(guesses).length >= liveCount()) reveal();
+    }
+    function reveal(){
+      if(phase !== 'ask') return;
+      phase = 'reveal'; stopTimer();
+      var target = parseFloat(q().answer);
+      var best = null;
+      Object.keys(guesses).forEach(function(pid){
+        var gv = guesses[pid];
+        if(gv <= target && (best === null || gv > best)) best = gv;
+      });
+      lastPts = qpts(); lastWin = {};
+      Object.keys(guesses).forEach(function(pid){
+        if(best !== null && guesses[pid] === best){
+          lastWin[pid] = true;
+          var p = host.players[pid];
+          if(p) p.score += lastPts;
+        }
+      });
+      renderScoreRow();
+      var v = elStage.querySelector('.q-view');
+      var acts = v.querySelector('.stage-actions');
+      noteEl.textContent = '';
+      var ra = document.createElement('div'); ra.className = 'reveal-answer';
+      ra.textContent = 'Answer: ' + target;
+      v.insertBefore(ra, acts);
+      var listEl = document.createElement('div'); listEl.className = 'cw-list';
+      var rows = Object.keys(guesses).map(function(pid){
+        return { pid:pid, name:(host.players[pid] || {}).name || '?', gv:guesses[pid] };
+      }).sort(function(a, b){ return b.gv - a.gv; });
+      if(!rows.length){
+        var none = document.createElement('div'); none.className = 'answered-note';
+        none.textContent = 'No guesses came in.';
+        listEl.appendChild(none);
+      }
+      rows.forEach(function(r){
+        var row = document.createElement('div');
+        var over = r.gv > target, win = !!lastWin[r.pid];
+        row.className = 'cw-guess-row' + (win ? ' win' : over ? ' over' : '');
+        var nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = r.name;
+        var gv = document.createElement('span'); gv.className = 'gv'; gv.textContent = r.gv;
+        var tag = document.createElement('span'); tag.className = 'tag ' + (win ? 'win' : over ? 'over' : '');
+        tag.textContent = win ? '★ +' + lastPts : over ? 'OVER' : '';
+        row.appendChild(nm); row.appendChild(gv); row.appendChild(tag);
+        listEl.appendChild(row);
+      });
+      v.insertBefore(listEl, acts);
+      if(best === null && rows.length){
+        var bust = document.createElement('div'); bust.className = 'answered-note';
+        bust.textContent = 'Everyone overshot — nobody scores!';
+        v.insertBefore(bust, acts);
+      }
+      acts.innerHTML = '';
+      acts.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Question ▶','gold', next));
+      pushAll();
+    }
+    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    return {
+      start: next,
+      onBuzz: function(){},
+      onAnswer: function(){},
+      onGuess: onGuess,
+      onRoster: function(){ renderScoreRow(); updateNote(); },
+      stateFor: function(p, base){
+        if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the board!'; return base; }
+        if(phase === 'ask'){
+          if(guesses[p.pid] !== undefined){ base.mode='answered'; return base; }
+          base.mode = 'guess';
+          base.cat = q().q.slice(0, 90);
+          return base;
+        }
+        base.mode = 'result';
+        base.correct = !!lastWin[p.pid];
+        base.correctText = String(parseFloat(q().answer));
+        base.gained = lastWin[p.pid] ? lastPts : 0;
         return base;
       }
     };
