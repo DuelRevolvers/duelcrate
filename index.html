@@ -6,6 +6,7 @@
 <title>DuelCrate</title>
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.2/peerjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   :root{
     --stage:#150E2D;          /* deep violet stage dark */
@@ -95,8 +96,8 @@
   .join-hint{
     margin-top:40px;color:var(--ink-dim);font-size:14px;text-align:center;line-height:1.6;
   }
-  .join-hint a{
-    display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+  .join-hint a,.hint-btn{
+    display:inline-flex;align-items:center;gap:8px;margin:12px 5px 0;
     padding:13px 24px;
     background:linear-gradient(180deg,var(--stage-3),var(--stage-2));
     border:2px solid #3A2A72;border-bottom-width:4px;
@@ -104,10 +105,10 @@
     color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;
     transition:transform .08s, border-color .15s, box-shadow .15s;
   }
-  .join-hint a:hover{
+  .join-hint a:hover,.hint-btn:hover{
     border-color:var(--bulb);box-shadow:0 0 24px #FFC42E22;transform:translateY(-2px);
   }
-  .join-hint a:active{transform:translateY(1px);border-bottom-width:2px}
+  .join-hint a:active,.hint-btn:active{transform:translateY(1px);border-bottom-width:2px}
 
   /* ---------- generic panel screens ---------- */
   .topbar{width:100%;max-width:560px;display:flex;align-items:center;gap:14px;margin-bottom:28px}
@@ -442,6 +443,26 @@
   .cw-guess-row .tag.win{color:var(--bulb)}
   .cw-guess-row .tag.over{color:var(--spot)}
 
+  /* ---------- lobby QR ---------- */
+  .lobby-qr{display:flex;flex-direction:column;align-items:center;gap:8px;margin:4px 0 6px}
+  #lobby-qr{background:#fff;padding:10px;border-radius:12px;line-height:0}
+  #lobby-qr img,#lobby-qr canvas{display:block}
+  .lobby-qr small{color:var(--ink-dim);font-size:12px;word-break:break-all;text-align:center;max-width:320px}
+
+  /* ---------- help modal ---------- */
+  .help-modal .modal{max-width:540px;max-height:85vh;overflow-y:auto}
+  .help-modal h4{
+    font-family:var(--display);font-size:14px;color:var(--spot);
+    letter-spacing:.06em;margin-top:4px;
+  }
+  .help-modal ol{
+    margin:0 0 4px 22px;display:flex;flex-direction:column;gap:8px;
+    color:var(--ink);font-size:14px;line-height:1.55;
+  }
+  .help-modal ol b{color:var(--bulb)}
+  .help-modal p{color:var(--ink-dim);font-size:13px;line-height:1.6}
+  .gm-link + .gm-link{margin-top:8px}
+
   /* ---------- modal ---------- */
   .modal-backdrop{
     position:fixed;inset:0;background:#0A0618CC;display:flex;align-items:center;
@@ -630,6 +651,7 @@
     <p class="join-hint">
       Playing along on your phone?<br>
       <a href="#join" id="join-link">Go to the player join page →</a>
+      <button class="hint-btn" id="help-btn">❓ How to use DuelCrate</button>
     </p>
     <footer>DUELCRATE · SHELL v0.1</footer>
   </div>
@@ -650,6 +672,7 @@
     </div>
     <button class="join-btn" id="join-go">Join room</button>
     <div class="join-msg" id="join-msg" role="status"></div>
+    <div class="gm-link"><a href="#" id="help-btn-join">❓ How does this work?</a></div>
     <div class="gm-link"><a href="#" id="to-menu">Game Master? Go to the main menu</a></div>
   </div>
 
@@ -679,7 +702,11 @@
     <div id="play-lobby-view" hidden>
       <div class="lobby-code-label">Room code</div>
       <div class="lobby-code" id="lobby-code">····</div>
-      <p class="lobby-hint">Players: go to this app's <b>player join page</b> (the <b>#join</b> link) on their phones and enter the code.</p>
+      <div class="lobby-qr" id="lobby-qr-wrap" hidden>
+        <div id="lobby-qr"></div>
+        <small id="lobby-qr-url"></small>
+      </div>
+      <p class="lobby-hint">Players: scan the code with your phone camera — or open this app's <b>player join page</b> (the <b>#join</b> link) — then enter the room code.</p>
       <div class="lobby-players" id="lobby-players"></div>
       <button class="join-btn" id="start-game-btn" disabled>Waiting for players…</button>
     </div>
@@ -727,6 +754,36 @@
 </section>
 
 <!-- clue editor modal (Jeopardy cells) -->
+<div class="modal-backdrop help-modal" id="help-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <h3 id="help-title">❓ How to use DuelCrate</h3>
+
+    <h4>🎤 Hosting a show</h4>
+    <ol>
+      <li><b>Create a Game</b> — pick a game style, then fill in your questions. Everything autosaves as you type.</li>
+      <li><b>Play a Game</b> — choose your game and a room opens with a 4-letter <b>room code</b> and a QR code.</li>
+      <li>Put your screen where everyone can see it (a TV works great), wait for players to appear in the lobby, then hit <b>Start Game</b>.</li>
+      <li>Run the show from your screen: open buzzers, reveal answers, and judge with the ✓ / ✗ buttons. The bottom strip has music controls.</li>
+      <li>Scores update live. Every game ends on a final scores screen — then close the room or host another.</li>
+    </ol>
+
+    <h4>📱 Playing along</h4>
+    <ol>
+      <li>On your phone, scan the lobby's QR code or open the <b>player join page</b>.</li>
+      <li>Enter your <b>name</b> and the 4-letter <b>room code</b> from the host's screen.</li>
+      <li>Your phone becomes your controller — a buzzer, answer choices, or a place to type guesses and wagers, depending on the game.</li>
+      <li>Watch the host's screen for the questions. Your phone shows your score and what to do next.</li>
+      <li>If you get disconnected, just rejoin with the <b>same name</b> — your score will be waiting for you.</li>
+    </ol>
+
+    <p>DuelCrate runs entirely in your browsers — the host's device is the game server, so keep it awake and online during the show.</p>
+
+    <div class="modal-actions">
+      <button class="modal-save" id="help-close">Got it!</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-backdrop" id="modal" hidden>
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <h3 id="modal-title">Edit clue</h3>
@@ -1280,7 +1337,7 @@
     var box  = wrap.parentElement.getBoundingClientRect();
     bulbW = box.width; bulbH = box.height;
     wrap.innerHTML = '';
-    var gap = 26, bulbs = [], i, n;
+    var gap = 26, bulbs = [], i;
 
     function add(x,y){
       var b = document.createElement('span');
@@ -1289,14 +1346,16 @@
       wrap.appendChild(b); bulbs.push(b);
     }
     var w = box.width, h = box.height, inset = 7;
-    n = Math.max(4, Math.round((w - inset*2) / gap));
-    for(i=0;i<=n;i++) add(inset + (w-inset*2)*i/n, inset);                 /* top  */
-    n = Math.max(2, Math.round((h - inset*2) / gap));
-    for(i=1;i<=n;i++) add(w-inset, inset + (h-inset*2)*i/n);               /* right*/
-    n = Math.max(4, Math.round((w - inset*2) / gap));
-    for(i=1;i<=n;i++) add(w-inset - (w-inset*2)*i/n, h-inset);             /* bottom */
-    n = Math.max(2, Math.round((h - inset*2) / gap));
-    for(i=1;i<n;i++) add(inset, h-inset - (h-inset*2)*i/n);                /* left */
+    var n1 = Math.max(4, Math.round((w - inset*2) / gap));  /* top & bottom segments */
+    var n2 = Math.max(2, Math.round((h - inset*2) / gap));  /* left & right segments */
+    /* total = 2*(n1+n2); nudge it to a multiple of 3 so the every-3rd
+       chase pattern wraps around the ring without a seam */
+    while((2*(n1 + n2)) % 3 !== 0) n2++;
+    /* each edge owns its starting corner, so the ring is one clean loop */
+    for(i=0;i<n1;i++) add(inset + (w-inset*2)*i/n1, inset);            /* top: L→R    */
+    for(i=0;i<n2;i++) add(w-inset, inset + (h-inset*2)*i/n2);          /* right: T→B  */
+    for(i=0;i<n1;i++) add(w-inset - (w-inset*2)*i/n1, h-inset);        /* bottom: R→L */
+    for(i=0;i<n2;i++) add(inset, h-inset - (h-inset*2)*i/n2);          /* left: B→T   */
     return bulbs;
   }
 
@@ -1304,8 +1363,6 @@
   function startMarquee(){
     clearInterval(chaseTimer);
     var bulbs = buildBulbs();
-    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduced){ bulbs.forEach(function(b){ b.classList.add('lit'); }); return; }
     var tick = 0;
     chaseTimer = setInterval(function(){
       bulbs.forEach(function(b,i){
@@ -1343,6 +1400,18 @@
     if(document.fonts.ready) document.fonts.ready.then(function(){ startMarquee(); });
   }
   window.addEventListener('load', function(){ startMarquee(); });
+
+  /* ---- help modal ---- */
+  var helpModal = document.getElementById('help-modal');
+  function openHelp(e){ if(e) e.preventDefault(); helpModal.hidden = false; }
+  function closeHelp(){ helpModal.hidden = true; }
+  document.getElementById('help-btn').addEventListener('click', openHelp);
+  document.getElementById('help-btn-join').addEventListener('click', openHelp);
+  document.getElementById('help-close').addEventListener('click', closeHelp);
+  helpModal.addEventListener('click', function(e){ if(e.target === helpModal) closeHelp(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && !helpModal.hidden) closeHelp();
+  });
 
   /* ================ SETTINGS (build step 2) ================ */
 
@@ -2400,6 +2469,7 @@
                  phase:'lobby', players:{}, ctl:null };
         document.getElementById('lobby-code').textContent = code;
         document.getElementById('strip-code').textContent = code;
+        renderLobbyQR();
         renderLobbyPlayers();
         showPlayView('lobby');
       });
@@ -2523,6 +2593,18 @@
   }
 
   /* ---- lobby ---- */
+  var qrDone = false;
+  function renderLobbyQR(){
+    var wrap = document.getElementById('lobby-qr-wrap');
+    if(typeof QRCode === 'undefined'){ wrap.hidden = true; return; }
+    wrap.hidden = false;
+    if(qrDone) return;
+    var url = location.href.split('#')[0] + '#join';
+    new QRCode(document.getElementById('lobby-qr'),
+      { text:url, width:150, height:150, correctLevel:QRCode.CorrectLevel.M });
+    document.getElementById('lobby-qr-url').textContent = url;
+    qrDone = true;
+  }
   function renderLobbyPlayers(){
     if(!host || host.phase !== 'lobby') return;
     var wrap = document.getElementById('lobby-players');
