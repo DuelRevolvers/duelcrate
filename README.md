@@ -2,7 +2,7 @@
 
 **Your show. Your rules.**
 
-DuelCrate is a Jackbox-style party game platform that runs entirely in the browser. One person hosts the show from a big screen while 2–20 players join from their phones using a 4-letter room code — no app installs, no accounts, no server. The whole thing is a single, self-contained HTML file.
+DuelCrate is a Jackbox-style party game platform that runs entirely in the browser. One person hosts the show from a big screen while 2–20 players join from their phones using a 4-letter room code; no app installs, no accounts, no server. The whole thing is a single, self-contained HTML file.
 
 ## Features
 
@@ -26,4 +26,4 @@ DuelCrate is **HTML-based** — a single `index.html` file with no backend. Mult
 
 ## Disclaimer
 
-DuelCrate was coded with the assistance of AI. It has been tested, but you may still encounter bugs or rough edges — feedback is welcome!
+DuelCrate was coded with the assistance of AI. It has been tested, but you may still encounter bugs or rough edges. Feedback is welcome!
