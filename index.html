@@ -664,7 +664,7 @@
     <div class="join-sub">Join the show</div>
     <div class="field">
       <label for="join-name">Your name</label>
-      <input id="join-name" maxlength="16" placeholder="e.g. Aaron" autocomplete="off">
+      <input id="join-name" maxlength="16" placeholder="Your name" autocomplete="off">
     </div>
     <div class="field">
       <label for="join-code">Room code</label>
@@ -895,6 +895,11 @@
       if(saved && !document.getElementById('join-name').value){
         document.getElementById('join-name').value = saved;
       }
+      var SAMPLE_NAMES = ['Alex','Sam','Jordan','Taylor','Casey','Riley','Morgan',
+                          'Jamie','Charlie','Dana','Robin','Quinn','Avery','Max',
+                          'Nora','Leo','Ruby','Owen','Ivy','Felix'];
+      document.getElementById('join-name').placeholder =
+        'e.g. ' + SAMPLE_NAMES[Math.floor(Math.random() * SAMPLE_NAMES.length)];
     }
     window.scrollTo(0,0);
   }
@@ -1744,7 +1749,7 @@
       label:'Multiple Choice Trivia', icon:'🔠',
       blurb:'Classic questions with answer choices on every phone.',
       blank:function(){
-        return { questions:[ { q:'', choices:['','','',''], correct:0, img:null } ] };
+        return { questions:[ { q:'', choices:['','','',''], correct:0, pts:100, img:null } ] };
       },
       summary:function(d){
         var n = d.questions.filter(function(q){ return q.q.trim(); }).length;
@@ -2290,7 +2295,7 @@
     var bar = editorHeader(g, wrap);
     var d = g.data;
     bar.appendChild(toolBtn('+ Question', function(){
-      d.questions.push({ q:'', choices:['','','',''], correct:0, img:null });
+      d.questions.push({ q:'', choices:['','','',''], correct:0, pts:100, img:null });
       touch(); drawQuestions();
       window.scrollTo(0, document.body.scrollHeight);
     }));
@@ -2360,8 +2365,20 @@
           row.appendChild(radio); row.appendChild(txt);
           card.appendChild(row);
         });
+        var ptsRow = document.createElement('div'); ptsRow.className = 'cw-row';
+        var lp = document.createElement('label'); lp.textContent = 'Points';
+        var pin = document.createElement('input');
+        pin.className = 'fin-input'; pin.type = 'text'; pin.inputMode = 'numeric';
+        pin.placeholder = '100'; pin.value = q.pts || '';
+        pin.addEventListener('input', function(){
+          var n = parseInt(this.value.replace(/\D/g,''),10);
+          q.pts = isNaN(n) ? 0 : n; touch();
+        });
+        lp.appendChild(pin);
+        ptsRow.appendChild(lp);
+        card.appendChild(ptsRow);
         var foot = document.createElement('div'); foot.className = 'tq-foot';
-        foot.textContent = 'Select the radio next to the correct answer. Blank choices are hidden from players.';
+        foot.textContent = 'Select the radio next to the correct answer. Blank choices are hidden from players. Every correct answer scores the same set points.';
         card.appendChild(foot);
         list.appendChild(card);
       });
@@ -2599,7 +2616,7 @@
     if(typeof QRCode === 'undefined'){ wrap.hidden = true; return; }
     wrap.hidden = false;
     if(qrDone) return;
-    var url = location.href.split('#')[0] + '#join';
+    var url = 'https://duelrevolvers.github.io/duelcrate/#join';
     new QRCode(document.getElementById('lobby-qr'),
       { text:url, width:150, height:150, correctLevel:QRCode.CorrectLevel.M });
     document.getElementById('lobby-qr-url').textContent = url;
@@ -3101,7 +3118,7 @@
       if(phase !== 'ask' || answers[p.pid] !== undefined) return;
       choice = parseInt(choice, 10);
       if(isNaN(choice) || choice < 0 || choice > 3) return;
-      answers[p.pid] = { choice:choice, ms: Date.now() - timing.t0 };
+      answers[p.pid] = { choice: choice };
       updateAnsweredNote();
       pushState(p);
       if(Object.keys(answers).length >= liveCount()) reveal();
@@ -3110,15 +3127,15 @@
       if(phase !== 'ask') return;
       phase = 'reveal'; stopTimer();
       var correct = q().correct;
+      var pts = parseInt(q().pts, 10); if(!(pts > 0)) pts = 100;
       var counts = {};
       Object.keys(answers).forEach(function(pid){
         var a = answers[pid];
         counts[a.choice] = (counts[a.choice]||0) + 1;
         var p = host.players[pid];
         if(p && a.choice === correct){
-          var bonus = Math.round(50 * Math.max(0, 1 - a.ms / timing.limit));
-          p.pts = 100 + bonus;
-          p.score += p.pts;
+          p.pts = pts;
+          p.score += pts;
         }else if(p){ p.pts = 0; }
       });
       choiceEls.forEach(function(c){
