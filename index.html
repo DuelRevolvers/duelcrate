@@ -299,6 +299,7 @@
   .badge.trivia{color:var(--spot);border-color:#7A2450;background:#FF4D9D14}
   .badge.feud{color:var(--ok);border-color:#2E6B3A;background:#7EE78714}
   .badge.closest{color:#6FD3FF;border-color:#2A5E7A;background:#6FD3FF14}
+  .badge.prompts{color:#B79CFF;border-color:#5A3E9E;background:#B79CFF14}
   .gc-actions{display:flex;gap:8px}
   .empty-state{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
@@ -462,6 +463,21 @@
   .help-modal ol b{color:var(--bulb)}
   .help-modal p{color:var(--ink-dim);font-size:13px;line-height:1.6}
   .gm-link + .gm-link{margin-top:8px}
+
+  /* ---------- prompt battle ---------- */
+  .pb-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;width:100%;max-width:920px;margin:8px 0}
+  .pb-card{
+    background:var(--stage-2);border:2px solid #3A2A72;border-radius:12px;
+    padding:14px;text-align:left;display:flex;flex-direction:column;gap:8px;min-height:76px;
+  }
+  .pb-card.hidden-card{align-items:center;justify-content:center;color:#5D4F86;font-family:var(--display);font-size:24px}
+  .pb-num{font-family:var(--display);font-size:13px;color:var(--spot);letter-spacing:.06em}
+  .pb-text{font-size:16px;line-height:1.45;color:var(--ink);word-break:break-word}
+  .pb-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:var(--ink-dim);margin-top:auto}
+  .pb-meta .pb-award{color:var(--bulb);font-weight:700;white-space:nowrap}
+  .pb-card.placed-1{border-color:var(--bulb);box-shadow:0 0 24px #FFC42E33}
+  .pb-card.placed-2{border-color:#B9C2D0}
+  .pb-card.placed-3{border-color:#C08850}
 
   /* ---------- modal ---------- */
   .modal-backdrop{
@@ -839,6 +855,14 @@
           <button class="step-btn" data-dir="1" aria-label="Increase buzz-in window">+</button>
         </div>
       </div>
+      <div class="set-row">
+        <div class="set-label">Write time<small>How long players get to write prompt responses</small></div>
+        <div class="stepper" data-setting="writeTime" data-min="15" data-max="180" data-step="15">
+          <button class="step-btn" data-dir="-1" aria-label="Decrease write time">−</button>
+          <span class="step-val"></span>
+          <button class="step-btn" data-dir="1" aria-label="Increase write time">+</button>
+        </div>
+      </div>
     </div>
 
     <div class="set-section">
@@ -1156,11 +1180,11 @@
       st.appendChild(pvEl('div','pv-note', s.note || 'Buzzers closed'));
     }
     else if(m === 'choices'){
-      st.appendChild(pvEl('div','pv-note','Pick your answer!'));
+      st.appendChild(pvEl('div','pv-note', s.note || 'Pick your answer!'));
       var wrap = pvEl('div','pv-choices');
       (s.choices || []).forEach(function(ch, i){
         var c = pvEl('button','pv-choice');
-        c.appendChild(pvEl('span','letter', String.fromCharCode(65 + i)));
+        c.appendChild(pvEl('span','letter', ch.label || String.fromCharCode(65 + i)));
         c.appendChild(pvEl('span','', ch.text));
         c.addEventListener('click', function(){
           pvSend({ t:'answer', choice: ch.orig });
@@ -1421,7 +1445,7 @@
   /* ================ SETTINGS (build step 2) ================ */
 
   /* ---- settings values: localStorage ---- */
-  var DEFAULTS = { answerTime:30, buzzTime:10, musicVolume:80 };
+  var DEFAULTS = { answerTime:30, buzzTime:10, writeTime:60, musicVolume:80 };
   function loadSettings(){
     var s = {};
     try{ s = JSON.parse(localStorage.getItem(DC.LS_SETTINGS)) || {}; }catch(e){}
@@ -1708,6 +1732,8 @@
       if(g.data.final && g.data.final.img) ids.push(g.data.final.img);
     }else if(g.data.questions){
       g.data.questions.forEach(function(q){ if(q.img) ids.push(q.img); });
+    }else if(g.data.prompts){
+      g.data.prompts.forEach(function(p){ if(p.img) ids.push(p.img); });
     }
     return ids;
   }
@@ -1717,6 +1743,7 @@
       g.data.categories.forEach(function(c){ c.clues.forEach(re); });
       if(g.data.final) re(g.data.final);
     }else if(g.data.questions){ g.data.questions.forEach(re); }
+    else if(g.data.prompts){ g.data.prompts.forEach(re); }
   }
 
   /* ---- game type registry ----
@@ -1784,6 +1811,19 @@
         return n+' question'+(n===1?'':'s');
       },
       renderEditor: renderClosestEditor
+    },
+    prompts: {
+      label:'Prompt Battle', icon:'✍️',
+      blurb:'Everyone writes a response, then votes for the best.',
+      blank:function(){
+        return { prompts:[ { text:'', img:null } ],
+                 oneByOne:false, p1:300, p2:200, p3:100 };
+      },
+      summary:function(d){
+        var n = (d.prompts||[]).filter(function(p){ return p.text.trim(); }).length;
+        return n+' prompt'+(n===1?'':'s');
+      },
+      renderEditor: renderPromptsEditor
     }
   };
 
@@ -2201,6 +2241,79 @@
     draw();
   }
 
+  /* ============ Prompt Battle editor ============ */
+  function renderPromptsEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    bar.appendChild(toolBtn('+ Prompt', function(){
+      d.prompts.push({ text:'', img:null });
+      touch(); draw();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bar.appendChild(savedNoteEl);
+
+    /* game-level scoring & reveal options */
+    var opts = document.createElement('div'); opts.className = 'fin-section';
+    var oh = document.createElement('h3'); oh.textContent = '⚙️ Scoring & reveal';
+    opts.appendChild(oh);
+    var row = document.createElement('div'); row.className = 'cw-row';
+    [['p1','1st place','300'],['p2','2nd place','200'],['p3','3rd place','100']].forEach(function(def){
+      var la = document.createElement('label'); la.textContent = def[1];
+      var pin = document.createElement('input');
+      pin.className = 'fin-input'; pin.type = 'text'; pin.inputMode = 'numeric';
+      pin.placeholder = def[2]; pin.value = d[def[0]] || '';
+      pin.addEventListener('input', function(){
+        var n = parseInt(this.value.replace(/\D/g,''),10);
+        d[def[0]] = isNaN(n) ? 0 : n; touch();
+      });
+      la.appendChild(pin);
+      row.appendChild(la);
+    });
+    opts.appendChild(row);
+    var obo = document.createElement('label'); obo.className = 'dd-row';
+    var oboIn = document.createElement('input'); oboIn.type = 'checkbox';
+    oboIn.checked = !!d.oneByOne;
+    oboIn.addEventListener('change', function(){ d.oneByOne = this.checked; touch(); });
+    obo.appendChild(oboIn);
+    obo.appendChild(document.createTextNode(' Reveal responses one at a time (you click through them before voting opens)'));
+    opts.appendChild(obo);
+    var onote = document.createElement('div'); onote.className = 'tq-foot';
+    onote.textContent = 'Players write on their phones, then vote for their favorite (never their own). Top three vote-getters score; ties share the higher placement; zero votes scores nothing.';
+    opts.appendChild(onote);
+    wrap.appendChild(opts);
+
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+    function draw(){
+      list.innerHTML = '';
+      d.prompts.forEach(function(p, pi){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Prompt ' + (pi+1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.prompts.length === 1){ DC.toast('Keep at least one prompt'); return; }
+          if(p.img) DC.imgDelete(p.img);
+          d.prompts.splice(pi,1); touch(); draw();
+        }));
+        card.appendChild(head);
+        var qa = document.createElement('textarea');
+        qa.className = 'tq-q'; qa.rows = 2;
+        qa.placeholder = 'Prompt (e.g. The worst thing to say at a job interview)…';
+        qa.value = p.text;
+        qa.addEventListener('input', function(){ p.text = this.value; touch(); });
+        card.appendChild(qa);
+        card.appendChild(imgControl(
+          function(){ return p.img || null; },
+          function(id){ p.img = id; touch(); }
+        ));
+        list.appendChild(card);
+      });
+    }
+    draw();
+  }
+
   /* ---- modal ---- */
   var modal = document.getElementById('modal');
   var modalCtx = null;
@@ -2476,6 +2589,9 @@
     if(game.type === 'closest' && !validClosestQs(game.data).length){
       DC.toast('Add at least one question with a numeric answer.'); return;
     }
+    if(game.type === 'prompts' && !validPrompts(game.data).length){
+      DC.toast('Add at least one prompt first.'); return;
+    }
     DC.toast('Opening room…');
     var attempts = 0;
     (function tryPeer(){
@@ -2644,6 +2760,7 @@
     host.ctl = host.game.type === 'jeopardy' ? jeopardyCtl()
              : host.game.type === 'feud'     ? feudCtl()
              : host.game.type === 'closest'  ? closestCtl()
+             : host.game.type === 'prompts'  ? promptsCtl()
              : triviaCtl();
     showPlayView('game');
     host.ctl.start();
@@ -3059,6 +3176,9 @@
     return (d.questions || []).filter(function(q){
       return q.q.trim() && isFinite(parseFloat(q.answer));
     });
+  }
+  function validPrompts(d){
+    return (d.prompts || []).filter(function(p){ return p.text.trim(); });
   }
   function triviaCtl(){
     var qs = validTriviaQs(host.game.data);
@@ -3484,6 +3604,256 @@
         base.correct = !!lastWin[p.pid];
         base.correctText = String(parseFloat(q().answer));
         base.gained = lastWin[p.pid] ? lastPts : 0;
+        return base;
+      }
+    };
+  }
+
+  /* ============ PROMPT BATTLE RUNTIME ============ */
+  function promptsCtl(){
+    var d = host.game.data;
+    var qs = validPrompts(d);
+    var idx = -1;
+    var phase = 'write';   /* write | reveal | vote | results */
+    var written = {};      /* pid -> text (write phase) */
+    var entries = [];      /* [{pid, text, votes}] shuffled after writing */
+    var votes = {};        /* voterPid -> entry index */
+    var awards = {};       /* pid -> pts (results) */
+    var places = [];       /* entry index -> 1|2|3|0 */
+    var revealCount = 0;
+    var noteEl = null, actsEl = null, timerFill = null;
+
+    function q(){ return qs[idx]; }
+    function liveRoster(){ return roster().filter(function(p){ return p.connected; }); }
+    function ptsForPlace(pl){
+      var v = parseInt([d.p1, d.p2, d.p3][pl-1], 10);
+      return isNaN(v) ? 0 : v;
+    }
+
+    function next(){
+      idx++;
+      if(idx >= qs.length){ finish(); return; }
+      phase = 'write'; written = {}; entries = []; votes = {};
+      awards = {}; places = []; revealCount = 0;
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'q-view';
+      var num = document.createElement('div'); num.className = 'q-num';
+      num.textContent = 'Prompt ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(num);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = q().text;
+      v.appendChild(ct);
+      stageImg(q().img, v);
+      var hint = document.createElement('div'); hint.className = 'answered-note';
+      hint.textContent = 'Everyone is writing a response on their phone…';
+      v.appendChild(hint);
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+      tb.appendChild(timerFill); v.appendChild(tb);
+      noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      v.appendChild(noteEl);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      actsEl.appendChild(stageBtn('Close Writing ▶','gold', closeWriting));
+      v.appendChild(actsEl);
+      elStage.appendChild(v);
+      updateNote();
+      startTimer(settings.writeTime, timerFill, closeWriting);
+      pushAll();
+    }
+    function updateNote(){
+      if(!noteEl) return;
+      if(phase === 'write'){
+        noteEl.textContent = Object.keys(written).length + ' / ' + liveRoster().length + ' responses in';
+      }else if(phase === 'reveal' && d.oneByOne){
+        noteEl.textContent = revealCount + ' of ' + entries.length + ' revealed';
+      }else if(phase === 'vote'){
+        noteEl.textContent = Object.keys(votes).length + ' / ' + liveRoster().length + ' votes in';
+      }
+    }
+    function onText(p, answer){
+      if(phase !== 'write' || written[p.pid] !== undefined) return;
+      var t = String(answer || '').trim().slice(0, 120);
+      if(!t) return;
+      written[p.pid] = t;
+      updateNote(); pushState(p);
+      var live = liveRoster();
+      if(live.length && live.every(function(pl){ return written[pl.pid] !== undefined; })) closeWriting();
+    }
+    function closeWriting(){
+      if(phase !== 'write') return;
+      stopTimer();
+      entries = Object.keys(written).map(function(pid){
+        return { pid: pid, text: written[pid], votes: 0 };
+      });
+      /* shuffle so display order gives nothing away */
+      for(var i = entries.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = entries[i]; entries[i] = entries[j]; entries[j] = t;
+      }
+      if(entries.length < 2){
+        /* nothing to vote on — show what came in and move along */
+        phase = 'results';
+        renderStage('results');
+        drawResultActions('Not enough responses to vote on.');
+        pushAll();
+        return;
+      }
+      phase = 'reveal';
+      revealCount = d.oneByOne ? 0 : entries.length;
+      renderStage('reveal');
+      drawRevealActions();
+      pushAll();
+    }
+    function renderStage(mode){
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'q-view';
+      var num = document.createElement('div'); num.className = 'q-num';
+      num.textContent = 'Prompt ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(num);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = q().text;
+      v.appendChild(ct);
+      var list = document.createElement('div'); list.className = 'pb-list';
+      entries.forEach(function(e, i){
+        var card = document.createElement('div');
+        var shown = i < revealCount;
+        card.className = 'pb-card' + (shown ? '' : ' hidden-card');
+        if(!shown){
+          card.textContent = '?';
+        }else{
+          var nm = document.createElement('div'); nm.className = 'pb-num';
+          nm.textContent = '#' + (i+1);
+          var tx = document.createElement('div'); tx.className = 'pb-text';
+          tx.textContent = e.text;
+          card.appendChild(nm); card.appendChild(tx);
+          if(mode === 'results'){
+            if(places[i] >= 1 && places[i] <= 3) card.classList.add('placed-' + places[i]);
+            var meta = document.createElement('div'); meta.className = 'pb-meta';
+            var who = document.createElement('span');
+            who.textContent = ((host.players[e.pid] || {}).name || '?') +
+                              ' · ' + e.votes + ' vote' + (e.votes === 1 ? '' : 's');
+            meta.appendChild(who);
+            var medal = places[i] === 1 ? '🥇' : places[i] === 2 ? '🥈' : places[i] === 3 ? '🥉' : '';
+            if(medal){
+              var aw = document.createElement('span'); aw.className = 'pb-award';
+              aw.textContent = medal + ' +' + ptsForPlace(places[i]);
+              meta.appendChild(aw);
+            }
+            card.appendChild(meta);
+          }
+        }
+        list.appendChild(card);
+      });
+      v.appendChild(list);
+      if(mode === 'vote'){
+        var tb = document.createElement('div'); tb.className = 'timer-bar';
+        timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+        tb.appendChild(timerFill); v.appendChild(tb);
+      }
+      noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      v.appendChild(noteEl);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      v.appendChild(actsEl);
+      elStage.appendChild(v);
+      updateNote();
+    }
+    function drawRevealActions(){
+      actsEl.innerHTML = '';
+      if(revealCount < entries.length){
+        actsEl.appendChild(stageBtn('Reveal Next ▶','gold', function(){
+          if(phase !== 'reveal') return;
+          revealCount++;
+          renderStage('reveal');
+          drawRevealActions();
+        }));
+      }else{
+        actsEl.appendChild(stageBtn('Open Voting ▶','gold', openVoting));
+      }
+    }
+    function openVoting(){
+      if(phase !== 'reveal') return;
+      phase = 'vote'; votes = {};
+      renderStage('vote');
+      actsEl.appendChild(stageBtn('Close Voting ▶','gold', closeVoting));
+      startTimer(settings.answerTime, timerFill, closeVoting);
+      pushAll();
+    }
+    function onAnswer(p, choice){
+      if(phase !== 'vote' || votes[p.pid] !== undefined) return;
+      choice = parseInt(choice, 10);
+      if(isNaN(choice) || choice < 0 || choice >= entries.length) return;
+      if(entries[choice].pid === p.pid) return;   /* no voting for yourself */
+      votes[p.pid] = choice;
+      entries[choice].votes++;
+      updateNote(); pushState(p);
+      var live = liveRoster();
+      if(live.length && live.every(function(pl){ return votes[pl.pid] !== undefined; })) closeVoting();
+    }
+    function closeVoting(){
+      if(phase !== 'vote') return;
+      phase = 'results'; stopTimer();
+      computePlaces();
+      renderStage('results');
+      drawResultActions();
+      pushAll();
+    }
+    function computePlaces(){
+      places = entries.map(function(){ return 0; });
+      awards = {};
+      entries.forEach(function(e, i){
+        if(e.votes <= 0) return;
+        /* competition ranking: place = 1 + entries with strictly more votes */
+        var place = 1 + entries.filter(function(o){ return o.votes > e.votes; }).length;
+        if(place > 3) return;
+        places[i] = place;
+        var pts = ptsForPlace(place);
+        awards[e.pid] = pts;
+        var p = host.players[e.pid];
+        if(p) p.score += pts;
+      });
+      renderScoreRow();
+    }
+    function drawResultActions(noteText){
+      if(noteText) noteEl.textContent = noteText;
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Prompt ▶','gold', next));
+    }
+    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    return {
+      start: next,
+      onBuzz: function(){},
+      onAnswer: onAnswer,
+      onText: onText,
+      onRoster: function(){ renderScoreRow(); updateNote(); },
+      stateFor: function(p, base){
+        if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the screen!'; return base; }
+        if(phase === 'write'){
+          if(written[p.pid] !== undefined){ base.mode='answered'; return base; }
+          base.mode = 'text';
+          base.title = 'Write your answer!';
+          base.cat = q().text.slice(0, 90);
+          return base;
+        }
+        if(phase === 'reveal'){
+          base.mode = 'locked'; base.note = 'Eyes on the host screen!';
+          return base;
+        }
+        if(phase === 'vote'){
+          if(votes[p.pid] !== undefined){ base.mode='answered'; return base; }
+          base.mode = 'choices';
+          base.note = 'Vote for your favorite!';
+          base.choices = [];
+          entries.forEach(function(e, i){
+            if(e.pid === p.pid) return;   /* your own isn't on your ballot */
+            base.choices.push({ label: String(i+1), text: e.text.slice(0, 80), orig: i });
+          });
+          if(!base.choices.length){ base.mode='locked'; base.note='Watch the votes come in!'; }
+          return base;
+        }
+        /* results */
+        base.mode = 'result';
+        base.gained = awards[p.pid] || 0;
+        base.correct = (awards[p.pid] || 0) > 0;
         return base;
       }
     };
