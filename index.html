@@ -1813,7 +1813,7 @@
       renderEditor: renderClosestEditor
     },
     prompts: {
-      label:'Prompt Battle', icon:'✍️',
+      label:'Punchline Showdown', icon:'✍️',
       blurb:'Everyone writes a response, then votes for the best.',
       blank:function(){
         return { prompts:[ { text:'', img:null } ],
@@ -2241,7 +2241,7 @@
     draw();
   }
 
-  /* ============ Prompt Battle editor ============ */
+  /* ============ Punchline Showdown editor ============ */
   function renderPromptsEditor(g, wrap){
     var bar = editorHeader(g, wrap);
     var d = g.data;
@@ -3609,7 +3609,7 @@
     };
   }
 
-  /* ============ PROMPT BATTLE RUNTIME ============ */
+  /* ============ PUNCHLINE SHOWDOWN RUNTIME ============ */
   function promptsCtl(){
     var d = host.game.data;
     var qs = validPrompts(d);
