@@ -266,6 +266,10 @@
   .slot-info{flex:1;min-width:140px}
   .slot-name{font-weight:700;font-size:15px}
   .slot-file{color:var(--ink-dim);font-size:13px;margin-top:2px;word-break:break-all}
+  .slot-volume{display:flex;align-items:center;gap:10px;margin-top:10px}
+  .slot-volume label{font-size:12px;color:var(--ink-dim);white-space:nowrap}
+  .slot-volume input[type=range]{flex:1;accent-color:var(--bulb);height:6px}
+  .slot-volume .slot-vol-val{min-width:42px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
   .slot-file.loaded{color:var(--ok)}
   .slot-actions{display:flex;gap:8px}
   .slot-btn{
@@ -607,27 +611,47 @@
   .schip.gone{opacity:.4}
   .schip.neg .pts{color:var(--spot)}
 
-  /* ---------- GM strip ---------- */
-  #gm-strip{
-    position:fixed;left:0;right:0;bottom:0;z-index:30;
-    display:flex;align-items:center;gap:8px;padding:12px 16px;
-    background:#100A24F2;border-top:2px solid #3A2A72;backdrop-filter:blur(6px);
+  /* ---------- GM remote (in-app console) ---------- */
+  .gmr-hint{color:var(--ink-dim);font-size:13px;line-height:1.5;margin-top:14px}
+  .gmr{max-width:440px;margin:0 auto;padding:24px 18px 40px;display:flex;flex-direction:column;gap:16px;min-height:80vh}
+  .gmr-head{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #3A2A72;padding-bottom:12px}
+  .gmr-title{font-family:var(--display);font-size:17px;color:var(--bulb);letter-spacing:.04em}
+  .gmr-room{font-family:var(--display);color:var(--bulb);letter-spacing:.18em;font-size:14px}
+  .gmr-music{display:flex;gap:8px;flex-wrap:wrap}
+  .gmr-btn{
+    font-weight:700;font-size:15px;padding:10px 14px;border-radius:10px;
+    border:2px solid #3A2A72;background:var(--stage-2);color:var(--ink);
   }
-  #gm-strip[hidden]{display:none}
-  .strip-label{font-family:var(--display);font-size:12px;color:#5D4F86;letter-spacing:.1em}
-  .strip-btn{
-    padding:9px 13px;font-size:14px;font-weight:700;border-radius:9px;
-    background:var(--stage-3);border:2px solid #3A2A72;color:var(--ink);white-space:nowrap;
+  .gmr-btn:hover{border-color:var(--bulb)}
+  .gmr-btn.on{border-color:var(--ok);color:var(--ok)}
+  .gmr-answers{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px;text-align:center}
+  .gmr-answers .gm-label{color:var(--ink-dim);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .gmr-answers .gm-line{
+    display:flex;align-items:center;gap:12px;justify-content:space-between;width:100%;
+    background:var(--stage-2);border:2px solid #3A2A72;border-radius:10px;
+    padding:10px 14px;font-size:16px;text-align:left;
   }
-  .strip-btn:hover{border-color:var(--bulb)}
-  .strip-btn.on{border-color:var(--ok);color:var(--ok)}
-  .strip-btn.danger{border-color:#7A2450;color:var(--spot)}
-  .strip-btn:disabled{opacity:.35;cursor:default}
-  .strip-spacer{flex:1}
-  .strip-answer{color:var(--ink-dim);font-size:13px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .strip-answer b{color:var(--bulb);font-weight:700}
-  .strip-code{font-family:var(--display);color:var(--bulb);letter-spacing:.2em;font-size:15px}
-  @media(max-width:540px){ .strip-label,.strip-code{display:none} }
+  .gmr-answers .gm-line b{color:var(--bulb);white-space:nowrap}
+  .gmr-answers .gm-main-answer{
+    font-family:var(--display);font-size:24px;color:var(--bulb);
+    text-shadow:0 0 18px #FFC42E44;word-break:break-word;
+  }
+  .gmr-answers .gm-empty{color:#5D4F86;font-size:14px}
+  .gmr-foot{display:flex;flex-direction:column;gap:10px}
+  .gmr-end{
+    font-weight:700;font-size:15px;padding:12px;border-radius:10px;
+    border:2px solid #7A2450;background:var(--stage-2);color:var(--spot);
+  }
+
+  /* ---------- GM console launcher ---------- */
+  #gm-fab{
+    position:fixed;right:14px;bottom:14px;z-index:30;
+    padding:10px 15px;font-size:14px;font-weight:700;border-radius:12px;
+    background:#100A24F2;border:2px solid #3A2A72;color:var(--ink-dim);
+    backdrop-filter:blur(6px);
+  }
+  #gm-fab:hover{border-color:var(--bulb);color:var(--ink)}
+  #gm-fab[hidden]{display:none}
 
   .toast{
     position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(90px);
@@ -674,6 +698,7 @@
       Playing along on your phone?<br>
       <a href="#join" id="join-link">Go to the player join page →</a>
       <button class="hint-btn" id="help-btn">❓ How to use DuelCrate</button>
+      <button class="hint-btn" id="gm-remote-btn">🎛 GM Remote</button>
     </p>
     <footer>DUELCRATE · SHELL v0.1</footer>
   </div>
@@ -709,6 +734,41 @@
   </div>
 </section>
 
+<section class="screen" id="screen-gm">
+  <div class="join-card" id="gm-join-card">
+    <div class="join-logo"><span class="duel">DUEL</span>CRATE</div>
+    <div class="join-sub">GM Remote</div>
+    <div class="field">
+      <label for="gm-code-input">GM code</label>
+      <input id="gm-code-input" maxlength="4" placeholder="····" autocomplete="off" inputmode="latin" spellcheck="false">
+    </div>
+    <button class="join-btn" id="gm-join-go">Connect</button>
+    <div class="join-msg" id="gm-join-msg" role="status"></div>
+    <p class="gmr-hint">The GM code is shown inside the GM Console window on the hosting device — it's private, so don't put it on the shared screen.</p>
+    <div class="gm-link"><a href="#" id="gm-to-menu">← Back to the main menu</a></div>
+  </div>
+
+  <!-- remote console: shown once connected to a live game -->
+  <div class="gmr" id="gmr-view" hidden>
+    <div class="gmr-head">
+      <span class="gmr-title">🎛 GM Console</span>
+      <span class="gmr-room" id="gmr-room"></span>
+    </div>
+    <div class="gmr-music">
+      <button class="gmr-btn" data-gmr-slot="correct" title="Play correct-answer music">✓ ♪</button>
+      <button class="gmr-btn" data-gmr-slot="wrong" title="Play wrong-answer music">✗ ♪</button>
+      <button class="gmr-btn" data-gmr-slot="waiting" title="Play waiting music">⏳ ♪</button>
+      <button class="gmr-btn" id="gmr-bg" title="Toggle background music">▶ BG</button>
+      <button class="gmr-btn" id="gmr-stop" title="Stop all music">■</button>
+    </div>
+    <div class="gmr-answers" id="gmr-answers"></div>
+    <div class="gmr-foot">
+      <button class="gmr-end" id="gmr-end">End Game</button>
+      <button class="gmr-btn" id="gmr-leave">Leave remote</button>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PLACEHOLDERS (built in later steps) ============ -->
 <section class="screen" id="screen-play">
   <div class="topbar">
@@ -731,6 +791,8 @@
       <p class="lobby-hint">Players: scan the code with your phone camera — or open this app's <b>player join page</b> (the <b>#join</b> link) — then enter the room code.</p>
       <div class="lobby-players" id="lobby-players"></div>
       <button class="join-btn" id="start-game-btn" disabled>Waiting for players…</button>
+      <br>
+      <button class="hint-btn" id="open-gm-btn">🎛 Open GM Console</button>
     </div>
 
     <div id="play-game-view" hidden>
@@ -740,18 +802,7 @@
 
   </div>
 
-  <div id="gm-strip" hidden>
-    <span class="strip-label">GM</span>
-    <button class="strip-btn" data-sting="correct" title="Play correct-answer music">✓ ♪</button>
-    <button class="strip-btn" data-sting="wrong" title="Play wrong-answer music">✗ ♪</button>
-    <button class="strip-btn" data-sting="waiting" title="Play waiting music">⏳ ♪</button>
-    <button class="strip-btn" id="bg-toggle" title="Toggle background music">▶ BG</button>
-    <button class="strip-btn" id="music-stop" title="Stop all music">■</button>
-    <span class="strip-spacer"></span>
-    <span class="strip-answer" id="strip-answer"></span>
-    <span class="strip-code" id="strip-code"></span>
-    <button class="strip-btn danger" id="end-game-btn">End</button>
-  </div>
+  <button id="gm-fab" hidden title="Open the GM Console in its own window">🎛 GM</button>
 </section>
 
 <section class="screen" id="screen-create">
@@ -787,8 +838,9 @@
     <ol>
       <li><b>Create a Game</b> — pick a game style, then fill in your questions. Everything autosaves as you type.</li>
       <li><b>Play a Game</b> — choose your game and a room opens with a 4-letter <b>room code</b> and a QR code.</li>
-      <li>Put your screen where everyone can see it (a TV works great), wait for players to appear in the lobby, then hit <b>Start Game</b>.</li>
-      <li>Run the show from your screen: open buzzers, reveal answers, and judge with the ✓ / ✗ buttons. The bottom strip has music controls.</li>
+      <li>From the lobby, open the <b>🎛 GM Console</b> — it pops out in its own window with your music controls, the <b>answer key</b> for the current question, and the End Game button. Keep it on a screen the players can't see (your laptop or phone, not the TV)! To run it from a different device, tap <b>🎛 GM Remote</b> on the main menu there and enter the private GM code shown in the console.</li>
+      <li>Put your main screen where everyone can see it (a TV works great), wait for players to appear in the lobby, then hit <b>Start Game</b>.</li>
+      <li>Run the show from your screen: open buzzers, reveal answers, and judge with the ✓ / ✗ buttons. Music and stingers play from the GM Console.</li>
       <li>Scores update live. Every game ends on a final scores screen — then close the room or host another.</li>
     </ol>
 
@@ -911,7 +963,7 @@
              '#join'      -> standalone player join page
              '#play' '#create' '#settings' -> GM sections      */
   var routes = { menu:'screen-menu', join:'screen-join', play:'screen-play',
-                 create:'screen-create', settings:'screen-settings' };
+                 create:'screen-create', settings:'screen-settings', gm:'screen-gm' };
 
   function currentRoute(){
     var h = location.hash.replace('#','').toLowerCase();
@@ -1159,7 +1211,7 @@
     if(!s || !pv.active) return;
     if(s.you){
       elPVName.textContent = s.you.name;
-      elPVScore.textContent = s.you.score;
+      elPVScore.textContent = s.you.score + ' PTS';
     }
     var st = elPVStage;
     st.innerHTML = '';
@@ -1225,7 +1277,7 @@
       st.appendChild(pvEl('div','pv-big' + (s.correct ? ' gold' : ''),
                           s.correct ? (s.headline || 'Correct!') : (s.loseText || 'Not this time')));
       st.appendChild(pvEl('div','pv-gain' + (gained > 0 ? '' : gained < 0 ? ' neg' : ' zero'),
-                          (gained >= 0 ? '+' : '') + gained + ' pts'));
+                          (gained >= 0 ? '+' : '') + gained + ' PTS'));
       if(s.correctText){
         var line = pvEl('div','pv-correct-line','Answer: ');
         line.appendChild(pvEl('b','', s.correctText));
@@ -1475,7 +1527,8 @@
   /* ================ SETTINGS (build step 2) ================ */
 
   /* ---- settings values: localStorage ---- */
-  var DEFAULTS = { answerTime:30, buzzTime:10, writeTime:60, musicVolume:80 };
+  var DEFAULTS = { answerTime:30, buzzTime:10, writeTime:60, musicVolume:80,
+                   musicVolumes:{correct:100, wrong:100, waiting:100, background:100} };
   function loadSettings(){
     var s = {};
     try{ s = JSON.parse(localStorage.getItem(DC.LS_SETTINGS)) || {}; }catch(e){}
@@ -1508,10 +1561,16 @@
   var volSlider = document.getElementById('vol-slider');
   var volVal    = document.getElementById('vol-val');
   function showVol(){ volSlider.value = settings.musicVolume; volVal.textContent = settings.musicVolume + '%'; }
+  function slotVol(id){ return settings.musicVolumes && typeof settings.musicVolumes[id] === 'number' ? settings.musicVolumes[id] : 100; }
+  function setSlotVol(id, value){ settings.musicVolumes = settings.musicVolumes || {}; settings.musicVolumes[id] = value; saveSettings(settings); }
+  function effectiveVolume(id){ return settings.musicVolume / 100 * slotVol(id) / 100; }
+  function effectiveBgVolume(){ return effectiveVolume('background') * 0.6; }
   volSlider.addEventListener('input', function(){
     settings.musicVolume = +this.value;
     saveSettings(settings); volVal.textContent = settings.musicVolume + '%';
-    previewAudio.volume = settings.musicVolume / 100;
+    if(previewSlot) previewAudio.volume = effectiveVolume(previewSlot);
+    else previewAudio.volume = settings.musicVolume / 100;
+    bgAudio.volume = effectiveBgVolume();
   });
   showVol();
 
@@ -1581,6 +1640,10 @@
       var file = card.querySelector('.slot-file');
       var play = card.querySelector('.slot-btn.play');
       var rem  = card.querySelector('.slot-btn.remove');
+      var slider = card.querySelector('.slot-vol-slider');
+      var val = card.querySelector('.slot-vol-val');
+      if(slider){ slider.value = slotVol(slot.id); }
+      if(val){ val.textContent = slotVol(slot.id) + '%'; }
       if(rec){
         file.textContent = rec.name + ' · ' + fmtSize(rec.size);
         file.classList.add('loaded');
@@ -1612,7 +1675,10 @@
     card.setAttribute('data-slot', slot.id);
     card.innerHTML =
       '<div class="slot-info"><div class="slot-name">'+slot.name+'</div>'+
-      '<div class="slot-file"></div></div>'+
+      '<div class="slot-file"></div>'+
+      '<div class="slot-volume"><label>Volume</label>'+
+      '<input type="range" class="slot-vol-slider" min="0" max="100" step="5" aria-label="'+slot.name+' volume">'+
+      '<span class="slot-vol-val">100%</span></div></div>'+
       '<div class="slot-actions">'+
       '<button class="slot-btn play" data-slot="'+slot.id+'" aria-label="Preview '+slot.name+'" disabled>▶</button>'+
       '<button class="slot-btn upload" aria-label="Upload '+slot.name+' music">Upload</button>'+
@@ -1647,6 +1713,18 @@
         previewSlot = slot.id;
         btn.classList.add('playing'); btn.textContent = '■';
       });
+    });
+
+    var slotVolSlider = card.querySelector('.slot-vol-slider');
+    var slotVolVal = card.querySelector('.slot-vol-val');
+    slotVolSlider.value = slotVol(slot.id);
+    slotVolVal.textContent = slotVol(slot.id) + '%';
+    slotVolSlider.addEventListener('input', function(){
+      var v = +this.value;
+      slotVolVal.textContent = v + '%';
+      setSlotVol(slot.id, v);
+      if(previewSlot === slot.id) previewAudio.volume = effectiveVolume(slot.id);
+      if(slot.id === 'background') bgAudio.volume = effectiveBgVolume();
     });
 
     card.querySelector('.slot-btn.remove').addEventListener('click', function(){
@@ -2662,7 +2740,7 @@
   var elGameView  = document.getElementById('play-game-view');
   var elStage     = document.getElementById('stage');
   var elScoreRow  = document.getElementById('score-row');
-  var elStrip     = document.getElementById('gm-strip');
+  var elGmFab     = document.getElementById('gm-fab');
   var elPlayScr   = document.getElementById('screen-play');
 
   var host = null;   /* active session: {peer, code, game, phase, players, ctl} */
@@ -2671,7 +2749,7 @@
     elPickView.hidden  = v !== 'pick';
     elLobbyView.hidden = v !== 'lobby';
     elGameView.hidden  = v !== 'game';
-    elStrip.hidden     = v === 'pick';
+    elGmFab.hidden     = v === 'pick';
     elPlayScr.classList.toggle('hosting', v !== 'pick');
     document.getElementById('play-inner').classList.toggle('wide', v === 'game');
     document.getElementById('play-back').textContent = v === 'pick' ? '← Menu' : '← Leave';
@@ -2740,12 +2818,14 @@
       var peer = new Peer('duelcrate-' + code, { debug: 0 });
       peer.on('open', function(){
         host = { peer:peer, code:code, game:JSON.parse(JSON.stringify(game)),
-                 phase:'lobby', players:{}, ctl:null };
+                 phase:'lobby', players:{}, ctl:null,
+                 gmPeer:null, gmCode:null, gmConns:[] };
         document.getElementById('lobby-code').textContent = code;
-        document.getElementById('strip-code').textContent = code;
+        gmRenderAll();
         renderLobbyQR();
         renderLobbyPlayers();
         showPlayView('lobby');
+        startGMPeer();
       });
       peer.on('connection', function(conn){
         conn.on('data', function(d){ handleMsg(conn, d); });
@@ -2766,6 +2846,11 @@
     stopAllMusic(); stopTimer();
     var sess = host;
     host = null;
+    if(sess.gmConns) sess.gmConns.forEach(function(c){
+      try{ c.send({ t:'gm-state', closed:true }); }catch(e){}
+    });
+    setTimeout(function(){ try{ if(sess.gmPeer) sess.gmPeer.destroy(); }catch(e){} }, 200);
+    gmSetAnswer(null); gmRenderAll();
     Object.keys(sess.players).forEach(function(pid){
       var p = sess.players[pid];
       if(p.connected){ try{ p.conn.send({ t:'state', mode:'closed' }); }catch(e){} }
@@ -2917,7 +3002,7 @@
       var c = document.createElement('span');
       c.className = 'schip' + (p.connected?'':' gone') + (p.score<0?' neg':'');
       var n = document.createElement('span'); n.textContent = p.name;
-      var s = document.createElement('span'); s.className='pts'; s.textContent = p.score;
+      var s = document.createElement('span'); s.className='pts'; s.textContent = p.score + ' PTS';
       c.appendChild(n); c.appendChild(s);
       elScoreRow.appendChild(c);
     });
@@ -2945,16 +3030,9 @@
     return b;
   }
 
-  /* show the current clue's answer in the GM strip (host-only reference) */
+  /* legacy shim: single-answer display now routes to the GM Console */
   function setStripAnswer(text){
-    var el = document.getElementById('strip-answer');
-    if(!el) return;
-    el.innerHTML = '';
-    if(text){
-      el.appendChild(document.createTextNode('A: '));
-      var b = document.createElement('b'); b.textContent = text;
-      el.appendChild(b);
-    }
+    gmSetAnswer(text ? [{ text: text }] : null);
   }
 
   /* show a stored question image on the GM stage (async, cached) */
@@ -3101,7 +3179,7 @@
       if(ok){
         buzzedP.score += val;
         renderScoreRow();
-        showAnswer(buzzedP.name + ' takes ' + val + '!');
+        showAnswer(buzzedP.name + ' takes ' + val + ' PTS!');
       }else{
         buzzedP.score -= val;
         locked[buzzedP.pid] = true;
@@ -3388,6 +3466,7 @@
       v.appendChild(choiceGrid);
       v.appendChild(tb); v.appendChild(answeredNote); v.appendChild(actsEl);
       elStage.appendChild(v);
+      gmSetAnswer([{ text: q().choices[q().correct] }]);
       pushAll();
     }
     function openAnswers(){
@@ -3442,6 +3521,7 @@
     }
     function finish(){
       host.phase = 'ended'; stopTimer();
+      gmSetAnswer(null);
       renderFinal(); pushAll();
     }
     return {
@@ -3500,6 +3580,13 @@
       ct.textContent = q().q;
       v.appendChild(ct);
       var board = document.createElement('div'); board.className = 'fs-board';
+      /* answers stack in one column; a second column appears past four */
+      var na = answers().length;
+      var fsRows = na > 4 ? Math.ceil(na / 2) : na;
+      board.style.gridTemplateColumns = na > 4 ? '1fr 1fr' : '1fr';
+      board.style.gridAutoFlow = 'column';
+      board.style.gridTemplateRows = 'repeat(' + fsRows + ', auto)';
+      board.style.maxWidth = na > 4 ? '660px' : '440px';
       slotEls = [];
       answers().forEach(function(a, i){
         var s = document.createElement('div'); s.className = 'fs-slot';
@@ -3508,6 +3595,9 @@
         slotEls.push(s); board.appendChild(s);
       });
       v.appendChild(board);
+      gmSetAnswer(answers().map(function(a){
+        return { text: a.text, pts: (a.pts || 0) };
+      }));
       banner = document.createElement('div'); banner.className = 'buzz-banner wait';
       banner.textContent = 'Buzzers are closed';
       v.appendChild(banner);
@@ -3581,7 +3671,7 @@
       buzzedP.score += (a.pts || 0);
       renderScoreRow();
       banner.className = 'buzz-banner wait';
-      banner.textContent = '✓ ' + buzzedP.name + ' takes ' + (a.pts || 0) + '!';
+      banner.textContent = '✓ ' + buzzedP.name + ' takes ' + (a.pts || 0) + ' PTS!';
       clearHot();
       buzzedP = null; buzz = 'closed';
       drawClosed();
@@ -3612,7 +3702,7 @@
       s.classList.remove('hot');
       s.textContent = '';
       var tx = document.createElement('span'); tx.textContent = a.text;
-      var pt = document.createElement('span'); pt.className = 'fs-pts'; pt.textContent = a.pts || 0;
+      var pt = document.createElement('span'); pt.className = 'fs-pts'; pt.textContent = (a.pts || 0) + ' PTS';
       s.appendChild(tx); s.appendChild(pt);
     }
     function revealRest(){
@@ -3624,7 +3714,7 @@
       drawClosed();
       pushAll();
     }
-    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    function finish(){ host.phase = 'ended'; stopTimer(); gmSetAnswer(null); renderFinal(); pushAll(); }
     return {
       start: next,
       onBuzz: onBuzz,
@@ -3681,7 +3771,7 @@
       v.appendChild(ct);
       stageImg(q().img, v);
       var hint = document.createElement('div'); hint.className = 'answered-note';
-      hint.textContent = 'Closest without going over wins ' + qpts() + ' pts';
+      hint.textContent = 'Closest without going over wins ' + qpts() + ' PTS';
       v.appendChild(hint);
       var tb = document.createElement('div'); tb.className = 'timer-bar';
       timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
@@ -3693,6 +3783,7 @@
       actsEl.appendChild(stageBtn('Open Guessing ▶','gold', openGuessing));
       v.appendChild(actsEl);
       elStage.appendChild(v);
+      gmSetAnswer([{ text: String(parseFloat(q().answer)) }]);
       pushAll();
     }
     function openGuessing(){
@@ -3770,7 +3861,7 @@
       acts.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Question ▶','gold', next));
       pushAll();
     }
-    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    function finish(){ host.phase = 'ended'; stopTimer(); gmSetAnswer(null); renderFinal(); pushAll(); }
     return {
       start: next,
       onBuzz: function(){},
@@ -3843,6 +3934,7 @@
       actsEl.appendChild(stageBtn('Start Writing ▶','gold', startWriting));
       v.appendChild(actsEl);
       elStage.appendChild(v);
+      gmSetAnswer(null);
       pushAll();
     }
     function startWriting(){
@@ -4036,7 +4128,7 @@
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Prompt ▶','gold', next));
     }
-    function finish(){ host.phase = 'ended'; stopTimer(); renderFinal(); pushAll(); }
+    function finish(){ host.phase = 'ended'; stopTimer(); gmSetAnswer(null); renderFinal(); pushAll(); }
     return {
       start: next,
       onBuzz: function(){},
@@ -4095,7 +4187,7 @@
       var pl = document.createElement('span'); pl.className='place';
       pl.textContent = i===0 ? '🏆' : '#'+(i+1);
       var nm = document.createElement('span'); nm.textContent = p.name;
-      var pt = document.createElement('span'); pt.className='pts'; pt.textContent = p.score;
+      var pt = document.createElement('span'); pt.className='pts'; pt.textContent = p.score + ' PTS';
       row.appendChild(pl); row.appendChild(nm); row.appendChild(pt);
       list.appendChild(row);
     });
@@ -4107,7 +4199,7 @@
     renderScoreRow();
   }
 
-  /* ---- GM strip: music ---- */
+  /* ---- music (driven from the GM Console) ---- */
   var stingAudio = new Audio(), bgAudio = new Audio();
   bgAudio.loop = true;
   var musicUrls = {};
@@ -4119,40 +4211,381 @@
       return musicUrls[slot];
     });
   }
-  document.querySelectorAll('[data-sting]').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var slot = btn.getAttribute('data-sting');
-      slotUrl(slot).then(function(url){
-        if(!url){ DC.toast('No '+slot+' music uploaded — add it in Settings.'); return; }
-        stingAudio.src = url;
-        stingAudio.volume = settings.musicVolume/100;
-        stingAudio.play();
-      });
+  function playSting(slot){
+    slotUrl(slot).then(function(url){
+      if(!url){ DC.toast('No '+slot+' music uploaded — add it in Settings.'); return; }
+      stingAudio.src = url;
+      stingAudio.volume = effectiveVolume(slot);
+      stingAudio.play();
     });
-  });
-  var bgBtn = document.getElementById('bg-toggle');
-  bgBtn.addEventListener('click', function(){
-    if(!bgAudio.paused){ bgAudio.pause(); bgBtn.classList.remove('on'); bgBtn.textContent='▶ BG'; return; }
+  }
+  function toggleBg(){
+    if(!bgAudio.paused){ bgAudio.pause(); gmSyncMusic(); return; }
     slotUrl('background').then(function(url){
       if(!url){ DC.toast('No background music uploaded — add it in Settings.'); return; }
       if(bgAudio.src !== url) bgAudio.src = url;
-      bgAudio.volume = settings.musicVolume/100 * 0.6;
+      bgAudio.volume = effectiveBgVolume();
       bgAudio.play();
-      bgBtn.classList.add('on'); bgBtn.textContent='❚❚ BG';
+      gmSyncMusic();
     });
-  });
-  document.getElementById('music-stop').addEventListener('click', stopAllMusic);
+  }
   function stopAllMusic(){
     stingAudio.pause();
     bgAudio.pause();
-    bgBtn.classList.remove('on'); bgBtn.textContent='▶ BG';
+    gmSyncMusic();
   }
   volSlider.addEventListener('input', function(){
-    stingAudio.volume = settings.musicVolume/100;
-    bgAudio.volume = settings.musicVolume/100 * 0.6;
+    stingAudio.volume = previewSlot ? effectiveVolume(previewSlot) : settings.musicVolume/100;
+    bgAudio.volume = effectiveBgVolume();
   });
-  document.getElementById('end-game-btn').addEventListener('click', function(){
-    armButton(this, 'Sure?', function(){ endSession(true); });
+
+  /* ---- GM Console: a separate host-only window ----
+     The main window (the stage everyone watches) owns the session;
+     the console is a same-origin popup that the main window renders
+     into directly — music controls, the answer key for the current
+     question, and the End Game button all live there. */
+  var gmWin = null, gmAnswerLines = null;
+  function openGMPage(){
+    if(gmWin && !gmWin.closed){ gmWin.focus(); gmRenderAll(); return; }
+    gmWin = window.open('', 'duelcrate_gm', 'width=440,height=680');
+    if(!gmWin){ DC.toast('Popup blocked — allow popups to open the GM Console.'); return; }
+    gmBuild();
+    gmRenderAll();
+  }
+  function gmCss(){
+    return 'body{margin:0;background:#150E2D;color:#EFEAFF;font-family:Outfit,Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh}' +
+    'header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:2px solid #3A2A72}' +
+    'h1{font-family:Bungee,\'Arial Black\',sans-serif;font-size:16px;margin:0;color:#FFC42E;letter-spacing:.04em}' +
+    '#gm-code{font-family:Bungee,\'Arial Black\',sans-serif;color:#FFC42E;letter-spacing:.2em;font-size:15px}' +
+    '.gm-remote{padding:10px 18px;border-bottom:2px solid #3A2A72;color:#9A8BC8;font-size:13px;line-height:1.5}' +
+    '.gm-remote b{font-family:Bungee,\'Arial Black\',sans-serif;color:#FF4D9D;letter-spacing:.18em;font-size:14px}' +
+    '.gm-music{display:flex;gap:8px;padding:14px 18px;flex-wrap:wrap;border-bottom:2px solid #3A2A72}' +
+    '.gm-volumes{display:grid;gap:10px;width:100%;margin-top:10px}' +
+    '.gm-volume-row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px}' +
+    '.gm-vol-label{font-size:12px;color:#9A8BC8;text-align:left}' +
+    '.gm-vol-slider{width:100%;accent-color:#7EE787;height:6px}' +
+    '.gm-vol-value{width:42px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}' +
+    'button{font-family:Outfit,Arial,sans-serif;font-weight:700;font-size:15px;padding:10px 14px;border-radius:10px;border:2px solid #3A2A72;background:#231843;color:#EFEAFF;cursor:pointer}' +
+    'button:hover{border-color:#FFC42E}' +
+    '#gm-bg.on{border-color:#7EE787;color:#7EE787}' +
+    'main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:18px;gap:8px;text-align:center}' +
+    '.gm-label{color:#9A8BC8;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2px}' +
+    '.gm-line{display:flex;align-items:center;gap:12px;justify-content:space-between;width:100%;max-width:360px;background:#231843;border:2px solid #3A2A72;border-radius:10px;padding:10px 14px;font-size:16px;text-align:left;box-sizing:border-box}' +
+    '.gm-line b{color:#FFC42E;white-space:nowrap}' +
+    '.gm-main-answer{font-family:Bungee,\'Arial Black\',sans-serif;font-size:24px;color:#FFC42E;text-shadow:0 0 18px #FFC42E44;word-break:break-word;max-width:380px}' +
+    '.gm-empty{color:#5D4F86;font-size:14px}' +
+    'footer{padding:14px 18px;border-top:2px solid #3A2A72;display:flex;justify-content:center}' +
+    '#gm-end{border-color:#7A2450;color:#FF4D9D;width:100%;max-width:360px}';
+  }
+  function gmBuild(){
+    var doc = gmWin.document;
+    doc.open();
+    doc.write('<!DOCTYPE html><html><head><meta charset="utf-8">' +
+      '<title>DuelCrate \u2014 GM Console</title>' +
+      '<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">' +
+      '<style>' + gmCss() + '</style></head><body>' +
+      '<header><h1>\uD83C\uDF9B GM Console</h1><span id="gm-code"></span></header>' +
+      '<div class="gm-remote" id="gm-remote"></div>' +
+      '<section class="gm-music">' +
+        '<button data-slot="correct" title="Play correct-answer music">\u2713 \u266A</button>' +
+        '<button data-slot="wrong" title="Play wrong-answer music">\u2717 \u266A</button>' +
+        '<button data-slot="waiting" title="Play waiting music">\u23F3 \u266A</button>' +
+        '<button id="gm-bg" title="Toggle background music">\u25B6 BG</button>' +
+        '<button id="gm-stop" title="Stop all music">\u25A0</button>' +
+        '<div class="gm-volumes" id="gm-volumes"></div>' +
+      '</section>' +
+      '<main id="gm-answers"></main>' +
+      '<footer><button id="gm-end">End Game</button></footer>' +
+      '</body></html>');
+    doc.close();
+    doc.querySelectorAll('[data-slot]').forEach(function(b){
+      b.addEventListener('click', function(){ playSting(b.getAttribute('data-slot')); });
+    });
+    var gmVolumes = doc.getElementById('gm-volumes');
+    if(gmVolumes){
+      SLOTS.forEach(function(slot){
+        var row = doc.createElement('div'); row.className = 'gm-volume-row';
+        var label = doc.createElement('div'); label.className = 'gm-vol-label';
+        label.textContent = slot.name;
+        var input = doc.createElement('input'); input.type = 'range'; input.min = 0; input.max = 100; input.step = 5;
+        input.value = slotVol(slot.id);
+        input.className = 'gm-vol-slider';
+        input.setAttribute('aria-label', slot.name + ' volume');
+        var value = doc.createElement('div'); value.className = 'gm-vol-value'; value.textContent = slotVol(slot.id) + '%';
+        input.addEventListener('input', function(){
+          value.textContent = input.value + '%';
+          setSlotVol(slot.id, +input.value);
+          if(previewSlot === slot.id) previewAudio.volume = effectiveVolume(slot.id);
+          if(slot.id === 'background') bgAudio.volume = effectiveBgVolume();
+        });
+        row.appendChild(label);
+        row.appendChild(input);
+        row.appendChild(value);
+        gmVolumes.appendChild(row);
+      });
+    }
+    doc.getElementById('gm-bg').addEventListener('click', toggleBg);
+    doc.getElementById('gm-stop').addEventListener('click', stopAllMusic);
+    doc.getElementById('gm-end').addEventListener('click', function(){
+      var b = this;
+      if(b._armed){
+        clearTimeout(b._t); b._armed = false; b.textContent = 'End Game';
+        endSession(true);
+        return;
+      }
+      b._armed = true; b.textContent = 'Sure? Tap again';
+      b._t = setTimeout(function(){ b._armed = false; b.textContent = 'End Game'; }, 2500);
+    });
+  }
+  function gmRenderAll(){
+    if(!gmWin || gmWin.closed) return;
+    var el = gmWin.document.getElementById('gm-code');
+    if(el) el.textContent = host ? host.code : '\u2014';
+    var rm = gmWin.document.getElementById('gm-remote');
+    if(rm){
+      rm.innerHTML = '';
+      if(host && host.gmCode){
+        rm.appendChild(gmWin.document.createTextNode('Control from another device \u2014 GM code: '));
+        var b = gmWin.document.createElement('b'); b.textContent = host.gmCode;
+        rm.appendChild(b);
+        rm.appendChild(gmWin.document.createTextNode(' (main menu \u2192 \uD83C\uDF9B GM Remote). Keep it private!'));
+      }else if(host){
+        rm.textContent = 'Remote link starting\u2026';
+      }else{
+        rm.textContent = 'No active room.';
+      }
+    }
+    gmSyncMusic();
+    gmRenderAnswers();
+  }
+  function gmSyncMusic(){
+    if(gmWin && !gmWin.closed){
+      var b = gmWin.document.getElementById('gm-bg');
+      if(b){
+        if(bgAudio.paused){ b.classList.remove('on'); b.textContent = '\u25B6 BG'; }
+        else { b.classList.add('on'); b.textContent = '\u275A\u275A BG'; }
+      }
+    }
+    gmBroadcast();
+  }
+  function gmRenderAnswers(){
+    if(!gmWin || gmWin.closed) return;
+    var doc = gmWin.document;
+    var box = doc.getElementById('gm-answers');
+    if(!box) return;
+    box.innerHTML = '';
+    var lbl = doc.createElement('div'); lbl.className = 'gm-label';
+    lbl.textContent = 'Answer key';
+    box.appendChild(lbl);
+    if(!gmAnswerLines || !gmAnswerLines.length){
+      var e = doc.createElement('div'); e.className = 'gm-empty';
+      e.textContent = 'Answers for the current question appear here.';
+      box.appendChild(e);
+      return;
+    }
+    if(gmAnswerLines.length === 1 && gmAnswerLines[0].pts === undefined){
+      var big = doc.createElement('div'); big.className = 'gm-main-answer';
+      big.textContent = gmAnswerLines[0].text;
+      box.appendChild(big);
+      return;
+    }
+    gmAnswerLines.forEach(function(l){
+      var row = doc.createElement('div'); row.className = 'gm-line';
+      var t = doc.createElement('span'); t.textContent = l.text;
+      row.appendChild(t);
+      if(l.pts !== undefined){
+        var p = doc.createElement('b'); p.textContent = l.pts;
+        row.appendChild(p);
+      }
+      box.appendChild(row);
+    });
+  }
+  function gmSetAnswer(lines){
+    gmAnswerLines = (lines && lines.length) ? lines : null;
+    gmRenderAnswers();
+    gmBroadcast();
+  }
+
+  /* ---- GM Remote: a second private peer for cross-device control ----
+     The host session opens 'duelcrate-gm-<code>'; the code appears only
+     inside the GM Console, never on the shared screen. Any device that
+     knows it gets the same controls over PeerJS. */
+  function startGMPeer(){
+    if(!host || typeof Peer === 'undefined') return;
+    var attempts = 0;
+    (function tryGM(){
+      var code = genCode();
+      var gp = new Peer('duelcrate-gm-' + code, { debug: 0 });
+      gp.on('open', function(){
+        if(!host){ try{ gp.destroy(); }catch(e){} return; }
+        host.gmPeer = gp; host.gmCode = code;
+        gmRenderAll();
+      });
+      gp.on('connection', function(conn){
+        conn.on('data', function(d){ handleGMMsg(conn, d); });
+        conn.on('close', function(){
+          if(host && host.gmConns){
+            host.gmConns = host.gmConns.filter(function(c){ return c !== conn; });
+          }
+        });
+      });
+      gp.on('error', function(err){
+        if(err.type === 'unavailable-id' && attempts < 5){
+          attempts++; try{ gp.destroy(); }catch(e){} tryGM();
+        }
+      });
+    })();
+  }
+  function handleGMMsg(conn, d){
+    if(!host || !d) return;
+    if(d.t === 'gm-hello'){
+      if(host.gmConns.indexOf(conn) < 0) host.gmConns.push(conn);
+      send(conn, gmStateMsg());
+    }else if(d.t === 'gm-cmd'){
+      if(host.gmConns.indexOf(conn) < 0) return;   /* must say hello first */
+      if(d.cmd === 'sting' && d.slot) playSting(String(d.slot));
+      else if(d.cmd === 'bg') toggleBg();
+      else if(d.cmd === 'stop') stopAllMusic();
+      else if(d.cmd === 'end') endSession(true);
+    }
+  }
+  function gmStateMsg(){
+    return { t:'gm-state', room: host ? host.code : null,
+             answers: gmAnswerLines, bg: !bgAudio.paused };
+  }
+  function gmBroadcast(){
+    if(!host || !host.gmConns || !host.gmConns.length) return;
+    var msg = gmStateMsg();
+    host.gmConns.forEach(function(c){ send(c, msg); });
+  }
+  document.getElementById('gm-fab').addEventListener('click', openGMPage);
+  document.getElementById('open-gm-btn').addEventListener('click', openGMPage);
+
+  /* ---- GM Remote client (this device controls a game hosted elsewhere) ---- */
+  var gmr = null;   /* { peer, conn } */
+  var gmrCard = document.getElementById('gm-join-card');
+  var gmrView = document.getElementById('gmr-view');
+  var gmrMsg  = document.getElementById('gm-join-msg');
+  function gmrStatus(t){ gmrMsg.textContent = t || ''; }
+  function gmrShowCard(){
+    gmrView.hidden = true; gmrCard.hidden = false;
+  }
+  function gmrCleanup(){
+    if(gmr){
+      var g = gmr; gmr = null;
+      try{ g.peer.destroy(); }catch(e){}
+    }
+  }
+  function gmrFail(msg){
+    gmrCleanup();
+    gmrShowCard();
+    gmrStatus(msg || '');
+    var go = document.getElementById('gm-join-go');
+    go.disabled = false; go.textContent = 'Connect';
+  }
+  function gmrConnect(code){
+    gmrCleanup();
+    gmrStatus('Connecting\u2026');
+    var go = document.getElementById('gm-join-go');
+    go.disabled = true; go.textContent = 'Connecting\u2026';
+    var peer = new Peer({ debug: 0 });
+    gmr = { peer: peer, conn: null };
+    var dial = setTimeout(function(){
+      if(gmr && gmr.peer === peer) gmrFail('Couldn\u2019t reach the game. Check the code and try again.');
+    }, 10000);
+    peer.on('open', function(){
+      if(!gmr || gmr.peer !== peer) return;
+      var conn = peer.connect('duelcrate-gm-' + code, { reliable: true });
+      gmr.conn = conn;
+      conn.on('open', function(){
+        clearTimeout(dial);
+        try{ conn.send({ t:'gm-hello' }); }catch(e){}
+      });
+      conn.on('data', function(d){ gmrOnData(conn, d); });
+      conn.on('close', function(){
+        if(gmr && gmr.conn === conn) gmrFail('Connection to the game was lost.');
+      });
+    });
+    peer.on('error', function(err){
+      clearTimeout(dial);
+      if(!gmr || gmr.peer !== peer) return;
+      if(err.type === 'peer-unavailable') gmrFail('No game found with that GM code.');
+      else gmrFail('Network error: ' + err.type);
+    });
+  }
+  function gmrOnData(conn, d){
+    if(!gmr || gmr.conn !== conn || !d || d.t !== 'gm-state') return;
+    if(d.closed){ gmrFail('The game has ended.'); return; }
+    gmrCard.hidden = true; gmrView.hidden = false;
+    var go = document.getElementById('gm-join-go');
+    go.disabled = false; go.textContent = 'Connect';
+    gmrStatus('');
+    document.getElementById('gmr-room').textContent = d.room ? 'Room ' + d.room : '';
+    var bgB = document.getElementById('gmr-bg');
+    if(d.bg){ bgB.classList.add('on'); bgB.textContent = '\u275A\u275A BG'; }
+    else { bgB.classList.remove('on'); bgB.textContent = '\u25B6 BG'; }
+    var box = document.getElementById('gmr-answers');
+    box.innerHTML = '';
+    var lbl = document.createElement('div'); lbl.className = 'gm-label';
+    lbl.textContent = 'Answer key';
+    box.appendChild(lbl);
+    var lines = d.answers;
+    if(!lines || !lines.length){
+      var e = document.createElement('div'); e.className = 'gm-empty';
+      e.textContent = 'Answers for the current question appear here.';
+      box.appendChild(e);
+    }else if(lines.length === 1 && lines[0].pts === undefined){
+      var big = document.createElement('div'); big.className = 'gm-main-answer';
+      big.textContent = lines[0].text;
+      box.appendChild(big);
+    }else{
+      lines.forEach(function(l){
+        var row = document.createElement('div'); row.className = 'gm-line';
+        var t = document.createElement('span'); t.textContent = l.text;
+        row.appendChild(t);
+        if(l.pts !== undefined){
+          var p = document.createElement('b'); p.textContent = l.pts;
+          row.appendChild(p);
+        }
+        box.appendChild(row);
+      });
+    }
+  }
+  function gmrSend(m){
+    if(gmr && gmr.conn){ try{ gmr.conn.send(m); }catch(e){} }
+  }
+  document.getElementById('gm-join-go').addEventListener('click', function(){
+    var code = document.getElementById('gm-code-input').value.trim().toUpperCase();
+    if(!/^[A-Z]{4}$/.test(code)){ gmrStatus('Enter the 4-letter GM code from the GM Console.'); return; }
+    if(typeof Peer === 'undefined'){ gmrStatus('Couldn\u2019t load the network library. Check your connection.'); return; }
+    gmrConnect(code);
+  });
+  document.getElementById('gm-code-input').addEventListener('input', function(){
+    this.value = this.value.toUpperCase().replace(/[^A-Z]/g,'');
+  });
+  document.getElementById('gm-code-input').addEventListener('keydown', function(e){
+    if(e.key === 'Enter') document.getElementById('gm-join-go').click();
+  });
+  document.querySelectorAll('[data-gmr-slot]').forEach(function(b){
+    b.addEventListener('click', function(){
+      gmrSend({ t:'gm-cmd', cmd:'sting', slot: b.getAttribute('data-gmr-slot') });
+    });
+  });
+  document.getElementById('gmr-bg').addEventListener('click', function(){ gmrSend({ t:'gm-cmd', cmd:'bg' }); });
+  document.getElementById('gmr-stop').addEventListener('click', function(){ gmrSend({ t:'gm-cmd', cmd:'stop' }); });
+  document.getElementById('gmr-end').addEventListener('click', function(){
+    armButton(this, 'Sure? Tap again', function(){ gmrSend({ t:'gm-cmd', cmd:'end' }); });
+  });
+  document.getElementById('gmr-leave').addEventListener('click', function(){
+    gmrCleanup(); gmrShowCard(); gmrStatus('');
+    location.hash = '';
+  });
+  document.getElementById('gm-remote-btn').addEventListener('click', function(){ location.hash = '#gm'; });
+  document.getElementById('gm-to-menu').addEventListener('click', function(e){
+    e.preventDefault(); location.hash = '';
+  });
+  window.addEventListener('hashchange', function(){
+    if(currentRoute() !== 'gm' && gmr){ gmrCleanup(); gmrShowCard(); gmrStatus(''); }
   });
 
   /* refresh host list whenever Play opens */
