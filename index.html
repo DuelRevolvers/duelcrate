@@ -286,6 +286,10 @@
     background:transparent;border:2px dashed #4A3A8C;color:var(--bulb);margin-bottom:18px;
   }
   .new-game-btn:hover{border-color:var(--bulb);background:#FFC42E0D}
+  .new-game-btn.ghost{
+    color:var(--ink-dim);font-size:15px;padding:11px;margin-top:-8px;
+  }
+  .new-game-btn.ghost:hover{border-color:var(--spot);color:var(--ink);background:#FF4D9D0D}
   .game-card{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
     padding:16px 18px;margin-bottom:12px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
@@ -620,6 +624,8 @@
   .strip-btn.danger{border-color:#7A2450;color:var(--spot)}
   .strip-btn:disabled{opacity:.35;cursor:default}
   .strip-spacer{flex:1}
+  .strip-answer{color:var(--ink-dim);font-size:13px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .strip-answer b{color:var(--bulb);font-weight:700}
   .strip-code{font-family:var(--display);color:var(--bulb);letter-spacing:.2em;font-size:15px}
   @media(max-width:540px){ .strip-label,.strip-code{display:none} }
 
@@ -742,6 +748,7 @@
     <button class="strip-btn" id="bg-toggle" title="Toggle background music">▶ BG</button>
     <button class="strip-btn" id="music-stop" title="Stop all music">■</button>
     <span class="strip-spacer"></span>
+    <span class="strip-answer" id="strip-answer"></span>
     <span class="strip-code" id="strip-code"></span>
     <button class="strip-btn danger" id="end-game-btn">End</button>
   </div>
@@ -756,6 +763,8 @@
 
     <div id="create-list-view">
       <button class="new-game-btn" id="new-game-btn">✚ &nbsp;New Game</button>
+      <button class="new-game-btn ghost" id="import-game-btn">⤒ &nbsp;Import Game</button>
+      <input type="file" id="import-game-file" accept=".json,application/json" hidden>
       <div id="games-list"></div>
     </div>
 
@@ -1180,17 +1189,26 @@
       st.appendChild(pvEl('div','pv-note', s.note || 'Buzzers closed'));
     }
     else if(m === 'choices'){
-      st.appendChild(pvEl('div','pv-note', s.note || 'Pick your answer!'));
+      var chNote = pvEl('div','pv-note',
+        s.picked !== undefined ? 'Tap another to change your answer!' : (s.note || 'Pick your answer!'));
+      st.appendChild(chNote);
       var wrap = pvEl('div','pv-choices');
       (s.choices || []).forEach(function(ch, i){
         var c = pvEl('button','pv-choice');
+        if(ch.orig === s.picked) c.classList.add('picked');
         c.appendChild(pvEl('span','letter', ch.label || String.fromCharCode(65 + i)));
         c.appendChild(pvEl('span','', ch.text));
         c.addEventListener('click', function(){
           pvSend({ t:'answer', choice: ch.orig });
-          /* optimistic lock; the host pushes 'answered' right after */
-          wrap.querySelectorAll('.pv-choice').forEach(function(x){ x.disabled = true; });
-          c.classList.add('picked');
+          if(s.editable){
+            /* answers can change until the timer ends — just move the highlight */
+            wrap.querySelectorAll('.pv-choice').forEach(function(x){ x.classList.remove('picked'); });
+            c.classList.add('picked');
+          }else{
+            /* optimistic lock; the host pushes 'answered' right after */
+            wrap.querySelectorAll('.pv-choice').forEach(function(x){ x.disabled = true; });
+            c.classList.add('picked');
+          }
         });
         wrap.appendChild(c);
       });
@@ -1205,7 +1223,7 @@
       var gained = s.gained || 0;
       st.appendChild(pvEl('div','pv-result-icon', s.correct ? '\uD83C\uDF89' : '\u274C'));
       st.appendChild(pvEl('div','pv-big' + (s.correct ? ' gold' : ''),
-                          s.correct ? 'Correct!' : 'Not this time'));
+                          s.correct ? (s.headline || 'Correct!') : (s.loseText || 'Not this time')));
       st.appendChild(pvEl('div','pv-gain' + (gained > 0 ? '' : gained < 0 ? ' neg' : ' zero'),
                           (gained >= 0 ? '+' : '') + gained + ' pts'));
       if(s.correctText){
@@ -1245,20 +1263,27 @@
       var tinp = document.createElement('input');
       tinp.type = 'text'; tinp.maxLength = 120;
       tinp.placeholder = 'Your answer\u2026'; tinp.autocomplete = 'off';
-      var tnote = pvEl('div','pv-note','Type your answer before the timer runs out!');
-      var tgo = pvEl('button','join-btn','Lock in answer');
+      if(s.current !== undefined && s.current !== null) tinp.value = s.current;
+      var tnote = pvEl('div','pv-note',
+        s.current ? 'Locked in \u2014 you can still edit it until writing closes!'
+                  : 'Type your answer before the timer runs out!');
+      var tgo = pvEl('button','join-btn', s.current ? 'Update answer' : 'Lock in answer');
       var sendText = function(){
         var val = tinp.value.trim();
         if(!val){ tnote.textContent = 'Type your answer first.'; return; }
         pvSend({ t:'text', answer: val });
-        tinp.disabled = true; tgo.disabled = true;
+        if(s.editable){
+          tnote.textContent = 'Sent! You can still edit until writing closes.';
+        }else{
+          tinp.disabled = true; tgo.disabled = true;
+        }
       };
       tgo.addEventListener('click', sendText);
       tinp.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendText(); });
       tform.appendChild(tinp); tform.appendChild(tgo);
       st.appendChild(tform);
       st.appendChild(tnote);
-      tinp.focus();
+      if(!s.current) tinp.focus();
     }
     else if(m === 'guess'){
       st.appendChild(pvEl('div','pv-big gold','Closest Wins'));
@@ -1267,20 +1292,25 @@
       var ginp = document.createElement('input');
       ginp.type = 'number'; ginp.step = 'any';
       ginp.inputMode = 'decimal'; ginp.placeholder = '0';
-      var gnote = pvEl('div','pv-note','Closest without going over wins \u2014 don\u2019t bust!');
-      var ggo = pvEl('button','join-btn','Lock in guess');
+      if(s.current !== undefined && s.current !== null) ginp.value = s.current;
+      var gnote = pvEl('div','pv-note',
+        s.current !== undefined && s.current !== null
+          ? 'Locked in \u2014 you can still change it before the reveal!'
+          : 'Closest without going over wins \u2014 don\u2019t bust!');
+      var ggo = pvEl('button','join-btn',
+        s.current !== undefined && s.current !== null ? 'Update guess' : 'Lock in guess');
       var sendGuess = function(){
         var n = parseFloat(ginp.value);
         if(!isFinite(n)){ gnote.textContent = 'Enter a number first.'; return; }
         pvSend({ t:'guess', value: n });
-        ginp.disabled = true; ggo.disabled = true;
+        gnote.textContent = 'Sent! You can still change it before the reveal.';
       };
       ggo.addEventListener('click', sendGuess);
       ginp.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendGuess(); });
       gform.appendChild(ginp); gform.appendChild(ggo);
       st.appendChild(gform);
       st.appendChild(gnote);
-      ginp.focus();
+      if(s.current === undefined || s.current === null) ginp.focus();
     }
     else if(m === 'scores'){
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
@@ -1930,6 +1960,9 @@
       var acts = document.createElement('div'); acts.className = 'gc-actions';
       var bE = document.createElement('button'); bE.className='slot-btn'; bE.textContent='Edit';
       bE.addEventListener('click', function(){ openEditor(g.id); });
+      var bS = document.createElement('button'); bS.className='slot-btn'; bS.textContent='⤓';
+      bS.title = 'Export to file';
+      bS.addEventListener('click', function(){ exportGame(g); });
       var bD = document.createElement('button'); bD.className='slot-btn'; bD.textContent='⧉';
       bD.title = 'Duplicate';
       bD.addEventListener('click', function(){
@@ -1970,7 +2003,7 @@
         games = games.filter(function(x){ return x.id !== g.id; });
         persistGames(); renderGamesList(); DC.toast('Game deleted');
       });
-      acts.appendChild(bE); acts.appendChild(bD); acts.appendChild(bX);
+      acts.appendChild(bE); acts.appendChild(bS); acts.appendChild(bD); acts.appendChild(bX);
       card.appendChild(info); card.appendChild(acts);
       wrap.appendChild(card);
     });
@@ -1985,12 +2018,120 @@
   }
 
   /* ---- shared editor header (name + toolbar) ---- */
+  /* ---- export / import ----
+     A .duelcrate.json file bundles the game JSON plus its images
+     as data URLs, so games travel between browsers and devices. */
+  function exportGame(g){
+    var ids = collectImgIds(g);
+    var images = {};
+    function done(){
+      var payload = { duelcrate:1, exported:Date.now(), game:g, images:images };
+      var blob = new Blob([JSON.stringify(payload)], { type:'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = ((g.name.trim() || 'duelcrate-game')
+        .replace(/[^\w\- ]+/g,'').trim().replace(/\s+/g,'-').toLowerCase() || 'duelcrate-game')
+        + '.duelcrate.json';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 5000);
+      DC.toast('Game exported');
+    }
+    if(!ids.length){ done(); return; }
+    var left = ids.length;
+    ids.forEach(function(id){
+      DC.imgGet(id).then(function(rec){
+        if(rec && rec.blob){
+          return new Promise(function(res){
+            var fr = new FileReader();
+            fr.onload = function(){ images[id] = fr.result; res(); };
+            fr.onerror = function(){ res(); };
+            fr.readAsDataURL(rec.blob);
+          });
+        }
+      }).catch(function(){}).then(function(){
+        left--;
+        if(left === 0) done();
+      });
+    });
+  }
+  function dataUrlToBlob(du){
+    var parts = du.split(',');
+    var mime = (parts[0].match(/data:([^;]+)/) || [])[1] || 'image/jpeg';
+    var bin = atob(parts[1]);
+    var arr = new Uint8Array(bin.length);
+    for(var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    return new Blob([arr], { type:mime });
+  }
+  function importGameFile(file){
+    var fr = new FileReader();
+    fr.onerror = function(){ DC.toast('Couldn\u2019t read that file.'); };
+    fr.onload = function(){
+      var obj = null;
+      try{ obj = JSON.parse(fr.result); }catch(e){}
+      if(!obj || obj.duelcrate !== 1 || !obj.game || !obj.game.data ||
+         !GAME_TYPES[obj.game.type]){
+        DC.toast('That doesn\u2019t look like a DuelCrate game file.');
+        return;
+      }
+      var g = obj.game;
+      g.id = uid();
+      g.created = g.updated = Date.now();
+      var imgIds = Object.keys(obj.images || {});
+      function done(map){
+        remapImgIds(g, map);
+        games.unshift(g); persistGames(); renderGamesList();
+        DC.toast('\u201C' + (g.name.trim() || 'Untitled game') + '\u201D imported');
+      }
+      if(!imgIds.length){ done({}); return; }
+      var map = {}, left = imgIds.length;
+      imgIds.forEach(function(oldId){
+        var nid = uid();
+        var blob = null;
+        try{ blob = dataUrlToBlob(obj.images[oldId]); }catch(e){}
+        var p = blob ? DC.imgPut(nid, { blob: blob }).then(function(){ map[oldId] = nid; })
+                     : Promise.resolve();
+        p.catch(function(){}).then(function(){
+          left--;
+          if(left === 0) done(map);
+        });
+      });
+    };
+    fr.readAsText(file);
+  }
+  document.getElementById('import-game-btn').addEventListener('click', function(){
+    document.getElementById('import-game-file').click();
+  });
+  document.getElementById('import-game-file').addEventListener('change', function(){
+    var f = this.files[0]; this.value = '';
+    if(f) importGameFile(f);
+  });
+
   function editorHeader(g, wrap){
     var name = document.createElement('input');
     name.className = 'ed-name'; name.maxLength = 40;
     name.placeholder = 'Name your game…'; name.value = g.name;
     name.addEventListener('input', function(){ g.name = this.value; touch(); });
     wrap.appendChild(name);
+    /* per-game player cap (2–20) */
+    if(!g.maxPlayers) g.maxPlayers = 20;
+    var mpRow = document.createElement('div'); mpRow.className = 'cw-row';
+    var mpLabel = document.createElement('label'); mpLabel.textContent = 'Max players';
+    var mpIn = document.createElement('input');
+    mpIn.className = 'fin-input'; mpIn.type = 'text'; mpIn.inputMode = 'numeric';
+    mpIn.placeholder = '20'; mpIn.value = g.maxPlayers;
+    mpIn.addEventListener('input', function(){
+      var n = parseInt(this.value.replace(/\D/g,''),10);
+      g.maxPlayers = isNaN(n) ? 20 : Math.min(20, Math.max(2, n));
+      touch();
+    });
+    mpIn.addEventListener('blur', function(){ this.value = g.maxPlayers; });
+    mpLabel.appendChild(mpIn);
+    mpRow.appendChild(mpLabel);
+    var mpHint = document.createElement('span');
+    mpHint.className = 'tq-foot'; mpHint.textContent = '2–20';
+    mpRow.appendChild(mpHint);
+    wrap.appendChild(mpRow);
     var bar = document.createElement('div'); bar.className = 'ed-toolbar';
     wrap.appendChild(bar);
     savedNoteEl = document.createElement('span');
@@ -2674,8 +2815,9 @@
         existing.pid = conn.peer; existing.conn = conn; existing.connected = true;
         host.players[conn.peer] = existing;
       }else{
-        if(Object.keys(host.players).length >= MAX_PLAYERS){
-          send(conn, { t:'rejected', reason:'Room is full (20 players).' }); return;
+        var cap = Math.min(20, Math.max(2, parseInt(host.game.maxPlayers, 10) || 20));
+        if(Object.keys(host.players).length >= cap){
+          send(conn, { t:'rejected', reason:'Room is full ('+cap+' players).' }); return;
         }
         var taken = Object.keys(host.players).some(function(pid){
           return host.players[pid].connected &&
@@ -2803,6 +2945,18 @@
     return b;
   }
 
+  /* show the current clue's answer in the GM strip (host-only reference) */
+  function setStripAnswer(text){
+    var el = document.getElementById('strip-answer');
+    if(!el) return;
+    el.innerHTML = '';
+    if(text){
+      el.appendChild(document.createTextNode('A: '));
+      var b = document.createElement('b'); b.textContent = text;
+      el.appendChild(b);
+    }
+  }
+
   /* show a stored question image on the GM stage (async, cached) */
   var stageImgUrls = {};
   function stageImg(id, parent){
@@ -2848,6 +3002,7 @@
     function renderBoard(){
       cur = null; buzz='closed'; buzzedP=null; locked={}; fmode=null;
       stopTimer();
+      setStripAnswer('');
       elStage.innerHTML = '';
       var grid = document.createElement('div');
       grid.className = 'stage-board';
@@ -2901,12 +3056,10 @@
       timerFill = document.createElement('div'); timerFill.className='timer-fill';
       tb.appendChild(timerFill);
       actsEl = document.createElement('div'); actsEl.className='stage-actions';
-      var peek = document.createElement('div'); peek.className='answer-peek';
-      peek.innerHTML = 'Response (hover to peek): ';
-      var pb = document.createElement('b'); pb.textContent = cl.a; peek.appendChild(pb);
       v.appendChild(ct); v.appendChild(banner);
-      v.appendChild(tb); v.appendChild(actsEl); v.appendChild(peek);
+      v.appendChild(tb); v.appendChild(actsEl);
       elStage.appendChild(v);
+      setStripAnswer(cl.a);
       drawClosedActions();
       pushAll();
     }
@@ -2980,6 +3133,7 @@
     function startFinal(){
       cur = null; buzz = 'closed'; buzzedP = null; locked = {};
       stopTimer();
+      setStripAnswer('');
       fmode = 'wager'; wagers = {}; finAns = {}; judged = {};
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className = 'clue-view';
@@ -3039,11 +3193,8 @@
       var acts = document.createElement('div'); acts.className = 'stage-actions';
       acts.appendChild(stageBtn('Judge Answers \u25B6','gold', finalJudge));
       v.appendChild(acts);
-      var peek = document.createElement('div'); peek.className = 'answer-peek';
-      peek.innerHTML = 'Response (hover to peek): ';
-      var pb = document.createElement('b'); pb.textContent = fin().a; peek.appendChild(pb);
-      v.appendChild(peek);
       elStage.appendChild(v);
+      setStripAnswer(fin().a);
       updateFinNote();
       timing = startTimer(settings.answerTime, timerFill, finalJudge);
       pushAll();
@@ -3073,19 +3224,26 @@
         none.textContent = 'No wagers were placed.';
         list.appendChild(none);
       }
+      /* one row per player: answer hidden until you reveal it, wager
+         hidden until you judge — walk through them one at a time */
       ps.forEach(function(p){
         var row = document.createElement('div'); row.className = 'fj-row';
         var nm = document.createElement('span'); nm.className = 'fj-name'; nm.textContent = p.name;
         var txt = finAns[p.pid];
         var ans = document.createElement('span');
         ans.className = 'fj-ans' + (txt ? '' : ' blank');
-        ans.textContent = txt || 'no answer';
+        ans.textContent = '\u2022\u2022\u2022';
         var wg = document.createElement('span'); wg.className = 'fj-wager';
-        wg.textContent = 'wagered ' + wagers[p.pid];
         row.appendChild(nm); row.appendChild(ans); row.appendChild(wg);
-        var bOk = stageBtn('\u2713','good', function(){ judgeFinal(p, true, row, bOk, bNo); });
-        var bNo = stageBtn('\u2717','bad',  function(){ judgeFinal(p, false, row, bOk, bNo); });
-        row.appendChild(bOk); row.appendChild(bNo);
+        var bShow = stageBtn('Show answer','', function(){
+          if(fmode !== 'judge') return;
+          ans.textContent = txt || 'no answer';
+          bShow.remove();
+          var bOk = stageBtn('\u2713','good', function(){ judgeFinal(p, true, row, wg, bOk, bNo); });
+          var bNo = stageBtn('\u2717','bad',  function(){ judgeFinal(p, false, row, wg, bOk, bNo); });
+          row.appendChild(bOk); row.appendChild(bNo);
+        });
+        row.appendChild(bShow);
         list.appendChild(row);
       });
       v.appendChild(list);
@@ -3095,12 +3253,13 @@
       elStage.appendChild(v);
       pushAll();
     }
-    function judgeFinal(p, ok, row, bOk, bNo){
+    function judgeFinal(p, ok, row, wg, bOk, bNo){
       if(fmode !== 'judge' || judged[p.pid]) return;
       var delta = (ok ? 1 : -1) * wagers[p.pid];
       judged[p.pid] = { ok: ok, delta: delta };
       p.score += delta;
       bOk.remove(); bNo.remove();
+      wg.textContent = 'wagered ' + wagers[p.pid];
       var dl = document.createElement('span');
       dl.className = 'fj-delta ' + (delta >= 0 ? 'up' : 'down');
       dl.textContent = (delta >= 0 ? '+' : '') + delta;
@@ -3110,6 +3269,7 @@
 
     function finish(){
       host.phase = 'ended'; stopTimer();
+      setStripAnswer('');
       renderFinal(); pushAll();
     }
     return {
@@ -3182,9 +3342,10 @@
   }
   function triviaCtl(){
     var qs = validTriviaQs(host.game.data);
-    var idx = -1, phase = 'ask'; /* ask | reveal */
+    var idx = -1, phase = 'show'; /* show | ask | reveal */
     var answers = {}, timing = null;
     var choiceEls = [], answeredNote = null, timerFill = null;
+    var choiceGrid = null, actsEl = null;
 
     function q(){ return qs[idx]; }
     function liveChoices(){
@@ -3196,13 +3357,14 @@
     function next(){
       idx++;
       if(idx >= qs.length){ finish(); return; }
-      phase = 'ask'; answers = {};
+      phase = 'show'; answers = {};
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className='q-view';
       var num = document.createElement('div'); num.className='q-num';
       num.textContent = 'Question ' + (idx+1) + ' of ' + qs.length;
       var ct = document.createElement('div'); ct.className='clue-text'; ct.textContent = q().q;
-      var grid = document.createElement('div'); grid.className='q-choices';
+      choiceGrid = document.createElement('div'); choiceGrid.className='q-choices';
+      choiceGrid.hidden = true;   /* revealed when the host opens answers */
       choiceEls = [];
       liveChoices().forEach(function(ch, i){
         var c = document.createElement('div'); c.className='q-choice';
@@ -3212,36 +3374,45 @@
         var cnt = document.createElement('span'); cnt.className='count';
         c.appendChild(L); c.appendChild(tx); c.appendChild(cnt);
         c._orig = ch.orig; choiceEls.push(c);
-        grid.appendChild(c);
+        choiceGrid.appendChild(c);
       });
       var tb = document.createElement('div'); tb.className='timer-bar';
       timerFill = document.createElement('div'); timerFill.className='timer-fill';
       tb.appendChild(timerFill);
       answeredNote = document.createElement('div'); answeredNote.className='answered-note';
-      var acts = document.createElement('div'); acts.className='stage-actions';
-      acts.appendChild(stageBtn('Reveal Now','',reveal));
+      answeredNote.textContent = 'Read the question aloud, then open the answers.';
+      actsEl = document.createElement('div'); actsEl.className='stage-actions';
+      actsEl.appendChild(stageBtn('Open Answers ▶','gold', openAnswers));
       v.appendChild(num); v.appendChild(ct);
       stageImg(q().img, v);
-      v.appendChild(grid);
-      v.appendChild(tb); v.appendChild(answeredNote); v.appendChild(acts);
+      v.appendChild(choiceGrid);
+      v.appendChild(tb); v.appendChild(answeredNote); v.appendChild(actsEl);
       elStage.appendChild(v);
+      pushAll();
+    }
+    function openAnswers(){
+      if(phase !== 'show') return;
+      phase = 'ask';
+      choiceGrid.hidden = false;
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('Reveal Now','', reveal));
       updateAnsweredNote();
       timing = startTimer(settings.answerTime, timerFill, reveal);
       pushAll();
     }
     function liveCount(){ return roster().filter(function(p){ return p.connected; }).length; }
     function updateAnsweredNote(){
-      if(!answeredNote) return;
-      answeredNote.textContent = Object.keys(answers).length + ' / ' + liveCount() + ' answered';
+      if(!answeredNote || phase !== 'ask') return;
+      answeredNote.textContent = Object.keys(answers).length + ' / ' + liveCount() +
+                                 ' answered — answers can change until the reveal';
     }
     function onAnswer(p, choice){
-      if(phase !== 'ask' || answers[p.pid] !== undefined) return;
+      if(phase !== 'ask') return;
       choice = parseInt(choice, 10);
       if(isNaN(choice) || choice < 0 || choice > 3) return;
-      answers[p.pid] = { choice: choice };
+      answers[p.pid] = { choice: choice };   /* re-answering overwrites */
       updateAnsweredNote();
       pushState(p);
-      if(Object.keys(answers).length >= liveCount()) reveal();
     }
     function reveal(){
       if(phase !== 'ask') return;
@@ -3279,9 +3450,14 @@
       onAnswer: onAnswer,
       onRoster: function(){ renderScoreRow(); updateAnsweredNote(); },
       stateFor: function(p, base){
+        if(phase === 'show'){
+          base.mode = 'waiting'; base.note = 'Get ready…';
+          return base;
+        }
         if(phase === 'ask'){
-          if(answers[p.pid] !== undefined){ base.mode='answered'; return base; }
           base.mode = 'choices';
+          base.editable = true;
+          if(answers[p.pid] !== undefined) base.picked = answers[p.pid].choice;
           base.choices = liveChoices().map(function(ch){ return { text:ch.text, orig:ch.orig }; });
           return base;
         }
@@ -3482,10 +3658,10 @@
   /* ============ CLOSEST WINS RUNTIME ============ */
   function closestCtl(){
     var qs = validClosestQs(host.game.data);
-    var idx = -1, phase = 'ask';   /* ask | reveal */
+    var idx = -1, phase = 'show';   /* show | ask | reveal */
     var guesses = {};
     var lastWin = {}, lastPts = 0;
-    var noteEl = null, timerFill = null;
+    var noteEl = null, timerFill = null, actsEl = null;
 
     function q(){ return qs[idx]; }
     function qpts(){ var n = parseInt(q().pts, 10); return n > 0 ? n : 100; }
@@ -3494,7 +3670,7 @@
     function next(){
       idx++;
       if(idx >= qs.length){ finish(); return; }
-      phase = 'ask'; guesses = {}; lastWin = {}; lastPts = 0;
+      phase = 'show'; guesses = {}; lastWin = {}; lastPts = 0;
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className = 'q-view';
       var num = document.createElement('div'); num.className = 'q-num';
@@ -3511,25 +3687,34 @@
       timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
       tb.appendChild(timerFill); v.appendChild(tb);
       noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      noteEl.textContent = 'Read it aloud, then open guessing.';
       v.appendChild(noteEl);
-      var acts = document.createElement('div'); acts.className = 'stage-actions';
-      acts.appendChild(stageBtn('Reveal Now','', reveal));
-      v.appendChild(acts);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      actsEl.appendChild(stageBtn('Open Guessing ▶','gold', openGuessing));
+      v.appendChild(actsEl);
       elStage.appendChild(v);
+      pushAll();
+    }
+    function openGuessing(){
+      if(phase !== 'show') return;
+      phase = 'ask';
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('Reveal Now','', reveal));
       updateNote();
       startTimer(settings.answerTime, timerFill, reveal);
       pushAll();
     }
     function updateNote(){
-      if(noteEl) noteEl.textContent = Object.keys(guesses).length + ' / ' + liveCount() + ' guesses in';
+      if(!noteEl || phase !== 'ask') return;
+      noteEl.textContent = Object.keys(guesses).length + ' / ' + liveCount() +
+                           ' guesses in — guesses can change until the reveal';
     }
     function onGuess(p, value){
-      if(phase !== 'ask' || guesses[p.pid] !== undefined) return;
+      if(phase !== 'ask') return;
       var n = parseFloat(value);
       if(!isFinite(n)) return;
-      guesses[p.pid] = n;
+      guesses[p.pid] = n;   /* re-guessing overwrites */
       updateNote(); pushState(p);
-      if(Object.keys(guesses).length >= liveCount()) reveal();
     }
     function reveal(){
       if(phase !== 'ask') return;
@@ -3594,10 +3779,14 @@
       onRoster: function(){ renderScoreRow(); updateNote(); },
       stateFor: function(p, base){
         if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the board!'; return base; }
+        if(phase === 'show'){
+          base.mode = 'waiting'; base.note = 'Get ready…';
+          return base;
+        }
         if(phase === 'ask'){
-          if(guesses[p.pid] !== undefined){ base.mode='answered'; return base; }
           base.mode = 'guess';
           base.cat = q().q.slice(0, 90);
+          if(guesses[p.pid] !== undefined) base.current = guesses[p.pid];
           return base;
         }
         base.mode = 'result';
@@ -3614,10 +3803,10 @@
     var d = host.game.data;
     var qs = validPrompts(d);
     var idx = -1;
-    var phase = 'write';   /* write | reveal | vote | results */
-    var written = {};      /* pid -> text (write phase) */
+    var phase = 'show';    /* show | write | reveal | vote | results */
+    var written = {};      /* pid -> text (write phase, editable) */
     var entries = [];      /* [{pid, text, votes}] shuffled after writing */
-    var votes = {};        /* voterPid -> entry index */
+    var votes = {};        /* voterPid -> entry index (editable) */
     var awards = {};       /* pid -> pts (results) */
     var places = [];       /* entry index -> 1|2|3|0 */
     var revealCount = 0;
@@ -3633,7 +3822,7 @@
     function next(){
       idx++;
       if(idx >= qs.length){ finish(); return; }
-      phase = 'write'; written = {}; entries = []; votes = {};
+      phase = 'show'; written = {}; entries = []; votes = {};
       awards = {}; places = []; revealCount = 0;
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className = 'q-view';
@@ -3644,18 +3833,23 @@
       ct.textContent = q().text;
       v.appendChild(ct);
       stageImg(q().img, v);
-      var hint = document.createElement('div'); hint.className = 'answered-note';
-      hint.textContent = 'Everyone is writing a response on their phone…';
-      v.appendChild(hint);
       var tb = document.createElement('div'); tb.className = 'timer-bar';
       timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
       tb.appendChild(timerFill); v.appendChild(tb);
       noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      noteEl.textContent = 'Read the prompt aloud, then start the writing round.';
       v.appendChild(noteEl);
       actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
-      actsEl.appendChild(stageBtn('Close Writing ▶','gold', closeWriting));
+      actsEl.appendChild(stageBtn('Start Writing ▶','gold', startWriting));
       v.appendChild(actsEl);
       elStage.appendChild(v);
+      pushAll();
+    }
+    function startWriting(){
+      if(phase !== 'show') return;
+      phase = 'write';
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('Close Writing ▶','gold', closeWriting));
       updateNote();
       startTimer(settings.writeTime, timerFill, closeWriting);
       pushAll();
@@ -3663,21 +3857,23 @@
     function updateNote(){
       if(!noteEl) return;
       if(phase === 'write'){
-        noteEl.textContent = Object.keys(written).length + ' / ' + liveRoster().length + ' responses in';
+        noteEl.textContent = Object.keys(written).length + ' / ' + liveRoster().length +
+                             ' responses in — responses can be edited until writing closes';
       }else if(phase === 'reveal' && d.oneByOne){
         noteEl.textContent = revealCount + ' of ' + entries.length + ' revealed';
+      }else if(phase === 'reveal'){
+        noteEl.textContent = revealCount === 0 ? entries.length + ' responses are in — build the suspense!' : '';
       }else if(phase === 'vote'){
-        noteEl.textContent = Object.keys(votes).length + ' / ' + liveRoster().length + ' votes in';
+        noteEl.textContent = Object.keys(votes).length + ' / ' + liveRoster().length +
+                             ' votes in — votes can change until voting closes';
       }
     }
     function onText(p, answer){
-      if(phase !== 'write' || written[p.pid] !== undefined) return;
+      if(phase !== 'write') return;
       var t = String(answer || '').trim().slice(0, 120);
       if(!t) return;
-      written[p.pid] = t;
+      written[p.pid] = t;   /* re-submitting overwrites */
       updateNote(); pushState(p);
-      var live = liveRoster();
-      if(live.length && live.every(function(pl){ return written[pl.pid] !== undefined; })) closeWriting();
     }
     function closeWriting(){
       if(phase !== 'write') return;
@@ -3693,13 +3889,15 @@
       if(entries.length < 2){
         /* nothing to vote on — show what came in and move along */
         phase = 'results';
+        revealCount = entries.length;
         renderStage('results');
         drawResultActions('Not enough responses to vote on.');
         pushAll();
         return;
       }
+      /* responses stay hidden until the host reveals them */
       phase = 'reveal';
-      revealCount = d.oneByOne ? 0 : entries.length;
+      revealCount = 0;
       renderStage('reveal');
       drawRevealActions();
       pushAll();
@@ -3760,12 +3958,21 @@
     function drawRevealActions(){
       actsEl.innerHTML = '';
       if(revealCount < entries.length){
-        actsEl.appendChild(stageBtn('Reveal Next ▶','gold', function(){
-          if(phase !== 'reveal') return;
-          revealCount++;
-          renderStage('reveal');
-          drawRevealActions();
-        }));
+        if(d.oneByOne){
+          actsEl.appendChild(stageBtn('Reveal Next ▶','gold', function(){
+            if(phase !== 'reveal') return;
+            revealCount++;
+            renderStage('reveal');
+            drawRevealActions();
+          }));
+        }else{
+          actsEl.appendChild(stageBtn('Reveal All Responses ▶','gold', function(){
+            if(phase !== 'reveal') return;
+            revealCount = entries.length;
+            renderStage('reveal');
+            drawRevealActions();
+          }));
+        }
       }else{
         actsEl.appendChild(stageBtn('Open Voting ▶','gold', openVoting));
       }
@@ -3778,16 +3985,27 @@
       startTimer(settings.answerTime, timerFill, closeVoting);
       pushAll();
     }
-    function onAnswer(p, choice){
-      if(phase !== 'vote' || votes[p.pid] !== undefined) return;
+    function onAnswer(p, choice){  /* a vote */
+      if(phase !== 'vote') return;
       choice = parseInt(choice, 10);
       if(isNaN(choice) || choice < 0 || choice >= entries.length) return;
       if(entries[choice].pid === p.pid) return;   /* no voting for yourself */
-      votes[p.pid] = choice;
-      entries[choice].votes++;
+      votes[p.pid] = choice;   /* re-voting overwrites */
       updateNote(); pushState(p);
-      var live = liveRoster();
-      if(live.length && live.every(function(pl){ return votes[pl.pid] !== undefined; })) closeVoting();
+    }
+    function closeVoting(){
+      if(phase !== 'vote') return;
+      phase = 'results'; stopTimer();
+      /* tally from the final vote map (votes may have changed) */
+      entries.forEach(function(e){ e.votes = 0; });
+      Object.keys(votes).forEach(function(pid){
+        var e = entries[votes[pid]];
+        if(e) e.votes++;
+      });
+      computePlaces();
+      renderStage('results');
+      drawResultActions();
+      pushAll();
     }
     function closeVoting(){
       if(phase !== 'vote') return;
@@ -3827,11 +4045,16 @@
       onRoster: function(){ renderScoreRow(); updateNote(); },
       stateFor: function(p, base){
         if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the screen!'; return base; }
+        if(phase === 'show'){
+          base.mode = 'waiting'; base.note = 'Get ready to write!';
+          return base;
+        }
         if(phase === 'write'){
-          if(written[p.pid] !== undefined){ base.mode='answered'; return base; }
           base.mode = 'text';
           base.title = 'Write your answer!';
           base.cat = q().text.slice(0, 90);
+          base.editable = true;
+          if(written[p.pid] !== undefined) base.current = written[p.pid];
           return base;
         }
         if(phase === 'reveal'){
@@ -3839,9 +4062,10 @@
           return base;
         }
         if(phase === 'vote'){
-          if(votes[p.pid] !== undefined){ base.mode='answered'; return base; }
           base.mode = 'choices';
           base.note = 'Vote for your favorite!';
+          base.editable = true;
+          if(votes[p.pid] !== undefined) base.picked = votes[p.pid];
           base.choices = [];
           entries.forEach(function(e, i){
             if(e.pid === p.pid) return;   /* your own isn't on your ballot */
@@ -3854,6 +4078,7 @@
         base.mode = 'result';
         base.gained = awards[p.pid] || 0;
         base.correct = (awards[p.pid] || 0) > 0;
+        base.headline = 'You Win!';
         return base;
       }
     };
