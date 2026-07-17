@@ -4244,7 +4244,7 @@
      the console is a same-origin popup that the main window renders
      into directly — music controls, the answer key for the current
      question, and the End Game button all live there. */
-  var gmWin = null, gmAnswerLines = null;
+  var gmWin = null, gmAnswerLines = null, gmQrForCode = null;
   function openGMPage(){
     if(gmWin && !gmWin.closed){ gmWin.focus(); gmRenderAll(); return; }
     gmWin = window.open('', 'duelcrate_gm', 'width=440,height=680');
@@ -4259,6 +4259,11 @@
     '#gm-code{font-family:Bungee,\'Arial Black\',sans-serif;color:#FFC42E;letter-spacing:.2em;font-size:15px}' +
     '.gm-remote{padding:10px 18px;border-bottom:2px solid #3A2A72;color:#9A8BC8;font-size:13px;line-height:1.5}' +
     '.gm-remote b{font-family:Bungee,\'Arial Black\',sans-serif;color:#FF4D9D;letter-spacing:.18em;font-size:14px}' +
+    '.gm-qr-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 18px;border-bottom:2px solid #3A2A72}' +
+    '.gm-qr-wrap[hidden]{display:none}' +
+    '#gm-qr{background:#fff;padding:8px;border-radius:10px;line-height:0}' +
+    '#gm-qr img,#gm-qr canvas{display:block}' +
+    '.gm-qr-wrap small{color:#9A8BC8;font-size:11px;text-align:center}' +
     '.gm-music{display:flex;gap:8px;padding:14px 18px;flex-wrap:wrap;border-bottom:2px solid #3A2A72}' +
     '.gm-volumes{display:grid;gap:10px;width:100%;margin-top:10px}' +
     '.gm-volume-row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px}' +
@@ -4286,6 +4291,10 @@
       '<style>' + gmCss() + '</style></head><body>' +
       '<header><h1>\uD83C\uDF9B GM Console</h1><span id="gm-code"></span></header>' +
       '<div class="gm-remote" id="gm-remote"></div>' +
+      '<div class="gm-qr-wrap" id="gm-qr-wrap" hidden>' +
+        '<div id="gm-qr"></div>' +
+        '<small>Scan to open GM Remote, then enter the code above</small>' +
+      '</div>' +
       '<section class="gm-music">' +
         '<button data-slot="correct" title="Play correct-answer music">\u2713 \u266A</button>' +
         '<button data-slot="wrong" title="Play wrong-answer music">\u2717 \u266A</button>' +
@@ -4298,6 +4307,11 @@
       '<footer><button id="gm-end">End Game</button></footer>' +
       '</body></html>');
     doc.close();
+    gmQrForCode = null;
+    var qrScript = doc.createElement('script');
+    qrScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+    qrScript.onload = function(){ gmRenderAll(); };
+    doc.head.appendChild(qrScript);
     doc.querySelectorAll('[data-slot]').forEach(function(b){
       b.addEventListener('click', function(){ playSting(b.getAttribute('data-slot')); });
     });
@@ -4353,6 +4367,21 @@
         rm.textContent = 'Remote link starting\u2026';
       }else{
         rm.textContent = 'No active room.';
+      }
+    }
+    var qrWrap = gmWin.document.getElementById('gm-qr-wrap');
+    if(qrWrap){
+      if(host && host.gmCode && gmWin.QRCode){
+        qrWrap.hidden = false;
+        if(gmQrForCode !== host.gmCode){
+          var qrBox = gmWin.document.getElementById('gm-qr');
+          qrBox.innerHTML = '';
+          new gmWin.QRCode(qrBox, { text:'https://duelrevolvers.github.io/duelcrate/#gm',
+            width:120, height:120, correctLevel: gmWin.QRCode.CorrectLevel.M });
+          gmQrForCode = host.gmCode;
+        }
+      }else{
+        qrWrap.hidden = true;
       }
     }
     gmSyncMusic();
