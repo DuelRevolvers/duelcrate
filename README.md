@@ -21,8 +21,11 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 - **QR code joining** — the lobby shows a scannable code that takes players straight to the join page
 - **Set points on everything** — every question has a defined point value; no speed bonuses, no surprises
 - **Music & stingers** — upload your own correct/wrong/waiting/background audio
-- **Host controls** — configurable answer, buzz-in, and writing timers, live score tracking, and full judge control over every round
+- **GM Console** — a separate pop-out window just for the host, with music controls, a live answer key for the current question, and the end-game button, so nothing secret ever touches the shared screen
+- **Host controls** — every question shows on the big screen first and answering opens only when the host says so; configurable answer, buzz-in, and writing timers; players can change their answers until time runs out; live score tracking and full judge control
 - **Built-in how-to guide** — step-by-step instructions for both hosts and players, one tap away
+- **Player limits** — set the max players (2–20) per game
+- **Export & import** — share games (images included) as portable files between browsers and devices
 - **Everything stays local** — games, settings, and media are stored in your browser; nothing is uploaded anywhere
 
 ## How it works
