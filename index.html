@@ -128,6 +128,13 @@
   .panel.placeholder{color:var(--ink-dim);line-height:1.7;padding:48px 28px}
   .panel.placeholder .big{font-size:40px;display:block;margin-bottom:12px}
 
+  .lobby-qr-warn{
+    display:block;max-width:300px;margin:10px auto 0;
+    color:var(--spot);font-size:12px;line-height:1.55;
+  }
+  .lobby-qr-warn[hidden]{display:none}
+  .lobby-qr-warn b{color:var(--bulb)}
+
   /* ---------- player join page ---------- */
   #screen-join{justify-content:center}
   .join-card{
@@ -308,6 +315,7 @@
   .badge.feud{color:var(--ok);border-color:#2E6B3A;background:#7EE78714}
   .badge.closest{color:#6FD3FF;border-color:#2A5E7A;background:#6FD3FF14}
   .badge.prompts{color:#B79CFF;border-color:#5A3E9E;background:#B79CFF14}
+  .badge.wheel{color:#FF9E4D;border-color:#7A4A18;background:#FF9E4D14}
   .gc-actions{display:flex;gap:8px}
   .empty-state{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
@@ -663,6 +671,120 @@
 
   footer{margin-top:auto;padding-top:40px;color:#5D4F86;font-size:12px;letter-spacing:.1em}
 
+  /* ---------- wheel of fortune ---------- */
+  .wof-wrap{width:100%;max-width:900px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .wof-cat{color:var(--spot);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:14px}
+  .wof-board{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 18px;width:100%}
+  .wof-word{display:flex;gap:4px}
+  .wof-tile{
+    width:clamp(20px,3.1vw,40px);height:clamp(28px,4.3vw,54px);border-radius:6px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-size:clamp(13px,2.4vw,25px);
+    background:#F4EFFF;color:#150E2D;border:2px solid #C9BEE6;transition:background .2s;
+  }
+  .wof-tile.dark{background:var(--stage-2);border-color:#3A2A72;color:transparent}
+  .wof-tile.punc{background:transparent;border-color:transparent;color:var(--ink-dim)}
+  .wof-tile.pop{animation:wofPop .5s ease}
+  @keyframes wofPop{
+    0%{transform:scale(.55) rotateY(90deg);background:var(--bulb)}
+    60%{transform:scale(1.14) rotateY(0);background:var(--bulb)}
+    100%{transform:scale(1)}
+  }
+  .wof-mid{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;width:100%}
+  .wof-wheel{position:relative;width:min(52vw,300px);flex:none}
+  .wof-wheel svg{width:100%;height:auto;display:block;filter:drop-shadow(0 6px 22px #00000077)}
+  .wof-spinner{transition:transform 4.2s cubic-bezier(.17,.72,.16,1);transform-origin:100px 100px}
+  .wof-pointer{
+    position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:0;height:0;
+    border-left:13px solid transparent;border-right:13px solid transparent;
+    border-top:26px solid var(--bulb);filter:drop-shadow(0 2px 5px #000);
+  }
+  .wof-side{display:flex;flex-direction:column;gap:11px;align-items:center;flex:1;min-width:220px;max-width:340px}
+  .wof-turn{font-family:var(--display);font-size:clamp(16px,2.6vw,22px);color:var(--bulb);text-shadow:0 0 18px #FFC42E44;text-align:center}
+  .wof-bank{font-size:15px;color:var(--ink-dim);font-weight:600}
+  .wof-bank b{color:var(--ok);font-variant-numeric:tabular-nums}
+  .wof-landed{
+    font-family:var(--display);font-size:clamp(14px,2.2vw,19px);padding:10px 16px;border-radius:10px;
+    background:var(--stage-2);border:2px solid #3A2A72;min-height:46px;width:100%;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+  }
+  .wof-landed.bad{border-color:#7A2450;color:var(--spot)}
+  .wof-landed.good{border-color:#2E7A50;color:var(--ok)}
+  .wof-used{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+  .wof-used span{
+    width:23px;height:23px;border-radius:5px;display:flex;align-items:center;justify-content:center;
+    font-size:12px;font-weight:700;background:var(--stage-2);border:1px solid #3A2A72;color:#5D4F86;
+  }
+  .wof-used span.hit{border-color:var(--ok);color:var(--ok)}
+  .wof-order{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+  .wof-order span{
+    padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600;
+    background:var(--stage-2);border:2px solid #3A2A72;color:var(--ink-dim);
+  }
+  .wof-order span.on{border-color:var(--bulb);color:var(--bulb)}
+  .wof-order span.gone{opacity:.35}
+  .wof-solve-box{
+    background:var(--stage-2);border:2px solid var(--bulb);border-radius:12px;padding:14px 20px;
+    font-size:clamp(17px,3vw,25px);font-weight:700;max-width:100%;word-break:break-word;
+  }
+
+  /* phone: wheel controls */
+  .pv-extra{width:100%;display:flex;flex-direction:column;align-items:center;gap:12px;padding-top:14px}
+  .pv-extra[hidden]{display:none}
+  .pv-wheel-mini{position:relative;width:min(62vw,220px);margin:6px auto 0}
+  .pv-wheel-mini svg{width:100%;height:auto;display:block;filter:drop-shadow(0 5px 16px #00000066)}
+  .pv-landed{
+    font-family:var(--display);font-size:15px;color:var(--bulb);
+    min-height:20px;letter-spacing:.04em;text-align:center;
+  }
+  .pv-landed.bad{color:var(--spot)}
+  .pv-landed.good{color:var(--ok)}
+  .pv-puzzle{
+    width:100%;font-family:var(--display);font-size:14px;letter-spacing:.14em;line-height:1.8;
+    color:var(--ink-dim);background:#150E2D;border:2px solid #3A2A72;border-radius:10px;
+    padding:10px 12px;word-break:break-word;text-align:center;
+  }
+  .pv-keys{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;width:100%}
+  .pv-key{
+    padding:13px 0;border-radius:9px;border:2px solid #3A2A72;border-bottom-width:4px;
+    background:linear-gradient(180deg,var(--stage-3),var(--stage-2));color:var(--ink);
+    font-family:var(--display);font-size:17px;-webkit-tap-highlight-color:transparent;
+  }
+  .pv-key:active{transform:translateY(2px);border-bottom-width:2px}
+  .pv-key:disabled{opacity:.22;cursor:default}
+  .pv-actions{display:flex;flex-direction:column;gap:10px;width:100%;max-width:340px}
+  .spin-btn{
+    width:min(46vw,168px);height:min(46vw,168px);border-radius:50%;border:none;padding:0;
+    display:flex;align-items:center;justify-content:center;
+    background:conic-gradient(#FFC42E,#FF4D9D,#6FD3FF,#4DE28A,#FF9E4D,#FFC42E);
+    box-shadow:0 10px 0 #A87E12,0 0 60px #FFC42E33;
+    transition:transform .06s,box-shadow .06s;
+    touch-action:manipulation;user-select:none;-webkit-user-select:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .spin-btn span{
+    width:76%;height:76%;border-radius:50%;background:var(--stage);color:var(--bulb);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-size:clamp(19px,5.2vw,26px);
+  }
+  .spin-btn:active{transform:translateY(8px);box-shadow:0 2px 0 #A87E12}
+  .spin-btn:disabled{filter:grayscale(.75);opacity:.45;cursor:default}
+  .spin-btn:disabled:active{transform:none}
+
+  /* wedge editor */
+  .wof-wedges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .wof-wedge{
+    display:flex;align-items:center;gap:2px;background:var(--stage-2);
+    border:2px solid #3A2A72;border-radius:9px;padding:3px 3px 3px 9px;
+  }
+  .wof-wedge input{
+    width:92px;background:transparent;border:none;color:var(--ink);
+    font-family:var(--body);font-size:14px;font-weight:600;padding:5px 0;
+  }
+  .wof-wedge input:focus{outline:none}
+  .wof-wedge button{background:none;border:none;color:#5D4F86;font-size:13px;padding:3px 6px}
+  .wof-wedge button:hover{color:var(--spot)}
+
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important;animation:none !important}
   }
@@ -730,6 +852,13 @@
       <span class="pv-me"><span id="pv-name"></span> · <b id="pv-score">0</b></span>
       <button class="slot-btn" id="pv-leave">Leave</button>
     </div>
+    <!-- persistent board area: never cleared, so a spin can animate
+         across the state pushes that arrive mid-spin -->
+    <div class="pv-extra" id="pv-extra" hidden>
+      <div class="pv-puzzle" id="pv-puzzle-line" hidden></div>
+      <div class="pv-wheel-mini" id="pv-wheel-box" hidden></div>
+      <div class="pv-landed" id="pv-landed" hidden></div>
+    </div>
     <div class="pv-stage" id="pv-stage"></div>
   </div>
 </section>
@@ -787,6 +916,7 @@
       <div class="lobby-qr" id="lobby-qr-wrap" hidden>
         <div id="lobby-qr"></div>
         <small id="lobby-qr-url"></small>
+        <small class="lobby-qr-warn" id="lobby-qr-warn" hidden>⚠️ You're running this from a local file, so this code sends players to your <b>published</b> copy — not the one you're hosting from. Publish your changes, or serve this file over http, or players won't see them.</small>
       </div>
       <p class="lobby-hint">Players: scan the code with your phone camera — or open this app's <b>player join page</b> (the <b>#join</b> link) — then enter the room code.</p>
       <div class="lobby-players" id="lobby-players"></div>
@@ -1085,7 +1215,7 @@
   function pvShow(on){
     elJoinCard.hidden = on;
     elPV.hidden = !on;
-    if(on) pvWakeOn(); else pvWakeOff();
+    if(on) pvWakeOn(); else { pvWakeOff(); pvWheelReset(); }
     window.scrollTo(0,0);
   }
 
@@ -1206,6 +1336,57 @@
     return e;
   }
 
+  /* ---- the phone's own wheel ----
+     Lives in #pv-extra, which renderPlayerState never clears, so a spin
+     keeps animating through the state pushes that land mid-spin. The host
+     sends the exact final angle, so every phone stops where the big screen
+     does.                                                              */
+  var pvWheel = { sig:null, spinner:null, rot:0, seq:-1 };
+  function pvWheelReset(){
+    pvWheel = { sig:null, spinner:null, rot:0, seq:-1 };
+    var box = document.getElementById('pv-wheel-box');
+    if(box){ box.innerHTML = ''; box.hidden = true; }
+  }
+  function renderPvExtras(s){
+    var extra  = document.getElementById('pv-extra');
+    var line   = document.getElementById('pv-puzzle-line');
+    var box    = document.getElementById('pv-wheel-box');
+    var landed = document.getElementById('pv-landed');
+
+    if(s.puzzle){ line.textContent = s.puzzle; line.hidden = false; }
+    else line.hidden = true;
+
+    if(s.wheel && s.wheel.length){
+      box.hidden = false;
+      var sig = JSON.stringify(s.wheel);
+      if(pvWheel.sig !== sig){
+        box.innerHTML = '';
+        var ptr = document.createElement('div'); ptr.className = 'wof-pointer';
+        box.appendChild(ptr);
+        var built = buildWheelSVG(s.wheel);
+        box.appendChild(built.svg);
+        pvWheel.sig = sig; pvWheel.spinner = built.spinner;
+        pvWheel.rot = 0; pvWheel.seq = -1;
+      }
+      var sp = s.spin;
+      if(sp && sp.seq !== pvWheel.seq && typeof sp.deg === 'number'){
+        pvWheel.seq = sp.seq;
+        /* always turn forwards, landing on the angle the host chose */
+        pvWheel.rot += 360*4 + ((((sp.deg - pvWheel.rot) % 360) + 360) % 360);
+        pvWheel.spinner.style.transform = 'rotate(' + pvWheel.rot + 'deg)';
+      }
+    }else{
+      box.hidden = true;
+    }
+
+    if(s.landedText){ landed.textContent = s.landedText;
+      landed.className = 'pv-landed' + (s.landedTone ? ' ' + s.landedTone : '');
+      landed.hidden = false;
+    }else landed.hidden = true;
+
+    extra.hidden = line.hidden && box.hidden && landed.hidden;
+  }
+
   function renderPlayerState(){
     var s = pv.state;
     if(!s || !pv.active) return;
@@ -1216,6 +1397,9 @@
     var st = elPVStage;
     st.innerHTML = '';
     var m = s.mode;
+
+    /* the puzzle + wheel live outside the stage so they survive a re-render */
+    renderPvExtras(s);
 
     if(m === 'lobby'){
       st.appendChild(pvEl('div','pv-big gold','You\u2019re in!'));
@@ -1363,6 +1547,61 @@
       st.appendChild(gform);
       st.appendChild(gnote);
       if(s.current === undefined || s.current === null) ginp.focus();
+    }
+    else if(m === 'wheel-wait'){
+      /* the wheel above is the visual — only fall back to the icon without one */
+      if(!s.wheel) st.appendChild(pvEl('div','pv-result-icon','🎡'));
+      st.appendChild(pvEl('div','pv-note', s.note || 'Watch the big screen…'));
+    }
+    else if(m === 'wheel-spin'){
+      st.appendChild(pvEl('div','pv-big gold','Your Turn'));
+      var spin = pvEl('button','spin-btn');
+      spin.appendChild(pvEl('span','','SPIN'));
+      spin.addEventListener('click', function(){
+        pvSend({ t:'wheel', act:'spin' });
+        spin.disabled = true;
+      });
+      st.appendChild(spin);
+      st.appendChild(pvEl('div','pv-note', s.note || ''));
+      var wacts = pvEl('div','pv-actions');
+      if(s.canVowel){
+        var bv = pvEl('button','join-btn','Buy a vowel (−' + s.vowelCost + ')');
+        bv.addEventListener('click', function(){
+          pvSend({ t:'wheel', act:'vowel' }); bv.disabled = true;
+        });
+        wacts.appendChild(bv);
+      }
+      var bsv = pvEl('button','slot-btn','Solve the puzzle');
+      bsv.addEventListener('click', function(){
+        pvSend({ t:'wheel', act:'solve' }); bsv.disabled = true;
+      });
+      wacts.appendChild(bsv);
+      st.appendChild(wacts);
+      if(pv.lastMode !== 'wheel-spin') pvHaptic(40);
+    }
+    else if(m === 'wheel-letter'){
+      st.appendChild(pvEl('div','pv-big gold', s.title || 'Call a letter'));
+      var keys = pvEl('div','pv-keys');
+      (s.letters || []).forEach(function(L){
+        var k = pvEl('button','pv-key', L.ch);
+        k.disabled = !!L.off;
+        k.addEventListener('click', function(){
+          pvSend({ t:'wheel', act:'letter', ch:L.ch });
+          /* lock the pad until the host pushes the next state */
+          keys.querySelectorAll('.pv-key').forEach(function(x){ x.disabled = true; });
+        });
+        keys.appendChild(k);
+      });
+      st.appendChild(keys);
+      st.appendChild(pvEl('div','pv-note', s.note || ''));
+      if(s.canSolve){
+        var solveNow = pvEl('button','slot-btn','Solve instead');
+        solveNow.addEventListener('click', function(){
+          pvSend({ t:'wheel', act:'solve' }); solveNow.disabled = true;
+        });
+        st.appendChild(solveNow);
+      }
+      if(pv.lastMode !== 'wheel-letter') pvHaptic(40);
     }
     else if(m === 'scores'){
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
@@ -1838,6 +2077,9 @@
     if(g.type === 'jeopardy'){
       g.data.categories.forEach(function(c){ c.clues.forEach(function(cl){ if(cl.img) ids.push(cl.img); }); });
       if(g.data.final && g.data.final.img) ids.push(g.data.final.img);
+    }else if(g.type === 'wheel'){
+      (g.data.puzzles || []).forEach(function(p){ if(p.img) ids.push(p.img); });
+      if(g.data.bonus && g.data.bonus.img) ids.push(g.data.bonus.img);
     }else if(g.data.questions){
       g.data.questions.forEach(function(q){ if(q.img) ids.push(q.img); });
     }else if(g.data.prompts){
@@ -1850,8 +2092,38 @@
     if(g.type === 'jeopardy'){
       g.data.categories.forEach(function(c){ c.clues.forEach(re); });
       if(g.data.final) re(g.data.final);
+    }else if(g.type === 'wheel'){
+      (g.data.puzzles || []).forEach(re);
+      if(g.data.bonus) re(g.data.bonus);
     }else if(g.data.questions){ g.data.questions.forEach(re); }
     else if(g.data.prompts){ g.data.prompts.forEach(re); }
+  }
+
+  /* ---- wheel wedges ----
+     A wedge is {k:'cash',v:500} | {k:'bank'} | {k:'lose'} | {k:'free'}.
+     The classic layout below is the default for a new wheel game; the
+     editor lets you retype, add, or remove any of them.            */
+  var WOF_CLASSIC = [2500,900,700,800,'B',550,650,500,700,'L',600,650,
+                     500,900,'F',600,550,800,500,'B',650,500,700,600];
+  function wofDefaultWedges(){ return WOF_CLASSIC.map(parseWedge); }
+  function parseWedge(s){
+    var t = String(s === undefined || s === null ? '' : s).trim().toUpperCase();
+    if(!t) return null;
+    if(t.charAt(0) === 'B') return { k:'bank' };
+    if(t.charAt(0) === 'L') return { k:'lose' };
+    if(t.charAt(0) === 'F') return { k:'free' };
+    var n = parseInt(t.replace(/[^0-9]/g,''), 10);
+    return (isNaN(n) || n <= 0) ? null : { k:'cash', v:n };
+  }
+  function wedgeText(w){
+    return w.k === 'cash' ? String(w.v)
+         : w.k === 'bank' ? 'Bankrupt'
+         : w.k === 'lose' ? 'Lose a Turn' : 'Free Play';
+  }
+  function wedgeLabel(w){
+    return w.k === 'cash' ? String(w.v)
+         : w.k === 'bank' ? 'BANKRUPT'
+         : w.k === 'lose' ? 'LOSE A TURN' : 'FREE PLAY';
   }
 
   /* ---- game type registry ----
@@ -1932,6 +2204,23 @@
         return n+' prompt'+(n===1?'':'s');
       },
       renderEditor: renderPromptsEditor
+    },
+    wheel: {
+      label:'Wheel Puzzle', icon:'🎡',
+      blurb:'Spin the wheel, call letters, solve the hidden phrase.',
+      blank:function(){
+        return { puzzles:[ { text:'', cat:'', img:null } ],
+                 wedges: wofDefaultWedges(),
+                 vowelCost: 250,
+                 bonus:{ enabled:false, text:'', cat:'', img:null, prize:2000 } };
+      },
+      summary:function(d){
+        var n = (d.puzzles||[]).filter(function(p){
+          return p.text.trim().replace(/[^A-Za-z]/g,'').length > 0;
+        }).length;
+        return n+' puzzle'+(n===1?'':'s');
+      },
+      renderEditor: renderWheelEditor
     }
   };
 
@@ -2460,6 +2749,198 @@
     draw();
   }
 
+  /* ============ Wheel Puzzle editor ============ */
+  function renderWheelEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    /* older saves / hand-edited imports may be missing the newer fields */
+    if(!d.puzzles || !d.puzzles.length) d.puzzles = [{ text:'', cat:'', img:null }];
+    if(!d.wedges || !d.wedges.length) d.wedges = wofDefaultWedges();
+    if(d.vowelCost === undefined) d.vowelCost = 250;
+    if(!d.bonus) d.bonus = { enabled:false, text:'', cat:'', img:null, prize:2000 };
+
+    bar.appendChild(toolBtn('+ Puzzle', function(){
+      d.puzzles.push({ text:'', cat:'', img:null });
+      touch(); draw();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bar.appendChild(savedNoteEl);
+
+    /* ---- wheel settings ---- */
+    var ws = document.createElement('div'); ws.className = 'fin-section';
+    var wh = document.createElement('h3'); wh.textContent = '🎡 The wheel';
+    ws.appendChild(wh);
+
+    var vrow = document.createElement('div'); vrow.className = 'cw-row';
+    var vl = document.createElement('label'); vl.textContent = 'Vowel cost';
+    var vin = document.createElement('input');
+    vin.className = 'fin-input'; vin.type = 'text'; vin.inputMode = 'numeric';
+    vin.placeholder = '250'; vin.value = d.vowelCost;
+    vin.addEventListener('input', function(){
+      var n = parseInt(this.value.replace(/\D/g,''),10);
+      d.vowelCost = isNaN(n) ? 0 : n; touch();
+    });
+    vl.appendChild(vin);
+    vrow.appendChild(vl);
+    var vhint = document.createElement('span');
+    vhint.className = 'tq-foot';
+    vhint.textContent = 'Paid out of this round’s bank';
+    vrow.appendChild(vhint);
+    ws.appendChild(vrow);
+
+    var wedgeWrap = document.createElement('div'); wedgeWrap.className = 'wof-wedges';
+    ws.appendChild(wedgeWrap);
+    function drawWedges(){
+      wedgeWrap.innerHTML = '';
+      d.wedges.forEach(function(w, wi){
+        var chip = document.createElement('div'); chip.className = 'wof-wedge';
+        var inp = document.createElement('input');
+        inp.value = wedgeText(w);
+        inp.title = 'A number, or Bankrupt / Lose a Turn / Free Play';
+        inp.addEventListener('input', function(){
+          var parsed = parseWedge(this.value);
+          if(parsed) d.wedges[wi] = parsed;
+          touch();
+        });
+        inp.addEventListener('blur', function(){ this.value = wedgeText(d.wedges[wi]); });
+        chip.appendChild(inp);
+        var rm = document.createElement('button');
+        rm.textContent = '✕'; rm.title = 'Remove wedge';
+        rm.addEventListener('click', function(){
+          if(d.wedges.length <= 4){ DC.toast('Keep at least four wedges'); return; }
+          d.wedges.splice(wi,1); touch(); drawWedges();
+        });
+        chip.appendChild(rm);
+        wedgeWrap.appendChild(chip);
+      });
+      var add = document.createElement('button');
+      add.className = 'slot-btn'; add.textContent = '+ Wedge';
+      add.addEventListener('click', function(){
+        if(d.wedges.length >= 32){ DC.toast('32 wedges is the max'); return; }
+        d.wedges.push({ k:'cash', v:500 }); touch(); drawWedges();
+      });
+      wedgeWrap.appendChild(add);
+      var reset = document.createElement('button');
+      reset.className = 'slot-btn'; reset.textContent = '↺ Classic set';
+      reset.addEventListener('click', function(){
+        d.wedges = wofDefaultWedges(); touch(); drawWedges();
+        DC.toast('Classic wheel restored');
+      });
+      wedgeWrap.appendChild(reset);
+    }
+    drawWedges();
+    var wnote = document.createElement('div'); wnote.className = 'tq-foot';
+    wnote.textContent = 'Type a number for a cash wedge, or Bankrupt, Lose a Turn, or Free Play. '
+      + 'Cash pays per letter found. Bankrupt wipes the round bank and passes control; Free Play lets you call any letter '
+      + 'with no risk (vowels free, consonants pay 500 each).';
+    ws.appendChild(wnote);
+    wrap.appendChild(ws);
+
+    /* ---- bonus round ---- */
+    var bs = document.createElement('div'); bs.className = 'fin-section';
+    var bh = document.createElement('h3'); bh.textContent = '⭐ Bonus round';
+    bs.appendChild(bh);
+    var ben = document.createElement('label'); ben.className = 'dd-row';
+    var benIn = document.createElement('input'); benIn.type = 'checkbox';
+    benIn.checked = !!d.bonus.enabled;
+    benIn.addEventListener('change', function(){
+      d.bonus.enabled = this.checked; touch(); bbody.hidden = !this.checked;
+    });
+    ben.appendChild(benIn);
+    ben.appendChild(document.createTextNode(' Finish with a bonus puzzle for the top scorer'));
+    bs.appendChild(ben);
+
+    var bbody = document.createElement('div');
+    bbody.hidden = !d.bonus.enabled;
+    var bcat = document.createElement('input');
+    bcat.className = 'fin-input'; bcat.style.width = '100%'; bcat.style.marginTop = '10px';
+    bcat.maxLength = 40; bcat.placeholder = 'Category (e.g. Thing)…'; bcat.value = d.bonus.cat || '';
+    bcat.addEventListener('input', function(){ d.bonus.cat = this.value; touch(); });
+    bbody.appendChild(bcat);
+    var btx = document.createElement('textarea');
+    btx.className = 'tq-q'; btx.rows = 2; btx.style.marginTop = '10px';
+    btx.placeholder = 'Bonus puzzle phrase…'; btx.value = d.bonus.text || '';
+    btx.addEventListener('input', function(){ d.bonus.text = this.value; touch(); bfoot.textContent = bonusFoot(); });
+    bbody.appendChild(btx);
+    bbody.appendChild(imgControl(
+      function(){ return d.bonus.img || null; },
+      function(id){ d.bonus.img = id; touch(); }
+    ));
+    var brow = document.createElement('div'); brow.className = 'cw-row';
+    var bpl = document.createElement('label'); bpl.textContent = 'Bonus prize';
+    var bpin = document.createElement('input');
+    bpin.className = 'fin-input'; bpin.type = 'text'; bpin.inputMode = 'numeric';
+    bpin.placeholder = '2000'; bpin.value = d.bonus.prize || '';
+    bpin.addEventListener('input', function(){
+      var n = parseInt(this.value.replace(/\D/g,''),10);
+      d.bonus.prize = isNaN(n) ? 0 : n; touch();
+    });
+    bpl.appendChild(bpin);
+    brow.appendChild(bpl);
+    bbody.appendChild(brow);
+    function bonusFoot(){
+      return 'R, S, T, L, N and E are given free. The leader picks three more consonants and one vowel, '
+        + 'then gets one timed shot at solving it. ' + letterNote(d.bonus.text || '');
+    }
+    var bfoot = document.createElement('div'); bfoot.className = 'tq-foot';
+    bfoot.textContent = bonusFoot();
+    bbody.appendChild(bfoot);
+    bs.appendChild(bbody);
+    wrap.appendChild(bs);
+
+    function letterNote(txt){
+      var n = String(txt).toUpperCase().replace(/[^A-Z]/g,'').length;
+      return n ? n + ' letters.' : 'No letters yet.';
+    }
+
+    /* ---- puzzles ---- */
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+    function draw(){
+      list.innerHTML = '';
+      d.puzzles.forEach(function(p, pi){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Puzzle ' + (pi+1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.puzzles.length === 1){ DC.toast('Keep at least one puzzle'); return; }
+          if(p.img) DC.imgDelete(p.img);
+          d.puzzles.splice(pi,1); touch(); draw();
+        }));
+        card.appendChild(head);
+        var cat = document.createElement('input');
+        cat.className = 'fin-input'; cat.style.width = '100%';
+        cat.maxLength = 40; cat.placeholder = 'Category (e.g. Phrase, Person, Place)…';
+        cat.value = p.cat || '';
+        cat.addEventListener('input', function(){ p.cat = this.value; touch(); });
+        card.appendChild(cat);
+        var ta = document.createElement('textarea');
+        ta.className = 'tq-q'; ta.rows = 2; ta.style.marginTop = '10px';
+        ta.placeholder = 'Puzzle phrase (e.g. A watched pot never boils)…';
+        ta.value = p.text;
+        ta.addEventListener('input', function(){
+          p.text = this.value; touch(); foot.textContent = puzzleFoot();
+        });
+        card.appendChild(ta);
+        card.appendChild(imgControl(
+          function(){ return p.img || null; },
+          function(id){ p.img = id; touch(); }
+        ));
+        function puzzleFoot(){
+          return 'Players spin, call letters and solve on their phones. Spaces and punctuation show for free. '
+            + letterNote(p.text);
+        }
+        var foot = document.createElement('div'); foot.className = 'tq-foot';
+        foot.textContent = puzzleFoot();
+        card.appendChild(foot);
+        list.appendChild(card);
+      });
+    }
+    draw();
+  }
+
   /* ============ Punchline Showdown editor ============ */
   function renderPromptsEditor(g, wrap){
     var bar = editorHeader(g, wrap);
@@ -2811,6 +3292,9 @@
     if(game.type === 'prompts' && !validPrompts(game.data).length){
       DC.toast('Add at least one prompt first.'); return;
     }
+    if(game.type === 'wheel' && !validWheelPuzzles(game.data).length){
+      DC.toast('Add at least one puzzle with letters in it.'); return;
+    }
     DC.toast('Opening room…');
     var attempts = 0;
     (function tryPeer(){
@@ -2937,6 +3421,10 @@
       var p5 = host.players[conn.peer];
       if(p5 && host.ctl && host.ctl.onGuess) host.ctl.onGuess(p5, d.value);
     }
+    else if(d.t === 'wheel'){
+      var p6 = host.players[conn.peer];
+      if(p6 && host.ctl && host.ctl.onWheel) host.ctl.onWheel(p6, d);
+    }
   }
   function dropConn(conn){
     if(!host) return;
@@ -2953,13 +3441,26 @@
   }
 
   /* ---- lobby ---- */
+  /* Players have to load the SAME build the host is running — point them at
+     this very page, not at a hard-coded address, or a host running a newer
+     copy hands its players an older one. Phones can't open a file:// path,
+     so that case still has to fall back to the published copy.          */
+  var PUBLIC_URL = 'https://duelrevolvers.github.io/duelcrate/';
+  function servedLocally(){
+    return location.protocol === 'http:' || location.protocol === 'https:';
+  }
+  function appUrl(hash){
+    return servedLocally() ? location.origin + location.pathname + hash
+                           : PUBLIC_URL + hash;
+  }
   var qrDone = false;
   function renderLobbyQR(){
     var wrap = document.getElementById('lobby-qr-wrap');
     if(typeof QRCode === 'undefined'){ wrap.hidden = true; return; }
     wrap.hidden = false;
+    document.getElementById('lobby-qr-warn').hidden = servedLocally();
     if(qrDone) return;
-    var url = 'https://duelrevolvers.github.io/duelcrate/#join';
+    var url = appUrl('#join');
     new QRCode(document.getElementById('lobby-qr'),
       { text:url, width:150, height:150, correctLevel:QRCode.CorrectLevel.M });
     document.getElementById('lobby-qr-url').textContent = url;
@@ -2988,6 +3489,7 @@
              : host.game.type === 'feud'     ? feudCtl()
              : host.game.type === 'closest'  ? closestCtl()
              : host.game.type === 'prompts'  ? promptsCtl()
+             : host.game.type === 'wheel'    ? wheelCtl()
              : triviaCtl();
     showPlayView('game');
     host.ctl.start();
@@ -4176,6 +4678,680 @@
     };
   }
 
+  /* ============ WHEEL PUZZLE RUNTIME ============ */
+  function validWheelPuzzles(d){
+    return (d.puzzles || []).filter(function(p){
+      return String(p.text || '').toUpperCase().replace(/[^A-Z]/g,'').length > 0;
+    });
+  }
+  var WOF_FILLS = ['#FF4D9D','#6FD3FF','#FFC42E','#B79CFF','#4DE28A','#FF9E4D'];
+
+  /* the wheel itself: one SVG, spun by rotating the wedge group */
+  function buildWheelSVG(wedges){
+    var ns = 'http://www.w3.org/2000/svg';
+    var N = wedges.length, A = 360/N, cx = 100, cy = 100, R = 94;
+    var svg = document.createElementNS(ns,'svg');
+    svg.setAttribute('viewBox','0 0 200 200');
+    svg.setAttribute('aria-hidden','true');
+    var g = document.createElementNS(ns,'g');
+    g.setAttribute('class','wof-spinner');
+    svg.appendChild(g);
+    wedges.forEach(function(w, i){
+      var a0 = (i*A - 90) * Math.PI/180, a1 = ((i+1)*A - 90) * Math.PI/180;
+      var path = document.createElementNS(ns,'path');
+      path.setAttribute('d',
+        'M'+cx+' '+cy+
+        ' L'+(cx+R*Math.cos(a0)).toFixed(2)+' '+(cy+R*Math.sin(a0)).toFixed(2)+
+        ' A'+R+' '+R+' 0 '+(A>180?1:0)+' 1 '+
+        (cx+R*Math.cos(a1)).toFixed(2)+' '+(cy+R*Math.sin(a1)).toFixed(2)+' Z');
+      path.setAttribute('fill',
+        w.k === 'bank' ? '#0B0718' :
+        w.k === 'lose' ? '#F4EFFF' :
+        w.k === 'free' ? '#4DE28A' : WOF_FILLS[i % WOF_FILLS.length]);
+      path.setAttribute('stroke','#150E2D');
+      path.setAttribute('stroke-width','1.2');
+      g.appendChild(path);
+      var t = document.createElementNS(ns,'text');
+      /* spin the label out to the rim, then turn it 90° so it reads inward */
+      t.setAttribute('transform',
+        'rotate('+(i*A + A/2)+' '+cx+' '+cy+') translate('+cx+' '+(cy-R+7)+') rotate(90)');
+      t.setAttribute('text-anchor','start');
+      t.setAttribute('y','3.2');
+      t.setAttribute('font-family',"'Bungee','Arial Black',sans-serif");
+      t.setAttribute('font-size', w.k === 'cash' ? '9.5' : '6.6');
+      t.setAttribute('fill', w.k === 'bank' ? '#F4EFFF' : '#150E2D');
+      t.textContent = wedgeLabel(w);
+      g.appendChild(t);
+    });
+    var hub = document.createElementNS(ns,'circle');
+    hub.setAttribute('cx', cx); hub.setAttribute('cy', cy); hub.setAttribute('r','12');
+    hub.setAttribute('fill','#150E2D');
+    hub.setAttribute('stroke','#FFC42E'); hub.setAttribute('stroke-width','3');
+    svg.appendChild(hub);
+    return { svg:svg, spinner:g };
+  }
+
+  function wheelCtl(){
+    var d = host.game.data;
+    var qs = validWheelPuzzles(d);
+    var wedges = (d.wedges && d.wedges.length) ? d.wedges : wofDefaultWedges();
+    var vowelCost = parseInt(d.vowelCost, 10); if(!(vowelCost >= 0)) vowelCost = 250;
+    var bonusCfg = d.bonus || {};
+    var VOWELS = 'AEIOU';
+
+    var idx = -1;
+    /* spin | spinning | letter | vowel | solve | judge | solved
+       bonus-pick | bonus-solve | bonus-judge | bonus-done      */
+    var phase = 'spin';
+    var order = [], turn = 0, startAt = 0;
+    var banks = {}, called = {}, revealed = {}, lastGain = {};
+    var landed = null, freePlay = false;
+    var spinSeq = 0, spinDeg = 0, landedText = '', landedTone = '';
+    var solver = null, solveText = null;
+    var bonusOn = false, bonusP = null, bonusPicks = { cons:0, vow:0 };
+    var rot = 0, api = null;
+    /* stage elements, rebuilt per puzzle */
+    var boardEl, catEl, numEl, turnEl, bankEl, landedEl, orderEl, usedEl,
+        noteEl, actsEl, solveBox, timerFill, spinner;
+
+    var snappy = window.matchMedia &&
+                 window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function alive(){ return !!host && host.ctl === api; }
+    function puz(){ return bonusOn ? bonusCfg : qs[idx]; }
+    function isVowel(c){ return VOWELS.indexOf(c) >= 0; }
+    function letters(){ return String(puz().text || '').toUpperCase().replace(/[^A-Z]/g,''); }
+    function countOf(ch){
+      var s = letters(), n = 0;
+      for(var i=0;i<s.length;i++) if(s.charAt(i) === ch) n++;
+      return n;
+    }
+    function allRevealed(){
+      var s = letters();
+      for(var i=0;i<s.length;i++) if(!revealed[s.charAt(i)]) return false;
+      return true;
+    }
+    function hasHiddenVowel(){
+      var s = letters();
+      for(var i=0;i<s.length;i++){
+        var c = s.charAt(i);
+        if(isVowel(c) && !revealed[c]) return true;
+      }
+      return false;
+    }
+    function masked(){
+      return String(puz().text || '').toUpperCase().split('').map(function(c){
+        return /[A-Z]/.test(c) ? (revealed[c] ? c : '_') : c;
+      }).join('');
+    }
+    function letterList(kind){
+      var out = [], A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      for(var i=0;i<26;i++){
+        var c = A.charAt(i), v = isVowel(c);
+        if(kind === 'cons' && v) continue;
+        if(kind === 'vowels' && !v) continue;
+        out.push({ ch:c, off: !!called[c] });
+      }
+      return out;
+    }
+
+    /* ---- turn order ---- */
+    function syncOrder(){
+      roster().forEach(function(p){
+        if(p.connected && order.indexOf(p.pid) === -1) order.push(p.pid);
+      });
+    }
+    function curPid(){
+      if(!order.length) return null;
+      return order[turn % order.length];
+    }
+    function curP(){
+      var pid = curPid();
+      return pid ? (host.players[pid] || null) : null;
+    }
+    function nextTurn(){
+      if(!order.length) return;
+      for(var i=0;i<order.length;i++){
+        turn = (turn + 1) % order.length;
+        var p = host.players[order[turn]];
+        if(p && p.connected) return;
+      }
+    }
+
+    /* ---- stage ---- */
+    function buildStage(){
+      stopTimer();
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'wof-wrap';
+
+      numEl = document.createElement('div'); numEl.className = 'q-num';
+      numEl.textContent = bonusOn ? 'Bonus Round' : 'Puzzle ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(numEl);
+
+      catEl = document.createElement('div'); catEl.className = 'wof-cat';
+      catEl.textContent = (puz().cat || '').trim() || 'Puzzle';
+      v.appendChild(catEl);
+
+      boardEl = document.createElement('div'); boardEl.className = 'wof-board';
+      v.appendChild(boardEl);
+
+      stageImg(puz().img, v);
+
+      var mid = document.createElement('div'); mid.className = 'wof-mid';
+      if(!bonusOn){
+        var wbox = document.createElement('div'); wbox.className = 'wof-wheel';
+        var ptr = document.createElement('div'); ptr.className = 'wof-pointer';
+        wbox.appendChild(ptr);
+        var built = buildWheelSVG(wedges);
+        spinner = built.spinner;
+        if(snappy) spinner.style.transition = 'transform .25s ease-out';
+        rot = 0;
+        wbox.appendChild(built.svg);
+        mid.appendChild(wbox);
+      }else{ spinner = null; }
+
+      var side = document.createElement('div'); side.className = 'wof-side';
+      turnEl   = document.createElement('div'); turnEl.className   = 'wof-turn';
+      bankEl   = document.createElement('div'); bankEl.className   = 'wof-bank';
+      landedEl = document.createElement('div'); landedEl.className = 'wof-landed';
+      orderEl  = document.createElement('div'); orderEl.className  = 'wof-order';
+      usedEl   = document.createElement('div'); usedEl.className   = 'wof-used';
+      side.appendChild(turnEl); side.appendChild(bankEl);
+      if(!bonusOn) side.appendChild(landedEl);
+      side.appendChild(orderEl); side.appendChild(usedEl);
+      mid.appendChild(side);
+      v.appendChild(mid);
+
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
+      tb.appendChild(timerFill); v.appendChild(tb);
+
+      solveBox = document.createElement('div'); solveBox.className = 'wof-solve-box';
+      solveBox.hidden = true; v.appendChild(solveBox);
+
+      noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      v.appendChild(noteEl);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      v.appendChild(actsEl);
+
+      elStage.appendChild(v);
+      drawBoard(null);
+      updateSide(); updateActions();
+    }
+
+    function drawBoard(popCh){
+      boardEl.innerHTML = '';
+      String(puz().text || '').toUpperCase().split(/\s+/).forEach(function(word){
+        if(!word) return;
+        var w = document.createElement('div'); w.className = 'wof-word';
+        word.split('').forEach(function(c){
+          var t = document.createElement('div'); t.className = 'wof-tile';
+          if(/[A-Z]/.test(c)){
+            if(revealed[c]){ t.textContent = c; if(popCh === c) t.classList.add('pop'); }
+            else t.classList.add('dark');
+          }else{
+            t.classList.add('punc'); t.textContent = c;
+          }
+          w.appendChild(t);
+        });
+        boardEl.appendChild(w);
+      });
+    }
+
+    function updateSide(){
+      var p = bonusOn ? bonusP : curP();
+      turnEl.textContent = bonusOn
+        ? (bonusP ? bonusP.name + ' — for ' + bonusPrize() + ' PTS' : 'Bonus Round')
+        : (p ? p.name + '’s turn' : 'Waiting for players…');
+      if(bonusOn){
+        bankEl.innerHTML = '';
+        bankEl.appendChild(document.createTextNode('Pick 3 consonants + 1 vowel'));
+      }else{
+        bankEl.innerHTML = '';
+        bankEl.appendChild(document.createTextNode('Round bank: '));
+        var b = document.createElement('b');
+        b.textContent = (p ? (banks[p.pid] || 0) : 0) + ' PTS';
+        bankEl.appendChild(b);
+      }
+      orderEl.innerHTML = '';
+      if(!bonusOn){
+        order.forEach(function(pid, i){
+          var pl = host.players[pid];
+          if(!pl) return;
+          var s = document.createElement('span');
+          s.textContent = pl.name;
+          if(i === (turn % order.length)) s.classList.add('on');
+          if(!pl.connected) s.classList.add('gone');
+          orderEl.appendChild(s);
+        });
+      }
+      usedEl.innerHTML = '';
+      'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(function(c){
+        if(!called[c]) return;
+        var s = document.createElement('span');
+        s.textContent = c;
+        if(revealed[c]) s.classList.add('hit');
+        usedEl.appendChild(s);
+      });
+    }
+
+    function setLanded(text, cls){
+      /* mirrored to every phone via stateFor */
+      landedText = text; landedTone = cls || '';
+      if(!landedEl) return;
+      landedEl.textContent = text;
+      landedEl.className = 'wof-landed' + (cls ? ' ' + cls : '');
+    }
+    function note(text){ if(noteEl) noteEl.textContent = text; }
+
+    function updateActions(){
+      if(!actsEl) return;
+      actsEl.innerHTML = '';
+      if(phase === 'judge' || phase === 'bonus-judge'){
+        actsEl.appendChild(stageBtn('✓ Correct','good', function(){
+          if(phase === 'bonus-judge') bonusFinish(true); else solved(solver);
+        }));
+        actsEl.appendChild(stageBtn('✗ Wrong','bad', function(){
+          if(phase === 'bonus-judge'){ bonusFinish(false); return; }
+          var s = solver; solver = null; solveText = null;
+          solveBox.hidden = true;
+          passTurn((s ? s.name : 'That') + ' missed it.');
+        }));
+        return;
+      }
+      if(phase === 'solved'){
+        actsEl.appendChild(stageBtn(
+          idx + 1 >= qs.length ? (bonusReady() ? 'Bonus Round ▶' : 'Final Scores') : 'Next Puzzle ▶',
+          'gold', nextPuzzle));
+        return;
+      }
+      if(phase === 'bonus-done'){
+        actsEl.appendChild(stageBtn('Final Scores','gold', finish));
+        return;
+      }
+      if(bonusOn) return;
+      actsEl.appendChild(stageBtn('Skip Turn','', function(){
+        stopTimer(); solveBox.hidden = true; solver = null;
+        passTurn('Turn skipped.');
+      }));
+      actsEl.appendChild(stageBtn('Reveal & Move On','', function(){
+        stopTimer(); solveBox.hidden = true; solver = null;
+        letters().split('').forEach(function(c){ revealed[c] = true; });
+        phase = 'solved'; lastGain = {};
+        drawBoard(null); updateSide();
+        note('Nobody solved it. The answer was: ' + puz().text);
+        updateActions(); pushAll();
+      }));
+    }
+
+    function refresh(popCh){
+      drawBoard(popCh === undefined ? null : popCh);
+      updateSide(); updateActions();
+    }
+
+    /* ---- flow ---- */
+    function nextPuzzle(){
+      idx++;
+      if(idx >= qs.length){ startBonus(); return; }
+      phase = 'spin';
+      banks = {}; called = {}; revealed = {}; lastGain = {};
+      landed = null; freePlay = false; solver = null; solveText = null;
+      syncOrder();
+      /* the opening spin rotates each puzzle, so solving doesn't hand you
+         the first spin of the next one too */
+      if(idx > 0) startAt++;
+      turn = order.length ? (startAt % order.length) : 0;
+      var opener = order.length ? host.players[order[turn]] : null;
+      if(order.length && (!opener || !opener.connected)) nextTurn();
+      buildStage();
+      setLanded('Spin to start!', '');
+      note(curP() ? curP().name + ' — spin the wheel!' : 'Waiting for players…');
+      gmSetAnswer([{ text: puz().text }]);
+      pushAll();
+    }
+
+    function passTurn(msg){
+      stopTimer();
+      if(solveBox) solveBox.hidden = true;
+      solver = null; solveText = null; freePlay = false;
+      nextTurn();
+      phase = 'spin';
+      var p = curP();
+      note(msg + (p ? ' ' + p.name + '’s turn.' : ' Waiting for players…'));
+      refresh(); pushAll();
+    }
+
+    function doSpin(p){
+      if(phase !== 'spin' || !p || p.pid !== curPid() || !spinner) return;
+      phase = 'spinning';
+      var i = Math.floor(Math.random() * wedges.length);
+      landed = wedges[i];
+      var A = 360 / wedges.length;
+      /* land the chosen wedge under the pointer, always spinning forwards */
+      var target = -(i*A + A/2) + (Math.random()*A*0.6 - A*0.3);
+      rot += (snappy ? 0 : 360*4) + ((((target - rot) % 360) + 360) % 360);
+      spinner.style.transform = 'rotate(' + rot + 'deg)';
+      /* phones spin to the same angle, so every screen stops together */
+      spinSeq++; spinDeg = ((rot % 360) + 360) % 360;
+      setLanded('…', '');
+      note(p.name + ' is spinning…');
+      updateActions(); pushAll();
+      setTimeout(function(){
+        if(!alive() || phase !== 'spinning') return;
+        resolveSpin();
+      }, snappy ? 320 : 4350);
+    }
+
+    function resolveSpin(){
+      var p = curP();
+      if(landed.k === 'bank'){
+        if(p) banks[p.pid] = 0;
+        setLanded('BANKRUPT','bad');
+        passTurn((p ? p.name : 'That') + ' hit Bankrupt — round bank wiped!');
+        return;
+      }
+      if(landed.k === 'lose'){
+        setLanded('LOSE A TURN','bad');
+        passTurn((p ? p.name : 'That player') + ' loses a turn.');
+        return;
+      }
+      freePlay = (landed.k === 'free');
+      setLanded(freePlay ? 'FREE PLAY' : landed.v + ' per letter', freePlay ? 'good' : '');
+      phase = 'letter';
+      note((p ? p.name : 'Up next') + ' — call a ' + (freePlay ? 'letter, any letter!' : 'consonant.'));
+      refresh(); pushAll();
+    }
+
+    function buyVowel(p){
+      if(phase !== 'spin' || !p || p.pid !== curPid()) return;
+      if((banks[p.pid] || 0) < vowelCost || !hasHiddenVowel()) return;
+      banks[p.pid] = (banks[p.pid] || 0) - vowelCost;
+      phase = 'vowel';
+      setLanded('BOUGHT A VOWEL','');
+      note(p.name + ' bought a vowel (−' + vowelCost + ').');
+      refresh(); pushAll();
+    }
+
+    function startSolve(p){
+      if(!p || p.pid !== curPid()) return;
+      if(phase !== 'spin' && phase !== 'letter') return;
+      phase = 'solve'; solver = p; solveText = null;
+      note(p.name + ' is solving…');
+      refresh(); pushAll();
+      startTimer(settings.answerTime, timerFill, function(){
+        if(!alive() || phase !== 'solve') return;
+        solveText = '';
+        phase = 'judge';
+        showSolve();
+      });
+    }
+
+    function showSolve(){
+      solveBox.hidden = false;
+      solveBox.textContent = (solver ? solver.name + ': ' : '') +
+        (solveText ? '“' + solveText + '”' : '(no answer)');
+      /* the real answer stays in the GM Console — never on the shared screen */
+      note('Your call, host — the answer is in your GM Console.');
+      updateActions(); pushAll();
+    }
+
+    function onLetter(p, ch){
+      ch = String(ch || '').toUpperCase().slice(0,1);
+      if(!/[A-Z]/.test(ch) || called[ch]) return;
+
+      if(phase === 'bonus-pick'){
+        if(!bonusP || p.pid !== bonusP.pid) return;
+        if(isVowel(ch)){ if(bonusPicks.vow >= 1) return; bonusPicks.vow++; }
+        else { if(bonusPicks.cons >= 3) return; bonusPicks.cons++; }
+        called[ch] = true;
+        var got = countOf(ch) > 0;
+        if(got) revealed[ch] = true;
+        refresh(got ? ch : null);
+        if(bonusPicks.cons >= 3 && bonusPicks.vow >= 1){
+          phase = 'bonus-solve'; solver = bonusP; solveText = null;
+          note(bonusP.name + ' — solve it!');
+          updateActions(); pushAll();
+          startTimer(settings.answerTime, timerFill, function(){
+            if(!alive() || phase !== 'bonus-solve') return;
+            solveText = ''; phase = 'bonus-judge'; showSolve();
+          });
+          return;
+        }
+        note(bonusP.name + ' needs ' + (3 - bonusPicks.cons) + ' more consonant(s) and ' +
+             (1 - bonusPicks.vow) + ' vowel(s).');
+        pushAll();
+        return;
+      }
+
+      if(!p || p.pid !== curPid()) return;
+      if(phase === 'vowel' && !isVowel(ch)) return;
+      if(phase === 'letter'){ if(!freePlay && isVowel(ch)) return; }
+      else if(phase !== 'vowel') return;
+
+      called[ch] = true;
+      var n = countOf(ch);
+      if(!n){
+        if(phase === 'letter' && freePlay){
+          freePlay = false; phase = 'spin';
+          setLanded('FREE PLAY','good');
+          note('No ' + ch + '’s — but Free Play keeps you in control. Spin again, ' + p.name + '!');
+          refresh(); pushAll();
+          return;
+        }
+        passTurn('No ' + ch + '’s.');
+        return;
+      }
+      revealed[ch] = true;
+      var gain = 0;
+      if(phase === 'letter'){
+        gain = (freePlay ? (isVowel(ch) ? 0 : 500) : landed.v) * n;
+        banks[p.pid] = (banks[p.pid] || 0) + gain;
+      }
+      freePlay = false;
+      if(allRevealed()){
+        refresh(ch);
+        solved(p);
+        return;
+      }
+      phase = 'spin';
+      note(n + ' × ' + ch + (gain ? ' — +' + gain + ' this round' : '') +
+           '. Go again, ' + p.name + '!');
+      refresh(ch); pushAll();
+    }
+
+    function solved(p){
+      stopTimer();
+      if(solveBox) solveBox.hidden = true;
+      phase = 'solved';
+      letters().split('').forEach(function(c){ revealed[c] = true; });
+      lastGain = {};
+      var bank = p ? (banks[p.pid] || 0) : 0;
+      if(p){ lastGain[p.pid] = bank; p.score += bank; }
+      solver = null;
+      renderScoreRow();
+      note((p ? p.name : 'Someone') + ' solved it — banking ' + bank + ' PTS!');
+      refresh(); pushAll();
+    }
+
+    /* ---- bonus round ---- */
+    function bonusPrize(){
+      var n = parseInt(bonusCfg.prize, 10);
+      return n > 0 ? n : 2000;
+    }
+    function bonusReady(){
+      return !!(bonusCfg.enabled &&
+        String(bonusCfg.text || '').toUpperCase().replace(/[^A-Z]/g,'').length);
+    }
+    function startBonus(){
+      if(!bonusReady()){ finish(); return; }
+      var top = roster().slice().sort(function(a,b){ return b.score - a.score; })[0];
+      if(!top){ finish(); return; }
+      bonusOn = true; bonusP = top;
+      phase = 'bonus-pick';
+      called = {}; revealed = {}; lastGain = {};
+      bonusPicks = { cons:0, vow:0 };
+      'RSTLNE'.split('').forEach(function(c){ called[c] = true; revealed[c] = true; });
+      buildStage();
+      note(bonusP.name + ' takes the bonus puzzle — pick 3 consonants and a vowel!');
+      gmSetAnswer([{ text: bonusCfg.text }]);
+      pushAll();
+    }
+    function bonusFinish(won){
+      stopTimer();
+      phase = 'bonus-done';
+      letters().split('').forEach(function(c){ revealed[c] = true; });
+      lastGain = {};
+      if(won && bonusP){
+        lastGain[bonusP.pid] = bonusPrize();
+        bonusP.score += bonusPrize();
+      }
+      solveBox.hidden = true;
+      renderScoreRow();
+      note(won ? bonusP.name + ' takes the bonus — +' + bonusPrize() + ' PTS!'
+                : 'Not this time. The answer was: ' + bonusCfg.text);
+      refresh(); pushAll();
+    }
+
+    function finish(){
+      host.phase = 'ended'; stopTimer();
+      gmSetAnswer(null);
+      renderFinal(); pushAll();
+    }
+
+    api = {
+      start: nextPuzzle,
+      onBuzz: function(){},
+      onAnswer: function(){},
+      onGuess: function(){},
+      onText: function(p, txt){
+        if(phase === 'solve' && solver && p.pid === solver.pid){
+          solveText = String(txt || '').slice(0,120);
+          stopTimer(); phase = 'judge'; showSolve();
+        }else if(phase === 'bonus-solve' && solver && p.pid === solver.pid){
+          solveText = String(txt || '').slice(0,120);
+          stopTimer(); phase = 'bonus-judge'; showSolve();
+        }
+      },
+      onWheel: function(p, m){
+        var act = m && m.act;
+        if(act === 'spin') doSpin(p);
+        else if(act === 'vowel') buyVowel(p);
+        else if(act === 'solve') startSolve(p);
+        else if(act === 'letter') onLetter(p, m.ch);
+      },
+      onRoster: function(){
+        syncOrder();
+        renderScoreRow();
+        if(boardEl) updateSide();
+      },
+      stateFor: function(p, base){
+        if(idx < 0 && !bonusOn){ base.mode = 'waiting'; base.note = 'Get ready…'; return base; }
+
+        if(bonusOn){
+          var mine = bonusP && bonusP.pid === p.pid;
+          if(phase === 'bonus-done'){
+            base.mode = 'result';
+            base.gained = lastGain[p.pid] || 0;
+            base.correct = !!lastGain[p.pid];
+            base.headline = 'Bonus!';
+            base.correctText = bonusCfg.text;
+            return base;
+          }
+          if(!mine){
+            base.mode = 'wheel-wait';
+            base.puzzle = masked();
+            base.note = (bonusP ? bonusP.name : 'The leader') + ' is playing the bonus round…';
+            return base;
+          }
+          if(phase === 'bonus-pick'){
+            base.mode = 'wheel-letter';
+            base.puzzle = masked();
+            base.title = 'Bonus Round';
+            base.note = 'Pick ' + (3 - bonusPicks.cons) + ' more consonant(s) and ' +
+                        (1 - bonusPicks.vow) + ' vowel(s). R S T L N E are free.';
+            base.letters = letterList(bonusPicks.cons >= 3 ? 'vowels'
+                                    : bonusPicks.vow >= 1 ? 'cons' : 'all');
+            return base;
+          }
+          if(phase === 'bonus-solve'){
+            base.mode = 'text';
+            base.title = 'Solve it!';
+            base.cat = (bonusCfg.cat || '').trim();
+            base.puzzle = masked();
+            return base;
+          }
+          base.mode = 'wheel-wait';
+          base.puzzle = masked();
+          base.note = 'The host is checking your answer…';
+          return base;
+        }
+
+        if(phase === 'solved'){
+          base.mode = 'result';
+          base.gained = lastGain[p.pid] || 0;
+          base.correct = !!lastGain[p.pid];
+          base.headline = 'You solved it!';
+          base.correctText = puz().text;
+          return base;
+        }
+
+        base.puzzle = masked();
+        /* everyone gets the wheel, not just whoever is spinning */
+        base.wheel = wedges;
+        base.spin = { seq: spinSeq, deg: spinDeg };
+        if(landedText){ base.landedText = landedText; base.landedTone = landedTone; }
+        if(curPid() !== p.pid){
+          var cp = curP();
+          base.mode = 'wheel-wait';
+          base.note = (cp ? cp.name : 'Someone') + ' is ' + (
+            phase === 'spinning' ? 'spinning the wheel…' :
+            phase === 'letter'   ? 'calling a letter…' :
+            phase === 'vowel'    ? 'buying a vowel…' :
+            phase === 'solve' || phase === 'judge' ? 'going for the solve!' : 'up…');
+          return base;
+        }
+        base.bank = banks[p.pid] || 0;
+        if(phase === 'spin'){
+          base.mode = 'wheel-spin';
+          base.canVowel = (banks[p.pid] || 0) >= vowelCost && hasHiddenVowel();
+          base.vowelCost = vowelCost;
+          base.note = 'Round bank: ' + (banks[p.pid] || 0) + ' PTS';
+          return base;
+        }
+        if(phase === 'spinning'){
+          base.mode = 'wheel-wait'; base.note = 'Round and round it goes…';
+          return base;
+        }
+        if(phase === 'letter'){
+          base.mode = 'wheel-letter';
+          base.title = freePlay ? 'Free Play!' : 'Call a consonant';
+          base.note = freePlay ? 'Any letter — vowels free, consonants pay 500 each.'
+                               : landed.v + ' for every one you find.';
+          base.letters = letterList(freePlay ? 'all' : 'cons');
+          base.canSolve = true;
+          return base;
+        }
+        if(phase === 'vowel'){
+          base.mode = 'wheel-letter';
+          base.title = 'Pick your vowel';
+          base.note = 'You paid ' + vowelCost + ' for it.';
+          base.letters = letterList('vowels');
+          return base;
+        }
+        if(phase === 'solve'){
+          base.mode = 'text';
+          base.title = 'Solve the puzzle!';
+          base.cat = (puz().cat || '').trim();
+          return base;
+        }
+        base.mode = 'wheel-wait';
+        base.note = 'The host is checking your answer…';
+        return base;
+      }
+    };
+    return api;
+  }
+
   /* ---- final scores ---- */
   function renderFinal(){
     elStage.innerHTML = '';
@@ -4376,7 +5552,7 @@
         if(gmQrForCode !== host.gmCode){
           var qrBox = gmWin.document.getElementById('gm-qr');
           qrBox.innerHTML = '';
-          new gmWin.QRCode(qrBox, { text:'https://duelrevolvers.github.io/duelcrate/#gm',
+          new gmWin.QRCode(qrBox, { text: appUrl('#gm'),
             width:120, height:120, correctLevel: gmWin.QRCode.CorrectLevel.M });
           gmQrForCode = host.gmCode;
         }
