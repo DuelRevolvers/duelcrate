@@ -693,9 +693,13 @@
   .wof-mid{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;width:100%}
   .wof-wheel{position:relative;width:min(52vw,300px);flex:none}
   .wof-wheel svg{width:100%;height:auto;display:block;filter:drop-shadow(0 6px 22px #00000077)}
-  .wof-spinner{transition:transform 4.2s cubic-bezier(.17,.72,.16,1);transform-origin:100px 100px}
+  /* driven frame by frame in JS, not by a CSS transition — a transition here
+     is silently killed by the reduced-motion rule at the end of this sheet,
+     which left the wheel teleporting instead of spinning */
+  .wof-spinner{transform-origin:100px 100px}
   .wof-pointer{
-    position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:0;height:0;
+    position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:0;height:0;
+    z-index:2;   /* sits ON the wheel — the svg is a later sibling and would cover it */
     border-left:13px solid transparent;border-right:13px solid transparent;
     border-top:26px solid var(--bulb);filter:drop-shadow(0 2px 5px #000);
   }
@@ -1370,10 +1374,20 @@
       }
       var sp = s.spin;
       if(sp && sp.seq !== pvWheel.seq && typeof sp.deg === 'number'){
+        var first = (pvWheel.seq === -1);
         pvWheel.seq = sp.seq;
-        /* always turn forwards, landing on the angle the host chose */
-        pvWheel.rot += 360*4 + ((((sp.deg - pvWheel.rot) % 360) + 360) % 360);
-        pvWheel.spinner.style.transform = 'rotate(' + pvWheel.rot + 'deg)';
+        if(first){
+          /* just joined (or rebuilt) — match where the wheel already sits
+             instead of faking a spin that never happened */
+          pvWheel.rot = sp.deg;
+          pvWheel.spinner.style.transform = 'rotate(' + sp.deg + 'deg)';
+        }else{
+          /* always turn forwards, landing on the angle the host chose */
+          var from = pvWheel.rot;
+          pvWheel.rot += 360*(WOF_REDUCED ? 2 : 4) +
+                         ((((sp.deg - pvWheel.rot) % 360) + 360) % 360);
+          animateSpin(pvWheel.spinner, from, pvWheel.rot, wofSpinMs());
+        }
       }
     }else{
       box.hidden = true;
@@ -2505,6 +2519,529 @@
     savedNoteEl.className = 'saved-note'; savedNoteEl.textContent = 'Autosaves as you type';
     return bar;
   }
+  /* ---- fill-in-the-blanks templates (also shipped as .txt files) ---- */
+  function tpl(lines){ return lines.join('\n') + '\n'; }
+  var TPL_HEAD = [
+    '# ============================================================',
+    '#  DuelCrate question sheet',
+    '# ============================================================',
+    '#  Fill this in, save it as a plain .txt file, then open your',
+    '#  game in DuelCrate and click "Import questions".',
+    '#',
+    '#  - Lines starting with # are notes. They are ignored.',
+    '#  - Leave ONE BLANK LINE between questions.',
+    '#  - Importing ADDS to the questions already in your game.',
+    '#  - Pictures can\'t come from this file — add those in the editor.',
+    '# ------------------------------------------------------------'
+  ];
+  var DC_TEMPLATES = {
+    trivia: tpl(TPL_HEAD.concat([
+      '#  MULTIPLE CHOICE TRIVIA',
+      '#  CORRECT accepts the letter (B), the number (2), or the',
+      '#  answer text itself. POINTS is optional and defaults to 100.',
+      '#  Two to four choices per question.',
+      '',
+      'TYPE: trivia',
+      'NAME: My Trivia Night',
+      'MAX PLAYERS: 20',
+      '',
+      'Q: What is the capital of France?',
+      'A) Paris',
+      'B) Rome',
+      'C) Oslo',
+      'D) Lima',
+      'CORRECT: A',
+      'POINTS: 100',
+      '',
+      'Q: Which planet is known as the Red Planet?',
+      'A) Venus',
+      'B) Mars',
+      'C) Jupiter',
+      'D) Mercury',
+      'CORRECT: B',
+      'POINTS: 200',
+      '',
+      '# Copy the block above for each new question.'
+    ])),
+    closest: tpl(TPL_HEAD.concat([
+      '#  CLOSEST WINS',
+      '#  ANSWER must be a number. Closest guess without going over',
+      '#  takes the points. POINTS is optional and defaults to 100.',
+      '',
+      'TYPE: closest',
+      'NAME: Closest Wins',
+      'MAX PLAYERS: 20',
+      '',
+      'Q: How many keys are on a standard piano?',
+      'ANSWER: 88',
+      'POINTS: 100',
+      '',
+      'Q: How many bones are in the adult human body?',
+      'ANSWER: 206',
+      'POINTS: 100',
+      '',
+      '# Copy the block above for each new question.'
+    ])),
+    feud: tpl(TPL_HEAD.concat([
+      '#  FEUD SURVEY',
+      '#  List each survey answer on its own line starting with a dash.',
+      '#  Put the number of people who said it after a | (pipe).',
+      '#  Up to 8 answers per survey; the top ones score the most.',
+      '',
+      'TYPE: feud',
+      'NAME: Feud Survey',
+      'MAX PLAYERS: 20',
+      '',
+      'Q: Name something you take to the beach.',
+      '- Towel | 30',
+      '- Sunscreen | 25',
+      '- Cooler | 18',
+      '- Umbrella | 12',
+      '',
+      'Q: Name a reason you might be late for work.',
+      '- Traffic | 42',
+      '- Overslept | 28',
+      '- Bad weather | 15',
+      '- Car trouble | 9',
+      '',
+      '# Copy the block above for each new survey.'
+    ])),
+    prompts: tpl(TPL_HEAD.concat([
+      '#  PUNCHLINE SHOWDOWN',
+      '#  One prompt per line. Everyone writes an answer on their phone,',
+      '#  then votes for their favourite.',
+      '#  FIRST / SECOND / THIRD are the points for the top three.',
+      '',
+      'TYPE: prompts',
+      'NAME: Punchline Showdown',
+      'MAX PLAYERS: 20',
+      'FIRST: 300',
+      'SECOND: 200',
+      'THIRD: 100',
+      'REVEAL ONE BY ONE: no',
+      '',
+      'PROMPT: The worst thing to say in a job interview.',
+      'PROMPT: A terrible name for a boat.',
+      'PROMPT: The real reason the dinosaurs went extinct.',
+      '',
+      '# Add as many PROMPT lines as you like.'
+    ])),
+    wheel: tpl(TPL_HEAD.concat([
+      '#  WHEEL PUZZLE',
+      '#  One puzzle per block. CATEGORY is the hint shown above the board.',
+      '#  WEDGES sets the wheel: numbers for cash, or the words',
+      '#  Bankrupt, Lose a Turn, and Free Play. Leave it out to keep the',
+      '#  classic wheel. Delete the BONUS lines to skip the bonus round.',
+      '',
+      'TYPE: wheel',
+      'NAME: Wheel Puzzle Night',
+      'MAX PLAYERS: 20',
+      'VOWEL COST: 250',
+      'WEDGES: 2500, 900, 700, 800, Bankrupt, 550, 650, 500, 700, Lose a Turn, 600, 650, 500, 900, Free Play, 600, 550, 800, 500, Bankrupt, 650, 500, 700, 600',
+      'BONUS: yes',
+      'BONUS CATEGORY: Event',
+      'BONUS PUZZLE: Quiz Night',
+      'BONUS PRIZE: 2000',
+      '',
+      'CATEGORY: Phrase',
+      'PUZZLE: A watched pot never boils',
+      '',
+      'CATEGORY: Person',
+      'PUZZLE: Abraham Lincoln',
+      '',
+      'CATEGORY: Place',
+      'PUZZLE: The Grand Canyon',
+      '',
+      '# Copy the block above for each new puzzle.'
+    ])),
+    jeopardy: tpl(TPL_HEAD.concat([
+      '#  JEOPARDY STYLE',
+      '#  VALUES sets the point rows (2-6 of them).',
+      '#  A CATEGORY line starts a new column; the Q/A blocks under it',
+      '#  belong to that column. VALUE says which row the clue sits in.',
+      '#  Add "DAILY DOUBLE: yes" to any clue to make it worth double.',
+      '#  Up to 6 categories. The FINAL lines are optional.',
+      '',
+      'TYPE: jeopardy',
+      'NAME: Quiz Board',
+      'MAX PLAYERS: 20',
+      'VALUES: 100, 200, 300, 400, 500',
+      '',
+      'CATEGORY: World Capitals',
+      '',
+      'Q: This city on the Seine is home to the Louvre.',
+      'A: Paris',
+      'VALUE: 100',
+      '',
+      'Q: This Nordic capital sits on a fjord of the same name.',
+      'A: Oslo',
+      'VALUE: 200',
+      '',
+      'Q: This capital is the southernmost in mainland Europe.',
+      'A: Athens',
+      'VALUE: 300',
+      'DAILY DOUBLE: yes',
+      '',
+      'CATEGORY: Science',
+      '',
+      'Q: This gas makes up about 78% of the air you breathe.',
+      'A: Nitrogen',
+      'VALUE: 100',
+      '',
+      'Q: This is the only metal that is liquid at room temperature.',
+      'A: Mercury',
+      'VALUE: 200',
+      '',
+      '# Optional final round:',
+      'FINAL CATEGORY: Astronomy',
+      'FINAL Q: This is the largest planet in our solar system.',
+      'FINAL A: Jupiter',
+      '',
+      '# Copy a CATEGORY block for each new column.'
+    ]))
+  };
+
+  /* ================ BULK QUESTION IMPORT ================
+     A forgiving plain-text format so a whole game can be typed up in
+     Notepad and loaded in one go. Shared shape across every style:
+       # comments          - ignored
+       KEY: value          - a field
+       (blank line)        - ends one question and starts the next
+     Every editor offers a matching fill-in-the-blanks template.      */
+
+  function bulkLines(text){
+    return String(text == null ? '' : text)
+      .replace(/^﻿/, '')          /* Notepad's byte-order mark */
+      .replace(/\r\n?/g, '\n')
+      .split('\n');
+  }
+  function bulkBlocks(text){
+    var out = [], cur = [];
+    bulkLines(text).forEach(function(raw){
+      var line = raw.replace(/\s+$/, '');
+      if(/^\s*(#|\/\/)/.test(line)) return;
+      if(!line.trim()){ if(cur.length){ out.push(cur); cur = []; } return; }
+      cur.push(line);
+    });
+    if(cur.length) out.push(cur);
+    return out;
+  }
+  function bulkKV(line){
+    var m = /^\s*([A-Za-z][A-Za-z0-9 ]*?)\s*:\s*([\s\S]*)$/.exec(line);
+    return m ? { key: m[1].trim().toUpperCase().replace(/\s+/g,' '), val: m[2].trim() } : null;
+  }
+  function bulkInt(v, dflt){
+    var n = parseInt(String(v).replace(/[^0-9-]/g, ''), 10);
+    return isNaN(n) ? dflt : n;
+  }
+  function bulkBool(v){ return /^(y|yes|true|1|on)$/i.test(String(v).trim()); }
+
+  /* keys that describe the whole game rather than one question */
+  var BULK_GLOBALS = {
+    'TYPE':1,'NAME':1,'MAX PLAYERS':1,'VALUES':1,
+    'VOWEL COST':1,'WEDGES':1,
+    'BONUS':1,'BONUS CATEGORY':1,'BONUS PUZZLE':1,'BONUS PRIZE':1,
+    'FIRST':1,'SECOND':1,'THIRD':1,'REVEAL ONE BY ONE':1,
+    'FINAL CATEGORY':1,'FINAL Q':1,'FINAL A':1
+  };
+  var BULK_TYPES = {
+    'jeopardy':'jeopardy','jeopardy style':'jeopardy',
+    'trivia':'trivia','multiple choice':'trivia','multiple choice trivia':'trivia',
+    'feud':'feud','survey':'feud','feud survey':'feud',
+    'closest':'closest','closest wins':'closest',
+    'prompts':'prompts','punchline':'prompts','punchline showdown':'prompts',
+    'wheel':'wheel','wheel puzzle':'wheel'
+  };
+  function bulkType(s){ return BULK_TYPES[String(s).trim().toLowerCase()] || ''; }
+
+  function parseBulkFile(text){
+    var meta = {}, blocks = [];
+    bulkBlocks(text).forEach(function(b){
+      var keep = [];
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(kv && BULK_GLOBALS[kv.key]){ meta[kv.key] = kv.val; return; }
+        keep.push(line);
+      });
+      if(keep.length) blocks.push(keep);
+    });
+    return { meta: meta, blocks: blocks };
+  }
+
+  /* ---- per-style readers ---- */
+  function bulkTrivia(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      var q = '', ch = [], correctRaw = '', pts = 100;
+      b.forEach(function(line){
+        var cm = /^\s*([A-Ha-h])\s*[).:]\s+(.*)$/.exec(line);
+        if(cm){ ch.push({ letter: cm[1].toUpperCase(), text: cm[2].trim() }); return; }
+        var kv = bulkKV(line);
+        if(!kv){ if(!q) q = line.trim(); return; }
+        if(kv.key === 'Q' || kv.key === 'QUESTION') q = kv.val;
+        else if(kv.key === 'CORRECT' || kv.key === 'ANSWER') correctRaw = kv.val;
+        else if(kv.key === 'POINTS' || kv.key === 'PTS') pts = bulkInt(kv.val, 100);
+      });
+      if(!q || ch.length < 2) return;
+      var choices = ch.slice(0,4).map(function(c){ return c.text; });
+      while(choices.length < 4) choices.push('');
+      var cr = correctRaw.trim().toUpperCase(), correct = 0;
+      var byLetter = ch.slice(0,4).map(function(c){ return c.letter; }).indexOf(cr);
+      if(byLetter >= 0) correct = byLetter;
+      else{
+        var byText = choices.map(function(t){ return t.toUpperCase(); }).indexOf(cr);
+        if(byText >= 0) correct = byText;
+        else{ var n = parseInt(cr, 10); if(n >= 1 && n <= 4) correct = n - 1; }
+      }
+      out.push({ q:q, choices:choices, correct:correct, pts: pts > 0 ? pts : 100, img:null });
+    });
+    return out;
+  }
+  function bulkClosest(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      var q = '', a = '', pts = 100;
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(!kv){ if(!q) q = line.trim(); return; }
+        if(kv.key === 'Q' || kv.key === 'QUESTION') q = kv.val;
+        else if(kv.key === 'A' || kv.key === 'ANSWER') a = kv.val;
+        else if(kv.key === 'POINTS' || kv.key === 'PTS') pts = bulkInt(kv.val, 100);
+      });
+      if(!q || !isFinite(parseFloat(a))) return;
+      out.push({ q:q, answer:String(parseFloat(a)), pts: pts > 0 ? pts : 100, img:null });
+    });
+    return out;
+  }
+  function bulkFeud(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      var q = '', ans = [];
+      b.forEach(function(line){
+        var am = /^\s*[-*•]\s*(.+)$/.exec(line);
+        if(am){
+          var parts = am[1].split('|');
+          var txt = parts[0].trim();
+          if(txt) ans.push({ text: txt, pts: parts.length > 1 ? bulkInt(parts[1], 0) : 0 });
+          return;
+        }
+        var kv = bulkKV(line);
+        if(!kv){ if(!q) q = line.trim(); return; }
+        if(kv.key === 'Q' || kv.key === 'QUESTION' || kv.key === 'SURVEY') q = kv.val;
+      });
+      if(!q || !ans.length) return;
+      ans = ans.slice(0, 8);
+      while(ans.length < 4) ans.push({ text:'', pts:0 });
+      out.push({ q:q, img:null, answers:ans });
+    });
+    return out;
+  }
+  function bulkPromptList(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      b.forEach(function(line){
+        var kv = bulkKV(line), t;
+        if(kv) t = (kv.key === 'PROMPT' || kv.key === 'Q') ? kv.val : '';
+        else t = line.trim();
+        if(t) out.push({ text:t, img:null });
+      });
+    });
+    return out;
+  }
+  function bulkWheel(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      var cat = '', txt = '';
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(!kv){ if(!txt) txt = line.trim(); return; }
+        if(kv.key === 'CATEGORY') cat = kv.val;
+        else if(kv.key === 'PUZZLE' || kv.key === 'Q') txt = kv.val;
+      });
+      if(!txt.replace(/[^A-Za-z]/g, '')) return;
+      out.push({ text:txt, cat:cat, img:null });
+    });
+    return out;
+  }
+  function bulkJeopardyCats(blocks){
+    var cats = [], cur = null;
+    blocks.forEach(function(b){
+      var catName = null, q = '', a = '', val = null, dbl = false;
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(!kv) return;
+        if(kv.key === 'CATEGORY') catName = kv.val;
+        else if(kv.key === 'Q' || kv.key === 'CLUE') q = kv.val;
+        else if(kv.key === 'A' || kv.key === 'ANSWER') a = kv.val;
+        else if(kv.key === 'VALUE' || kv.key === 'POINTS') val = bulkInt(kv.val, null);
+        else if(kv.key === 'DAILY DOUBLE') dbl = bulkBool(kv.val);
+      });
+      if(catName !== null){ cur = { name: catName, clues: [] }; cats.push(cur); }
+      if(q && a){
+        if(!cur){ cur = { name:'Category 1', clues:[] }; cats.push(cur); }
+        cur.clues.push({ q:q, a:a, val:val, dbl:dbl });
+      }
+    });
+    return cats;
+  }
+
+  /* ---- apply to the game being edited ----
+     Imports ADD to what's already there; the untouched blank row a new
+     game starts with is replaced rather than kept.                    */
+  function bulkApply(g, parsed){
+    var meta = parsed.meta, blocks = parsed.blocks, d = g.data, added = 0, i;
+
+    if(meta['NAME'] && !g.name.trim()) g.name = meta['NAME'].slice(0, 40);
+    if(meta['MAX PLAYERS'] !== undefined){
+      g.maxPlayers = Math.min(20, Math.max(2, bulkInt(meta['MAX PLAYERS'], 20)));
+    }
+
+    if(g.type === 'trivia'){
+      var tq = bulkTrivia(blocks);
+      if(!tq.length) return 0;
+      if(d.questions.length === 1 && !d.questions[0].q.trim()) d.questions = [];
+      d.questions = d.questions.concat(tq);
+      added = tq.length;
+    }
+    else if(g.type === 'closest'){
+      var cq = bulkClosest(blocks);
+      if(!cq.length) return 0;
+      if(d.questions.length === 1 && !d.questions[0].q.trim()) d.questions = [];
+      d.questions = d.questions.concat(cq);
+      added = cq.length;
+    }
+    else if(g.type === 'feud'){
+      var fq = bulkFeud(blocks);
+      if(!fq.length) return 0;
+      if(d.questions.length === 1 && !d.questions[0].q.trim()) d.questions = [];
+      d.questions = d.questions.concat(fq);
+      added = fq.length;
+    }
+    else if(g.type === 'prompts'){
+      var pq = bulkPromptList(blocks);
+      if(!pq.length) return 0;
+      if(d.prompts.length === 1 && !d.prompts[0].text.trim()) d.prompts = [];
+      d.prompts = d.prompts.concat(pq);
+      added = pq.length;
+      if(meta['FIRST'] !== undefined)  d.p1 = bulkInt(meta['FIRST'], d.p1);
+      if(meta['SECOND'] !== undefined) d.p2 = bulkInt(meta['SECOND'], d.p2);
+      if(meta['THIRD'] !== undefined)  d.p3 = bulkInt(meta['THIRD'], d.p3);
+      if(meta['REVEAL ONE BY ONE'] !== undefined) d.oneByOne = bulkBool(meta['REVEAL ONE BY ONE']);
+    }
+    else if(g.type === 'wheel'){
+      var wq = bulkWheel(blocks);
+      if(!wq.length) return 0;
+      if(!d.puzzles) d.puzzles = [];
+      if(d.puzzles.length === 1 && !d.puzzles[0].text.trim()) d.puzzles = [];
+      d.puzzles = d.puzzles.concat(wq);
+      added = wq.length;
+      if(meta['VOWEL COST'] !== undefined) d.vowelCost = Math.max(0, bulkInt(meta['VOWEL COST'], 250));
+      if(meta['WEDGES']){
+        var ws = meta['WEDGES'].split(',').map(parseWedge).filter(function(w){ return !!w; });
+        if(ws.length >= 4) d.wedges = ws.slice(0, 32);
+      }
+      if(!d.bonus) d.bonus = { enabled:false, text:'', cat:'', img:null, prize:2000 };
+      if(meta['BONUS'] !== undefined)          d.bonus.enabled = bulkBool(meta['BONUS']);
+      if(meta['BONUS CATEGORY'] !== undefined) d.bonus.cat = meta['BONUS CATEGORY'];
+      if(meta['BONUS PUZZLE'] !== undefined)   d.bonus.text = meta['BONUS PUZZLE'];
+      if(meta['BONUS PRIZE'] !== undefined)    d.bonus.prize = bulkInt(meta['BONUS PRIZE'], 2000);
+    }
+    else if(g.type === 'jeopardy'){
+      var cats = bulkJeopardyCats(blocks);
+      if(meta['VALUES']){
+        var vals = meta['VALUES'].split(',').map(function(v){ return bulkInt(v, null); })
+                                 .filter(function(v){ return v !== null; });
+        if(vals.length >= 2) d.values = vals.slice(0, 6);
+      }
+      if(meta['FINAL Q'] || meta['FINAL A'] || meta['FINAL CATEGORY']){
+        if(!d.final) d.final = { cat:'', q:'', a:'', img:null };
+        if(meta['FINAL CATEGORY'] !== undefined) d.final.cat = meta['FINAL CATEGORY'];
+        if(meta['FINAL Q'] !== undefined) d.final.q = meta['FINAL Q'];
+        if(meta['FINAL A'] !== undefined) d.final.a = meta['FINAL A'];
+        added++;
+      }
+      if(cats.length){
+        /* a brand-new board is all placeholder text — drop it */
+        var blankBoard = d.categories.every(function(c){
+          return c.clues.every(function(cl){ return !cl.q.trim() && !cl.a.trim(); });
+        });
+        if(blankBoard) d.categories = [];
+        cats.forEach(function(c){
+          if(d.categories.length >= 6) return;
+          var clues = [];
+          for(i = 0; i < d.values.length; i++) clues.push({ q:'', a:'', dbl:false, img:null });
+          var free = 0;
+          c.clues.forEach(function(cl){
+            var row = -1;
+            if(cl.val !== null) row = d.values.indexOf(cl.val);
+            if(row < 0){ while(free < clues.length && clues[free].q) free++; row = free; }
+            if(row < 0 || row >= clues.length) return;
+            clues[row] = { q:cl.q, a:cl.a, dbl:!!cl.dbl, img:null };
+            added++;
+          });
+          d.categories.push({ name: c.name || ('Category ' + (d.categories.length + 1)), clues: clues });
+        });
+        /* every category has to be the same height as the value column */
+        d.categories.forEach(function(c){
+          while(c.clues.length < d.values.length) c.clues.push({ q:'', a:'', dbl:false, img:null });
+          c.clues.length = d.values.length;
+        });
+      }
+    }
+    return added;
+  }
+
+  function downloadTemplate(type){
+    var body = DC_TEMPLATES[type];
+    if(!body){ DC.toast('No template for that style yet.'); return; }
+    var blob = new Blob([body], { type:'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = 'duelcrate-' + type + '-template.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 5000);
+    DC.toast('Template downloaded');
+  }
+
+  /* the two toolbar buttons every editor gets.
+     Re-opening the editor is the redraw: an import can touch the name,
+     player cap, wedges, point rows and bonus round as well as the
+     question list, so a partial redraw would leave stale fields. */
+  function bulkControls(g, bar){
+    var redraw = function(){ openEditor(g.id); };
+    var file = document.createElement('input');
+    file.type = 'file';
+    file.accept = '.txt,.text,text/plain';
+    file.hidden = true;
+    bar.appendChild(file);
+    bar.appendChild(toolBtn('⬆ Import questions', function(){ file.click(); }));
+    bar.appendChild(toolBtn('⬇ Template', function(){ downloadTemplate(g.type); }));
+    file.addEventListener('change', function(){
+      var f = this.files[0]; this.value = '';
+      if(!f) return;
+      var fr = new FileReader();
+      fr.onerror = function(){ DC.toast('Couldn’t read that file.'); };
+      fr.onload = function(){
+        var parsed;
+        try{ parsed = parseBulkFile(String(fr.result)); }
+        catch(e){ DC.toast('Couldn’t make sense of that file.'); return; }
+        var declared = parsed.meta['TYPE'] ? bulkType(parsed.meta['TYPE']) : '';
+        if(declared && declared !== g.type){
+          DC.toast('That’s a ' + (GAME_TYPES[declared] ? GAME_TYPES[declared].label : declared) +
+                   ' file — open a ' + GAME_TYPES[declared].label + ' game to import it.');
+          return;
+        }
+        var n = 0;
+        try{ n = bulkApply(g, parsed); }
+        catch(e2){ DC.toast('Couldn’t import that file.'); return; }
+        if(!n){ DC.toast('Nothing to import — compare your file with the template.'); return; }
+        touch(); persistGames(); redraw();
+        DC.toast('Imported ' + n + ' item' + (n === 1 ? '' : 's'));
+      };
+      fr.readAsText(f);
+    });
+  }
+
   function toolBtn(label, fn){
     var b = document.createElement('button');
     b.className = 'slot-btn'; b.textContent = label;
@@ -2546,6 +3083,7 @@
       });
       touch(); drawBoard();
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
 
     var grid = document.createElement('div'); grid.className = 'jb-grid';
@@ -2623,6 +3161,7 @@
       touch(); draw();
       window.scrollTo(0, document.body.scrollHeight);
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
     var list = document.createElement('div'); list.className = 'tq-list';
     wrap.appendChild(list);
@@ -2693,6 +3232,7 @@
       touch(); draw();
       window.scrollTo(0, document.body.scrollHeight);
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
     var list = document.createElement('div'); list.className = 'tq-list';
     wrap.appendChild(list);
@@ -2764,6 +3304,7 @@
       touch(); draw();
       window.scrollTo(0, document.body.scrollHeight);
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
 
     /* ---- wheel settings ---- */
@@ -2950,6 +3491,7 @@
       touch(); draw();
       window.scrollTo(0, document.body.scrollHeight);
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
 
     /* game-level scoring & reveal options */
@@ -3112,6 +3654,7 @@
       touch(); drawQuestions();
       window.scrollTo(0, document.body.scrollHeight);
     }));
+    bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
 
     var list = document.createElement('div');
@@ -4686,6 +5229,36 @@
   }
   var WOF_FILLS = ['#FF4D9D','#6FD3FF','#FFC42E','#B79CFF','#4DE28A','#FF9E4D'];
 
+  var WOF_REDUCED = !!(window.matchMedia &&
+                       window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function wofSpinMs(){ return WOF_REDUCED ? 1400 : 4200; }
+
+  /* Rotate a wheel from one angle to another, a frame at a time.
+     Deliberately not a CSS transition: the global reduced-motion rule
+     nukes transitions with !important, and re-attaching the phone's wheel
+     mid-spin can cancel one. rAF sidesteps both. */
+  function animateSpin(el, from, to, ms, done){
+    if(!el){ if(done) done(); return; }
+    if(!window.requestAnimationFrame){
+      el.style.transform = 'rotate(' + to + 'deg)';
+      if(done) done();
+      return;
+    }
+    var t0 = null;
+    el._spinToken = (el._spinToken || 0) + 1;
+    var token = el._spinToken;
+    function frame(ts){
+      if(el._spinToken !== token) return;      /* a newer spin took over */
+      if(t0 === null) t0 = ts;
+      var t = Math.min(1, (ts - t0) / ms);
+      var eased = 1 - Math.pow(1 - t, 4);      /* fast start, long glide out */
+      el.style.transform = 'rotate(' + (from + (to - from) * eased) + 'deg)';
+      if(t < 1) window.requestAnimationFrame(frame);
+      else if(done) done();
+    }
+    window.requestAnimationFrame(frame);
+  }
+
   /* the wheel itself: one SVG, spun by rotating the wedge group */
   function buildWheelSVG(wedges){
     var ns = 'http://www.w3.org/2000/svg';
@@ -4754,8 +5327,7 @@
     var boardEl, catEl, numEl, turnEl, bankEl, landedEl, orderEl, usedEl,
         noteEl, actsEl, solveBox, timerFill, spinner;
 
-    var snappy = window.matchMedia &&
-                 window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var snappy = WOF_REDUCED;   /* shorter spin, but it still spins */
 
     function alive(){ return !!host && host.ctl === api; }
     function puz(){ return bonusOn ? bonusCfg : qs[idx]; }
@@ -4844,7 +5416,6 @@
         wbox.appendChild(ptr);
         var built = buildWheelSVG(wedges);
         spinner = built.spinner;
-        if(snappy) spinner.style.transition = 'transform .25s ease-out';
         rot = 0;
         wbox.appendChild(built.svg);
         mid.appendChild(wbox);
@@ -5029,17 +5600,24 @@
       var A = 360 / wedges.length;
       /* land the chosen wedge under the pointer, always spinning forwards */
       var target = -(i*A + A/2) + (Math.random()*A*0.6 - A*0.3);
-      rot += (snappy ? 0 : 360*4) + ((((target - rot) % 360) + 360) % 360);
-      spinner.style.transform = 'rotate(' + rot + 'deg)';
+      var from = rot;
+      rot += 360*(snappy ? 2 : 4) + ((((target - rot) % 360) + 360) % 360);
       /* phones spin to the same angle, so every screen stops together */
       spinSeq++; spinDeg = ((rot % 360) + 360) % 360;
       setLanded('…', '');
       note(p.name + ' is spinning…');
       updateActions(); pushAll();
-      setTimeout(function(){
+
+      var ms = wofSpinMs(), settled = false;
+      function land(){
+        if(settled) return;
+        settled = true;
         if(!alive() || phase !== 'spinning') return;
         resolveSpin();
-      }, snappy ? 320 : 4350);
+      }
+      animateSpin(spinner, from, rot, ms, land);
+      /* rAF pauses in a background tab — this keeps the show moving anyway */
+      setTimeout(land, ms + 900);
     }
 
     function resolveSpin(){

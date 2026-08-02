@@ -6,17 +6,20 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 
 ## Features
 
-- **Five game styles** — build and run your own custom games:
+- **Six game styles** — build and run your own custom games:
   - **Jeopardy Style** — a board of categories and point values; players buzz in from their phones
   - **Multiple Choice Trivia** — questions with answer choices delivered straight to every phone
   - **Feud Survey** — a board of hidden survey answers; buzz in, type a guess, and watch the board reveal matches
   - **Closest Wins** — numeric estimation showdowns; closest guess without going over takes the points
   - **Punchline Showdown** — everyone writes a response to a prompt, then votes for the best; top three vote-getters score
+  - **Wheel Puzzle** — spin an animated wheel, call letters and solve the hidden phrase, with Bankrupt, Lose a Turn and Free Play wedges
 - **Full game editor** — create, edit, duplicate, and delete your own games, with autosave as you type
+- **Bulk import from a text file** — write a whole game in Notepad and load it in one go. Every editor has an **⬆ Import questions** button and a **⬇ Template** button that hands you a pre-formatted, commented sheet for that exact style. See [Building a game from a text file](#building-a-game-from-a-text-file)
 - **Question images** — add a picture to any question in any game style
 - **Daily Doubles** — mark any Jeopardy clue as a surprise 2× value
 - **Final Jeopardy** — players wager points and type answers on their phones; the host judges each one
 - **Voting rounds** — Punchline Showdown responses are shuffled and anonymous until the votes are in, self-votes are blocked, and the host can reveal responses one at a time or all at once
+- **The wheel** — turns rotate automatically, players spin from their phones and call letters on a phone keypad, and money only banks when you solve the puzzle. Buy vowels out of your round bank, edit any wedge (or reset to the classic set), and finish with an optional bonus round where the leader gets R S T L N E free, picks three consonants and a vowel, and takes one timed shot at the puzzle
 - **Phones as controllers** — buzzers, answer choices, wagers, typed answers, and votes, with haptic feedback and reconnect support if someone drops (rejoin with the same name to keep your score)
 - **QR code joining** — the lobby shows a scannable code that takes players straight to the join page
 - **Set points on everything** — every question has a defined point value; no speed bonuses, no surprises
@@ -28,9 +31,34 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 - **Export & import** — share games (images included) as portable files between browsers and devices
 - **Everything stays local** — games, settings, and media are stored in your browser; nothing is uploaded anywhere
 
+## Building a game from a text file
+
+Typing questions one at a time in the editor gets old fast. Instead, write them in any plain-text editor and import the lot.
+
+1. Open your game in the editor and click **⬇ Template** — you'll get a commented sheet for that style. (The same files live in [`templates/`](templates/).)
+2. Fill it in and save it as a `.txt` file.
+3. Click **⬆ Import questions** and pick your file.
+
+The format is the same idea for every style: `#` starts a comment, `KEY: value` sets a field, and a **blank line ends one question and starts the next**. Keys are not case-sensitive. Importing **adds** to whatever is already in your game, so you can build it up from several files — though the blank starter row a new game begins with is replaced rather than kept.
+
+| Style | Template | Looks like |
+|---|---|---|
+| Jeopardy Style | [`duelcrate-jeopardy-template.txt`](templates/duelcrate-jeopardy-template.txt) | `CATEGORY:` starts a column, then `Q:` / `A:` / `VALUE:` blocks under it |
+| Multiple Choice Trivia | [`duelcrate-trivia-template.txt`](templates/duelcrate-trivia-template.txt) | `Q:` then `A)` `B)` `C)` `D)` choices and `CORRECT:` |
+| Feud Survey | [`duelcrate-feud-template.txt`](templates/duelcrate-feud-template.txt) | `Q:` then one `- Answer \| 30` line per survey answer |
+| Closest Wins | [`duelcrate-closest-template.txt`](templates/duelcrate-closest-template.txt) | `Q:` and a numeric `ANSWER:` |
+| Punchline Showdown | [`duelcrate-punchline-template.txt`](templates/duelcrate-punchline-template.txt) | one `PROMPT:` line each |
+| Wheel Puzzle | [`duelcrate-wheel-template.txt`](templates/duelcrate-wheel-template.txt) | `CATEGORY:` and `PUZZLE:` per puzzle, plus `WEDGES:` and the bonus round |
+
+A sheet can also set game-wide options: `NAME`, `MAX PLAYERS`, Jeopardy's `VALUES` and `FINAL Q` / `FINAL A`, Punchline's `FIRST` / `SECOND` / `THIRD` placings, and the Wheel's `WEDGES`, `VOWEL COST` and `BONUS PUZZLE`. Anything you leave out keeps its current value.
+
+The importer is deliberately forgiving — it accepts `A)` / `A.` / `A:` for choices, takes `CORRECT:` as a letter, a number or the answer text, copes with Windows line endings, and skips any block it can't make sense of rather than failing the whole file. If nothing lands, it tells you instead of silently doing nothing. Pictures are the one thing a text file can't carry; add those in the editor.
+
 ## How it works
 
-DuelCrate is **HTML-based** — a single `index.html` file with no backend. Multiplayer runs peer-to-peer over WebRTC (via PeerJS): the host's browser *is* the game server. Host it on any static site (like GitHub Pages), open the page to run the show, and send players to the `#join` page on their phones — or just let them scan the QR code in the lobby.
+DuelCrate is **HTML-based** — one self-contained HTML file with no backend. Multiplayer runs peer-to-peer over WebRTC (via PeerJS): the host's browser *is* the game server. Host it on any static site (like GitHub Pages), open the page to run the show, and send players to the `#join` page on their phones — or just let them scan the QR code in the lobby.
+
+**Players load the same copy you host from.** The lobby's QR code points at whatever address the host page is open on, so a copy served from a LAN address hands players that same build. The one exception is opening the file directly from disk (`file://`) — a phone can't reach a path on your PC, so the QR falls back to the published copy and the lobby warns you that unpublished changes won't reach anyone's phone. To test new work on real phones, serve the folder over http rather than double-clicking the file.
 
 ## Disclaimer
 
