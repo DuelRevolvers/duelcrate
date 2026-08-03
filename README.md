@@ -6,13 +6,14 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 
 ## Features
 
-- **Six game styles** — build and run your own custom games:
+- **Seven game styles** — build and run your own custom games:
   - **Jeopardy Style** — a board of categories and point values; players buzz in from their phones
   - **Multiple Choice Trivia** — questions with answer choices delivered straight to every phone
   - **Feud Survey** — a board of hidden survey answers; buzz in, type a guess, and watch the board reveal matches
   - **Closest Wins** — numeric estimation showdowns; closest guess without going over takes the points
   - **Punchline Showdown** — everyone writes a response to a prompt, then votes for the best; top three vote-getters score
   - **Wheel Puzzle** — spin an animated wheel, call letters and solve the hidden phrase, with Bankrupt, Lose a Turn and Free Play wedges
+  - **Courtroom** — two players argue a made-up case out loud while you sit as judge; everyone else takes the jury box or the witness stand
 - **Full game editor** — create, edit, duplicate, and delete your own games, with autosave as you type
 - **Bulk import from a text file** — write a whole game in Notepad and load it in one go. Every editor has an **⬆ Import questions** button and a **⬇ Template** button that hands you a pre-formatted, commented sheet for that exact style. See [Building a game from a text file](#building-a-game-from-a-text-file)
 - **Question images** — add a picture to any question in any game style
@@ -20,6 +21,10 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 - **Final Jeopardy** — players wager points and type answers on their phones; the host judges each one
 - **Voting rounds** — Punchline Showdown responses are shuffled and anonymous until the votes are in, self-votes are blocked, and the host can reveal responses one at a time or all at once
 - **The wheel** — turns rotate automatically, players spin from their phones and call letters on a phone keypad, and money only banks when you solve the puzzle. Buy vowels out of your round bank, edit any wedge (or reset to the classic set), and finish with an optional bonus round where the leader gets R S T L N E free, picks three consonants and a vowel, and takes one timed shot at the puzzle
+- **The courtroom** — a spoken game where the phone is only a controller. You assign every seat before the trial opens (or hit randomize), then two lawyers are dealt evidence cards from a deck you write and either pitch a charge for you to pick or argue one you set yourself. They take turns playing evidence and making their case out loud, objecting to each other with a limited supply of objections (every second one you sustain earns them another back), and each gets one improvised wildcard. Every timed turn waits on you, so whoever's up gets a moment to think before the clock runs. The big screen keeps the whole trial as a two-column evidence log — struck evidence crossed out — so by closing arguments the verdict is laid out in front of you
+- **Witnesses & jury** — anyone beyond the two lawyers takes the jury box or the witness stand. Witnesses draw a card you wrote: an identity everyone sees, and a **secret only their phone shows** — *"you're lying about exactly one detail"* — plus expert witnesses with an absurd field of expertise. There is no scheduled witness round: a lawyer gets a **Call a witness** button on their own turn and spends that turn — playing no evidence — to put someone on the stand. They question their witness, the other side cross-examines, and you can object right through the testimony before play returns to the turns. Anyone nobody calls never testifies, and the *witnesses per side* setting caps how many each lawyer may call. Jurors nudge a private sway meter as the trial runs, then deliver the verdict; you pass sentence out loud. The winning lawyer takes the points, witnesses score if the side that called them won, and jurors score for backing the verdict
+- **The jury room** — jurors get a **private chat visible only to other jurors**, pinned to their phone for the whole trial. Nothing they say reaches the lawyers, the witnesses, the big screen, or the GM console. When the closing arguments are done the jury deliberates there while the verdict buttons stay locked, and only open when you press **Open jury votes**
+- **A secret ballot** — which way the jury is leaning never touches the shared screen. The big screen shows only that a jury is out and how many votes are sealed; **the live poll goes to your GM console instead**, naming each juror and how they lean so you can read the room without the room reading it. The moment the verdict lands, the split is revealed to everyone — tally, meter, and every juror's vote by name
 - **Phones as controllers** — buzzers, answer choices, wagers, typed answers, and votes, with haptic feedback and reconnect support if someone drops (rejoin with the same name to keep your score)
 - **QR code joining** — the lobby shows a scannable code that takes players straight to the join page
 - **Set points on everything** — every question has a defined point value; no speed bonuses, no surprises
@@ -49,8 +54,9 @@ The format is the same idea for every style: `#` starts a comment, `KEY: value` 
 | Closest Wins | [`duelcrate-closest-template.txt`](templates/duelcrate-closest-template.txt) | `Q:` and a numeric `ANSWER:` |
 | Punchline Showdown | [`duelcrate-punchline-template.txt`](templates/duelcrate-punchline-template.txt) | one `PROMPT:` line each |
 | Wheel Puzzle | [`duelcrate-wheel-template.txt`](templates/duelcrate-wheel-template.txt) | `CATEGORY:` and `PUZZLE:` per puzzle, plus `WEDGES:` and the bonus round |
+| Courtroom | [`duelcrate-court-template.txt`](templates/duelcrate-court-template.txt) | one `EVIDENCE:` line per card, plus `WITNESS: who they are \| their secret` |
 
-A sheet can also set game-wide options: `NAME`, `MAX PLAYERS`, Jeopardy's `VALUES` and `FINAL Q` / `FINAL A`, Punchline's `FIRST` / `SECOND` / `THIRD` placings, and the Wheel's `WEDGES`, `VOWEL COST` and `BONUS PUZZLE`. Anything you leave out keeps its current value.
+A sheet can also set game-wide options: `NAME`, `MAX PLAYERS`, Jeopardy's `VALUES` and `FINAL Q` / `FINAL A`, Punchline's `FIRST` / `SECOND` / `THIRD` placings, the Wheel's `WEDGES`, `VOWEL COST` and `BONUS PUZZLE`, and the Courtroom's `JUDGE WRITES CHARGE`, `CARDS EACH` and `OBJECTIONS EACH`. Anything you leave out keeps its current value.
 
 The importer is deliberately forgiving — it accepts `A)` / `A.` / `A:` for choices, takes `CORRECT:` as a letter, a number or the answer text, copes with Windows line endings, and skips any block it can't make sense of rather than failing the whole file. If nothing lands, it tells you instead of silently doing nothing. Pictures are the one thing a text file can't carry; add those in the editor.
 

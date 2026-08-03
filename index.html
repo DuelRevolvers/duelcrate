@@ -316,6 +316,7 @@
   .badge.closest{color:#6FD3FF;border-color:#2A5E7A;background:#6FD3FF14}
   .badge.prompts{color:#B79CFF;border-color:#5A3E9E;background:#B79CFF14}
   .badge.wheel{color:#FF9E4D;border-color:#7A4A18;background:#FF9E4D14}
+  .badge.court{color:#E8D9A0;border-color:#6B5A28;background:#E8D9A014}
   .gc-actions{display:flex;gap:8px}
   .empty-state{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
@@ -789,6 +790,187 @@
   .wof-wedge button{background:none;border:none;color:#5D4F86;font-size:13px;padding:3px 6px}
   .wof-wedge button:hover{color:var(--spot)}
 
+  /* ---------- courtroom ---------- */
+  .ct-wrap{width:100%;max-width:960px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .ct-charge{
+    width:100%;background:var(--stage-2);border:2px solid #6B5A28;border-left-width:8px;
+    border-radius:12px;padding:16px 20px;font-size:clamp(17px,2.9vw,26px);font-weight:700;
+    line-height:1.35;text-align:left;color:var(--ink);
+  }
+  .ct-charge.empty{color:#5D4F86;font-weight:600;font-style:italic;border-left-color:#3A2A72}
+  .ct-turn{
+    font-family:var(--display);font-size:clamp(16px,2.6vw,22px);color:var(--bulb);
+    text-shadow:0 0 18px #FFC42E44;min-height:24px;text-align:center;
+  }
+  .ct-log{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%}
+  @media(max-width:620px){.ct-log{grid-template-columns:1fr}}
+  .ct-col{
+    background:#150E2D;border:2px solid #3A2A72;border-radius:12px;
+    padding:10px;display:flex;flex-direction:column;gap:8px;min-height:120px;
+  }
+  .ct-col.P{border-color:#7A2450}
+  .ct-col.D{border-color:#2A5E7A}
+  .ct-colhead{
+    font-family:var(--display);font-size:13px;letter-spacing:.06em;text-align:center;
+    padding-bottom:6px;border-bottom:2px solid #3A2A72;
+  }
+  .ct-col.P .ct-colhead{color:var(--spot)}
+  .ct-col.D .ct-colhead{color:#6FD3FF}
+  .ct-ev{
+    background:var(--stage-2);border:1px solid #3A2A72;border-radius:9px;
+    padding:9px 12px;font-size:15px;font-weight:600;line-height:1.4;text-align:left;
+  }
+  .ct-ev.wild{border-color:#B79CFF;background:#B79CFF14}
+  .ct-ev.struck{opacity:.4;text-decoration:line-through;text-decoration-color:var(--spot)}
+  .ct-ev.none{border-style:dashed;color:#5D4F86;text-align:center;font-weight:400}
+  .ct-objrow{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .ct-obj{
+    padding:5px 13px;border-radius:999px;font-size:13px;font-weight:700;
+    background:var(--stage-2);border:2px solid #7A5A10;color:var(--bulb);
+  }
+  .ct-obj.out{border-color:#3A2A72;color:#5D4F86}
+  .ct-sway{width:100%;max-width:460px;display:flex;flex-direction:column;gap:6px;align-items:center}
+  .ct-sway[hidden]{display:none}
+  .ct-swaylbl{color:var(--ink-dim);font-size:14px;font-weight:600}
+  .ct-swaybar{
+    width:100%;height:14px;border-radius:99px;overflow:hidden;
+    background:linear-gradient(90deg,#2E7A50,#2E7A50);border:1px solid #3A2A72;
+  }
+  .ct-swayfill{height:100%;background:linear-gradient(90deg,#7A2450,var(--spot));transition:width .3s}
+  .ct-swaysealed{
+    color:var(--ink-dim);font-size:14px;font-weight:600;letter-spacing:.04em;
+    border:2px dashed #3A2A72;border-radius:10px;padding:7px 14px;background:var(--stage-2);
+  }
+  .ct-swayvotes{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:2px}
+  .ct-swayvote{
+    display:flex;align-items:center;gap:7px;font-size:14px;font-weight:700;
+    border:2px solid #3A2A72;border-radius:9px;padding:5px 11px;background:var(--stage-2);
+  }
+  .ct-swayvote .who{color:var(--ink)}
+  .ct-swayvote .how{font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+  .ct-swayvote.G{border-color:var(--spot)} .ct-swayvote.G .how{color:var(--spot)}
+  .ct-swayvote.N{border-color:#6FD3FF}    .ct-swayvote.N .how{color:#6FD3FF}
+  .ct-swayvote.X{opacity:.55} .ct-swayvote.X .how{color:var(--ink-dim)}
+  .ct-input{
+    width:min(100%,560px);padding:13px 16px;font-size:17px;font-family:var(--body);
+    background:#150E2D;border:2px solid #3A2A72;border-radius:10px;color:var(--ink);
+  }
+  .ct-input::placeholder{color:#5D4F86}
+  .stage-btn.ct-pitch{
+    max-width:560px;white-space:normal;text-align:left;line-height:1.4;
+  }
+
+  /* judge's role picker */
+  .ct-roles{width:100%;display:flex;flex-direction:column;gap:10px;margin-bottom:6px}
+  .ct-rolerow{
+    display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;
+    background:var(--stage-2);border:2px solid #3A2A72;border-radius:12px;padding:10px 14px;
+  }
+  .ct-rolename{font-weight:700;font-size:17px;flex:1;min-width:110px;text-align:left}
+  .ct-rolebtns{display:flex;gap:7px;flex-wrap:wrap}
+  .ct-rolebtn{
+    padding:9px 14px;border-radius:9px;font-size:14px;font-weight:700;
+    background:#150E2D;border:2px solid #3A2A72;color:var(--ink-dim);
+  }
+  .ct-rolebtn:hover{border-color:var(--bulb);color:var(--ink)}
+  .ct-rolebtn.rP.on{border-color:var(--spot);color:var(--spot);background:#FF4D9D14}
+  .ct-rolebtn.rD.on{border-color:#6FD3FF;color:#6FD3FF;background:#6FD3FF14}
+  .ct-rolebtn.rJ.on{border-color:var(--ok);color:var(--ok);background:#4DE28A14}
+  .ct-rolebtn.rW.on{border-color:var(--bulb);color:var(--bulb);background:#FFC42E14}
+
+  .ct-stand{
+    width:100%;max-width:560px;background:var(--stage-2);border:2px solid var(--ok);
+    border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:4px;align-items:center;
+  }
+  .ct-stand[hidden]{display:none}
+  .ct-standlbl{color:var(--ink-dim);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  .ct-standname{font-family:var(--display);font-size:clamp(17px,2.6vw,22px);color:var(--ok)}
+  .ct-standwho{font-size:15px;font-weight:600;color:var(--ink);text-align:center;line-height:1.4}
+
+  /* phone: courtroom */
+  .pv-chat{
+    width:100%;background:#0F1B14;border:2px solid #2E6B3A;border-radius:11px;
+    padding:10px 12px;display:flex;flex-direction:column;gap:8px;text-align:left;
+  }
+  .pv-chat[hidden]{display:none}
+  .pv-chathead{
+    font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ok);font-weight:700;
+  }
+  .pv-chatlog{
+    display:flex;flex-direction:column;gap:5px;max-height:150px;overflow-y:auto;
+    font-size:14px;line-height:1.4;
+  }
+  .pv-chatempty{color:var(--ink-dim);font-style:italic}
+  .pv-chatmsg{color:var(--ink);word-break:break-word}
+  .pv-chatwho{font-weight:700;color:var(--ok)}
+  .pv-chatmsg.me .pv-chatwho{color:var(--bulb)}
+  .pv-chatrow{display:flex;gap:6px}
+  .pv-chatinput{
+    flex:1;min-width:0;padding:9px 11px;border-radius:9px;font-size:15px;
+    background:#150E2D;border:2px solid #2E6B3A;color:var(--ink);
+  }
+  .pv-chatsend{
+    padding:9px 14px;border-radius:9px;font-weight:700;font-size:14px;
+    background:var(--ok);border:none;color:#07130C;
+  }
+
+  .pv-witcard{
+    width:100%;background:#150E2D;border:2px solid var(--ok);border-radius:11px;
+    padding:11px 14px;display:flex;flex-direction:column;gap:6px;text-align:left;
+  }
+  .pv-witcard[hidden]{display:none}
+  .pv-witwho{font-weight:700;font-size:15px;line-height:1.35;color:var(--ink)}
+  .pv-witsecret{
+    font-size:14px;line-height:1.45;color:var(--ok);
+    border-top:1px dashed #2E6B3A;padding-top:6px;
+  }
+  .pv-cardname{font-weight:700;font-size:16px}
+  .pv-cardwho{font-size:13px;color:var(--ink-dim);margin-top:3px;line-height:1.35}
+  .pv-role{
+    width:100%;border-radius:999px;padding:7px 14px;text-align:center;
+    font-family:var(--display);font-size:13px;letter-spacing:.1em;
+    background:var(--stage-2);border:2px solid #3A2A72;color:var(--ink-dim);
+  }
+  .pv-role.P{border-color:var(--spot);color:var(--spot);background:#FF4D9D14}
+  .pv-role.D{border-color:#6FD3FF;color:#6FD3FF;background:#6FD3FF14}
+  .pv-role.J{border-color:var(--ok);color:var(--ok);background:#4DE28A14}
+  .pv-role[hidden]{display:none}
+
+  .pv-charge{
+    width:100%;background:#150E2D;border:2px solid #6B5A28;border-left-width:6px;
+    border-radius:10px;padding:10px 13px;font-size:14px;font-weight:600;line-height:1.45;
+    color:var(--ink-dim);text-align:left;
+  }
+  .pv-hand{display:flex;flex-direction:column;gap:9px;width:100%}
+  .pv-card{
+    width:100%;padding:14px 15px;border-radius:11px;text-align:left;
+    border:2px solid #3A2A72;border-bottom-width:5px;
+    background:linear-gradient(180deg,var(--stage-3),var(--stage-2));
+    color:var(--ink);font-size:15px;font-weight:600;line-height:1.4;
+    transition:transform .06s,border-color .12s;-webkit-tap-highlight-color:transparent;
+  }
+  .pv-card:active:not(:disabled){transform:translateY(2px);border-bottom-width:2px}
+  .pv-card:disabled{cursor:default}
+  .pv-hand.idle .pv-card{opacity:.55;border-bottom-width:2px}
+  .pv-card.played{border-color:var(--bulb);background:#FFC42E14;opacity:1}
+  .object-btn{
+    width:min(78vw,290px);height:min(46vw,170px);border-radius:18px;border:none;
+    font-family:var(--display);font-size:clamp(20px,6vw,30px);color:#3A0018;
+    background:radial-gradient(circle at 50% 30%, #FF8FC0, var(--spot) 60%, #B01F66);
+    box-shadow:0 9px 0 #7A2450, 0 0 50px #FF4D9D33;
+    transition:transform .06s, box-shadow .06s;
+    touch-action:manipulation;user-select:none;-webkit-user-select:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .object-btn:active:not(:disabled){
+    transform:translateY(7px);box-shadow:0 2px 0 #7A2450, 0 0 30px #FF4D9D22;
+  }
+  .object-btn:disabled{filter:grayscale(.8);opacity:.4;cursor:default}
+  .ct-wildinput{
+    width:100%;padding:13px 15px;font-size:16px;font-family:var(--body);text-align:center;
+    background:#150E2D;border:2px solid #B79CFF;border-radius:10px;color:var(--ink);
+  }
+
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important;animation:none !important}
   }
@@ -859,6 +1041,9 @@
     <!-- persistent board area: never cleared, so a spin can animate
          across the state pushes that arrive mid-spin -->
     <div class="pv-extra" id="pv-extra" hidden>
+      <div class="pv-role" id="pv-role" hidden></div>
+      <div class="pv-witcard" id="pv-witcard" hidden></div>
+      <div class="pv-chat" id="pv-chat" hidden></div>
       <div class="pv-puzzle" id="pv-puzzle-line" hidden></div>
       <div class="pv-wheel-mini" id="pv-wheel-box" hidden></div>
       <div class="pv-landed" id="pv-landed" hidden></div>
@@ -1350,15 +1535,116 @@
     pvWheel = { sig:null, spinner:null, rot:0, seq:-1 };
     var box = document.getElementById('pv-wheel-box');
     if(box){ box.innerHTML = ''; box.hidden = true; }
+    pvChatReset();
+  }
+
+  /* ---- the jury room ----
+     Also lives in #pv-extra, so a juror's half-typed message survives the
+     state pushes that land while the trial rolls on. Only jurors are ever
+     sent s.chat, so nobody else's phone can build this at all.          */
+  var pvChat = { sig:null };
+  function pvChatReset(){
+    pvChat = { sig:null };
+    var c = document.getElementById('pv-chat');
+    if(c){ c.innerHTML = ''; c.hidden = true; }
+  }
+  function pvBuildChat(el){
+    var head = document.createElement('div');
+    head.className = 'pv-chathead';
+    head.textContent = '🔒 Jury Room — jurors only';
+    el.appendChild(head);
+
+    var lg = document.createElement('div');
+    lg.className = 'pv-chatlog'; lg.id = 'pv-chatlog';
+    el.appendChild(lg);
+
+    var row = document.createElement('div'); row.className = 'pv-chatrow';
+    var inp = document.createElement('input');
+    inp.type = 'text'; inp.className = 'pv-chatinput'; inp.id = 'pv-chatinput';
+    inp.maxLength = 140; inp.autocomplete = 'off';
+    inp.placeholder = 'Say something to the jury…';
+    var go = document.createElement('button');
+    go.className = 'pv-chatsend'; go.textContent = 'Send';
+    var fire = function(){
+      var v = inp.value.trim();
+      if(!v) return;
+      pvSend({ t:'court', act:'chat', text:v });
+      inp.value = '';
+    };
+    go.addEventListener('click', fire);
+    inp.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); fire(); } });
+    row.appendChild(inp); row.appendChild(go);
+    el.appendChild(row);
   }
   function renderPvExtras(s){
     var extra  = document.getElementById('pv-extra');
     var line   = document.getElementById('pv-puzzle-line');
     var box    = document.getElementById('pv-wheel-box');
     var landed = document.getElementById('pv-landed');
+    var roleEl = document.getElementById('pv-role');
 
-    if(s.puzzle){ line.textContent = s.puzzle; line.hidden = false; }
-    else line.hidden = true;
+    var chEl = document.getElementById('pv-chat');
+    if(s.chat){
+      if(!chEl.firstChild) pvBuildChat(chEl);
+      var lgEl = document.getElementById('pv-chatlog');
+      var csig = s.chat.length + '|' + (s.chat.length ? s.chat[s.chat.length - 1].text : '');
+      if(pvChat.sig !== csig){
+        pvChat.sig = csig;
+        lgEl.innerHTML = '';
+        if(!s.chat.length){
+          var mt = document.createElement('div');
+          mt.className = 'pv-chatempty';
+          mt.textContent = 'Nobody has said anything yet.';
+          lgEl.appendChild(mt);
+        }
+        s.chat.forEach(function(msg){
+          var r = document.createElement('div');
+          r.className = 'pv-chatmsg' + (s.you && msg.name === s.you.name ? ' me' : '');
+          var who = document.createElement('span');
+          who.className = 'pv-chatwho';
+          who.textContent = msg.name + ': ';
+          r.appendChild(who);
+          r.appendChild(document.createTextNode(msg.text));
+          lgEl.appendChild(r);
+        });
+        lgEl.scrollTop = lgEl.scrollHeight;
+      }
+      chEl.hidden = false;
+    }else chEl.hidden = true;
+
+    var wcEl = document.getElementById('pv-witcard');
+    if(s.witnessCard){
+      wcEl.innerHTML = '';
+      var wcw = document.createElement('div');
+      wcw.className = 'pv-witwho';
+      wcw.textContent = (s.witnessCard.expert ? 'Expert in ' : 'You are: ') + s.witnessCard.who;
+      wcEl.appendChild(wcw);
+      if(s.witnessCard.secret){
+        var wcs = document.createElement('div');
+        wcs.className = 'pv-witsecret';
+        wcs.textContent = '🤫 ' + s.witnessCard.secret;
+        wcEl.appendChild(wcs);
+      }
+      wcEl.hidden = false;
+    }else wcEl.hidden = true;
+
+    if(s.role){
+      roleEl.textContent = s.role;
+      roleEl.className = 'pv-role ' + (s.role === 'Prosecution' ? 'P'
+                       : s.role === 'Defense' ? 'D' : 'J');
+      roleEl.hidden = false;
+    }else roleEl.hidden = true;
+
+    if(s.puzzle){
+      line.textContent = s.puzzle;
+      line.className = 'pv-puzzle';
+      line.hidden = false;
+    }else if(s.charge){
+      /* the charge stays pinned for the whole trial, like the wheel's puzzle */
+      line.textContent = s.charge;
+      line.className = 'pv-charge';
+      line.hidden = false;
+    }else line.hidden = true;
 
     if(s.wheel && s.wheel.length){
       box.hidden = false;
@@ -1398,7 +1684,69 @@
       landed.hidden = false;
     }else landed.hidden = true;
 
-    extra.hidden = line.hidden && box.hidden && landed.hidden;
+    extra.hidden = line.hidden && box.hidden && landed.hidden && roleEl.hidden &&
+                   wcEl.hidden && chEl.hidden;
+  }
+
+  /* Calling a witness is the lawyer's own move, so the button sits with their
+     evidence. pv.callOpen remembers whether the list is showing, so a state
+     push mid-decision doesn't snap them back to their cards. */
+  function pvCallPanel(parent, s){
+    if(!(s.witnesses && s.witnesses.length)){ pv.callOpen = false; return; }
+    var wrap = pvEl('div','pv-actions');
+    if(!pv.callOpen){
+      var open = pvEl('button','slot-btn',
+        '🧑‍⚖️ Call a witness (' + s.witnesses.length + ')');
+      open.addEventListener('click', function(){ pv.callOpen = true; renderPlayerState(); });
+      wrap.appendChild(open);
+      if(s.callsLeft > 1){
+        wrap.appendChild(pvEl('div','pv-note',
+          'You can call ' + s.callsLeft + ' more this trial.'));
+      }
+    }else{
+      wrap.appendChild(pvEl('div','pv-note',
+        'Calling someone spends this turn — you question them, then the other side cross-examines.'));
+      var list = pvEl('div','pv-hand');
+      s.witnesses.forEach(function(wt, i){
+        var b = pvEl('button','pv-card');
+        b.appendChild(pvEl('div','pv-cardname', wt.name));
+        if(wt.who) b.appendChild(pvEl('div','pv-cardwho', (wt.expert ? 'Expert in ' : '') + wt.who));
+        b.addEventListener('click', function(){
+          pvSend({ t:'court', act:'call', idx:i });
+          list.querySelectorAll('.pv-card').forEach(function(x){ x.disabled = true; });
+          b.classList.add('played');
+          pv.callOpen = false;
+        });
+        list.appendChild(b);
+      });
+      wrap.appendChild(list);
+      var back = pvEl('button','join-btn','← Back to my evidence');
+      back.addEventListener('click', function(){ pv.callOpen = false; renderPlayerState(); });
+      wrap.appendChild(back);
+    }
+    parent.appendChild(wrap);
+  }
+
+  /* a lawyer's remaining evidence — tappable on your turn, read-only otherwise */
+  function pvCourtHand(parent, cards, onPick){
+    if(!cards || !cards.length) return;
+    var wrap = pvEl('div','pv-hand');
+    if(!onPick) wrap.classList.add('idle');
+    cards.forEach(function(text, i){
+      var c = pvEl('button','pv-card', text);
+      if(!onPick){
+        c.disabled = true;
+      }else{
+        c.addEventListener('click', function(){
+          pvSend({ t:'court', act:'card', idx:i });
+          /* lock the hand until the host pushes the next state */
+          wrap.querySelectorAll('.pv-card').forEach(function(x){ x.disabled = true; });
+          c.classList.add('played');
+        });
+      }
+      wrap.appendChild(c);
+    });
+    parent.appendChild(wrap);
   }
 
   function renderPlayerState(){
@@ -1411,6 +1759,7 @@
     var st = elPVStage;
     st.innerHTML = '';
     var m = s.mode;
+    if(m !== 'court-hand') pv.callOpen = false;
 
     /* the puzzle + wheel live outside the stage so they survive a re-render */
     renderPvExtras(s);
@@ -1616,6 +1965,113 @@
         st.appendChild(solveNow);
       }
       if(pv.lastMode !== 'wheel-letter') pvHaptic(40);
+    }
+    else if(m === 'court-charge'){
+      st.appendChild(pvEl('div','pv-big gold','What are we here for?'));
+      pvCourtHand(st, s.cards, null);
+      var cform = pvEl('div','pv-form');
+      var cin = document.createElement('input');
+      cin.type = 'text'; cin.maxLength = 120;
+      cin.placeholder = 'The defendant is accused of…';
+      cin.autocomplete = 'off';
+      if(s.current) cin.value = s.current;
+      var cnote = pvEl('div','pv-note',
+        s.current ? 'Sent! You can still change it until the judge picks.'
+                  : (s.note || 'Accuse someone of something.'));
+      var cgo = pvEl('button','join-btn', s.current ? 'Update charge' : 'File the charge');
+      var sendCharge = function(){
+        var v = cin.value.trim();
+        if(!v){ cnote.textContent = 'Write the charge first.'; return; }
+        pvSend({ t:'court', act:'charge', text:v });
+        cnote.textContent = 'Sent! You can still change it until the judge picks.';
+        cgo.textContent = 'Update charge';
+      };
+      cgo.addEventListener('click', sendCharge);
+      cin.addEventListener('keydown', function(e){ if(e.key === 'Enter') sendCharge(); });
+      cform.appendChild(cin); cform.appendChild(cgo);
+      st.appendChild(cform);
+      st.appendChild(cnote);
+      if(!s.current) cin.focus();
+    }
+    else if(m === 'court-hand'){
+      st.appendChild(pvEl('div','pv-big gold','You have the floor'));
+      st.appendChild(pvEl('div','pv-note', s.note || 'Play a card and argue it out loud.'));
+      pvCourtHand(st, s.cards, true);
+      pvCallPanel(st, s);
+      if(s.wild){
+        var wrapW = pvEl('div','pv-actions');
+        var wbtn = pvEl('button','slot-btn','🃏 Improvise something');
+        wbtn.addEventListener('click', function(){
+          wrapW.innerHTML = '';
+          var winp = document.createElement('input');
+          winp.type = 'text'; winp.maxLength = 60;
+          winp.placeholder = 'Name it in a few words…';
+          winp.className = 'ct-wildinput';
+          var wgo = pvEl('button','join-btn','Enter it as evidence');
+          wgo.addEventListener('click', function(){
+            var v = winp.value.trim();
+            if(!v) return;
+            pvSend({ t:'court', act:'wild', title:v });
+            wrapW.innerHTML = '';
+            wrapW.appendChild(pvEl('div','pv-note','Wildcard played.'));
+          });
+          winp.addEventListener('keydown', function(e){ if(e.key === 'Enter') wgo.click(); });
+          wrapW.appendChild(winp); wrapW.appendChild(wgo);
+          winp.focus();
+        });
+        wrapW.appendChild(wbtn);
+        st.appendChild(wrapW);
+      }
+      if(pv.lastMode !== 'court-hand') pvHaptic(40);
+    }
+    else if(m === 'court-stand'){
+      st.appendChild(pvEl('div','pv-big gold', s.cross ? 'Cross-Examination' : 'On the Stand'));
+      st.appendChild(pvEl('div','pv-note', s.note || ''));
+      if(pv.lastMode !== 'court-stand') pvHaptic([30,40,30]);
+    }
+    else if(m === 'court-object'){
+      var ob = pvEl('button','object-btn','OBJECTION!');
+      ob.disabled = !s.objections || !!s.pending;
+      ob.addEventListener('pointerdown', function(e){
+        e.preventDefault();
+        if(ob.disabled) return;
+        pvSend({ t:'court', act:'object' });
+        ob.disabled = true;
+        pvHaptic([30,40,30]);
+      });
+      st.appendChild(ob);
+      st.appendChild(pvEl('div','pv-note',
+        (s.objections ? s.objections + ' objection' + (s.objections === 1 ? '' : 's') + ' left · ' : 'Out of objections · ')
+        + (s.note || '')));
+      pvCourtHand(st, s.cards, null);
+    }
+    else if(m === 'court-sway' || m === 'court-vote'){
+      var final = (m === 'court-vote');
+      st.appendChild(pvEl('div','pv-big gold', final ? 'Your Verdict' : 'The Jury'));
+      if(s.charge) st.appendChild(pvEl('div','pv-cat', s.charge));
+      var vwrap = pvEl('div','pv-actions');
+      [['G','Guilty'],['N','Not Guilty']].forEach(function(o){
+        var b = pvEl('button','pv-choice', '');
+        b.appendChild(pvEl('span','letter', o[0] === 'G' ? '⚖' : '🕊'));
+        b.appendChild(pvEl('span','', o[1]));
+        if(s.picked === o[0]) b.classList.add('picked');
+        if(final && s.locked) b.disabled = true;
+        b.addEventListener('click', function(){
+          if(final && s.locked) return;
+          pvSend({ t:'court', act: final ? 'vote' : 'sway', vote:o[0] });
+          vwrap.querySelectorAll('.pv-choice').forEach(function(x){ x.classList.remove('picked'); });
+          b.classList.add('picked');
+        });
+        vwrap.appendChild(b);
+      });
+      st.appendChild(vwrap);
+      st.appendChild(pvEl('div','pv-note', s.note || ''));
+      if(final && pv.lastMode !== 'court-vote') pvHaptic(40);
+    }
+    else if(m === 'court-wait'){
+      st.appendChild(pvEl('div','pv-result-icon','⚖️'));
+      st.appendChild(pvEl('div','pv-note', s.note || 'The trial is under way…'));
+      pvCourtHand(st, s.cards, null);
     }
     else if(m === 'scores'){
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
@@ -2094,6 +2550,8 @@
     }else if(g.type === 'wheel'){
       (g.data.puzzles || []).forEach(function(p){ if(p.img) ids.push(p.img); });
       if(g.data.bonus && g.data.bonus.img) ids.push(g.data.bonus.img);
+    }else if(g.type === 'court'){
+      (g.data.evidence || []).forEach(function(c){ if(c.img) ids.push(c.img); });
     }else if(g.data.questions){
       g.data.questions.forEach(function(q){ if(q.img) ids.push(q.img); });
     }else if(g.data.prompts){
@@ -2109,6 +2567,8 @@
     }else if(g.type === 'wheel'){
       (g.data.puzzles || []).forEach(re);
       if(g.data.bonus) re(g.data.bonus);
+    }else if(g.type === 'court'){
+      (g.data.evidence || []).forEach(re);
     }else if(g.data.questions){ g.data.questions.forEach(re); }
     else if(g.data.prompts){ g.data.prompts.forEach(re); }
   }
@@ -2235,6 +2695,23 @@
         return n+' puzzle'+(n===1?'':'s');
       },
       renderEditor: renderWheelEditor
+    },
+    court: {
+      label:'Courtroom', icon:'⚖️',
+      blurb:'Two lawyers argue a case. You be the judge.',
+      blank:function(){
+        return { judgeCharge:false, objections:3, cardsEach:3, witnessesPerSide:1,
+                 openTime:45, turnTime:60, closeTime:60,
+                 winPts:1000, jurorPts:100, witnessPts:200,
+                 evidence:[ {text:'',img:null},{text:'',img:null},{text:'',img:null},
+                            {text:'',img:null},{text:'',img:null},{text:'',img:null} ],
+                 witnesses:[] };
+      },
+      summary:function(d){
+        var n = (d.evidence||[]).filter(function(c){ return c.text.trim(); }).length;
+        return n+' evidence card'+(n===1?'':'s');
+      },
+      renderEditor: renderCourtEditor
     }
   };
 
@@ -2654,6 +3131,59 @@
       '',
       '# Copy the block above for each new puzzle.'
     ])),
+    court: tpl(TPL_HEAD.concat([
+      '#  COURTROOM',
+      '#  One EVIDENCE line per card. Each lawyer is dealt a hand of them',
+      '#  at the start and has to argue them into the case.',
+      '#',
+      '#  Write at least twice CARDS EACH (six is the floor). Go well past',
+      '#  that if you want a different deal every trial.',
+      '#',
+      '#  JUDGE WRITES CHARGE: no  -> both lawyers pitch a charge and you',
+      '#  pick one; whoever wrote it prosecutes.',
+      '#  JUDGE WRITES CHARGE: yes -> you write it yourself.',
+      '',
+      'TYPE: court',
+      'NAME: Night Court',
+      'MAX PLAYERS: 12',
+      'JUDGE WRITES CHARGE: no',
+      'CARDS EACH: 3',
+      'OBJECTIONS EACH: 3',
+      'WITNESSES PER SIDE: 1',
+      'WINNING LAWYER: 1000',
+      'JUROR POINTS: 100',
+      '',
+      'EVIDENCE: A receipt for 400 rubber ducks',
+      'EVIDENCE: A single muddy boot, size 14',
+      'EVIDENCE: Thirty-seven unsent letters, all to the same address',
+      'EVIDENCE: A parrot that only says one word',
+      'EVIDENCE: A library card last used in 1997',
+      'EVIDENCE: A birthday cake with the name scraped off',
+      'EVIDENCE: Security footage that is entirely out of focus',
+      'EVIDENCE: A hotel key card for a hotel that burned down',
+      'EVIDENCE: One glove, turned inside out',
+      'EVIDENCE: A grocery list with the last item torn away',
+      'EVIDENCE: A trophy for second place, heavily dented',
+      'EVIDENCE: A map with one town circled twice',
+      '',
+      '# --- Witnesses (optional) ---------------------------------',
+      '# WITNESS: who they are | the secret only they will see',
+      '# EXPERT:  a field of expertise | the secret only they will see',
+      '#',
+      '# Anyone who picks Witness in the lobby draws one of these. The',
+      '# identity shows on the big screen; the secret goes only to them.',
+      '',
+      'WITNESS: The neighbour who never sleeps | You saw everything, but you are lying about one detail',
+      'WITNESS: The defendant\'s oldest friend | You would say anything to protect them, and it shows',
+      'WITNESS: Someone who just happened to be passing | You were not passing. You will not say why you were there',
+      'WITNESS: The person who called it in | You regret calling it in and keep apologising to the defendant',
+      'EXPERT: Competitive hedge trimming | You have never actually done this and will not admit it',
+      'EXPERT: Nineteenth-century boat naming conventions | Every answer must somehow come back to boats',
+      '',
+      '# The best cards are specific, useless on their own, and could cut',
+      '# either way. Leave the crime out of them - the charge gets invented',
+      '# at the table.'
+    ])),
     jeopardy: tpl(TPL_HEAD.concat([
       '#  JEOPARDY STYLE',
       '#  VALUES sets the point rows (2-6 of them).',
@@ -2742,7 +3272,9 @@
     'VOWEL COST':1,'WEDGES':1,
     'BONUS':1,'BONUS CATEGORY':1,'BONUS PUZZLE':1,'BONUS PRIZE':1,
     'FIRST':1,'SECOND':1,'THIRD':1,'REVEAL ONE BY ONE':1,
-    'FINAL CATEGORY':1,'FINAL Q':1,'FINAL A':1
+    'FINAL CATEGORY':1,'FINAL Q':1,'FINAL A':1,
+    'JUDGE WRITES CHARGE':1,'CARDS EACH':1,'OBJECTIONS EACH':1,'WITNESSES PER SIDE':1,
+    'WINNING LAWYER':1,'JUROR POINTS':1,'WITNESS POINTS':1
   };
   var BULK_TYPES = {
     'jeopardy':'jeopardy','jeopardy style':'jeopardy',
@@ -2750,7 +3282,8 @@
     'feud':'feud','survey':'feud','feud survey':'feud',
     'closest':'closest','closest wins':'closest',
     'prompts':'prompts','punchline':'prompts','punchline showdown':'prompts',
-    'wheel':'wheel','wheel puzzle':'wheel'
+    'wheel':'wheel','wheel puzzle':'wheel',
+    'court':'court','courtroom':'court'
   };
   function bulkType(s){ return BULK_TYPES[String(s).trim().toLowerCase()] || ''; }
 
@@ -2863,6 +3396,33 @@
     });
     return out;
   }
+  function bulkCourt(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      b.forEach(function(line){
+        var kv = bulkKV(line), t;
+        if(kv) t = (kv.key === 'EVIDENCE' || kv.key === 'CARD') ? kv.val : '';
+        else t = line.replace(/^\s*[-*•]\s*/, '').trim();
+        if(t) out.push({ text:t, img:null });
+      });
+    });
+    return out;
+  }
+  /* WITNESS: who they are | their secret   (EXPERT: for expert witnesses) */
+  function bulkCourtWitnesses(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(!kv || (kv.key !== 'WITNESS' && kv.key !== 'EXPERT')) return;
+        var parts = kv.val.split('|');
+        var who = parts[0].trim();
+        if(!who) return;
+        out.push({ who: who, secret: (parts[1] || '').trim(), expert: kv.key === 'EXPERT' });
+      });
+    });
+    return out;
+  }
   function bulkJeopardyCats(blocks){
     var cats = [], cur = null;
     blocks.forEach(function(b){
@@ -2945,6 +3505,29 @@
       if(meta['BONUS CATEGORY'] !== undefined) d.bonus.cat = meta['BONUS CATEGORY'];
       if(meta['BONUS PUZZLE'] !== undefined)   d.bonus.text = meta['BONUS PUZZLE'];
       if(meta['BONUS PRIZE'] !== undefined)    d.bonus.prize = bulkInt(meta['BONUS PRIZE'], 2000);
+    }
+    else if(g.type === 'court'){
+      var ev = bulkCourt(blocks);
+      if(meta['JUDGE WRITES CHARGE'] !== undefined) d.judgeCharge = bulkBool(meta['JUDGE WRITES CHARGE']);
+      if(meta['CARDS EACH'] !== undefined) d.cardsEach = Math.min(8, Math.max(1, bulkInt(meta['CARDS EACH'], 3)));
+      if(meta['OBJECTIONS EACH'] !== undefined) d.objections = Math.min(9, Math.max(0, bulkInt(meta['OBJECTIONS EACH'], 3)));
+      if(meta['WITNESSES PER SIDE'] !== undefined) d.witnessesPerSide = Math.min(3, Math.max(0, bulkInt(meta['WITNESSES PER SIDE'], 1)));
+      if(meta['WINNING LAWYER'] !== undefined) d.winPts = bulkInt(meta['WINNING LAWYER'], d.winPts);
+      if(meta['JUROR POINTS'] !== undefined) d.jurorPts = bulkInt(meta['JUROR POINTS'], d.jurorPts);
+      if(meta['WITNESS POINTS'] !== undefined) d.witnessPts = bulkInt(meta['WITNESS POINTS'], d.witnessPts);
+      var wit = bulkCourtWitnesses(blocks);
+      if(wit.length){
+        if(!d.witnesses) d.witnesses = [];
+        if(!d.witnesses.some(function(c){ return (c.who || '').trim(); })) d.witnesses = [];
+        d.witnesses = d.witnesses.concat(wit);
+        added += wit.length;
+      }
+      if(!ev.length) return added;
+      if(!d.evidence) d.evidence = [];
+      /* a new game starts with six empty cards — drop them */
+      if(!d.evidence.some(function(c){ return c.text.trim(); })) d.evidence = [];
+      d.evidence = d.evidence.concat(ev);
+      added += ev.length;
     }
     else if(g.type === 'jeopardy'){
       var cats = bulkJeopardyCats(blocks);
@@ -3482,6 +4065,254 @@
     draw();
   }
 
+  /* ============ Courtroom editor ============ */
+  function courtCardsEach(d){
+    var n = parseInt(d.cardsEach, 10);
+    return (n >= 1 && n <= 8) ? n : 3;
+  }
+  function validEvidence(d){
+    return (d.evidence || []).filter(function(c){ return c.text.trim(); });
+  }
+  function validWitnesses(d){
+    return (d.witnesses || []).filter(function(c){ return (c.who || '').trim(); });
+  }
+  function courtWitnessCap(d){
+    var n = parseInt(d.witnessesPerSide, 10);
+    return (n >= 0 && n <= 3) ? n : 1;
+  }
+  function renderCourtEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    if(!d.evidence || !d.evidence.length){
+      d.evidence = [];
+      for(var z = 0; z < 6; z++) d.evidence.push({ text:'', img:null });
+    }
+    if(d.judgeCharge === undefined) d.judgeCharge = false;
+    if(d.objections === undefined) d.objections = 3;
+    if(d.cardsEach === undefined) d.cardsEach = 3;
+    if(d.witnessesPerSide === undefined) d.witnessesPerSide = 1;
+    if(d.openTime === undefined) d.openTime = 45;
+    if(d.turnTime === undefined) d.turnTime = 60;
+    if(d.closeTime === undefined) d.closeTime = 60;
+    if(d.winPts === undefined) d.winPts = 1000;
+    if(d.jurorPts === undefined) d.jurorPts = 100;
+    if(d.witnessPts === undefined) d.witnessPts = 200;
+
+    bar.appendChild(toolBtn('+ Evidence', function(){
+      d.evidence.push({ text:'', img:null });
+      touch(); draw();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bulkControls(g, bar);
+    bar.appendChild(savedNoteEl);
+
+    function numField(row, label, key, placeholder, lo, hi){
+      var la = document.createElement('label'); la.textContent = label;
+      var inp = document.createElement('input');
+      inp.className = 'fin-input'; inp.type = 'text'; inp.inputMode = 'numeric';
+      inp.placeholder = placeholder; inp.value = d[key];
+      inp.addEventListener('input', function(){
+        var n = parseInt(this.value.replace(/\D/g,''), 10);
+        d[key] = isNaN(n) ? lo : Math.min(hi, Math.max(lo, n));
+        touch();
+        if(key === 'cardsEach') deckNote.textContent = deckAdvice();
+      });
+      inp.addEventListener('blur', function(){ this.value = d[key]; });
+      la.appendChild(inp); row.appendChild(la);
+      return inp;
+    }
+
+    /* ---- the trial ---- */
+    var t1 = document.createElement('div'); t1.className = 'fin-section';
+    var h1 = document.createElement('h3'); h1.textContent = '⚖️ The trial';
+    t1.appendChild(h1);
+
+    var jc = document.createElement('label'); jc.className = 'dd-row';
+    var jcIn = document.createElement('input'); jcIn.type = 'checkbox';
+    jcIn.checked = !!d.judgeCharge;
+    jcIn.addEventListener('change', function(){
+      d.judgeCharge = this.checked; touch();
+      jcNote.textContent = chargeNote();
+    });
+    jc.appendChild(jcIn);
+    jc.appendChild(document.createTextNode(' The judge writes the charge'));
+    t1.appendChild(jc);
+    function chargeNote(){
+      return d.judgeCharge
+        ? 'You type the charge on the big screen and both lawyers argue it.'
+        : 'Both lawyers type a charge on their phones and you pick the one you like. '
+          + 'Whoever wrote the winning charge prosecutes it.';
+    }
+    var jcNote = document.createElement('div'); jcNote.className = 'tq-foot';
+    jcNote.textContent = chargeNote();
+    t1.appendChild(jcNote);
+
+    var r1 = document.createElement('div'); r1.className = 'cw-row';
+    numField(r1, 'Cards each', 'cardsEach', '3', 1, 8);
+    numField(r1, 'Objections each', 'objections', '3', 0, 9);
+    numField(r1, 'Witnesses per side', 'witnessesPerSide', '1', 0, 3);
+    t1.appendChild(r1);
+
+    var r2 = document.createElement('div'); r2.className = 'cw-row';
+    numField(r2, 'Opening (sec)', 'openTime', '45', 10, 300);
+    numField(r2, 'Each turn (sec)', 'turnTime', '60', 10, 300);
+    numField(r2, 'Closing (sec)', 'closeTime', '60', 10, 300);
+    t1.appendChild(r2);
+
+    var r3 = document.createElement('div'); r3.className = 'cw-row';
+    numField(r3, 'Winning lawyer', 'winPts', '1000', 0, 100000);
+    numField(r3, 'Juror (right side)', 'jurorPts', '100', 0, 100000);
+    numField(r3, 'Witness', 'witnessPts', '200', 0, 100000);
+    t1.appendChild(r3);
+
+    var tnote = document.createElement('div'); tnote.className = 'tq-foot';
+    tnote.textContent = 'Everything after the charge is spoken out loud — phones are just for '
+      + 'playing evidence, objecting and voting. Two lawyers are required; everyone else can be '
+      + 'a juror or a witness. Each side calls up to "witnesses per side" of them, questions their '
+      + 'own, then cross-examines the other’s.';
+    t1.appendChild(tnote);
+    wrap.appendChild(t1);
+
+    /* ---- witness deck ---- */
+    if(!d.witnesses) d.witnesses = [];
+    var t3 = document.createElement('div'); t3.className = 'fin-section';
+    var h3w = document.createElement('h3'); h3w.textContent = '👤 Witness deck';
+    t3.appendChild(h3w);
+    function witnessAdvice(){
+      var have = validWitnesses(d).length, cap = courtWitnessCap(d) * 2;
+      if(!courtWitnessCap(d)) return 'Witnesses per side is 0, so nobody takes the stand this game.';
+      if(!have) return 'No witness cards yet. Anyone who picks Witness will have to invent themselves — '
+        + 'write a few cards to give them something to play against.';
+      return have + ' written · up to ' + cap + ' take the stand per trial. '
+        + (have <= cap ? 'Add more so the cast changes between games.' : 'Plenty to draw from.');
+    }
+    var wNote = document.createElement('div'); wNote.className = 'tq-foot';
+    wNote.textContent = witnessAdvice();
+    t3.appendChild(wNote);
+    var wList = document.createElement('div'); wList.className = 'tq-list';
+    t3.appendChild(wList);
+    var wAdd = document.createElement('button');
+    wAdd.className = 'slot-btn'; wAdd.textContent = '+ Witness';
+    wAdd.addEventListener('click', function(){
+      d.witnesses.push({ who:'', secret:'', expert:false });
+      touch(); drawWitnesses();
+    });
+    t3.appendChild(wAdd);
+    function drawWitnesses(){
+      wList.innerHTML = '';
+      d.witnesses.forEach(function(c, wi){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Witness ' + (wi + 1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          d.witnesses.splice(wi, 1); touch(); drawWitnesses();
+          wNote.textContent = witnessAdvice();
+        }));
+        card.appendChild(head);
+        var ex = document.createElement('label'); ex.className = 'dd-row';
+        var exIn = document.createElement('input'); exIn.type = 'checkbox';
+        exIn.checked = !!c.expert;
+        exIn.addEventListener('change', function(){
+          c.expert = this.checked; touch();
+          who.placeholder = c.expert ? 'Field of expertise (e.g. Competitive hedge trimming)…'
+                                     : 'Who they are (e.g. The neighbour who never sleeps)…';
+        });
+        ex.appendChild(exIn);
+        ex.appendChild(document.createTextNode(' Expert witness'));
+        card.appendChild(ex);
+        var who = document.createElement('input');
+        who.className = 'fin-input'; who.style.width = '100%'; who.style.marginTop = '8px';
+        who.maxLength = 80;
+        who.placeholder = c.expert ? 'Field of expertise (e.g. Competitive hedge trimming)…'
+                                   : 'Who they are (e.g. The neighbour who never sleeps)…';
+        who.value = c.who || '';
+        who.addEventListener('input', function(){
+          c.who = this.value; touch(); wNote.textContent = witnessAdvice();
+        });
+        card.appendChild(who);
+        var sec = document.createElement('textarea');
+        sec.className = 'tq-q'; sec.rows = 2; sec.style.marginTop = '8px';
+        sec.placeholder = 'Their secret — only they will see this (e.g. You are lying about one detail)…';
+        sec.value = c.secret || '';
+        sec.addEventListener('input', function(){ c.secret = this.value; touch(); });
+        card.appendChild(sec);
+        wList.appendChild(card);
+      });
+    }
+    drawWitnesses();
+    var wFoot = document.createElement('div'); wFoot.className = 'tq-foot';
+    wFoot.textContent = 'The identity shows on the big screen when they are called. The secret goes only '
+      + 'to that player’s phone — not yours, not the lawyers’. Secrets that pull against the '
+      + 'person questioning them are the funniest.';
+    t3.appendChild(wFoot);
+    wrap.appendChild(t3);
+
+    /* ---- evidence deck ---- */
+    var t2 = document.createElement('div'); t2.className = 'fin-section';
+    var h2 = document.createElement('h3'); h2.textContent = '🗂️ Evidence deck';
+    t2.appendChild(h2);
+    function deckAdvice(){
+      var have = validEvidence(d).length, each = courtCardsEach(d), need = Math.max(6, each * 2);
+      var msg = have + ' written · ' + (each * 2) + ' dealt per trial · minimum ' + need + '. ';
+      if(have < need) msg += '⚠️ Write at least ' + (need - have) + ' more before you can host this.';
+      else if(have <= each * 2) msg += 'Every card gets dealt every trial — add a few more for variety.';
+      else msg += 'Nice — the deal changes from trial to trial.';
+      return msg;
+    }
+    var deckNote = document.createElement('div'); deckNote.className = 'tq-foot';
+    deckNote.textContent = deckAdvice();
+    t2.appendChild(deckNote);
+    wrap.appendChild(t2);
+
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+
+    function draw(){
+      list.innerHTML = '';
+      d.evidence.forEach(function(c, ci){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Evidence ' + (ci + 1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.evidence.length <= 6){ DC.toast('Keep at least six cards'); return; }
+          if(c.img) DC.imgDelete(c.img);
+          d.evidence.splice(ci, 1); touch(); draw();
+          deckNote.textContent = deckAdvice();
+        }));
+        card.appendChild(head);
+        var ta = document.createElement('textarea');
+        ta.className = 'tq-q'; ta.rows = 2;
+        ta.placeholder = 'A piece of evidence (e.g. A receipt for 400 rubber ducks)…';
+        ta.value = c.text;
+        ta.addEventListener('input', function(){
+          c.text = this.value; touch();
+          deckNote.textContent = deckAdvice();
+        });
+        card.appendChild(ta);
+        card.appendChild(imgControl(
+          function(){ return c.img || null; },
+          function(id){ c.img = id; touch(); }
+        ));
+        list.appendChild(card);
+      });
+    }
+    draw();
+
+    var foot = document.createElement('div'); foot.className = 'fin-section';
+    var fh = document.createElement('h3'); fh.textContent = '💡 Writing good evidence';
+    foot.appendChild(fh);
+    var fp = document.createElement('div'); fp.className = 'tq-foot';
+    fp.textContent = 'The funniest cards are specific, useless on their own, and could point either way — '
+      + '"a single muddy boot, size 14", "37 unsent letters", "a parrot that only says one word". '
+      + 'Leave the crime itself out of them; the charge gets invented at the table.';
+    foot.appendChild(fp);
+    wrap.appendChild(foot);
+  }
+
   /* ============ Punchline Showdown editor ============ */
   function renderPromptsEditor(g, wrap){
     var bar = editorHeader(g, wrap);
@@ -3838,6 +4669,14 @@
     if(game.type === 'wheel' && !validWheelPuzzles(game.data).length){
       DC.toast('Add at least one puzzle with letters in it.'); return;
     }
+    if(game.type === 'court'){
+      var cev = validEvidence(game.data);
+      var need = Math.max(6, 2 * courtCardsEach(game.data));
+      if(cev.length < need){
+        DC.toast('Write at least ' + need + ' evidence cards (you have ' + cev.length + ').');
+        return;
+      }
+    }
     DC.toast('Opening room…');
     var attempts = 0;
     (function tryPeer(){
@@ -3968,6 +4807,10 @@
       var p6 = host.players[conn.peer];
       if(p6 && host.ctl && host.ctl.onWheel) host.ctl.onWheel(p6, d);
     }
+    else if(d.t === 'court'){
+      var p7 = host.players[conn.peer];
+      if(p7 && host.ctl && host.ctl.onCourt) host.ctl.onCourt(p7, d);
+    }
   }
   function dropConn(conn){
     if(!host) return;
@@ -4022,8 +4865,13 @@
     });
     var btn = document.getElementById('start-game-btn');
     var live = ps.filter(function(p){ return p.connected; }).length;
-    btn.disabled = live === 0;
-    btn.textContent = live === 0 ? 'Waiting for players…' : 'Start Game ('+live+' in)';
+    /* a trial needs two lawyers before it can open */
+    var need = host.game.type === 'court' ? 2 : 1;
+    btn.disabled = live < need;
+    btn.textContent = live < need
+      ? (need > 1 ? 'Need ' + (need - live) + ' more player' + (need - live === 1 ? '' : 's') + '…'
+                  : 'Waiting for players…')
+      : 'Start Game ('+live+' in)';
   }
   document.getElementById('start-game-btn').addEventListener('click', function(){
     if(!host || this.disabled) return;
@@ -4033,6 +4881,7 @@
              : host.game.type === 'closest'  ? closestCtl()
              : host.game.type === 'prompts'  ? promptsCtl()
              : host.game.type === 'wheel'    ? wheelCtl()
+             : host.game.type === 'court'    ? courtCtl()
              : triviaCtl();
     showPlayView('game');
     host.ctl.start();
@@ -5924,6 +6773,950 @@
         }
         base.mode = 'wheel-wait';
         base.note = 'The host is checking your answer…';
+        return base;
+      }
+    };
+    return api;
+  }
+
+  /* ============ COURTROOM RUNTIME ============
+     Spoken game. Phones only play evidence, object and vote; the big
+     screen is the shared record of the trial, so everything that
+     happens has to land in the evidence log.                        */
+  function courtCtl(){
+    var d = host.game.data;
+    var deck = validEvidence(d).map(function(c){ return c.text.trim(); });
+    var cardsEach = courtCardsEach(d);
+    var objEach = (d.objections === undefined) ? 3 : Math.max(0, parseInt(d.objections, 10) || 0);
+    var winPts = (d.winPts === undefined) ? 1000 : parseInt(d.winPts, 10) || 0;
+    var jurorPts = (d.jurorPts === undefined) ? 100 : parseInt(d.jurorPts, 10) || 0;
+    var tOpen  = parseInt(d.openTime, 10)  || 45;
+    var tTurn  = parseInt(d.turnTime, 10)  || 60;
+    var tClose = parseInt(d.closeTime, 10) || 60;
+
+    /* charge -> pick -> opening -> evidence -> closing -> verdict -> sentence -> done */
+    var phase = 'roles';
+    var armed = false;        /* true while the judge holds the clock before a turn */
+    var picks = {};           /* pid -> 'P' | 'D' | 'J' while assigning roles */
+    var lawyers = [];          /* [pid, pid] — index 0 and 1, sides assigned later */
+    var jurors = [];
+    var side = {};             /* pid -> 'P' | 'D' */
+    var hands = {};            /* pid -> [card text] */
+    var wildLeft = {};         /* pid -> 1 */
+    var objLeft = {};          /* pid -> remaining */
+    var sustained = {};        /* pid -> count of sustained rulings */
+    var pitches = {};          /* pid -> typed charge */
+    var charge = '';
+    var chargeInput = '';      /* judge-typed */
+    var log = [];              /* {side, text, wild, struck} */
+    var turn = 0;              /* which of the 2*cardsEach evidence turns */
+    var speaking = null;       /* pid whose turn it is to talk */
+    var objector = null;       /* pid mid-objection */
+    var witnesses = [];        /* pids on witness duty */
+    var wCard = {};            /* pid -> { who, secret, expert } */
+    var calledBy = {};         /* pid -> 'P' | 'D' */
+    var onStand = null;        /* pid currently testifying */
+    var wSide = null;          /* side running the examination */
+    var wStage = null;         /* 'direct' | 'cross' while someone testifies */
+    var wCap = courtWitnessCap(d);
+    var witPts = (d.witnessPts === undefined) ? 200 : parseInt(d.witnessPts, 10) || 0;
+    var sway = {};             /* pid -> 'G' | 'N' */
+    var votes = {};            /* pid -> 'G' | 'N' */
+    var pollOpen = false;      /* the jury can't vote until the judge says so */
+    var chat = [];             /* {name, text} - jurors only, never the big screen */
+    var verdict = null;        /* 'G' | 'N' */
+    var payout = {};           /* pid -> points won */
+    var api = null;
+
+    /* a timer we can pause when someone objects */
+    var tmr = { fill:null, total:0, left:0, h:null, onEnd:null, t0:0 };
+    function tStart(sec, onEnd){
+      tStop();
+      tmr.total = sec * 1000; tmr.left = tmr.total;
+      tmr.onEnd = onEnd; tmr.t0 = Date.now();
+      tRun();
+    }
+    function tRun(){
+      clearInterval(tmr.h);
+      tmr.t0 = Date.now();
+      var startLeft = tmr.left;
+      tmr.h = setInterval(function(){
+        tmr.left = startLeft - (Date.now() - tmr.t0);
+        if(tmr.fill) tmr.fill.style.width = Math.max(0, tmr.left / tmr.total * 100) + '%';
+        if(tmr.left <= 0){
+          var fn = tmr.onEnd;
+          tStop();
+          if(fn && alive()) fn();
+        }
+      }, 100);
+    }
+    function tPause(){
+      if(!tmr.h) return;
+      tmr.left = tmr.left - (Date.now() - tmr.t0);
+      clearInterval(tmr.h); tmr.h = null;
+    }
+    function tResume(){ if(tmr.left > 0 && !tmr.h) tRun(); }
+    function tStop(){ clearInterval(tmr.h); tmr.h = null; tmr.left = 0; }
+
+    function alive(){ return !!host && host.ctl === api; }
+    function P(pid){ return host.players[pid] || null; }
+    function nameOf(pid){ var p = P(pid); return p ? p.name : '—'; }
+    function pros(){ return lawyers.filter(function(pid){ return side[pid] === 'P'; })[0] || lawyers[0]; }
+    function defe(){ return lawyers.filter(function(pid){ return side[pid] === 'D'; })[0] || lawyers[1]; }
+    function opponent(pid){ return pid === pros() ? defe() : pros(); }
+    function isLawyer(pid){ return lawyers.indexOf(pid) >= 0; }
+    function sideName(s){ return s === 'P' ? 'Prosecution' : 'Defense'; }
+
+    /* ---- setup ---- */
+    /* ---- role assignment ---- */
+    function livePlayers(){ return roster().filter(function(p){ return p.connected; }); }
+    function defaultPicks(){
+      picks = {};
+      livePlayers().forEach(function(p, i){
+        picks[p.pid] = i === 0 ? 'P' : i === 1 ? 'D' : 'J';
+      });
+    }
+    function randomPicks(){
+      var live = livePlayers().slice();
+      for(var i = live.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = live[i]; live[i] = live[j]; live[j] = t;
+      }
+      picks = {};
+      live.forEach(function(p, i){
+        picks[p.pid] = i === 0 ? 'P' : i === 1 ? 'D' : 'J';
+      });
+    }
+    function pickCount(r){
+      var n = 0;
+      livePlayers().forEach(function(p){ if(picks[p.pid] === r) n++; });
+      return n;
+    }
+    function picksValid(){
+      return pickCount('P') === 1 && pickCount('D') === 1 && pickCount('W') <= wCap * 2;
+    }
+    function seat(){
+      lawyers = []; jurors = []; witnesses = []; side = {};
+      livePlayers().forEach(function(p){
+        var r = picks[p.pid] || 'J';
+        if(r === 'P' || r === 'D'){ lawyers.push(p.pid); side[p.pid] = r; }
+        else if(r === 'W' && wCap) witnesses.push(p.pid);
+        else jurors.push(p.pid);
+      });
+      lawyers.forEach(function(pid){
+        if(objLeft[pid] === undefined) objLeft[pid] = objEach;
+        if(wildLeft[pid] === undefined) wildLeft[pid] = 1;
+        if(sustained[pid] === undefined) sustained[pid] = 0;
+      });
+    }
+    function dealCards(){
+      var bag = deck.slice();
+      for(var i = bag.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = bag[i]; bag[i] = bag[j]; bag[j] = t;
+      }
+      lawyers.forEach(function(pid){ hands[pid] = bag.splice(0, cardsEach); });
+    }
+    function dealWitnessCards(){
+      var bag = validWitnesses(d).slice();
+      for(var i = bag.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = bag[i]; bag[i] = bag[j]; bag[j] = t;
+      }
+      witnesses.forEach(function(pid, k){
+        wCard[pid] = bag[k] || { who:'Someone who was there',
+                                 secret:'No card for you \u2014 invent yourself, and commit to it.',
+                                 expert:false };
+      });
+    }
+
+    function start(){
+      phase = 'roles';
+      charge = '';
+      defaultPicks();
+      buildStage();
+      drawRolePicker();
+      pushAll();
+    }
+    function beginTrial(){
+      if(!picksValid()){ DC.toast('Pick exactly one prosecutor and one defender.'); return; }
+      seat();
+      dealCards();
+      dealWitnessCards();
+      phase = 'charge';
+      redraw();
+      drawChargePhase();
+      pushAll();
+    }
+    /* the judge assigns every seat before anything else happens */
+    function drawRolePicker(){
+      note('Assign the roles, then open the court.');
+      elActs.innerHTML = '';
+      var box = document.createElement('div');
+      box.className = 'ct-roles';
+      livePlayers().forEach(function(p){
+        var row = document.createElement('div'); row.className = 'ct-rolerow';
+        var nm = document.createElement('span'); nm.className = 'ct-rolename';
+        nm.textContent = p.name;
+        row.appendChild(nm);
+        var grp = document.createElement('div'); grp.className = 'ct-rolebtns';
+        var opts = [['P','Prosecution'],['D','Defense'],['J','Juror']];
+        if(wCap) opts.push(['W','Witness']);
+        opts.forEach(function(o){
+          var b = document.createElement('button');
+          b.className = 'ct-rolebtn r' + o[0] + (picks[p.pid] === o[0] ? ' on' : '');
+          b.textContent = o[1];
+          b.addEventListener('click', function(){
+            /* only one prosecutor and one defender - bump whoever held it.
+               Witness and Juror seats are shared, so they never bump. */
+            if(o[0] === 'P' || o[0] === 'D'){
+              Object.keys(picks).forEach(function(other){
+                if(other !== p.pid && picks[other] === o[0]) picks[other] = 'J';
+              });
+            }
+            picks[p.pid] = o[0];
+            drawRolePicker();
+            pushAll();
+          });
+          grp.appendChild(b);
+        });
+        row.appendChild(grp);
+        box.appendChild(row);
+      });
+      elActs.appendChild(box);
+      var bar = document.createElement('div'); bar.className = 'stage-actions';
+      bar.appendChild(stageBtn('🎲 Randomize', '', function(){
+        randomPicks(); drawRolePicker(); pushAll();
+      }));
+      if(wCap){
+        var cap = document.createElement('div'); cap.className = 'tq-foot';
+        cap.style.textAlign = 'center'; cap.style.width = '100%';
+        cap.textContent = pickCount('W') + ' of up to ' + (wCap * 2) + ' witness seats taken.';
+        elActs.appendChild(cap);
+      }
+      var go = stageBtn('Open the Court ▶', 'gold', beginTrial);
+      go.disabled = !picksValid();
+      if(go.disabled) go.style.opacity = '.5';
+      bar.appendChild(go);
+      elActs.appendChild(bar);
+    }
+
+    /* ---- stage ---- */
+    var elWrap, elCharge, elPhase, elTurn, elLog, elSway, elObj, elNote, elActs, elTimerFill, elStand;
+    function buildStage(){
+      elStage.innerHTML = '';
+      elWrap = document.createElement('div'); elWrap.className = 'ct-wrap';
+
+      elCharge = document.createElement('div'); elCharge.className = 'ct-charge';
+      elWrap.appendChild(elCharge);
+
+      elPhase = document.createElement('div'); elPhase.className = 'q-num';
+      elWrap.appendChild(elPhase);
+      elTurn = document.createElement('div'); elTurn.className = 'ct-turn';
+      elWrap.appendChild(elTurn);
+
+      var tb = document.createElement('div'); tb.className = 'timer-bar';
+      elTimerFill = document.createElement('div'); elTimerFill.className = 'timer-fill';
+      tb.appendChild(elTimerFill); elWrap.appendChild(tb);
+      tmr.fill = elTimerFill;
+
+      elLog = document.createElement('div'); elLog.className = 'ct-log';
+      elWrap.appendChild(elLog);
+
+      elStand = document.createElement('div'); elStand.className = 'ct-stand';
+      elStand.hidden = true;
+      elWrap.appendChild(elStand);
+
+      elObj = document.createElement('div'); elObj.className = 'ct-objrow';
+      elWrap.appendChild(elObj);
+      elSway = document.createElement('div'); elSway.className = 'ct-sway';
+      elWrap.appendChild(elSway);
+
+      elNote = document.createElement('div'); elNote.className = 'answered-note';
+      elWrap.appendChild(elNote);
+      elActs = document.createElement('div'); elActs.className = 'stage-actions';
+      elWrap.appendChild(elActs);
+
+      elStage.appendChild(elWrap);
+      redraw();
+    }
+
+    function redraw(){
+      if(!elWrap) return;
+      elCharge.textContent = charge || (phase === 'roles' ? 'Who is who?'
+        : d.judgeCharge ? 'Waiting on the charge…' : 'The lawyers are drafting charges…');
+      elCharge.classList.toggle('empty', !charge);
+
+      elPhase.textContent =
+        phase === 'roles'    ? 'Assign the Roles' :
+        phase === 'charge'   ? 'The Charge' :
+        phase === 'pick'     ? 'Choose the Charge' :
+        phase === 'opening'  ? 'Opening Statements' :
+        phase === 'evidence' ? 'Evidence · turn ' + (turn + 1) + ' of ' + (cardsEach * 2) :
+        phase === 'witness'  ? (wStage === 'cross' ? 'Cross-Examination' : 'Witness Testimony') :
+        phase === 'closing'  ? 'Closing Arguments' :
+        phase === 'verdict'  ? 'The Verdict' :
+        phase === 'sentence' ? 'Sentencing' : 'Court Adjourned';
+
+      elTurn.textContent = speaking ? nameOf(speaking) + ' — ' + sideName(side[speaking])
+                         : (phase === 'verdict' ? (jurors.length ? 'The jury is deciding…' : 'Your call, judge.') : '');
+
+      drawStand();
+      drawLog(); drawObj(); drawSway();
+    }
+    function drawStand(){
+      if(!elStand) return;
+      if(phase !== 'witness' || !onStand){ elStand.hidden = true; return; }
+      elStand.hidden = false;
+      elStand.innerHTML = '';
+      var lbl = document.createElement('div'); lbl.className = 'ct-standlbl';
+      lbl.textContent = 'On the stand \u00B7 called by the ' + sideName(calledBy[onStand] || wSide);
+      elStand.appendChild(lbl);
+      var nm = document.createElement('div'); nm.className = 'ct-standname';
+      nm.textContent = nameOf(onStand);
+      elStand.appendChild(nm);
+      var card = wCard[onStand];
+      if(card){
+        var who = document.createElement('div'); who.className = 'ct-standwho';
+        who.textContent = (card.expert ? 'Expert in ' : '') + card.who;
+        elStand.appendChild(who);
+      }
+    }
+
+    function drawLog(){
+      elLog.innerHTML = '';
+      [['P','Prosecution'], ['D','Defense']].forEach(function(col){
+        var c = document.createElement('div'); c.className = 'ct-col ' + col[0];
+        var h = document.createElement('div'); h.className = 'ct-colhead';
+        var who = lawyers.filter(function(pid){ return side[pid] === col[0]; })[0];
+        h.textContent = col[1] + (who ? ' · ' + nameOf(who) : '');
+        c.appendChild(h);
+        var any = false;
+        log.forEach(function(e){
+          if(e.side !== col[0]) return;
+          any = true;
+          var row = document.createElement('div');
+          row.className = 'ct-ev' + (e.struck ? ' struck' : '') + (e.wild ? ' wild' : '');
+          row.textContent = (e.wild ? '🃏 ' : '') + e.text;
+          c.appendChild(row);
+        });
+        if(!any){
+          var none = document.createElement('div'); none.className = 'ct-ev none';
+          none.textContent = '—';
+          c.appendChild(none);
+        }
+        elLog.appendChild(c);
+      });
+    }
+    function drawObj(){
+      elObj.innerHTML = '';
+      lawyers.forEach(function(pid){
+        var s = document.createElement('span');
+        s.className = 'ct-obj' + ((objLeft[pid] || 0) ? '' : ' out');
+        s.textContent = nameOf(pid) + ': ' + (objLeft[pid] || 0) + ' objection' +
+                        ((objLeft[pid] || 0) === 1 ? '' : 's');
+        elObj.appendChild(s);
+      });
+    }
+    /* Which way the jury is leaning is nobody's business but the jury's -
+       the big screen only ever shows how many have weighed in. The GM
+       console gets the real numbers (see gmRefresh), and the split is
+       revealed to the room once the verdict is in. */
+    function swayRevealed(){ return phase === 'sentence' || phase === 'done'; }
+    function juryTally(){
+      var live = (phase === 'verdict' || swayRevealed()) ? votes : sway;
+      var g = 0, n = 0, undecided = 0;
+      jurors.forEach(function(pid){
+        var v = live[pid];
+        if(v === 'G') g++; else if(v === 'N') n++; else undecided++;
+      });
+      return { g:g, n:n, undecided:undecided, live:live, in:g + n };
+    }
+    function drawSway(){
+      if(!jurors.length || phase === 'done'){ elSway.hidden = true; return; }
+      elSway.hidden = false;
+      elSway.innerHTML = '';
+      var t = juryTally();
+
+      if(!swayRevealed()){
+        var sealed = document.createElement('div');
+        sealed.className = 'ct-swaysealed';
+        sealed.textContent = phase === 'verdict'
+          ? '🔒 Jury of ' + jurors.length + ' — ' + t.in + ' vote' +
+            (t.in === 1 ? '' : 's') + ' sealed'
+          : '🔒 Jury of ' + jurors.length + ' — deliberating in private';
+        elSway.appendChild(sealed);
+        return;
+      }
+
+      var lbl = document.createElement('div'); lbl.className = 'ct-swaylbl';
+      lbl.textContent = t.in ? 'Jury: ' + t.g + ' guilty · ' + t.n + ' not guilty'
+                             : 'Jury of ' + jurors.length + ' — nobody voted';
+      elSway.appendChild(lbl);
+      var bar = document.createElement('div'); bar.className = 'ct-swaybar';
+      var fill = document.createElement('div'); fill.className = 'ct-swayfill';
+      fill.style.width = (t.in ? (t.g / t.in * 100) : 50) + '%';
+      bar.appendChild(fill);
+      elSway.appendChild(bar);
+
+      var row = document.createElement('div'); row.className = 'ct-swayvotes';
+      jurors.forEach(function(pid){
+        var v = t.live[pid];
+        var chip = document.createElement('div');
+        chip.className = 'ct-swayvote ' + (v === 'G' ? 'G' : v === 'N' ? 'N' : 'X');
+        var who = document.createElement('span'); who.className = 'who';
+        who.textContent = nameOf(pid);
+        var how = document.createElement('span'); how.className = 'how';
+        how.textContent = v === 'G' ? 'Guilty' : v === 'N' ? 'Not guilty' : 'Abstained';
+        chip.appendChild(who); chip.appendChild(how);
+        row.appendChild(chip);
+      });
+      elSway.appendChild(row);
+    }
+
+    function note(t){ if(elNote) elNote.textContent = t; }
+    function acts(list){
+      if(!elActs) return;
+      elActs.innerHTML = '';
+      list.forEach(function(b){ elActs.appendChild(b); });
+    }
+
+    /* ---- charge ---- */
+    function chargeReady(){
+      if(d.judgeCharge) return !!chargeInput.trim();
+      return lawyers.every(function(pid){ return (pitches[pid] || '').trim(); });
+    }
+    function drawChargePhase(){
+      if(d.judgeCharge){
+        note('Type the charge, then bring the court to order.');
+        var inp = document.createElement('input');
+        inp.className = 'ct-input';
+        inp.placeholder = 'The defendant stands accused of…';
+        inp.maxLength = 120;
+        inp.value = chargeInput;
+        inp.addEventListener('input', function(){ chargeInput = this.value; });
+        elActs.innerHTML = '';
+        elActs.appendChild(inp);
+        elActs.appendChild(stageBtn('Read the Charge ▶', 'gold', function(){
+          if(!chargeInput.trim()){ DC.toast('Write the charge first.'); return; }
+          charge = chargeInput.trim();
+          beginOpenings();
+        }));
+        inp.focus();
+        return;
+      }
+      var got = lawyers.filter(function(pid){ return (pitches[pid] || '').trim(); }).length;
+      note(got + ' of ' + lawyers.length + ' charges are in.');
+      if(got < lawyers.length){ acts([]); return; }
+      phase = 'pick';
+      redraw();
+      note('Pick the charge you want to try. Whoever wrote it prosecutes.');
+      elActs.innerHTML = '';
+      lawyers.forEach(function(pid){
+        var b = stageBtn(nameOf(pid) + ': “' + pitches[pid].trim() + '”', '', function(){
+          charge = pitches[pid].trim();
+          side[pid] = 'P';
+          side[opponentOf(pid)] = 'D';
+          beginOpenings();
+        });
+        b.className = 'stage-btn ct-pitch';
+        elActs.appendChild(b);
+      });
+    }
+    function opponentOf(pid){
+      return lawyers.filter(function(x){ return x !== pid; })[0];
+    }
+
+    /* ---- openings ---- */
+    function beginOpenings(){
+      gmRefresh();
+      phase = 'opening';
+      speaking = pros();
+      redraw();
+      runSpeech(tOpen, 'Opening statement — ' + nameOf(speaking) + ' speaks.', function(){
+        if(speaking === pros()){
+          speaking = defe();
+          redraw();
+          runSpeech(tOpen, 'Opening statement — ' + nameOf(speaking) + ' speaks.', beginEvidence);
+        }else beginEvidence();
+      });
+    }
+    /* A spoken turn waits on the judge before the clock runs, so whoever is
+       up gets a moment to think first.                                   */
+    function runSpeech(sec, msg, next){ armTurn(sec, msg, next); }
+    function armTurn(sec, msg, next){
+      armed = true;
+      tStop();
+      if(tmr.fill) tmr.fill.style.width = '100%';
+      note(msg + ' Start the clock when they’re ready.');
+      acts([
+        stageBtn('▶ Start the clock', 'gold', function(){
+          armed = false;
+          note(msg);
+          acts([ stageBtn('Next ▶', '', function(){ tStop(); next(); }) ]);
+          tStart(sec, next);
+          pushAll();
+        }),
+        stageBtn('Skip ▶', '', function(){ armed = false; tStop(); next(); })
+      ]);
+      pushAll();
+    }
+
+    /* ---- evidence ---- */
+    function beginEvidence(){
+      phase = 'evidence';
+      turn = 0;
+      nextTurn(true);
+    }
+    function nextTurn(first){
+      if(!first) turn++;
+      if(turn >= cardsEach * 2){ beginClosings(); return; }
+      speaking = (turn % 2 === 0) ? pros() : defe();
+      redraw();
+      armTurn(tTurn, nameOf(speaking) + ' — play a card and argue it.',
+              function(){ nextTurn(); });
+    }
+    function playCard(p, idx){
+      if(phase !== 'evidence' || p.pid !== speaking) return;
+      var hand = hands[p.pid] || [];
+      idx = parseInt(idx, 10);
+      if(isNaN(idx) || idx < 0 || idx >= hand.length) return;
+      var text = hand.splice(idx, 1)[0];
+      log.push({ side: side[p.pid], text: text, wild: false, struck: false, by: p.pid });
+      redraw();
+      note(nameOf(p.pid) + ' enters: “' + text + '”');
+      pushAll();
+    }
+    function playWild(p, title){
+      if(phase !== 'evidence' || p.pid !== speaking) return;
+      if(!wildLeft[p.pid]) return;
+      var t = String(title || '').trim().slice(0, 60);
+      if(!t) return;
+      wildLeft[p.pid] = 0;
+      log.push({ side: side[p.pid], text: t, wild: true, struck: false, by: p.pid });
+      redraw();
+      note(nameOf(p.pid) + ' improvises: “' + t + '”');
+      pushAll();
+    }
+
+    /* ---- objections ---- */
+    function raiseObjection(p){
+      if((phase !== 'evidence' && phase !== 'witness') || objector || armed) return;
+      if(!isLawyer(p.pid) || p.pid === speaking) return;
+      if(!(objLeft[p.pid] > 0)) return;
+      objector = p.pid;
+      objLeft[p.pid]--;
+      tPause();
+      redraw();
+      note('OBJECTION from ' + nameOf(objector) + '! Sustained or overruled?');
+      acts([
+        stageBtn('Sustained', 'good', function(){ ruleObjection(true); }),
+        stageBtn('Overruled', 'bad', function(){ ruleObjection(false); })
+      ]);
+      pushAll();
+    }
+    function ruleObjection(sus){
+      if(!objector) return;
+      var who = objector;
+      objector = null;
+      if(sus){
+        /* only evidence can be struck - a sustained objection during testimony
+           just means the question has to be rephrased */
+        if(phase === 'evidence'){
+          for(var i = log.length - 1; i >= 0; i--){
+            if(log[i].side === side[speaking] && !log[i].struck){ log[i].struck = true; break; }
+          }
+        }
+        sustained[who] = (sustained[who] || 0) + 1;
+        /* every second sustained hands one objection back */
+        if(sustained[who] % 2 === 0){
+          objLeft[who]++;
+          note('Sustained — struck from the record. That’s two for ' + nameOf(who) + ': one objection back.');
+        }else{
+          note(phase === 'evidence' ? 'Sustained — struck from the record.'
+                                    : 'Sustained — rephrase the question.');
+        }
+      }else{
+        note('Overruled. Carry on, ' + nameOf(speaking) + '.');
+      }
+      redraw();
+      var resume = (phase === 'witness')
+        ? function(){ tStop(); if(wStage === 'direct') toCross(); else endWitness(); }
+        : function(){ tStop(); nextTurn(); };
+      acts([ stageBtn('Next ▶', '', resume) ]);
+      tResume();
+      pushAll();
+    }
+
+    /* ---- witnesses ----
+       There is no witness round. A witness reaches the stand only because a
+       lawyer spent one of their own turns calling them, so anyone nobody
+       calls simply never testifies. */
+    function lawyerFor(sd){ return sd === 'P' ? pros() : defe(); }
+    function calledCount(sd){
+      return witnesses.filter(function(pid){ return calledBy[pid] === sd; }).length;
+    }
+    function freeWitnesses(){
+      return witnesses.filter(function(pid){
+        return !calledBy[pid] && P(pid) && P(pid).connected;
+      });
+    }
+    function canCall(pid){
+      return wCap > 0 && isLawyer(pid) &&
+             calledCount(side[pid]) < wCap && freeWitnesses().length > 0;
+    }
+    function witnessList(){
+      return freeWitnesses().map(function(pid){
+        return { name: nameOf(pid),
+                 who: (wCard[pid] || {}).who || '',
+                 expert: !!(wCard[pid] || {}).expert };
+      });
+    }
+    function callWitness(p, idx){
+      if(phase !== 'evidence' || p.pid !== speaking) return;
+      if(!canCall(p.pid)) return;
+      var free = freeWitnesses();
+      idx = parseInt(idx, 10);
+      if(isNaN(idx) || idx < 0 || idx >= free.length) return;
+      onStand = free[idx];
+      wSide = side[p.pid];
+      calledBy[onStand] = wSide;
+      phase = 'witness';
+      wStage = 'direct';
+      tStop();
+      redraw();
+      armTurn(tTurn, nameOf(p.pid) + ' calls ' + nameOf(onStand) + ' to the stand.', toCross);
+    }
+    function toCross(){
+      wStage = 'cross';
+      speaking = lawyerFor(wSide === 'P' ? 'D' : 'P');
+      redraw();
+      armTurn(tTurn, nameOf(speaking) + ' cross-examines ' + nameOf(onStand) + '.', endWitness);
+    }
+    /* the call cost the caller their turn, so play picks up at the next one */
+    function endWitness(){
+      phase = 'evidence';
+      onStand = null; wStage = null; wSide = null;
+      redraw();
+      nextTurn();
+    }
+
+    /* ---- closings ---- */
+    function beginClosings(){
+      phase = 'closing';
+      speaking = defe();          /* prosecution gets the last word */
+      redraw();
+      runSpeech(tClose, 'Closing argument — ' + nameOf(speaking) + ' speaks.', function(){
+        if(speaking === defe()){
+          speaking = pros();
+          redraw();
+          runSpeech(tClose, 'Closing argument — ' + nameOf(speaking) + ' has the last word.', beginVerdict);
+        }else beginVerdict();
+      });
+    }
+
+    /* ---- verdict ---- */
+    function beginVerdict(){
+      phase = 'verdict';
+      speaking = null;
+      pollOpen = false;
+      tStop();
+      redraw();
+      gmRefresh();
+      if(jurors.length){
+        note('The jury is deliberating in private. Open the vote when you’re ready.');
+        acts([ stageBtn('🗳 Open jury votes', 'gold', openVote) ]);
+      }else{
+        note('No jury — the verdict is yours.');
+        acts([
+          stageBtn('Guilty', 'bad', function(){ settle('G'); }),
+          stageBtn('Not Guilty', 'good', function(){ settle('N'); })
+        ]);
+      }
+      pushAll();
+    }
+    function pushJurors(){
+      jurors.forEach(function(pid){ var jp = P(pid); if(jp) pushState(jp); });
+    }
+    function votesIn(){
+      return jurors.filter(function(pid){ return votes[pid]; }).length;
+    }
+    function voteNote(){
+      note('The jury is voting. ' + votesIn() + ' of ' + jurors.length + ' in.');
+    }
+    function openVote(){
+      pollOpen = true;
+      voteNote();
+      acts([ stageBtn('Close the vote', 'gold', closeVote) ]);
+      pushAll();
+    }
+    function closeVote(){
+      pollOpen = false;
+      var g = 0, n = 0;
+      jurors.forEach(function(pid){
+        if(votes[pid] === 'G') g++; else if(votes[pid] === 'N') n++;
+      });
+      /* a tie or a silent jury acquits — the burden is on the prosecution */
+      settle(g > n ? 'G' : 'N');
+    }
+    function settle(v){
+      verdict = v;
+      phase = 'sentence';
+      tStop();
+      var winner = v === 'G' ? pros() : defe();
+      payout = {};
+      if(winner){ payout[winner] = winPts; var wp = P(winner); if(wp) wp.score += winPts; }
+      jurors.forEach(function(pid){
+        if(votes[pid] === v){
+          payout[pid] = jurorPts;
+          var jp = P(pid); if(jp) jp.score += jurorPts;
+        }
+      });
+      var winSide = v === 'G' ? 'P' : 'D';
+      witnesses.forEach(function(pid){
+        if(calledBy[pid] === winSide){
+          payout[pid] = witPts;
+          var wp2 = P(pid); if(wp2) wp2.score += witPts;
+        }
+      });
+      renderScoreRow();
+      redraw();
+      gmRefresh();
+      note(v === 'G' ? 'GUILTY. ' + nameOf(pros()) + ' takes it — now pass sentence, out loud.'
+                     : 'NOT GUILTY. ' + nameOf(defe()) + ' walks the defendant. Say a few words.');
+      acts([ stageBtn('Adjourn ▶', 'gold', finish) ]);
+      pushAll();
+    }
+    function finish(){
+      phase = 'done';
+      host.phase = 'ended';
+      tStop();
+      gmSetAnswer(null);
+      renderFinal();
+      pushAll();
+    }
+
+    /* ---- host-visible answer key ---- */
+    function gmRefresh(){
+      var lines = [{ text: 'Charge: ' + (charge || '(not set)') }];
+      if(jurors.length){
+        var t = juryTally();
+        lines.push({ text: swayRevealed() ? 'Jury verdict'
+                        : phase === 'verdict' ? 'Jury votes (sealed)'
+                        : 'Jury sway (live)',
+                     pts: t.g + 'G · ' + t.n + 'N' });
+        jurors.forEach(function(pid){
+          var v = t.live[pid];
+          lines.push({ text: '  ' + nameOf(pid),
+                       pts: v === 'G' ? 'Guilty' : v === 'N' ? 'Not guilty' : '—' });
+        });
+      }
+      gmSetAnswer(lines);
+    }
+
+    api = {
+      start: function(){ start(); gmRefresh(); },
+      onBuzz: function(){}, onAnswer: function(){}, onGuess: function(){},
+      onText: function(){},
+      onCourt: function(p, m){
+        var act = m && m.act;
+        if(act === 'charge'){
+          if(phase !== 'charge' || d.judgeCharge || !isLawyer(p.pid)) return;
+          pitches[p.pid] = String(m.text || '').slice(0, 120);
+          drawChargePhase();
+          pushState(p);
+          return;
+        }
+        if(act === 'call')   return callWitness(p, m.idx);
+        if(act === 'card')   return playCard(p, m.idx);
+        if(act === 'wild')   return playWild(p, m.title);
+        if(act === 'object') return raiseObjection(p);
+        if(act === 'sway'){
+          if(jurors.indexOf(p.pid) < 0) return;
+          if(phase === 'verdict' || phase === 'sentence' || phase === 'done') return;
+          sway[p.pid] = m.vote === 'G' ? 'G' : 'N';
+          drawSway(); gmRefresh(); pushState(p);
+          return;
+        }
+        if(act === 'vote'){
+          if(jurors.indexOf(p.pid) < 0 || phase !== 'verdict' || !pollOpen) return;
+          votes[p.pid] = m.vote === 'G' ? 'G' : 'N';
+          drawSway();
+          gmRefresh();
+          voteNote();
+          pushState(p);
+          return;
+        }
+        if(act === 'chat'){
+          /* the jury room is closed to everyone else, including the big screen */
+          if(jurors.indexOf(p.pid) < 0 || phase === 'roles') return;
+          var line = String(m.text || '').replace(/\s+/g, ' ').trim().slice(0, 140);
+          if(!line) return;
+          chat.push({ name: p.name, text: line });
+          if(chat.length > 60) chat = chat.slice(-60);
+          pushJurors();
+          return;
+        }
+      },
+      onRoster: function(){
+        if(phase === 'roles'){
+          /* someone turned up mid-assignment - default them to the jury */
+          livePlayers().forEach(function(p){
+            if(picks[p.pid] === undefined) picks[p.pid] = 'J';
+          });
+          renderScoreRow();
+          drawRolePicker();
+          return;
+        }
+        /* late arrivals join the jury; a lawyer who drops keeps their seat */
+        roster().forEach(function(p){
+          if(!p.connected) return;
+          if(lawyers.indexOf(p.pid) >= 0 || jurors.indexOf(p.pid) >= 0) return;
+          if(lawyers.length < 2){
+            lawyers.push(p.pid);
+            side[p.pid] = lawyers.length === 1 ? 'P' : 'D';
+            objLeft[p.pid] = objEach; wildLeft[p.pid] = 1; sustained[p.pid] = 0;
+            hands[p.pid] = hands[p.pid] || [];
+          }else jurors.push(p.pid);
+        });
+        renderScoreRow();
+        redraw();
+        gmRefresh();
+      },
+      stateFor: function(p, base){
+        base.charge = charge;
+        base.armed = armed;
+        if(phase === 'roles'){
+          base.mode = 'court-wait';
+          base.note = 'The judge is deciding who is who…';
+          return base;
+        }
+        /* the role rides along on every state from here on, so it can sit at
+           the top of the phone for the whole trial */
+        var iAmWitness = witnesses.indexOf(p.pid) >= 0;
+        base.role = isLawyer(p.pid) ? sideName(side[p.pid])
+                  : iAmWitness ? (wCard[p.pid] && wCard[p.pid].expert ? 'Expert Witness' : 'Witness')
+                  : (jurors.indexOf(p.pid) >= 0 ? 'Juror' : 'Spectator');
+        /* a witness keeps their card in front of them all trial */
+        if(iAmWitness && wCard[p.pid]){
+          base.witnessCard = {
+            who: wCard[p.pid].who,
+            secret: wCard[p.pid].secret,
+            expert: !!wCard[p.pid].expert,
+            called: !!calledBy[p.pid]
+          };
+        }
+        /* while the judge passes sentence out loud, everyone's phone shows
+           the verdict and what it earned them */
+        if(phase === 'sentence' || phase === 'done'){
+          base.mode = 'result';
+          base.gained = payout[p.pid] || 0;
+          base.correct = !!payout[p.pid];
+          base.headline = verdict === 'G' ? 'Guilty!' : 'Not guilty!';
+          base.loseText = verdict === 'G' ? 'Guilty.' : 'Not guilty.';
+          base.correctText = charge;
+          return base;
+        }
+        var lawyer = isLawyer(p.pid), juror = jurors.indexOf(p.pid) >= 0;
+
+        if(lawyer){
+          base.role = sideName(side[p.pid]);
+          if(phase === 'charge' && !d.judgeCharge){
+            base.mode = 'court-charge';
+            base.note = 'Look at your evidence, then accuse someone of something.';
+            base.cards = hands[p.pid] || [];
+            base.current = pitches[p.pid] || '';
+            return base;
+          }
+          if(phase === 'evidence' && p.pid === speaking){
+            base.mode = 'court-hand';
+            base.cards = hands[p.pid] || [];
+            base.wild = !!wildLeft[p.pid];
+            base.witnesses = canCall(p.pid) ? witnessList() : [];
+            base.callsLeft = wCap ? Math.max(0, wCap - calledCount(side[p.pid])) : 0;
+            base.note = armed
+              ? 'Take a moment — line up your card. The judge starts the clock when you’re ready.'
+              : 'Play a card and make your case out loud.';
+            return base;
+          }
+          if(phase === 'evidence' && p.pid !== speaking){
+            base.mode = 'court-object';
+            base.objections = objLeft[p.pid] || 0;
+            base.pending = !!objector;
+            base.cards = hands[p.pid] || [];
+            base.note = objector ? 'The judge is ruling…'
+                                 : nameOf(speaking) + ' has the floor.';
+            return base;
+          }
+          if(phase === 'witness'){
+            base.cards = hands[p.pid] || [];
+            if(p.pid === speaking){
+              base.mode = 'court-object';
+              base.objections = objLeft[p.pid] || 0;
+              base.pending = !!objector;
+              base.note = armed
+                ? (wStage === 'cross' ? 'Your cross-examination is next.' : 'Your witness is up next.')
+                : (wStage === 'cross' ? 'Cross-examine them — out loud.' : 'Question your witness — out loud.');
+              return base;
+            }
+            base.mode = 'court-object';
+            base.objections = objLeft[p.pid] || 0;
+            base.pending = !!objector;
+            base.note = onStand ? nameOf(onStand) + ' is testifying.' : 'A witness is taking the stand…';
+            return base;
+          }
+          base.mode = 'court-wait';
+          base.cards = hands[p.pid] || [];
+          base.note =
+            phase === 'charge' ? 'The judge is writing the charge…' :
+            phase === 'pick'   ? 'The judge is choosing a charge…' :
+            phase === 'opening'? (p.pid === speaking
+                                  ? (armed ? 'You’re up — opening statement. Take a breath.' : 'You’re up — opening statement!')
+                                  : 'Listen to the opening…') :
+            phase === 'closing'? (p.pid === speaking
+                                  ? (armed ? 'You’re up — closing argument. Take a breath.' : 'You’re up — closing argument!')
+                                  : 'Listen to the closing…') :
+            phase === 'verdict'? 'The verdict is being decided…' :
+            'Sentence is being passed…';
+          return base;
+        }
+
+        if(iAmWitness){
+          if(phase === 'witness' && onStand === p.pid){
+            base.mode = 'court-stand';
+            base.cross = (wStage === 'cross');
+            base.note = armed
+              ? 'You’re being called. Get into character.'
+              : (wStage === 'cross' ? 'You’re under cross-examination. Hold your nerve.'
+                                    : 'You’re on the stand. Answer out loud.');
+            return base;
+          }
+          base.mode = 'court-wait';
+          base.note = calledBy[p.pid]
+            ? 'You’ve given your testimony. Sit tight.'
+            : 'Watch the trial — a lawyer may call you to the stand.';
+          return base;
+        }
+
+        if(juror){
+          base.chat = chat.slice(-30);
+          if(phase === 'verdict'){
+            base.mode = 'court-vote';
+            base.picked = votes[p.pid] || null;
+            base.locked = !pollOpen;
+            base.note = pollOpen
+              ? 'Deliver your verdict.'
+              : 'Talk it over. The judge opens the vote when the jury is ready.';
+            return base;
+          }
+          base.mode = 'court-sway';
+          base.picked = sway[p.pid] || null;
+          base.note = 'Which way are you leaning? You can change your mind any time.';
+          return base;
+        }
+
+        base.mode = 'court-wait';
+        base.note = 'The trial is under way…';
         return base;
       }
     };
