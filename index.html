@@ -568,6 +568,7 @@
   }
   .buzz-banner.wait{color:var(--ink-dim);text-shadow:none;font-family:var(--body);font-weight:600;font-size:17px}
   .stage-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  #stage.acts-hidden .stage-actions{display:none}
   .stage-btn{
     padding:13px 22px;font-size:16px;font-weight:700;border-radius:11px;
     background:var(--stage-3);border:2px solid #4A3A8C;color:var(--ink);
@@ -633,6 +634,13 @@
   }
   .gmr-btn:hover{border-color:var(--bulb)}
   .gmr-btn.on{border-color:var(--ok);color:var(--ok)}
+  .gmr-acts{display:flex;flex-direction:column;gap:8px}
+  .gmr-actrow{display:flex;gap:8px;flex-wrap:wrap}
+  .gmr-btn.gold{border-color:var(--bulb);color:var(--bulb)}
+  .gmr-btn.good{border-color:var(--ok);color:var(--ok)}
+  .gmr-btn.bad{border-color:var(--spot);color:var(--spot)}
+  .gmr-btn.on{border-color:var(--spot);color:var(--spot)}
+  .gmr-btn:disabled{opacity:.45}
   .gmr-answers{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px;text-align:center}
   .gmr-answers .gm-label{color:var(--ink-dim);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
   .gmr-answers .gm-line{
@@ -1079,6 +1087,7 @@
       <button class="gmr-btn" id="gmr-bg" title="Toggle background music">▶ BG</button>
       <button class="gmr-btn" id="gmr-stop" title="Stop all music">■</button>
     </div>
+    <div class="gmr-acts" id="gmr-acts"></div>
     <div class="gmr-answers" id="gmr-answers"></div>
     <div class="gmr-foot">
       <button class="gmr-end" id="gmr-end">End Game</button>
@@ -2671,6 +2680,7 @@
       blurb:'Everyone writes a response, then votes for the best.',
       blank:function(){
         return { prompts:[ { text:'', img:null } ],
+                 playerPrompts:false,
                  oneByOne:false, p1:300, p2:200, p3:100 };
       },
       summary:function(d){
@@ -4343,6 +4353,24 @@
       row.appendChild(la);
     });
     opts.appendChild(row);
+    var ppl = document.createElement('label'); ppl.className = 'dd-row';
+    var pplIn = document.createElement('input'); pplIn.type = 'checkbox';
+    pplIn.checked = !!d.playerPrompts;
+    pplIn.addEventListener('change', function(){
+      d.playerPrompts = this.checked; touch(); drawPromptNote();
+    });
+    ppl.appendChild(pplIn);
+    ppl.appendChild(document.createTextNode(' Players write the prompts — each round the next player in turn order writes it'));
+    opts.appendChild(ppl);
+    var ppnote = document.createElement('div'); ppnote.className = 'tq-foot';
+    opts.appendChild(ppnote);
+    function drawPromptNote(){
+      ppnote.textContent = d.playerPrompts
+        ? 'Your prompts below are ignored — they only set how many rounds you play. You can still generate one mid-game if someone freezes.'
+        : '';
+    }
+    drawPromptNote();
+
     var obo = document.createElement('label'); obo.className = 'dd-row';
     var oboIn = document.createElement('input'); oboIn.type = 'checkbox';
     oboIn.checked = !!d.oneByOne;
@@ -4663,7 +4691,7 @@
     if(game.type === 'closest' && !validClosestQs(game.data).length){
       DC.toast('Add at least one question with a numeric answer.'); return;
     }
-    if(game.type === 'prompts' && !validPrompts(game.data).length){
+    if(game.type === 'prompts' && !game.data.playerPrompts && !validPrompts(game.data).length){
       DC.toast('Add at least one prompt first.'); return;
     }
     if(game.type === 'wheel' && !validWheelPuzzles(game.data).length){
@@ -5309,6 +5337,56 @@
       return q.q.trim() && isFinite(parseFloat(q.answer));
     });
   }
+  /* Prompts the host can conjure mid-show when the sheet runs dry or a
+     player freezes up. Deliberately open-ended - every one of them has a
+     dozen wrong answers. */
+  var PROMPT_BANK = [
+    'The worst thing to say during a job interview',
+    'A terrible name for a boat',
+    'What the pilot definitely should not announce mid-flight',
+    'An awful superpower to have',
+    'The real reason the Wi-Fi is down',
+    'A rejected slogan for a cereal brand',
+    'What you find in the back of the office fridge',
+    'The worst possible last words',
+    'A bad thing to whisper at a wedding',
+    'What aliens would report back about humans',
+    'An unconvincing excuse for being late',
+    'The least useful thing to bring to a desert island',
+    'A terrible theme for a children’s party',
+    'What the dog is definitely thinking about',
+    'A sign your neighbour is up to something',
+    'The worst way to answer the phone',
+    'An honest name for a gym',
+    'What you would ban if you ran the world for a day',
+    'A terrible tattoo to get on your face',
+    'The most suspicious thing to order at a restaurant',
+    'What the receipt says you actually bought',
+    'A bad first line for a love letter',
+    'The worst possible superhero sidekick',
+    'What is really in the mystery meat',
+    'An awful thing to find in your hotel room',
+    'The real reason the meeting ran long',
+    'A terrible name for a new colour',
+    'What your search history says about you',
+    'A bad thing to shout in a library',
+    'The worst prize to win on a game show',
+    'An unhelpful thing to say to someone lost',
+    'What the instruction manual left out',
+    'A terrible idea for a theme park ride',
+    'The most useless invention of all time',
+    'What the fortune cookie actually said',
+    'A bad reason to call in sick',
+    'The worst possible ringtone',
+    'An honest slogan for your hometown',
+    'What the cat knocked off the table this time',
+    'A terrible way to end a first date'
+  ];
+  function randomPrompt(avoid){
+    var pool = PROMPT_BANK.filter(function(t){ return t !== avoid; });
+    return pool[Math.floor(Math.random() * pool.length)] || PROMPT_BANK[0];
+  }
+
   function validPrompts(d){
     return (d.prompts || []).filter(function(p){ return p.text.trim(); });
   }
@@ -5786,9 +5864,15 @@
   /* ============ PUNCHLINE SHOWDOWN RUNTIME ============ */
   function promptsCtl(){
     var d = host.game.data;
-    var qs = validPrompts(d);
+    var byPlayers = !!d.playerPrompts;
+    /* when the players write them, the authored rows only set the round count */
+    var qs = byPlayers
+      ? (d.prompts || [{}]).map(function(){ return { text:'', img:null }; })
+      : validPrompts(d);
+    if(byPlayers && !qs.length) qs = [{ text:'', img:null }];
     var idx = -1;
-    var phase = 'show';    /* show | write | reveal | vote | results */
+    var author = null;     /* pid writing this round's prompt */
+    var phase = 'show';    /* author | show | write | reveal | vote | results */
     var written = {};      /* pid -> text (write phase, editable) */
     var entries = [];      /* [{pid, text, votes}] shuffled after writing */
     var votes = {};        /* voterPid -> entry index (editable) */
@@ -5804,11 +5888,51 @@
       return isNaN(v) ? 0 : v;
     }
 
-    function next(){
-      idx++;
-      if(idx >= qs.length){ finish(); return; }
-      phase = 'show'; written = {}; entries = []; votes = {};
-      awards = {}; places = []; revealCount = 0;
+    /* the pen passes down the table, one round at a time */
+    function authorFor(round){
+      var live = liveRoster();
+      return live.length ? live[round % live.length].pid : null;
+    }
+    function nameOfPid(pid){
+      var p = host.players[pid];
+      return p ? p.name : 'someone';
+    }
+    function setPrompt(text){
+      var t = String(text || '').trim().slice(0, 120);
+      if(!t) return false;
+      qs[idx].text = t;
+      phase = 'show';
+      author = null;
+      drawShow();
+      pushAll();
+      return true;
+    }
+    function drawAuthor(){
+      elStage.innerHTML = '';
+      var v = document.createElement('div'); v.className = 'q-view';
+      var num = document.createElement('div'); num.className = 'q-num';
+      num.textContent = 'Prompt ' + (idx+1) + ' of ' + qs.length;
+      v.appendChild(num);
+      var ct = document.createElement('div'); ct.className = 'clue-text';
+      ct.textContent = nameOfPid(author) + ' is writing the prompt…';
+      v.appendChild(ct);
+      noteEl = document.createElement('div'); noteEl.className = 'answered-note';
+      noteEl.textContent = 'It’s their turn to set the prompt. Everyone else answers it.';
+      v.appendChild(noteEl);
+      actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
+      actsEl.appendChild(stageBtn('🎲 Generate a prompt','', function(){
+        setPrompt(randomPrompt(null));
+      }));
+      actsEl.appendChild(stageBtn('Skip them ▶','', function(){
+        author = authorFor(idx + 1);
+        if(!author){ setPrompt(randomPrompt(null)); return; }
+        drawAuthor(); pushAll();
+      }));
+      v.appendChild(actsEl);
+      elStage.appendChild(v);
+      gmSetAnswer(null);
+    }
+    function drawShow(){
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className = 'q-view';
       var num = document.createElement('div'); num.className = 'q-num';
@@ -5826,9 +5950,32 @@
       v.appendChild(noteEl);
       actsEl = document.createElement('div'); actsEl.className = 'stage-actions';
       actsEl.appendChild(stageBtn('Start Writing ▶','gold', startWriting));
+      actsEl.appendChild(stageBtn('🎲 Generate a prompt','', function(){
+        if(phase !== 'show') return;
+        qs[idx].text = randomPrompt(q().text);
+        qs[idx].img = null;
+        drawShow(); pushAll();
+      }));
       v.appendChild(actsEl);
       elStage.appendChild(v);
       gmSetAnswer(null);
+    }
+    function next(){
+      idx++;
+      if(idx >= qs.length){ finish(); return; }
+      written = {}; entries = []; votes = {};
+      awards = {}; places = []; revealCount = 0;
+      if(byPlayers){
+        author = authorFor(idx);
+        if(author){
+          phase = 'author';
+          drawAuthor();
+          pushAll();
+          return;
+        }
+        qs[idx].text = qs[idx].text || randomPrompt(null);
+      }
+      drawShow();
       pushAll();
     }
     function startWriting(){
@@ -5855,6 +6002,11 @@
       }
     }
     function onText(p, answer){
+      if(phase === 'author'){
+        if(p.pid !== author) return;
+        setPrompt(answer);
+        return;
+      }
       if(phase !== 'write') return;
       var t = String(answer || '').trim().slice(0, 120);
       if(!t) return;
@@ -6028,9 +6180,28 @@
       onBuzz: function(){},
       onAnswer: onAnswer,
       onText: onText,
-      onRoster: function(){ renderScoreRow(); updateNote(); },
+      onRoster: function(){
+        renderScoreRow(); updateNote();
+        /* if the author dropped, hand the pen on rather than stalling */
+        if(phase === 'author' && author && !(host.players[author] || {}).connected){
+          author = authorFor(idx);
+          if(author){ drawAuthor(); pushAll(); }
+        }
+      },
       stateFor: function(p, base){
         if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the screen!'; return base; }
+        if(phase === 'author'){
+          if(p.pid === author){
+            base.mode = 'text';
+            base.title = 'Write the prompt!';
+            base.cat = 'Round ' + (idx+1) + ' — everyone answers whatever you write';
+            base.editable = false;
+            return base;
+          }
+          base.mode = 'waiting';
+          base.note = nameOfPid(author) + ' is writing the prompt…';
+          return base;
+        }
         if(phase === 'show'){
           base.mode = 'waiting'; base.note = 'Get ready to write!';
           return base;
@@ -7820,6 +7991,13 @@
     'button{font-family:Outfit,Arial,sans-serif;font-weight:700;font-size:15px;padding:10px 14px;border-radius:10px;border:2px solid #3A2A72;background:#231843;color:#EFEAFF;cursor:pointer}' +
     'button:hover{border-color:#FFC42E}' +
     '#gm-bg.on{border-color:#7EE787;color:#7EE787}' +
+    '.gm-acts{padding:14px 18px;border-bottom:2px solid #3A2A72;display:flex;flex-direction:column;gap:8px}' +
+    '.gm-actrow{display:flex;gap:8px;flex-wrap:wrap}' +
+    '.gm-acts button.gold{border-color:#FFC42E;color:#FFC42E}' +
+    '.gm-acts button.good{border-color:#4DE28A;color:#4DE28A}' +
+    '.gm-acts button.bad{border-color:#FF4D9D;color:#FF4D9D}' +
+    '.gm-acts button:disabled{opacity:.45;cursor:default}' +
+    '#gm-hideacts.on{border-color:#FF4D9D;color:#FF4D9D}' +
     'main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:18px;gap:8px;text-align:center}' +
     '.gm-label{color:#9A8BC8;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2px}' +
     '.gm-line{display:flex;align-items:center;gap:12px;justify-content:space-between;width:100%;max-width:360px;background:#231843;border:2px solid #3A2A72;border-radius:10px;padding:10px 14px;font-size:16px;text-align:left;box-sizing:border-box}' +
@@ -7850,11 +8028,13 @@
         '<button id="gm-stop" title="Stop all music">\u25A0</button>' +
         '<div class="gm-volumes" id="gm-volumes"></div>' +
       '</section>' +
-      '<main id="gm-answers"></main>' +
+      '<section class="gm-acts" id="gm-acts"></section>' +
+    '<main id="gm-answers"></main>' +
       '<footer><button id="gm-end">End Game</button></footer>' +
       '</body></html>');
     doc.close();
     gmQrForCode = null;
+    gmActsLastSig = null;
     var qrScript = doc.createElement('script');
     qrScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
     qrScript.onload = function(){ gmRenderAll(); };
@@ -7933,6 +8113,7 @@
     }
     gmSyncMusic();
     gmRenderAnswers();
+    gmRenderActions();
   }
   function gmSyncMusic(){
     if(gmWin && !gmWin.closed){
@@ -7944,6 +8125,103 @@
     }
     gmBroadcast();
   }
+  /* ---- the host's own buttons, mirrored to the GM console ----
+     Read straight off the stage rather than from each controller, so every
+     game style gets this for free and nothing can fall out of step. */
+  var gmActsHidden = false;
+  function gmHostButtons(){
+    return [].slice.call(document.querySelectorAll('#stage .stage-actions button'));
+  }
+  function gmActionList(){
+    return gmHostButtons().map(function(b){
+      var m = b.className.match(/\b(gold|good|bad)\b/);
+      return { label: b.textContent, cls: m ? m[0] : '', disabled: !!b.disabled };
+    });
+  }
+  function gmClickHost(i){
+    var b = gmHostButtons()[i];
+    if(b && !b.disabled) b.click();
+  }
+  function gmSetActsHidden(on){
+    gmActsHidden = !!on;
+    var st = document.getElementById('stage');
+    if(st){
+      if(gmActsHidden) st.classList.add('acts-hidden');
+      else st.classList.remove('acts-hidden');
+    }
+    gmRenderActions(true);
+    gmBroadcast();
+  }
+  function gmActsSig(){
+    return JSON.stringify(gmActionList());
+  }
+  var gmActsLastSig = null;
+  function gmRenderActions(force){
+    if(!gmWin || gmWin.closed){ gmActsLastSig = null; return; }
+    var doc = gmWin.document;
+    var box = doc.getElementById('gm-acts');
+    if(!box) return;
+
+    /* the toggle is built once and never replaced, so a press can't land
+       between two copies of it */
+    var tog = doc.getElementById('gm-hideacts');
+    var row = doc.getElementById('gm-actrow');
+    if(!row || !tog){
+      box.innerHTML = '';
+      var lbl = doc.createElement('div'); lbl.className = 'gm-label';
+      lbl.textContent = 'Host controls';
+      box.appendChild(lbl);
+      row = doc.createElement('div'); row.className = 'gm-actrow'; row.id = 'gm-actrow';
+      box.appendChild(row);
+      tog = doc.createElement('button');
+      tog.id = 'gm-hideacts';
+      tog.addEventListener('click', function(){ gmSetActsHidden(!gmActsHidden); });
+      box.appendChild(tog);
+      gmActsLastSig = null;
+      force = true;
+    }
+    tog.className = gmActsHidden ? 'on' : '';
+    tog.textContent = gmActsHidden ? '👁 Show buttons on the game screen'
+                                   : '🙈 Hide buttons on the game screen';
+
+    var sig = gmActsSig();
+    if(!force && sig === gmActsLastSig) return;   /* nothing to redraw */
+    gmActsLastSig = sig;
+
+    row.innerHTML = '';
+    var list = gmActionList();
+    if(!list.length){
+      var e = doc.createElement('div'); e.className = 'gm-empty';
+      e.textContent = 'The host screen has no buttons right now.';
+      row.appendChild(e);
+    }
+    list.forEach(function(a, i){
+      var b = doc.createElement('button');
+      b.className = a.cls; b.textContent = a.label; b.disabled = a.disabled;
+      b.addEventListener('click', function(){ gmClickHost(i); });
+      row.appendChild(b);
+    });
+  }
+  /* the stage is rebuilt constantly, so watch it instead of hooking every draw */
+  var gmActsTick = null, gmActsWatchSig = null;
+  function gmWatchStage(){
+    var st = document.getElementById('stage');
+    if(!st || !window.MutationObserver) return;
+    new MutationObserver(function(){
+      if(gmActsTick) return;
+      gmActsTick = setTimeout(function(){
+        gmActsTick = null;
+        if(gmActsHidden) st.classList.add('acts-hidden');
+        var sig = gmActsSig();
+        if(sig === gmActsWatchSig) return;   /* the timer bar moving, not a real change */
+        gmActsWatchSig = sig;
+        gmRenderActions();
+        gmBroadcast();
+      }, 30);
+    }).observe(st, { childList:true, subtree:true, characterData:true, attributes:true });
+  }
+  gmWatchStage();
+
   function gmRenderAnswers(){
     if(!gmWin || gmWin.closed) return;
     var doc = gmWin.document;
@@ -8023,11 +8301,14 @@
       else if(d.cmd === 'bg') toggleBg();
       else if(d.cmd === 'stop') stopAllMusic();
       else if(d.cmd === 'end') endSession(true);
+      else if(d.cmd === 'act') gmClickHost(parseInt(d.idx, 10));
+      else if(d.cmd === 'hideacts') gmSetActsHidden(!!d.on);
     }
   }
   function gmStateMsg(){
     return { t:'gm-state', room: host ? host.code : null,
-             answers: gmAnswerLines, bg: !bgAudio.paused };
+             answers: gmAnswerLines, bg: !bgAudio.paused,
+             actions: gmActionList(), actsHidden: gmActsHidden };
   }
   function gmBroadcast(){
     if(!host || !host.gmConns || !host.gmConns.length) return;
@@ -8039,6 +8320,7 @@
 
   /* ---- GM Remote client (this device controls a game hosted elsewhere) ---- */
   var gmr = null;   /* { peer, conn } */
+  var gmrActsSig = null, gmrActsHidden = false;
   var gmrCard = document.getElementById('gm-join-card');
   var gmrView = document.getElementById('gmr-view');
   var gmrMsg  = document.getElementById('gm-join-msg');
@@ -8100,6 +8382,48 @@
     var bgB = document.getElementById('gmr-bg');
     if(d.bg){ bgB.classList.add('on'); bgB.textContent = '\u275A\u275A BG'; }
     else { bgB.classList.remove('on'); bgB.textContent = '\u25B6 BG'; }
+    var abox = document.getElementById('gmr-acts');
+    var arow = document.getElementById('gmr-actrow');
+    var atog = document.getElementById('gmr-hideacts');
+    if(!arow || !atog){
+      abox.innerHTML = '';
+      var albl = document.createElement('div'); albl.className = 'gm-label';
+      albl.textContent = 'Host controls';
+      abox.appendChild(albl);
+      arow = document.createElement('div');
+      arow.className = 'gmr-actrow'; arow.id = 'gmr-actrow';
+      abox.appendChild(arow);
+      atog = document.createElement('button');
+      atog.className = 'gmr-btn'; atog.id = 'gmr-hideacts';
+      atog.addEventListener('click', function(){
+        gmrSend({ t:'gm-cmd', cmd:'hideacts', on: !gmrActsHidden });
+      });
+      abox.appendChild(atog);
+      gmrActsSig = null;
+    }
+    gmrActsHidden = !!d.actsHidden;
+    atog.className = 'gmr-btn' + (gmrActsHidden ? ' on' : '');
+    atog.textContent = gmrActsHidden ? '👁 Show buttons on the game screen'
+                                     : '🙈 Hide buttons on the game screen';
+    var gacts = d.actions || [];
+    var asig = JSON.stringify(gacts);
+    if(asig !== gmrActsSig){
+      gmrActsSig = asig;
+      arow.innerHTML = '';
+      if(!gacts.length){
+        var ae = document.createElement('div'); ae.className = 'gm-empty';
+        ae.textContent = 'The host screen has no buttons right now.';
+        arow.appendChild(ae);
+      }
+      gacts.forEach(function(a, i){
+        var ab = document.createElement('button');
+        ab.className = 'gmr-btn' + (a.cls ? ' ' + a.cls : '');
+        ab.textContent = a.label; ab.disabled = !!a.disabled;
+        ab.addEventListener('click', function(){ gmrSend({ t:'gm-cmd', cmd:'act', idx:i }); });
+        arow.appendChild(ab);
+      });
+    }
+
     var box = document.getElementById('gmr-answers');
     box.innerHTML = '';
     var lbl = document.createElement('div'); lbl.className = 'gm-label';
