@@ -2815,6 +2815,9 @@
     prompts: {
       label:'Punchline Showdown', icon:'✍️',
       blurb:'Everyone writes a response, then votes for the best.',
+      /* Temporarily retired: needs fixing. Existing games still open and run,
+         but the type is hidden from the New Game picker. */
+      disabled:true,
       blank:function(){
         return { prompts:[ { text:'', img:null } ],
                  playerPrompts:false,
@@ -2848,7 +2851,7 @@
       blurb:'Two lawyers argue a case. You be the judge.',
       blank:function(){
         return { judgeCharge:false, objections:3, cardsEach:3, witnessesPerSide:1,
-                 openTime:45, turnTime:60, closeTime:60,
+                 openTime:45, turnTime:60, closeTime:60, genTopUp:true,
                  winPts:1000, jurorPts:100, witnessPts:200,
                  evidence:[ {text:'',img:null},{text:'',img:null},{text:'',img:null},
                             {text:'',img:null},{text:'',img:null},{text:'',img:null} ],
@@ -2914,6 +2917,7 @@
     var wrap = document.getElementById('type-cards');
     Object.keys(GAME_TYPES).forEach(function(key){
       var t = GAME_TYPES[key];
+      if(t.disabled) return;
       var btn = document.createElement('button');
       btn.className = 'type-card';
       btn.innerHTML = '<span class="icon">'+t.icon+'</span><span></span>';
@@ -4355,6 +4359,90 @@
   function validEvidence(d){
     return (d.evidence || []).filter(function(c){ return c.text.trim(); });
   }
+  /* ---- evidence generator ----
+     Template cards: a handful of sentence shapes with swappable slots.
+     Cards produced this session are remembered so nothing repeats until
+     the pool is (practically) exhausted.                              */
+  var EVG = {
+    adj:['muddy','suspiciously clean','half-eaten','hand-knitted','monogrammed','glow-in-the-dark',
+      'slightly damp','industrial-sized','left-handed','heavily dented','freshly polished','lukewarm',
+      'unlabeled','gold-plated','hollow','scorched','laminated','antique','still-warm','sticky',
+      'extremely small','oddly heavy','bejewelled','ticking'],
+    obj:['boot','teapot','trombone','garden gnome','bowling ball','wedding cake','crossbow','umbrella',
+      'typewriter','snow globe','mannequin','harmonica','bread maker','lawn flamingo','fishing rod',
+      'violin case','wig','toaster','ice sculpture','rubber chicken','shopping cart','stuffed owl',
+      'cuckoo clock','novelty mug','lava lamp','accordion','birdcage','traffic cone'],
+    place:['a camper van',"the vicar's greenhouse",'a bouncy castle','the church bell tower','a hot tub',
+      'the lost-and-found box','the town fountain','a parked hearse','an airport chapel',"the mayor's freezer",
+      'a ball pit','a hotel minibar','a submarine','the back of a wardrobe','a petting zoo','a 24-hour laundromat',
+      'a lighthouse','a crypt','a karaoke booth','the pool filter','a mailbox','the courtroom itself'],
+    many:['rubber ducks','novelty hats','left shoes','garden gnomes','cans of beans','fake mustaches',
+      'bowling pins','traffic cones','decorative spoons','wind chimes','jars of pickles','harmonicas',
+      'glow sticks','pet rocks','clown noses','yo-yos','cardboard cutouts of the judge','identical wigs',
+      'packets of birdseed','scented candles'],
+    num:['3','12','37','88','144','400','1,000','6,500','a dozen','nineteen'],
+    who:['the defendant',"the defendant's twin",'a man in a horse costume','the judge','a local magician',
+      "the defendant's grandmother",'a mime','a very tall child',"the plaintiff's accountant",'three nuns',
+      'a figure in a cape','someone who looks a lot like the defendant','a celebrity chef','the mayor',
+      'a lost tourist','a pigeon'],
+    doing:['carrying a ladder','buying 40 lemons','burying something in a flowerpot','practicing a signature',
+      'doing lunges','winking at the camera','feeding a swan','climbing out of a window','reading a map upside down',
+      'wearing two hats','sprinting in flip-flops','crying in a car wash','juggling','hiding behind a hedge',
+      'high-fiving a stranger'],
+    when:['at 3 a.m.','on the night in question','the day before','during a solar eclipse','at a wedding',
+      'in 1997',"at a child's birthday party",'while the power was out','on a Tuesday'],
+    doc:['diary','parking ticket','library card','gym membership','fishing license','restaurant review',
+      'horoscope','will','sticky note','birthday card','shopping list','resignation letter','permission slip',
+      'crossword','treasure map','recipe card'],
+    cond:['torn in half','written entirely in code','signed twice','written in crayon','stamped DO NOT OPEN',
+      'missing the last page','dated next Tuesday','covered in glitter','smelling faintly of fish',
+      'laminated for no clear reason','found inside a sandwich','with one word underlined'],
+    mark:['the name scraped off','a bite taken out of it','a fingerprint in jam','"SORRY" written on the bottom',
+      'the price tag still on','a tracking device inside','one screw missing',"the defendant's face painted on it",
+      'a tiny door in the side'],
+    said:['I know what you did',"Don't bring the ferret","It's in the freezer",'Tell nobody about the swans',
+      'Wrong house, sorry','The eagle has left the bakery','Cancel the clowns','Not the good spoons',
+      'We need a bigger ladder','Is this thing on?'],
+    box:['suitcase','shoebox','bathtub','glovebox','piñata','bread bin','tuba','fish tank','safe','pillowcase'],
+    to:['the defendant','the moon','"Occupant"','a goat named Gerald','the judge','a pen pal in Belgium',
+      "the defendant's future self",'the city council','nobody in particular'],
+    notes:['unsent letters','postcards','apology notes','valentines','strongly worded emails','thank-you cards']
+  };
+  function evPick(k){ var a = EVG[k]; return a[Math.floor(Math.random() * a.length)]; }
+  function evA(w){ return (/^[aeiou]/i.test(w) ? 'An ' : 'A ') + w; }
+  function evCap(t){ return t.charAt(0).toUpperCase() + t.slice(1); }
+  var EV_SHAPES = [
+    function(p){ return 'A receipt for ' + p('num') + ' ' + p('many'); },
+    function(p){ return evA(p('adj') + ' ' + p('obj')) + ' found in ' + p('place'); },
+    function(p){ return evCap(p('num')) + ' ' + p('notes') + ', all addressed to ' + p('to'); },
+    function(p){ return 'Security footage of ' + p('who') + ' ' + p('doing'); },
+    function(p){ return evA(p('obj')) + ' with ' + p('mark'); },
+    function(p){ return "The defendant's " + p('doc') + ', ' + p('cond'); },
+    function(p){ return 'A voicemail that just says "' + p('said') + '"'; },
+    function(p){ return 'A photograph of ' + p('who') + ' ' + p('doing') + ' ' + p('when'); },
+    function(p){ return evA(p('box')) + ' full of ' + p('many'); },
+    function(p){ return evA(p('doc')) + ' signed by ' + p('who'); },
+    function(p){ return evA(p('adj') + ' ' + p('obj')) + ', ' + p('cond'); },
+    function(p){ return 'An eyewitness who saw ' + p('who') + ' in ' + p('place') + ' ' + p('when'); }
+  ];
+  var evSeen = {};
+  function genEvidence(n, avoid){
+    var out = [], taken = {};
+    (avoid || []).forEach(function(t){ taken[t.trim().toLowerCase()] = 1; });
+    for(var i = 0; i < n; i++){
+      var t = '', key = '';
+      for(var tries = 0; tries < 30; tries++){
+        t = EV_SHAPES[Math.floor(Math.random() * EV_SHAPES.length)](evPick);
+        key = t.toLowerCase();
+        if(!taken[key] && !evSeen[key]) break;
+      }
+      taken[key] = 1; evSeen[key] = 1;
+      out.push(t);
+    }
+    return out;
+  }
+  function courtTopUp(d){ return d.genTopUp !== false; }
+  function courtNeed(d){ return Math.max(6, 2 * courtCardsEach(d)); }
   function validWitnesses(d){
     return (d.witnesses || []).filter(function(c){ return (c.who || '').trim(); });
   }
@@ -4384,6 +4472,16 @@
       d.evidence.push({ text:'', img:null });
       touch(); draw();
       window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bar.appendChild(toolBtn('🎲 Generate', function(){
+      var blanks = d.evidence.filter(function(c){ return !c.text.trim() && !c.img; });
+      var fresh = genEvidence(blanks.length || 3, validEvidence(d).map(function(c){ return c.text; }));
+      if(blanks.length) blanks.forEach(function(c, i){ c.text = fresh[i]; });
+      else fresh.forEach(function(t){ d.evidence.push({ text:t, img:null }); });
+      touch(); draw();
+      deckNote.textContent = deckAdvice();
+      DC.toast(blanks.length ? 'Filled ' + blanks.length + ' blank card' + (blanks.length === 1 ? '' : 's')
+                             : 'Added 3 generated cards');
     }));
     bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
@@ -4536,13 +4634,24 @@
     var h2 = document.createElement('h3'); h2.textContent = '🗂️ Evidence deck';
     t2.appendChild(h2);
     function deckAdvice(){
-      var have = validEvidence(d).length, each = courtCardsEach(d), need = Math.max(6, each * 2);
+      var have = validEvidence(d).length, each = courtCardsEach(d), need = courtNeed(d);
       var msg = have + ' written · ' + (each * 2) + ' dealt per trial · minimum ' + need + '. ';
-      if(have < need) msg += '⚠️ Write at least ' + (need - have) + ' more before you can host this.';
+      if(have < need && courtTopUp(d)) msg += '🎲 The generator will fill the gap each trial.';
+      else if(have < need) msg += '⚠️ Write at least ' + (need - have) + ' more before you can host this.';
       else if(have <= each * 2) msg += 'Every card gets dealt every trial — add a few more for variety.';
       else msg += 'Nice — the deal changes from trial to trial.';
       return msg;
     }
+    var tu = document.createElement('label'); tu.className = 'dd-row';
+    var tuIn = document.createElement('input'); tuIn.type = 'checkbox';
+    tuIn.checked = courtTopUp(d);
+    tuIn.addEventListener('change', function(){
+      d.genTopUp = this.checked; touch();
+      deckNote.textContent = deckAdvice();
+    });
+    tu.appendChild(tuIn);
+    tu.appendChild(document.createTextNode(' Top up a short deck with generated evidence'));
+    t2.appendChild(tu);
     var deckNote = document.createElement('div'); deckNote.className = 'tq-foot';
     deckNote.textContent = deckAdvice();
     t2.appendChild(deckNote);
@@ -4559,6 +4668,11 @@
         var num = document.createElement('span'); num.className = 'tq-num';
         num.textContent = 'Evidence ' + (ci + 1);
         head.appendChild(num);
+        head.appendChild(toolBtn('🎲', function(){
+          c.text = genEvidence(1, validEvidence(d).map(function(x){ return x.text; }))[0];
+          touch(); draw();
+          deckNote.textContent = deckAdvice();
+        }));
         head.appendChild(toolBtn('✕', function(){
           if(d.evidence.length <= 6){ DC.toast('Keep at least six cards'); return; }
           if(c.img) DC.imgDelete(c.img);
@@ -4971,8 +5085,8 @@
     }
     if(game.type === 'court'){
       var cev = validEvidence(game.data);
-      var need = Math.max(6, 2 * courtCardsEach(game.data));
-      if(cev.length < need){
+      var need = courtNeed(game.data);
+      if(cev.length < need && !courtTopUp(game.data)){
         DC.toast('Write at least ' + need + ' evidence cards (you have ' + cev.length + ').');
         return;
       }
@@ -7488,6 +7602,8 @@
     }
     function dealCards(){
       var bag = deck.slice();
+      if(courtTopUp(d) && bag.length < courtNeed(d))
+        bag = bag.concat(genEvidence(courtNeed(d) - bag.length, bag));
       for(var i = bag.length - 1; i > 0; i--){
         var j = Math.floor(Math.random() * (i + 1));
         var t = bag[i]; bag[i] = bag[j]; bag[j] = t;
