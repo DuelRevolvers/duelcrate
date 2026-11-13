@@ -317,6 +317,41 @@
   .badge.prompts{color:#B79CFF;border-color:#5A3E9E;background:#B79CFF14}
   .badge.wheel{color:#FF9E4D;border-color:#7A4A18;background:#FF9E4D14}
   .badge.court{color:#E8D9A0;border-color:#6B5A28;background:#E8D9A014}
+  .badge.timeline{color:#9AE6C8;border-color:#2A6B58;background:#9AE6C814}
+  .tl-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:stretch;max-width:1100px}
+  .tl-card{min-width:92px;max-width:140px;padding:10px 8px;border-radius:12px;background:#150E2D;border:1px solid #3A2A72;text-align:center}
+  .tl-card b{display:block;font-size:26px;color:#F5C542}
+  .tl-card span{display:block;font-size:11px;color:var(--ink-dim);line-height:1.25}
+  .tl-card.q{border:2px dashed #F5C542;background:#F5C54214}
+  .tl-card.chal{border:2px dashed #FF6B8B;background:#FF6B8B14}
+  .tl-card.chal b{color:#FF6B8B}
+  .tl-card.new{border-color:#5CE0A0;box-shadow:0 0 0 2px #5CE0A055}
+  .tl-timer{width:100%;max-width:520px;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .tl-players{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;font-size:13px}
+  .tl-players span{padding:4px 10px;border-radius:99px;border:1px solid #3A2A72;color:var(--ink-dim)}
+  .tl-spot{font-size:14px;color:#9AE6C8;max-width:640px;text-align:center}
+  .spot-uri{font-size:13px;color:#9AE6C8;word-break:break-all;user-select:all}
+  .tlp{width:100%;display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center}
+  .tlp-stat{font-size:14px;color:var(--ink-dim)}
+  .tlp-head{font-family:var(--display);font-size:clamp(20px,6vw,28px);color:var(--ink);line-height:1.2}
+  .tlp-list{width:100%;max-width:340px;display:flex;flex-direction:column;gap:6px}
+  .tlp-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+  .tlp-card{display:flex;align-items:baseline;gap:10px;padding:8px 12px;border-radius:10px;background:#150E2D;border:1px solid #3A2A72;text-align:left}
+  .tlp-card b{color:#F5C542;font-size:20px;flex:none}
+  .tlp-card span{font-size:12px;color:var(--ink-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tlp-card.new{border-color:#5CE0A0;box-shadow:0 0 0 2px #5CE0A055}
+  .tlp-slot{width:100%;padding:10px;border-radius:10px;border:2px dashed #3A2A72;background:none;color:var(--ink-dim);font-size:14px;-webkit-tap-highlight-color:transparent}
+  .tlp-slot.on{border-color:#F5C542;color:#F5C542;background:#F5C54214}
+  .tlp-slot.chal{border-color:#FF6B8B;color:#FF6B8B;background:#FF6B8B14}
+  .tlp-btns{width:100%;max-width:340px;display:flex;flex-direction:column;gap:8px}
+  .tlp-btn{width:100%;padding:14px;border-radius:12px;border:2px solid #3A2A72;border-bottom-width:5px;background:linear-gradient(180deg,var(--stage-3),var(--stage-2));color:var(--ink);font-size:17px;font-weight:700;-webkit-tap-highlight-color:transparent}
+  .tlp-btn.gold{border-color:#F5C542;color:#F5C542}
+  .tlp-btn:active{transform:translateY(2px);border-bottom-width:2px}
+  .tlp-btn:disabled{opacity:.5}
+  .tlp-chips{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;max-width:340px}
+  .tlp-chips span{padding:2px 8px;border-radius:99px;border:1px solid #3A2A72;font-size:12px;color:var(--ink-dim)}
+  .tl-players span.on{border-color:#F5C542;color:#F5C542}
+  .tl-players span.gone{opacity:.45}
   .gc-actions{display:flex;gap:8px}
   .empty-state{
     background:var(--stage-2);border:2px solid #3A2A72;border-radius:var(--radius);
@@ -536,6 +571,16 @@
     background:var(--stage-3);border:2px solid #4A3A8C;
   }
   .pchip.gone{opacity:.4;text-decoration:line-through}
+  .tl-pool{max-width:680px;margin:0 auto 26px;text-align:left}
+  .tl-pool h3{margin:0 0 8px;font-size:1.05rem}
+  .tl-pool label{display:block;margin:6px 0}
+  .tl-genres{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+  .tl-g{cursor:pointer;font:inherit;font-size:.9rem;color:var(--ink);background:transparent;
+        border:1px solid rgba(244,239,255,.35);border-radius:999px;padding:5px 12px}
+  .tl-g.on{background:var(--bulb);color:#3A2A00;border-color:transparent}
+  .tl-add{display:flex;gap:8px;margin:10px 0}
+  .tl-add .fin-input{flex:1;margin:0}
+  .tl-pool small{display:block;opacity:.75;margin-top:4px}
   #start-game-btn{max-width:320px;width:100%}
   #start-game-btn:disabled{filter:grayscale(.7);opacity:.55;cursor:default}
 
@@ -1176,6 +1221,7 @@
       <button class="gmr-btn" id="gmr-stop" title="Stop all music">■</button>
     </div>
     <div class="gmr-acts" id="gmr-acts"></div>
+    <div class="gmr-acts" id="gmr-seat"></div>
     <div class="gmr-acts" id="gmr-size"></div>
     <div class="gmr-acts" id="gmr-players"></div>
     <div class="gmr-answers" id="gmr-answers"></div>
@@ -1208,6 +1254,7 @@
       </div>
       <p class="lobby-hint">Players: scan the code with your phone camera — or open this app's <b>player join page</b> (the <b>#join</b> link) — then enter the room code.</p>
       <div class="lobby-players" id="lobby-players"></div>
+      <div class="tl-pool" id="tl-pool" hidden></div>
       <button class="join-btn" id="start-game-btn" disabled>Waiting for players…</button>
       <br>
       <button class="hint-btn" id="open-gm-btn">🎛 Open GM Console</button>
@@ -1370,6 +1417,30 @@
 
       <div class="music-slots" id="music-slots"></div>
       <div class="storage-note" id="storage-note"></div>
+    </div>
+
+    <div class="set-section">
+      <h2>Spotify</h2>
+      <div class="set-row">
+        <div class="set-label">Client ID<small>Tune Timeline plays songs through your Spotify account. Playback needs Spotify Premium.</small></div>
+      </div>
+      <input class="fin-input" id="spot-cid" type="text" autocomplete="off" spellcheck="false" placeholder="Paste the client ID from your Spotify app">
+      <div class="set-row">
+        <div class="set-label">Redirect URI<small>Add this exact address to your app in the Spotify developer dashboard.</small></div>
+      </div>
+      <div class="spot-uri" id="spot-redirect"></div>
+      <div class="set-row">
+        <div class="set-label" id="spot-status">Not connected</div>
+        <button class="stage-btn gold" id="spot-connect">Connect Spotify</button>
+      </div>
+    </div>
+
+    <div class="set-section">
+      <h2>Last.fm</h2>
+      <div class="set-row">
+        <div class="set-label">API key<small>Tune Timeline uses Last.fm to find popular songs for genres you type in the game lobby. Create a free key at last.fm/api/account/create.</small></div>
+      </div>
+      <input class="fin-input" id="lfm-key" type="text" autocomplete="off" spellcheck="false" placeholder="Paste your Last.fm API key">
     </div>
 
   </div>
@@ -1647,6 +1718,113 @@
     if(cls) e.className = cls;
     if(text !== undefined) e.textContent = text;
     return e;
+  }
+
+  /* ---- Tune Timeline: one seat's view (phones, and the host's seat in GM Remote) ---- */
+  function tlSeatView(st, t, sendFn){
+    var w = pvEl('div', 'tlp');
+    var ph = t.phase, cards = t.cards || [], mine = t.mine || [], r = t.result, i;
+    var pickA = !!t.youActive && ph === 'place' && !t.locked;
+    var pickC = !!t.youChallenger && ph === 'chalPick' && !t.chalLocked;
+    var head = '', note = '';
+    function slotLabel(n){
+      if(!cards.length) return 'Place here';
+      if(n === 0) return 'Before ' + cards[0].year;
+      if(n === cards.length) return 'After ' + cards[n - 1].year;
+      return 'Between ' + cards[n - 1].year + ' and ' + cards[n].year;
+    }
+    function btn(label, cls, m){
+      var b = pvEl('button', 'tlp-btn' + (cls ? ' ' + cls : ''), label);
+      b.addEventListener('click', function(){ b.disabled = true; sendFn(m); });
+      return b;
+    }
+    function slotBtn(n){
+      var b = pvEl('button', 'tlp-slot', slotLabel(n));
+      if(pickC && t.slot === n){
+        b.disabled = true; b.className += ' on';
+        b.textContent = t.active + '\u2019s pick';
+      }else if((pickA ? t.slot : t.chalSlot) === n) b.className += pickA ? ' on' : ' chal';
+      b.addEventListener('click', function(){ sendFn({ act:'slot', slot:n }); });
+      return b;
+    }
+
+    if(ph === 'place'){
+      head = t.youActive ? 'Your turn! Where does this song go?' : t.active + ' is placing the song.';
+      if(pickA) note = 'Tap a slot, then lock in.';
+    }else if(ph === 'challenge'){
+      head = t.youActive ? 'Locked in.' : 'Is ' + t.active + ' wrong?';
+      note = t.youActive ? 'Waiting for challenges\u2026'
+           : t.canChallenge ? 'Challenge to pick a different slot. If you\u2019re right, you steal the card.' : '';
+    }else if(ph === 'chalPick'){
+      head = t.youChallenger ? 'Pick a different slot.' : t.challenger + ' challenges!';
+    }else if(ph === 'name'){
+      head = t.youNamer ? 'Name that tune!' : t.namer + ' is naming the song.';
+      if(t.youNamer) note = 'Say the title and artist out loud.';
+    }else if(ph === 'ready'){
+      head = t.namedBy ? t.namedBy + ' named it! +1 token' : 'Nobody named it.';
+      note = 'Waiting for the reveal\u2026';
+    }else if(ph === 'result' && r){
+      head = r.year + ' \u00B7 ' + r.title + (r.artist ? ' \u2014 ' + r.artist : '');
+      note = r.youGot ? '\u2713 You get the card!'
+           : r.activeOk ? '\u2713 ' + t.active + ' keeps the card.'
+           : r.to ? '\u2717 Wrong slot. ' + r.to + ' steals the card!'
+           : '\u2717 Wrong slot. The card is discarded.';
+    }else if(ph === 'over'){
+      var win = t.winners || [];
+      head = win.length ? '\uD83C\uDFC6 ' + win.join(' & ') + (win.length > 1 ? ' share the win' : ' wins') : 'Game over';
+    }
+
+    w.appendChild(pvEl('div', 'tlp-stat', '\uD83C\uDFB5 ' + mine.length + '/' + t.target + ' \u00B7 \uD83E\uDE99 ' + t.tokens));
+    w.appendChild(pvEl('div', 'tlp-head', head));
+    if(note) w.appendChild(pvEl('div', 'pv-note', note));
+
+    if(ph !== 'over'){
+      var list = pvEl('div', 'tlp-list');
+      list.appendChild(pvEl('div', 'tlp-label', t.youActive ? 'Your timeline' : t.active + '\u2019s timeline'));
+      for(i = 0; i <= cards.length; i++){
+        if(pickA || pickC) list.appendChild(slotBtn(i));
+        else if(ph !== 'result'){
+          if(t.slot === i) list.appendChild(pvEl('div', 'tlp-slot on', t.youActive ? 'Your pick' : t.active + '\u2019s pick'));
+          if(t.challenger && t.chalSlot === i) list.appendChild(pvEl('div', 'tlp-slot chal', t.youChallenger ? 'Your pick' : t.challenger + '\u2019s pick'));
+        }
+        if(i < cards.length){
+          var c = cards[i];
+          var ce = pvEl('div', 'tlp-card' + (r && r.activeOk && c.year === r.year && c.title === r.title ? ' new' : ''));
+          ce.appendChild(pvEl('b', '', String(c.year)));
+          ce.appendChild(pvEl('span', '', c.title + (c.artist ? ' \u2014 ' + c.artist : '')));
+          list.appendChild(ce);
+        }
+      }
+      w.appendChild(list);
+    }
+
+    var btns = pvEl('div', 'tlp-btns');
+    if((pickA && t.slot != null) || (pickC && t.chalSlot != null)) btns.appendChild(btn('Lock in', 'gold', { act:'lock' }));
+    if(t.canChallenge) btns.appendChild(btn('Challenge' + (t.challengeCost ? ' \u00B7 ' + t.challengeCost + ' \uD83E\uDE99' : ''), 'gold', { act:'challenge' }));
+    if(t.youNamer) btns.appendChild(btn('Pass', '', { act:'pass' }));
+    if(t.canKnow) btns.appendChild(btn('I know it!', '', { act:'know' }));
+    if(t.canTrade) btns.appendChild(btn('Trade ' + t.tradeCost + ' \uD83E\uDE99 for a song', '', { act:'trade' }));
+    if(btns.firstChild) w.appendChild(btns);
+    if(!t.canKnow && !t.youNamer && t.queuePos > 0 && ph !== 'ready' && ph !== 'result' && ph !== 'over')
+      w.appendChild(pvEl('div', 'pv-note', 'You\u2019re in line to name it.'));
+
+    if(ph === 'over'){
+      var stand = pvEl('div', 'tlp-list');
+      (t.players || []).forEach(function(p){
+        var row = pvEl('div', 'tlp-card');
+        row.appendChild(pvEl('b', '', String(p.cards)));
+        row.appendChild(pvEl('span', '', p.name + ' \u00B7 \uD83E\uDE99 ' + p.tokens));
+        stand.appendChild(row);
+      });
+      w.appendChild(stand);
+    }
+    if((!t.youActive || ph === 'over') && mine.length){
+      w.appendChild(pvEl('div', 'tlp-label', 'Your timeline'));
+      var chips = pvEl('div', 'tlp-chips');
+      mine.forEach(function(c){ chips.appendChild(pvEl('span', '', String(c.year))); });
+      w.appendChild(chips);
+    }
+    st.appendChild(w);
   }
 
   /* ---- the phone's own wheel ----
@@ -2201,6 +2379,12 @@
       st.appendChild(pvEl('div','pv-note', s.note || 'The trial is under way…'));
       pvCourtHand(st, s.cards, null);
     }
+    else if(m === 'timeline' && s.tl){
+      tlSeatView(st, s.tl, function(x){ x.t = 'timeline'; pvSend(x); });
+      var tsig = s.tl.phase + (s.tl.youActive ? 'a' : '') + (s.tl.youNamer ? 'n' : '');
+      if(tsig !== pv.tlSig && ((s.tl.youActive && s.tl.phase === 'place') || s.tl.youNamer)) pvHaptic(40);
+      pv.tlSig = tsig;
+    }
     else if(m === 'scores'){
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
       var list = pvEl('div','final-list');
@@ -2376,6 +2560,238 @@
   }
   var settings = loadSettings();
   DC.getSettings = function(){ return Object.assign({}, settings); };
+
+  /* ================ SPOTIFY CONNECT (Tune Timeline) ================
+     Sign-in uses PKCE in a pop-up, so the host page and its room stay up.
+     The pop-up loads this page with ?code=, trades the code for tokens, and
+     saves them to localStorage; the host page hears the storage event.    */
+  var SPOT_LS = 'duelcrate_spotify', SPOT_PKCE = 'duelcrate_spotify_pkce';
+  var SPOT_SCOPES = 'user-read-playback-state user-modify-playback-state user-read-currently-playing';
+  function spotLoad(){ try{ return JSON.parse(localStorage.getItem(SPOT_LS)) || {}; }catch(e){ return {}; } }
+  function spotSave(s){ localStorage.setItem(SPOT_LS, JSON.stringify(s)); spot = s; }
+  var spot = spotLoad();
+  var spotCache = {};
+  function spotRedirect(){ return location.origin + location.pathname; }
+  function spotReady(){ return !!(spot.clientId && spot.refresh); }
+  function spotRand(n){
+    var cs = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~', a = new Uint8Array(n), s = '';
+    crypto.getRandomValues(a);
+    for(var i = 0; i < n; i++) s += cs.charAt(a[i] % cs.length);
+    return s;
+  }
+  function spotB64(buf){
+    return btoa(String.fromCharCode.apply(null, new Uint8Array(buf)))
+      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+  function spotSetupError(){
+    if(!/^https?:$/.test(location.protocol)) return 'Open DuelCrate from its web address, not from a file, to use Spotify.';
+    if(location.hostname === 'localhost') return 'Spotify doesn’t accept localhost. Open DuelCrate at http://127.0.0.1 instead.';
+    if(!window.crypto || !crypto.subtle) return 'Spotify sign-in needs https or http://127.0.0.1.';
+    if(!spot.clientId) return 'Paste your Spotify client ID first.';
+    return '';
+  }
+  function spotConnect(){
+    var err = spotSetupError();
+    if(err){ spotStatus(err); return; }
+    var ver = spotRand(64), state = spotRand(16);
+    var win = window.open('', 'dc-spotify', 'width=480,height=760');
+    if(!win){ spotStatus('Your browser blocked the sign-in window. Allow pop-ups for this site, then try again.'); return; }
+    localStorage.setItem(SPOT_PKCE, JSON.stringify({ ver:ver, state:state, cid:spot.clientId }));
+    crypto.subtle.digest('SHA-256', new TextEncoder().encode(ver)).then(function(h){
+      win.location.href = 'https://accounts.spotify.com/authorize?' + new URLSearchParams({
+        client_id: spot.clientId, response_type: 'code', redirect_uri: spotRedirect(),
+        code_challenge_method: 'S256', code_challenge: spotB64(h), scope: SPOT_SCOPES, state: state
+      }).toString();
+    });
+    spotStatus('Finish signing in to Spotify in the new window.');
+  }
+  function spotDisconnect(){
+    var s = spotLoad();
+    delete s.access; delete s.refresh; delete s.expires;
+    spotSave(s); spotCache = {};
+    spotRenderSettings();
+  }
+  function spotTokenReq(body){
+    return fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(body).toString()
+    }).then(function(r){
+      return r.json().catch(function(){ return {}; }).then(function(j){
+        if(!r.ok || !j.access_token){
+          if(body.grant_type === 'refresh_token' && r.status === 400) spotDisconnect();
+          throw new Error(j.error_description || j.error || 'Spotify sign-in failed.');
+        }
+        var s = spotLoad();
+        s.access = j.access_token;
+        s.expires = Date.now() + (j.expires_in || 3600) * 1000;
+        if(j.refresh_token) s.refresh = j.refresh_token;
+        spotSave(s);
+        return s.access;
+      });
+    });
+  }
+  function spotToken(force){
+    spot = spotLoad();
+    if(!force && spot.access && Date.now() < (spot.expires || 0) - 60000) return Promise.resolve(spot.access);
+    if(!spotReady()) return Promise.reject(new Error('Connect Spotify in Settings first.'));
+    return spotTokenReq({ grant_type:'refresh_token', refresh_token:spot.refresh, client_id:spot.clientId });
+  }
+  function spotApi(method, path, body, retried){
+    return spotToken(!!retried).then(function(tok){
+      var o = { method: method, headers: { Authorization: 'Bearer ' + tok } };
+      if(body !== undefined){ o.headers['Content-Type'] = 'application/json'; o.body = JSON.stringify(body); }
+      return fetch('https://api.spotify.com/v1' + path, o);
+    }).then(function(r){
+      if(r.status === 401 && !retried) return spotApi(method, path, body, true);
+      return r.text().then(function(t){
+        var j = null;
+        try{ j = t ? JSON.parse(t) : null; }catch(e){}
+        if(r.ok) return j;
+        var msg = (j && j.error && (j.error.message || j.error)) || ('Spotify error ' + r.status);
+        if(r.status === 404 && /^\/me\/player/.test(path)) msg = 'That Spotify device isn’t available. Open Spotify on it, then pick it again.';
+        else if(r.status === 403) msg = 'Spotify refused: ' + msg + '. Playback needs Spotify Premium.';
+        else if(r.status === 429) msg = 'Spotify is rate limiting requests. Wait a moment and try again.';
+        var e = new Error(msg); e.status = r.status;
+        throw e;
+      });
+    });
+  }
+  function spotWait(ms){ return new Promise(function(res){ setTimeout(res, ms); }); }
+  function spotTrackId(link){
+    var m = /(?:spotify:track:|open\.spotify\.com\/(?:intl-[A-Za-z-]+\/)?track\/)([A-Za-z0-9]{22})/.exec(link || '');
+    return m ? m[1] : '';
+  }
+  /* a track URI plus its album, so the song plays inside its album context */
+  function spotResolve(song){
+    var id = spotTrackId(song.link);
+    var key = id || ((song.title || '') + '|' + (song.artist || '')).toLowerCase();
+    if(spotCache[key]) return Promise.resolve(spotCache[key]);
+    var p;
+    if(id){
+      p = spotApi('GET', '/tracks/' + id).catch(function(){ return { id:id, uri:'spotify:track:' + id }; });
+    }else{
+      var q = 'track:' + song.title + (song.artist ? ' artist:' + song.artist : '');
+      p = spotApi('GET', '/search?type=track&limit=1&q=' + encodeURIComponent(q)).then(function(j){
+        var t = j && j.tracks && j.tracks.items && j.tracks.items[0];
+        if(!t) throw new Error('Spotify couldn’t find this song. Add a Spotify link to it in the editor.');
+        return t;
+      });
+    }
+    return p.then(function(t){
+      var r = { id:t.id, uri:t.uri, name:t.name || '', album:(t.album && t.album.uri) || '' };
+      spotCache[key] = r;
+      return r;
+    });
+  }
+  function spotDevQ(){ return 'device_id=' + encodeURIComponent(spot.deviceId || ''); }
+  function spotPlay(song){
+    spot = spotLoad();
+    if(!spot.deviceId) return Promise.reject(new Error('Pick a Spotify device first.'));
+    return spotResolve(song).then(function(t){
+      var body = t.album ? { context_uri:t.album, offset:{ uri:t.uri }, position_ms:0 }
+                         : { uris:[t.uri], position_ms:0 };
+      return spotApi('PUT', '/me/player/play?' + spotDevQ(), body).then(function(){ return spotVerify(t, 0); });
+    });
+  }
+  /* Spotify sometimes accepts the play call but keeps the old track, so check */
+  function spotIsTrack(it, t){
+    return !!it && (it.uri === t.uri || it.id === t.id
+      || (it.linked_from && it.linked_from.uri === t.uri) || (!!t.name && it.name === t.name));
+  }
+  function spotVerify(t, tries){
+    return spotWait(2000).then(function(){
+      return spotApi('GET', '/me/player/currently-playing');
+    }).then(function(j){
+      var it = j && j.item;
+      if(spotIsTrack(it, t) && j.is_playing) return true;
+      if(tries >= 2) throw new Error('Spotify didn’t start the song. Tap ▶ Play song to try again.');
+      if(spotIsTrack(it, t)){
+        return spotApi('PUT', '/me/player/play?' + spotDevQ()).then(function(){ return spotVerify(t, tries + 1); });
+      }
+      return spotApi('POST', '/me/player/queue?uri=' + encodeURIComponent(t.uri) + '&' + spotDevQ())
+        .then(function(){ return spotWait(400); })
+        .then(function(){ return spotApi('POST', '/me/player/next?' + spotDevQ()); })
+        .then(function(){ return spotVerify(t, tries + 1); });
+    });
+  }
+  function spotPause(){
+    if(!spotReady() || !spot.deviceId) return;
+    spotApi('PUT', '/me/player/pause?' + spotDevQ()).catch(function(){});
+  }
+  function spotDevices(){
+    return spotApi('GET', '/me/player/devices').then(function(j){
+      return ((j && j.devices) || []).filter(function(dv){ return dv.id && !dv.is_restricted; });
+    });
+  }
+  function spotPickDevice(dv){
+    var s = spotLoad();
+    s.deviceId = dv.id; s.deviceName = dv.name;
+    spotSave(s);
+    spotApi('PUT', '/me/player', { device_ids:[dv.id], play:false }).catch(function(){});
+    spotRenderSettings();
+  }
+
+  /* ---- Settings: Spotify section ---- */
+  function spotStatus(msg){
+    var st = document.getElementById('spot-status');
+    if(st) st.textContent = msg;
+  }
+  function spotRenderSettings(){
+    var cid = document.getElementById('spot-cid');
+    if(!cid) return;
+    if(document.activeElement !== cid) cid.value = spot.clientId || '';
+    document.getElementById('spot-redirect').textContent = spotRedirect();
+    document.getElementById('spot-connect').textContent = spotReady() ? 'Disconnect' : 'Connect Spotify';
+    spotStatus(spotReady() ? 'Connected' + (spot.deviceName ? ' · songs play on ' + spot.deviceName : '')
+                           : (spotSetupError() || 'Not connected'));
+  }
+  (function(){
+    var cid = document.getElementById('spot-cid');
+    if(!cid) return;
+    cid.addEventListener('input', function(){
+      var s = spotLoad(), v = this.value.trim();
+      if(v === (s.clientId || '')) return;
+      s.clientId = v;
+      delete s.access; delete s.refresh; delete s.expires;
+      spotSave(s); spotCache = {};
+      spotRenderSettings();
+    });
+    document.getElementById('spot-connect').addEventListener('click', function(){
+      if(spotReady()) spotDisconnect(); else spotConnect();
+    });
+    window.addEventListener('storage', function(e){
+      if(e.key !== SPOT_LS) return;
+      spot = spotLoad();
+      spotRenderSettings();
+      if(host && host.ctl && host.ctl.onSpotify) host.ctl.onSpotify();
+    });
+    spotRenderSettings();
+  })();
+
+  /* ---- the sign-in pop-up lands here ---- */
+  (function(){
+    var q = new URLSearchParams(location.search);
+    var code = q.get('code'), state = q.get('state');
+    if(!state || !(code || q.get('error'))) return;
+    var pk = {};
+    try{ pk = JSON.parse(localStorage.getItem(SPOT_PKCE)) || {}; }catch(e){}
+    if(pk.state !== state) return;
+    localStorage.removeItem(SPOT_PKCE);
+    history.replaceState(null, '', location.pathname + location.hash);
+    function done(msg){
+      document.body.innerHTML = '';
+      var box = document.createElement('div');
+      box.style.cssText = 'padding:40px 20px;text-align:center;font-size:18px;color:#fff';
+      box.textContent = msg;
+      document.body.appendChild(box);
+      setTimeout(function(){ try{ window.close(); }catch(e){} }, 1200);
+    }
+    if(!code){ done('Spotify sign-in was canceled. You can close this window.'); return; }
+    spotTokenReq({ grant_type:'authorization_code', code:code, redirect_uri:spotRedirect(),
+                   client_id:pk.cid, code_verifier:pk.ver })
+      .then(function(){ done('Spotify is connected. You can close this window.'); },
+            function(e){ done('Spotify sign-in failed: ' + e.message); });
+  })();
 
   /* steppers */
   document.querySelectorAll('.stepper').forEach(function(st){
@@ -2862,6 +3278,22 @@
         return n+' evidence card'+(n===1?'':'s');
       },
       renderEditor: renderCourtEditor
+    },
+    timeline: {
+      label:'Tune Timeline', icon:'🎶',
+      blurb:'Hear a song, then place it in your timeline by year.',
+      blank:function(){
+        return { songs:[ { title:'', artist:'', year:'', link:'' } ],
+                 target:10, startTokens:2, tokenCap:5, tradeCost:3,
+                 challengeCost:1, challengeSecs:10, hostPlays:false };
+      },
+      summary:function(d){
+        var n = (d.songs||[]).filter(function(s){
+          return s.title.trim() && /^\d{4}$/.test(String(s.year).trim());
+        }).length;
+        return n+' song'+(n===1?'':'s');
+      },
+      renderEditor: renderTimelineEditor
     }
   };
 
@@ -3293,6 +3725,10 @@
       '#  JUDGE WRITES CHARGE: no  -> both lawyers pitch a charge and you',
       '#  pick one; whoever wrote it prosecutes.',
       '#  JUDGE WRITES CHARGE: yes -> you write it yourself.',
+      '#',
+      '#  TOP UP EVIDENCE: yes -> if the deck is short, generated cards',
+      '#  fill the gap when cards are dealt, and the six-card floor is',
+      '#  skipped. Your own cards are dealt first. Set no to turn it off.',
       '',
       'TYPE: court',
       'NAME: Night Court',
@@ -3303,6 +3739,7 @@
       'WITNESSES PER SIDE: 1',
       'WINNING LAWYER: 1000',
       'JUROR POINTS: 100',
+      'TOP UP EVIDENCE: yes',
       '',
       'EVIDENCE: A receipt for 400 rubber ducks',
       'EVIDENCE: A single muddy boot, size 14',
@@ -3379,6 +3816,50 @@
       'FINAL A: Jupiter',
       '',
       '# Copy a CATEGORY block for each new column.'
+    ])),
+    timeline: tpl(TPL_HEAD.concat([
+      '#  TUNE TIMELINE',
+      '#  One SONG line per song, with the parts split by | like this:',
+      '#',
+      '#    SONG: Title | Artist | Year | Spotify track link',
+      '#',
+      '#  Title and a 4-digit year are required. Use the year the song',
+      '#  first came out, not the year of a remaster or a compilation.',
+      '#',
+      '#  To get the link in Spotify: Share > Copy Song Link. It looks',
+      '#  like https://open.spotify.com/track/... A song without a link',
+      '#  is found by a Spotify search, which can pick the wrong version.',
+      '#',
+      '#  Songs do not need blank lines between them. A song that is',
+      '#  already in the game is skipped, so importing twice is safe.',
+      '#',
+      '#  Plan on about 15 songs per player for a 10-song game.',
+      '',
+      'TYPE: timeline',
+      'NAME: Tune Timeline Night',
+      'MAX PLAYERS: 10',
+      'SONGS TO WIN: 10',
+      'STARTING TOKENS: 2',
+      'TOKEN CAP: 5',
+      'TRADE COST: 3',
+      'CHALLENGE COST: 1',
+      'CHALLENGE SECONDS: 10',
+      'HOST PLAYS: no',
+      '',
+      'SONG: Respect | Aretha Franklin | 1967',
+      'SONG: Dancing Queen | ABBA | 1976',
+      'SONG: Billie Jean | Michael Jackson | 1982',
+      'SONG: Smells Like Teen Spirit | Nirvana | 1991',
+      'SONG: Wannabe | Spice Girls | 1996',
+      'SONG: Hey Ya! | Outkast | 2003',
+      'SONG: Rolling in the Deep | Adele | 2010',
+      'SONG: Uptown Funk | Mark Ronson | 2014',
+      '',
+      '# Add the link as a fourth part so the right version plays:',
+      '# SONG: Title | Artist | 1999 | https://open.spotify.com/track/...',
+      '',
+      '# Spread the songs across the decades. A deck that is all one',
+      '# decade makes every placement a coin flip.'
     ]))
   };
 
@@ -3425,7 +3906,9 @@
     'FIRST':1,'SECOND':1,'THIRD':1,'REVEAL ONE BY ONE':1,
     'FINAL CATEGORY':1,'FINAL Q':1,'FINAL A':1,
     'JUDGE WRITES CHARGE':1,'CARDS EACH':1,'OBJECTIONS EACH':1,'WITNESSES PER SIDE':1,
-    'WINNING LAWYER':1,'JUROR POINTS':1,'WITNESS POINTS':1
+    'WINNING LAWYER':1,'JUROR POINTS':1,'WITNESS POINTS':1,'TOP UP EVIDENCE':1,
+    'SONGS TO WIN':1,'CARDS TO WIN':1,'STARTING TOKENS':1,'TOKEN CAP':1,'TRADE COST':1,
+    'CHALLENGE COST':1,'CHALLENGE SECONDS':1,'HOST PLAYS':1
   };
   var BULK_TYPES = {
     'jeopardy':'jeopardy','jeopardy style':'jeopardy',
@@ -3434,7 +3917,8 @@
     'closest':'closest','closest wins':'closest',
     'prompts':'prompts','punchline':'prompts','punchline showdown':'prompts',
     'wheel':'wheel','wheel puzzle':'wheel',
-    'court':'court','courtroom':'court'
+    'court':'court','courtroom':'court',
+    'timeline':'timeline','tune timeline':'timeline'
   };
   function bulkType(s){ return BULK_TYPES[String(s).trim().toLowerCase()] || ''; }
 
@@ -3596,6 +4080,42 @@
     return cats;
   }
 
+  /* SONG: Title | Artist | Year | Link — the year may sit in any part after the title */
+  function bulkTimeline(blocks){
+    var out = [];
+    blocks.forEach(function(b){
+      var cur = null;
+      function flush(){
+        if(cur && cur.title && /^\d{4}$/.test(cur.year)) out.push(cur);
+        cur = null;
+      }
+      b.forEach(function(line){
+        var kv = bulkKV(line);
+        if(!kv) return;
+        if(kv.key === 'SONG' || kv.key === 'TITLE'){
+          flush();
+          var p = kv.val.split('|').map(function(x){ return x.trim(); }), rest = [];
+          cur = { title: p[0] || '', artist:'', year:'', link:'' };
+          p.slice(1).forEach(function(x){
+            if(/^https?:\/\//i.test(x) || /^spotify:track:/i.test(x)){ if(!cur.link) cur.link = x; }
+            else if(/^\d{4}$/.test(x) && !cur.year) cur.year = x;
+            else rest.push(x);
+          });
+          cur.artist = rest.join(' | ');
+        }
+        else if(!cur) return;
+        else if(kv.key === 'ARTIST') cur.artist = kv.val;
+        else if(kv.key === 'YEAR') cur.year = (/\d{4}/.exec(kv.val) || [''])[0];
+        else if(kv.key === 'LINK') cur.link = kv.val;
+      });
+      flush();
+    });
+    return out;
+  }
+  function songKey(s){
+    return (String(s.title || '') + '|' + String(s.artist || '')).toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+
   /* ---- apply to the game being edited ----
      Imports ADD to what's already there; the untouched blank row a new
      game starts with is replaced rather than kept.                    */
@@ -3660,6 +4180,7 @@
     else if(g.type === 'court'){
       var ev = bulkCourt(blocks);
       if(meta['JUDGE WRITES CHARGE'] !== undefined) d.judgeCharge = bulkBool(meta['JUDGE WRITES CHARGE']);
+      if(meta['TOP UP EVIDENCE'] !== undefined) d.genTopUp = bulkBool(meta['TOP UP EVIDENCE']);
       if(meta['CARDS EACH'] !== undefined) d.cardsEach = Math.min(8, Math.max(1, bulkInt(meta['CARDS EACH'], 3)));
       if(meta['OBJECTIONS EACH'] !== undefined) d.objections = Math.min(9, Math.max(0, bulkInt(meta['OBJECTIONS EACH'], 3)));
       if(meta['WITNESSES PER SIDE'] !== undefined) d.witnessesPerSide = Math.min(3, Math.max(0, bulkInt(meta['WITNESSES PER SIDE'], 1)));
@@ -3679,6 +4200,35 @@
       if(!d.evidence.some(function(c){ return c.text.trim(); })) d.evidence = [];
       d.evidence = d.evidence.concat(ev);
       added += ev.length;
+    }
+    else if(g.type === 'timeline'){
+      var tl = function(key, prop, lo, hi){
+        if(meta[key] !== undefined) d[prop] = Math.min(hi, Math.max(lo, bulkInt(meta[key], d[prop])));
+      };
+      tl('SONGS TO WIN', 'target', 3, 20);
+      tl('CARDS TO WIN', 'target', 3, 20);
+      tl('TOKEN CAP', 'tokenCap', 1, 10);
+      tl('STARTING TOKENS', 'startTokens', 0, 10);
+      tl('TRADE COST', 'tradeCost', 1, 5);
+      tl('CHALLENGE COST', 'challengeCost', 1, 5);
+      tl('CHALLENGE SECONDS', 'challengeSecs', 3, 60);
+      if(d.startTokens > d.tokenCap) d.startTokens = d.tokenCap;
+      if(meta['HOST PLAYS'] !== undefined) d.hostPlays = bulkBool(meta['HOST PLAYS']);
+      var sg = bulkTimeline(blocks);
+      if(!sg.length) return 0;
+      if(!d.songs) d.songs = [];
+      /* drop untouched blank rows, then skip songs the game already has */
+      d.songs = d.songs.filter(function(s){
+        return String(s.title || '').trim() || String(s.artist || '').trim()
+            || String(s.year || '').trim() || String(s.link || '').trim();
+      });
+      var seen = {};
+      d.songs.forEach(function(s){ seen[songKey(s)] = 1; });
+      sg.forEach(function(s){
+        if(seen[songKey(s)]) return;
+        seen[songKey(s)] = 1; d.songs.push(s); added++;
+      });
+      if(!d.songs.length) d.songs = [ { title:'', artist:'', year:'', link:'' } ];
     }
     else if(g.type === 'jeopardy'){
       var cats = bulkJeopardyCats(blocks);
@@ -4450,6 +5000,167 @@
     var n = parseInt(d.witnessesPerSide, 10);
     return (n >= 0 && n <= 3) ? n : 1;
   }
+  /* ---- Tune Timeline helpers ---- */
+  function validSongs(d){
+    return (d.songs || []).filter(function(s){
+      return String(s.title || '').trim() && /^\d{4}$/.test(String(s.year).trim());
+    });
+  }
+  function timelineNum(d, key, def, lo, hi){
+    var n = parseInt(d[key], 10);
+    return isNaN(n) ? def : Math.min(hi, Math.max(lo, n));
+  }
+  function renderTimelineEditor(g, wrap){
+    var bar = editorHeader(g, wrap);
+    var d = g.data;
+    if(!d.songs || !d.songs.length) d.songs = [ { title:'', artist:'', year:'', link:'' } ];
+    if(d.target === undefined) d.target = 10;
+    if(d.startTokens === undefined) d.startTokens = 2;
+    if(d.tokenCap === undefined) d.tokenCap = 5;
+    if(d.tradeCost === undefined) d.tradeCost = 3;
+    if(d.challengeCost === undefined) d.challengeCost = 1;
+    if(d.challengeSecs === undefined) d.challengeSecs = 10;
+    if(d.hostPlays === undefined) d.hostPlays = false;
+
+    bar.appendChild(toolBtn('+ Song', function(){
+      d.songs.push({ title:'', artist:'', year:'', link:'' });
+      touch(); draw();
+      deckNote.textContent = deckAdvice();
+      window.scrollTo(0, document.body.scrollHeight);
+    }));
+    bulkControls(g, bar);
+    bar.appendChild(savedNoteEl);
+
+    function numField(row, label, key, placeholder, lo, hi){
+      var la = document.createElement('label'); la.textContent = label;
+      var inp = document.createElement('input');
+      inp.className = 'fin-input'; inp.type = 'text'; inp.inputMode = 'numeric';
+      inp.placeholder = placeholder; inp.value = d[key];
+      inp.addEventListener('input', function(){
+        var n = parseInt(this.value.replace(/\D/g,''), 10);
+        d[key] = isNaN(n) ? lo : Math.min(hi, Math.max(lo, n));
+        touch();
+        deckNote.textContent = deckAdvice();
+      });
+      inp.addEventListener('blur', function(){
+        if(d.startTokens > d.tokenCap){ d.startTokens = d.tokenCap; startIn.value = d.startTokens; }
+        this.value = d[key];
+      });
+      la.appendChild(inp); row.appendChild(la);
+      return inp;
+    }
+
+    /* ---- rules ---- */
+    var t1 = document.createElement('div'); t1.className = 'fin-section';
+    var h1 = document.createElement('h3'); h1.textContent = '🎶 Rules';
+    t1.appendChild(h1);
+
+    var r1 = document.createElement('div'); r1.className = 'cw-row';
+    numField(r1, 'Songs to win', 'target', '10', 3, 20);
+    var startIn = numField(r1, 'Starting tokens', 'startTokens', '2', 0, 10);
+    numField(r1, 'Token cap', 'tokenCap', '5', 1, 10);
+    t1.appendChild(r1);
+
+    var r2 = document.createElement('div'); r2.className = 'cw-row';
+    numField(r2, 'Trade cost (tokens)', 'tradeCost', '3', 1, 5);
+    numField(r2, 'Challenge cost (tokens)', 'challengeCost', '1', 1, 5);
+    numField(r2, 'Challenge window (sec)', 'challengeSecs', '10', 3, 60);
+    t1.appendChild(r2);
+
+    var hp = document.createElement('label'); hp.className = 'dd-row';
+    var hpIn = document.createElement('input'); hpIn.type = 'checkbox';
+    hpIn.checked = !!d.hostPlays;
+    hpIn.addEventListener('change', function(){
+      d.hostPlays = this.checked; touch();
+      hpNote.textContent = hostNote();
+      deckNote.textContent = deckAdvice();
+    });
+    hp.appendChild(hpIn);
+    hp.appendChild(document.createTextNode(' Host plays'));
+    t1.appendChild(hp);
+    function hostNote(){
+      return d.hostPlays
+        ? 'You take turns too. The answer stays hidden from you until you answer or pass. Play songs on a device you can’t see, because the Spotify screen shows the title.'
+        : 'You run the game and judge the answers, but you do not take turns.';
+    }
+    var hpNote = document.createElement('div'); hpNote.className = 'tq-foot';
+    hpNote.textContent = hostNote();
+    t1.appendChild(hpNote);
+
+    var tnote = document.createElement('div'); tnote.className = 'tq-foot';
+    tnote.textContent = 'Players take turns. Each turn, a song plays and the player places it in '
+      + 'their timeline by release year. Naming the title and artist earns a token. Other players '
+      + 'can spend tokens to challenge a placement, and a player can trade tokens for a free song.';
+    t1.appendChild(tnote);
+    wrap.appendChild(t1);
+
+    /* ---- song deck ---- */
+    var t2 = document.createElement('div'); t2.className = 'fin-section';
+    var h2 = document.createElement('h3'); h2.textContent = '💿 Song deck';
+    t2.appendChild(h2);
+    function deckAdvice(){
+      var ok = validSongs(d), have = ok.length;
+      var target = timelineNum(d, 'target', 10, 3, 20);
+      var noLink = ok.filter(function(s){ return !String(s.link || '').trim(); }).length;
+      var per = Math.ceil(target * 1.5);
+      var seats = Math.floor(have / per);
+      var msg = have + ' ready (title and 4-digit year). ';
+      if(have < per * 2) msg += '⚠️ Plan on about ' + per + ' songs per player, so add at least '
+        + (per * 2 - have) + ' more for a 2-player game.';
+      else msg += 'Enough for about ' + seats + ' players' + (d.hostPlays ? ', host included.' : '.');
+      if(noLink) msg += ' ' + noLink + ' without a Spotify link are found by search, which can pick the wrong version.';
+      return msg;
+    }
+    var deckNote = document.createElement('div'); deckNote.className = 'tq-foot';
+    deckNote.textContent = deckAdvice();
+    t2.appendChild(deckNote);
+    wrap.appendChild(t2);
+
+    var list = document.createElement('div'); list.className = 'tq-list';
+    wrap.appendChild(list);
+
+    function field(row, s, key, placeholder, flex, max){
+      var inp = document.createElement('input');
+      inp.className = 'fin-input'; inp.type = 'text';
+      inp.style.flex = flex; inp.style.minWidth = key === 'year' ? '5em' : '9em';
+      inp.placeholder = placeholder; inp.maxLength = max;
+      inp.value = s[key] === undefined ? '' : s[key];
+      if(key === 'year') inp.inputMode = 'numeric';
+      inp.addEventListener('input', function(){
+        if(key === 'year') this.value = this.value.replace(/\D/g,'').slice(0, 4);
+        s[key] = this.value; touch();
+        deckNote.textContent = deckAdvice();
+      });
+      row.appendChild(inp);
+      return inp;
+    }
+    function draw(){
+      list.innerHTML = '';
+      d.songs.forEach(function(s, si){
+        var card = document.createElement('div'); card.className = 'tq-card';
+        var head = document.createElement('div'); head.className = 'tq-head';
+        var num = document.createElement('span'); num.className = 'tq-num';
+        num.textContent = 'Song ' + (si + 1);
+        head.appendChild(num);
+        head.appendChild(toolBtn('✕', function(){
+          if(d.songs.length <= 1){ DC.toast('Keep at least one song'); return; }
+          d.songs.splice(si, 1); touch(); draw();
+          deckNote.textContent = deckAdvice();
+        }));
+        card.appendChild(head);
+        var row = document.createElement('div');
+        row.style.display = 'flex'; row.style.flexWrap = 'wrap'; row.style.gap = '8px';
+        field(row, s, 'title', 'Title', '3 1 0', 120);
+        field(row, s, 'artist', 'Artist', '3 1 0', 120);
+        field(row, s, 'year', 'Year', '0 0 5em', 4);
+        field(row, s, 'link', 'Spotify track link', '4 1 0', 300);
+        card.appendChild(row);
+        list.appendChild(card);
+      });
+    }
+    draw();
+  }
+
   function renderCourtEditor(g, wrap){
     var bar = editorHeader(g, wrap);
     var d = g.data;
@@ -5104,6 +5815,7 @@
         gmRenderAll();
         renderLobbyQR();
         renderLobbyPlayers();
+        tlPoolInit();
         showPlayView('lobby');
         startGMPeer();
       });
@@ -5229,6 +5941,10 @@
     else if(d.t === 'court'){
       var p7 = host.players[conn.peer];
       if(p7 && host.ctl && host.ctl.onCourt) host.ctl.onCourt(p7, d);
+    }
+    else if(d.t === 'timeline'){
+      var p8 = host.players[conn.peer];
+      if(p8 && host.ctl && host.ctl.onTimeline) host.ctl.onTimeline(p8, d);
     }
   }
   function dropConn(conn){
@@ -5369,15 +6085,27 @@
     var btn = document.getElementById('start-game-btn');
     var live = ps.filter(function(p){ return p.connected; }).length;
     /* a trial needs two lawyers before it can open */
-    var need = host.game.type === 'court' ? 2 : 1;
+    var need = host.game.type === 'court' ? 2
+             : host.game.type === 'timeline' ? (host.game.data.hostPlays ? 1 : 2) : 1;
     btn.disabled = live < need;
     btn.textContent = live < need
       ? (need > 1 ? 'Need ' + (need - live) + ' more player' + (need - live === 1 ? '' : 's') + '…'
                   : 'Waiting for players…')
       : 'Start Game ('+live+' in)';
+    tlPoolRenderSoon();
   }
   document.getElementById('start-game-btn').addEventListener('click', function(){
     if(!host || this.disabled) return;
+    if(host.game.type === 'timeline'){
+      /* one starting song per seat, plus ten in the deck */
+      var tlSeats = tlLive() + (host.game.data.hostPlays ? 1 : 0);
+      var tlHave = tlPoolSongs().length;
+      if(tlHave < tlSeats + 10){
+        DC.toast(tlSeats + ' players need ' + (tlSeats + 10) + ' songs (' + tlHave
+                 + ' ready). Pick more genres, or wait while years load.');
+        return;
+      }
+    }
     host.phase = 'game';
     host.ctl = host.game.type === 'jeopardy' ? jeopardyCtl()
              : host.game.type === 'feud'     ? feudCtl()
@@ -5385,6 +6113,7 @@
              : host.game.type === 'prompts'  ? promptsCtl()
              : host.game.type === 'wheel'    ? wheelCtl()
              : host.game.type === 'court'    ? courtCtl()
+             : host.game.type === 'timeline' ? timelineCtl()
              : triviaCtl();
     showPlayView('game');
     host.ctl.start();
@@ -5470,6 +6199,761 @@
       if(rec){ stageImgUrls[id] = URL.createObjectURL(rec.blob); im.src = stageImgUrls[id]; }
       else im.remove();
     }).catch(function(){ im.remove(); });
+  }
+
+  /* ============ TUNE TIMELINE SONG POOL ============
+     The host picks genres in the lobby. Prebuilt lists come from lists/ on
+     the site; tools/build-song-lists.js rebuilds them weekly. A genre the
+     host types is fetched live from Last.fm, and each song's original year
+     comes from MusicBrainz, about one lookup a second. Songs that get a
+     year after the game starts go into the deck.                        */
+  var LFM_LS = 'duelcrate_lastfm', YEARS_LS = 'duelcrate_years';
+  var tlPool = null, tlYears = null, tlYearBusy = false, tlPoolTimer = null;
+
+  function tlKey(x){
+    return (String(x.artist || '') + '|' + String(x.title || '')).toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+  function tlSlug(x){
+    return String(x).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+  function tlLs(k, v){
+    try{
+      if(v === undefined) return localStorage.getItem(k);
+      localStorage.setItem(k, v);
+    }catch(e){}
+    return null;
+  }
+  function tlYearCache(){
+    if(!tlYears){
+      try{ tlYears = JSON.parse(tlLs(YEARS_LS) || '{}') || {}; }catch(e){ tlYears = {}; }
+    }
+    return tlYears;
+  }
+  (function(){
+    var k = document.getElementById('lfm-key');
+    if(!k) return;
+    k.value = tlLs(LFM_LS) || '';
+    k.addEventListener('input', function(){ tlLs(LFM_LS, this.value.trim()); });
+  })();
+
+  function tlPoolInit(){
+    var box = document.getElementById('tl-pool');
+    tlPool = null;
+    if(!box) return;
+    if(!host || host.game.type !== 'timeline'){ box.hidden = true; return; }
+    var me = tlPool = { crate: validSongs(host.game.data).length > 0, index:null,
+                        indexMsg:'Loading genre lists…', picks:[] };
+    box.hidden = false;
+    fetch('lists/index.json', { cache:'no-cache' })
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){
+        if(tlPool !== me) return;
+        me.index = (j && j.genres) || [];
+        me.indexMsg = me.index.length ? '' : 'No genre lists yet. You can still type your own genres.';
+        tlPoolRender();
+      })
+      .catch(function(){
+        if(tlPool !== me) return;
+        me.index = [];
+        me.indexMsg = 'Genre lists aren’t available here. Publish the lists folder, or type your own genres.';
+        tlPoolRender();
+      });
+    tlPoolRender();
+  }
+  function tlPick(id){
+    for(var i = 0; i < tlPool.picks.length; i++) if(tlPool.picks[i].id === id) return tlPool.picks[i];
+    return null;
+  }
+  function tlDrop(p){
+    var i = tlPool.picks.indexOf(p);
+    if(i >= 0) tlPool.picks.splice(i, 1);
+    tlPoolRender();
+  }
+  function tlToggleList(g){
+    var have = tlPick('list:' + g.slug);
+    if(have){ tlDrop(have); return; }
+    var me = tlPool, p = { kind:'list', id:'list:' + g.slug, name:g.name, songs:[], pending:[], state:'loading', msg:'' };
+    me.picks.push(p);
+    fetch('lists/' + encodeURIComponent(g.slug) + '.json', { cache:'no-cache' })
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){
+        p.songs = ((j && j.songs) || []).filter(function(x){
+          return x && String(x.title || '').trim() && /^\d{4}$/.test(String(x.year));
+        }).map(function(x){
+          return { title:String(x.title).trim(), artist:String(x.artist || '').trim(),
+                   year:parseInt(x.year, 10), link:String(x.link || '').trim() };
+        });
+        p.state = 'ready';
+        if(tlPool === me) tlPoolRender();
+      })
+      .catch(function(){ p.state = 'error'; p.msg = 'couldn’t load'; if(tlPool === me) tlPoolRender(); });
+    tlPoolRender();
+  }
+  function tlAddTag(raw){
+    var tag = String(raw || '').trim().replace(/\s+/g, ' ');
+    if(!tag || !tlPool) return;
+    var low = tag.toLowerCase();
+    var g = (tlPool.index || []).filter(function(x){
+      return String(x.name).toLowerCase() === low || String(x.tag || '').toLowerCase() === low || x.slug === tlSlug(tag);
+    })[0];
+    if(g){ if(!tlPick('list:' + g.slug)) tlToggleList(g); return; }
+    if(tlPick('tag:' + low)) return;
+    var key = tlLs(LFM_LS);
+    if(!key){ DC.toast('Paste a Last.fm API key in Settings first.'); return; }
+    var me = tlPool, got = [];
+    var p = { kind:'tag', id:'tag:' + low, name:tag, songs:[], pending:[], state:'loading', msg:'' };
+    me.picks.push(p);
+    function page(n){
+      return fetch('https://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&format=json&limit=100&page=' + n
+                   + '&tag=' + encodeURIComponent(tag) + '&api_key=' + encodeURIComponent(key))
+        .then(function(r){ return r.json(); })
+        .then(function(j){
+          if(j.error) throw new Error(j.message || 'request failed');
+          var list = (j.tracks && j.tracks.track) || [];
+          list.forEach(function(t){
+            var a = t && t.artist ? String(t.artist.name || '').trim() : '';
+            if(t && t.name && a) got.push({ title:String(t.name).trim(), artist:a });
+          });
+          return list.length;
+        });
+    }
+    page(1).then(function(n){ return n >= 100 ? page(2) : 0; })
+      .then(function(){
+        if(!got.length){ p.state = 'error'; p.msg = 'no songs on Last.fm'; }
+        else{ p.pending = tlShuffle(got); p.state = 'years'; tlYearWork(); }
+        if(tlPool === me) tlPoolRender();
+      })
+      .catch(function(e){
+        p.state = 'error'; p.msg = 'Last.fm: ' + ((e && e.message) || 'request failed');
+        if(tlPool === me) tlPoolRender();
+      });
+    tlPoolRender();
+  }
+
+  /* one MusicBrainz lookup at a time; the genre with the fewest songs goes next */
+  function tlYearWork(){
+    if(tlYearBusy || !tlPool || !host) return;
+    var ps = tlPool.picks.filter(function(p){ return p.kind === 'tag' && p.pending.length; });
+    if(!ps.length) return;
+    ps.sort(function(a, b){ return a.songs.length - b.songs.length; });
+    var p = ps[0], me = tlPool, t = p.pending.shift(), c = tlYearCache(), k = tlKey(t);
+    if(c[k] !== undefined){ tlGotYear(p, t, c[k]); tlYearWork(); return; }
+    tlYearBusy = true;
+    tlMbYear(t, function(y){
+      if(y === null){ t.tries = (t.tries || 0) + 1; if(t.tries < 3) p.pending.push(t); }
+      else{ c[k] = y; tlLs(YEARS_LS, JSON.stringify(c)); tlGotYear(p, t, y); }
+      tlPoolRenderSoon();
+      setTimeout(function(){ tlYearBusy = false; if(tlPool === me) tlYearWork(); }, 1100);
+    });
+  }
+  function tlGotYear(p, t, y){
+    if(!y) return;
+    var x = { title:t.title, artist:t.artist, year:y, link:'' };
+    p.songs.push(x);
+    if(host && host.phase === 'game' && host.ctl && host.ctl.addSongs) host.ctl.addSongs([x]);
+  }
+  function tlMbYear(t, cb){
+    function q(v){ return '"' + String(v).replace(/["\\]/g, ' ') + '"'; }
+    fetch('https://musicbrainz.org/ws/2/recording?fmt=json&limit=100&query='
+          + encodeURIComponent('recording:' + q(t.title) + ' AND artist:' + q(t.artist)))
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){ cb(tlEarliest(j, t.artist)); })
+      .catch(function(){ cb(null); });
+  }
+  /* letters and digits only, so a‐ha (Unicode hyphen) matches a-ha */
+  function tlNorm(x){
+    x = String(x || '').toLowerCase();
+    if(x.normalize) x = x.normalize('NFKD');
+    return x.replace(/[^a-z0-9]/g, '');
+  }
+  /* the earliest first-release year among close matches by the same artist */
+  function tlEarliest(j, artist){
+    var best = 0, a = tlNorm(artist);
+    ((j && j.recordings) || []).forEach(function(r){
+      if((r.score || 0) < 90) return;
+      var who = tlNorm((r['artist-credit'] || []).map(function(c){
+        return c.name || (c.artist && c.artist.name) || '';
+      }).join(' '));
+      if(a && who && who.indexOf(a) < 0 && a.indexOf(who) < 0) return;
+      var y = parseInt(String(r['first-release-date'] || '').slice(0, 4), 10);
+      if(y >= 1900 && (!best || y < best)) best = y;
+    });
+    return best;
+  }
+
+  /* every song with a year, the crate's first, without repeats */
+  function tlPoolSongs(){
+    if(!host) return [];
+    var out = [], seen = {};
+    function add(x){ var k = tlKey(x); if(seen[k]) return; seen[k] = 1; out.push(x); }
+    if(!tlPool || tlPool.crate) validSongs(host.game.data).forEach(function(x){
+      add({ title:String(x.title).trim(), artist:String(x.artist || '').trim(),
+            year:parseInt(x.year, 10), link:String(x.link || '').trim() });
+    });
+    if(tlPool) tlPool.picks.forEach(function(p){ p.songs.forEach(add); });
+    return out;
+  }
+  function tlPoolRenderSoon(){
+    if(tlPoolTimer) return;
+    tlPoolTimer = setTimeout(function(){ tlPoolTimer = null; tlPoolRender(); }, 500);
+  }
+  function tlPickNote(p){
+    return p.state === 'error' ? p.msg
+         : p.state === 'loading' ? 'loading…'
+         : p.pending.length ? p.songs.length + ' ready, finding years…'
+         : p.songs.length + ' songs';
+  }
+  function tlPoolRender(){
+    var box = document.getElementById('tl-pool');
+    if(!box || !tlPool || !host || host.phase !== 'lobby') return;
+    function el(tag, cls, text){
+      var e = document.createElement(tag);
+      if(cls) e.className = cls;
+      if(text !== undefined) e.textContent = text;
+      return e;
+    }
+    var old = box.querySelector('.tl-add input');
+    var keep = old ? old.value : '', focused = !!old && document.activeElement === old;
+    box.innerHTML = '';
+    box.appendChild(el('h3', '', 'Songs'));
+
+    var n = validSongs(host.game.data).length;
+    var lab = el('label'), cb = el('input');
+    cb.type = 'checkbox'; cb.checked = tlPool.crate; cb.disabled = !n;
+    cb.addEventListener('change', function(){ tlPool.crate = this.checked; tlPoolRender(); });
+    lab.appendChild(cb);
+    lab.appendChild(document.createTextNode(' Use this crate’s songs (' + n + ')'));
+    box.appendChild(lab);
+
+    var gs = el('div', 'tl-genres');
+    (tlPool.index || []).forEach(function(g){
+      var p = tlPick('list:' + g.slug);
+      var b = el('button', 'tl-g' + (p ? ' on' : ''), g.name + (p ? ' · ' + tlPickNote(p) : ''));
+      b.type = 'button';
+      b.addEventListener('click', function(){ tlToggleList(g); });
+      gs.appendChild(b);
+    });
+    if(gs.children.length) box.appendChild(gs);
+    if(tlPool.indexMsg) box.appendChild(el('small', '', tlPool.indexMsg));
+
+    var row = el('div', 'tl-add'), inp = el('input', 'fin-input'), addB = el('button', 'stage-btn', 'Add genre');
+    inp.type = 'text'; inp.placeholder = 'Add your own genre, such as yacht rock'; inp.value = keep;
+    addB.type = 'button';
+    function go(){ var v = inp.value; inp.value = ''; tlAddTag(v); }
+    addB.addEventListener('click', go);
+    inp.addEventListener('keydown', function(e){ if(e.key === 'Enter') go(); });
+    row.appendChild(inp); row.appendChild(addB);
+    box.appendChild(row);
+    if(focused) inp.focus();
+    if(!tlLs(LFM_LS)) box.appendChild(el('small', '', 'To add your own genres, paste a Last.fm API key in Settings.'));
+
+    var mine = el('div', 'tl-genres');
+    tlPool.picks.forEach(function(p){
+      if(p.kind !== 'tag') return;
+      var b = el('button', 'tl-g on', p.name + ' · ' + tlPickNote(p) + '  ✕');
+      b.type = 'button'; b.title = 'Remove this genre';
+      b.addEventListener('click', function(){ tlDrop(p); });
+      mine.appendChild(b);
+    });
+    if(mine.children.length) box.appendChild(mine);
+
+    var seats = tlLive() + (host.game.data.hostPlays ? 1 : 0);
+    box.appendChild(el('small', '', tlPoolSongs().length + ' songs ready. '
+      + Math.max(seats, 2) + ' players need ' + (Math.max(seats, 2) + 10) + '.'));
+  }
+
+  /* ============ TUNE TIMELINE RUNTIME ============
+     Turn phases: place -> challenge -> chalPick -> name -> ready -> result.
+     Per-player state lives on the player object (p.tl), so a player who
+     reconnects under a new peer id keeps their timeline and tokens.
+     Phones send { t:'timeline', act:'slot'|'lock'|'challenge'|'know'|'pass'|'trade' }.
+     A song's details never go to a phone before the reveal.           */
+  function tlShuffle(a){
+    for(var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1)), t = a[i];
+      a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  /* a slot is right when the year fits between its neighbours; ties count */
+  function tlSlotOk(cards, slot, year){
+    var L = cards[slot - 1], R = cards[slot];
+    return (!L || L.year <= year) && (!R || year <= R.year);
+  }
+  function tlSortedSlot(cards, year){
+    var i = 0;
+    while(i < cards.length && cards[i].year <= year) i++;
+    return i;
+  }
+  function tlLive(){
+    return roster().filter(function(p){ return p.connected; }).length;
+  }
+  function timelineCtl(){
+    var d = host.game.data;
+    var target = timelineNum(d, 'target', 10, 3, 20);
+    var cap = timelineNum(d, 'tokenCap', 5, 1, 10);
+    var startTok = Math.min(cap, timelineNum(d, 'startTokens', 2, 0, 10));
+    var tradeCost = timelineNum(d, 'tradeCost', 3, 1, 5);
+    var chalCost = timelineNum(d, 'challengeCost', 1, 0, 5);
+    var chalSecs = timelineNum(d, 'challengeSecs', 10, 3, 60);
+    var deck = tlShuffle(tlPoolSongs()), used = {};
+    deck.forEach(function(s){ used[tlKey(s)] = 1; });
+    var order = [], turn = -1, hostP = null;
+    var phase = 'place', active = null, song = null, slot = null, locked = false;
+    var challenger = null, chalSlot = null, chalLocked = false;
+    var queue = [], tried = [], namer = null, namedBy = null, keyShown = false;
+    var result = null, winners = [], timerWrap = null, api;
+    var devPick = false, devList = null, spotMsg = '', spotFail = false, playSeq = 0;
+
+    function nm(p){ return p.name; }
+    function seat(p){
+      if(p.tl) return;
+      p.tl = { cards:[], tokens:startTok };
+      if(deck.length) p.tl.cards.push(deck.shift());
+      p.score = p.tl.cards.length;
+      order.push(p);
+    }
+    function scores(){ order.forEach(function(p){ p.score = p.tl.cards.length; }); }
+    function someoneWon(){
+      return order.some(function(p){ return p.tl.cards.length >= target; });
+    }
+
+    /* ---- who may do what ---- */
+    function canKnow(p){
+      return !!song && !!p.tl && p !== active
+          && (phase === 'place' || phase === 'challenge' || phase === 'chalPick' || phase === 'name')
+          && p.tl.tokens < cap && queue.indexOf(p) < 0 && tried.indexOf(p) < 0
+          && !(p === hostP && keyShown);
+    }
+    function canChallenge(p){
+      return phase === 'challenge' && !challenger && !!p.tl && p !== active && p.tl.tokens >= chalCost;
+    }
+    function canTrade(p){
+      return p === active && deck.length > 0 && p.tl.tokens >= tradeCost
+          && ((phase === 'place' && !locked) || phase === 'result');
+    }
+
+    /* ---- the answer key ----
+       When the host plays, the key stays hidden until the host has answered
+       or passed, or can no longer answer. Players name in normal order.
+       Anyone ahead of the host goes into `heard`; once the key shows, the
+       host judges those answers in order, then the host's own.            */
+    var heard = [];
+    function hostPending(){
+      return !!hostP && !keyShown && tried.indexOf(hostP) < 0 && hostP.tl.tokens < cap
+          && (active === hostP || queue.indexOf(hostP) >= 0);
+    }
+    function refreshKey(){
+      if(!song || phase === 'over'){ gmSetAnswer(null); return; }
+      var show = !hostP || phase === 'result' || keyShown
+              || ((phase === 'name' || phase === 'ready') && !hostPending());
+      if(show && hostP && phase !== 'result') keyShown = true;
+      gmSetAnswer(show ? [ { text: song.title + (song.artist ? ' — ' + song.artist : '') },
+                           { text: 'Year: ' + song.year } ]
+                       : [ { text: 'Hidden while you play' } ]);
+    }
+
+    /* ---- turn flow ---- */
+    function nextTurn(){
+      stopTimer(); timerWrap = null;
+      scores();
+      if(someoneWon() || !deck.length || !order.length){ over(); return; }
+      for(var i = 0; i < order.length; i++){
+        turn = (turn + 1) % order.length;
+        if(order[turn].connected) break;
+      }
+      active = order[turn];
+      song = deck.shift();
+      slot = null; locked = false;
+      challenger = null; chalSlot = null; chalLocked = false;
+      queue = []; tried = []; heard = []; namer = null; namedBy = null; keyShown = false;
+      result = null;
+      phase = 'place';
+      devPick = false; spotFail = false; spotMsg = '';
+      sync();
+      if(spotReady() && spot.deviceId) playSong();
+    }
+    function openChallenge(){
+      var open = active.tl.cards.length > 0 && order.some(function(p){
+        return p !== active && p.connected && p.tl.tokens >= chalCost;
+      });
+      if(!open){ goName(); return; }
+      phase = 'challenge';
+      timerWrap = mk('div', 'tl-timer');
+      var bar = mk('div', 'timer-bar'), fill = mk('div', 'timer-fill');
+      bar.appendChild(fill); timerWrap.appendChild(bar);
+      sync();
+      startTimer(chalSecs, fill, goName);
+    }
+    function endChallenge(){
+      if(phase === 'chalPick' && challenger && !chalLocked){
+        challenger.tl.tokens = Math.min(cap, challenger.tl.tokens + chalCost);
+        challenger = null; chalSlot = null;
+      }
+      if(phase === 'challenge' || phase === 'chalPick') goName();
+    }
+    function nextNamer(){
+      var c = [], wait = hostPending();
+      if(active.tl.tokens < cap) c.push(active);
+      queue.forEach(function(p){ if(c.indexOf(p) < 0) c.push(p); });
+      c = c.filter(function(p){
+        return tried.indexOf(p) < 0 && p.connected && p.tl.tokens < cap
+            && !(p === hostP && keyShown && heard.indexOf(p) < 0)
+            && !(wait && heard.indexOf(p) >= 0);
+      });
+      return c[0] || null;
+    }
+    function goName(){
+      stopTimer(); timerWrap = null;
+      phase = 'name';
+      advanceNamer();
+    }
+    function advanceNamer(){
+      namer = nextNamer();
+      if(!namer) phase = 'ready';
+      sync();
+    }
+    function judge(ok){
+      if(phase !== 'name' || !namer) return;
+      tried.push(namer);
+      if(ok){
+        namer.tl.tokens = Math.min(cap, namer.tl.tokens + 1);
+        namedBy = namer; namer = null; phase = 'ready';
+        sync();
+      }else advanceNamer();
+    }
+    function reveal(){
+      if(phase !== 'ready' && phase !== 'name') return;
+      var y = song.year, cards = active.tl.cards;
+      var aOk = slot !== null && tlSlotOk(cards, slot, y);
+      var cOk = !!challenger && chalLocked && tlSlotOk(cards, chalSlot, y);
+      var to = null;
+      if(aOk){ cards.splice(slot, 0, song); to = active; }
+      else if(cOk){
+        challenger.tl.cards.splice(tlSortedSlot(challenger.tl.cards, y), 0, song);
+        to = challenger;
+      }
+      result = { activeOk:aOk, chalOk:cOk, to:to };
+      namer = null; phase = 'result';
+      stopSong();
+      scores();
+      sync();
+    }
+    function skipTurn(){
+      if(phase === 'result' || phase === 'over' || !song) return;
+      if(challenger) challenger.tl.tokens = Math.min(cap, challenger.tl.tokens + chalCost);
+      stopSong();
+      deck.push(song); song = null;
+      nextTurn();
+    }
+    function over(){
+      stopTimer(); timerWrap = null;
+      stopSong();
+      phase = 'over'; song = null; namer = null; devPick = false;
+      var ranked = order.slice().sort(function(a, b){
+        return (b.tl.cards.length - a.tl.cards.length) || (b.tl.tokens - a.tl.tokens);
+      });
+      winners = ranked.filter(function(p){
+        return p.tl.cards.length === ranked[0].tl.cards.length && p.tl.tokens === ranked[0].tl.tokens;
+      });
+      sync();
+    }
+    function finish(){
+      host.phase = 'ended'; stopTimer();
+      gmSetAnswer(null);
+      renderFinal(); pushAll();
+    }
+    /* without Spotify Connect, the song opens in a new tab */
+    function openTab(){
+      if(!song) return;
+      var id = spotTrackId(song.link), url;
+      if(id) url = 'https://open.spotify.com/track/' + id;
+      else if(/^https?:\/\//i.test(song.link)) url = song.link;
+      else url = 'https://open.spotify.com/search/' + encodeURIComponent((song.title + ' ' + song.artist).trim());
+      window.open(url, '_blank', 'noopener');
+    }
+    function playSong(){
+      if(!song) return;
+      if(!spotReady()){ openTab(); return; }
+      if(!spotLoad().deviceId){ openDevices(); return; }
+      var n = ++playSeq;
+      spotFail = false;
+      spotMsg = 'Starting the song on ' + spot.deviceName + '…';
+      render();
+      spotPlay(song).then(function(){
+        if(n !== playSeq) return;
+        spotMsg = '♪ Playing on ' + spot.deviceName + '.';
+        render();
+      }, function(e){
+        if(n !== playSeq) return;
+        spotFail = true;
+        spotMsg = '⚠️ ' + e.message;
+        render();
+      });
+    }
+    function stopSong(){
+      playSeq++;
+      spotFail = false; spotMsg = '';
+      spotPause();
+    }
+    function openDevices(){
+      devPick = true; devList = null;
+      spotMsg = 'Looking for Spotify devices…';
+      render();
+      spotDevices().then(function(list){
+        if(!devPick) return;
+        devList = list;
+        spotMsg = list.length ? 'Pick where the songs play.'
+                : 'No devices found. Open the Spotify app on your phone or computer, then tap Refresh.';
+        render();
+      }, function(e){
+        if(!devPick) return;
+        devList = [];
+        spotMsg = '⚠️ ' + e.message;
+        render();
+      });
+    }
+    function devIcon(t){
+      t = String(t || '').toLowerCase();
+      return t === 'smartphone' ? '📱' : t === 'computer' ? '💻' : t === 'tablet' ? '📱'
+           : (t === 'speaker' || t === 'avr' || t === 'tv') ? '🔊' : '🎵';
+    }
+    function chooseDevice(dv){
+      spotPickDevice(dv);
+      devPick = false; devList = null;
+      spotMsg = 'Songs play on ' + dv.name + '.';
+      if(song && (phase === 'place' || phase === 'challenge' || phase === 'chalPick' || phase === 'name')) playSong();
+      else render();
+    }
+
+    /* ---- player actions (phones, and the host's own seat) ---- */
+    function act(p, m){
+      var a = m && m.act, n;
+      if(!p || !p.tl || !active || phase === 'over') return;
+      if(a === 'slot'){
+        n = parseInt(m.slot, 10);
+        if(isNaN(n) || n < 0 || n > active.tl.cards.length) return;
+        if(p === active && phase === 'place' && !locked){ slot = n; sync(); }
+        else if(p === challenger && phase === 'chalPick' && !chalLocked && n !== slot){ chalSlot = n; sync(); }
+      }
+      else if(a === 'lock'){
+        if(p === active && phase === 'place' && !locked && slot !== null){ locked = true; openChallenge(); }
+        else if(p === challenger && phase === 'chalPick' && chalSlot !== null){ chalLocked = true; goName(); }
+      }
+      else if(a === 'challenge'){
+        if(!canChallenge(p)) return;
+        p.tl.tokens -= chalCost;
+        challenger = p; stopTimer(); timerWrap = null;
+        phase = 'chalPick';
+        sync();
+      }
+      else if(a === 'know'){
+        if(canKnow(p)){ queue.push(p); sync(); }
+      }
+      else if(a === 'pass'){
+        if(phase === 'name' && namer === p){ tried.push(p); advanceNamer(); }
+      }
+      else if(a === 'trade'){
+        if(!canTrade(p)) return;
+        p.tl.tokens -= tradeCost;
+        var c = deck.shift();
+        p.tl.cards.splice(tlSortedSlot(p.tl.cards, c.year), 0, c);
+        if(phase === 'place') slot = null;   /* the slots just moved */
+        scores();
+        sync();
+      }
+    }
+
+    /* ---- big screen ---- */
+    function mk(tag, cls, text){
+      var e = document.createElement(tag);
+      if(cls) e.className = cls;
+      if(text !== undefined) e.textContent = text;
+      return e;
+    }
+    function cardEl(c, cls){
+      var e = mk('div', 'tl-card' + (cls ? ' ' + cls : ''));
+      e.appendChild(mk('b', '', String(c.year)));
+      e.appendChild(mk('span', '', c.title));
+      if(c.artist) e.appendChild(mk('span', '', c.artist));
+      return e;
+    }
+    function markEl(who, cls){
+      var e = mk('div', 'tl-card ' + cls);
+      e.appendChild(mk('b', '', '?'));
+      e.appendChild(mk('span', '', who));
+      return e;
+    }
+    function render(){
+      elStage.innerHTML = '';
+      var v = mk('div', 'q-view');
+      var acts = mk('div', 'stage-actions');
+      var head = 'Game over', big = '', note = '', row = null;
+
+      if(phase === 'over'){
+        big = winners.length
+          ? '🏆 ' + winners.map(nm).join(' & ') + (winners.length > 1 ? ' share the win' : ' wins')
+          : 'Game over';
+        note = someoneWon() ? '' : 'The deck ran out, so the most songs wins.';
+        acts.appendChild(stageBtn('Final Scores ▶', 'gold', finish));
+      }else if(active){
+        head = active.name + '’s turn · ' + deck.length + ' song' + (deck.length === 1 ? '' : 's') + ' left';
+        if(phase === 'place'){
+          big = 'Where does this song go?';
+          note = slot === null ? active.name + ' is choosing a slot.'
+                               : 'Slot chosen. Waiting for ' + active.name + ' to lock in.';
+          acts.appendChild(stageBtn('▶ Play song', 'gold', playSong));
+        }else if(phase === 'challenge'){
+          big = 'Anyone want to challenge?';
+          note = 'Tap Challenge on your phone' + (chalCost ? ' (' + chalCost + ' token' + (chalCost === 1 ? '' : 's') + ').' : '.');
+          acts.appendChild(stageBtn('▶ Play song', '', playSong));
+          acts.appendChild(stageBtn('End challenge', 'gold', endChallenge));
+        }else if(phase === 'chalPick'){
+          big = challenger.name + ' challenges!';
+          note = chalSlot === null ? challenger.name + ' is choosing a different slot.'
+                                   : 'Slot chosen. Waiting for ' + challenger.name + ' to lock in.';
+          acts.appendChild(stageBtn('▶ Play song', '', playSong));
+          acts.appendChild(stageBtn('Cancel challenge', '', endChallenge));
+        }else if(phase === 'name'){
+          var held = hostPending() && namer !== hostP;
+          var judging = !hostPending() && heard.indexOf(namer) >= 0;
+          big = judging ? 'Was ' + namer.name + ' right?' : namer.name + ', name that tune!';
+          var later = queue.filter(function(p){
+            return p !== namer && tried.indexOf(p) < 0 && !(hostPending() && heard.indexOf(p) >= 0);
+          }).map(nm);
+          note = (judging ? 'Check the answer key.'
+                  : held ? 'Say the title and artist out loud. The host judges after answering.'
+                  : 'Say the title and artist out loud.') + (later.length ? ' Up next: ' + later.join(', ') + '.' : '');
+          if(held){
+            acts.appendChild(stageBtn('Heard it · next', 'gold', function(){ heard.push(namer); advanceNamer(); }));
+          }else if(namer === hostP && !keyShown){
+            acts.appendChild(stageBtn('I’ve answered · show answer', 'gold', function(){
+              heard.push(hostP); keyShown = true; advanceNamer();
+            }));
+            acts.appendChild(stageBtn('Pass', '', function(){ act(hostP, { act:'pass' }); }));
+          }else{
+            acts.appendChild(stageBtn('✓ Correct', 'gold', function(){ judge(true); }));
+            acts.appendChild(stageBtn('✗ Wrong', '', function(){ judge(false); }));
+          }
+          acts.appendChild(stageBtn('▶ Play song', '', playSong));
+        }else if(phase === 'ready'){
+          big = namedBy ? namedBy.name + ' named it! +1 token' : 'Nobody named it.';
+          note = 'Ready for the reveal.';
+          acts.appendChild(stageBtn('Reveal ▶', 'gold', reveal));
+        }else if(phase === 'result'){
+          big = song.year + ' · ' + song.title + (song.artist ? ' — ' + song.artist : '');
+          note = result.activeOk ? '✓ ' + active.name + ' keeps the card.'
+               : result.to ? '✗ Wrong slot. ' + result.to.name + ' steals the card!'
+               : '✗ Wrong slot. The card is discarded.';
+          acts.appendChild(stageBtn((someoneWon() || !deck.length) ? 'Results ▶' : 'Next turn ▶', 'gold', nextTurn));
+        }
+        if(spotFail && song && phase !== 'result') acts.appendChild(stageBtn('Open in a tab', '', openTab));
+        if(spotReady()) acts.appendChild(stageBtn('🔈 ' + (spot.deviceName || 'Pick a device'), '', openDevices));
+        if(phase !== 'result') acts.appendChild(stageBtn('Skip turn', '', skipTurn));
+        if(devPick){
+          acts.innerHTML = '';
+          (devList || []).forEach(function(dv){
+            acts.appendChild(stageBtn((dv.id === spot.deviceId ? '✓ ' : '') + devIcon(dv.type) + ' ' + dv.name,
+              dv.id === spot.deviceId ? 'gold' : '', function(){ chooseDevice(dv); }));
+          });
+          acts.appendChild(stageBtn('↻ Refresh', '', openDevices));
+          acts.appendChild(stageBtn('Close', '', function(){ devPick = false; spotMsg = ''; render(); }));
+        }
+
+        row = mk('div', 'tl-row');
+        var cards = active.tl.cards, marks = phase !== 'result';
+        for(var i = 0; i <= cards.length; i++){
+          if(marks && slot === i) row.appendChild(markEl(active.name, 'q'));
+          if(marks && challenger && chalSlot === i) row.appendChild(markEl(challenger.name, 'chal'));
+          if(i < cards.length) row.appendChild(cardEl(cards[i], cards[i] === song ? 'new' : ''));
+        }
+      }
+
+      v.appendChild(mk('div', 'q-num', head));
+      v.appendChild(mk('div', 'clue-text', big));
+      if(row) v.appendChild(row);
+      if(phase === 'challenge' && timerWrap) v.appendChild(timerWrap);
+      v.appendChild(mk('div', 'answered-note', note));
+      if(spotMsg && phase !== 'over') v.appendChild(mk('div', 'tl-spot', spotMsg));
+      var strip = mk('div', 'tl-players');
+      order.forEach(function(p){
+        strip.appendChild(mk('span', (p === active && phase !== 'over' ? 'on' : '') + (p.connected ? '' : ' gone'),
+          p.name + ' · 🎵 ' + p.tl.cards.length + '/' + target + ' · 🪙 ' + p.tl.tokens));
+      });
+      v.appendChild(strip);
+      v.appendChild(acts);
+      elStage.appendChild(v);
+    }
+    function sync(){
+      refreshKey();
+      render();
+      renderScoreRow();
+      pushAll();
+    }
+
+    function pub(c){ return { year:c.year, title:c.title, artist:c.artist }; }
+    function stateFor(p, base){
+      if(!p.tl || !active){ base.mode = 'waiting'; base.note = 'Get ready…'; return base; }
+      base.mode = 'timeline';
+      var t = {
+        phase: phase, target: target, cap: cap, deckLeft: deck.length,
+        tradeCost: tradeCost, challengeCost: chalCost, challengeSecs: chalSecs,
+        active: active.name, youActive: p === active,
+        cards: active.tl.cards.map(pub), slot: slot, locked: locked,
+        mine: p.tl.cards.map(pub), tokens: p.tl.tokens,
+        challenger: challenger ? challenger.name : '', youChallenger: p === challenger,
+        chalSlot: chalSlot, chalLocked: chalLocked,
+        namer: namer ? namer.name : '', youNamer: p === namer,
+        queuePos: queue.indexOf(p) + 1,
+        canTrade: canTrade(p), canKnow: canKnow(p), canChallenge: canChallenge(p),
+        players: order.map(function(o){
+          return { name:o.name, cards:o.tl.cards.length, tokens:o.tl.tokens, connected:!!o.connected };
+        })
+      };
+      if(phase === 'ready' || phase === 'result') t.namedBy = namedBy ? namedBy.name : '';
+      if(phase === 'result' && result && song){
+        t.result = { year:song.year, title:song.title, artist:song.artist,
+                     activeOk:result.activeOk, chalOk:result.chalOk,
+                     to: result.to ? result.to.name : '', youGot: result.to === p };
+      }
+      if(phase === 'over') t.winners = winners.map(nm);
+      base.tl = t;
+      return base;
+    }
+
+    api = {
+      start: function(){
+        if(d.hostPlays){
+          var taken = roster().some(function(p){ return p.name.toLowerCase() === 'host'; });
+          hostP = { pid:'__host', name: taken ? 'Host ★' : 'Host', conn:null, connected:true, score:0, isHost:true };
+          host.players[hostP.pid] = hostP;
+          api.hostPlayer = hostP;
+        }
+        roster().forEach(seat);
+        nextTurn();
+      },
+      onBuzz: function(){}, onAnswer: function(){}, onGuess: function(){}, onText: function(){},
+      onTimeline: act,
+      onSpotify: function(){ if(phase !== 'over') render(); },
+      hostPlayer: null,
+      hostAct: function(m){ if(hostP) act(hostP, m); },
+      /* songs whose year arrived after the start go into the deck at random */
+      addSongs: function(list){
+        if(phase === 'over') return;
+        (list || []).forEach(function(x){
+          var k = tlKey(x);
+          if(used[k]) return;
+          used[k] = 1;
+          deck.splice(Math.floor(Math.random() * (deck.length + 1)), 0, x);
+        });
+      },
+      onRoster: function(){
+        roster().forEach(function(p){ if(p.connected) seat(p); });
+        render(); renderScoreRow(); pushAll();
+      },
+      stateFor: stateFor
+    };
+    return api;
   }
 
   /* ============ JEOPARDY RUNTIME ============ */
@@ -9024,13 +10508,21 @@
       else if(d.cmd === 'kick') gmKick(String(d.pid || ''));
       else if(d.cmd === 'score') gmSetScore(String(d.pid || ''), d.value);
       else if(d.cmd === 'zoom') setStageZoom(d.value === 'auto' ? 'auto' : parseFloat(d.value));
+      else if(d.cmd === 'tl'){ if(host && host.ctl && host.ctl.hostAct && d.m) host.ctl.hostAct(d.m); }
     }
+  }
+  /* the host's own Tune Timeline seat, when Host plays is on */
+  function gmTlSeat(){
+    var c = host && host.ctl;
+    if(!c || !c.hostPlayer || !c.hostAct || host.phase === 'ended') return null;
+    return c.stateFor(c.hostPlayer, {}).tl || null;
   }
   function gmStateMsg(){
     return { t:'gm-state', room: host ? host.code : null,
              answers: gmAnswerLines, bg: !bgAudio.paused,
              actions: gmActionList(), actsHidden: gmActsHidden,
-             players: gmPlayerList(), zoom: stageZoomPct(), zoomAuto: stageZoomAuto() };
+             players: gmPlayerList(), zoom: stageZoomPct(), zoomAuto: stageZoomAuto(),
+             tl: gmTlSeat() };
   }
   function gmBroadcast(){
     if(!host || !host.gmConns || !host.gmConns.length) return;
@@ -9229,6 +10721,15 @@
         prow.appendChild(pk);
         pbox.appendChild(prow);
       });
+    }
+
+    var seatBox = document.getElementById('gmr-seat');
+    seatBox.innerHTML = '';
+    if(d.tl){
+      var seatLbl = document.createElement('div'); seatLbl.className = 'gm-label';
+      seatLbl.textContent = 'Your seat';
+      seatBox.appendChild(seatLbl);
+      tlSeatView(seatBox, d.tl, function(x){ gmrSend({ t:'gm-cmd', cmd:'tl', m:x }); });
     }
 
     var box = document.getElementById('gmr-answers');

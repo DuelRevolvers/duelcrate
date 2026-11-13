@@ -6,13 +6,14 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 
 ## Features
 
-- **Six game styles** — build and run your own custom games:
+- **Seven game styles** — build and run your own custom games:
   - **Jeopardy Style** — a board of categories and point values; players buzz in from their phones
   - **Multiple Choice Trivia** — questions with answer choices delivered straight to every phone
   - **Feud Survey** — a board of hidden survey answers; buzz in, type a guess, and watch the board reveal matches
   - **Closest Wins** — numeric estimation showdowns; closest guess without going over takes the points
   - **Wheel Puzzle** — spin an animated wheel, call letters and solve the hidden phrase, with Bankrupt, Lose a Turn and Free Play wedges
   - **Courtroom** — two players argue a made-up case out loud while you sit as judge; everyone else takes the jury box or the witness stand
+  - **Tune Timeline** — players take turns hearing a song and placing it in their own timeline by release year; the first to hold enough songs wins
 - **Full game editor** — create, edit, duplicate, and delete your own games, with autosave as you type
 - **Bulk import from a text file** — write a whole game in Notepad and load it in one go. Every editor has an **⬆ Import questions** button and a **⬇ Template** button that hands you a pre-formatted, commented sheet for that exact style. See [Building a game from a text file](#building-a-game-from-a-text-file)
 - **Question images** — add a picture to any question in any game style
@@ -24,6 +25,8 @@ DuelCrate is a Jackbox-style party game platform that runs entirely in the brows
 - **Witnesses & jury** — anyone beyond the two lawyers takes the jury box or the witness stand. Witnesses draw a card you wrote: an identity everyone sees, and a **secret only their phone shows** — *"you're lying about exactly one detail"* — plus expert witnesses with an absurd field of expertise. There is no scheduled witness round: a lawyer gets a **Call a witness** button on their own turn and spends that turn — playing no evidence — to put someone on the stand. They question their witness, the other side cross-examines, and you can object right through the testimony before play returns to the turns. Anyone nobody calls never testifies, and the *witnesses per side* setting caps how many each lawyer may call. Jurors nudge a private sway meter as the trial runs, then deliver the verdict; you pass sentence out loud. The winning lawyer takes the points, witnesses score if the side that called them won, and jurors score for backing the verdict
 - **The jury room** — jurors get a **private chat visible only to other jurors**, pinned to their phone for the whole trial. Nothing they say reaches the lawyers, the witnesses, the big screen, or the GM console. When the closing arguments are done the jury deliberates there while the verdict buttons stay locked, and only open when you press **Open jury votes**
 - **A secret ballot** — which way the jury is leaning never touches the shared screen. The big screen shows only that a jury is out and how many votes are sealed; **the live poll goes to your GM console instead**, naming each juror and how they lean so you can read the room without the room reading it. The moment the verdict lands, the split is revealed to everyone — tally, meter, and every juror's vote by name
+- **The timeline** — on each turn, a song plays and the active player taps a slot in their timeline, then locks it in. Other players can spend a token to **Challenge** and pick a different slot; if the active player is wrong and the challenger is right, the challenger steals the card. Anyone can tap **I know it!** to join a queue to name the title and artist out loud, and the first correct answer earns a token. Tokens are capped, and a player can trade them for a free song placed in the right slot. You set the songs to win, starting tokens, token cap, trade cost, challenge cost and challenge window in the editor. Turn on **Host plays** to take a seat yourself: your timeline and controls appear in GM Remote, and the answer key stays hidden until you answer or pass
+- **Spotify playback** — connect your Spotify account in **Settings** and each song starts on its own on your phone, computer or speaker through Spotify Connect, with Spotify left in the background. A song without a link is found by search. Without Spotify connected, **▶ Play song** opens the song in a new tab instead. See [Setting up Spotify](#setting-up-spotify)
 - **Phones as controllers** — buzzers, answer choices, wagers, typed answers, and votes, with haptic feedback and reconnect support if someone drops (rejoin with the same name to keep your score)
 - **QR code joining** — the lobby shows a scannable code that takes players straight to the join page
 - **Set points on everything** — every question has a defined point value; no speed bonuses, no surprises
@@ -58,10 +61,51 @@ The format is the same idea for every style: `#` starts a comment, `KEY: value` 
 | Closest Wins | [`duelcrate-closest-template.txt`](templates/duelcrate-closest-template.txt) | `Q:` and a numeric `ANSWER:` |
 | Wheel Puzzle | [`duelcrate-wheel-template.txt`](templates/duelcrate-wheel-template.txt) | `CATEGORY:` and `PUZZLE:` per puzzle, plus `WEDGES:` and the bonus round |
 | Courtroom | [`duelcrate-court-template.txt`](templates/duelcrate-court-template.txt) | one `EVIDENCE:` line per card, plus `WITNESS: who they are \| their secret` |
+| Tune Timeline | [`duelcrate-timeline-template.txt`](templates/duelcrate-timeline-template.txt) | one `SONG: Title \| Artist \| Year \| Spotify link` line per song, or `SONG:` / `ARTIST:` / `YEAR:` / `LINK:` blocks |
 
-A sheet can also set game-wide options: `NAME`, `MAX PLAYERS`, Jeopardy's `VALUES` and `FINAL Q` / `FINAL A`, the Wheel's `WEDGES`, `VOWEL COST` and `BONUS PUZZLE`, and the Courtroom's `JUDGE WRITES CHARGE`, `CARDS EACH` and `OBJECTIONS EACH`. Anything you leave out keeps its current value.
+A sheet can also set game-wide options: `NAME`, `MAX PLAYERS`, Jeopardy's `VALUES` and `FINAL Q` / `FINAL A`, the Wheel's `WEDGES`, `VOWEL COST` and `BONUS PUZZLE`, the Courtroom's `JUDGE WRITES CHARGE`, `CARDS EACH`, `OBJECTIONS EACH` and `TOP UP EVIDENCE`, and Tune Timeline's `SONGS TO WIN`, `STARTING TOKENS`, `TOKEN CAP`, `TRADE COST`, `CHALLENGE COST`, `CHALLENGE SECONDS` and `HOST PLAYS`. Anything you leave out keeps its current value. Tune Timeline skips a song that's already in the game, so importing the same sheet twice is safe.
 
 The importer is deliberately forgiving — it accepts `A)` / `A.` / `A:` for choices, takes `CORRECT:` as a letter, a number or the answer text, copes with Windows line endings, and skips any block it can't make sense of rather than failing the whole file. If nothing lands, it tells you instead of silently doing nothing. Pictures are the one thing a text file can't carry; add those in the editor.
+
+## Setting up Spotify
+
+Tune Timeline can start each song on your own Spotify app. Only the host connects, and playback needs Spotify Premium. Player phones don't need Spotify.
+
+1. Sign in to the [Spotify developer dashboard](https://developer.spotify.com/dashboard) and create an app. Select **Web API** when it asks which APIs you use.
+2. In DuelCrate, open **Settings** and find the **Spotify** section. Copy the address shown under **Redirect URI**.
+3. In your Spotify app's settings, add that address as a redirect URI, and then copy the app's **Client ID**.
+4. Paste the client ID into DuelCrate's **Settings**, and then click **Connect Spotify**. Sign in to Spotify in the window that opens.
+5. Open the Spotify app on the phone or computer that plays the music.
+6. In a Tune Timeline game, click **🔈 Pick a device** and choose that device. You can do this from GM Remote too.
+
+Sign-in works only from a web address, such as the published copy or `http://127.0.0.1`. Spotify doesn't accept `localhost` or a file opened from disk. The sign-in stays in your browser, and nothing goes to a server.
+
+Spotify shows the song in its own app and in your phone's notifications. Keep that screen out of sight, especially if you turn on **Host plays**.
+
+The [Spotify Developer Policy](https://developer.spotify.com/policy/) doesn't allow games built on its API, so this feature is for personal use. If Spotify turns off your app, **▶ Play song** still opens each song in a new tab.
+
+## Picking genres for Tune Timeline
+
+In a Tune Timeline lobby, the **Songs** panel sets where the songs come from. You can use the crate's own songs, pick genres, or both. Each game draws random songs from the top 200 of every genre you pick.
+
+- **Genre buttons** come from the lists in the `lists/` folder. Click a genre to add it, and click it again to remove it.
+- **Add genre** takes any genre you type, such as *yacht rock*. DuelCrate gets that genre's top songs from Last.fm and looks up each song's original year on MusicBrainz, about one song a second. The game can start once enough songs are ready, and songs that get a year later join the deck. This needs a free [Last.fm API key](https://www.last.fm/api/account/create), pasted into **Settings > Last.fm**.
+
+Spotify no longer lets apps like this one read its genre categories, popularity, or other people's playlists, so the lists come from Last.fm listener counts instead. The songs still play through Spotify.
+
+### Keeping the genre lists up to date
+
+`tools/build-song-lists.js` builds one list per genre in `lists/genres.json`, plus `lists/index.json`. A GitHub Actions workflow, `.github/workflows/song-lists.yml`, runs it every Monday and commits the results.
+
+1. Upload `lists/`, `tools/`, and `.github/workflows/song-lists.yml` to the repository.
+2. In the repository, go to **Settings > Secrets and variables > Actions**, and add a secret named `LASTFM_API_KEY` that holds your Last.fm API key.
+3. In the **Actions** tab, open **Song lists** and click **Run workflow**. The first run looks up thousands of years and can take a few hours. Later runs look up only new songs.
+
+To add or remove genres, edit `lists/genres.json`. Each entry has a display `name` and a Last.fm `tag`. To run the builder on your own computer, use Node 18 or later:
+
+```bash
+LASTFM_API_KEY=your-key node tools/build-song-lists.js
+```
 
 ## How it works
 

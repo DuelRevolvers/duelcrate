@@ -1,0 +1,37 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  WHEEL PUZZLE
+#  One puzzle per block. CATEGORY is the hint shown above the board.
+#  WEDGES sets the wheel: numbers for cash, or the words
+#  Bankrupt, Lose a Turn, and Free Play. Leave it out to keep the
+#  classic wheel. Delete the BONUS lines to skip the bonus round.
+
+TYPE: wheel
+NAME: Wheel Puzzle Night
+MAX PLAYERS: 20
+VOWEL COST: 250
+WEDGES: 2500, 900, 700, 800, Bankrupt, 550, 650, 500, 700, Lose a Turn, 600, 650, 500, 900, Free Play, 600, 550, 800, 500, Bankrupt, 650, 500, 700, 600
+BONUS: yes
+BONUS CATEGORY: Event
+BONUS PUZZLE: Quiz Night
+BONUS PRIZE: 2000
+
+CATEGORY: Phrase
+PUZZLE: A watched pot never boils
+
+CATEGORY: Person
+PUZZLE: Abraham Lincoln
+
+CATEGORY: Place
+PUZZLE: The Grand Canyon
+
+# Copy the block above for each new puzzle.

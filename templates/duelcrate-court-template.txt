@@ -1,0 +1,67 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  COURTROOM
+#  One EVIDENCE line per card. Each lawyer is dealt a hand of them
+#  at the start and has to argue them into the case.
+#
+#  Write at least twice CARDS EACH (six is the floor). Go well past
+#  that if you want a different deal every trial.
+#
+#  JUDGE WRITES CHARGE: no  -> both lawyers pitch a charge and you
+#  pick one; whoever wrote it prosecutes.
+#  JUDGE WRITES CHARGE: yes -> you write it yourself.
+#
+#  TOP UP EVIDENCE: yes -> if the deck is short, generated cards
+#  fill the gap when cards are dealt, and the six-card floor is
+#  skipped. Your own cards are dealt first. Set no to turn it off.
+
+TYPE: court
+NAME: Night Court
+MAX PLAYERS: 12
+JUDGE WRITES CHARGE: no
+CARDS EACH: 3
+OBJECTIONS EACH: 3
+WITNESSES PER SIDE: 1
+WINNING LAWYER: 1000
+JUROR POINTS: 100
+TOP UP EVIDENCE: yes
+
+EVIDENCE: A receipt for 400 rubber ducks
+EVIDENCE: A single muddy boot, size 14
+EVIDENCE: Thirty-seven unsent letters, all to the same address
+EVIDENCE: A parrot that only says one word
+EVIDENCE: A library card last used in 1997
+EVIDENCE: A birthday cake with the name scraped off
+EVIDENCE: Security footage that is entirely out of focus
+EVIDENCE: A hotel key card for a hotel that burned down
+EVIDENCE: One glove, turned inside out
+EVIDENCE: A grocery list with the last item torn away
+EVIDENCE: A trophy for second place, heavily dented
+EVIDENCE: A map with one town circled twice
+
+# --- Witnesses (optional) ---------------------------------
+# WITNESS: who they are | the secret only they will see
+# EXPERT:  a field of expertise | the secret only they will see
+#
+# Anyone who picks Witness in the lobby draws one of these. The
+# identity shows on the big screen; the secret goes only to them.
+
+WITNESS: The neighbour who never sleeps | You saw everything, but you are lying about one detail
+WITNESS: The defendant's oldest friend | You would say anything to protect them, and it shows
+WITNESS: Someone who just happened to be passing | You were not passing. You will not say why you were there
+WITNESS: The person who called it in | You regret calling it in and keep apologising to the defendant
+EXPERT: Competitive hedge trimming | You have never actually done this and will not admit it
+EXPERT: Nineteenth-century boat naming conventions | Every answer must somehow come back to boats
+
+# The best cards are specific, useless on their own, and could cut
+# either way. Leave the crime out of them - the charge gets invented
+# at the table.

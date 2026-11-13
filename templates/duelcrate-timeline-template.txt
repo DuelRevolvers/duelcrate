@@ -1,0 +1,53 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  TUNE TIMELINE
+#  One SONG line per song, with the parts split by | like this:
+#
+#    SONG: Title | Artist | Year | Spotify track link
+#
+#  Title and a 4-digit year are required. Use the year the song
+#  first came out, not the year of a remaster or a compilation.
+#
+#  To get the link in Spotify: Share > Copy Song Link. It looks
+#  like https://open.spotify.com/track/... A song without a link
+#  is found by a Spotify search, which can pick the wrong version.
+#
+#  Songs do not need blank lines between them. A song that is
+#  already in the game is skipped, so importing twice is safe.
+#
+#  Plan on about 15 songs per player for a 10-song game.
+
+TYPE: timeline
+NAME: Tune Timeline Night
+MAX PLAYERS: 10
+SONGS TO WIN: 10
+STARTING TOKENS: 2
+TOKEN CAP: 5
+TRADE COST: 3
+CHALLENGE COST: 1
+CHALLENGE SECONDS: 10
+HOST PLAYS: no
+
+SONG: Respect | Aretha Franklin | 1967
+SONG: Dancing Queen | ABBA | 1976
+SONG: Billie Jean | Michael Jackson | 1982
+SONG: Smells Like Teen Spirit | Nirvana | 1991
+SONG: Wannabe | Spice Girls | 1996
+SONG: Hey Ya! | Outkast | 2003
+SONG: Rolling in the Deep | Adele | 2010
+SONG: Uptown Funk | Mark Ronson | 2014
+
+# Add the link as a fourth part so the right version plays:
+# SONG: Title | Artist | 1999 | https://open.spotify.com/track/...
+
+# Spread the songs across the decades. A deck that is all one
+# decade makes every placement a coin flip.

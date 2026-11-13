@@ -1,0 +1,33 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  FEUD SURVEY
+#  List each survey answer on its own line starting with a dash.
+#  Put the number of people who said it after a | (pipe).
+#  Up to 8 answers per survey; the top ones score the most.
+
+TYPE: feud
+NAME: Feud Survey
+MAX PLAYERS: 20
+
+Q: Name something you take to the beach.
+- Towel | 30
+- Sunscreen | 25
+- Cooler | 18
+- Umbrella | 12
+
+Q: Name a reason you might be late for work.
+- Traffic | 42
+- Overslept | 28
+- Bad weather | 15
+- Car trouble | 9
+
+# Copy the block above for each new survey.

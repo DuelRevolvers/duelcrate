@@ -1,0 +1,28 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  CLOSEST WINS
+#  ANSWER must be a number. Closest guess without going over
+#  takes the points. POINTS is optional and defaults to 100.
+
+TYPE: closest
+NAME: Closest Wins
+MAX PLAYERS: 20
+
+Q: How many keys are on a standard piano?
+ANSWER: 88
+POINTS: 100
+
+Q: How many bones are in the adult human body?
+ANSWER: 206
+POINTS: 100
+
+# Copy the block above for each new question.

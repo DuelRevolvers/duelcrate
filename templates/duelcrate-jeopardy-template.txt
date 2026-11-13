@@ -1,0 +1,54 @@
+# ============================================================
+#  DuelCrate question sheet
+# ============================================================
+#  Fill this in, save it as a plain .txt file, then open your
+#  game in DuelCrate and click "Import questions".
+#
+#  - Lines starting with # are notes. They are ignored.
+#  - Leave ONE BLANK LINE between questions.
+#  - Importing ADDS to the questions already in your game.
+#  - Pictures can't come from this file — add those in the editor.
+# ------------------------------------------------------------
+#  JEOPARDY STYLE
+#  VALUES sets the point rows (2-6 of them).
+#  A CATEGORY line starts a new column; the Q/A blocks under it
+#  belong to that column. VALUE says which row the clue sits in.
+#  Add "DAILY DOUBLE: yes" to any clue to make it worth double.
+#  Up to 6 categories. The FINAL lines are optional.
+
+TYPE: jeopardy
+NAME: Quiz Board
+MAX PLAYERS: 20
+VALUES: 100, 200, 300, 400, 500
+
+CATEGORY: World Capitals
+
+Q: This city on the Seine is home to the Louvre.
+A: Paris
+VALUE: 100
+
+Q: This Nordic capital sits on a fjord of the same name.
+A: Oslo
+VALUE: 200
+
+Q: This capital is the southernmost in mainland Europe.
+A: Athens
+VALUE: 300
+DAILY DOUBLE: yes
+
+CATEGORY: Science
+
+Q: This gas makes up about 78% of the air you breathe.
+A: Nitrogen
+VALUE: 100
+
+Q: This is the only metal that is liquid at room temperature.
+A: Mercury
+VALUE: 200
+
+# Optional final round:
+FINAL CATEGORY: Astronomy
+FINAL Q: This is the largest planet in our solar system.
+FINAL A: Jupiter
+
+# Copy a CATEGORY block for each new column.
