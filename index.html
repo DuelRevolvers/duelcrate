@@ -1803,6 +1803,7 @@
     if(t.canChallenge) btns.appendChild(btn('Challenge' + (t.challengeCost ? ' \u00B7 ' + t.challengeCost + ' \uD83E\uDE99' : ''), 'gold', { act:'challenge' }));
     if(t.youNamer) btns.appendChild(btn('Pass', '', { act:'pass' }));
     if(t.canKnow) btns.appendChild(btn('I know it!', '', { act:'know' }));
+    if(t.canSkip) btns.appendChild(btn('Skip song \u00B7 ' + t.skipCost + ' \uD83E\uDE99', '', { act:'skip' }));
     if(t.canTrade) btns.appendChild(btn('Trade ' + t.tradeCost + ' \uD83E\uDE99 for a song', '', { act:'trade' }));
     if(btns.firstChild) w.appendChild(btns);
     if(!t.canKnow && !t.youNamer && t.queuePos > 0 && ph !== 'ready' && ph !== 'result' && ph !== 'over')
@@ -2717,6 +2718,10 @@
   function spotPause(){
     if(!spotReady() || !spot.deviceId) return;
     spotApi('PUT', '/me/player/pause?' + spotDevQ()).catch(function(){});
+  }
+  function spotResume(){
+    if(!spotReady() || !spot.deviceId) return Promise.reject(new Error('Pick a Spotify device first.'));
+    return spotApi('PUT', '/me/player/play?' + spotDevQ());
   }
   function spotDevices(){
     return spotApi('GET', '/me/player/devices').then(function(j){
@@ -5090,7 +5095,7 @@
     var tnote = document.createElement('div'); tnote.className = 'tq-foot';
     tnote.textContent = 'Players take turns. Each turn, a song plays and the player places it in '
       + 'their timeline by release year. Naming the title and artist earns a token. Other players '
-      + 'can spend tokens to challenge a placement, and a player can trade tokens for a free song.';
+      + 'can spend tokens to challenge a placement, and a player can trade tokens for a free song or spend 1 token to skip the current song.';
     t1.appendChild(tnote);
     wrap.appendChild(t1);
 
@@ -6532,13 +6537,16 @@
       return p === active && deck.length > 0 && p.tl.tokens >= tradeCost
           && ((phase === 'place' && !locked) || phase === 'result');
     }
+    function canSkip(p){
+      return p === active && phase === 'place' && !locked && deck.length > 0 && p.tl.tokens >= skipCost;
+    }
 
     /* ---- the answer key ----
        When the host plays, the key stays hidden until the host has answered
        or passed, or can no longer answer. Players name in normal order.
        Anyone ahead of the host goes into `heard`; once the key shows, the
        host judges those answers in order, then the host's own.            */
-    var heard = [];
+    var heard = [], playState = 'stopped', skipCost = 1;
     function hostPending(){
       return !!hostP && !keyShown && tried.indexOf(hostP) < 0 && hostP.tl.tokens < cap
           && (active === hostP || queue.indexOf(hostP) >= 0);
@@ -6563,13 +6571,16 @@
         if(order[turn].connected) break;
       }
       active = order[turn];
+      newSong();
+    }
+    function newSong(){
       song = deck.shift();
       slot = null; locked = false;
       challenger = null; chalSlot = null; chalLocked = false;
       queue = []; tried = []; heard = []; namer = null; namedBy = null; keyShown = false;
       result = null;
       phase = 'place';
-      devPick = false; spotFail = false; spotMsg = '';
+      devPick = false; spotFail = false; spotMsg = ''; playState = 'stopped';
       sync();
       if(spotReady() && spot.deviceId) playSong();
     }
@@ -6677,24 +6688,49 @@
       if(!spotReady()){ openTab(); return; }
       if(!spotLoad().deviceId){ openDevices(); return; }
       var n = ++playSeq;
-      spotFail = false;
+      spotFail = false; playState = 'starting';
       spotMsg = 'Starting the song on ' + spot.deviceName + '…';
       render();
       spotPlay(song).then(function(){
         if(n !== playSeq) return;
+        playState = 'playing';
         spotMsg = '♪ Playing on ' + spot.deviceName + '.';
         render();
       }, function(e){
         if(n !== playSeq) return;
-        spotFail = true;
+        spotFail = true; playState = 'stopped';
         spotMsg = '⚠️ ' + e.message;
         render();
       });
     }
     function stopSong(){
       playSeq++;
+      playState = playState === 'playing' || playState === 'paused' ? 'paused' : 'stopped';
       spotFail = false; spotMsg = '';
       spotPause();
+    }
+    /* one persistent button: start, pause, and resume the current song */
+    function togglePlay(){
+      if(!song) return;
+      if(!spotReady() || !spotLoad().deviceId || spotFail || playState === 'stopped'){ playSong(); return; }
+      var n = ++playSeq;
+      if(playState === 'playing' || playState === 'starting'){
+        playState = 'paused'; spotMsg = '⏸ Paused.';
+        spotPause(); render(); return;
+      }
+      playState = 'playing'; spotMsg = '♪ Playing on ' + spot.deviceName + '.';
+      render();
+      spotResume().catch(function(e){
+        if(n !== playSeq) return;
+        spotFail = true; playState = 'stopped';
+        spotMsg = '⚠️ ' + e.message;
+        render();
+      });
+    }
+    function playBtn(){
+      var on = spotReady() && (playState === 'playing' || playState === 'starting');
+      var label = on ? '⏸ Pause' : (spotReady() && playState === 'paused') ? '▶ Play' : '▶ Play song';
+      return stageBtn(label, phase === 'place' ? 'gold' : '', togglePlay);
     }
     function openDevices(){
       devPick = true; devList = null;
@@ -6753,6 +6789,13 @@
       else if(a === 'pass'){
         if(phase === 'name' && namer === p){ tried.push(p); advanceNamer(); }
       }
+      else if(a === 'skip'){
+        if(!canSkip(p)) return;
+        p.tl.tokens -= skipCost;
+        stopSong();
+        song = null; slot = null;
+        newSong();
+      }
       else if(a === 'trade'){
         if(!canTrade(p)) return;
         p.tl.tokens -= tradeCost;
@@ -6802,17 +6845,14 @@
           big = 'Where does this song go?';
           note = slot === null ? active.name + ' is choosing a slot.'
                                : 'Slot chosen. Waiting for ' + active.name + ' to lock in.';
-          acts.appendChild(stageBtn('▶ Play song', 'gold', playSong));
         }else if(phase === 'challenge'){
           big = 'Anyone want to challenge?';
           note = 'Tap Challenge on your phone' + (chalCost ? ' (' + chalCost + ' token' + (chalCost === 1 ? '' : 's') + ').' : '.');
-          acts.appendChild(stageBtn('▶ Play song', '', playSong));
           acts.appendChild(stageBtn('End challenge', 'gold', endChallenge));
         }else if(phase === 'chalPick'){
           big = challenger.name + ' challenges!';
           note = chalSlot === null ? challenger.name + ' is choosing a different slot.'
                                    : 'Slot chosen. Waiting for ' + challenger.name + ' to lock in.';
-          acts.appendChild(stageBtn('▶ Play song', '', playSong));
           acts.appendChild(stageBtn('Cancel challenge', '', endChallenge));
         }else if(phase === 'name'){
           var held = hostPending() && namer !== hostP;
@@ -6835,7 +6875,6 @@
             acts.appendChild(stageBtn('✓ Correct', 'gold', function(){ judge(true); }));
             acts.appendChild(stageBtn('✗ Wrong', '', function(){ judge(false); }));
           }
-          acts.appendChild(stageBtn('▶ Play song', '', playSong));
         }else if(phase === 'ready'){
           big = namedBy ? namedBy.name + ' named it! +1 token' : 'Nobody named it.';
           note = 'Ready for the reveal.';
@@ -6847,6 +6886,7 @@
                : '✗ Wrong slot. The card is discarded.';
           acts.appendChild(stageBtn((someoneWon() || !deck.length) ? 'Results ▶' : 'Next turn ▶', 'gold', nextTurn));
         }
+        if(song) acts.insertBefore(playBtn(), acts.firstChild);
         if(spotFail && song && phase !== 'result') acts.appendChild(stageBtn('Open in a tab', '', openTab));
         if(spotReady()) acts.appendChild(stageBtn('🔈 ' + (spot.deviceName || 'Pick a device'), '', openDevices));
         if(phase !== 'result') acts.appendChild(stageBtn('Skip turn', '', skipTurn));
@@ -6906,6 +6946,7 @@
         namer: namer ? namer.name : '', youNamer: p === namer,
         queuePos: queue.indexOf(p) + 1,
         canTrade: canTrade(p), canKnow: canKnow(p), canChallenge: canChallenge(p),
+        canSkip: canSkip(p), skipCost: skipCost,
         players: order.map(function(o){
           return { name:o.name, cards:o.tl.cards.length, tokens:o.tl.tokens, connected:!!o.connected };
         })
