@@ -1,0 +1,1007 @@
+{
+ "name": "Disco",
+ "tag": "disco",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Dancing Queen",
+   "artist": "ABBA",
+   "year": 1976
+  },
+  {
+   "title": "Say So",
+   "artist": "Doja Cat",
+   "year": 2019
+  },
+  {
+   "title": "September",
+   "artist": "Earth, Wind & Fire",
+   "year": 1978
+  },
+  {
+   "title": "I Will Survive",
+   "artist": "Gloria Gaynor",
+   "year": 1977
+  },
+  {
+   "title": "Houdini",
+   "artist": "Dua Lipa",
+   "year": 2023
+  },
+  {
+   "title": "Don't Stop 'Til You Get Enough",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Let's Groove",
+   "artist": "Earth, Wind & Fire",
+   "year": 1981
+  },
+  {
+   "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Break My Heart",
+   "artist": "Dua Lipa",
+   "year": 2020
+  },
+  {
+   "title": "Lay All Your Love on Me",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Don't Start Now",
+   "artist": "Dua Lipa",
+   "year": 2019
+  },
+  {
+   "title": "Treasure",
+   "artist": "Bruno Mars",
+   "year": 2012
+  },
+  {
+   "title": "Love Again",
+   "artist": "Dua Lipa",
+   "year": 2020
+  },
+  {
+   "title": "Blame It on the Boogie",
+   "artist": "The Jacksons",
+   "year": 1978
+  },
+  {
+   "title": "Upside Down",
+   "artist": "Diana Ross",
+   "year": 1980
+  },
+  {
+   "title": "Young Hearts Run Free",
+   "artist": "Candi Staton",
+   "year": 1976
+  },
+  {
+   "title": "Give Life Back to Music",
+   "artist": "Daft Punk",
+   "year": 2014
+  },
+  {
+   "title": "Funkytown",
+   "artist": "Lipps, Inc.",
+   "year": 1979
+  },
+  {
+   "title": "Daddy Cool",
+   "artist": "Boney M.",
+   "year": 1976
+  },
+  {
+   "title": "Cheri Cheri Lady",
+   "artist": "Modern Talking",
+   "year": 1985
+  },
+  {
+   "title": "Ring My Bell",
+   "artist": "Anita Ward",
+   "year": 1979
+  },
+  {
+   "title": "You Should Be Dancing",
+   "artist": "Bee Gees",
+   "year": 1976
+  },
+  {
+   "title": "Hot Stuff",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "The Winner Takes It All",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Giorgio by Moroder",
+   "artist": "Daft Punk",
+   "year": 2016
+  },
+  {
+   "title": "Stayin' Alive",
+   "artist": "Bee Gees",
+   "year": 1977
+  },
+  {
+   "title": "I'm Every Woman",
+   "artist": "Chaka Khan",
+   "year": 1978
+  },
+  {
+   "title": "Tears",
+   "artist": "Sabrina Carpenter",
+   "year": 2025
+  },
+  {
+   "title": "Kung Fu Fighting",
+   "artist": "Carl Douglas",
+   "year": 1974
+  },
+  {
+   "title": "Get Down On It",
+   "artist": "Kool & the Gang",
+   "year": 1985
+  },
+  {
+   "title": "Tragedy",
+   "artist": "Bee Gees",
+   "year": 1979
+  },
+  {
+   "title": "Voulez-Vous",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "I Feel Love",
+   "artist": "Donna Summer",
+   "year": 1977
+  },
+  {
+   "title": "Vanish Into You",
+   "artist": "Lady Gaga",
+   "year": 2025
+  },
+  {
+   "title": "After LIKE",
+   "artist": "IVE",
+   "year": 2022
+  },
+  {
+   "title": "Get on the Floor",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Last Train to London",
+   "artist": "Electric Light Orchestra",
+   "year": 1979
+  },
+  {
+   "title": "Got To Be Real",
+   "artist": "Cheryl Lynn",
+   "year": 1978
+  },
+  {
+   "title": "Yes Sir, I Can Boogie",
+   "artist": "Baccara",
+   "year": 1977
+  },
+  {
+   "title": "Give It Up",
+   "artist": "KC and The Sunshine Band",
+   "year": 1982
+  },
+  {
+   "title": "It's Raining Men",
+   "artist": "The Weather Girls",
+   "year": 1982
+  },
+  {
+   "title": "You Make Me Feel (Mighty Real)",
+   "artist": "Sylvester",
+   "year": 1978
+  },
+  {
+   "title": "Bad Girls",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "Brother Louie",
+   "artist": "Modern Talking",
+   "year": 1986
+  },
+  {
+   "title": "Dynamite",
+   "artist": "BTS",
+   "year": 2020
+  },
+  {
+   "title": "Ladies Night",
+   "artist": "Kool & the Gang",
+   "year": 1979
+  },
+  {
+   "title": "Hung Up",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "Boogie Oogie Oogie",
+   "artist": "A Taste of Honey",
+   "year": 1978
+  },
+  {
+   "title": "Supernature",
+   "artist": "Cerrone",
+   "year": 1977
+  },
+  {
+   "title": "Good Times",
+   "artist": "Chic",
+   "year": 1979
+  },
+  {
+   "title": "You Sexy Thing",
+   "artist": "Hot Chocolate",
+   "year": 1975
+  },
+  {
+   "title": "Zombieboy",
+   "artist": "Lady Gaga",
+   "year": 2025
+  },
+  {
+   "title": "I'm Coming Out",
+   "artist": "Diana Ross",
+   "year": 1980
+  },
+  {
+   "title": "Ma Baker",
+   "artist": "Boney M.",
+   "year": 1977
+  },
+  {
+   "title": "Disco Inferno",
+   "artist": "The Trammps",
+   "year": 1976
+  },
+  {
+   "title": "Levitating",
+   "artist": "Dua Lipa",
+   "year": 2020
+  },
+  {
+   "title": "I'm So Excited",
+   "artist": "The Pointer Sisters",
+   "year": 1982
+  },
+  {
+   "title": "Celebration",
+   "artist": "Kool & the Gang",
+   "year": 1980
+  },
+  {
+   "title": "Y.M.C.A.",
+   "artist": "Village People",
+   "year": 1978
+  },
+  {
+   "title": "Da Ya Think I'm Sexy?",
+   "artist": "Rod Stewart",
+   "year": 1978
+  },
+  {
+   "title": "That's The Way (I Like It)",
+   "artist": "KC and The Sunshine Band",
+   "year": 1975
+  },
+  {
+   "title": "CUFF IT",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Shake Your Groove Thing",
+   "artist": "Peaches & Herb",
+   "year": 1978
+  },
+  {
+   "title": "Give It To Me Baby",
+   "artist": "Rick James",
+   "year": 1981
+  },
+  {
+   "title": "Burn This Disco Out",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Canned Heat",
+   "artist": "Jamiroquai",
+   "year": 1984
+  },
+  {
+   "title": "Heart of Glass",
+   "artist": "Blondie",
+   "year": 1978
+  },
+  {
+   "title": "Last Dance",
+   "artist": "Donna Summer",
+   "year": 1978
+  },
+  {
+   "title": "YMCA",
+   "artist": "Village People",
+   "year": 1978
+  },
+  {
+   "title": "On the Radio",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "Murder on the Dancefloor",
+   "artist": "Sophie Ellis-Bextor",
+   "year": 2001
+  },
+  {
+   "title": "Get Down Saturday Night",
+   "artist": "Oliver Cheatham",
+   "year": 1983
+  },
+  {
+   "title": "I Feel It Coming",
+   "artist": "The Weeknd",
+   "year": 2021
+  },
+  {
+   "title": "Super Freak",
+   "artist": "Rick James",
+   "year": 1981
+  },
+  {
+   "title": "Moskau",
+   "artist": "Dschinghis Khan",
+   "year": 1979
+  },
+  {
+   "title": "If I Can't Have You",
+   "artist": "Yvonne Elliman",
+   "year": 1977
+  },
+  {
+   "title": "Super Trouper",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Mamma Mia",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "VIRGO'S GROOVE",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Everything Now",
+   "artist": "Arcade Fire",
+   "year": 2017
+  },
+  {
+   "title": "Soup for One",
+   "artist": "Chic",
+   "year": 1982
+  },
+  {
+   "title": "Take a Chance on Me",
+   "artist": "ABBA",
+   "year": 1977
+  },
+  {
+   "title": "Rivers of Babylon",
+   "artist": "Boney M.",
+   "year": 1978
+  },
+  {
+   "title": "Fresh",
+   "artist": "Kool & the Gang",
+   "year": 1984
+  },
+  {
+   "title": "Angeleyes",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "I'm Your Boogie Man",
+   "artist": "KC and The Sunshine Band",
+   "year": 1976
+  },
+  {
+   "title": "Workin' Day and Night",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Free Yourself",
+   "artist": "Jessie Ware",
+   "year": 2022
+  },
+  {
+   "title": "Flowers",
+   "artist": "Miley Cyrus",
+   "year": 2023
+  },
+  {
+   "title": "You're My Heart, You're My Soul",
+   "artist": "Modern Talking",
+   "year": 1984
+  },
+  {
+   "title": "Rock with You",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Just an Illusion",
+   "artist": "Imagination",
+   "year": 1982
+  },
+  {
+   "title": "Can You Feel It",
+   "artist": "The Jacksons",
+   "year": 1980
+  },
+  {
+   "title": "Shadow Dancing",
+   "artist": "Andy Gibb",
+   "year": 1978
+  },
+  {
+   "title": "I Just Want to Be Your Everything",
+   "artist": "Andy Gibb",
+   "year": 1977
+  },
+  {
+   "title": "Don't Leave Me This Way",
+   "artist": "Thelma Houston",
+   "year": 1978
+  },
+  {
+   "title": "Begin Again",
+   "artist": "Jessie Ware",
+   "year": 2023
+  },
+  {
+   "title": "Keep It Comin' Love",
+   "artist": "KC and The Sunshine Band",
+   "year": 1976
+  },
+  {
+   "title": "Macho Man",
+   "artist": "Village People",
+   "year": 1978
+  },
+  {
+   "title": "Doctor's Orders",
+   "artist": "Carol Douglas",
+   "year": 1975
+  },
+  {
+   "title": "And the Beat Goes On",
+   "artist": "The Whispers",
+   "year": 1979
+  },
+  {
+   "title": "Gotta Go Home",
+   "artist": "Boney M.",
+   "year": 1979
+  },
+  {
+   "title": "Money, Money, Money",
+   "artist": "ABBA",
+   "year": 1976
+  },
+  {
+   "title": "Love to Love You Baby",
+   "artist": "Donna Summer",
+   "year": 1975
+  },
+  {
+   "title": "One Way Ticket",
+   "artist": "Eruption",
+   "year": 1978
+  },
+  {
+   "title": "Before You Break My Heart",
+   "artist": "Jade",
+   "year": 2025
+  },
+  {
+   "title": "4:00 A.M.",
+   "artist": "大貫妙子",
+   "year": 1978
+  },
+  {
+   "title": "Last Night a D.J. Saved My Life",
+   "artist": "Indeep",
+   "year": 1982
+  },
+  {
+   "title": "12 to 12",
+   "artist": "sombr",
+   "year": 2025
+  },
+  {
+   "title": "The Feels",
+   "artist": "TWICE",
+   "year": 2021
+  },
+  {
+   "title": "Love You Inside Out",
+   "artist": "Bee Gees",
+   "year": 1979
+  },
+  {
+   "title": "I <3 YOU",
+   "artist": "Marina",
+   "year": 2025
+  },
+  {
+   "title": "Boogie Wonderland",
+   "artist": "Earth, Wind & Fire",
+   "year": 1979
+  },
+  {
+   "title": "Jive Talkin'",
+   "artist": "Bee Gees",
+   "year": 1975
+  },
+  {
+   "title": "Boogie Nights",
+   "artist": "Heatwave",
+   "year": 1978
+  },
+  {
+   "title": "Please Don't Go",
+   "artist": "KC and The Sunshine Band",
+   "year": 1979
+  },
+  {
+   "title": "Boogie Shoes",
+   "artist": "KC and The Sunshine Band",
+   "year": 1975
+  },
+  {
+   "title": "Get Down Tonight",
+   "artist": "KC and The Sunshine Band",
+   "year": 1975
+  },
+  {
+   "title": "Love Sensation",
+   "artist": "Loleatta Holloway",
+   "year": 1980
+  },
+  {
+   "title": "More Than a Woman",
+   "artist": "Bee Gees",
+   "year": 1977
+  },
+  {
+   "title": "Waterloo",
+   "artist": "ABBA",
+   "year": 1974
+  },
+  {
+   "title": "Play That Funky Music",
+   "artist": "Wild Cherry",
+   "year": 1976
+  },
+  {
+   "title": "Ain't No Stoppin' Us Now",
+   "artist": "McFadden & Whitehead",
+   "year": 1976
+  },
+  {
+   "title": "A Fifth of Beethoven",
+   "artist": "Walter Murphy",
+   "year": 1976
+  },
+  {
+   "title": "She Works Hard for the Money",
+   "artist": "Donna Summer",
+   "year": 1983
+  },
+  {
+   "title": "The Less I Know the Better",
+   "artist": "Tame Impala",
+   "year": 2015
+  },
+  {
+   "title": "Geronimo's Cadillac",
+   "artist": "Modern Talking",
+   "year": 1986
+  },
+  {
+   "title": "In Your Eyes",
+   "artist": "Kylie Minogue",
+   "year": 2001
+  },
+  {
+   "title": "Sorry",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "(Shake, Shake, Shake) Shake Your Booty",
+   "artist": "KC and The Sunshine Band",
+   "year": 1976
+  },
+  {
+   "title": "Chiquitita",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Disco Heaven",
+   "artist": "Lady Gaga",
+   "year": 2007
+  },
+  {
+   "title": "Blind",
+   "artist": "Hercules and Love Affair",
+   "year": 2007
+  },
+  {
+   "title": "I Love to Love",
+   "artist": "Tina Charles",
+   "year": 1976
+  },
+  {
+   "title": "Your Disco Needs You",
+   "artist": "Kylie Minogue",
+   "year": 2000
+  },
+  {
+   "title": "Pull Up To The Bumper",
+   "artist": "Grace Jones",
+   "year": 1981
+  },
+  {
+   "title": "SOS",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "Midnight Sky",
+   "artist": "Miley Cyrus",
+   "year": 2020
+  },
+  {
+   "title": "I Love The Nightlife (Disco 'Round)",
+   "artist": "Alicia Bridges",
+   "year": 1978
+  },
+  {
+   "title": "Ai No Corrida",
+   "artist": "Quincy Jones",
+   "year": 1981
+  },
+  {
+   "title": "Hallucinate",
+   "artist": "Dua Lipa",
+   "year": 2020
+  },
+  {
+   "title": "Shame",
+   "artist": "Evelyn \"Champagne\" King",
+   "year": 1977
+  },
+  {
+   "title": "Native New Yorker",
+   "artist": "Odyssey",
+   "year": 1977
+  },
+  {
+   "title": "Born to Be Alive",
+   "artist": "Patrick Hernandez",
+   "year": 1978
+  },
+  {
+   "title": "Shake Your Body (Down to the Ground)",
+   "artist": "The Jacksons",
+   "year": 1978
+  },
+  {
+   "title": "You and I",
+   "artist": "Delegation",
+   "year": 1979
+  },
+  {
+   "title": "I Don't Feel Like Dancin'",
+   "artist": "Scissor Sisters",
+   "year": 2006
+  },
+  {
+   "title": "Fernando",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "She Can't Love You",
+   "artist": "Chemise",
+   "year": 1982
+  },
+  {
+   "title": "Take Your Time (Do It Right)",
+   "artist": "S.O.S. Band",
+   "year": 1980
+  },
+  {
+   "title": "Summer Night City",
+   "artist": "ABBA",
+   "year": 1978
+  },
+  {
+   "title": "Heaven Knows",
+   "artist": "Donna Summer",
+   "year": 1978
+  },
+  {
+   "title": "Chained to the Rhythm",
+   "artist": "Katy Perry",
+   "year": 2017
+  },
+  {
+   "title": "We Are Family",
+   "artist": "Sister Sledge",
+   "year": 1979
+  },
+  {
+   "title": "Love Is in the Air",
+   "artist": "John Paul Young",
+   "year": 1977
+  },
+  {
+   "title": "Shadow of a Man",
+   "artist": "Lady Gaga",
+   "year": 2025
+  },
+  {
+   "title": "Best of My Love",
+   "artist": "The Emotions",
+   "year": 1978
+  },
+  {
+   "title": "Night Fever",
+   "artist": "Bee Gees",
+   "year": 1977
+  },
+  {
+   "title": "Turn the Beat Around",
+   "artist": "Vicki Sue Robinson",
+   "year": 1976
+  },
+  {
+   "title": "You're a Woman",
+   "artist": "Bad Boys Blue",
+   "year": 1985
+  },
+  {
+   "title": "She's A Bad Mama Jama (She's Built, She's Stacked)",
+   "artist": "Carl Carlton",
+   "year": 1981
+  },
+  {
+   "title": "Chase",
+   "artist": "Giorgio Moroder",
+   "year": 1978
+  },
+  {
+   "title": "Go West",
+   "artist": "Village People",
+   "year": 1979
+  },
+  {
+   "title": "Haven't You Heard",
+   "artist": "Patrice Rushen",
+   "year": 1979
+  },
+  {
+   "title": "I'm In Love",
+   "artist": "Evelyn \"Champagne\" King",
+   "year": 1981
+  },
+  {
+   "title": "This Time I Know It's for Real",
+   "artist": "Donna Summer",
+   "year": 1989
+  },
+  {
+   "title": "Billie Jean",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Training Season",
+   "artist": "Dua Lipa",
+   "year": 2024
+  },
+  {
+   "title": "I Want Your Love",
+   "artist": "Chic",
+   "year": 1978
+  },
+  {
+   "title": "Rock The Boat",
+   "artist": "Hues Corporation",
+   "year": 1973
+  },
+  {
+   "title": "Jungle Boogie",
+   "artist": "Kool & the Gang",
+   "year": 1973
+  },
+  {
+   "title": "Forget Me Nots",
+   "artist": "Patrice Rushen",
+   "year": 1982
+  },
+  {
+   "title": "Little L",
+   "artist": "Jamiroquai",
+   "year": 2001
+  },
+  {
+   "title": "Knock on Wood",
+   "artist": "Amii Stewart",
+   "year": 1978
+  },
+  {
+   "title": "Grease",
+   "artist": "Frankie Valli",
+   "year": 1978
+  },
+  {
+   "title": "Can You Handle It",
+   "artist": "Sharon Redd",
+   "year": 1980
+  },
+  {
+   "title": "Gonna Get Over You",
+   "artist": "France Joli",
+   "year": 1981
+  },
+  {
+   "title": "MacArthur Park",
+   "artist": "Donna Summer",
+   "year": 1978
+  },
+  {
+   "title": "My Forbidden Lover",
+   "artist": "Chic",
+   "year": 1979
+  },
+  {
+   "title": "No More Tears (Enough Is Enough)",
+   "artist": "Donna Summer",
+   "year": 1983
+  },
+  {
+   "title": "Could It Be Magic",
+   "artist": "Donna Summer",
+   "year": 1976
+  },
+  {
+   "title": "Sunset People",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "Dracula",
+   "artist": "Tame Impala",
+   "year": 2025
+  },
+  {
+   "title": "More Than a Woman",
+   "artist": "Tavares",
+   "year": 1977
+  },
+  {
+   "title": "Love at First Sight",
+   "artist": "Kylie Minogue",
+   "year": 1988
+  },
+  {
+   "title": "Let's All Chant",
+   "artist": "Michael Zager Band",
+   "year": 1978
+  },
+  {
+   "title": "Does Your Mother Know",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Dancer",
+   "artist": "Gino Soccio",
+   "year": 1979
+  },
+  {
+   "title": "Wishing on a Star",
+   "artist": "Rose Royce",
+   "year": 1977
+  },
+  {
+   "title": "Nobody",
+   "artist": "Mitski",
+   "year": 2018
+  },
+  {
+   "title": "Magic Fly",
+   "artist": "Space",
+   "year": 1977
+  },
+  {
+   "title": "Stomp",
+   "artist": "Brothers Johnson",
+   "year": 1980
+  },
+  {
+   "title": "Spring Affair",
+   "artist": "Donna Summer",
+   "year": 1976
+  },
+  {
+   "title": "You Can Win If You Want",
+   "artist": "Modern Talking",
+   "year": 1985
+  },
+  {
+   "title": "Japanese Boy",
+   "artist": "Aneka",
+   "year": 1981
+  },
+  {
+   "title": "Fantasy",
+   "artist": "Earth, Wind & Fire",
+   "year": 1977
+  },
+  {
+   "title": "High Horse",
+   "artist": "Kacey Musgraves",
+   "year": 2018
+  },
+  {
+   "title": "Never Can Say Goodbye",
+   "artist": "Gloria Gaynor",
+   "year": 1974
+  },
+  {
+   "title": "Take Me Home",
+   "artist": "Cher",
+   "year": 1979
+  },
+  {
+   "title": "Everybody Dance",
+   "artist": "Chic",
+   "year": 1977
+  }
+ ]
+}

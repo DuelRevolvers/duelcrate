@@ -1,0 +1,92 @@
+{
+ "name": "Soundtracks",
+ "tag": "soundtrack",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Decode",
+   "artist": "Paramore",
+   "year": 2008
+  },
+  {
+   "title": "Scotty Doesn't Know",
+   "artist": "Lustra",
+   "year": 2004
+  },
+  {
+   "title": "See You Again (feat. Charlie Puth)",
+   "artist": "Wiz Khalifa",
+   "year": 2015
+  },
+  {
+   "title": "Life Is a Highway",
+   "artist": "Rascal Flatts",
+   "year": 2006
+  },
+  {
+   "title": "Far From Any Road",
+   "artist": "The Handsome Family",
+   "year": 2003
+  },
+  {
+   "title": "Talk Show Host",
+   "artist": "Radiohead",
+   "year": 1996
+  },
+  {
+   "title": "It Will Rain",
+   "artist": "Bruno Mars",
+   "year": 2011
+  },
+  {
+   "title": "Immortals",
+   "artist": "Fall Out Boy",
+   "year": 2014
+  },
+  {
+   "title": "Hearing Damage",
+   "artist": "Thom Yorke",
+   "year": 2009
+  },
+  {
+   "title": "Anyone Else But You",
+   "artist": "The Moldy Peaches",
+   "year": 2001
+  },
+  {
+   "title": "Golden",
+   "artist": "HUNTR/X",
+   "year": 2026
+  },
+  {
+   "title": "Extreme Ways",
+   "artist": "Moby",
+   "year": 2002
+  },
+  {
+   "title": "Lose Yourself",
+   "artist": "Eminem",
+   "year": 2002
+  },
+  {
+   "title": "Stuck in the Middle With You",
+   "artist": "Stealers Wheel",
+   "year": 1972
+  },
+  {
+   "title": "New Perspective",
+   "artist": "Panic! at the Disco",
+   "year": 2009
+  },
+  {
+   "title": "Grease",
+   "artist": "Frankie Valli",
+   "year": 1978
+  },
+  {
+   "title": "Young and Beautiful",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  }
+ ]
+}

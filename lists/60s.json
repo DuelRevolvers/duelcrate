@@ -1,0 +1,257 @@
+{
+ "name": "60s",
+ "tag": "60s",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "The House of the Rising Sun",
+   "artist": "The Animals",
+   "year": 1964
+  },
+  {
+   "title": "California Dreamin'",
+   "artist": "The Mamas & the Papas",
+   "year": 1967
+  },
+  {
+   "title": "God Only Knows",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Pale Blue Eyes",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "You Really Got Me",
+   "artist": "The Kinks",
+   "year": 1964
+  },
+  {
+   "title": "For What It's Worth",
+   "artist": "Buffalo Springfield",
+   "year": 1966
+  },
+  {
+   "title": "Paint It Black",
+   "artist": "The Rolling Stones",
+   "year": 1966
+  },
+  {
+   "title": "Waterloo Sunset",
+   "artist": "The Kinks",
+   "year": 1967
+  },
+  {
+   "title": "Candy Says",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "She's A Rainbow",
+   "artist": "The Rolling Stones",
+   "year": 1967
+  },
+  {
+   "title": "Bad Moon Rising",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
+  },
+  {
+   "title": "All Day and All of the Night",
+   "artist": "The Kinks",
+   "year": 1964
+  },
+  {
+   "title": "Son of a Preacher Man",
+   "artist": "Dusty Springfield",
+   "year": 1968
+  },
+  {
+   "title": "Sunshine of Your Love",
+   "artist": "Cream",
+   "year": 1967
+  },
+  {
+   "title": "Fortunate Son",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
+  },
+  {
+   "title": "White Room",
+   "artist": "Cream",
+   "year": 1968
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Jefferson Airplane",
+   "year": 1967
+  },
+  {
+   "title": "Ain't No Mountain High Enough",
+   "artist": "Marvin Gaye",
+   "year": 1996
+  },
+  {
+   "title": "Brown Eyed Girl",
+   "artist": "Van Morrison",
+   "year": 1967
+  },
+  {
+   "title": "People Are Strange",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Like a Rolling Stone",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "Light My Fire",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Under My Thumb",
+   "artist": "The Rolling Stones",
+   "year": 1966
+  },
+  {
+   "title": "Gimme Shelter",
+   "artist": "The Rolling Stones",
+   "year": 1971
+  },
+  {
+   "title": "Break on Through (to the Other Side)",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "White Rabbit",
+   "artist": "Jefferson Airplane",
+   "year": 1967
+  },
+  {
+   "title": "Ring of Fire",
+   "artist": "Johnny Cash",
+   "year": 1963
+  },
+  {
+   "title": "Respect",
+   "artist": "Aretha Franklin",
+   "year": 1967
+  },
+  {
+   "title": "All Along the Watchtower",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "Bring It on Home to Me",
+   "artist": "Sam Cooke",
+   "year": 1962
+  },
+  {
+   "title": "A Change Is Gonna Come",
+   "artist": "Sam Cooke",
+   "year": 1964
+  },
+  {
+   "title": "My Girl",
+   "artist": "The Temptations",
+   "year": 1964
+  },
+  {
+   "title": "Purple Haze",
+   "artist": "Jimi Hendrix",
+   "year": 1970
+  },
+  {
+   "title": "Touch Me",
+   "artist": "The Doors",
+   "year": 1968
+  },
+  {
+   "title": "Riders on the Storm",
+   "artist": "The Doors",
+   "year": 1971
+  },
+  {
+   "title": "Magic Carpet Ride",
+   "artist": "Steppenwolf",
+   "year": 1968
+  },
+  {
+   "title": "The Crystal Ship",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Cigarettes and Coffee",
+   "artist": "Otis Redding",
+   "year": 1966
+  },
+  {
+   "title": "While My Guitar Gently Weeps",
+   "artist": "The Beatles",
+   "year": 1968
+  },
+  {
+   "title": "Voodoo Child (Slight Return)",
+   "artist": "Jimi Hendrix",
+   "year": 1968
+  },
+  {
+   "title": "The End",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Love Me Two Times",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Try a Little Tenderness",
+   "artist": "Otis Redding",
+   "year": 1964
+  },
+  {
+   "title": "Green River",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
+  },
+  {
+   "title": "I Say a Little Prayer",
+   "artist": "Aretha Franklin",
+   "year": 1968
+  },
+  {
+   "title": "Sympathy for the Devil",
+   "artist": "The Rolling Stones",
+   "year": 1974
+  },
+  {
+   "title": "Love Her Madly",
+   "artist": "The Doors",
+   "year": 1971
+  },
+  {
+   "title": "I Heard It Through the Grapevine",
+   "artist": "Marvin Gaye",
+   "year": 1968
+  },
+  {
+   "title": "Pinball Wizard",
+   "artist": "The Who",
+   "year": 1973
+  },
+  {
+   "title": "Hold On, I'm Comin'",
+   "artist": "Sam & Dave",
+   "year": 1967
+  }
+ ]
+}

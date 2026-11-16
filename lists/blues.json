@@ -1,0 +1,72 @@
+{
+ "name": "Blues",
+ "tag": "blues",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "I'd Rather Go Blind",
+   "artist": "Etta James",
+   "year": 1967
+  },
+  {
+   "title": "Wonderful Tonight",
+   "artist": "Eric Clapton",
+   "year": 1977
+  },
+  {
+   "title": "Roadhouse Blues",
+   "artist": "The Doors",
+   "year": 1970
+  },
+  {
+   "title": "Hit the Road Jack",
+   "artist": "Ray Charles",
+   "year": 1961
+  },
+  {
+   "title": "Ain't No Sunshine",
+   "artist": "Bill Withers",
+   "year": 1971
+  },
+  {
+   "title": "At Last",
+   "artist": "Etta James",
+   "year": 1960
+  },
+  {
+   "title": "Little Wing",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "Right Place Wrong Time",
+   "artist": "Dr. John",
+   "year": 1973
+  },
+  {
+   "title": "Feeling Good",
+   "artist": "Nina Simone",
+   "year": 1965
+  },
+  {
+   "title": "Hey Joe",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "Bell Bottom Blues",
+   "artist": "Derek and the Dominos",
+   "year": 1970
+  },
+  {
+   "title": "Cocaine",
+   "artist": "Eric Clapton",
+   "year": 1977
+  },
+  {
+   "title": "Cigarettes and Coffee",
+   "artist": "Otis Redding",
+   "year": 1966
+  }
+ ]
+}

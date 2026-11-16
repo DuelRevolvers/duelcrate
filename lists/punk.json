@@ -1,0 +1,1007 @@
+{
+ "name": "Punk",
+ "tag": "punk",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Basket Case",
+   "artist": "Green Day",
+   "year": 1993
+  },
+  {
+   "title": "Brain Stew",
+   "artist": "Green Day",
+   "year": 1995
+  },
+  {
+   "title": "Shut Me Up",
+   "artist": "Mindless Self Indulgence",
+   "year": 2005
+  },
+  {
+   "title": "I'm Not Okay (I Promise)",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "I Fought the Law",
+   "artist": "The Clash",
+   "year": 1979
+  },
+  {
+   "title": "Hybrid Moments",
+   "artist": "Misfits",
+   "year": 1985
+  },
+  {
+   "title": "American Idiot",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "I Wanna Be Sedated",
+   "artist": "Ramones",
+   "year": 1978
+  },
+  {
+   "title": "Welcome to Paradise",
+   "artist": "Green Day",
+   "year": 1991
+  },
+  {
+   "title": "Self Esteem",
+   "artist": "The Offspring",
+   "year": 1994
+  },
+  {
+   "title": "Police Truck",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "All the Small Things",
+   "artist": "blink-182",
+   "year": 1999
+  },
+  {
+   "title": "Fat Lip",
+   "artist": "Sum 41",
+   "year": 2001
+  },
+  {
+   "title": "Good Good Things",
+   "artist": "Descendents",
+   "year": 1985
+  },
+  {
+   "title": "Miss Murder",
+   "artist": "AFI",
+   "year": 2006
+  },
+  {
+   "title": "Anarchy in the U.K.",
+   "artist": "Sex Pistols",
+   "year": 1976
+  },
+  {
+   "title": "Where Eagles Dare",
+   "artist": "Misfits",
+   "year": 1979
+  },
+  {
+   "title": "Dance, Dance",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "Waiting Room",
+   "artist": "Fugazi",
+   "year": 1988
+  },
+  {
+   "title": "Hope",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Lexicon Devil",
+   "artist": "The Germs",
+   "year": 1978
+  },
+  {
+   "title": "God Save the Queen",
+   "artist": "Sex Pistols",
+   "year": 1977
+  },
+  {
+   "title": "Suburban Home",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Thank You for the Venom",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Cemetery Drive",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "London Calling",
+   "artist": "The Clash",
+   "year": 1979
+  },
+  {
+   "title": "Rise Above",
+   "artist": "Black Flag",
+   "year": 1981
+  },
+  {
+   "title": "Come Out and Play",
+   "artist": "The Offspring",
+   "year": 1994
+  },
+  {
+   "title": "Last Caress",
+   "artist": "Misfits",
+   "year": 1980
+  },
+  {
+   "title": "What's My Age Again?",
+   "artist": "blink-182",
+   "year": 1998
+  },
+  {
+   "title": "Pet Sematary",
+   "artist": "Ramones",
+   "year": 1989
+  },
+  {
+   "title": "You Know What They Do to Guys Like Us in Prison",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Rebel Girl",
+   "artist": "Bikini Kill",
+   "year": 1992
+  },
+  {
+   "title": "You're Gonna Go Far, Kid",
+   "artist": "The Offspring",
+   "year": 2008
+  },
+  {
+   "title": "Why Don't You Get a Job",
+   "artist": "The Offspring",
+   "year": 1998
+  },
+  {
+   "title": "Neat Neat Neat",
+   "artist": "The Damned",
+   "year": 1977
+  },
+  {
+   "title": "Pretty Fly (For a White Guy)",
+   "artist": "The Offspring",
+   "year": 1998
+  },
+  {
+   "title": "Na Na Na (Na Na Na Na Na Na Na Na Na)",
+   "artist": "My Chemical Romance",
+   "year": 2010
+  },
+  {
+   "title": "Dirty Little Secret",
+   "artist": "The All-American Rejects",
+   "year": 2005
+  },
+  {
+   "title": "Dancing With Myself",
+   "artist": "Generation X",
+   "year": 1995
+  },
+  {
+   "title": "I Miss You",
+   "artist": "blink-182",
+   "year": 2003
+  },
+  {
+   "title": "She",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Holiday / Boulevard of Broken Dreams",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Kill the Poor",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "I'm Not a Loser",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Want You Bad",
+   "artist": "The Offspring",
+   "year": 2000
+  },
+  {
+   "title": "Minor Threat",
+   "artist": "Minor Threat",
+   "year": 1981
+  },
+  {
+   "title": "The Jetset Life Is Gonna Kill You",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Bikeage",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Time Bomb",
+   "artist": "Rancid",
+   "year": 1995
+  },
+  {
+   "title": "Lust For Life",
+   "artist": "Iggy Pop",
+   "year": 1977
+  },
+  {
+   "title": "Soup Is Good Food",
+   "artist": "Dead Kennedys",
+   "year": 1985
+  },
+  {
+   "title": "American Jesus",
+   "artist": "Bad Religion",
+   "year": 1993
+  },
+  {
+   "title": "Boulevard of Broken Dreams",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Institutionalized",
+   "artist": "Suicidal Tendencies",
+   "year": 1983
+  },
+  {
+   "title": "Punk Rock Girl",
+   "artist": "The Dead Milkmen",
+   "year": 1988
+  },
+  {
+   "title": "Give 'Em Hell, Kid",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Burnout",
+   "artist": "Green Day",
+   "year": 1993
+  },
+  {
+   "title": "Adam's Song",
+   "artist": "blink-182",
+   "year": 1999
+  },
+  {
+   "title": "Cyco Vision",
+   "artist": "Suicidal Tendencies",
+   "year": 1998
+  },
+  {
+   "title": "Teenage Kicks",
+   "artist": "The Undertones",
+   "year": 1978
+  },
+  {
+   "title": "To the End",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Code Blue",
+   "artist": "T.S.O.L.",
+   "year": 1981
+  },
+  {
+   "title": "Should I Stay or Should I Go",
+   "artist": "The Clash",
+   "year": 1981
+  },
+  {
+   "title": "7 Minutes in Heaven (Atavan Halen)",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "I Am a Poseur",
+   "artist": "X-Ray Spex",
+   "year": 1978
+  },
+  {
+   "title": "Holiday",
+   "artist": "Green Day",
+   "year": 2000
+  },
+  {
+   "title": "Savior",
+   "artist": "Rise Against",
+   "year": 2008
+  },
+  {
+   "title": "First Date",
+   "artist": "blink-182",
+   "year": 1999
+  },
+  {
+   "title": "Blitzkrieg Bop",
+   "artist": "Ramones",
+   "year": 1976
+  },
+  {
+   "title": "Good Riddance (Time of Your Life)",
+   "artist": "Green Day",
+   "year": 1997
+  },
+  {
+   "title": "Ruby Soho",
+   "artist": "Rancid",
+   "year": 1995
+  },
+  {
+   "title": "I Wanna Be Your Dog",
+   "artist": "The Stooges",
+   "year": 1969
+  },
+  {
+   "title": "All I Want",
+   "artist": "The Offspring",
+   "year": 1996
+  },
+  {
+   "title": "In Too Deep",
+   "artist": "Sum 41",
+   "year": 2001
+  },
+  {
+   "title": "Nervous Breakdown",
+   "artist": "Black Flag",
+   "year": 1978
+  },
+  {
+   "title": "Die, Die My Darling",
+   "artist": "Misfits",
+   "year": 1983
+  },
+  {
+   "title": "Amoeba",
+   "artist": "Adolescents",
+   "year": 1980
+  },
+  {
+   "title": "Holidays in the Sun",
+   "artist": "Sex Pistols",
+   "year": 1977
+  },
+  {
+   "title": "'Merican",
+   "artist": "Descendents",
+   "year": 2004
+  },
+  {
+   "title": "Linoleum",
+   "artist": "NOFX",
+   "year": 1994
+  },
+  {
+   "title": "Los Angeles",
+   "artist": "X",
+   "year": 1979
+  },
+  {
+   "title": "Some Kinda Hate",
+   "artist": "Misfits",
+   "year": 1985
+  },
+  {
+   "title": "The Hell Song",
+   "artist": "Sum 41",
+   "year": 2002
+  },
+  {
+   "title": "Sailin' On",
+   "artist": "Bad Brains",
+   "year": 1982
+  },
+  {
+   "title": "Girl's Not Grey",
+   "artist": "AFI",
+   "year": 2003
+  },
+  {
+   "title": "I'm Not a Punk",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "21st Century (Digital Boy)",
+   "artist": "Bad Religion",
+   "year": 1990
+  },
+  {
+   "title": "Bullet",
+   "artist": "Misfits",
+   "year": 1978
+  },
+  {
+   "title": "Rock the Casbah",
+   "artist": "The Clash",
+   "year": 1982
+  },
+  {
+   "title": "Fashionably Late",
+   "artist": "Falling in Reverse",
+   "year": 2013
+  },
+  {
+   "title": "Six Pack",
+   "artist": "Black Flag",
+   "year": 1981
+  },
+  {
+   "title": "Alternative Ulster",
+   "artist": "Stiff Little Fingers",
+   "year": 1978
+  },
+  {
+   "title": "Attitude",
+   "artist": "Misfits",
+   "year": 1978
+  },
+  {
+   "title": "Having a Blast",
+   "artist": "Green Day",
+   "year": 1993
+  },
+  {
+   "title": "London Dungeon",
+   "artist": "Misfits",
+   "year": 1981
+  },
+  {
+   "title": "Terminal Preppie",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "Helena",
+   "artist": "Misfits",
+   "year": 1999
+  },
+  {
+   "title": "Face Down",
+   "artist": "The Red Jumpsuit Apparatus",
+   "year": 2004
+  },
+  {
+   "title": "New Rose",
+   "artist": "The Damned",
+   "year": 1976
+  },
+  {
+   "title": "I Don't Wanna Hear It",
+   "artist": "Minor Threat",
+   "year": 1981
+  },
+  {
+   "title": "Banned in D.C.",
+   "artist": "Bad Brains",
+   "year": 1982
+  },
+  {
+   "title": "Skulls",
+   "artist": "Misfits",
+   "year": 1982
+  },
+  {
+   "title": "Bodies",
+   "artist": "Sex Pistols",
+   "year": 1977
+  },
+  {
+   "title": "I Want to Conquer the World",
+   "artist": "Bad Religion",
+   "year": 1989
+  },
+  {
+   "title": "Lights Out",
+   "artist": "Mindless Self Indulgence",
+   "year": 2008
+  },
+  {
+   "title": "Jesus of Suburbia",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Dig Up Her Bones",
+   "artist": "Misfits",
+   "year": 1997
+  },
+  {
+   "title": "21 Guns",
+   "artist": "Green Day",
+   "year": 2009
+  },
+  {
+   "title": "Dammit",
+   "artist": "blink-182",
+   "year": 1997
+  },
+  {
+   "title": "Moon Over Marin",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "The Passenger",
+   "artist": "Iggy Pop",
+   "year": 1977
+  },
+  {
+   "title": "Minority",
+   "artist": "Green Day",
+   "year": 2000
+  },
+  {
+   "title": "Bitches",
+   "artist": "Mindless Self Indulgence",
+   "year": 1997
+  },
+  {
+   "title": "Astro Zombies",
+   "artist": "Misfits",
+   "year": 1982
+  },
+  {
+   "title": "Baby, I Love You",
+   "artist": "Ramones",
+   "year": 1980
+  },
+  {
+   "title": "Myage",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Suspect Device",
+   "artist": "Stiff Little Fingers",
+   "year": 1978
+  },
+  {
+   "title": "Teenagers From Mars",
+   "artist": "Misfits",
+   "year": 1979
+  },
+  {
+   "title": "Scotty Doesn't Know",
+   "artist": "Lustra",
+   "year": 2004
+  },
+  {
+   "title": "Re-Education (Through Labor)",
+   "artist": "Rise Against",
+   "year": 2008
+  },
+  {
+   "title": "What Do They Know?",
+   "artist": "Mindless Self Indulgence",
+   "year": 2005
+  },
+  {
+   "title": "My War",
+   "artist": "Black Flag",
+   "year": 1984
+  },
+  {
+   "title": "Fall Back Down",
+   "artist": "Rancid",
+   "year": 2003
+  },
+  {
+   "title": "The Guns of Brixton",
+   "artist": "The Clash",
+   "year": 1979
+  },
+  {
+   "title": "Original Prankster",
+   "artist": "The Offspring",
+   "year": 2005
+  },
+  {
+   "title": "Helena",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Salad Days",
+   "artist": "Minor Threat",
+   "year": 1985
+  },
+  {
+   "title": "Chemical Warfare",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "Problems",
+   "artist": "Sex Pistols",
+   "year": 1977
+  },
+  {
+   "title": "Give It All",
+   "artist": "Rise Against",
+   "year": 2004
+  },
+  {
+   "title": "The Rock Show",
+   "artist": "blink-182",
+   "year": 1999
+  },
+  {
+   "title": "The Days of the Phoenix",
+   "artist": "AFI",
+   "year": 2000
+  },
+  {
+   "title": "Everything Turns Grey",
+   "artist": "Agent Orange",
+   "year": 1981
+  },
+  {
+   "title": "When Ya Get Drafted",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "Never Wanted to Dance",
+   "artist": "Mindless Self Indulgence",
+   "year": 2008
+  },
+  {
+   "title": "Story of My Life",
+   "artist": "Social Distortion",
+   "year": 1990
+  },
+  {
+   "title": "Identity",
+   "artist": "X-Ray Spex",
+   "year": 1978
+  },
+  {
+   "title": "TV Party",
+   "artist": "Black Flag",
+   "year": 1981
+  },
+  {
+   "title": "Feeling This",
+   "artist": "blink-182",
+   "year": 2003
+  },
+  {
+   "title": "I'm So Tired",
+   "artist": "Fugazi",
+   "year": 1999
+  },
+  {
+   "title": "No Feelings",
+   "artist": "Sex Pistols",
+   "year": 1977
+  },
+  {
+   "title": "The Boy Who Destroyed the World",
+   "artist": "AFI",
+   "year": 1999
+  },
+  {
+   "title": "Radio",
+   "artist": "Alkaline Trio",
+   "year": 2000
+  },
+  {
+   "title": "The Anthem",
+   "artist": "Good Charlotte",
+   "year": 2002
+  },
+  {
+   "title": "Parents",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Anti-Manifesto",
+   "artist": "Propagandhi",
+   "year": 1993
+  },
+  {
+   "title": "2000 Light Years Away",
+   "artist": "Green Day",
+   "year": 1991
+  },
+  {
+   "title": "Silver and Cold",
+   "artist": "AFI",
+   "year": 2003
+  },
+  {
+   "title": "Fuck Authority",
+   "artist": "Pennywise",
+   "year": 2001
+  },
+  {
+   "title": "Forward to Death",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "Whatsername",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Nice Guys Finish Last",
+   "artist": "Green Day",
+   "year": 1997
+  },
+  {
+   "title": "The Ghost of You",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Coming Clean",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Forest Fire",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "Cherry Bomb",
+   "artist": "The Runaways",
+   "year": 1976
+  },
+  {
+   "title": "Filler",
+   "artist": "Minor Threat",
+   "year": 1981
+  },
+  {
+   "title": "In the End",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Bonzo Goes to Bitburg",
+   "artist": "Ramones",
+   "year": 1985
+  },
+  {
+   "title": "Seeing Red",
+   "artist": "Minor Threat",
+   "year": 1981
+  },
+  {
+   "title": "Kabuki Girl",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "Buzzbomb",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "Warning",
+   "artist": "Green Day",
+   "year": 2000
+  },
+  {
+   "title": "City of Angels",
+   "artist": "The Distillers",
+   "year": 2002
+  },
+  {
+   "title": "Prescription",
+   "artist": "Mindless Self Indulgence",
+   "year": 2008
+  },
+  {
+   "title": "Drain the Blood",
+   "artist": "The Distillers",
+   "year": 2003
+  },
+  {
+   "title": "Emenius Sleepus",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Halloween",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "Jaded",
+   "artist": "Green Day",
+   "year": 1995
+  },
+  {
+   "title": "Your Emotions",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "\"The Take Over, the Breaks Over\"",
+   "artist": "Fall Out Boy",
+   "year": 2007
+  },
+  {
+   "title": "Pulling Teeth",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Bitchin' Camaro",
+   "artist": "The Dead Milkmen",
+   "year": 1983
+  },
+  {
+   "title": "Beat Your Heart Out",
+   "artist": "The Distillers",
+   "year": 2003
+  },
+  {
+   "title": "Government Flu",
+   "artist": "Dead Kennedys",
+   "year": 1982
+  },
+  {
+   "title": "Pervert",
+   "artist": "Descendents",
+   "year": 1985
+  },
+  {
+   "title": "Give Me the Cure",
+   "artist": "Fugazi",
+   "year": 1988
+  },
+  {
+   "title": "Communist Eyes",
+   "artist": "The Germs",
+   "year": 1992
+  },
+  {
+   "title": "Shut Up!",
+   "artist": "Simple Plan",
+   "year": 2004
+  },
+  {
+   "title": "New Girl",
+   "artist": "The Suicide Machines",
+   "year": 1995
+  },
+  {
+   "title": "The Future Is Now",
+   "artist": "The Offspring",
+   "year": 2012
+  },
+  {
+   "title": "I Kill Children",
+   "artist": "Dead Kennedys",
+   "year": 1980
+  },
+  {
+   "title": "Lost in the Supermarket",
+   "artist": "The Clash",
+   "year": 1979
+  },
+  {
+   "title": "Headfirst for Halos",
+   "artist": "My Chemical Romance",
+   "year": 2002
+  },
+  {
+   "title": "We Are 138",
+   "artist": "Misfits",
+   "year": 1978
+  },
+  {
+   "title": "Coffee Mug",
+   "artist": "Descendents",
+   "year": 1996
+  },
+  {
+   "title": "The Leaving Song Pt. II",
+   "artist": "AFI",
+   "year": 2023
+  },
+  {
+   "title": "Prayer of the Refugee",
+   "artist": "Rise Against",
+   "year": 2006
+  },
+  {
+   "title": "No Control",
+   "artist": "Bad Religion",
+   "year": 1989
+  },
+  {
+   "title": "Catalina",
+   "artist": "Descendents",
+   "year": 1982
+  },
+  {
+   "title": "The Grouch",
+   "artist": "Green Day",
+   "year": 1997
+  },
+  {
+   "title": "The Separation of Church and Skate",
+   "artist": "NOFX",
+   "year": 2003
+  },
+  {
+   "title": "Don't Call Me White",
+   "artist": "NOFX",
+   "year": 1994
+  },
+  {
+   "title": "Burning",
+   "artist": "Fugazi",
+   "year": 1988
+  },
+  {
+   "title": "Help Is on the Way",
+   "artist": "Rise Against",
+   "year": 2011
+  },
+  {
+   "title": "You",
+   "artist": "Bad Religion",
+   "year": 1983
+  },
+  {
+   "title": "Spanish Bombs",
+   "artist": "The Clash",
+   "year": 1979
+  },
+  {
+   "title": "Sassafras Roots",
+   "artist": "Green Day",
+   "year": 1994
+  },
+  {
+   "title": "Return of the Rat",
+   "artist": "Wipers",
+   "year": 1979
+  }
+ ]
+}

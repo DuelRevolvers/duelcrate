@@ -1,0 +1,1007 @@
+{
+ "name": "R&B",
+ "tag": "rnb",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Thinkin Bout You",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "Pink + White",
+   "artist": "Frank Ocean",
+   "year": 2014
+  },
+  {
+   "title": "Kiss It Better",
+   "artist": "Rihanna",
+   "year": 2016
+  },
+  {
+   "title": "Novacane",
+   "artist": "Frank Ocean",
+   "year": 2011
+  },
+  {
+   "title": "needy",
+   "artist": "Ariana Grande",
+   "year": 2019
+  },
+  {
+   "title": "Starboy",
+   "artist": "The Weeknd",
+   "year": 2023
+  },
+  {
+   "title": "Lost",
+   "artist": "Frank Ocean",
+   "year": 2010
+  },
+  {
+   "title": "The Hills",
+   "artist": "The Weeknd",
+   "year": 2015
+  },
+  {
+   "title": "Pyramids",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "American Boy",
+   "artist": "Estelle",
+   "year": 2007
+  },
+  {
+   "title": "Sure Thing",
+   "artist": "Miguel",
+   "year": 2010
+  },
+  {
+   "title": "Breakin' Dishes",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Long Way 2 Go",
+   "artist": "Cassie",
+   "year": 2006
+  },
+  {
+   "title": "No Scrubs",
+   "artist": "TLC",
+   "year": 1999
+  },
+  {
+   "title": "House of Balloons / Glass Table Girls",
+   "artist": "The Weeknd",
+   "year": 2011
+  },
+  {
+   "title": "Hold On, We're Going Home",
+   "artist": "Drake",
+   "year": 2013
+  },
+  {
+   "title": "Wicked Games",
+   "artist": "The Weeknd",
+   "year": 2011
+  },
+  {
+   "title": "Me & U",
+   "artist": "Cassie",
+   "year": 2006
+  },
+  {
+   "title": "Umbrella",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Let Me Love You",
+   "artist": "Mario",
+   "year": 2004
+  },
+  {
+   "title": "Needed Me",
+   "artist": "Rihanna",
+   "year": 2016
+  },
+  {
+   "title": "Dangerous Woman",
+   "artist": "Ariana Grande",
+   "year": 2016
+  },
+  {
+   "title": "Without Me",
+   "artist": "Halsey",
+   "year": 2018
+  },
+  {
+   "title": "Can't Feel My Face",
+   "artist": "The Weeknd",
+   "year": 2015
+  },
+  {
+   "title": "Say My Name",
+   "artist": "Destiny's Child",
+   "year": 1998
+  },
+  {
+   "title": "Closer",
+   "artist": "Ne-Yo",
+   "year": 2008
+  },
+  {
+   "title": "Sports car",
+   "artist": "Tate McRae",
+   "year": 2025
+  },
+  {
+   "title": "Locked Out of Heaven",
+   "artist": "Bruno Mars",
+   "year": 2012
+  },
+  {
+   "title": "Self Control",
+   "artist": "Frank Ocean",
+   "year": 2016
+  },
+  {
+   "title": "The Boy Is Mine",
+   "artist": "Brandy",
+   "year": 1998
+  },
+  {
+   "title": "The Party & the After Party",
+   "artist": "The Weeknd",
+   "year": 2011
+  },
+  {
+   "title": "Stay",
+   "artist": "Rihanna",
+   "year": 2013
+  },
+  {
+   "title": "Miss Independent",
+   "artist": "Ne-Yo",
+   "year": 2008
+  },
+  {
+   "title": "Bad Boy",
+   "artist": "Red Velvet",
+   "year": 2018
+  },
+  {
+   "title": "Hey Daddy (Daddy's Home)",
+   "artist": "Usher",
+   "year": 2009
+  },
+  {
+   "title": "Beautiful Liar",
+   "artist": "Beyoncé",
+   "year": 2007
+  },
+  {
+   "title": "Forrest Gump",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "Love",
+   "artist": "Keyshia Cole",
+   "year": 2005
+  },
+  {
+   "title": "So Sick",
+   "artist": "Ne-Yo",
+   "year": 2005
+  },
+  {
+   "title": "My Boo",
+   "artist": "Usher",
+   "year": 2005
+  },
+  {
+   "title": "Foolish",
+   "artist": "Ashanti",
+   "year": 2002
+  },
+  {
+   "title": "Family Affair",
+   "artist": "Mary J. Blige",
+   "year": 2000
+  },
+  {
+   "title": "Die for You",
+   "artist": "The Weeknd",
+   "year": 2016
+  },
+  {
+   "title": "Coming Down",
+   "artist": "The Weeknd",
+   "year": 2011
+  },
+  {
+   "title": "Irreplaceable",
+   "artist": "Beyoncé",
+   "year": 2006
+  },
+  {
+   "title": "Adorn",
+   "artist": "Miguel",
+   "year": 2012
+  },
+  {
+   "title": "Return of the Mack",
+   "artist": "Mark Morrison",
+   "year": 1995
+  },
+  {
+   "title": "Streets",
+   "artist": "Doja Cat",
+   "year": 2019
+  },
+  {
+   "title": "Swim Good",
+   "artist": "Frank Ocean",
+   "year": 2011
+  },
+  {
+   "title": "Pony",
+   "artist": "Ginuwine",
+   "year": 1996
+  },
+  {
+   "title": "Losing You",
+   "artist": "Solange",
+   "year": 2012
+  },
+  {
+   "title": "Wait a Minute!",
+   "artist": "Willow",
+   "year": 2015
+  },
+  {
+   "title": "How Many Drinks?",
+   "artist": "Miguel",
+   "year": 2012
+  },
+  {
+   "title": "Dilemma",
+   "artist": "Nelly",
+   "year": 2004
+  },
+  {
+   "title": "Passionfruit",
+   "artist": "Drake",
+   "year": 2017
+  },
+  {
+   "title": "Pour It Up",
+   "artist": "Rihanna",
+   "year": 2012
+  },
+  {
+   "title": "You",
+   "artist": "Lloyd",
+   "year": 2004
+  },
+  {
+   "title": "All of Me",
+   "artist": "John Legend",
+   "year": 2013
+  },
+  {
+   "title": "What's My Name?",
+   "artist": "Rihanna",
+   "year": 2009
+  },
+  {
+   "title": "I Feel It Coming",
+   "artist": "The Weeknd",
+   "year": 2021
+  },
+  {
+   "title": "After Hours",
+   "artist": "The Weeknd",
+   "year": 2020
+  },
+  {
+   "title": "Hit 'Em Up Style (Oops!)",
+   "artist": "Blu Cantrell",
+   "year": 2001
+  },
+  {
+   "title": "Chanel",
+   "artist": "Frank Ocean",
+   "year": 2017
+  },
+  {
+   "title": "Love on the Brain",
+   "artist": "Rihanna",
+   "year": 2016
+  },
+  {
+   "title": "Milkshake",
+   "artist": "Kelis",
+   "year": 2003
+  },
+  {
+   "title": "Halo",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
+   "title": "I Can Love You",
+   "artist": "Mary J. Blige",
+   "year": 1997
+  },
+  {
+   "title": "Apologize",
+   "artist": "Timbaland",
+   "year": 2007
+  },
+  {
+   "title": "Killing Me Softly with His Song",
+   "artist": "Fugees",
+   "year": 2010
+  },
+  {
+   "title": "Because of You",
+   "artist": "Ne-Yo",
+   "year": 2007
+  },
+  {
+   "title": "Grenade",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "So Anxious",
+   "artist": "Ginuwine",
+   "year": 1999
+  },
+  {
+   "title": "Diva",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
+   "title": "Reminder",
+   "artist": "The Weeknd",
+   "year": 2016
+  },
+  {
+   "title": "Obsessed",
+   "artist": "Mariah Carey",
+   "year": 2009
+  },
+  {
+   "title": "We Belong Together",
+   "artist": "Mariah Carey",
+   "year": 2005
+  },
+  {
+   "title": "thank u, next",
+   "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "If I Ain't Got You",
+   "artist": "Alicia Keys",
+   "year": 2003
+  },
+  {
+   "title": "Formation",
+   "artist": "Beyoncé",
+   "year": 2016
+  },
+  {
+   "title": "Freakum Dress",
+   "artist": "Beyoncé",
+   "year": 2006
+  },
+  {
+   "title": "telepatía",
+   "artist": "Kali Uchis",
+   "year": 2020
+  },
+  {
+   "title": "With You",
+   "artist": "Chris Brown",
+   "year": 2007
+  },
+  {
+   "title": "None Of Ur Friends Business",
+   "artist": "Ginuwine",
+   "year": 1999
+  },
+  {
+   "title": "It's a Wrap",
+   "artist": "Mariah Carey",
+   "year": 2009
+  },
+  {
+   "title": "Beautiful Girls",
+   "artist": "Sean Kingston",
+   "year": 2007
+  },
+  {
+   "title": "1 Thing",
+   "artist": "Amerie",
+   "year": 2005
+  },
+  {
+   "title": "Sorry",
+   "artist": "Beyoncé",
+   "year": 2016
+  },
+  {
+   "title": "No One",
+   "artist": "Alicia Keys",
+   "year": 2007
+  },
+  {
+   "title": "Mad",
+   "artist": "Ne-Yo",
+   "year": 2005
+  },
+  {
+   "title": "Give It To Me",
+   "artist": "Timbaland",
+   "year": 2007
+  },
+  {
+   "title": "He's Mine",
+   "artist": "MoKenStef",
+   "year": 1995
+  },
+  {
+   "title": "in my head",
+   "artist": "Ariana Grande",
+   "year": 2019
+  },
+  {
+   "title": "Take Care",
+   "artist": "Drake",
+   "year": 2012
+  },
+  {
+   "title": "Good for You",
+   "artist": "Selena Gomez",
+   "year": 2015
+  },
+  {
+   "title": "R.E.M",
+   "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "Un-Thinkable (I'm Ready)",
+   "artist": "Alicia Keys",
+   "year": 2009
+  },
+  {
+   "title": "Love on Top",
+   "artist": "Beyoncé",
+   "year": 2011
+  },
+  {
+   "title": "Dark Red",
+   "artist": "Steve Lacy",
+   "year": 2017
+  },
+  {
+   "title": "You Don't Know My Name",
+   "artist": "Alicia Keys",
+   "year": 2003
+  },
+  {
+   "title": "Bills, Bills, Bills",
+   "artist": "Destiny's Child",
+   "year": 1999
+  },
+  {
+   "title": "The Worst",
+   "artist": "Jhené Aiko",
+   "year": 2013
+  },
+  {
+   "title": "Pilot Jones",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "Partition",
+   "artist": "Beyoncé",
+   "year": 2013
+  },
+  {
+   "title": "Promiscuous",
+   "artist": "Nelly Furtado",
+   "year": 2006
+  },
+  {
+   "title": "Fallin'",
+   "artist": "Alicia Keys",
+   "year": 2001
+  },
+  {
+   "title": "All Night",
+   "artist": "Beyoncé",
+   "year": 2016
+  },
+  {
+   "title": "everytime",
+   "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "Suga Suga",
+   "artist": "Baby Bash",
+   "year": 2003
+  },
+  {
+   "title": "Survivor",
+   "artist": "Destiny's Child",
+   "year": 2001
+  },
+  {
+   "title": "Waterfalls",
+   "artist": "TLC",
+   "year": 1994
+  },
+  {
+   "title": "Forever",
+   "artist": "Chris Brown",
+   "year": 2008
+  },
+  {
+   "title": "Breakin' My Heart (Pretty Brown Eyes)",
+   "artist": "Mint Condition",
+   "year": 1991
+  },
+  {
+   "title": "7 rings",
+   "artist": "Ariana Grande",
+   "year": 2019
+  },
+  {
+   "title": "Cry Me a River",
+   "artist": "Justin Timberlake",
+   "year": 2002
+  },
+  {
+   "title": "The Morning",
+   "artist": "The Weeknd",
+   "year": 2011
+  },
+  {
+   "title": "Single Ladies (Put a Ring on It)",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
+   "title": "I Wanna Love You",
+   "artist": "Akon",
+   "year": 2006
+  },
+  {
+   "title": "Marry You",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "No Diggity",
+   "artist": "Blackstreet",
+   "year": 1996
+  },
+  {
+   "title": "break up with your girlfriend, i'm bored",
+   "artist": "Ariana Grande",
+   "year": 2019
+  },
+  {
+   "title": "Talk That Talk",
+   "artist": "Rihanna",
+   "year": 2013
+  },
+  {
+   "title": "Burn",
+   "artist": "Usher",
+   "year": 2004
+  },
+  {
+   "title": "Can We Talk",
+   "artist": "Tevin Campbell",
+   "year": 1993
+  },
+  {
+   "title": "Thong Song",
+   "artist": "Sisqó",
+   "year": 1998
+  },
+  {
+   "title": "Run the World (Girls)",
+   "artist": "Beyoncé",
+   "year": 2011
+  },
+  {
+   "title": "Agora Hills",
+   "artist": "Doja Cat",
+   "year": 2023
+  },
+  {
+   "title": "Why Don't We Fall In Love",
+   "artist": "Amerie",
+   "year": 2002
+  },
+  {
+   "title": "Heaven Can Wait",
+   "artist": "Michael Jackson",
+   "year": 2001
+  },
+  {
+   "title": "The Way I Are",
+   "artist": "Timbaland",
+   "year": 2007
+  },
+  {
+   "title": "The Lazy Song",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "End of the Road",
+   "artist": "Boyz II Men",
+   "year": 1992
+  },
+  {
+   "title": "Motivation",
+   "artist": "Kelly Rowland",
+   "year": 2011
+  },
+  {
+   "title": "If I Were a Boy",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
+   "title": "Try Again",
+   "artist": "Aaliyah",
+   "year": 2000
+  },
+  {
+   "title": "Ain't Shit",
+   "artist": "Doja Cat",
+   "year": 2021
+  },
+  {
+   "title": "Out of Time",
+   "artist": "The Weeknd",
+   "year": 2022
+  },
+  {
+   "title": "Rock Wit U (Awww Baby)",
+   "artist": "Ashanti",
+   "year": 2002
+  },
+  {
+   "title": "Shut Up and Drive",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Snooze",
+   "artist": "SZA",
+   "year": 2022
+  },
+  {
+   "title": "Charcoal Baby",
+   "artist": "Blood Orange",
+   "year": 2018
+  },
+  {
+   "title": "Use Your Heart",
+   "artist": "SWV",
+   "year": 1996
+  },
+  {
+   "title": "positions",
+   "artist": "Ariana Grande",
+   "year": 2020
+  },
+  {
+   "title": "Just the Way You Are",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Desperado",
+   "artist": "Rihanna",
+   "year": 2016
+  },
+  {
+   "title": "Ride It",
+   "artist": "Jay Sean",
+   "year": 2008
+  },
+  {
+   "title": "Sexy Love",
+   "artist": "Ne-Yo",
+   "year": 2006
+  },
+  {
+   "title": "Rock Your Body",
+   "artist": "Justin Timberlake",
+   "year": 2002
+  },
+  {
+   "title": "U Remind Me",
+   "artist": "Usher",
+   "year": 2001
+  },
+  {
+   "title": "Good Days",
+   "artist": "SZA",
+   "year": 2020
+  },
+  {
+   "title": "Candy Rain",
+   "artist": "Soul for Real",
+   "year": 1994
+  },
+  {
+   "title": "One Wish",
+   "artist": "Ray J",
+   "year": 2005
+  },
+  {
+   "title": "Green Light",
+   "artist": "Beyoncé",
+   "year": 2006
+  },
+  {
+   "title": "Tell Your Friends",
+   "artist": "The Weeknd",
+   "year": 2015
+  },
+  {
+   "title": "Rock the Boat",
+   "artist": "Aaliyah",
+   "year": 2001
+  },
+  {
+   "title": "7 Days",
+   "artist": "Craig David",
+   "year": 2000
+  },
+  {
+   "title": "Feels Like Summer",
+   "artist": "Childish Gambino",
+   "year": 2018
+  },
+  {
+   "title": "Work",
+   "artist": "Rihanna",
+   "year": 2016
+  },
+  {
+   "title": "I Get Lonely",
+   "artist": "Janet Jackson",
+   "year": 1998
+  },
+  {
+   "title": "Street Lights",
+   "artist": "Kanye West",
+   "year": 2008
+  },
+  {
+   "title": "Sober",
+   "artist": "Childish Gambino",
+   "year": 2014
+  },
+  {
+   "title": "On Bended Knee",
+   "artist": "Boyz II Men",
+   "year": 1994
+  },
+  {
+   "title": "Rude Boy",
+   "artist": "Rihanna",
+   "year": 2009
+  },
+  {
+   "title": "Japanese Denim",
+   "artist": "Daniel Caesar",
+   "year": 2016
+  },
+  {
+   "title": "Kingdom Come",
+   "artist": "Red Velvet",
+   "year": 2017
+  },
+  {
+   "title": "Hate That I Love You",
+   "artist": "Rihanna",
+   "year": 2008
+  },
+  {
+   "title": "Ring the Alarm",
+   "artist": "Beyoncé",
+   "year": 2006
+  },
+  {
+   "title": "Disturbia",
+   "artist": "Rihanna",
+   "year": 2008
+  },
+  {
+   "title": "Manchild",
+   "artist": "Sabrina Carpenter",
+   "year": 2025
+  },
+  {
+   "title": "Kitty Kat",
+   "artist": "Beyoncé",
+   "year": 2006
+  },
+  {
+   "title": "Jumpin', Jumpin'",
+   "artist": "Destiny's Child",
+   "year": 1999
+  },
+  {
+   "title": "I Wanna Be Down",
+   "artist": "Brandy",
+   "year": 1994
+  },
+  {
+   "title": "Super Rich Kids",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "Unfoolish",
+   "artist": "Ashanti",
+   "year": 2002
+  },
+  {
+   "title": "If It's Lovin' That You Want",
+   "artist": "Rihanna",
+   "year": 2005
+  },
+  {
+   "title": "All I Do Is Think Of You",
+   "artist": "Troop",
+   "year": 1989
+  },
+  {
+   "title": "Welcome To Heartbreak",
+   "artist": "Kanye West",
+   "year": 2009
+  },
+  {
+   "title": "Party Monster",
+   "artist": "The Weeknd",
+   "year": 2016
+  },
+  {
+   "title": "Don't Matter",
+   "artist": "Akon",
+   "year": 2006
+  },
+  {
+   "title": "SOS",
+   "artist": "Rihanna",
+   "year": 2006
+  },
+  {
+   "title": "Ridin' Solo",
+   "artist": "Jason Derülo",
+   "year": 2010
+  },
+  {
+   "title": "Less Than Zero",
+   "artist": "The Weeknd",
+   "year": 2022
+  },
+  {
+   "title": "Find Your Love",
+   "artist": "Drake",
+   "year": 2010
+  },
+  {
+   "title": "Shake It Off",
+   "artist": "Mariah Carey",
+   "year": 2005
+  },
+  {
+   "title": "Birthday Sex",
+   "artist": "Jeremih",
+   "year": 2008
+  },
+  {
+   "title": "Hold Up",
+   "artist": "Beyoncé",
+   "year": 2016
+  },
+  {
+   "title": "Talking to the Moon",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Speechless",
+   "artist": "Beyoncé",
+   "year": 2003
+  },
+  {
+   "title": "Any Time, Any Place",
+   "artist": "Janet Jackson",
+   "year": 1994
+  },
+  {
+   "title": "Pon de Replay",
+   "artist": "Rihanna",
+   "year": 2005
+  },
+  {
+   "title": "Rain On Me",
+   "artist": "Ashanti",
+   "year": 2003
+  },
+  {
+   "title": "Save Your Tears",
+   "artist": "The Weeknd",
+   "year": 2019
+  },
+  {
+   "title": "Rehab",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "In My Head",
+   "artist": "Jason Derülo",
+   "year": 2009
+  },
+  {
+   "title": "Be With You",
+   "artist": "Beyoncé",
+   "year": 2003
+  },
+  {
+   "title": "Baby I",
+   "artist": "Ariana Grande",
+   "year": 2013
+  },
+  {
+   "title": "Body Party",
+   "artist": "Ciara",
+   "year": 2013
+  },
+  {
+   "title": "Age Ain't Nothing but a Number",
+   "artist": "Aaliyah",
+   "year": 1994
+  },
+  {
+   "title": "More Than a Woman",
+   "artist": "Aaliyah",
+   "year": 2001
+  },
+  {
+   "title": "nasty",
+   "artist": "Ariana Grande",
+   "year": 2020
+  },
+  {
+   "title": "Weak",
+   "artist": "SWV",
+   "year": 1992
+  }
+ ]
+}

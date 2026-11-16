@@ -1,0 +1,467 @@
+{
+ "name": "Love Songs",
+ "tag": "love",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "The Only Exception",
+   "artist": "Paramore",
+   "year": 2009
+  },
+  {
+   "title": "Talking to the Moon",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Love You Like a Love Song",
+   "artist": "Selena Gomez & the Scene",
+   "year": 2011
+  },
+  {
+   "title": "Kiss Me",
+   "artist": "Sixpence None the Richer",
+   "year": 1997
+  },
+  {
+   "title": "Thinking Out Loud",
+   "artist": "Ed Sheeran",
+   "year": 2014
+  },
+  {
+   "title": "Love",
+   "artist": "Keyshia Cole",
+   "year": 2005
+  },
+  {
+   "title": "Hey There Delilah",
+   "artist": "Plain White T's",
+   "year": 2005
+  },
+  {
+   "title": "Night Changes",
+   "artist": "One Direction",
+   "year": 2014
+  },
+  {
+   "title": "Thinking of You",
+   "artist": "Katy Perry",
+   "year": 2008
+  },
+  {
+   "title": "The Man Who Can't Be Moved",
+   "artist": "The Script",
+   "year": 2008
+  },
+  {
+   "title": "The One That Got Away",
+   "artist": "Katy Perry",
+   "year": 2010
+  },
+  {
+   "title": "It Will Rain",
+   "artist": "Bruno Mars",
+   "year": 2011
+  },
+  {
+   "title": "Hold On, We're Going Home",
+   "artist": "Drake",
+   "year": 2013
+  },
+  {
+   "title": "Love Story",
+   "artist": "Taylor Swift",
+   "year": 2008
+  },
+  {
+   "title": "Need You Now",
+   "artist": "Lady Antebellum",
+   "year": 2009
+  },
+  {
+   "title": "Tattooed Heart",
+   "artist": "Ariana Grande",
+   "year": 2013
+  },
+  {
+   "title": "Just the Way You Are",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Iris",
+   "artist": "Goo Goo Dolls",
+   "year": 1998
+  },
+  {
+   "title": "By Your Side",
+   "artist": "Sade",
+   "year": 2000
+  },
+  {
+   "title": "Enchanted",
+   "artist": "Taylor Swift",
+   "year": 2010
+  },
+  {
+   "title": "Radio",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Let Me Love You",
+   "artist": "Mario",
+   "year": 2004
+  },
+  {
+   "title": "All of Me",
+   "artist": "John Legend",
+   "year": 2013
+  },
+  {
+   "title": "How Do I Live",
+   "artist": "LeAnn Rimes",
+   "year": 1997
+  },
+  {
+   "title": "I Will Follow You Into The Dark",
+   "artist": "Death Cab for Cutie",
+   "year": 2005
+  },
+  {
+   "title": "Lover",
+   "artist": "Taylor Swift",
+   "year": 2019
+  },
+  {
+   "title": "My Love Mine All Mine",
+   "artist": "Mitski",
+   "year": 2023
+  },
+  {
+   "title": "With You",
+   "artist": "Chris Brown",
+   "year": 2007
+  },
+  {
+   "title": "Lovefool",
+   "artist": "The Cardigans",
+   "year": 1996
+  },
+  {
+   "title": "Love Me Again",
+   "artist": "John Newman",
+   "year": 2013
+  },
+  {
+   "title": "Lovin' You",
+   "artist": "Minnie Riperton",
+   "year": 1974
+  },
+  {
+   "title": "Hate That I Love You",
+   "artist": "Rihanna",
+   "year": 2008
+  },
+  {
+   "title": "Chasing Cars",
+   "artist": "Snow Patrol",
+   "year": 2005
+  },
+  {
+   "title": "Let's Stay Together",
+   "artist": "Al Green",
+   "year": 1971
+  },
+  {
+   "title": "Sure Thing",
+   "artist": "Miguel",
+   "year": 2010
+  },
+  {
+   "title": "Tim McGraw",
+   "artist": "Taylor Swift",
+   "year": 2006
+  },
+  {
+   "title": "No Ordinary Love",
+   "artist": "Sade",
+   "year": 1992
+  },
+  {
+   "title": "Begin Again",
+   "artist": "Taylor Swift",
+   "year": 2012
+  },
+  {
+   "title": "You Belong with Me",
+   "artist": "Taylor Swift",
+   "year": 2008
+  },
+  {
+   "title": "I Don't Want to Get Over You",
+   "artist": "The Magnetic Fields",
+   "year": 1999
+  },
+  {
+   "title": "Thinkin Bout You",
+   "artist": "Frank Ocean",
+   "year": 2012
+  },
+  {
+   "title": "Burn",
+   "artist": "Usher",
+   "year": 2004
+  },
+  {
+   "title": "Hero",
+   "artist": "Enrique Iglesias",
+   "year": 2001
+  },
+  {
+   "title": "Love, Love, Love",
+   "artist": "Donny Hathaway",
+   "year": 1973
+  },
+  {
+   "title": "Sálvame",
+   "artist": "RBD",
+   "year": 2004
+  },
+  {
+   "title": "Neon Moon",
+   "artist": "Brooks & Dunn",
+   "year": 1991
+  },
+  {
+   "title": "Treacherous",
+   "artist": "Taylor Swift",
+   "year": 2012
+  },
+  {
+   "title": "You're Still the One",
+   "artist": "Shania Twain",
+   "year": 1997
+  },
+  {
+   "title": "Friday I'm in Love",
+   "artist": "The Cure",
+   "year": 1992
+  },
+  {
+   "title": "The Reason",
+   "artist": "Hoobastank",
+   "year": 2003
+  },
+  {
+   "title": "Pink + White",
+   "artist": "Frank Ocean",
+   "year": 2014
+  },
+  {
+   "title": "Ho Hey",
+   "artist": "The Lumineers",
+   "year": 2011
+  },
+  {
+   "title": "Anyone Else But You",
+   "artist": "The Moldy Peaches",
+   "year": 2001
+  },
+  {
+   "title": "Yellow",
+   "artist": "Coldplay",
+   "year": 2000
+  },
+  {
+   "title": "Here Without You",
+   "artist": "3 Doors Down",
+   "year": 2000
+  },
+  {
+   "title": "Northern Downpour",
+   "artist": "Panic! at the Disco",
+   "year": 2008
+  },
+  {
+   "title": "No. 1 Party Anthem",
+   "artist": "Arctic Monkeys",
+   "year": 2013
+  },
+  {
+   "title": "All My Little Words",
+   "artist": "The Magnetic Fields",
+   "year": 1999
+  },
+  {
+   "title": "Your Call",
+   "artist": "Secondhand Serenade",
+   "year": 2005
+  },
+  {
+   "title": "Love Never Felt So Good",
+   "artist": "Michael Jackson",
+   "year": 2007
+  },
+  {
+   "title": "I'm Not in Love",
+   "artist": "10cc",
+   "year": 1975
+  },
+  {
+   "title": "Our Song",
+   "artist": "Taylor Swift",
+   "year": 2006
+  },
+  {
+   "title": "You Found Me",
+   "artist": "The Fray",
+   "year": 2008
+  },
+  {
+   "title": "Cool Cat",
+   "artist": "Queen",
+   "year": 1982
+  },
+  {
+   "title": "Cosmic Love",
+   "artist": "Florence + the Machine",
+   "year": 2009
+  },
+  {
+   "title": "Your Man",
+   "artist": "Josh Turner",
+   "year": 2005
+  },
+  {
+   "title": "This Love",
+   "artist": "Maroon 5",
+   "year": 2002
+  },
+  {
+   "title": "I'll Believe in Anything",
+   "artist": "Wolf Parade",
+   "year": 2005
+  },
+  {
+   "title": "I Will Always Love You",
+   "artist": "Dolly Parton",
+   "year": 1974
+  },
+  {
+   "title": "Best I Ever Had",
+   "artist": "Drake",
+   "year": 2009
+  },
+  {
+   "title": "Your Love Is My Drug",
+   "artist": "Ke$ha",
+   "year": 2009
+  },
+  {
+   "title": "Look After You",
+   "artist": "The Fray",
+   "year": 2005
+  },
+  {
+   "title": "Futile Devices",
+   "artist": "Sufjan Stevens",
+   "year": 2010
+  },
+  {
+   "title": "Stay",
+   "artist": "Rihanna",
+   "year": 2013
+  },
+  {
+   "title": "Heaven",
+   "artist": "Bryan Adams",
+   "year": 1984
+  },
+  {
+   "title": "At Last",
+   "artist": "Etta James",
+   "year": 1960
+  },
+  {
+   "title": "Turn Your Lights Down Low",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "Is This Love",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "We Belong Together",
+   "artist": "Mariah Carey",
+   "year": 2005
+  },
+  {
+   "title": "Love of My Life",
+   "artist": "Queen",
+   "year": 1975
+  },
+  {
+   "title": "Marry You",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Dreaming of You",
+   "artist": "Selena",
+   "year": 1995
+  },
+  {
+   "title": "I'd Hate to Be You When People Find Out What This Song Is About",
+   "artist": "Mayday Parade",
+   "year": 2007
+  },
+  {
+   "title": "My Boo",
+   "artist": "Usher",
+   "year": 2005
+  },
+  {
+   "title": "Digital Love",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Should've Said No",
+   "artist": "Taylor Swift",
+   "year": 2006
+  },
+  {
+   "title": "Strawberry Wine",
+   "artist": "Deana Carter",
+   "year": 1996
+  },
+  {
+   "title": "Last Goodbye",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "Romeo and Juliet",
+   "artist": "Dire Straits",
+   "year": 1980
+  },
+  {
+   "title": "Back to December",
+   "artist": "Taylor Swift",
+   "year": 2010
+  },
+  {
+   "title": "Make You Feel My Love",
+   "artist": "Adele",
+   "year": 2008
+  },
+  {
+   "title": "A Thousand Miles",
+   "artist": "Vanessa Carlton",
+   "year": 2000
+  }
+ ]
+}

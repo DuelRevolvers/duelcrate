@@ -1,0 +1,787 @@
+{
+ "name": "70s",
+ "tag": "70s",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "I'm Not in Love",
+   "artist": "10cc",
+   "year": 1975
+  },
+  {
+   "title": "A Horse With No Name",
+   "artist": "America",
+   "year": 1971
+  },
+  {
+   "title": "Landslide",
+   "artist": "Fleetwood Mac",
+   "year": 1975
+  },
+  {
+   "title": "Last Train to London",
+   "artist": "Electric Light Orchestra",
+   "year": 1979
+  },
+  {
+   "title": "Mr. Blue Sky",
+   "artist": "Electric Light Orchestra",
+   "year": 1977
+  },
+  {
+   "title": "Ventura Highway",
+   "artist": "America",
+   "year": 1972
+  },
+  {
+   "title": "Rhiannon",
+   "artist": "Fleetwood Mac",
+   "year": 1975
+  },
+  {
+   "title": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+   "artist": "Elton John",
+   "year": 1972
+  },
+  {
+   "title": "American Pie",
+   "artist": "Don McLean",
+   "year": 1971
+  },
+  {
+   "title": "I Will Survive",
+   "artist": "Gloria Gaynor",
+   "year": 1977
+  },
+  {
+   "title": "Do It Again",
+   "artist": "Steely Dan",
+   "year": 1972
+  },
+  {
+   "title": "Peg",
+   "artist": "Steely Dan",
+   "year": 1977
+  },
+  {
+   "title": "Da Ya Think I'm Sexy?",
+   "artist": "Rod Stewart",
+   "year": 1978
+  },
+  {
+   "title": "Mamma Mia",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "Dancing Queen",
+   "artist": "ABBA",
+   "year": 1976
+  },
+  {
+   "title": "Sister Golden Hair",
+   "artist": "America",
+   "year": 1975
+  },
+  {
+   "title": "September",
+   "artist": "Earth, Wind & Fire",
+   "year": 1978
+  },
+  {
+   "title": "Cherry Bomb",
+   "artist": "The Runaways",
+   "year": 1976
+  },
+  {
+   "title": "What a Fool Believes",
+   "artist": "The Doobie Brothers",
+   "year": 1978
+  },
+  {
+   "title": "Stuck in the Middle With You",
+   "artist": "Stealers Wheel",
+   "year": 1972
+  },
+  {
+   "title": "Carry on Wayward Son",
+   "artist": "Kansas",
+   "year": 1976
+  },
+  {
+   "title": "Dust in the Wind",
+   "artist": "Kansas",
+   "year": 1977
+  },
+  {
+   "title": "Fooled Around And Fell In Love",
+   "artist": "Elvin Bishop",
+   "year": 1975
+  },
+  {
+   "title": "Lovely Day",
+   "artist": "Bill Withers",
+   "year": 1977
+  },
+  {
+   "title": "Southern Nights",
+   "artist": "Glen Campbell",
+   "year": 1977
+  },
+  {
+   "title": "Chiquitita",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Tiny Dancer",
+   "artist": "Elton John",
+   "year": 1971
+  },
+  {
+   "title": "Ain't No Sunshine",
+   "artist": "Bill Withers",
+   "year": 1971
+  },
+  {
+   "title": "Brandy (You're A Fine Girl)",
+   "artist": "Looking Glass",
+   "year": 1972
+  },
+  {
+   "title": "Reelin' In The Years",
+   "artist": "Steely Dan",
+   "year": 1972
+  },
+  {
+   "title": "Blame It on the Boogie",
+   "artist": "The Jacksons",
+   "year": 1978
+  },
+  {
+   "title": "Waterloo",
+   "artist": "ABBA",
+   "year": 1974
+  },
+  {
+   "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Fernando",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "Take a Chance on Me",
+   "artist": "ABBA",
+   "year": 1977
+  },
+  {
+   "title": "(Don't Fear) The Reaper",
+   "artist": "Blue Öyster Cult",
+   "year": 1976
+  },
+  {
+   "title": "Bohemian Rhapsody",
+   "artist": "Queen",
+   "year": 1976
+  },
+  {
+   "title": "Don't Bring Me Down",
+   "artist": "Electric Light Orchestra",
+   "year": 1979
+  },
+  {
+   "title": "Evil Woman",
+   "artist": "Electric Light Orchestra",
+   "year": 1975
+  },
+  {
+   "title": "Perfect Day",
+   "artist": "Lou Reed",
+   "year": 1972
+  },
+  {
+   "title": "Livin' Thing",
+   "artist": "Electric Light Orchestra",
+   "year": 1976
+  },
+  {
+   "title": "Dreams",
+   "artist": "Fleetwood Mac",
+   "year": 1977
+  },
+  {
+   "title": "Listen to the Music",
+   "artist": "The Doobie Brothers",
+   "year": 1972
+  },
+  {
+   "title": "Killer Queen",
+   "artist": "Queen",
+   "year": 1974
+  },
+  {
+   "title": "Lay All Your Love on Me",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Our House",
+   "artist": "Crosby, Stills, Nash & Young",
+   "year": 1970
+  },
+  {
+   "title": "Ring My Bell",
+   "artist": "Anita Ward",
+   "year": 1979
+  },
+  {
+   "title": "Baker Street",
+   "artist": "Gerry Rafferty",
+   "year": 1978
+  },
+  {
+   "title": "Walk on the Wild Side",
+   "artist": "Lou Reed",
+   "year": 1972
+  },
+  {
+   "title": "I Want You Back",
+   "artist": "The Jackson 5",
+   "year": 1969
+  },
+  {
+   "title": "Easy",
+   "artist": "Commodores",
+   "year": 1977
+  },
+  {
+   "title": "Let's Stay Together",
+   "artist": "Al Green",
+   "year": 1971
+  },
+  {
+   "title": "The Joker",
+   "artist": "Steve Miller Band",
+   "year": 1973
+  },
+  {
+   "title": "Angeleyes",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Stayin' Alive",
+   "artist": "Bee Gees",
+   "year": 1977
+  },
+  {
+   "title": "More Than a Feeling",
+   "artist": "Boston",
+   "year": 1976
+  },
+  {
+   "title": "SOS",
+   "artist": "ABBA",
+   "year": 1975
+  },
+  {
+   "title": "Daddy Cool",
+   "artist": "Boney M.",
+   "year": 1976
+  },
+  {
+   "title": "Kung Fu Fighting",
+   "artist": "Carl Douglas",
+   "year": 1974
+  },
+  {
+   "title": "You're a Big Girl Now",
+   "artist": "The Stylistics",
+   "year": 1971
+  },
+  {
+   "title": "Les Fleurs",
+   "artist": "Minnie Riperton",
+   "year": 2002
+  },
+  {
+   "title": "Telephone Line",
+   "artist": "Electric Light Orchestra",
+   "year": 1976
+  },
+  {
+   "title": "Hot Stuff",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "Don't Stop Me Now",
+   "artist": "Queen",
+   "year": 1978
+  },
+  {
+   "title": "Lean on Me",
+   "artist": "Bill Withers",
+   "year": 1972
+  },
+  {
+   "title": "Rikki Don't Lose That Number",
+   "artist": "Steely Dan",
+   "year": 1974
+  },
+  {
+   "title": "Black Betty",
+   "artist": "Ram Jam",
+   "year": 1977
+  },
+  {
+   "title": "The Chain",
+   "artist": "Fleetwood Mac",
+   "year": 1977
+  },
+  {
+   "title": "Give a Little Bit",
+   "artist": "Supertramp",
+   "year": 1977
+  },
+  {
+   "title": "You Sexy Thing",
+   "artist": "Hot Chocolate",
+   "year": 1975
+  },
+  {
+   "title": "Free Bird",
+   "artist": "Lynyrd Skynyrd",
+   "year": 1973
+  },
+  {
+   "title": "You Should Be Dancing",
+   "artist": "Bee Gees",
+   "year": 1976
+  },
+  {
+   "title": "Dream On",
+   "artist": "Aerosmith",
+   "year": 1973
+  },
+  {
+   "title": "Long Train Runnin'",
+   "artist": "The Doobie Brothers",
+   "year": 1973
+  },
+  {
+   "title": "Tragedy",
+   "artist": "Bee Gees",
+   "year": 1979
+  },
+  {
+   "title": "Play That Funky Music",
+   "artist": "Wild Cherry",
+   "year": 1976
+  },
+  {
+   "title": "Yes Sir, I Can Boogie",
+   "artist": "Baccara",
+   "year": 1977
+  },
+  {
+   "title": "Movin' Out (Anthony's Song)",
+   "artist": "Billy Joel",
+   "year": 1977
+  },
+  {
+   "title": "Go Your Own Way",
+   "artist": "Fleetwood Mac",
+   "year": 1976
+  },
+  {
+   "title": "Sir Duke",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Fly Like an Eagle",
+   "artist": "Steve Miller Band",
+   "year": 1976
+  },
+  {
+   "title": "Lovin' You",
+   "artist": "Minnie Riperton",
+   "year": 1974
+  },
+  {
+   "title": "I Feel Love",
+   "artist": "Donna Summer",
+   "year": 1977
+  },
+  {
+   "title": "Let Your Love Flow",
+   "artist": "The Bellamy Brothers",
+   "year": 1975
+  },
+  {
+   "title": "Killing Me Softly With His Song",
+   "artist": "Roberta Flack",
+   "year": 1973
+  },
+  {
+   "title": "Hotel California",
+   "artist": "Eagles",
+   "year": 1976
+  },
+  {
+   "title": "Almost Cut My Hair",
+   "artist": "Crosby, Stills, Nash & Young",
+   "year": 1970
+  },
+  {
+   "title": "How Can You Mend a Broken Heart",
+   "artist": "Al Green",
+   "year": 1972
+  },
+  {
+   "title": "Bad Girls",
+   "artist": "Donna Summer",
+   "year": 1979
+  },
+  {
+   "title": "Money, Money, Money",
+   "artist": "ABBA",
+   "year": 1976
+  },
+  {
+   "title": "Summer Soft",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Does Your Mother Know",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "She's Always a Woman",
+   "artist": "Billy Joel",
+   "year": 1977
+  },
+  {
+   "title": "What's Going On",
+   "artist": "Marvin Gaye",
+   "year": 1971
+  },
+  {
+   "title": "The Passenger",
+   "artist": "Iggy Pop",
+   "year": 1977
+  },
+  {
+   "title": "Fantasy",
+   "artist": "Earth, Wind & Fire",
+   "year": 1977
+  },
+  {
+   "title": "Didn't I",
+   "artist": "Darondo",
+   "year": 1972
+  },
+  {
+   "title": "Voulez-Vous",
+   "artist": "ABBA",
+   "year": 1979
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Queen",
+   "year": 1976
+  },
+  {
+   "title": "Layla",
+   "artist": "Derek and the Dominos",
+   "year": 1970
+  },
+  {
+   "title": "Simple Man",
+   "artist": "Lynyrd Skynyrd",
+   "year": 1973
+  },
+  {
+   "title": "Love Train",
+   "artist": "The O'Jays",
+   "year": 1972
+  },
+  {
+   "title": "Barracuda",
+   "artist": "Heart",
+   "year": 1977
+  },
+  {
+   "title": "I Just Want to Be Your Everything",
+   "artist": "Andy Gibb",
+   "year": 1977
+  },
+  {
+   "title": "Crazy on You",
+   "artist": "Heart",
+   "year": 1975
+  },
+  {
+   "title": "Baba O'Riley",
+   "artist": "The Who",
+   "year": 1971
+  },
+  {
+   "title": "Please Don't Go",
+   "artist": "KC and The Sunshine Band",
+   "year": 1979
+  },
+  {
+   "title": "I Can't Help It",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Superstition",
+   "artist": "Stevie Wonder",
+   "year": 1972
+  },
+  {
+   "title": "Mercy Mercy Me (The Ecology)",
+   "artist": "Marvin Gaye",
+   "year": 1971
+  },
+  {
+   "title": "You Are the Sunshine of My Life",
+   "artist": "Stevie Wonder",
+   "year": 1972
+  },
+  {
+   "title": "Peace of Mind",
+   "artist": "Boston",
+   "year": 1976
+  },
+  {
+   "title": "Teenage Kicks",
+   "artist": "The Undertones",
+   "year": 1978
+  },
+  {
+   "title": "Werewolves of London",
+   "artist": "Warren Zevon",
+   "year": 1978
+  },
+  {
+   "title": "I Want You",
+   "artist": "Marvin Gaye",
+   "year": 1976
+  },
+  {
+   "title": "Village Ghetto Land",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Rivers of Babylon",
+   "artist": "Boney M.",
+   "year": 1978
+  },
+  {
+   "title": "Ma Baker",
+   "artist": "Boney M.",
+   "year": 1977
+  },
+  {
+   "title": "Magic Man",
+   "artist": "Heart",
+   "year": 1975
+  },
+  {
+   "title": "Young Hearts Run Free",
+   "artist": "Candi Staton",
+   "year": 1976
+  },
+  {
+   "title": "I Was Made for Lovin' You",
+   "artist": "Kiss",
+   "year": 1979
+  },
+  {
+   "title": "Y.M.C.A.",
+   "artist": "Village People",
+   "year": 1978
+  },
+  {
+   "title": "Living for the City",
+   "artist": "Stevie Wonder",
+   "year": 1973
+  },
+  {
+   "title": "As",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Wishing on a Star",
+   "artist": "Rose Royce",
+   "year": 1977
+  },
+  {
+   "title": "We Will Rock You",
+   "artist": "Queen",
+   "year": 1979
+  },
+  {
+   "title": "The Boys Are Back in Town",
+   "artist": "Thin Lizzy",
+   "year": 1976
+  },
+  {
+   "title": "Why Can't We Be Friends",
+   "artist": "War",
+   "year": 1975
+  },
+  {
+   "title": "Surrender",
+   "artist": "Cheap Trick",
+   "year": 1978
+  },
+  {
+   "title": "Dreadlock Holiday",
+   "artist": "10cc",
+   "year": 1978
+  },
+  {
+   "title": "Boogie Oogie Oogie",
+   "artist": "A Taste of Honey",
+   "year": 1978
+  },
+  {
+   "title": "YMCA",
+   "artist": "Village People",
+   "year": 1978
+  },
+  {
+   "title": "Shake Your Groove Thing",
+   "artist": "Peaches & Herb",
+   "year": 1978
+  },
+  {
+   "title": "Don't You Worry 'Bout a Thing",
+   "artist": "Stevie Wonder",
+   "year": 1973
+  },
+  {
+   "title": "Knocks Me Off My Feet",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Love of My Life",
+   "artist": "Queen",
+   "year": 1975
+  },
+  {
+   "title": "That's The Way (I Like It)",
+   "artist": "KC and The Sunshine Band",
+   "year": 1975
+  },
+  {
+   "title": "We Are the Champions",
+   "artist": "Queen",
+   "year": 1977
+  },
+  {
+   "title": "Brick House",
+   "artist": "Commodores",
+   "year": 1977
+  },
+  {
+   "title": "Give Me Love (Give Me Peace on Earth)",
+   "artist": "George Harrison",
+   "year": 1973
+  },
+  {
+   "title": "Disco Inferno",
+   "artist": "The Trammps",
+   "year": 1976
+  },
+  {
+   "title": "Good Times",
+   "artist": "Chic",
+   "year": 1979
+  },
+  {
+   "title": "I Wish",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Golden Lady",
+   "artist": "Stevie Wonder",
+   "year": 1973
+  },
+  {
+   "title": "You Make Me Feel (Mighty Real)",
+   "artist": "Sylvester",
+   "year": 1978
+  },
+  {
+   "title": "You're My Best Friend",
+   "artist": "Queen",
+   "year": 1975
+  },
+  {
+   "title": "Joy Inside My Tears",
+   "artist": "Stevie Wonder",
+   "year": 1976
+  },
+  {
+   "title": "Walk This Way",
+   "artist": "Aerosmith",
+   "year": 1975
+  },
+  {
+   "title": "Lust For Life",
+   "artist": "Iggy Pop",
+   "year": 1977
+  },
+  {
+   "title": "Behind Blue Eyes",
+   "artist": "The Who",
+   "year": 1971
+  },
+  {
+   "title": "Sweet Emotion",
+   "artist": "Aerosmith",
+   "year": 1975
+  },
+  {
+   "title": "Who's Lovin' You",
+   "artist": "The Jackson 5",
+   "year": 1969
+  },
+  {
+   "title": "Love Is in the Air",
+   "artist": "John Paul Young",
+   "year": 1977
+  },
+  {
+   "title": "Rhinestone Cowboy",
+   "artist": "Glen Campbell",
+   "year": 1975
+  },
+  {
+   "title": "Renegade",
+   "artist": "Styx",
+   "year": 1978
+  },
+  {
+   "title": "Night Moves",
+   "artist": "Bob Seger",
+   "year": 2013
+  }
+ ]
+}

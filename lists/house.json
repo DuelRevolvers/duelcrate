@@ -1,0 +1,1007 @@
+{
+ "name": "House",
+ "tag": "house",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Rush",
+   "artist": "Troye Sivan",
+   "year": 2023
+  },
+  {
+   "title": "yes, and?",
+   "artist": "Ariana Grande",
+   "year": 2024
+  },
+  {
+   "title": "Lady (Hear Me Tonight)",
+   "artist": "Modjo",
+   "year": 2000
+  },
+  {
+   "title": "Bring Your Love",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Clarity",
+   "artist": "Zedd",
+   "year": 2013
+  },
+  {
+   "title": "Memories (feat. Kid Cudi)",
+   "artist": "David Guetta",
+   "year": 2009
+  },
+  {
+   "title": "BREAK MY SOUL",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Music Sounds Better With You",
+   "artist": "Stardust",
+   "year": 1998
+  },
+  {
+   "title": "Show Me Love",
+   "artist": "Robin S",
+   "year": 1993
+  },
+  {
+   "title": "Heads Will Roll (A-Trak Remix)",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2009
+  },
+  {
+   "title": "make you mine",
+   "artist": "Madison Beer",
+   "year": 2024
+  },
+  {
+   "title": "Liquorice",
+   "artist": "Azealia Banks",
+   "year": 2012
+  },
+  {
+   "title": "Stereo Love",
+   "artist": "Edward Maya",
+   "year": 2009
+  },
+  {
+   "title": "Aquamarine",
+   "artist": "Addison Rae",
+   "year": 2024
+  },
+  {
+   "title": "One More Time",
+   "artist": "Daft Punk",
+   "year": 2000
+  },
+  {
+   "title": "Levels",
+   "artist": "Avicii",
+   "year": 2011
+  },
+  {
+   "title": "Danceteria",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Where's Your Head At",
+   "artist": "Basement Jaxx",
+   "year": 2001
+  },
+  {
+   "title": "High Life",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Revolution 909",
+   "artist": "Daft Punk",
+   "year": 1996
+  },
+  {
+   "title": "When Love Takes Over (feat. Kelly Rowland)",
+   "artist": "David Guetta",
+   "year": 2009
+  },
+  {
+   "title": "Robot Rock",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "Romeo",
+   "artist": "Basement Jaxx",
+   "year": 2001
+  },
+  {
+   "title": "CRAZY",
+   "artist": "LE SSERAFIM",
+   "year": 2024
+  },
+  {
+   "title": "Summer",
+   "artist": "Calvin Harris",
+   "year": 2014
+  },
+  {
+   "title": "Superheroes",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "At Night",
+   "artist": "Shakedown",
+   "year": 2001
+  },
+  {
+   "title": "Destination Calabria",
+   "artist": "Alex Gaudino",
+   "year": 2006
+  },
+  {
+   "title": "Animals",
+   "artist": "Martin Garrix",
+   "year": 2013
+  },
+  {
+   "title": "Sexy Bitch (feat. Akon)",
+   "artist": "David Guetta",
+   "year": 2009
+  },
+  {
+   "title": "So Many Times",
+   "artist": "Gadjo",
+   "year": 2003
+  },
+  {
+   "title": "Music Takes You Back",
+   "artist": "Modjo",
+   "year": 2001
+  },
+  {
+   "title": "Feel So Close",
+   "artist": "Calvin Harris",
+   "year": 2011
+  },
+  {
+   "title": "Harder, Better, Faster, Stronger",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "RUDE!",
+   "artist": "Hearts2Hearts",
+   "year": 2026
+  },
+  {
+   "title": "Let Me Think About It",
+   "artist": "Ida Corr",
+   "year": 2006
+  },
+  {
+   "title": "Infinity 2008 (Klaas Vocal Edit)",
+   "artist": "Guru Josh Project",
+   "year": 2005
+  },
+  {
+   "title": "Within",
+   "artist": "Daft Punk",
+   "year": 2023
+  },
+  {
+   "title": "Around the World",
+   "artist": "Daft Punk",
+   "year": 1996
+  },
+  {
+   "title": "Good For The Soul",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "I Think I Like It",
+   "artist": "Fake Blood",
+   "year": 2009
+  },
+  {
+   "title": "Impossible",
+   "artist": "RIIZE",
+   "year": 2024
+  },
+  {
+   "title": "Digital Love",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Crave you",
+   "artist": "Flight Facilities",
+   "year": 2010
+  },
+  {
+   "title": "Massive",
+   "artist": "Drake",
+   "year": 2022
+  },
+  {
+   "title": "AMERICA HAS A PROBLEM",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Odd Look",
+   "artist": "Kavinsky",
+   "year": 2013
+  },
+  {
+   "title": "We No Speak Americano",
+   "artist": "Yolanda Be Cool",
+   "year": 2010
+  },
+  {
+   "title": "Bizarre",
+   "artist": "Madonna",
+   "year": 1994
+  },
+  {
+   "title": "Count Contessa",
+   "artist": "Azealia Banks",
+   "year": 2013
+  },
+  {
+   "title": "Love Without Words",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Love Sensation",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "I Want Your Soul",
+   "artist": "Armand van Helden",
+   "year": 2007
+  },
+  {
+   "title": "Fresh",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "Voyager",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Save the World",
+   "artist": "Swedish House Mafia",
+   "year": 2011
+  },
+  {
+   "title": "My Old Ways",
+   "artist": "Tame Impala",
+   "year": 2025
+  },
+  {
+   "title": "End of Summer",
+   "artist": "Tame Impala",
+   "year": 2025
+  },
+  {
+   "title": "Free",
+   "artist": "Ultra Naté",
+   "year": 1997
+  },
+  {
+   "title": "Human After All",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "Groovejet (If This Ain't Love)",
+   "artist": "Spiller",
+   "year": 2000
+  },
+  {
+   "title": "I'm Good (Blue)",
+   "artist": "David Guetta",
+   "year": 2023
+  },
+  {
+   "title": "Aerodynamic",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Face to Face",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Chillin'",
+   "artist": "Modjo",
+   "year": 2000
+  },
+  {
+   "title": "Hot",
+   "artist": "Inna",
+   "year": 2008
+  },
+  {
+   "title": "Love Don't Let Me Go",
+   "artist": "David Guetta",
+   "year": 2001
+  },
+  {
+   "title": "Hallucinate",
+   "artist": "Dua Lipa",
+   "year": 2020
+  },
+  {
+   "title": "My My My",
+   "artist": "Armand van Helden",
+   "year": 2004
+  },
+  {
+   "title": "Move Your Body",
+   "artist": "Marshall Jefferson",
+   "year": 1986
+  },
+  {
+   "title": "Starlight",
+   "artist": "The Supermen Lovers",
+   "year": 2001
+  },
+  {
+   "title": "PURE/HONEY",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Indo Silver Club",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "My Love",
+   "artist": "Route 94",
+   "year": 2014
+  },
+  {
+   "title": "Spectrum (Say My Name) (Calvin Harris Remix)",
+   "artist": "Florence + the Machine",
+   "year": 2011
+  },
+  {
+   "title": "Faded",
+   "artist": "ZHU",
+   "year": 2014
+  },
+  {
+   "title": "Greyhound",
+   "artist": "Swedish House Mafia",
+   "year": 2012
+  },
+  {
+   "title": "Good Life",
+   "artist": "Inner City",
+   "year": 1988
+  },
+  {
+   "title": "This Is What It Feels Like",
+   "artist": "Armin van Buuren",
+   "year": 2013
+  },
+  {
+   "title": "One Step Away",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Mr. Saxobeat",
+   "artist": "Alexandra Stan",
+   "year": 2011
+  },
+  {
+   "title": "This Is What You Came For",
+   "artist": "Calvin Harris",
+   "year": 2016
+  },
+  {
+   "title": "Phoenix",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "Don't You Worry Child (feat. John Martin)",
+   "artist": "Swedish House Mafia",
+   "year": 2012
+  },
+  {
+   "title": "Red Alert",
+   "artist": "Basement Jaxx",
+   "year": 1999
+  },
+  {
+   "title": "Deja Vu",
+   "artist": "Inna",
+   "year": 2011
+  },
+  {
+   "title": "Television Rules the Nation / Crescendolls",
+   "artist": "Daft Punk",
+   "year": 2006
+  },
+  {
+   "title": "Innerbloom",
+   "artist": "RÜFÜS DU SOL",
+   "year": 2015
+  },
+  {
+   "title": "ALIEN SUPERSTAR",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "I Remember",
+   "artist": "deadmau5",
+   "year": 2009
+  },
+  {
+   "title": "Call On Me",
+   "artist": "Eric Prydz",
+   "year": 2004
+  },
+  {
+   "title": "1-800",
+   "artist": "bbno$",
+   "year": 2025
+  },
+  {
+   "title": "Da Funk",
+   "artist": "Daft Punk",
+   "year": 1995
+  },
+  {
+   "title": "The Weekend (Radio Edit)",
+   "artist": "Michael Gray",
+   "year": 2004
+  },
+  {
+   "title": "Stupidisco",
+   "artist": "Junior Jack",
+   "year": 2004
+  },
+  {
+   "title": "Aperture",
+   "artist": "Harry Styles",
+   "year": 2026
+  },
+  {
+   "title": "Everything",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "How Deep Is Your Love",
+   "artist": "Calvin Harris",
+   "year": 2015
+  },
+  {
+   "title": "When a Fire Starts to Burn",
+   "artist": "Disclosure",
+   "year": 2013
+  },
+  {
+   "title": "Everybody Everybody",
+   "artist": "Black Box",
+   "year": 1990
+  },
+  {
+   "title": "aNYway",
+   "artist": "Duck Sauce",
+   "year": 2009
+  },
+  {
+   "title": "Passionfruit",
+   "artist": "Drake",
+   "year": 2017
+  },
+  {
+   "title": "COZY",
+   "artist": "Beyoncé",
+   "year": 2022
+  },
+  {
+   "title": "Heroes (We Could Be)",
+   "artist": "Alesso",
+   "year": 2014
+  },
+  {
+   "title": "Commander",
+   "artist": "Kelly Rowland",
+   "year": 2010
+  },
+  {
+   "title": "Get Get Down",
+   "artist": "Paul Johnson",
+   "year": 1999
+  },
+  {
+   "title": "Television Rules the Nation",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "Live at Dominoes",
+   "artist": "The Avalanches",
+   "year": 2000
+  },
+  {
+   "title": "School",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Daftendirekt",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "On Fire",
+   "artist": "Modjo",
+   "year": 2001
+  },
+  {
+   "title": "Hideaway",
+   "artist": "Kiesza",
+   "year": 2014
+  },
+  {
+   "title": "Mine",
+   "artist": "Slayyyter",
+   "year": 2019
+  },
+  {
+   "title": "Lola's Theme",
+   "artist": "Shapeshifters",
+   "year": 2004
+  },
+  {
+   "title": "Don't Call Me Baby",
+   "artist": "Madison Avenue",
+   "year": 1999
+  },
+  {
+   "title": "Strobe (Radio Edit)",
+   "artist": "deadmau5",
+   "year": 2010
+  },
+  {
+   "title": "I Feel For You",
+   "artist": "Bob Sinclar",
+   "year": 2000
+  },
+  {
+   "title": "Another Chance",
+   "artist": "Roger Sanchez",
+   "year": 2001
+  },
+  {
+   "title": "Language",
+   "artist": "Porter Robinson",
+   "year": 2012
+  },
+  {
+   "title": "Promised Land",
+   "artist": "Joe Smooth",
+   "year": 1988
+  },
+  {
+   "title": "Make Luv",
+   "artist": "Room 5",
+   "year": 2001
+  },
+  {
+   "title": "If I Lose Myself - Alesso vs OneRepublic",
+   "artist": "OneRepublic",
+   "year": 2025
+  },
+  {
+   "title": "Love",
+   "artist": "Inna",
+   "year": 2009
+  },
+  {
+   "title": "Can You Feel It",
+   "artist": "Mr. Fingers",
+   "year": 1986
+  },
+  {
+   "title": "Musique",
+   "artist": "Daft Punk",
+   "year": 1995
+  },
+  {
+   "title": "Rollercoaster",
+   "artist": "Modjo",
+   "year": 2001
+  },
+  {
+   "title": "Rock'n Roll",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "Babylon",
+   "artist": "Lady Gaga",
+   "year": 2020
+  },
+  {
+   "title": "Your Love",
+   "artist": "Frankie Knuckles",
+   "year": 1987
+  },
+  {
+   "title": "Crushed",
+   "artist": "Actress",
+   "year": 2008
+  },
+  {
+   "title": "Drop The Pressure",
+   "artist": "Mylo",
+   "year": 2003
+  },
+  {
+   "title": "THICC",
+   "artist": "Shygirl",
+   "year": 2023
+  },
+  {
+   "title": "Barbra Streisand (Radio Edit)",
+   "artist": "Duck Sauce",
+   "year": 2011
+  },
+  {
+   "title": "Crescendolls",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Not Exactly",
+   "artist": "deadmau5",
+   "year": 2007
+  },
+  {
+   "title": "F for You",
+   "artist": "Disclosure",
+   "year": 2013
+  },
+  {
+   "title": "Sofi Needs A Ladder",
+   "artist": "deadmau5",
+   "year": 2010
+  },
+  {
+   "title": "Some Chords",
+   "artist": "deadmau5",
+   "year": 2010
+  },
+  {
+   "title": "Luxury",
+   "artist": "Azealia Banks",
+   "year": 2012
+  },
+  {
+   "title": "Don't You Worry Child",
+   "artist": "Swedish House Mafia",
+   "year": 2012
+  },
+  {
+   "title": "Funk Ad",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "Read My Lips",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Rock This Party (Everybody Dance Now)",
+   "artist": "Bob Sinclar",
+   "year": 2006
+  },
+  {
+   "title": "Just The Way You Are",
+   "artist": "Milky",
+   "year": 2001
+  },
+  {
+   "title": "Plastic Dreams",
+   "artist": "Jaydee",
+   "year": 1992
+  },
+  {
+   "title": "Feeling for You",
+   "artist": "Cassius",
+   "year": 1999
+  },
+  {
+   "title": "Chasing Time",
+   "artist": "Azealia Banks",
+   "year": 2014
+  },
+  {
+   "title": "Roller Coaster",
+   "artist": "NMIXX",
+   "year": 2023
+  },
+  {
+   "title": "Deep Inside",
+   "artist": "Hardrive",
+   "year": 1993
+  },
+  {
+   "title": "Neverender",
+   "artist": "Justice",
+   "year": 2024
+  },
+  {
+   "title": "Dear Boy",
+   "artist": "Avicii",
+   "year": 2010
+  },
+  {
+   "title": "The Game of Love",
+   "artist": "Daft Punk",
+   "year": 2013
+  },
+  {
+   "title": "Te Quiero",
+   "artist": "Stromae",
+   "year": 2010
+  },
+  {
+   "title": "Can't Get Enough",
+   "artist": "Soulsearcher",
+   "year": 1998
+  },
+  {
+   "title": "Rise Up",
+   "artist": "Yves Larock",
+   "year": 2007
+  },
+  {
+   "title": "Big Fun",
+   "artist": "Inner City",
+   "year": 1988
+  },
+  {
+   "title": "Steam Machine",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "Ghost Town",
+   "artist": "Adam Lambert",
+   "year": 2015
+  },
+  {
+   "title": "Satisfaction",
+   "artist": "Benny Benassi",
+   "year": 2003
+  },
+  {
+   "title": "Technologic",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "Crab Rave",
+   "artist": "Noisestorm",
+   "year": 2018
+  },
+  {
+   "title": "Life Boat.",
+   "artist": "RAYE",
+   "year": 2026
+  },
+  {
+   "title": "Baianá",
+   "artist": "Bakermat",
+   "year": 2019
+  },
+  {
+   "title": "Cry (Just a Little)",
+   "artist": "Bingo Players",
+   "year": 2011
+  },
+  {
+   "title": "Two Months Off",
+   "artist": "Underworld",
+   "year": 2002
+  },
+  {
+   "title": "Over",
+   "artist": "GusGus",
+   "year": 2011
+  },
+  {
+   "title": "Stereo Love",
+   "artist": "Edward Maya & Vika Jigulina",
+   "year": 2009
+  },
+  {
+   "title": "Da Funk / Daftendirekt",
+   "artist": "Daft Punk",
+   "year": 2007
+  },
+  {
+   "title": "HALO",
+   "artist": "Yves",
+   "year": 2026
+  },
+  {
+   "title": "Exceeder",
+   "artist": "Mason",
+   "year": 2006
+  },
+  {
+   "title": "yes baby",
+   "artist": "Madison Beer",
+   "year": 2025
+  },
+  {
+   "title": "Lift You Up",
+   "artist": "Danny Brown",
+   "year": 2025
+  },
+  {
+   "title": "Love Is Gone",
+   "artist": "David Guetta",
+   "year": 2007
+  },
+  {
+   "title": "Anthem",
+   "artist": "N-Joi",
+   "year": 1990
+  },
+  {
+   "title": "Memories",
+   "artist": "David Guetta",
+   "year": 2009
+  },
+  {
+   "title": "Shine On",
+   "artist": "R.I.O.",
+   "year": 2008
+  },
+  {
+   "title": "Animal Rights",
+   "artist": "deadmau5",
+   "year": 2012
+  },
+  {
+   "title": "Love Generation",
+   "artist": "Bob Sinclar",
+   "year": 2005
+  },
+  {
+   "title": "Stress",
+   "artist": "Justice",
+   "year": 2007
+  },
+  {
+   "title": "Feel It",
+   "artist": "The Tamperer",
+   "year": 1998
+  },
+  {
+   "title": "Pump Up the Volume",
+   "artist": "M/A/R/R/S",
+   "year": 1987
+  },
+  {
+   "title": "Moar Ghosts 'n' Stuff",
+   "artist": "deadmau5",
+   "year": 2009
+  },
+  {
+   "title": "Where Are You Now",
+   "artist": "Lost Frequencies",
+   "year": 2015
+  },
+  {
+   "title": "Silhouettes",
+   "artist": "Avicii",
+   "year": 2012
+  },
+  {
+   "title": "I'm Not Alone",
+   "artist": "Calvin Harris",
+   "year": 2008
+  },
+  {
+   "title": "The Bomb! (These Sounds Fall Into My Mind)",
+   "artist": "The Bucketheads",
+   "year": 1995
+  },
+  {
+   "title": "Giorgio by Moroder",
+   "artist": "Daft Punk",
+   "year": 2016
+  },
+  {
+   "title": "Aerodynamite",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Within You",
+   "artist": "GusGus",
+   "year": 2011
+  },
+  {
+   "title": "Sometimes Things Get, Whatever",
+   "artist": "deadmau5",
+   "year": 2008
+  },
+  {
+   "title": "Short Circuit",
+   "artist": "Daft Punk",
+   "year": 1997
+  },
+  {
+   "title": "Lady",
+   "artist": "Modjo",
+   "year": 2000
+  },
+  {
+   "title": "The Weekend",
+   "artist": "Michael Gray",
+   "year": 2004
+  },
+  {
+   "title": "You Make Me",
+   "artist": "Avicii",
+   "year": 2013
+  },
+  {
+   "title": "Million Voices",
+   "artist": "Otto Knows",
+   "year": 2012
+  },
+  {
+   "title": "Reckless (With Your Love)",
+   "artist": "Azari & III",
+   "year": 2009
+  },
+  {
+   "title": "100% Pure Love",
+   "artist": "Crystal Waters",
+   "year": 1994
+  },
+  {
+   "title": "Superstylin'",
+   "artist": "Groove Armada",
+   "year": 2001
+  },
+  {
+   "title": "Alone with You",
+   "artist": "deadmau5",
+   "year": 2008
+  },
+  {
+   "title": "No Broke Boys",
+   "artist": "Disco Lines",
+   "year": 2025
+  }
+ ]
+}

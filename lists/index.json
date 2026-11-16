@@ -1,0 +1,215 @@
+{
+ "updated": "2026-11-16",
+ "genres": [
+  {
+   "name": "Pop",
+   "slug": "pop",
+   "tag": "pop",
+   "count": 200
+  },
+  {
+   "name": "Hip-Hop",
+   "slug": "hip-hop",
+   "tag": "hip-hop",
+   "count": 200
+  },
+  {
+   "name": "Rock",
+   "slug": "rock",
+   "tag": "rock",
+   "count": 200
+  },
+  {
+   "name": "Classic Rock",
+   "slug": "classic-rock",
+   "tag": "classic rock",
+   "count": 200
+  },
+  {
+   "name": "Alternative",
+   "slug": "alternative",
+   "tag": "alternative",
+   "count": 200
+  },
+  {
+   "name": "Indie",
+   "slug": "indie",
+   "tag": "indie",
+   "count": 200
+  },
+  {
+   "name": "Dance",
+   "slug": "dance",
+   "tag": "dance",
+   "count": 200
+  },
+  {
+   "name": "Electronic",
+   "slug": "electronic",
+   "tag": "electronic",
+   "count": 200
+  },
+  {
+   "name": "House",
+   "slug": "house",
+   "tag": "house",
+   "count": 200
+  },
+  {
+   "name": "R&B",
+   "slug": "randb",
+   "tag": "rnb",
+   "count": 200
+  },
+  {
+   "name": "Soul",
+   "slug": "soul",
+   "tag": "soul",
+   "count": 200
+  },
+  {
+   "name": "Funk",
+   "slug": "funk",
+   "tag": "funk",
+   "count": 200
+  },
+  {
+   "name": "Disco",
+   "slug": "disco",
+   "tag": "disco",
+   "count": 200
+  },
+  {
+   "name": "Country",
+   "slug": "country",
+   "tag": "country",
+   "count": 200
+  },
+  {
+   "name": "Latin",
+   "slug": "latin",
+   "tag": "latin",
+   "count": 200
+  },
+  {
+   "name": "Reggaeton",
+   "slug": "reggaeton",
+   "tag": "reggaeton",
+   "count": 200
+  },
+  {
+   "name": "K-Pop",
+   "slug": "k-pop",
+   "tag": "k-pop",
+   "count": 200
+  },
+  {
+   "name": "Metal",
+   "slug": "metal",
+   "tag": "metal",
+   "count": 200
+  },
+  {
+   "name": "Hard Rock",
+   "slug": "hard-rock",
+   "tag": "hard rock",
+   "count": 200
+  },
+  {
+   "name": "Punk",
+   "slug": "punk",
+   "tag": "punk",
+   "count": 200
+  },
+  {
+   "name": "Grunge",
+   "slug": "grunge",
+   "tag": "grunge",
+   "count": 200
+  },
+  {
+   "name": "Emo",
+   "slug": "emo",
+   "tag": "emo",
+   "count": 200
+  },
+  {
+   "name": "Reggae",
+   "slug": "reggae",
+   "tag": "reggae",
+   "count": 127
+  },
+  {
+   "name": "Jazz",
+   "slug": "jazz",
+   "tag": "jazz",
+   "count": 40
+  },
+  {
+   "name": "Blues",
+   "slug": "blues",
+   "tag": "blues",
+   "count": 13
+  },
+  {
+   "name": "Folk & Acoustic",
+   "slug": "folk-and-acoustic",
+   "tag": "folk",
+   "count": 25
+  },
+  {
+   "name": "Singer-Songwriter",
+   "slug": "singer-songwriter",
+   "tag": "singer-songwriter",
+   "count": 36
+  },
+  {
+   "name": "Love Songs",
+   "slug": "love-songs",
+   "tag": "love",
+   "count": 92
+  },
+  {
+   "name": "Soundtracks",
+   "slug": "soundtracks",
+   "tag": "soundtrack",
+   "count": 17
+  },
+  {
+   "name": "60s",
+   "slug": "60s",
+   "tag": "60s",
+   "count": 50
+  },
+  {
+   "name": "70s",
+   "slug": "70s",
+   "tag": "70s",
+   "count": 156
+  },
+  {
+   "name": "80s",
+   "slug": "80s",
+   "tag": "80s",
+   "count": 71
+  },
+  {
+   "name": "90s",
+   "slug": "90s",
+   "tag": "90s",
+   "count": 131
+  },
+  {
+   "name": "2000s",
+   "slug": "2000s",
+   "tag": "00s",
+   "count": 73
+  },
+  {
+   "name": "2010s",
+   "slug": "2010s",
+   "tag": "2010s",
+   "count": 34
+  }
+ ]
+}

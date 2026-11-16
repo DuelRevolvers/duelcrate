@@ -1,0 +1,1007 @@
+{
+ "name": "Indie",
+ "tag": "indie",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Sweater Weather",
+   "artist": "The Neighbourhood",
+   "year": 2012
+  },
+  {
+   "title": "505",
+   "artist": "Arctic Monkeys",
+   "year": 2007
+  },
+  {
+   "title": "Why'd You Only Call Me When You're High?",
+   "artist": "Arctic Monkeys",
+   "year": 2013
+  },
+  {
+   "title": "A Little Death",
+   "artist": "The Neighbourhood",
+   "year": 2012
+  },
+  {
+   "title": "Do I Wanna Know?",
+   "artist": "Arctic Monkeys",
+   "year": 2013
+  },
+  {
+   "title": "Somebody That I Used to Know",
+   "artist": "Gotye",
+   "year": 2012
+  },
+  {
+   "title": "I Thought I Saw Your Face Today",
+   "artist": "She & Him",
+   "year": 2008
+  },
+  {
+   "title": "Take Me to Church",
+   "artist": "Hozier",
+   "year": 2013
+  },
+  {
+   "title": "What You Know",
+   "artist": "Two Door Cinema Club",
+   "year": 2010
+  },
+  {
+   "title": "My Kind of Woman",
+   "artist": "Mac DeMarco",
+   "year": 2012
+  },
+  {
+   "title": "Summertime Sadness",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Take Me Out",
+   "artist": "Franz Ferdinand",
+   "year": 2003
+  },
+  {
+   "title": "I'll Believe in Anything",
+   "artist": "Wolf Parade",
+   "year": 2005
+  },
+  {
+   "title": "Born to Die",
+   "artist": "Lana Del Rey",
+   "year": 2011
+  },
+  {
+   "title": "Afraid",
+   "artist": "The Neighbourhood",
+   "year": 2013
+  },
+  {
+   "title": "Kids",
+   "artist": "MGMT",
+   "year": 2005
+  },
+  {
+   "title": "We Are the People",
+   "artist": "Empire of the Sun",
+   "year": 2008
+  },
+  {
+   "title": "Time to Pretend",
+   "artist": "MGMT",
+   "year": 2005
+  },
+  {
+   "title": "The Art of Driving",
+   "artist": "Black Box Recorder",
+   "year": 2000
+  },
+  {
+   "title": "In the Aeroplane Over the Sea",
+   "artist": "Neutral Milk Hotel",
+   "year": 1997
+  },
+  {
+   "title": "Stressed Out",
+   "artist": "Twenty One Pilots",
+   "year": 2015
+  },
+  {
+   "title": "Sad Girl",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Let It Happen",
+   "artist": "Tame Impala",
+   "year": 2015
+  },
+  {
+   "title": "Fluorescent Adolescent",
+   "artist": "Arctic Monkeys",
+   "year": 2006
+  },
+  {
+   "title": "Breezeblocks",
+   "artist": "alt-J",
+   "year": 2012
+  },
+  {
+   "title": "Someday",
+   "artist": "The Strokes",
+   "year": 2000
+  },
+  {
+   "title": "My Love Mine All Mine",
+   "artist": "Mitski",
+   "year": 2023
+  },
+  {
+   "title": "Another Love",
+   "artist": "Tom Odell",
+   "year": 2012
+  },
+  {
+   "title": "Mr. Brightside",
+   "artist": "The Killers",
+   "year": 2001
+  },
+  {
+   "title": "Riptide",
+   "artist": "Vance Joy",
+   "year": 2013
+  },
+  {
+   "title": "Dog Days Are Over",
+   "artist": "Florence + the Machine",
+   "year": 2008
+  },
+  {
+   "title": "Electric Feel",
+   "artist": "MGMT",
+   "year": 2007
+  },
+  {
+   "title": "Chasing Cars",
+   "artist": "Snow Patrol",
+   "year": 2005
+  },
+  {
+   "title": "Somewhere Only We Know",
+   "artist": "Keane",
+   "year": 2002
+  },
+  {
+   "title": "Sweet Disposition",
+   "artist": "The Temper Trap",
+   "year": 2008
+  },
+  {
+   "title": "Money",
+   "artist": "The Drums",
+   "year": 2011
+  },
+  {
+   "title": "Young and Beautiful",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "New Perspective",
+   "artist": "Panic! at the Disco",
+   "year": 2009
+  },
+  {
+   "title": "Pompeii",
+   "artist": "Bastille",
+   "year": 2012
+  },
+  {
+   "title": "Brooklyn Baby",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Ride",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Secret Door",
+   "artist": "Arctic Monkeys",
+   "year": 2009
+  },
+  {
+   "title": "Help I'm Alive",
+   "artist": "Metric",
+   "year": 2008
+  },
+  {
+   "title": "Radio",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Weird Fishes / Arpeggi",
+   "artist": "Radiohead",
+   "year": 2008
+  },
+  {
+   "title": "Young Folks",
+   "artist": "Peter Bjorn and John",
+   "year": 2006
+  },
+  {
+   "title": "Black Beauty",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "1901",
+   "artist": "Phoenix",
+   "year": 2009
+  },
+  {
+   "title": "Dark Paradise",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Royals",
+   "artist": "Lorde",
+   "year": 2012
+  },
+  {
+   "title": "Stolen Dance",
+   "artist": "Milky Chance",
+   "year": 2013
+  },
+  {
+   "title": "Come a Little Closer",
+   "artist": "Cage the Elephant",
+   "year": 2013
+  },
+  {
+   "title": "Fucked My Way Up to the Top",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Little Talks",
+   "artist": "Of Monsters and Men",
+   "year": 2010
+  },
+  {
+   "title": "Walking on a Dream",
+   "artist": "Empire of the Sun",
+   "year": 2008
+  },
+  {
+   "title": "Hey There Delilah",
+   "artist": "Plain White T's",
+   "year": 2005
+  },
+  {
+   "title": "Between the Bars",
+   "artist": "Elliott Smith",
+   "year": 1996
+  },
+  {
+   "title": "Sleepyhead",
+   "artist": "Passion Pit",
+   "year": 2008
+  },
+  {
+   "title": "Heads Will Roll",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2009
+  },
+  {
+   "title": "Lisztomania",
+   "artist": "Phoenix",
+   "year": 2009
+  },
+  {
+   "title": "Creep",
+   "artist": "Radiohead",
+   "year": 1993
+  },
+  {
+   "title": "Intro",
+   "artist": "The xx",
+   "year": 2009
+  },
+  {
+   "title": "All I Want",
+   "artist": "Kodaline",
+   "year": 2012
+  },
+  {
+   "title": "Chocolate",
+   "artist": "The 1975",
+   "year": 2013
+  },
+  {
+   "title": "Demons",
+   "artist": "Imagine Dragons",
+   "year": 2012
+  },
+  {
+   "title": "You're Not the Only One I Know",
+   "artist": "The Sundays",
+   "year": 1990
+  },
+  {
+   "title": "Blue Jeans",
+   "artist": "Lana Del Rey",
+   "year": 2011
+  },
+  {
+   "title": "Float On",
+   "artist": "Modest Mouse",
+   "year": 2002
+  },
+  {
+   "title": "Video Games",
+   "artist": "Lana Del Rey",
+   "year": 2011
+  },
+  {
+   "title": "Off to the Races",
+   "artist": "Lana Del Rey",
+   "year": 2011
+  },
+  {
+   "title": "Runaway",
+   "artist": "Aurora",
+   "year": 2015
+  },
+  {
+   "title": "Wires",
+   "artist": "The Neighbourhood",
+   "year": 2012
+  },
+  {
+   "title": "Angeles",
+   "artist": "Elliott Smith",
+   "year": 1996
+  },
+  {
+   "title": "Sleeping In",
+   "artist": "The Radio Dept.",
+   "year": 2006
+  },
+  {
+   "title": "Holland, 1945",
+   "artist": "Neutral Milk Hotel",
+   "year": 1997
+  },
+  {
+   "title": "Shake It Out",
+   "artist": "Florence + the Machine",
+   "year": 2011
+  },
+  {
+   "title": "Crying Lightning",
+   "artist": "Arctic Monkeys",
+   "year": 2009
+  },
+  {
+   "title": "Bad Habit",
+   "artist": "Steve Lacy",
+   "year": 2022
+  },
+  {
+   "title": "Million Dollar Man",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Out of My League",
+   "artist": "Fitz and the Tantrums",
+   "year": 2013
+  },
+  {
+   "title": "Something Good Can Work",
+   "artist": "Two Door Cinema Club",
+   "year": 2009
+  },
+  {
+   "title": "Radioactive",
+   "artist": "Imagine Dragons",
+   "year": 2012
+  },
+  {
+   "title": "Myth",
+   "artist": "Beach House",
+   "year": 2012
+  },
+  {
+   "title": "I Bet You Look Good on the Dancefloor",
+   "artist": "Arctic Monkeys",
+   "year": 2004
+  },
+  {
+   "title": "Daddy Issues",
+   "artist": "The Neighbourhood",
+   "year": 2015
+  },
+  {
+   "title": "Obstacle 1",
+   "artist": "Interpol",
+   "year": 2002
+  },
+  {
+   "title": "Reptilia",
+   "artist": "The Strokes",
+   "year": 2003
+  },
+  {
+   "title": "Futile Devices",
+   "artist": "Sufjan Stevens",
+   "year": 2010
+  },
+  {
+   "title": "West Coast",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Gods & Monsters",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Anthems for a Seventeen Year-Old Girl",
+   "artist": "Broken Social Scene",
+   "year": 2002
+  },
+  {
+   "title": "Two-Headed Boy",
+   "artist": "Neutral Milk Hotel",
+   "year": 1997
+  },
+  {
+   "title": "Ho Hey",
+   "artist": "The Lumineers",
+   "year": 2011
+  },
+  {
+   "title": "Flawless",
+   "artist": "The Neighbourhood",
+   "year": 2013
+  },
+  {
+   "title": "Carry the Zero",
+   "artist": "Built to Spill",
+   "year": 1997
+  },
+  {
+   "title": "Tear You Apart",
+   "artist": "She Wants Revenge",
+   "year": 2005
+  },
+  {
+   "title": "When the Sun Goes Down",
+   "artist": "Arctic Monkeys",
+   "year": 2004
+  },
+  {
+   "title": "Teddy Picker",
+   "artist": "Arctic Monkeys",
+   "year": 2006
+  },
+  {
+   "title": "Headlock",
+   "artist": "Imogen Heap",
+   "year": 2005
+  },
+  {
+   "title": "R U Mine?",
+   "artist": "Arctic Monkeys",
+   "year": 2012
+  },
+  {
+   "title": "Without You",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Bang Bang Bang Bang",
+   "artist": "Sohodolls",
+   "year": 2007
+  },
+  {
+   "title": "Maps",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2003
+  },
+  {
+   "title": "Naïve",
+   "artist": "The Kooks",
+   "year": 2005
+  },
+  {
+   "title": "Somebody Told Me",
+   "artist": "The Killers",
+   "year": 2004
+  },
+  {
+   "title": "Carmen",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Banquet",
+   "artist": "Bloc Party",
+   "year": 2004
+  },
+  {
+   "title": "Evil",
+   "artist": "Interpol",
+   "year": 2004
+  },
+  {
+   "title": "National Anthem",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "A-Punk",
+   "artist": "Vampire Weekend",
+   "year": 2007
+  },
+  {
+   "title": "Pretty When You Cry",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Mardy Bum",
+   "artist": "Arctic Monkeys",
+   "year": 2004
+  },
+  {
+   "title": "High by the Beach",
+   "artist": "Lana Del Rey",
+   "year": 2015
+  },
+  {
+   "title": "Gooey",
+   "artist": "Glass Animals",
+   "year": 2014
+  },
+  {
+   "title": "I Wanna Be Yours",
+   "artist": "Arctic Monkeys",
+   "year": 2013
+  },
+  {
+   "title": "12:51",
+   "artist": "The Strokes",
+   "year": 2003
+  },
+  {
+   "title": "Karma Police",
+   "artist": "Radiohead",
+   "year": 1996
+  },
+  {
+   "title": "Jerk It Out",
+   "artist": "Caesars",
+   "year": 2002
+  },
+  {
+   "title": "Dance Yrself Clean",
+   "artist": "LCD Soundsystem",
+   "year": 2010
+  },
+  {
+   "title": "W.D.Y.W.F.M?",
+   "artist": "The Neighbourhood",
+   "year": 2013
+  },
+  {
+   "title": "Helena Beat",
+   "artist": "Foster the People",
+   "year": 2011
+  },
+  {
+   "title": "Chelsea Dagger",
+   "artist": "The Fratellis",
+   "year": 2006
+  },
+  {
+   "title": "It's Time",
+   "artist": "Imagine Dragons",
+   "year": 2011
+  },
+  {
+   "title": "I Can Talk",
+   "artist": "Two Door Cinema Club",
+   "year": 2009
+  },
+  {
+   "title": "Two Weeks",
+   "artist": "Grizzly Bear",
+   "year": 2008
+  },
+  {
+   "title": "Sex",
+   "artist": "The 1975",
+   "year": 2012
+  },
+  {
+   "title": "I Will Follow You Into The Dark",
+   "artist": "Death Cab for Cutie",
+   "year": 2005
+  },
+  {
+   "title": "Brianstorm",
+   "artist": "Arctic Monkeys",
+   "year": 2007
+  },
+  {
+   "title": "White Winter Hymnal",
+   "artist": "Fleet Foxes",
+   "year": 2008
+  },
+  {
+   "title": "Some Nights",
+   "artist": "fun.",
+   "year": 2012
+  },
+  {
+   "title": "Lolita",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Sign of the Times",
+   "artist": "Harry Styles",
+   "year": 2017
+  },
+  {
+   "title": "Anyone Else But You",
+   "artist": "The Moldy Peaches",
+   "year": 2001
+  },
+  {
+   "title": "Monster",
+   "artist": "Meg & Dia",
+   "year": 2005
+  },
+  {
+   "title": "Cosmic Love",
+   "artist": "Florence + the Machine",
+   "year": 2009
+  },
+  {
+   "title": "Best Day of My Life",
+   "artist": "American Authors",
+   "year": 2012
+  },
+  {
+   "title": "Do Me a Favour",
+   "artist": "Arctic Monkeys",
+   "year": 2006
+  },
+  {
+   "title": "Ballad of Big Nothing",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Disparate Youth",
+   "artist": "Santigold",
+   "year": 2012
+  },
+  {
+   "title": "Big Jet Plane",
+   "artist": "Angus & Julia Stone",
+   "year": 2010
+  },
+  {
+   "title": "Sleeping Lessons",
+   "artist": "The Shins",
+   "year": 2007
+  },
+  {
+   "title": "Title and Registration",
+   "artist": "Death Cab for Cutie",
+   "year": 2003
+  },
+  {
+   "title": "Nine in the Afternoon",
+   "artist": "Panic! at the Disco",
+   "year": 2008
+  },
+  {
+   "title": "Chicago",
+   "artist": "Sufjan Stevens",
+   "year": 2005
+  },
+  {
+   "title": "I Can't Handle Change",
+   "artist": "Roar",
+   "year": 2010
+  },
+  {
+   "title": "Son of Sam",
+   "artist": "Elliott Smith",
+   "year": 1999
+  },
+  {
+   "title": "Chamber of Reflection",
+   "artist": "Mac DeMarco",
+   "year": 2014
+  },
+  {
+   "title": "Safe and Sound",
+   "artist": "Capital Cities",
+   "year": 2011
+  },
+  {
+   "title": "This Is What Makes Us Girls",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Only Ones Who Know",
+   "artist": "Arctic Monkeys",
+   "year": 2007
+  },
+  {
+   "title": "Grins",
+   "artist": "Charli xcx",
+   "year": 2012
+  },
+  {
+   "title": "Miss Misery",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Tessellate",
+   "artist": "alt-J",
+   "year": 2011
+  },
+  {
+   "title": "Trying Your Luck",
+   "artist": "The Strokes",
+   "year": 2001
+  },
+  {
+   "title": "Run Boy Run",
+   "artist": "Woodkid",
+   "year": 2012
+  },
+  {
+   "title": "Take a Walk",
+   "artist": "Passion Pit",
+   "year": 2012
+  },
+  {
+   "title": "Old Yellow Bricks",
+   "artist": "Arctic Monkeys",
+   "year": 2007
+  },
+  {
+   "title": "Waltz #2 (XO)",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Indie Rokkers",
+   "artist": "MGMT",
+   "year": 2005
+  },
+  {
+   "title": "Pitseleh",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Skinny Love",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Baby Britain",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Master of None",
+   "artist": "Beach House",
+   "year": 2006
+  },
+  {
+   "title": "Goodbye",
+   "artist": "The Sundays",
+   "year": 1992
+  },
+  {
+   "title": "Automatic Stop",
+   "artist": "The Strokes",
+   "year": 2003
+  },
+  {
+   "title": "A.M. 180",
+   "artist": "Grandaddy",
+   "year": 1997
+  },
+  {
+   "title": "You (Ha Ha Ha)",
+   "artist": "Charli xcx",
+   "year": 2013
+  },
+  {
+   "title": "I Follow Rivers",
+   "artist": "Lykke Li",
+   "year": 2011
+  },
+  {
+   "title": "Civilian",
+   "artist": "Wye Oak",
+   "year": 2011
+  },
+  {
+   "title": "Everybody's Changing",
+   "artist": "Keane",
+   "year": 2003
+  },
+  {
+   "title": "Coffee & TV",
+   "artist": "Blur",
+   "year": 1999
+  },
+  {
+   "title": "Dramamine",
+   "artist": "Modest Mouse",
+   "year": 1995
+  },
+  {
+   "title": "You've Got the Love",
+   "artist": "Florence + the Machine",
+   "year": 2008
+  },
+  {
+   "title": "Houdini",
+   "artist": "Foster the People",
+   "year": 2011
+  },
+  {
+   "title": "Tiny Vessels",
+   "artist": "Death Cab for Cutie",
+   "year": 2003
+  },
+  {
+   "title": "How",
+   "artist": "The Neighbourhood",
+   "year": 2013
+  },
+  {
+   "title": "Guns and Roses",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Helicopter",
+   "artist": "Bloc Party",
+   "year": 2004
+  },
+  {
+   "title": "Mykonos",
+   "artist": "Fleet Foxes",
+   "year": 2008
+  },
+  {
+   "title": "Lying Is the Most Fun a Girl Can Have Without Taking Her Clothes Off",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "I Don't Want to Get Over You",
+   "artist": "The Magnetic Fields",
+   "year": 1999
+  },
+  {
+   "title": "Such Great Heights",
+   "artist": "The Postal Service",
+   "year": 2003
+  },
+  {
+   "title": "My Propeller",
+   "artist": "Arctic Monkeys",
+   "year": 2009
+  },
+  {
+   "title": "Golden Skans",
+   "artist": "Klaxons",
+   "year": 2006
+  },
+  {
+   "title": "Female Robbery",
+   "artist": "The Neighbourhood",
+   "year": 2012
+  },
+  {
+   "title": "Wash.",
+   "artist": "Bon Iver",
+   "year": 2011
+  },
+  {
+   "title": "From the Ritz to the Rubble",
+   "artist": "Arctic Monkeys",
+   "year": 2005
+  },
+  {
+   "title": "No Buses",
+   "artist": "Arctic Monkeys",
+   "year": 2006
+  },
+  {
+   "title": "Transatlanticism",
+   "artist": "Death Cab for Cutie",
+   "year": 2003
+  },
+  {
+   "title": "Car Radio",
+   "artist": "Twenty One Pilots",
+   "year": 2010
+  },
+  {
+   "title": "Nude",
+   "artist": "Radiohead",
+   "year": 2000
+  },
+  {
+   "title": "A Lack of Color",
+   "artist": "Death Cab for Cutie",
+   "year": 2003
+  },
+  {
+   "title": "Independence Day",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Somebody Else",
+   "artist": "The 1975",
+   "year": 2016
+  },
+  {
+   "title": "Last Nite",
+   "artist": "The Strokes",
+   "year": 2000
+  },
+  {
+   "title": "Futile Devices (Doveman Remix)",
+   "artist": "Sufjan Stevens",
+   "year": 2017
+  },
+  {
+   "title": "This Fire",
+   "artist": "Franz Ferdinand",
+   "year": 2003
+  },
+  {
+   "title": "For Emma",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "On Top of the World",
+   "artist": "Imagine Dragons",
+   "year": 2012
+  },
+  {
+   "title": "A Certain Romance",
+   "artist": "Arctic Monkeys",
+   "year": 2004
+  }
+ ]
+}

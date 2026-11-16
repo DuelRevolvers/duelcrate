@@ -1,0 +1,372 @@
+{
+ "name": "2000s",
+ "tag": "00s",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Since I Left You",
+   "artist": "The Avalanches",
+   "year": 2000
+  },
+  {
+   "title": "Flashing Lights",
+   "artist": "Kanye West",
+   "year": 2007
+  },
+  {
+   "title": "Without Me",
+   "artist": "Eminem",
+   "year": 2002
+  },
+  {
+   "title": "7 Days",
+   "artist": "Craig David",
+   "year": 2000
+  },
+  {
+   "title": "Hey Ya!",
+   "artist": "OutKast",
+   "year": 2003
+  },
+  {
+   "title": "The Real Slim Shady",
+   "artist": "Eminem",
+   "year": 1999
+  },
+  {
+   "title": "Teenage Dirtbag",
+   "artist": "Wheatus",
+   "year": 2000
+  },
+  {
+   "title": "All the Things She Said",
+   "artist": "t.A.T.u.",
+   "year": 2001
+  },
+  {
+   "title": "Toxic",
+   "artist": "Britney Spears",
+   "year": 2003
+  },
+  {
+   "title": "Rock Your Body",
+   "artist": "Justin Timberlake",
+   "year": 2002
+  },
+  {
+   "title": "Feel Good Inc.",
+   "artist": "Gorillaz",
+   "year": 2004
+  },
+  {
+   "title": "Mr. Brightside",
+   "artist": "The Killers",
+   "year": 2001
+  },
+  {
+   "title": "Fireflies",
+   "artist": "Owl City",
+   "year": 2009
+  },
+  {
+   "title": "Complicated",
+   "artist": "Avril Lavigne",
+   "year": 2001
+  },
+  {
+   "title": "Hot in Herre",
+   "artist": "Nelly",
+   "year": 2002
+  },
+  {
+   "title": "Breakin' Dishes",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Jesus Walks",
+   "artist": "Kanye West",
+   "year": 2002
+  },
+  {
+   "title": "Go With the Flow",
+   "artist": "Queens of the Stone Age",
+   "year": 2002
+  },
+  {
+   "title": "Last Nite",
+   "artist": "The Strokes",
+   "year": 2000
+  },
+  {
+   "title": "Through the Wire",
+   "artist": "Kanye West",
+   "year": 2002
+  },
+  {
+   "title": "Starlight",
+   "artist": "The Supermen Lovers",
+   "year": 2001
+  },
+  {
+   "title": "No One Knows",
+   "artist": "Queens of the Stone Age",
+   "year": 2002
+  },
+  {
+   "title": "Since U Been Gone",
+   "artist": "Kelly Clarkson",
+   "year": 2003
+  },
+  {
+   "title": "Gold Digger",
+   "artist": "Kanye West",
+   "year": 2005
+  },
+  {
+   "title": "It Wasn't Me",
+   "artist": "Shaggy",
+   "year": 2000
+  },
+  {
+   "title": "Roses",
+   "artist": "OutKast",
+   "year": 2003
+  },
+  {
+   "title": "Smile",
+   "artist": "Lily Allen",
+   "year": 1995
+  },
+  {
+   "title": "Shut Up and Drive",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "What You Waiting For?",
+   "artist": "Gwen Stefani",
+   "year": 2004
+  },
+  {
+   "title": "First It Giveth",
+   "artist": "Queens of the Stone Age",
+   "year": 2002
+  },
+  {
+   "title": "Heaven Can Wait",
+   "artist": "Michael Jackson",
+   "year": 2001
+  },
+  {
+   "title": "Stan",
+   "artist": "Eminem",
+   "year": 2000
+  },
+  {
+   "title": "Hung Up",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "We Belong Together",
+   "artist": "Mariah Carey",
+   "year": 2005
+  },
+  {
+   "title": "Seven Nation Army",
+   "artist": "The White Stripes",
+   "year": 2003
+  },
+  {
+   "title": "Work It",
+   "artist": "Missy Elliott",
+   "year": 2002
+  },
+  {
+   "title": "Wolf Like Me",
+   "artist": "TV on the Radio",
+   "year": 2001
+  },
+  {
+   "title": "Cry Me a River",
+   "artist": "Justin Timberlake",
+   "year": 2002
+  },
+  {
+   "title": "Blurry",
+   "artist": "Puddle of Mudd",
+   "year": 2001
+  },
+  {
+   "title": "RoboCop",
+   "artist": "Kanye West",
+   "year": 2008
+  },
+  {
+   "title": "Crazy",
+   "artist": "Gnarls Barkley",
+   "year": 2006
+  },
+  {
+   "title": "Rich Girl",
+   "artist": "Gwen Stefani",
+   "year": 2005
+  },
+  {
+   "title": "Lose Yourself",
+   "artist": "Eminem",
+   "year": 2002
+  },
+  {
+   "title": "Whenever, Wherever",
+   "artist": "Shakira",
+   "year": 2001
+  },
+  {
+   "title": "Somebody Told Me",
+   "artist": "The Killers",
+   "year": 2004
+  },
+  {
+   "title": "The Sweet Escape",
+   "artist": "Gwen Stefani",
+   "year": 2006
+  },
+  {
+   "title": "Trying Your Luck",
+   "artist": "The Strokes",
+   "year": 2001
+  },
+  {
+   "title": "Where's Your Head At",
+   "artist": "Basement Jaxx",
+   "year": 2001
+  },
+  {
+   "title": "Say It Right",
+   "artist": "Nelly Furtado",
+   "year": 2006
+  },
+  {
+   "title": "Can't Stop",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2001
+  },
+  {
+   "title": "Maps",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2003
+  },
+  {
+   "title": "Float On",
+   "artist": "Modest Mouse",
+   "year": 2002
+  },
+  {
+   "title": "Music",
+   "artist": "Madonna",
+   "year": 2000
+  },
+  {
+   "title": "Get Ur Freak On",
+   "artist": "Missy Elliott",
+   "year": 2001
+  },
+  {
+   "title": "Jerk It Out",
+   "artist": "Caesars",
+   "year": 2002
+  },
+  {
+   "title": "You Think I Ain't Worth a Dollar, but I Feel Like a Millionaire",
+   "artist": "Queens of the Stone Age",
+   "year": 2002
+  },
+  {
+   "title": "What I've Done",
+   "artist": "Linkin Park",
+   "year": 2007
+  },
+  {
+   "title": "Shake It Off",
+   "artist": "Mariah Carey",
+   "year": 2005
+  },
+  {
+   "title": "A Thousand Miles",
+   "artist": "Vanessa Carlton",
+   "year": 2000
+  },
+  {
+   "title": "Are You Gonna Be My Girl",
+   "artist": "Jet",
+   "year": 2003
+  },
+  {
+   "title": "Survivor",
+   "artist": "Destiny's Child",
+   "year": 2001
+  },
+  {
+   "title": "When You Were Young",
+   "artist": "The Killers",
+   "year": 2006
+  },
+  {
+   "title": "Sorry",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "Automatic Stop",
+   "artist": "The Strokes",
+   "year": 2003
+  },
+  {
+   "title": "Dani California",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2006
+  },
+  {
+   "title": "By the Way",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2001
+  },
+  {
+   "title": "Hit 'Em Up Style (Oops!)",
+   "artist": "Blu Cantrell",
+   "year": 2001
+  },
+  {
+   "title": "Rehab",
+   "artist": "Amy Winehouse",
+   "year": 2006
+  },
+  {
+   "title": "Just The Way You Are",
+   "artist": "Milky",
+   "year": 2001
+  },
+  {
+   "title": "Breaking the Habit",
+   "artist": "Linkin Park",
+   "year": 2003
+  },
+  {
+   "title": "It's My Life",
+   "artist": "Bon Jovi",
+   "year": 1993
+  },
+  {
+   "title": "Lapdance",
+   "artist": "N*E*R*D",
+   "year": 2001
+  },
+  {
+   "title": "I Don't Feel Like Dancin'",
+   "artist": "Scissor Sisters",
+   "year": 2006
+  }
+ ]
+}

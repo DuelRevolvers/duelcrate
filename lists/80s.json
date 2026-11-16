@@ -1,0 +1,362 @@
+{
+ "name": "80s",
+ "tag": "80s",
+ "updated": "2026-11-16",
+ "songs": [
+  {
+   "title": "Don't Dream It's Over",
+   "artist": "Crowded House",
+   "year": 1986
+  },
+  {
+   "title": "Purple Rain",
+   "artist": "Prince",
+   "year": 1990
+  },
+  {
+   "title": "Every Breath You Take",
+   "artist": "The Police",
+   "year": 1983
+  },
+  {
+   "title": "Your Love",
+   "artist": "The Outfield",
+   "year": 1985
+  },
+  {
+   "title": "Billie Jean",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Africa",
+   "artist": "Toto",
+   "year": 1982
+  },
+  {
+   "title": "Enjoy the Silence",
+   "artist": "Depeche Mode",
+   "year": 1985
+  },
+  {
+   "title": "Beat It",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Friday I'm in Love",
+   "artist": "The Cure",
+   "year": 1992
+  },
+  {
+   "title": "I'm Still Standing",
+   "artist": "Elton John",
+   "year": 1983
+  },
+  {
+   "title": "Thriller",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Like a Prayer",
+   "artist": "Madonna",
+   "year": 1989
+  },
+  {
+   "title": "The Winner Takes It All",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Human Nature",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Livin' on a Prayer",
+   "artist": "Bon Jovi",
+   "year": 1986
+  },
+  {
+   "title": "Rebel Yell",
+   "artist": "Billy Idol",
+   "year": 1983
+  },
+  {
+   "title": "P.Y.T. (Pretty Young Thing)",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Message in a Bottle",
+   "artist": "The Police",
+   "year": 1979
+  },
+  {
+   "title": "Heart of Glass",
+   "artist": "Blondie",
+   "year": 1978
+  },
+  {
+   "title": "Heaven",
+   "artist": "Bryan Adams",
+   "year": 1984
+  },
+  {
+   "title": "You Give Love a Bad Name",
+   "artist": "Bon Jovi",
+   "year": 1986
+  },
+  {
+   "title": "Cheri Cheri Lady",
+   "artist": "Modern Talking",
+   "year": 1985
+  },
+  {
+   "title": "Hold the Line",
+   "artist": "Toto",
+   "year": 1978
+  },
+  {
+   "title": "When Doves Cry",
+   "artist": "Prince",
+   "year": 1984
+  },
+  {
+   "title": "Owner of a Lonely Heart",
+   "artist": "Yes",
+   "year": 1983
+  },
+  {
+   "title": "The Final Countdown",
+   "artist": "Europe",
+   "year": 1986
+  },
+  {
+   "title": "Personal Jesus",
+   "artist": "Depeche Mode",
+   "year": 1985
+  },
+  {
+   "title": "Gypsy",
+   "artist": "Fleetwood Mac",
+   "year": 1982
+  },
+  {
+   "title": "Kiss",
+   "artist": "Prince",
+   "year": 1986
+  },
+  {
+   "title": "Everywhere",
+   "artist": "Fleetwood Mac",
+   "year": 1987
+  },
+  {
+   "title": "Blister In The Sun",
+   "artist": "Violent Femmes",
+   "year": 1983
+  },
+  {
+   "title": "Abracadabra",
+   "artist": "Steve Miller Band",
+   "year": 1982
+  },
+  {
+   "title": "Brother Louie",
+   "artist": "Modern Talking",
+   "year": 1986
+  },
+  {
+   "title": "Waiting for a Girl Like You",
+   "artist": "Foreigner",
+   "year": 1981
+  },
+  {
+   "title": "Sweet Child o' Mine",
+   "artist": "Guns N' Roses",
+   "year": 1988
+  },
+  {
+   "title": "Super Freak",
+   "artist": "Rick James",
+   "year": 1981
+  },
+  {
+   "title": "Upside Down",
+   "artist": "Diana Ross",
+   "year": 1980
+  },
+  {
+   "title": "9 to 5",
+   "artist": "Dolly Parton",
+   "year": 1980
+  },
+  {
+   "title": "Photograph",
+   "artist": "Def Leppard",
+   "year": 1983
+  },
+  {
+   "title": "Free Fallin'",
+   "artist": "Tom Petty",
+   "year": 1989
+  },
+  {
+   "title": "Sultans of Swing",
+   "artist": "Dire Straits",
+   "year": 1979
+  },
+  {
+   "title": "Red Red Wine",
+   "artist": "UB40",
+   "year": 1983
+  },
+  {
+   "title": "Another One Bites the Dust",
+   "artist": "Queen",
+   "year": 1980
+  },
+  {
+   "title": "I Would Die 4 U",
+   "artist": "Prince",
+   "year": 1992
+  },
+  {
+   "title": "Don't Stop 'Til You Get Enough",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Roxanne",
+   "artist": "The Police",
+   "year": 1978
+  },
+  {
+   "title": "Welcome to the Jungle",
+   "artist": "Guns N' Roses",
+   "year": 1986
+  },
+  {
+   "title": "Take It on the Run",
+   "artist": "REO Speedwagon",
+   "year": 1980
+  },
+  {
+   "title": "It's Raining Men",
+   "artist": "The Weather Girls",
+   "year": 1982
+  },
+  {
+   "title": "Electric Avenue",
+   "artist": "Eddy Grant",
+   "year": 1982
+  },
+  {
+   "title": "Edge of Seventeen",
+   "artist": "Stevie Nicks",
+   "year": 1981
+  },
+  {
+   "title": "I'm So Excited",
+   "artist": "The Pointer Sisters",
+   "year": 1982
+  },
+  {
+   "title": "18 and Life",
+   "artist": "Skid Row",
+   "year": 1989
+  },
+  {
+   "title": "Got My Mind Set on You",
+   "artist": "George Harrison",
+   "year": 1987
+  },
+  {
+   "title": "I Just Called to Say I Love You",
+   "artist": "Stevie Wonder",
+   "year": 1984
+  },
+  {
+   "title": "You're My Heart, You're My Soul",
+   "artist": "Modern Talking",
+   "year": 1984
+  },
+  {
+   "title": "Pump Up the Jam",
+   "artist": "Technotronic",
+   "year": 1989
+  },
+  {
+   "title": "Girls, Girls, Girls",
+   "artist": "Mötley Crüe",
+   "year": 1987
+  },
+  {
+   "title": "Any Way You Want It",
+   "artist": "Journey",
+   "year": 1980
+  },
+  {
+   "title": "Dancing With Myself",
+   "artist": "Generation X",
+   "year": 1995
+  },
+  {
+   "title": "Still Loving You",
+   "artist": "Scorpions",
+   "year": 1984
+  },
+  {
+   "title": "Kickstart My Heart",
+   "artist": "Mötley Crüe",
+   "year": 1982
+  },
+  {
+   "title": "Home Sweet Home",
+   "artist": "Mötley Crüe",
+   "year": 1985
+  },
+  {
+   "title": "Little Red Corvette",
+   "artist": "Prince",
+   "year": 1982
+  },
+  {
+   "title": "Paradise City",
+   "artist": "Guns N' Roses",
+   "year": 1986
+  },
+  {
+   "title": "We're Not Gonna Take It",
+   "artist": "Twisted Sister",
+   "year": 1984
+  },
+  {
+   "title": "Funkytown",
+   "artist": "Lipps, Inc.",
+   "year": 1979
+  },
+  {
+   "title": "Policy of Truth",
+   "artist": "Depeche Mode",
+   "year": 1985
+  },
+  {
+   "title": "Pour Some Sugar on Me",
+   "artist": "Def Leppard",
+   "year": 1987
+  },
+  {
+   "title": "Cum on Feel the Noize",
+   "artist": "Quiet Riot",
+   "year": 1983
+  },
+  {
+   "title": "Let's Groove",
+   "artist": "Earth, Wind & Fire",
+   "year": 1981
+  }
+ ]
+}
