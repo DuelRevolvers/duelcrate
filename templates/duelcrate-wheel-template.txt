@@ -14,11 +14,14 @@
 #  WEDGES sets the wheel: numbers for cash, or the words
 #  Bankrupt, Lose a Turn, and Free Play. Leave it out to keep the
 #  classic wheel. Delete the BONUS lines to skip the bonus round.
+#  SAY ANSWERS: yes means players say their solve out loud and the
+#  host judges it; no means they type it on their phones.
 
 TYPE: wheel
 NAME: Wheel Puzzle Night
 MAX PLAYERS: 20
 VOWEL COST: 250
+SAY ANSWERS: no
 WEDGES: 2500, 900, 700, 800, Bankrupt, 550, 650, 500, 700, Lose a Turn, 600, 650, 500, 900, Free Play, 600, 550, 800, 500, Bankrupt, 650, 500, 700, 600
 BONUS: yes
 BONUS CATEGORY: Event

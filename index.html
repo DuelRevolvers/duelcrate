@@ -1352,7 +1352,7 @@
       <li>Enter your <b>name</b> and the 4-letter <b>room code</b> from the host's screen.</li>
       <li>Your phone becomes your controller — a buzzer, answer choices, or a place to type guesses and wagers, depending on the game.</li>
       <li>Watch the host's screen for the questions. Your phone shows your score and what to do next.</li>
-      <li>If you get disconnected, just rejoin with the <b>same name</b> — your score will be waiting for you.</li>
+      <li>If you get disconnected, rejoin from the <b>same phone</b> with the <b>same name</b> — you pick up right where you left off.</li>
     </ol>
 
     <p>DuelCrate runs entirely in your browsers — the host's device is the game server, so keep it awake and online during the show.</p>
@@ -1496,7 +1496,10 @@
     LS_SETTINGS: 'duelcrate_settings',
     LS_GAMES:    'duelcrate_games',
     LS_PLAYER:   'duelcrate_player_name',
-    LS_HISTORY:  'duelcrate_history'
+    LS_HISTORY:  'duelcrate_history',
+    LS_DEVICE:   'duelcrate_device',     /* this phone's id, for rejoining a seat */
+    LS_ROOM:     'duelcrate_last_room',  /* { code, at }: prefills the join form */
+    SS_ROOM:     'duelcrate_in_room'     /* this tab is in a room: rejoin after a reload */
   };
 
   /* ---------------- hash router ----------------
@@ -1528,6 +1531,14 @@
                           'Nora','Leo','Ruby','Owen','Ivy','Felix'];
       document.getElementById('join-name').placeholder =
         'e.g. ' + SAMPLE_NAMES[Math.floor(Math.random() * SAMPLE_NAMES.length)];
+      /* the last room this phone was in, for up to 12 hours */
+      var jc = document.getElementById('join-code');
+      if(!jc.value){
+        try{
+          var lr = JSON.parse(localStorage.getItem(DC.LS_ROOM) || 'null');
+          if(lr && lr.code && Date.now() - lr.at < 12 * 3600 * 1000) jc.value = lr.code;
+        }catch(e){}
+      }
     }
     window.scrollTo(0,0);
   }
@@ -1607,6 +1618,38 @@
     pvConnect();
   });
 
+  /* this phone's id: the host gives a seat back to the same name from the same phone */
+  var pvDeviceId = '';
+  function pvDevice(){
+    if(pvDeviceId) return pvDeviceId;
+    try{ pvDeviceId = localStorage.getItem(DC.LS_DEVICE) || ''; }catch(e){}
+    if(!pvDeviceId){
+      pvDeviceId = Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+      try{ localStorage.setItem(DC.LS_DEVICE, pvDeviceId); }catch(e){}
+    }
+    return pvDeviceId;
+  }
+  function pvRemember(on){
+    try{
+      if(on){
+        sessionStorage.setItem(DC.SS_ROOM, pv.code);
+        localStorage.setItem(DC.LS_ROOM, JSON.stringify({ code: pv.code, at: Date.now() }));
+      }else sessionStorage.removeItem(DC.SS_ROOM);
+    }catch(e){}
+  }
+  /* phones often reload a tab that sat in the background: if this tab
+     was in a room, rejoin it under the same name straight away */
+  (function(){
+    var code = '';
+    try{ code = sessionStorage.getItem(DC.SS_ROOM) || ''; }catch(e){}
+    if(!code || currentRoute() !== 'join') return;
+    var nm = document.getElementById('join-name');
+    if(!nm.value.trim()) nm.value = localStorage.getItem(DC.LS_PLAYER) || '';
+    if(!nm.value.trim()) return;
+    codeInput.value = code;
+    setTimeout(function(){ document.getElementById('join-go').click(); }, 0);
+  })();
+
   /* null refs before closing so stale close events are ignorable */
   function pvCleanup(){
     var c = pv.conn, p = pv.peer;
@@ -1630,7 +1673,11 @@
     if(pvWake){ try{ pvWake.release(); }catch(e){} pvWake = null; }
   }
   document.addEventListener('visibilitychange', function(){
-    if(pv.active && pv.joined && document.visibilityState === 'visible') pvWakeOn();
+    if(pv.active && pv.joined && document.visibilityState === 'visible'){
+      pvWakeOn();
+      /* back from the background with a dead link: get the seat back now */
+      if(!pv.leaving && !pv.closedByHost && pv.conn && !pv.conn.open){ pv.retries = 0; pvScheduleRetry(); }
+    }
   });
 
   function pvShow(on){
@@ -1659,7 +1706,7 @@
 
       conn.on('open', function(){
         if(conn !== pv.conn) return;
-        conn.send({ t:'hello', name: pv.name });
+        conn.send({ t:'hello', name: pv.name, device: pvDevice() });
       });
 
       conn.on('data', function(d){
@@ -1675,12 +1722,16 @@
         else if(d.t === 'welcome'){
           settled = true; clearTimeout(timeout);
           pv.joined = true; pv.retries = 0;
+          pvRemember(true);
           elPVGame.textContent = d.gameName || 'DuelCrate';
           setJoinMsg('');
           pvShow(true);
         }
         else if(d.t === 'state'){
-          if(d.mode === 'closed') pv.closedByHost = true;
+          if(d.mode === 'closed'){
+            pv.closedByHost = true; pvRemember(false);
+            try{ localStorage.removeItem(DC.LS_ROOM); }catch(e){}
+          }
           pv.state = d;
           renderPlayerState();
         }
@@ -1722,6 +1773,7 @@
   }
 
   function pvFail(msg){
+    pvRemember(false);
     if(pv.joined){
       /* mid-show and the room is gone — say so on the player screen */
       pvRenderClosed(msg);
@@ -1736,6 +1788,7 @@
 
   function pvLeave(){
     pv.leaving = true; pv.active = false;
+    pvRemember(false);
     clearTimeout(pv.retryTimer);
     pvCleanup();
     pvShow(false);
@@ -2445,6 +2498,12 @@
     }
     else if(m === 'closed'){
       pvRenderClosed('The host ended the show. Thanks for playing!');
+    }
+    else if(m === 'speak'){   /* spoken answers: the host judges what they hear */
+      if(pv.lastMode !== 'speak') pvHaptic([60, 40, 60]);
+      st.appendChild(pvEl('div','pv-result-icon','🗣'));
+      st.appendChild(pvEl('div','pv-big', s.title || 'Say it out loud!'));
+      if(s.note) st.appendChild(pvEl('div','pv-note', s.note));
     }
     else { /* 'waiting' and anything unrecognized */
       st.appendChild(pvEl('div','pv-result-icon','\uD83C\uDFAA'));
@@ -3700,12 +3759,15 @@
       '#  or free-for-all (everyone buzzes in for every answer).',
       '#  STRIKES is how many wrong answers the team playing the board',
       '#  gets before the other team can steal the round: 1, 2 or 3.',
+      '#  SAY ANSWERS: yes means players say answers out loud and the',
+      '#  host clicks the match; no means they type on their phones.',
       '',
       'TYPE: feud',
       'NAME: Feud Survey',
       'MAX PLAYERS: 20',
       'PLAY STYLE: teams',
       'STRIKES: 3',
+      'SAY ANSWERS: no',
       '',
       'Q: Name something you take to the beach.',
       '- Towel | 30',
@@ -3747,11 +3809,14 @@
       '#  WEDGES sets the wheel: numbers for cash, or the words',
       '#  Bankrupt, Lose a Turn, and Free Play. Leave it out to keep the',
       '#  classic wheel. Delete the BONUS lines to skip the bonus round.',
+      '#  SAY ANSWERS: yes means players say their solve out loud and the',
+      '#  host judges it; no means they type it on their phones.',
       '',
       'TYPE: wheel',
       'NAME: Wheel Puzzle Night',
       'MAX PLAYERS: 20',
       'VOWEL COST: 250',
+      'SAY ANSWERS: no',
       'WEDGES: 2500, 900, 700, 800, Bankrupt, 550, 650, 500, 700, Lose a Turn, 600, 650, 500, 900, Free Play, 600, 550, 800, 500, Bankrupt, 650, 500, 700, 600',
       'BONUS: yes',
       'BONUS CATEGORY: Event',
@@ -3956,7 +4021,7 @@
   /* keys that describe the whole game rather than one question */
   var BULK_GLOBALS = {
     'TYPE':1,'NAME':1,'MAX PLAYERS':1,'VALUES':1,
-    'PLAY STYLE':1,'TEAMS':1,'STRIKES':1,
+    'PLAY STYLE':1,'TEAMS':1,'STRIKES':1,'SAY ANSWERS':1,
     'VOWEL COST':1,'WEDGES':1,
     'BONUS':1,'BONUS CATEGORY':1,'BONUS PUZZLE':1,'BONUS PRIZE':1,
     'FIRST':1,'SECOND':1,'THIRD':1,'REVEAL ONE BY ONE':1,
@@ -4205,6 +4270,7 @@
       }
       if(meta['TEAMS'] !== undefined) d.mode = bulkBool(meta['TEAMS']) ? 'teams' : 'ffa';
       if(meta['STRIKES'] !== undefined) d.strikes = Math.min(3, Math.max(1, bulkInt(meta['STRIKES'], 3)));
+      if(meta['SAY ANSWERS'] !== undefined) d.spoken = bulkBool(meta['SAY ANSWERS']);
       var fq = bulkFeud(blocks);
       if(!fq.length) return 0;
       if(d.questions.length === 1 && !d.questions[0].q.trim()) d.questions = [];
@@ -4230,6 +4296,7 @@
       d.puzzles = d.puzzles.concat(wq);
       added = wq.length;
       if(meta['VOWEL COST'] !== undefined) d.vowelCost = Math.max(0, bulkInt(meta['VOWEL COST'], 250));
+      if(meta['SAY ANSWERS'] !== undefined) d.spoken = bulkBool(meta['SAY ANSWERS']);
       if(meta['WEDGES']){
         var ws = meta['WEDGES'].split(',').map(parseWedge).filter(function(w){ return !!w; });
         if(ws.length >= 4) d.wedges = ws.slice(0, 32);
@@ -4519,6 +4586,17 @@
     return { q:'', img:null,
              answers:[{text:'',pts:0},{text:'',pts:0},{text:'',pts:0},{text:'',pts:0}] };
   }
+  /* the "say answers out loud" checkbox (Feud and Wheel): d.spoken */
+  function spokenRow(d, parent, label, help){
+    var la = document.createElement('label'); la.className = 'dd-row';
+    var cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!d.spoken;
+    var note = document.createElement('div'); note.className = 'tq-foot';
+    function sync(){ note.textContent = d.spoken ? help : 'Players type their answers on their phones.'; }
+    cb.addEventListener('change', function(){ d.spoken = this.checked; touch(); sync(); });
+    la.appendChild(cb); la.appendChild(document.createTextNode(' ' + label));
+    parent.appendChild(la); parent.appendChild(note);
+    sync();
+  }
   function renderFeudEditor(g, wrap){
     var bar = editorHeader(g, wrap);
     var d = g.data;
@@ -4568,6 +4646,9 @@
         : 'Everyone buzzes in for every answer and keeps the points they find.';
     }
     psSync();
+    spokenRow(d, ps, '🗣 Players say their answers out loud',
+      'Phones only buzz in. The player says the answer, and you click the matching answer '
+      + 'on the board or in the GM answer key, or press ✗ if it isn’t there.');
     wrap.appendChild(ps);
     var list = document.createElement('div'); list.className = 'tq-list';
     wrap.appendChild(list);
@@ -4734,6 +4815,9 @@
     vhint.textContent = 'Paid out of this round’s bank';
     vrow.appendChild(vhint);
     ws.appendChild(vrow);
+    spokenRow(d, ws, '🗣 Players say their solve out loud',
+      'Players still spin and pick letters on their phones. To solve, they say the answer, '
+      + 'and you judge it with ✓ Correct or ✗ Wrong.');
 
     /* a live picture of the wheel you're building */
     var prev = document.createElement('div'); prev.className = 'wof-preview';
@@ -4992,7 +5076,9 @@
           function(id){ p.img = id; touch(); }
         ));
         function puzzleFoot(){
-          return 'Players spin, call letters and solve on their phones. Spaces and punctuation show for free. '
+          return (d.spoken ? 'Players spin and call letters on their phones, and say their solve out loud. '
+                           : 'Players spin, call letters and solve on their phones. ')
+            + 'Spaces and punctuation show for free. '
             + letterNote(p.text);
         }
         var foot = document.createElement('div'); foot.className = 'tq-foot';
@@ -5986,21 +6072,34 @@
   }
   function pushAll(){ if(host) Object.keys(host.players).forEach(function(pid){ pushState(host.players[pid]); }); }
 
+  /* the player a link belongs to; a link that a rejoin replaced counts for nobody */
+  function who(conn){
+    var p = host && conn.dcPid ? host.players[conn.dcPid] : null;
+    return p && p.conn === conn ? p : null;
+  }
   function handleMsg(conn, d){
     if(!host || !d || typeof d !== 'object') return;
     if(d.t === 'hello'){
       var name = String(d.name || '').trim().slice(0,16);
       if(!name){ send(conn, { t:'rejected', reason:'Name required.' }); return; }
-      /* reclaim seat by name if that player disconnected */
+      var device = String(d.device || '').slice(0, 40);
+      /* reclaim a seat. The same name from the same phone takes it back
+         even while the old link still looks open (phones drop silently);
+         the same name from another phone takes it once the old link has
+         dropped. The seat keeps its pid, so every game's state for that
+         player (scores, banks, turn order, hands, teams) carries on.   */
       var existing = null;
       Object.keys(host.players).forEach(function(pid){
         var p = host.players[pid];
-        if(!p.connected && p.name.toLowerCase() === name.toLowerCase()) existing = p;
+        if(p.name.toLowerCase() !== name.toLowerCase()) return;
+        if(!p.connected || (device && p.device === device)) existing = p;
       });
       if(existing){
-        delete host.players[existing.pid];
-        existing.pid = conn.peer; existing.conn = conn; existing.connected = true;
-        host.players[conn.peer] = existing;
+        var oldConn = existing.conn;
+        existing.conn = conn; existing.connected = true;
+        if(device) existing.device = device;
+        conn.dcPid = existing.pid;
+        if(oldConn && oldConn !== conn){ try{ oldConn.close(); }catch(e){} }
       }else{
         var cap = Math.min(20, Math.max(2, parseInt(host.game.maxPlayers, 10) || 20));
         if(Object.keys(host.players).length >= cap){
@@ -6011,51 +6110,53 @@
                  host.players[pid].name.toLowerCase() === name.toLowerCase();
         });
         if(taken){ send(conn, { t:'rejected', reason:'That name is taken in this room.' }); return; }
-        host.players[conn.peer] = { pid:conn.peer, name:name, conn:conn, connected:true, score:0 };
+        conn.dcPid = conn.peer;
+        host.players[conn.dcPid] = { pid:conn.dcPid, name:name, conn:conn, connected:true, score:0, device:device };
       }
-      feudSeat(host.players[conn.peer]);
+      var me = host.players[conn.dcPid];
+      feudSeat(me);
       send(conn, { t:'welcome', roomCode:host.code, gameType:host.game.type,
                    gameName:host.game.name.trim() || 'DuelCrate' });
-      pushState(host.players[conn.peer]);
+      pushState(me);
       renderLobbyPlayers(); renderScoreRow(); gmRosterChanged();
       if(host.ctl && host.ctl.onRoster) host.ctl.onRoster();
     }
     else if(d.t === 'buzz'){
-      var p = host.players[conn.peer];
+      var p = who(conn);
       if(p && host.ctl && host.ctl.onBuzz) host.ctl.onBuzz(p);
     }
     else if(d.t === 'answer'){
-      var p2 = host.players[conn.peer];
+      var p2 = who(conn);
       if(p2 && host.ctl && host.ctl.onAnswer) host.ctl.onAnswer(p2, d.choice);
     }
     else if(d.t === 'wager'){
-      var p3 = host.players[conn.peer];
+      var p3 = who(conn);
       if(p3 && host.ctl && host.ctl.onWager) host.ctl.onWager(p3, d.amount);
     }
     else if(d.t === 'text'){
-      var p4 = host.players[conn.peer];
+      var p4 = who(conn);
       if(p4 && host.ctl && host.ctl.onText) host.ctl.onText(p4, d.answer);
     }
     else if(d.t === 'guess'){
-      var p5 = host.players[conn.peer];
+      var p5 = who(conn);
       if(p5 && host.ctl && host.ctl.onGuess) host.ctl.onGuess(p5, d.value);
     }
     else if(d.t === 'wheel'){
-      var p6 = host.players[conn.peer];
+      var p6 = who(conn);
       if(p6 && host.ctl && host.ctl.onWheel) host.ctl.onWheel(p6, d);
     }
     else if(d.t === 'court'){
-      var p7 = host.players[conn.peer];
+      var p7 = who(conn);
       if(p7 && host.ctl && host.ctl.onCourt) host.ctl.onCourt(p7, d);
     }
     else if(d.t === 'timeline'){
-      var p8 = host.players[conn.peer];
+      var p8 = who(conn);
       if(p8 && host.ctl && host.ctl.onTimeline) host.ctl.onTimeline(p8, d);
     }
   }
   function dropConn(conn){
     if(!host) return;
-    var p = host.players[conn.peer];
+    var p = who(conn);
     if(!p) return;
     p.connected = false;
     renderLobbyPlayers(); renderScoreRow();
@@ -7812,6 +7913,7 @@
     var qs = validFeudQs(host.game.data);
     var teams = feudTeamsOn();
     var maxStrikes = feudStrikes(host.game.data);
+    var spoken = !!host.game.data.spoken;   /* players say answers; the host clicks the match */
     var idx = -1;
     var buzz = 'closed';   /* closed | open | answer | judge */
     var buzzedP = null;
@@ -7986,6 +8088,7 @@
                    (foTeam !== null && p.team !== foTeam))) return;
       buzz = 'answer'; buzzedP = p;
       stopTimer();
+      if(spoken){ judgeView('🔔 ' + p.name + (teams ? ' for ' + tn(p.team) : '') + ' — say your answer!'); return; }
       say('🔔 ' + p.name + (teams ? ' for ' + tn(p.team) : '') + ' — typing a guess…');
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn('✗ Skip / No Answer','bad', strike));
@@ -8003,8 +8106,12 @@
       if(!buzzedP || p.pid !== buzzedP.pid) return;
       var guess = String(answer || '').trim().slice(0, 60);
       if(!guess){ strike(); return; }
+      judgeView('💬 ' + buzzedP.name + ': “' + guess + '”');
+    }
+    /* the host matches what was said or typed: a board answer, or ✗ */
+    function judgeView(lead){
       buzz = 'judge'; stopTimer();
-      say('💬 ' + buzzedP.name + ': “' + guess + '”');
+      say(lead);
       slotEls.forEach(function(s, i){ if(!revealed[i]) s.classList.add('hot'); });
       actsEl.innerHTML = '';
       var hint = document.createElement('div'); hint.className = 'answered-note';
@@ -8118,6 +8225,7 @@
       var p = ms[(ms.indexOf(lastUp[ctrl]) + 1) % ms.length];
       lastUp[ctrl] = p;
       buzzedP = p; buzz = 'answer';
+      if(spoken){ judgeView((lead ? lead + ' ' : '') + p.name + ', you’re up! Say your answer.'); return; }
       say((lead ? lead + ' ' : '') + p.name + ', you’re up!');
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn('✗ Strike', 'bad', strike));
@@ -8131,6 +8239,7 @@
       stage = 'steal'; buzzedP = null; buzz = 'closed';
       if(!feudMembers(s, true).length){ roundWin(ctrl, 'Nobody is left to steal.'); return; }
       buzz = 'answer';
+      if(spoken){ judgeView(tn(s) + ', talk it over, then say one answer to steal ' + bank + ' points!'); return; }
       say(tn(s) + ', talk it over — one guess to steal ' + bank + ' points!');
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn('✗ No Steal', 'bad', strike));
@@ -8207,6 +8316,16 @@
       stateFor: function(p, base){
         if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the board!'; return base; }
         var q90 = q().q.slice(0, 90);
+        if(spoken && buzz === 'judge'){
+          var stealing = teams && stage === 'steal';
+          if(stealing ? p.team === 1 - ctrl : !!(buzzedP && p.pid === buzzedP.pid)){
+            base.mode = 'speak';
+            base.title = stealing ? 'Steal it!' : 'Your turn!';
+            base.note = stealing ? 'Talk it over, then say one answer out loud for your team.'
+                                 : 'Say your answer out loud. ' + q90;
+            return base;
+          }
+        }
         if(!teams){
           if(buzz === 'open'){
             if(locked[p.pid]){ base.mode='locked'; base.note='You’ve had your guess — watch the board!'; return base; }
@@ -8897,6 +9016,7 @@
     var qs = validWheelPuzzles(d);
     var wedges = (d.wedges && d.wedges.length) ? d.wedges : wofDefaultWedges();
     var vowelCost = parseInt(d.vowelCost, 10); if(!(vowelCost >= 0)) vowelCost = 250;
+    var spoken = !!d.spoken;   /* solves are said out loud and go straight to the host's call */
     var bonusCfg = d.bonus || {};
     var VOWELS = 'AEIOU';
 
@@ -9109,9 +9229,11 @@
       actsEl.innerHTML = '';
       if(phase === 'judge' || phase === 'bonus-judge'){
         actsEl.appendChild(stageBtn('✓ Correct','good', function(){
+          stopTimer();
           if(phase === 'bonus-judge') bonusFinish(true); else solved(solver);
         }));
         actsEl.appendChild(stageBtn('✗ Wrong','bad', function(){
+          stopTimer();
           if(phase === 'bonus-judge'){ bonusFinish(false); return; }
           var s = solver; solver = null; solveText = null;
           solveBox.hidden = true;
@@ -9251,6 +9373,7 @@
       if(!p || p.pid !== curPid()) return;
       if(phase !== 'spin' && phase !== 'letter') return;
       phase = 'solve'; solver = p; solveText = null;
+      if(spoken){ phase = 'judge'; refresh(); showSolve(); return; }
       note(p.name + ' is solving…');
       refresh(); pushAll();
       startTimer(settings.answerTime, timerFill, function(){
@@ -9264,7 +9387,7 @@
     function showSolve(){
       solveBox.hidden = false;
       solveBox.textContent = (solver ? solver.name + ': ' : '') +
-        (solveText ? '“' + solveText + '”' : '(no answer)');
+        (solveText ? '“' + solveText + '”' : solveText === null ? '🗣 answering out loud' : '(no answer)');
       /* the real answer stays in the GM Console — never on the shared screen */
       note('Your call, host — the answer is in your GM Console.');
       updateActions(); pushAll();
@@ -9284,6 +9407,13 @@
         refresh(got ? ch : null);
         if(bonusPicks.cons >= 3 && bonusPicks.vow >= 1){
           phase = 'bonus-solve'; solver = bonusP; solveText = null;
+          if(spoken){
+            phase = 'bonus-judge'; showSolve();
+            startTimer(settings.answerTime, timerFill, function(){
+              if(alive() && phase === 'bonus-judge') note('Time’s up! Did ' + bonusP.name + ' solve it in time?');
+            });
+            return;
+          }
           note(bonusP.name + ' — solve it!');
           updateActions(); pushAll();
           startTimer(settings.answerTime, timerFill, function(){
@@ -9457,7 +9587,7 @@
           }
           base.mode = 'wheel-wait';
           base.puzzle = masked();
-          base.note = 'The host is checking your answer…';
+          base.note = spoken && solveText === null ? '🗣 Say your answer out loud!' : 'The host is checking your answer…';
           return base;
         }
 
@@ -9520,7 +9650,7 @@
           return base;
         }
         base.mode = 'wheel-wait';
-        base.note = 'The host is checking your answer…';
+        base.note = spoken && solveText === null ? '🗣 Say your answer out loud!' : 'The host is checking your answer…';
         return base;
       }
     };
