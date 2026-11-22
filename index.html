@@ -478,6 +478,36 @@
   .fs-slot .fs-pts{color:var(--bulb);font-variant-numeric:tabular-nums;flex:none}
   .fs-ans-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
   .fs-ans-row input{margin-bottom:0}
+  /* feud team play */
+  .fs-bank{display:flex;align-items:baseline;gap:10px;font-family:var(--display);color:var(--bulb);
+           background:var(--stage-2);border:2px solid #7A5A10;border-radius:12px;padding:6px 20px}
+  .fs-bank small{font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.14em;
+                 text-transform:uppercase;color:var(--ink-dim)}
+  .fs-bank b{font-size:28px;font-weight:400;font-variant-numeric:tabular-nums}
+  .fs-strikes{display:flex;gap:14px;justify-content:center}
+  .fs-strikes span{font-family:var(--display);font-size:30px;line-height:1;color:#3A2A72}
+  .fs-strikes span.on{color:var(--spot);text-shadow:0 0 16px #FF4D9D88}
+  .fs-flash{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
+            gap:4vw;pointer-events:none;font-family:var(--display);font-size:min(28vw,240px);
+            color:var(--spot);text-shadow:0 0 40px #FF4D9DAA;animation:fsFlash 1.1s ease-out forwards}
+  @keyframes fsFlash{0%{opacity:0;transform:scale(.6)}15%{opacity:1;transform:scale(1.06)}
+                     70%{opacity:1;transform:scale(1)}100%{opacity:0}}
+  .schip.team{flex-wrap:wrap;justify-content:center;border-radius:16px;font-size:17px;padding:9px 18px;max-width:48%}
+  .schip.team .tm{flex-basis:100%;text-align:center;font-size:12px;font-weight:600;color:var(--ink-dim)}
+  .schip.ctrl{border-color:var(--bulb);box-shadow:0 0 18px #FFC42E44}
+  .final-members{display:block;font-size:13px;font-weight:600;color:var(--ink-dim)}
+  .fs-teams{max-width:720px;width:100%;margin:0 auto 26px;text-align:left}
+  .fs-teams-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .fs-teams-head h3{margin:0;font-size:1.05rem;flex:1}
+  .fs-teams-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .fs-team{background:var(--stage-2);border:2px solid #3A2A72;border-radius:14px;padding:12px;min-height:130px}
+  .fs-team.drop{border-color:var(--bulb)}
+  .fs-team .fin-input{font-family:var(--display);font-size:16px;margin-bottom:12px}
+  .fs-team-list{display:flex;flex-wrap:wrap;gap:8px}
+  .fs-team-list .pchip{cursor:pointer;font-family:var(--body);font-weight:700;font-size:15px;color:var(--ink)}
+  .fs-team-list .pchip:hover{border-color:var(--bulb)}
+  .fs-team-list .empty{color:var(--ink-dim);font-size:13px}
+  .fs-teams small{display:block;opacity:.75;margin-top:8px}
   .fs-ans-row .fs-text{flex:1;min-width:0}
   .fs-ans-row .fs-pts-in{width:76px;flex:none;text-align:center}
 
@@ -752,6 +782,12 @@
     text-shadow:0 0 18px #FFC42E44;word-break:break-word;
   }
   .gmr-answers .gm-empty{color:#5D4F86;font-size:14px}
+  .gmr-answers .gm-hint{color:var(--ink-dim);font-size:13px}
+  .gmr-answers .gm-key{cursor:pointer;color:var(--ink);font-family:var(--body);font-weight:600}
+  .gmr-answers .gm-key:hover{border-color:var(--bulb)}
+  .gmr-answers .gm-key.done{opacity:.45;cursor:default}
+  .gmr-answers .gm-key.done:hover{border-color:#3A2A72}
+  .gmr-answers .gm-key.done span{text-decoration:line-through}
   .gmr-foot{display:flex;flex-direction:column;gap:10px}
   .gmr-end{
     font-weight:700;font-size:15px;padding:12px;border-radius:10px;
@@ -1255,6 +1291,7 @@
       <p class="lobby-hint">Players: scan the code with your phone camera — or open this app's <b>player join page</b> (the <b>#join</b> link) — then enter the room code.</p>
       <div class="lobby-players" id="lobby-players"></div>
       <div class="tl-pool" id="tl-pool" hidden></div>
+      <div class="fs-teams" id="fs-teams" hidden></div>
       <button class="join-btn" id="start-game-btn" disabled>Waiting for players…</button>
       <br>
       <button class="hint-btn" id="open-gm-btn">🎛 Open GM Console</button>
@@ -2067,13 +2104,15 @@
     st.innerHTML = '';
     var m = s.mode;
     if(m !== 'court-hand') pv.callOpen = false;
+    if(m !== 'text') pv.draft = '';
 
     /* the puzzle + wheel live outside the stage so they survive a re-render */
     renderPvExtras(s);
 
     if(m === 'lobby'){
-      st.appendChild(pvEl('div','pv-big gold','You\u2019re in!'));
+      st.appendChild(pvEl('div','pv-big gold','You’re in!'));
       if(s.roomCode) st.appendChild(pvEl('div','pv-code', s.roomCode));
+      if(s.team) st.appendChild(pvEl('div','pv-cat','Your team: ' + s.team));
       st.appendChild(pvEl('div','pv-note','Waiting for the host to start the show\u2026'));
     }
     else if(m === 'buzzer'){
@@ -2169,15 +2208,20 @@
       var tinp = document.createElement('input');
       tinp.type = 'text'; tinp.maxLength = 120;
       tinp.placeholder = 'Your answer\u2026'; tinp.autocomplete = 'off';
+      /* a re-sent state redraws this form, so keep what they've typed */
+      var tdraft = (s.title || '') + '|' + (s.cat || '');
       if(s.current !== undefined && s.current !== null) tinp.value = s.current;
+      else if(pv.draftKey === tdraft && pv.draft) tinp.value = pv.draft;
+      tinp.addEventListener('input', function(){ pv.draftKey = tdraft; pv.draft = this.value; });
       var tnote = pvEl('div','pv-note',
-        s.current ? 'Locked in \u2014 you can still edit it until writing closes!'
-                  : 'Type your answer before the timer runs out!');
+        s.current ? 'Locked in — you can still edit it until writing closes!'
+                  : (s.note || 'Type your answer before the timer runs out!'));
       var tgo = pvEl('button','join-btn', s.current ? 'Update answer' : 'Lock in answer');
       var sendText = function(){
         var val = tinp.value.trim();
         if(!val){ tnote.textContent = 'Type your answer first.'; return; }
         pvSend({ t:'text', answer: val });
+        pv.draft = '';
         if(s.editable){
           tnote.textContent = 'Sent! You can still edit until writing closes.';
         }else{
@@ -2390,7 +2434,7 @@
       st.appendChild(pvEl('div','pv-big gold','Final Scores'));
       var list = pvEl('div','final-list');
       (s.placements || []).forEach(function(p, i){
-        var row = pvEl('div','final-row' + (s.you && p.name === s.you.name ? ' me' : ''));
+        var row = pvEl('div','final-row' + ((s.you && p.name === s.you.name) || (s.team && p.name === s.team) ? ' me' : ''));
         row.appendChild(pvEl('span','place', i === 0 ? '\uD83C\uDFC6' : '#' + (i+1)));
         row.appendChild(pvEl('span','', p.name));
         row.appendChild(pvEl('span','pts', String(p.score)));
@@ -3209,13 +3253,13 @@
       label:'Feud Survey', icon:'📊',
       blurb:'A board of hidden survey answers. Buzz in and guess!',
       blank:function(){
-        return { questions:[ feudBlankQ() ] };
+        return { mode:'teams', strikes:3, questions:[ feudBlankQ() ] };
       },
       summary:function(d){
         var n = d.questions.filter(function(q){
           return q.q.trim() && q.answers.some(function(a){ return a.text.trim(); });
         }).length;
-        return n+' survey'+(n===1?'':'s');
+        return n+' survey'+(n===1?'':'s') + (d.mode === 'teams' ? ' · teams' : '');
       },
       renderEditor: renderFeudEditor
     },
@@ -3652,10 +3696,16 @@
       '#  List each survey answer on its own line starting with a dash.',
       '#  Put the number of people who said it after a | (pipe).',
       '#  Up to 8 answers per survey; the top ones score the most.',
+      '#  PLAY STYLE is teams (two teams face off, like the TV show)',
+      '#  or free-for-all (everyone buzzes in for every answer).',
+      '#  STRIKES is how many wrong answers the team playing the board',
+      '#  gets before the other team can steal the round: 1, 2 or 3.',
       '',
       'TYPE: feud',
       'NAME: Feud Survey',
       'MAX PLAYERS: 20',
+      'PLAY STYLE: teams',
+      'STRIKES: 3',
       '',
       'Q: Name something you take to the beach.',
       '- Towel | 30',
@@ -3906,6 +3956,7 @@
   /* keys that describe the whole game rather than one question */
   var BULK_GLOBALS = {
     'TYPE':1,'NAME':1,'MAX PLAYERS':1,'VALUES':1,
+    'PLAY STYLE':1,'TEAMS':1,'STRIKES':1,
     'VOWEL COST':1,'WEDGES':1,
     'BONUS':1,'BONUS CATEGORY':1,'BONUS PUZZLE':1,'BONUS PRIZE':1,
     'FIRST':1,'SECOND':1,'THIRD':1,'REVEAL ONE BY ONE':1,
@@ -4147,6 +4198,13 @@
       added = cq.length;
     }
     else if(g.type === 'feud'){
+      if(meta['PLAY STYLE'] !== undefined){
+        var fm = String(meta['PLAY STYLE']).toLowerCase();
+        if(/team/.test(fm)) d.mode = 'teams';
+        else if(/free|ffa|each|solo/.test(fm)) d.mode = 'ffa';
+      }
+      if(meta['TEAMS'] !== undefined) d.mode = bulkBool(meta['TEAMS']) ? 'teams' : 'ffa';
+      if(meta['STRIKES'] !== undefined) d.strikes = Math.min(3, Math.max(1, bulkInt(meta['STRIKES'], 3)));
       var fq = bulkFeud(blocks);
       if(!fq.length) return 0;
       if(d.questions.length === 1 && !d.questions[0].q.trim()) d.questions = [];
@@ -4471,6 +4529,46 @@
     }));
     bulkControls(g, bar);
     bar.appendChild(savedNoteEl);
+
+    /* ---- play style ---- */
+    var ps = document.createElement('div'); ps.className = 'fin-section';
+    var psh = document.createElement('h3'); psh.textContent = '📊 Play style';
+    ps.appendChild(psh);
+    [['ffa', 'Free-for-all'], ['teams', 'Teams']].forEach(function(o){
+      var la = document.createElement('label'); la.className = 'dd-row';
+      var r = document.createElement('input'); r.type = 'radio'; r.name = 'fs-mode';
+      r.checked = feudMode(d) === o[0];
+      r.addEventListener('change', function(){
+        if(this.checked){ d.mode = o[0]; touch(); psSync(); }
+      });
+      la.appendChild(r); la.appendChild(document.createTextNode(' ' + o[1]));
+      ps.appendChild(la);
+    });
+    var sRow = document.createElement('div'); sRow.className = 'cw-row';
+    var sLab = document.createElement('label'); sLab.textContent = 'Strikes before a steal';
+    var sIn = document.createElement('input');
+    sIn.className = 'fin-input'; sIn.type = 'text'; sIn.inputMode = 'numeric';
+    sIn.placeholder = '3'; sIn.style.width = '70px'; sIn.value = feudStrikes(d);
+    sIn.addEventListener('input', function(){
+      var n = parseInt(this.value.replace(/\D/g,''), 10);
+      d.strikes = isNaN(n) ? 3 : Math.min(3, Math.max(1, n)); touch();
+    });
+    sIn.addEventListener('blur', function(){ this.value = feudStrikes(d); });
+    sLab.appendChild(sIn); sRow.appendChild(sLab);
+    ps.appendChild(sRow);
+    var psNote = document.createElement('div'); psNote.className = 'tq-foot';
+    ps.appendChild(psNote);
+    function psSync(){
+      var tm = feudMode(d) === 'teams';
+      sRow.style.display = tm ? '' : 'none';
+      psNote.textContent = tm
+        ? 'Two teams, like the TV show. Each survey opens with a face-off that anyone can buzz. '
+          + 'The team that wins it plays the board one player at a time, and after the last strike '
+          + 'the other team gets one guess to steal the round. You set up the teams in the lobby.'
+        : 'Everyone buzzes in for every answer and keeps the points they find.';
+    }
+    psSync();
+    wrap.appendChild(ps);
     var list = document.createElement('div'); list.className = 'tq-list';
     wrap.appendChild(list);
     function draw(){
@@ -4523,7 +4621,7 @@
           q.answers.push({text:'',pts:0}); touch(); draw();
         }));
         var foot = document.createElement('div'); foot.className = 'tq-foot';
-        foot.textContent = 'Answers appear on the board in this order. Whoever guesses one wins its points.';
+        foot.textContent = 'Answers appear on the board in this order. In free-for-all, whoever finds one wins its points. In team play, the points go to the team that wins the round.';
         card.appendChild(foot);
         list.appendChild(card);
       });
@@ -5819,6 +5917,7 @@
         document.getElementById('lobby-code').textContent = code;
         gmRenderAll();
         renderLobbyQR();
+        feudTeamsInit();
         renderLobbyPlayers();
         tlPoolInit();
         showPlayView('lobby');
@@ -5876,6 +5975,7 @@
   function stateFor(p){
     if(!host) return { t:'state', mode:'closed' };
     var base = { t:'state', you:{ name:p.name, score:p.score } };
+    if(feudTeamsOn() && host.teams[p.team]) base.team = host.teams[p.team].name;
     if(host.phase === 'lobby'){ base.mode = 'lobby'; base.roomCode = host.code; return base; }
     if(host.phase === 'ended'){ base.mode = 'scores'; base.placements = placements(); return base; }
     return host.ctl ? host.ctl.stateFor(p, base) : (base.mode='waiting', base);
@@ -5913,6 +6013,7 @@
         if(taken){ send(conn, { t:'rejected', reason:'That name is taken in this room.' }); return; }
         host.players[conn.peer] = { pid:conn.peer, name:name, conn:conn, connected:true, score:0 };
       }
+      feudSeat(host.players[conn.peer]);
       send(conn, { t:'welcome', roomCode:host.code, gameType:host.game.type,
                    gameName:host.game.name.trim() || 'DuelCrate' });
       pushState(host.players[conn.peer]);
@@ -6034,7 +6135,8 @@
         row.className = 'lb-row' + (ws.indexOf(p.name) >= 0 ? ' win' : '');
         var pl = document.createElement('span'); pl.className = 'lb-place';
         pl.textContent = '#' + (i + 1);
-        var who = document.createElement('span'); who.className = 'lb-who'; who.textContent = p.name;
+        var who = document.createElement('span'); who.className = 'lb-who';
+        who.textContent = p.name + (p.members ? ' (' + p.members + ')' : '');
         var pt = document.createElement('span'); pt.className = 'lb-pts';
         pt.textContent = p.score + ' PTS';
         row.appendChild(pl); row.appendChild(who); row.appendChild(pt);
@@ -6046,6 +6148,12 @@
   }
 
   function placements(){
+    if(feudTeamsOn()){
+      return [0, 1].map(function(t){
+        return { name: host.teams[t].name, score: host.teams[t].score,
+                 members: feudMembers(t).map(function(p){ return p.name; }).join(', ') };
+      }).sort(function(a,b){ return b.score - a.score; });
+    }
     return roster().sort(function(a,b){ return b.score - a.score; })
       .map(function(p){ return { name:p.name, score:p.score }; });
   }
@@ -6081,7 +6189,10 @@
     var wrap = document.getElementById('lobby-players');
     wrap.innerHTML = '';
     var ps = roster();
-    ps.forEach(function(p){
+    /* team play lists everyone in the Teams panel instead */
+    var teamed = feudTeamsOn();
+    wrap.style.display = teamed ? 'none' : '';
+    if(!teamed) ps.forEach(function(p){
       var chip = document.createElement('span');
       chip.className = 'pchip' + (p.connected ? '' : ' gone');
       chip.textContent = p.name;
@@ -6091,13 +6202,19 @@
     var live = ps.filter(function(p){ return p.connected; }).length;
     /* a trial needs two lawyers before it can open */
     var need = host.game.type === 'court' ? 2
-             : host.game.type === 'timeline' ? (host.game.data.hostPlays ? 1 : 2) : 1;
+             : host.game.type === 'timeline' ? (host.game.data.hostPlays ? 1 : 2)
+             : teamed ? 2 : 1;
     btn.disabled = live < need;
     btn.textContent = live < need
       ? (need > 1 ? 'Need ' + (need - live) + ' more player' + (need - live === 1 ? '' : 's') + '…'
                   : 'Waiting for players…')
       : 'Start Game ('+live+' in)';
+    if(teamed && !btn.disabled && (!feudMembers(0, true).length || !feudMembers(1, true).length)){
+      btn.disabled = true;
+      btn.textContent = 'Each team needs a player…';
+    }
     tlPoolRenderSoon();
+    feudTeamsRender();
   }
   document.getElementById('start-game-btn').addEventListener('click', function(){
     if(!host || this.disabled) return;
@@ -6130,6 +6247,21 @@
   function renderScoreRow(){
     if(!host || host.phase === 'lobby'){ elScoreRow.innerHTML=''; return; }
     elScoreRow.innerHTML = '';
+    if(feudTeamsOn()){
+      var hi = host.ctl && host.ctl.teamFocus ? host.ctl.teamFocus() : null;
+      [0, 1].forEach(function(t){
+        var tm = host.teams[t];
+        var c = document.createElement('span');
+        c.className = 'schip team' + (hi === t ? ' ctrl' : '') + (tm.score < 0 ? ' neg' : '');
+        var n = document.createElement('span'); n.textContent = tm.name;
+        var s = document.createElement('span'); s.className = 'pts'; s.textContent = tm.score + ' PTS';
+        var w = document.createElement('small'); w.className = 'tm';
+        w.textContent = feudMembers(t, true).map(function(p){ return p.name; }).join(' · ') || 'Nobody yet';
+        c.appendChild(n); c.appendChild(s); c.appendChild(w);
+        elScoreRow.appendChild(c);
+      });
+      return;
+    }
     roster().sort(function(a,b){ return b.score - a.score; }).forEach(function(p){
       var c = document.createElement('span');
       c.className = 'schip' + (p.connected?'':' gone') + (p.score<0?' neg':'');
@@ -7550,24 +7682,202 @@
     };
   }
 
-  /* ============ FEUD SURVEY RUNTIME ============ */
+  /* ============ FEUD TEAMS ============
+     Team play keeps its two teams on host.teams and each player's side on
+     p.team, so a player who drops and rejoins by name keeps their side.
+     Every member's score mirrors their team's, so the GM roster, the phones
+     and the record book all show the team's total.                    */
+  function feudMode(d){ return d && d.mode === 'teams' ? 'teams' : 'ffa'; }
+  function feudStrikes(d){
+    var n = parseInt(d && d.strikes, 10);
+    return n >= 1 && n <= 3 ? n : 3;
+  }
+  function feudTeamsOn(){ return !!(host && host.teams); }
+  function feudTeamName(t){ return feudTeamsOn() && host.teams[t] ? host.teams[t].name : ''; }
+  function feudMembers(t, liveOnly){
+    return roster().filter(function(p){ return p.team === t && (!liveOnly || p.connected); });
+  }
+  function feudSyncScores(){
+    if(!feudTeamsOn()) return;
+    roster().forEach(function(p){ if(host.teams[p.team]) p.score = host.teams[p.team].score; });
+  }
+  /* a newcomer joins the smaller team */
+  function feudSeat(p){
+    if(!feudTeamsOn() || !p || host.teams[p.team]) return;
+    p.team = feudMembers(1).length < feudMembers(0).length ? 1 : 0;
+    p.score = host.teams[p.team].score;
+  }
+  function feudTeamsInit(){
+    var box = document.getElementById('fs-teams');
+    if(!box || !host) return;
+    box.innerHTML = '';
+    host.teams = null;
+    if(host.game.type !== 'feud' || feudMode(host.game.data) !== 'teams'){ box.hidden = true; return; }
+    host.teams = [ { name:'Team 1', score:0 }, { name:'Team 2', score:0 } ];
+    box.hidden = false;
+    var head = document.createElement('div'); head.className = 'fs-teams-head';
+    var h = document.createElement('h3'); h.textContent = 'Teams';
+    var shuf = document.createElement('button');
+    shuf.className = 'hint-btn'; shuf.textContent = '🔀 Shuffle';
+    shuf.addEventListener('click', feudShuffle);
+    head.appendChild(h); head.appendChild(shuf);
+    box.appendChild(head);
+    var cols = document.createElement('div'); cols.className = 'fs-teams-cols';
+    [0, 1].forEach(function(t){
+      var col = document.createElement('div'); col.className = 'fs-team';
+      var nm = document.createElement('input');
+      nm.className = 'fin-input'; nm.type = 'text'; nm.maxLength = 24;
+      nm.value = host.teams[t].name;
+      nm.setAttribute('aria-label', 'Name of team ' + (t + 1));
+      nm.addEventListener('input', function(){
+        if(!feudTeamsOn()) return;
+        host.teams[t].name = this.value.trim() || 'Team ' + (t + 1);
+        pushAll();
+      });
+      nm.addEventListener('blur', function(){ if(feudTeamsOn()) this.value = host.teams[t].name; });
+      col.appendChild(nm);
+      var list = document.createElement('div'); list.className = 'fs-team-list';
+      col.appendChild(list);
+      col.addEventListener('dragover', function(e){ e.preventDefault(); col.classList.add('drop'); });
+      col.addEventListener('dragleave', function(e){
+        if(!col.contains(e.relatedTarget)) col.classList.remove('drop');
+      });
+      col.addEventListener('drop', function(e){
+        e.preventDefault(); col.classList.remove('drop');
+        var p = host && host.players[e.dataTransfer.getData('text/plain')];
+        if(p) feudMove(p, t);
+      });
+      cols.appendChild(col);
+    });
+    box.appendChild(cols);
+    var tip = document.createElement('small');
+    tip.textContent = 'Click a name to move that player to the other team, or drag it. '
+      + 'Type in a team’s name to rename it. Players who join later go to the smaller team.';
+    box.appendChild(tip);
+    feudTeamsRender();
+  }
+  function feudTeamsRender(){
+    var box = document.getElementById('fs-teams');
+    if(!box || !feudTeamsOn() || host.phase !== 'lobby') return;
+    var lists = box.querySelectorAll('.fs-team-list');
+    [0, 1].forEach(function(t){
+      var list = lists[t];
+      if(!list) return;
+      list.innerHTML = '';
+      var ms = feudMembers(t);
+      if(!ms.length){
+        var e = document.createElement('span'); e.className = 'empty';
+        e.textContent = 'Nobody yet';
+        list.appendChild(e);
+      }
+      ms.forEach(function(p){
+        var chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'pchip' + (p.connected ? '' : ' gone');
+        chip.textContent = p.name;
+        chip.draggable = true;
+        chip.addEventListener('dragstart', function(e){ e.dataTransfer.setData('text/plain', p.pid); });
+        chip.addEventListener('click', function(){ feudMove(p, 1 - t); });
+        list.appendChild(chip);
+      });
+    });
+  }
+  function feudMove(p, t){
+    if(!feudTeamsOn() || host.phase !== 'lobby' || p.team === t) return;
+    p.team = t;
+    renderLobbyPlayers();
+    pushState(p);
+  }
+  function feudShuffle(){
+    if(!feudTeamsOn() || host.phase !== 'lobby') return;
+    var ps = roster();
+    for(var i = ps.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var x = ps[i]; ps[i] = ps[j]; ps[j] = x;
+    }
+    ps.forEach(function(p, k){ p.team = k % 2; });
+    renderLobbyPlayers();
+    pushAll();
+  }
+
+  /* ============ FEUD SURVEY RUNTIME ============
+     Free-for-all: everyone buzzes for every answer and keeps what they find.
+     Teams: each survey opens with a face-off anyone can buzz. The top
+     answer wins it outright; any other answer, or a miss, gives the other
+     team one try to do better. The winners play or pass. The team that
+     plays answers one player at a time until the board is clear or the
+     strikes run out, and then the other team gets one guess to steal
+     every point in the round.                                         */
   function feudCtl(){
     var qs = validFeudQs(host.game.data);
+    var teams = feudTeamsOn();
+    var maxStrikes = feudStrikes(host.game.data);
     var idx = -1;
     var buzz = 'closed';   /* closed | open | answer | judge */
     var buzzedP = null;
-    var locked = {};       /* pid -> true: had their shot this survey */
+    var locked = {};       /* pid -> true: had their shot this survey (teams: this face-off) */
     var revealed = [];
     var banner = null, actsEl = null, timerFill = null, slotEls = [];
+    /* team play */
+    var stage = 'faceoff'; /* faceoff | decide | control | steal | done */
+    var foTeam = null;     /* the only team that may buzz now; null = anyone */
+    var foFirst = null;    /* { team, ai }: the face-off's first answer; ai -1 = a miss */
+    var foWin = null, ctrl = null, winner = null;
+    var foPlayer = [null, null];   /* who answered for each team in the face-off */
+    var lastUp = [null, null];     /* each team's last answerer, for the rotation */
+    var strikes = 0, bank = 0;
+    var bankEl = null, strikeEl = null;
 
     function q(){ return qs[idx]; }
     function answers(){ return q().answers.filter(function(a){ return a.text.trim(); }); }
     function allRevealed(){ return revealed.every(function(r){ return r; }); }
+    function tn(t){ return feudTeamName(t); }
+    function ptsOf(i){ return answers()[i].pts || 0; }
+    /* more points ranks higher; on a tie, the answer higher on the board */
+    function beats(a, b){ return ptsOf(a) > ptsOf(b) || (ptsOf(a) === ptsOf(b) && a < b); }
+    function isTop(ai){
+      return answers().every(function(x, j){ return j === ai || revealed[j] || !beats(j, ai); });
+    }
+    function say(text, quiet){
+      banner.className = 'buzz-banner' + (quiet ? ' wait' : '');
+      banner.textContent = text;
+    }
+    function update(){
+      if(teams){
+        if(bankEl) bankEl.lastChild.textContent = bank;
+        if(strikeEl) [].forEach.call(strikeEl.children, function(x, k){ x.className = k < strikes ? 'on' : ''; });
+        renderScoreRow();
+      }
+      gmKey();
+      pushAll();
+    }
+    /* the GM answer key: every answer is a button */
+    function gmKey(){
+      if(idx < 0 || idx >= qs.length) return;
+      var on = buzz === 'answer' || buzz === 'judge';
+      var hint = 'Press an answer to show it on the board. It scores no points.';
+      if(on && teams && stage === 'steal') hint = 'Press the answer ' + tn(1 - ctrl) + ' gave to steal the round.';
+      else if(on && buzzedP) hint = 'Press the answer ' + buzzedP.name + ' gave to award it.';
+      gmSetAnswer(answers().map(function(a, i){
+        return { text: a.text, pts: (a.pts || 0), key: true, revealed: !!revealed[i] };
+      }), hint);
+    }
+    function flashX(n){
+      var f = document.createElement('div'); f.className = 'fs-flash';
+      for(var k = 0; k < Math.max(1, n); k++){
+        var x = document.createElement('span'); x.textContent = 'X'; f.appendChild(x);
+      }
+      document.body.appendChild(f);
+      setTimeout(function(){ if(f.parentNode) f.parentNode.removeChild(f); }, 1200);
+    }
 
     function next(){
       idx++;
       if(idx >= qs.length){ finish(); return; }
+      stopTimer();
       buzz = 'closed'; buzzedP = null; locked = {};
+      stage = 'faceoff'; foTeam = null; foFirst = null; foWin = null; ctrl = null; winner = null;
+      foPlayer = [null, null]; strikes = 0; bank = 0;
       revealed = answers().map(function(){ return false; });
       elStage.innerHTML = '';
       var v = document.createElement('div'); v.className = 'clue-view';
@@ -7578,6 +7888,14 @@
       var ct = document.createElement('div'); ct.className = 'clue-text';
       ct.textContent = q().q;
       v.appendChild(ct);
+      bankEl = strikeEl = null;
+      if(teams){
+        bankEl = document.createElement('div'); bankEl.className = 'fs-bank';
+        var bl = document.createElement('small'); bl.textContent = 'Round';
+        bankEl.appendChild(bl);
+        bankEl.appendChild(document.createElement('b'));
+        v.appendChild(bankEl);
+      }
       var board = document.createElement('div'); board.className = 'fs-board';
       /* answers stack in one column; a second column appears past four */
       var na = answers().length;
@@ -7594,11 +7912,15 @@
         slotEls.push(s); board.appendChild(s);
       });
       v.appendChild(board);
-      gmSetAnswer(answers().map(function(a){
-        return { text: a.text, pts: (a.pts || 0) };
-      }));
+      if(teams){
+        strikeEl = document.createElement('div'); strikeEl.className = 'fs-strikes';
+        for(var k = 0; k < maxStrikes; k++){
+          var sx = document.createElement('span'); sx.textContent = 'X'; strikeEl.appendChild(sx);
+        }
+        v.appendChild(strikeEl);
+      }
       banner = document.createElement('div'); banner.className = 'buzz-banner wait';
-      banner.textContent = 'Buzzers are closed';
+      banner.textContent = teams ? 'Face-off! Read the survey aloud, then open the buzzers.' : 'Buzzers are closed';
       v.appendChild(banner);
       var tb = document.createElement('div'); tb.className = 'timer-bar';
       timerFill = document.createElement('div'); timerFill.className = 'timer-fill';
@@ -7607,90 +7929,224 @@
       v.appendChild(actsEl);
       elStage.appendChild(v);
       drawClosed();
-      pushAll();
+      update();
     }
     function drawClosed(){
       actsEl.innerHTML = '';
+      if(teams){
+        if(stage === 'decide'){
+          actsEl.appendChild(stageBtn('▶ Play: ' + tn(foWin), 'gold', function(){ play(foWin); }));
+          actsEl.appendChild(stageBtn('⇄ Pass to ' + tn(1 - foWin), '', function(){ play(1 - foWin); }));
+          return;
+        }
+        if(stage === 'faceoff'){
+          actsEl.appendChild(stageBtn('🔔 Open Face-off', 'gold', function(){ openBuzzers(); }));
+          actsEl.appendChild(stageBtn('Reveal Rest & Close', '', revealRest));
+          return;
+        }
+        if(!allRevealed()) actsEl.appendChild(stageBtn('Reveal Rest', '', revealRest));
+        actsEl.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Survey ▶', 'gold', next));
+        return;
+      }
       if(allRevealed()){
-        banner.className = 'buzz-banner wait';
-        banner.textContent = 'Board cleared!';
+        say('Board cleared!', true);
         actsEl.appendChild(stageBtn(idx+1 >= qs.length ? 'Final Scores' : 'Next Survey ▶','gold', next));
         return;
       }
-      actsEl.appendChild(stageBtn('🔔 Open Buzzers','gold', openBuzzers));
+      actsEl.appendChild(stageBtn('🔔 Open Buzzers','gold', function(){ openBuzzers(); }));
       actsEl.appendChild(stageBtn('Reveal Rest & Close','', revealRest));
     }
-    function openBuzzers(){
+    function openBuzzers(msg, loud){
       buzz = 'open';
-      banner.className = 'buzz-banner wait';
-      banner.textContent = 'Buzzers OPEN — waiting…';
+      say(msg || (teams
+        ? (foTeam === null ? 'Face-off! Buzzers OPEN — anyone can buzz…'
+                           : tn(foTeam) + ', buzz in to answer!')
+        : 'Buzzers OPEN — waiting…'), !loud);
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn('Reveal Rest & Close','', revealRest));
       startTimer(settings.buzzTime, timerFill, function(){
         if(buzz !== 'open') return;
         buzz = 'closed';
-        banner.textContent = 'Time! Nobody buzzed.';
-        drawClosed(); pushAll();
+        if(teams && foFirst){
+          /* the other team let its chance run out */
+          if(foFirst.ai >= 0){ foDone(foFirst.team, 'Time!'); return; }
+          foFirst = null; foTeam = null;
+          say('Time! Nobody found one.', true);
+        }else{
+          foTeam = null;
+          say('Time! Nobody buzzed.', true);
+        }
+        drawClosed(); update();
       });
-      pushAll();
+      update();
     }
     function onBuzz(p){
       if(buzz !== 'open' || locked[p.pid]) return;
+      if(teams && (stage !== 'faceoff' || !host.teams[p.team] ||
+                   (foTeam !== null && p.team !== foTeam))) return;
       buzz = 'answer'; buzzedP = p;
       stopTimer();
-      banner.className = 'buzz-banner';
-      banner.textContent = '🔔 ' + p.name + ' — typing a guess…';
+      say('🔔 ' + p.name + (teams ? ' for ' + tn(p.team) : '') + ' — typing a guess…');
       actsEl.innerHTML = '';
       actsEl.appendChild(stageBtn('✗ Skip / No Answer','bad', strike));
       startTimer(settings.answerTime, timerFill, function(){
         if(buzz === 'answer') strike();
       });
-      pushAll();
+      update();
     }
     function onText(p, answer){
-      if(buzz !== 'answer' || !buzzedP || p.pid !== buzzedP.pid) return;
+      if(buzz !== 'answer') return;
+      if(teams && stage === 'steal'){
+        if(p.team !== 1 - ctrl) return;
+        buzzedP = p;   /* the first teammate to send speaks for the team */
+      }
+      if(!buzzedP || p.pid !== buzzedP.pid) return;
       var guess = String(answer || '').trim().slice(0, 60);
       if(!guess){ strike(); return; }
       buzz = 'judge'; stopTimer();
-      banner.className = 'buzz-banner';
-      banner.textContent = '💬 ' + buzzedP.name + ': \u201C' + guess + '\u201D';
+      say('💬 ' + buzzedP.name + ': “' + guess + '”');
       slotEls.forEach(function(s, i){ if(!revealed[i]) s.classList.add('hot'); });
       actsEl.innerHTML = '';
       var hint = document.createElement('div'); hint.className = 'answered-note';
-      hint.textContent = 'On the board? Click the matching answer to award it — or:';
+      hint.textContent = 'On the board? Click the matching answer here or in the GM answer key. If not:';
       actsEl.appendChild(hint);
-      actsEl.appendChild(stageBtn('✗ No Match','bad', strike));
-      pushAll();
+      actsEl.appendChild(stageBtn(teams && stage === 'control' ? '✗ Strike'
+                                : teams && stage === 'steal' ? '✗ No Steal' : '✗ No Match', 'bad', strike));
+      update();
     }
+    /* someone is on the clock and answer i is theirs */
     function award(i){
-      if(buzz !== 'judge' || revealed[i] || !buzzedP) return;
+      if(i < 0 || i >= revealed.length || revealed[i]) return;
+      if(buzz !== 'answer' && buzz !== 'judge') return;
+      if(!buzzedP && !(teams && stage === 'steal')) return;
+      stopTimer(); clearHot();
       revealed[i] = true;
-      var a = answers()[i];
       revealSlot(i, false);
-      buzzedP.score += (a.pts || 0);
-      renderScoreRow();
-      banner.className = 'buzz-banner wait';
-      banner.textContent = '✓ ' + buzzedP.name + ' takes ' + (a.pts || 0) + ' PTS!';
-      clearHot();
-      buzzedP = null; buzz = 'closed';
-      drawClosed();
-      pushAll();
+      var a = answers()[i];
+      if(!teams){
+        buzzedP.score += (a.pts || 0);
+        renderScoreRow();
+        say('✓ ' + buzzedP.name + ' takes ' + (a.pts || 0) + ' PTS!', true);
+        buzzedP = null; buzz = 'closed';
+        drawClosed(); update();
+        return;
+      }
+      bank += (a.pts || 0);
+      if(stage === 'faceoff'){ faceoff(buzzedP, i); return; }
+      if(stage === 'steal'){ roundWin(1 - ctrl, '✓ Stolen!'); return; }
+      if(allRevealed()){ roundWin(ctrl, '✓ Board cleared!'); return; }
+      nextTurn('✓ On the board!');
     }
     function strike(){
       if(buzz !== 'answer' && buzz !== 'judge') return;
-      stopTimer();
-      var name = buzzedP ? buzzedP.name : '';
-      if(buzzedP) locked[buzzedP.pid] = true;
-      clearHot();
+      stopTimer(); clearHot();
+      var p = buzzedP;
       buzzedP = null; buzz = 'closed';
-      banner.className = 'buzz-banner wait';
-      banner.textContent = '✗ ' + (name ? name + ' — ' : '') + 'not on the board!';
-      var anyLeft = roster().some(function(p){ return p.connected && !locked[p.pid]; });
-      if(anyLeft){ openBuzzers(); }
-      else {
-        banner.textContent = 'Everyone\u2019s had a turn!';
-        drawClosed(); pushAll();
+      flashX(teams && stage === 'control' ? strikes + 1 : 1);
+      if(!teams){
+        if(p) locked[p.pid] = true;
+        var miss = '✗ ' + (p ? p.name + ' — ' : '') + 'not on the board!';
+        var anyLeft = roster().some(function(m){ return m.connected && !locked[m.pid]; });
+        if(anyLeft){ openBuzzers(miss + ' Buzzers open again…'); }
+        else { say(miss + ' Everyone’s had a turn.', true); drawClosed(); update(); }
+        return;
       }
+      if(stage === 'faceoff'){
+        if(p) faceoff(p, -1);
+        else { drawClosed(); update(); }
+        return;
+      }
+      if(stage === 'steal'){ roundWin(ctrl, '✗ No steal!'); return; }
+      strikes++;
+      if(strikes >= maxStrikes){ startSteal(); return; }
+      nextTurn('✗ Strike ' + strikes + '!');
+    }
+    /* a face-off answer: answer index ai, or -1 for a miss */
+    function faceoff(p, ai){
+      var t = p.team, o = 1 - t;
+      foPlayer[t] = p;
+      locked[p.pid] = true;
+      buzzedP = null; buzz = 'closed';
+      var first = foFirst;
+      if(!first){
+        if(ai >= 0 && isTop(ai)){ foDone(t, '✓ Top answer!'); return; }
+        var canTry = feudMembers(o, true).some(function(m){ return !locked[m.pid]; });
+        if(!canTry){
+          if(ai >= 0) foDone(t, '✓ On the board!');
+          else foAgain('✗ Not on the board!');
+          return;
+        }
+        foFirst = { team:t, ai:ai };
+        foTeam = o;
+        openBuzzers(ai >= 0 ? '✓ On the board! ' + tn(o) + ', buzz in to beat it!'
+                            : '✗ Not on the board! ' + tn(o) + ', buzz in to answer!', true);
+        return;
+      }
+      foFirst = null; foTeam = null;
+      if(ai >= 0 && (first.ai < 0 || beats(ai, first.ai))){
+        foDone(t, first.ai < 0 ? '✓ On the board!' : '✓ Higher on the board!');
+        return;
+      }
+      if(first.ai >= 0){ foDone(first.team, ai >= 0 ? 'Not high enough!' : '✗ Not on the board!'); return; }
+      foAgain('✗ Neither answer is on the board.');
+    }
+    function foAgain(lead){
+      foFirst = null; foTeam = null;
+      var anyLeft = roster().some(function(m){
+        return m.connected && host.teams[m.team] && !locked[m.pid];
+      });
+      if(!anyLeft) locked = {};
+      openBuzzers(lead + ' Face-off again — anyone can buzz!', true);
+    }
+    function foDone(t, lead){
+      stopTimer();
+      foWin = t; foTeam = null; foFirst = null; buzzedP = null; buzz = 'closed';
+      if(allRevealed()){ roundWin(t, lead); return; }
+      stage = 'decide';
+      say((lead ? lead + ' ' : '') + 'Face-off to ' + tn(t) + '! Play or pass?');
+      drawClosed(); update();
+    }
+    function play(t){
+      if(stage !== 'decide') return;
+      ctrl = t; stage = 'control'; strikes = 0;
+      if(foPlayer[t]) lastUp[t] = foPlayer[t];   /* the face-off player goes last */
+      nextTurn('Over to ' + tn(t) + '!');
+    }
+    function nextTurn(lead){
+      var ms = feudMembers(ctrl, true);
+      if(!ms.length){ startSteal(); return; }
+      var p = ms[(ms.indexOf(lastUp[ctrl]) + 1) % ms.length];
+      lastUp[ctrl] = p;
+      buzzedP = p; buzz = 'answer';
+      say((lead ? lead + ' ' : '') + p.name + ', you’re up!');
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('✗ Strike', 'bad', strike));
+      startTimer(settings.answerTime, timerFill, function(){
+        if(stage === 'control' && buzz === 'answer') strike();
+      });
+      update();
+    }
+    function startSteal(){
+      var s = 1 - ctrl;
+      stage = 'steal'; buzzedP = null; buzz = 'closed';
+      if(!feudMembers(s, true).length){ roundWin(ctrl, 'Nobody is left to steal.'); return; }
+      buzz = 'answer';
+      say(tn(s) + ', talk it over — one guess to steal ' + bank + ' points!');
+      actsEl.innerHTML = '';
+      actsEl.appendChild(stageBtn('✗ No Steal', 'bad', strike));
+      startTimer(settings.answerTime, timerFill, function(){
+        if(stage === 'steal' && buzz === 'answer') strike();
+      });
+      update();
+    }
+    function roundWin(t, lead){
+      stopTimer(); clearHot();
+      stage = 'done'; buzz = 'closed'; buzzedP = null; foTeam = null; foFirst = null;
+      winner = t;
+      host.teams[t].score += bank;
+      feudSyncScores();
+      say((lead ? lead + ' ' : '') + '🏆 ' + bank + ' points to ' + tn(t) + '!');
+      drawClosed(); update();
     }
     function clearHot(){ slotEls.forEach(function(s){ s.classList.remove('hot'); }); }
     function revealSlot(i, dead){
@@ -7708,10 +8164,32 @@
       stopTimer();
       revealed.forEach(function(r, i){ if(!r){ revealed[i] = true; revealSlot(i, true); } });
       clearHot(); buzzedP = null; buzz = 'closed';
-      banner.className = 'buzz-banner wait';
-      banner.textContent = 'All answers revealed.';
+      if(!teams) say('All answers revealed.', true);
+      else if(stage !== 'done'){
+        stage = 'done'; foTeam = null; foFirst = null;
+        say('All answers revealed. No points this round.', true);
+      }
       drawClosed();
-      pushAll();
+      update();
+    }
+    /* a press in the GM answer key */
+    function keyReveal(i){
+      if(idx < 0 || idx >= qs.length || i < 0 || i >= revealed.length || revealed[i]) return;
+      if(buzz === 'answer' || buzz === 'judge'){ award(i); return; }
+      /* nobody is guessing, so it just goes up on the board */
+      revealed[i] = true;
+      revealSlot(i, true);
+      if(allRevealed()){
+        stopTimer(); clearHot(); buzzedP = null; buzz = 'closed';
+        if(teams && stage !== 'done'){
+          var t = foWin !== null ? foWin : (foFirst && foFirst.ai >= 0 ? foFirst.team : null);
+          if(t !== null && bank > 0){ roundWin(t, 'Board cleared!'); return; }
+          stage = 'done'; foTeam = null; foFirst = null;
+          say('Board cleared. No points this round.', true);
+        }
+        drawClosed();
+      }
+      update();
     }
     function finish(){ host.phase = 'ended'; stopTimer(); gmSetAnswer(null); renderFinal(); pushAll(); }
     return {
@@ -7719,27 +8197,86 @@
       onBuzz: onBuzz,
       onAnswer: function(){},
       onText: onText,
+      keyReveal: keyReveal,
+      teamFocus: function(){
+        if(!teams) return null;
+        return stage === 'control' ? ctrl : stage === 'steal' ? 1 - ctrl
+             : stage === 'decide' ? foWin : stage === 'done' ? winner : null;
+      },
       onRoster: function(){ renderScoreRow(); },
       stateFor: function(p, base){
         if(idx < 0 || idx >= qs.length){ base.mode='waiting'; base.note='Watch the board!'; return base; }
-        if(buzz === 'open'){
-          if(locked[p.pid]){ base.mode='locked'; base.note='You\u2019ve had your guess — watch the board!'; return base; }
-          base.mode = 'buzzer'; return base;
-        }
-        if(buzz === 'answer' || buzz === 'judge'){
-          if(buzzedP && p.pid === buzzedP.pid){
-            if(buzz === 'answer'){
-              base.mode = 'text'; base.title = 'You buzzed first!';
-              base.cat = q().q.slice(0, 90);
-              return base;
-            }
-            base.mode = 'answered'; return base;
+        var q90 = q().q.slice(0, 90);
+        if(!teams){
+          if(buzz === 'open'){
+            if(locked[p.pid]){ base.mode='locked'; base.note='You’ve had your guess — watch the board!'; return base; }
+            base.mode = 'buzzer'; return base;
           }
-          base.mode = 'locked';
-          base.note = (buzzedP ? buzzedP.name : 'Someone') + ' is answering…';
+          if(buzz === 'answer' || buzz === 'judge'){
+            if(buzzedP && p.pid === buzzedP.pid){
+              if(buzz === 'answer'){ base.mode = 'text'; base.title = 'You buzzed first!'; base.cat = q90; return base; }
+              base.mode = 'answered'; return base;
+            }
+            base.mode = 'locked';
+            base.note = (buzzedP ? buzzedP.name : 'Someone') + ' is answering…';
+            return base;
+          }
+          base.mode = 'waiting'; base.note = 'Watch the board!'; return base;
+        }
+        var mine = p.team;
+        if(stage === 'faceoff'){
+          if(buzz === 'open'){
+            if(!host.teams[mine]){ base.mode='locked'; base.note='Watch the board!'; return base; }
+            if(locked[p.pid]){ base.mode='locked'; base.note='You’ve had your shot — watch the board!'; return base; }
+            if(foTeam !== null && mine !== foTeam){
+              base.mode='locked'; base.note='Now ' + tn(foTeam) + ' can answer…'; return base;
+            }
+            base.mode = 'buzzer'; return base;
+          }
+          if(buzzedP && (buzz === 'answer' || buzz === 'judge')){
+            if(p.pid === buzzedP.pid){
+              if(buzz === 'answer'){ base.mode='text'; base.title='You buzzed first!'; base.cat=q90; return base; }
+              base.mode='answered'; return base;
+            }
+            base.mode='locked'; base.note=buzzedP.name + ' is answering for ' + tn(buzzedP.team) + '…';
+            return base;
+          }
+          base.mode='waiting'; base.note='Face-off! Get ready to buzz.'; return base;
+        }
+        if(stage === 'decide'){
+          base.mode='waiting';
+          base.note = mine === foWin ? 'Your team won the face-off! Play or pass?' : tn(foWin) + ' won the face-off.';
           return base;
         }
-        base.mode = 'waiting'; base.note = 'Watch the board!'; return base;
+        if(stage === 'control'){
+          if(buzzedP && p.pid === buzzedP.pid){
+            if(buzz === 'answer'){
+              base.mode='text'; base.title='Your turn!'; base.cat=q90;
+              base.note='Strikes: ' + strikes + ' of ' + maxStrikes + '. Answer before the timer runs out!';
+              return base;
+            }
+            base.mode='answered'; return base;
+          }
+          base.mode='waiting';
+          base.note = mine === ctrl
+            ? (buzzedP ? buzzedP.name + ' is answering for your team…' : 'Your team is playing the board!')
+            : 'The board is with ' + tn(ctrl) + '. Get ready to steal!';
+          return base;
+        }
+        if(stage === 'steal'){
+          if(mine === 1 - ctrl){
+            if(buzz === 'answer'){
+              base.mode='text'; base.title='Steal it!'; base.cat=q90;
+              base.note='Talk it over. The first answer sent counts for your team.';
+              return base;
+            }
+            if(buzzedP && p.pid === buzzedP.pid){ base.mode='answered'; return base; }
+            base.mode='waiting'; base.note=(buzzedP ? buzzedP.name : 'A teammate') + ' answered for your team…';
+            return base;
+          }
+          base.mode='waiting'; base.note='Steal attempt by ' + tn(1 - ctrl) + '…'; return base;
+        }
+        base.mode='waiting'; base.note='Watch the board!'; return base;
       }
     };
   }
@@ -9954,6 +10491,11 @@
       var pl = document.createElement('span'); pl.className='place';
       pl.textContent = i===0 ? '🏆' : '#'+(i+1);
       var nm = document.createElement('span'); nm.textContent = p.name;
+      if(p.members){
+        var mm = document.createElement('small'); mm.className = 'final-members';
+        mm.textContent = p.members;
+        nm.appendChild(mm);
+      }
       var pt = document.createElement('span'); pt.className='pts'; pt.textContent = p.score + ' PTS';
       row.appendChild(pl); row.appendChild(nm); row.appendChild(pt);
       list.appendChild(row);
@@ -10064,6 +10606,11 @@
     '.gm-line b{color:#FFC42E;white-space:nowrap}' +
     '.gm-main-answer{font-family:Bungee,\'Arial Black\',sans-serif;font-size:24px;color:#FFC42E;text-shadow:0 0 18px #FFC42E44;word-break:break-word;max-width:380px}' +
     '.gm-empty{color:#5D4F86;font-size:14px}' +
+    '.gm-hint{color:#9A8BC8;font-size:13px;max-width:360px}' +
+    '.gm-key{font-weight:600}' +
+    '.gm-key.done{opacity:.45;cursor:default}' +
+    '.gm-key.done:hover{border-color:#3A2A72}' +
+    '.gm-key.done span{text-decoration:line-through}' +
     'footer{padding:14px 18px;border-top:2px solid #3A2A72;display:flex;justify-content:center}' +
     '#gm-end{border-color:#7A2450;color:#FF4D9D;width:100%;max-width:360px}';
   }
@@ -10293,7 +10840,8 @@
   function gmPlayerList(){
     if(!host) return [];
     return roster().map(function(p){
-      return { pid:p.pid, name:p.name, score:p.score, connected:!!p.connected };
+      var tm = feudTeamsOn() && host.teams[p.team] ? ' (' + host.teams[p.team].name + ')' : '';
+      return { pid:p.pid, name:p.name + tm, score:p.score, connected:!!p.connected };
     });
   }
   function gmSetScore(pid, val){
@@ -10302,7 +10850,12 @@
     if(!p) return;
     var n = parseInt(val, 10);
     if(isNaN(n)) return;
-    p.score = n;
+    if(feudTeamsOn() && host.teams[p.team]){
+      /* in team play a player's score is their team's */
+      host.teams[p.team].score = n;
+      feudSyncScores();
+      pushAll();
+    }else p.score = n;
     renderScoreRow();
     if(p.connected) pushState(p);
     gmRenderPlayers(true);
@@ -10486,8 +11039,18 @@
       box.appendChild(big);
       return;
     }
-    gmAnswerLines.forEach(function(l){
-      var row = doc.createElement('div'); row.className = 'gm-line';
+    if(gmAnswerHint){
+      var hn = doc.createElement('div'); hn.className = 'gm-hint';
+      hn.textContent = gmAnswerHint;
+      box.appendChild(hn);
+    }
+    gmAnswerLines.forEach(function(l, i){
+      var row = doc.createElement(l.key ? 'button' : 'div');
+      row.className = 'gm-line' + (l.key ? ' gm-key' + (l.revealed ? ' done' : '') : '');
+      if(l.key){
+        row.disabled = !!l.revealed;
+        row.addEventListener('click', function(){ gmRevealKey(i); });
+      }
       var t = doc.createElement('span'); t.textContent = l.text;
       row.appendChild(t);
       if(l.pts !== undefined){
@@ -10497,10 +11060,17 @@
       box.appendChild(row);
     });
   }
-  function gmSetAnswer(lines){
+  /* a line with key:true is a button: pressing it hands its index to the
+     controller's keyReveal. The hint says what a press does right now. */
+  var gmAnswerHint = null;
+  function gmSetAnswer(lines, hint){
     gmAnswerLines = (lines && lines.length) ? lines : null;
+    gmAnswerHint = gmAnswerLines && hint ? hint : null;
     gmRenderAnswers();
     gmBroadcast();
+  }
+  function gmRevealKey(i){
+    if(host && host.ctl && host.ctl.keyReveal && !isNaN(i)) host.ctl.keyReveal(i);
   }
 
   /* ---- GM Remote: a second private peer for cross-device control ----
@@ -10545,6 +11115,7 @@
       else if(d.cmd === 'stop') stopAllMusic();
       else if(d.cmd === 'end') endSession(true);
       else if(d.cmd === 'act') gmClickHost(parseInt(d.idx, 10));
+      else if(d.cmd === 'reveal') gmRevealKey(parseInt(d.idx, 10));
       else if(d.cmd === 'hideacts') gmSetActsHidden(!!d.on);
       else if(d.cmd === 'kick') gmKick(String(d.pid || ''));
       else if(d.cmd === 'score') gmSetScore(String(d.pid || ''), d.value);
@@ -10560,7 +11131,7 @@
   }
   function gmStateMsg(){
     return { t:'gm-state', room: host ? host.code : null,
-             answers: gmAnswerLines, bg: !bgAudio.paused,
+             answers: gmAnswerLines, answerHint: gmAnswerHint, bg: !bgAudio.paused,
              actions: gmActionList(), actsHidden: gmActsHidden,
              players: gmPlayerList(), zoom: stageZoomPct(), zoomAuto: stageZoomAuto(),
              tl: gmTlSeat() };
@@ -10788,8 +11359,18 @@
       big.textContent = lines[0].text;
       box.appendChild(big);
     }else{
-      lines.forEach(function(l){
-        var row = document.createElement('div'); row.className = 'gm-line';
+      if(d.answerHint){
+        var hn = document.createElement('div'); hn.className = 'gm-hint';
+        hn.textContent = d.answerHint;
+        box.appendChild(hn);
+      }
+      lines.forEach(function(l, i){
+        var row = document.createElement(l.key ? 'button' : 'div');
+        row.className = 'gm-line' + (l.key ? ' gm-key' + (l.revealed ? ' done' : '') : '');
+        if(l.key){
+          row.disabled = !!l.revealed;
+          row.addEventListener('click', function(){ gmrSend({ t:'gm-cmd', cmd:'reveal', idx:i }); });
+        }
         var t = document.createElement('span'); t.textContent = l.text;
         row.appendChild(t);
         if(l.pts !== undefined){

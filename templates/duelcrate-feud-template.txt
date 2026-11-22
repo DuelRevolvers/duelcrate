@@ -13,10 +13,16 @@
 #  List each survey answer on its own line starting with a dash.
 #  Put the number of people who said it after a | (pipe).
 #  Up to 8 answers per survey; the top ones score the most.
+#  PLAY STYLE is teams (two teams face off, like the TV show)
+#  or free-for-all (everyone buzzes in for every answer).
+#  STRIKES is how many wrong answers the team playing the board
+#  gets before the other team can steal the round: 1, 2 or 3.
 
 TYPE: feud
 NAME: Feud Survey
 MAX PLAYERS: 20
+PLAY STYLE: teams
+STRIKES: 3
 
 Q: Name something you take to the beach.
 - Towel | 30
