@@ -1502,6 +1502,38 @@
     SS_ROOM:     'duelcrate_in_room'     /* this tab is in a room: rejoin after a reload */
   };
 
+  /* ---- screen wake lock: keep this screen on while it's in a game ----
+     Each part of the app asks under its own key (host, player, gmr) and
+     the lock is held while any key wants it. Browsers drop the lock when
+     the tab is hidden, so it's requested again when the tab comes back,
+     and on the next tap for browsers that only grant it after a gesture. */
+  (function(){
+    var want = {}, lock = null, pending = false;
+    function wanted(){
+      for(var k in want) if(want[k]) return true;
+      return false;
+    }
+    function sync(){
+      var api = navigator.wakeLock;
+      if(!api || !api.request) return;
+      if(!wanted()){
+        if(lock){ var l = lock; lock = null; try{ l.release(); }catch(e){} }
+        return;
+      }
+      if(lock || pending || document.visibilityState !== 'visible') return;
+      pending = true;
+      api.request('screen').then(function(w){
+        pending = false;
+        lock = w;
+        w.addEventListener('release', function(){ if(lock === w) lock = null; });
+        if(!wanted()) sync();
+      }).catch(function(){ pending = false; });
+    }
+    DC.wake = function(key, on){ want[key] = !!on; sync(); };
+    document.addEventListener('visibilitychange', sync);
+    document.addEventListener('click', sync, true);
+  })();
+
   /* ---------------- hash router ----------------
      Routes: '' | '#menu' -> main menu (GM side)
              '#join'      -> standalone player join page
@@ -1660,21 +1692,8 @@
   function pvSend(m){ if(pv.conn){ try{ pv.conn.send(m); }catch(e){} } }
   function pvHaptic(pattern){ if(navigator.vibrate){ try{ navigator.vibrate(pattern); }catch(e){} } }
 
-  /* keep phones awake during the show (best effort, silent) */
-  var pvWake = null;
-  function pvWakeOn(){
-    if(navigator.wakeLock && navigator.wakeLock.request){
-      navigator.wakeLock.request('screen')
-        .then(function(w){ pvWake = w; })
-        .catch(function(){});
-    }
-  }
-  function pvWakeOff(){
-    if(pvWake){ try{ pvWake.release(); }catch(e){} pvWake = null; }
-  }
   document.addEventListener('visibilitychange', function(){
     if(pv.active && pv.joined && document.visibilityState === 'visible'){
-      pvWakeOn();
       /* back from the background with a dead link: get the seat back now */
       if(!pv.leaving && !pv.closedByHost && pv.conn && !pv.conn.open){ pv.retries = 0; pvScheduleRetry(); }
     }
@@ -1683,7 +1702,8 @@
   function pvShow(on){
     elJoinCard.hidden = on;
     elPV.hidden = !on;
-    if(on) pvWakeOn(); else { pvWakeOff(); pvWheelReset(); }
+    DC.wake('player', on);
+    if(!on) pvWheelReset();
     window.scrollTo(0,0);
   }
 
@@ -6008,6 +6028,7 @@
         tlPoolInit();
         showPlayView('lobby');
         startGMPeer();
+        DC.wake('host', true);
       });
       peer.on('connection', function(conn){
         conn.on('data', function(d){ handleMsg(conn, d); });
@@ -6030,6 +6051,7 @@
     stopAllMusic(); stopTimer();
     var sess = host;
     host = null;
+    DC.wake('host', false);
     if(sess.gmConns) sess.gmConns.forEach(function(c){
       try{ c.send({ t:'gm-state', closed:true }); }catch(e){}
     });
@@ -11284,6 +11306,7 @@
   function gmrStatus(t){ gmrMsg.textContent = t || ''; }
   function gmrShowCard(){
     gmrView.hidden = true; gmrCard.hidden = false;
+    DC.wake('gmr', false);
   }
   function gmrCleanup(){
     if(gmr){
@@ -11332,6 +11355,7 @@
     if(!gmr || gmr.conn !== conn || !d || d.t !== 'gm-state') return;
     if(d.closed){ gmrFail('The game has ended.'); return; }
     gmrCard.hidden = true; gmrView.hidden = false;
+    DC.wake('gmr', true);
     var go = document.getElementById('gm-join-go');
     go.disabled = false; go.textContent = 'Connect';
     gmrStatus('');
