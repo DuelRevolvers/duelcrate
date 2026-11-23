@@ -1,12 +1,32 @@
 {
  "name": "Soundtracks",
  "tag": "soundtrack",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "This is Halloween",
+   "artist": "Danny Elfman",
+   "year": 1996
+  },
+  {
+   "title": "Skyfall",
+   "artist": "Adele",
+   "year": 2012
+  },
+  {
+   "title": "A Thousand Years",
+   "artist": "Christina Perri",
+   "year": 2011
+  },
   {
    "title": "Decode",
    "artist": "Paramore",
    "year": 2008
+  },
+  {
+   "title": "Cornfield Chase",
+   "artist": "Hans Zimmer",
+   "year": 2014
   },
   {
    "title": "Scotty Doesn't Know",
@@ -14,9 +34,59 @@
    "year": 2004
   },
   {
-   "title": "See You Again (feat. Charlie Puth)",
-   "artist": "Wiz Khalifa",
-   "year": 2015
+   "title": "I'll Make a Man Out of You",
+   "artist": "Donny Osmond",
+   "year": 2001
+  },
+  {
+   "title": "Jack's Lament",
+   "artist": "Danny Elfman",
+   "year": 1993
+  },
+  {
+   "title": "Possibility",
+   "artist": "Lykke Li",
+   "year": 2009
+  },
+  {
+   "title": "Shallow",
+   "artist": "Lady Gaga",
+   "year": 2022
+  },
+  {
+   "title": "Stuck on the Puzzle",
+   "artist": "Alex Turner",
+   "year": 2011
+  },
+  {
+   "title": "Theme of Laura",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "South Park Theme",
+   "artist": "Primus",
+   "year": 1998
+  },
+  {
+   "title": "Chick Habit",
+   "artist": "April March",
+   "year": 1995
+  },
+  {
+   "title": "Time",
+   "artist": "Hans Zimmer",
+   "year": 1993
+  },
+  {
+   "title": "Halloween Theme",
+   "artist": "John Carpenter",
+   "year": 1998
+  },
+  {
+   "title": "Holding Out For A Hero",
+   "artist": "Frou Frou",
+   "year": 2004
   },
   {
    "title": "Life Is a Highway",
@@ -24,9 +94,49 @@
    "year": 2006
   },
   {
+   "title": "What's This?",
+   "artist": "Danny Elfman",
+   "year": 1988
+  },
+  {
+   "title": "See You Again (feat. Charlie Puth)",
+   "artist": "Wiz Khalifa",
+   "year": 2015
+  },
+  {
    "title": "Far From Any Road",
    "artist": "The Handsome Family",
    "year": 2003
+  },
+  {
+   "title": "Falling",
+   "artist": "Julee Cruise",
+   "year": 1989
+  },
+  {
+   "title": "He's a Pirate",
+   "artist": "Klaus Badelt",
+   "year": 2006
+  },
+  {
+   "title": "Duel of the Fates",
+   "artist": "John Williams",
+   "year": 1999
+  },
+  {
+   "title": "Bang Bang (My Baby Shot Me Down)",
+   "artist": "Nancy Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "Piledriver Waltz",
+   "artist": "Alex Turner",
+   "year": 2011
+  },
+  {
+   "title": "Girl, You'll Be a Woman Soon",
+   "artist": "Urge Overkill",
+   "year": 1992
   },
   {
    "title": "Talk Show Host",
@@ -34,9 +144,59 @@
    "year": 1996
   },
   {
+   "title": "Sis puella magica!",
+   "artist": "梶浦由記",
+   "year": 2011
+  },
+  {
+   "title": "End of Line",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Now We Are Free",
+   "artist": "Hans Zimmer",
+   "year": 2001
+  },
+  {
+   "title": "Accidentally in Love",
+   "artist": "Counting Crows",
+   "year": 2003
+  },
+  {
    "title": "It Will Rain",
    "artist": "Bruno Mars",
    "year": 2011
+  },
+  {
+   "title": "Concerning Hobbits",
+   "artist": "Howard Shore",
+   "year": 2001
+  },
+  {
+   "title": "Yellow Flicker Beat",
+   "artist": "Lorde",
+   "year": 2014
+  },
+  {
+   "title": "Burn",
+   "artist": "The Cure",
+   "year": 1994
+  },
+  {
+   "title": "From Past to Present",
+   "artist": "Jeremy Soule",
+   "year": 2011
+  },
+  {
+   "title": "I Caught Myself",
+   "artist": "Paramore",
+   "year": 2008
+  },
+  {
+   "title": "You're Not Here",
+   "artist": "Akira Yamaoka",
+   "year": 2004
   },
   {
    "title": "Immortals",
@@ -44,13 +204,158 @@
    "year": 2014
   },
   {
+   "title": "Glass in the Park",
+   "artist": "Alex Turner",
+   "year": 2011
+  },
+  {
+   "title": "White Noiz",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "The Phantom of the Opera",
+   "artist": "Andrew Lloyd Webber",
+   "year": 1987
+  },
+  {
+   "title": "Lily's Theme",
+   "artist": "Alexandre Desplat",
+   "year": 2011
+  },
+  {
+   "title": "Married Life",
+   "artist": "Michael Giacchino",
+   "year": 2008
+  },
+  {
+   "title": "Real Gone",
+   "artist": "Sheryl Crow",
+   "year": 2006
+  },
+  {
+   "title": "In the House - In a Heartbeat",
+   "artist": "John Murphy",
+   "year": 2002
+  },
+  {
+   "title": "I Won't Say (I'm In Love)",
+   "artist": "Susan Egan",
+   "year": 2001
+  },
+  {
+   "title": "Mad World",
+   "artist": "Gary Jules",
+   "year": 2003
+  },
+  {
+   "title": "Dumbledore's Farewell",
+   "artist": "Nicholas Hooper",
+   "year": 2009
+  },
+  {
+   "title": "Desolation Row",
+   "artist": "My Chemical Romance",
+   "year": 2009
+  },
+  {
+   "title": "Reflection",
+   "artist": "Lea Salonga",
+   "year": 1998
+  },
+  {
+   "title": "Twin Peaks Theme",
+   "artist": "Angelo Badalamenti",
+   "year": 1990
+  },
+  {
+   "title": "Main Titles",
+   "artist": "Danny Elfman",
+   "year": 1988
+  },
+  {
    "title": "Hearing Damage",
    "artist": "Thom Yorke",
    "year": 2009
   },
   {
+   "title": "Null Moon",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Promise",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Exploration",
+   "artist": "Bruno Coulais",
+   "year": 2009
+  },
+  {
+   "title": "Hot Patootie - Bless My Soul",
+   "artist": "Meat Loaf",
+   "year": 1995
+  },
+  {
+   "title": "Scarface (Push It To The Limit)",
+   "artist": "Paul Engemann",
+   "year": 1983
+  },
+  {
+   "title": "Heaven's Night",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Comptine d'un autre été, L'Après-midi",
+   "artist": "Yann Tiersen",
+   "year": 2019
+  },
+  {
+   "title": "Love Theme",
+   "artist": "Vangelis",
+   "year": 1989
+  },
+  {
    "title": "Anyone Else But You",
    "artist": "The Moldy Peaches",
+   "year": 2001
+  },
+  {
+   "title": "Main Title",
+   "artist": "Ramin Djawadi",
+   "year": 2009
+  },
+  {
+   "title": "Dragonborn",
+   "artist": "Jeremy Soule",
+   "year": 2011
+  },
+  {
+   "title": "May It Be",
+   "artist": "Enya",
+   "year": 2001
+  },
+  {
+   "title": "Into the Night",
+   "artist": "Julee Cruise",
+   "year": 1989
+  },
+  {
+   "title": "Footloose",
+   "artist": "Kenny Loggins",
+   "year": 1984
+  },
+  {
+   "title": "Ezio's Family",
+   "artist": "Jesper Kyd",
+   "year": 2009
+  },
+  {
+   "title": "Ordinary Vanity",
+   "artist": "Akira Yamaoka",
    "year": 2001
   },
   {
@@ -59,9 +364,184 @@
    "year": 2026
   },
   {
+   "title": "Double Trouble",
+   "artist": "John Williams",
+   "year": 2004
+  },
+  {
+   "title": "The Imperial March (Darth Vader's Theme)",
+   "artist": "John Williams",
+   "year": 1980
+  },
+  {
+   "title": "Le festin",
+   "artist": "Camille",
+   "year": 2007
+  },
+  {
+   "title": "Touch-A, Touch-A, Touch Me",
+   "artist": "Susan Sarandon",
+   "year": 1975
+  },
+  {
+   "title": "It's Hard to Get Around the Wind",
+   "artist": "Alex Turner",
+   "year": 2011
+  },
+  {
+   "title": "Forest",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Suspiria",
+   "artist": "Goblin",
+   "year": 1977
+  },
+  {
+   "title": "Theme from Jurassic Park",
+   "artist": "John Williams",
+   "year": 1993
+  },
+  {
+   "title": "Remains of the Day",
+   "artist": "Danny Elfman",
+   "year": 2005
+  },
+  {
+   "title": "Eyes on Fire",
+   "artist": "Blue Foundation",
+   "year": 2007
+  },
+  {
+   "title": "Prologue",
+   "artist": "John Williams",
+   "year": 1989
+  },
+  {
+   "title": "You've Got A Friend In Me",
+   "artist": "Randy Newman",
+   "year": 1995
+  },
+  {
+   "title": "Leaving Hogwarts",
+   "artist": "John Williams",
+   "year": 2001
+  },
+  {
    "title": "Extreme Ways",
    "artist": "Moby",
    "year": 2002
+  },
+  {
+   "title": "Society",
+   "artist": "Eddie Vedder",
+   "year": 2005
+  },
+  {
+   "title": "The Son of Flynn",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Nabbed",
+   "artist": "Danny Elfman",
+   "year": 1993
+  },
+  {
+   "title": "Victor's Piano Solo",
+   "artist": "Danny Elfman",
+   "year": 2005
+  },
+  {
+   "title": "Ice Dance",
+   "artist": "Danny Elfman",
+   "year": 1990
+  },
+  {
+   "title": "Evenstar",
+   "artist": "Howard Shore",
+   "year": 2009
+  },
+  {
+   "title": "The Batman Theme",
+   "artist": "Danny Elfman",
+   "year": 1989
+  },
+  {
+   "title": "Overture",
+   "artist": "Andrew Lloyd Webber",
+   "year": 1971
+  },
+  {
+   "title": "Love Psalm",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Colors of the Wind",
+   "artist": "Judy Kuhn",
+   "year": 1995
+  },
+  {
+   "title": "Jack Sparrow",
+   "artist": "Hans Zimmer",
+   "year": 2006
+  },
+  {
+   "title": "Anakin vs. Obi-Wan",
+   "artist": "John Williams",
+   "year": 2005
+  },
+  {
+   "title": "The Call",
+   "artist": "Regina Spektor",
+   "year": 2008
+  },
+  {
+   "title": "The Grid",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Christmas Eve Montage",
+   "artist": "Danny Elfman",
+   "year": 1993
+  },
+  {
+   "title": "To the Rescue",
+   "artist": "Danny Elfman",
+   "year": 1989
+  },
+  {
+   "title": "Blade Runner Blues",
+   "artist": "Vangelis",
+   "year": 1993
+  },
+  {
+   "title": "American Beauty",
+   "artist": "Thomas Newman",
+   "year": 2000
+  },
+  {
+   "title": "Arrival to Earth",
+   "artist": "Steve Jablonsky",
+   "year": 2007
+  },
+  {
+   "title": "Davy Jones",
+   "artist": "Hans Zimmer",
+   "year": 2006
+  },
+  {
+   "title": "Derezzed",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Lux Aeterna",
+   "artist": "Clint Mansell",
+   "year": 2000
   },
   {
    "title": "Lose Yourself",
@@ -69,24 +549,459 @@
    "year": 2002
   },
   {
+   "title": "I Like To Move It",
+   "artist": "will.i.am",
+   "year": 2008
+  },
+  {
+   "title": "Dream Is Collapsing",
+   "artist": "Hans Zimmer",
+   "year": 2010
+  },
+  {
+   "title": "Garbage Truck",
+   "artist": "Sex Bob-Omb",
+   "year": 2010
+  },
+  {
+   "title": "Half Remembered Dream",
+   "artist": "Hans Zimmer",
+   "year": 2010
+  },
+  {
+   "title": "Magdalene",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "The Piano Duet",
+   "artist": "Danny Elfman",
+   "year": 2005
+  },
+  {
+   "title": "Within You",
+   "artist": "David Bowie",
+   "year": 1986
+  },
+  {
+   "title": "Many Meetings",
+   "artist": "Howard Shore",
+   "year": 2001
+  },
+  {
+   "title": "Memories of Green",
+   "artist": "Vangelis",
+   "year": 1980
+  },
+  {
+   "title": "Moon River",
+   "artist": "Henry Mancini",
+   "year": 1964
+  },
+  {
+   "title": "Over at the Frankenstein Place",
+   "artist": "Richard O'Brien",
+   "year": 1973
+  },
+  {
+   "title": "Over the Rainbow",
+   "artist": "Judy Garland",
+   "year": 1939
+  },
+  {
+   "title": "You're the Best",
+   "artist": "Joe Esposito",
+   "year": 1995
+  },
+  {
+   "title": "Simple and Clean",
+   "artist": "宇多田ヒカル",
+   "year": 2003
+  },
+  {
+   "title": "Wait for Me",
+   "artist": "Vangelis",
+   "year": 1994
+  },
+  {
+   "title": "This Is Berk",
+   "artist": "John Powell",
+   "year": 2010
+  },
+  {
+   "title": "A Window to the Past",
+   "artist": "John Williams",
+   "year": 2004
+  },
+  {
+   "title": "Hard Sun",
+   "artist": "Eddie Vedder",
+   "year": 2005
+  },
+  {
+   "title": "Lost Stars",
+   "artist": "Adam Levine",
+   "year": 2014
+  },
+  {
+   "title": "Goodnight Moon",
+   "artist": "Shivaree",
+   "year": 1999
+  },
+  {
+   "title": "Maniac",
+   "artist": "Michael Sembello",
+   "year": 1983
+  },
+  {
+   "title": "I'm On My Way",
+   "artist": "The Proclaimers",
+   "year": 1988
+  },
+  {
+   "title": "New World",
+   "artist": "Björk",
+   "year": 2000
+  },
+  {
+   "title": "That Thing You Do!",
+   "artist": "The Wonders",
+   "year": 1996
+  },
+  {
+   "title": "Sally's Song",
+   "artist": "Amy Lee",
+   "year": 2008
+  },
+  {
+   "title": "Golgotha Tenement Blues",
+   "artist": "Machines of Loving Grace",
+   "year": 1994
+  },
+  {
+   "title": "Rachel's Song",
+   "artist": "Vangelis",
+   "year": 1994
+  },
+  {
+   "title": "All I Want Is You",
+   "artist": "Barry Louis Polisar",
+   "year": 1977
+  },
+  {
+   "title": "S.T.A.Y.",
+   "artist": "Hans Zimmer",
+   "year": 1994
+  },
+  {
+   "title": "The Day of Night",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Chilly Down",
+   "artist": "David Bowie",
+   "year": 1986
+  },
+  {
+   "title": "Overture",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Ashes and Ghost",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Underground",
+   "artist": "David Bowie",
+   "year": 1986
+  },
+  {
+   "title": "Breath of Life",
+   "artist": "Florence + the Machine",
+   "year": 2011
+  },
+  {
+   "title": "Hopelessly Devoted To You",
+   "artist": "Olivia Newton-John",
+   "year": 1978
+  },
+  {
+   "title": "Tears in Rain",
+   "artist": "Vangelis",
+   "year": 1993
+  },
+  {
+   "title": "Main Titles",
+   "artist": "Vangelis",
+   "year": 1963
+  },
+  {
+   "title": "Blush Response",
+   "artist": "Vangelis",
+   "year": 1994
+  },
+  {
+   "title": "The Sixth Station",
+   "artist": "久石譲",
+   "year": 2002
+  },
+  {
+   "title": "Theme From Taxi Driver",
+   "artist": "Bernard Herrmann",
+   "year": 1976
+  },
+  {
+   "title": "Laura Palmer's Theme",
+   "artist": "Angelo Badalamenti",
+   "year": 1990
+  },
+  {
+   "title": "The Time Warp",
+   "artist": "Richard O'Brien",
+   "year": 1975
+  },
+  {
+   "title": "Harvest Dawn",
+   "artist": "Jeremy Soule",
+   "year": 2006
+  },
+  {
+   "title": "The Medallion Calls",
+   "artist": "Klaus Badelt",
+   "year": 2006
+  },
+  {
+   "title": "Little Green Bag",
+   "artist": "George Baker Selection",
+   "year": 1969
+  },
+  {
+   "title": "One Summer's Day",
+   "artist": "久石譲",
+   "year": 2002
+  },
+  {
+   "title": "Go The Distance",
+   "artist": "Roger Bart",
+   "year": 1996
+  },
+  {
+   "title": "This Magic Moment",
+   "artist": "Lou Reed",
+   "year": 1995
+  },
+  {
+   "title": "Crockett's Theme",
+   "artist": "Jan Hammer",
+   "year": 1986
+  },
+  {
+   "title": "Hallelujah",
+   "artist": "Rufus Wainwright",
+   "year": 2001
+  },
+  {
+   "title": "System",
+   "artist": "Chester Bennington",
+   "year": 2002
+  },
+  {
+   "title": "Conquest of Paradise",
+   "artist": "Vangelis",
+   "year": 1992
+  },
+  {
+   "title": "Recognizer",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "This Is Halloween",
+   "artist": "Marilyn Manson",
+   "year": 2006
+  },
+  {
+   "title": "Oogie Boogie's Song",
+   "artist": "Danny Elfman",
+   "year": 2006
+  },
+  {
+   "title": "Angel's Thanatos",
+   "artist": "Akira Yamaoka",
+   "year": 2001
+  },
+  {
+   "title": "Tender Sugar",
+   "artist": "Akira Yamaoka",
+   "year": 2004
+  },
+  {
+   "title": "She",
+   "artist": "Elvis Costello",
+   "year": 1999
+  },
+  {
+   "title": "You'll Be In My Heart",
+   "artist": "Phil Collins",
+   "year": 1999
+  },
+  {
+   "title": "Singin' in the Rain",
+   "artist": "Gene Kelly",
+   "year": 1952
+  },
+  {
+   "title": "From Now On",
+   "artist": "The Features",
+   "year": 2011
+  },
+  {
+   "title": "Promentory",
+   "artist": "Trevor Jones",
+   "year": 1992
+  },
+  {
+   "title": "Rinzler",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Only The Beginning of The Adventure",
+   "artist": "Harry Gregson-Williams",
+   "year": 2005
+  },
+  {
+   "title": "Profondo Rosso",
+   "artist": "Goblin",
+   "year": 1979
+  },
+  {
+   "title": "This Land",
+   "artist": "Hans Zimmer",
+   "year": 1994
+  },
+  {
+   "title": "Son Of Man",
+   "artist": "Phil Collins",
+   "year": 1999
+  },
+  {
+   "title": "Banana Splits",
+   "artist": "The Dickies",
+   "year": 1979
+  },
+  {
+   "title": "Cruel to Be Kind",
+   "artist": "Letters to Cleo",
+   "year": 1999
+  },
+  {
+   "title": "Never Knew I Needed",
+   "artist": "Ne-Yo",
+   "year": 2009
+  },
+  {
+   "title": "Long Nights",
+   "artist": "Eddie Vedder",
+   "year": 2007
+  },
+  {
+   "title": "Heavy in Your Arms",
+   "artist": "Florence + the Machine",
+   "year": 2010
+  },
+  {
+   "title": "The Legend of Ashitaka",
+   "artist": "久石譲",
+   "year": 1999
+  },
+  {
    "title": "Stuck in the Middle With You",
    "artist": "Stealers Wheel",
    "year": 1972
   },
   {
-   "title": "New Perspective",
-   "artist": "Panic! at the Disco",
-   "year": 2009
+   "title": "Doctor Finklestein / In the Forest",
+   "artist": "Danny Elfman",
+   "year": 1993
   },
   {
-   "title": "Grease",
-   "artist": "Frankie Valli",
-   "year": 1978
-  },
-  {
-   "title": "Young and Beautiful",
-   "artist": "Lana Del Rey",
+   "title": "Why Do We Fall?",
+   "artist": "Hans Zimmer",
    "year": 2012
+  },
+  {
+   "title": "Main Title",
+   "artist": "Jerry Goldsmith",
+   "year": 1964
+  },
+  {
+   "title": "Vois sur ton chemin",
+   "artist": "Bruno Coulais",
+   "year": 2004
+  },
+  {
+   "title": "I've Seen It All",
+   "artist": "Björk",
+   "year": 2000
+  },
+  {
+   "title": "Arena",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "Two Worlds",
+   "artist": "Phil Collins",
+   "year": 1999
+  },
+  {
+   "title": "Axel F",
+   "artist": "Harold Faltermeyer",
+   "year": 1984
+  },
+  {
+   "title": "An American Trilogy",
+   "artist": "Elvis Presley",
+   "year": 1972
+  },
+  {
+   "title": "(The Legend Of) Miss Baltimore Crabs",
+   "artist": "Michelle Pfeiffer",
+   "year": 2007
+  },
+  {
+   "title": "Gretchen Ross",
+   "artist": "Michael Andrews",
+   "year": 2001
+  },
+  {
+   "title": "Bang Bang",
+   "artist": "Nancy Sinatra",
+   "year": 2007
+  },
+  {
+   "title": "A Gift of a Thistle",
+   "artist": "James Horner",
+   "year": 2025
+  },
+  {
+   "title": "Theme From Schindler's List",
+   "artist": "John Williams",
+   "year": 1997
+  },
+  {
+   "title": "Fall",
+   "artist": "Daft Punk",
+   "year": 2010
+  },
+  {
+   "title": "No Sacrifice, No Victory",
+   "artist": "Steve Jablonsky",
+   "year": 2007
   }
  ]
 }

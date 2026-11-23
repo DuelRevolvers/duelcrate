@@ -1,7 +1,7 @@
 {
  "name": "Latin",
  "tag": "latin",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Livin' La Vida Loca",
@@ -19,14 +19,19 @@
    "year": 2001
   },
   {
+   "title": "Danza Kuduro",
+   "artist": "Don Omar",
+   "year": 2010
+  },
+  {
+   "title": "Señorita",
+   "artist": "Shawn Mendes",
+   "year": 2019
+  },
+  {
    "title": "Moscow Mule",
    "artist": "Bad Bunny",
    "year": 2022
-  },
-  {
-   "title": "Es Por Ti",
-   "artist": "Juanes",
-   "year": 2002
   },
   {
    "title": "DtMF",
@@ -37,6 +42,11 @@
    "title": "Gasolina",
    "artist": "Daddy Yankee",
    "year": 2004
+  },
+  {
+   "title": "Es Por Ti",
+   "artist": "Juanes",
+   "year": 2002
   },
   {
    "title": "La Camisa Negra",
@@ -54,14 +64,9 @@
    "year": 2006
   },
   {
-   "title": "Oye Como Va",
-   "artist": "Santana",
-   "year": 1970
-  },
-  {
-   "title": "Let's Get Loud",
-   "artist": "Jennifer Lopez",
-   "year": 1999
+   "title": "A Dios Le Pido",
+   "artist": "Juanes",
+   "year": 2002
   },
   {
    "title": "Evil Ways",
@@ -69,9 +74,24 @@
    "year": 1969
   },
   {
-   "title": "Amor Prohibido",
+   "title": "Let's Get Loud",
+   "artist": "Jennifer Lopez",
+   "year": 1999
+  },
+  {
+   "title": "Oye Como Va",
+   "artist": "Santana",
+   "year": 1970
+  },
+  {
+   "title": "En El Muelle De San Blas",
+   "artist": "Maná",
+   "year": 1997
+  },
+  {
+   "title": "Como La Flor",
    "artist": "Selena",
-   "year": 1994
+   "year": 1992
   },
   {
    "title": "La Bamba",
@@ -79,9 +99,9 @@
    "year": 1987
   },
   {
-   "title": "En El Muelle De San Blas",
-   "artist": "Maná",
-   "year": 1997
+   "title": "Amor Prohibido",
+   "artist": "Selena",
+   "year": 1994
   },
   {
    "title": "Ojitos Lindos",
@@ -94,6 +114,11 @@
    "year": 2010
   },
   {
+   "title": "Bongo Bong",
+   "artist": "Manu Chao",
+   "year": 1998
+  },
+  {
    "title": "Estoy Aquí",
    "artist": "Shakira",
    "year": 1995
@@ -104,54 +129,9 @@
    "year": 2001
   },
   {
-   "title": "Frijolero",
-   "artist": "Molotov",
-   "year": 2002
-  },
-  {
-   "title": "Caraluna",
-   "artist": "Bacilos",
-   "year": 2002
-  },
-  {
-   "title": "Ciega, Sordomuda",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
-   "title": "Dos Gardenias",
-   "artist": "Buena Vista Social Club",
-   "year": 1997
-  },
-  {
-   "title": "Limón y Sal",
-   "artist": "Julieta Venegas",
-   "year": 2006
-  },
-  {
-   "title": "Te Aviso, Te Anuncio (Tango)",
-   "artist": "Shakira",
-   "year": 2001
-  },
-  {
-   "title": "Ojos Así",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
    "title": "El cuarto de tula",
    "artist": "Buena Vista Social Club",
    "year": 1997
-  },
-  {
-   "title": "La Vida Es Un Carnaval",
-   "artist": "Celia Cruz",
-   "year": 1998
-  },
-  {
-   "title": "Si Te Vas",
-   "artist": "Shakira",
-   "year": 1998
   },
   {
    "title": "Abusadora",
@@ -159,9 +139,39 @@
    "year": 2009
   },
   {
-   "title": "Whenever, Wherever",
+   "title": "Ciega, Sordomuda",
+   "artist": "Shakira",
+   "year": 1998
+  },
+  {
+   "title": "Frijolero",
+   "artist": "Molotov",
+   "year": 2002
+  },
+  {
+   "title": "Ojos Así",
+   "artist": "Shakira",
+   "year": 1998
+  },
+  {
+   "title": "Caraluna",
+   "artist": "Bacilos",
+   "year": 2002
+  },
+  {
+   "title": "Te Aviso, Te Anuncio (Tango)",
    "artist": "Shakira",
    "year": 2001
+  },
+  {
+   "title": "La Vida Es Un Carnaval",
+   "artist": "Celia Cruz",
+   "year": 1998
+  },
+  {
+   "title": "Limón y Sal",
+   "artist": "Julieta Venegas",
+   "year": 2006
   },
   {
    "title": "Candela",
@@ -169,9 +179,24 @@
    "year": 1997
   },
   {
-   "title": "Clandestino",
-   "artist": "Manu Chao",
+   "title": "Dos Gardenias",
+   "artist": "Buena Vista Social Club",
+   "year": 1997
+  },
+  {
+   "title": "Corazón partío",
+   "artist": "Alejandro Sanz",
+   "year": 1997
+  },
+  {
+   "title": "Si Te Vas",
+   "artist": "Shakira",
    "year": 1998
+  },
+  {
+   "title": "Whenever, Wherever",
+   "artist": "Shakira",
+   "year": 2001
   },
   {
    "title": "Me Enamora",
@@ -179,14 +204,14 @@
    "year": 2007
   },
   {
-   "title": "Sálvame",
-   "artist": "RBD",
-   "year": 2004
+   "title": "Clandestino",
+   "artist": "Manu Chao",
+   "year": 1998
   },
   {
-   "title": "Mi Primer Millon",
-   "artist": "Bacilos",
-   "year": 2002
+   "title": "Veinte años",
+   "artist": "Buena Vista Social Club",
+   "year": 1997
   },
   {
    "title": "Inolvidable",
@@ -199,14 +224,19 @@
    "year": 1997
   },
   {
-   "title": "Lento",
-   "artist": "Julieta Venegas",
+   "title": "Que Lloro",
+   "artist": "Sin Bandera",
    "year": 2003
   },
   {
-   "title": "Desaparecido",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Mi Primer Millon",
+   "artist": "Bacilos",
+   "year": 2002
+  },
+  {
+   "title": "Sálvame",
+   "artist": "RBD",
+   "year": 2004
   },
   {
    "title": "Latin Simone (Que Pasa Contigo)",
@@ -214,14 +244,14 @@
    "year": 2001
   },
   {
-   "title": "Inevitable",
-   "artist": "Shakira",
-   "year": 1998
+   "title": "Lento",
+   "artist": "Julieta Venegas",
+   "year": 2003
   },
   {
-   "title": "Volverte A Ver",
-   "artist": "Juanes",
-   "year": 2004
+   "title": "Waiting",
+   "artist": "Santana",
+   "year": 1969
   },
   {
    "title": "Nada Valgo Sin Tu Amor",
@@ -229,29 +259,14 @@
    "year": 2004
   },
   {
+   "title": "Desaparecido",
+   "artist": "Manu Chao",
+   "year": 1998
+  },
+  {
    "title": "Taboo",
    "artist": "Don Omar",
    "year": 2010
-  },
-  {
-   "title": "Antología",
-   "artist": "Shakira",
-   "year": 1995
-  },
-  {
-   "title": "Niño",
-   "artist": "Milo j",
-   "year": 2025
-  },
-  {
-   "title": "I Like It",
-   "artist": "Enrique Iglesias",
-   "year": 2010
-  },
-  {
-   "title": "Andar Conmigo",
-   "artist": "Julieta Venegas",
-   "year": 2003
   },
   {
    "title": "El carretero",
@@ -259,12 +274,42 @@
    "year": 1997
   },
   {
+   "title": "Volverte A Ver",
+   "artist": "Juanes",
+   "year": 2004
+  },
+  {
+   "title": "I Like It",
+   "artist": "Enrique Iglesias",
+   "year": 2010
+  },
+  {
+   "title": "Niño",
+   "artist": "Milo j",
+   "year": 2025
+  },
+  {
+   "title": "Inevitable",
+   "artist": "Shakira",
+   "year": 1998
+  },
+  {
    "title": "I Like It Like That",
    "artist": "Pete Rodriguez",
    "year": 1967
   },
   {
-   "title": "Waiting",
+   "title": "Me muero",
+   "artist": "La Quinta Estación",
+   "year": 2006
+  },
+  {
+   "title": "Antología",
+   "artist": "Shakira",
+   "year": 1995
+  },
+  {
+   "title": "Savor",
    "artist": "Santana",
    "year": 1969
   },
@@ -274,59 +319,9 @@
    "year": 2002
   },
   {
-   "title": "Si Una Vez",
-   "artist": "Selena",
-   "year": 1994
-  },
-  {
-   "title": "Despacito",
-   "artist": "Luis Fonsi",
-   "year": 2017
-  },
-  {
-   "title": "Pies Descalzos, Sueños Blancos",
-   "artist": "Shakira",
-   "year": 1995
-  },
-  {
    "title": "Dale Don Dale",
    "artist": "Don Omar",
    "year": 2003
-  },
-  {
-   "title": "Savor",
-   "artist": "Santana",
-   "year": 1969
-  },
-  {
-   "title": "Torero",
-   "artist": "Chayanne",
-   "year": 2002
-  },
-  {
-   "title": "Jingo",
-   "artist": "Santana",
-   "year": 1969
-  },
-  {
-   "title": "Ai se eu te pego",
-   "artist": "Michel Teló",
-   "year": 2011
-  },
-  {
-   "title": "Baila Esta Cumbia",
-   "artist": "Selena",
-   "year": 1991
-  },
-  {
-   "title": "Gotas De Agua Dulce",
-   "artist": "Juanes",
-   "year": 2007
-  },
-  {
-   "title": "Me Llaman Calle",
-   "artist": "Manu Chao",
-   "year": 2007
   },
   {
    "title": "Loba",
@@ -334,14 +329,34 @@
    "year": 2009
   },
   {
-   "title": "Murmullo",
-   "artist": "Buena Vista Social Club",
-   "year": 1997
+   "title": "Andar Conmigo",
+   "artist": "Julieta Venegas",
+   "year": 2003
   },
   {
-   "title": "Dos Locos",
-   "artist": "Monchy & Alexandra",
-   "year": 2002
+   "title": "Jingo",
+   "artist": "Santana",
+   "year": 1969
+  },
+  {
+   "title": "Soul Sacrifice",
+   "artist": "Santana",
+   "year": 1969
+  },
+  {
+   "title": "Pies Descalzos, Sueños Blancos",
+   "artist": "Shakira",
+   "year": 1995
+  },
+  {
+   "title": "Despacito",
+   "artist": "Luis Fonsi",
+   "year": 2017
+  },
+  {
+   "title": "Ai se eu te pego",
+   "artist": "Michel Teló",
+   "year": 2011
   },
   {
    "title": "You Just Don't Care",
@@ -349,24 +364,34 @@
    "year": 1969
   },
   {
+   "title": "Baila Esta Cumbia",
+   "artist": "Selena",
+   "year": 1991
+  },
+  {
    "title": "Pueblo Nuevo",
    "artist": "Buena Vista Social Club",
    "year": 1997
   },
   {
-   "title": "Volare (Nel Blu Di Pinto Di Blu)",
-   "artist": "Gipsy Kings",
-   "year": 2011
+   "title": "La Llorona",
+   "artist": "Chavela Vargas",
+   "year": 1993
   },
   {
-   "title": "Salomé",
-   "artist": "Chayanne",
-   "year": 1998
+   "title": "Si Una Vez",
+   "artist": "Selena",
+   "year": 1994
   },
   {
-   "title": "Me Voy",
-   "artist": "Julieta Venegas",
-   "year": 2006
+   "title": "Amor de loca juventud",
+   "artist": "Buena Vista Social Club",
+   "year": 1997
+  },
+  {
+   "title": "Gotas De Agua Dulce",
+   "artist": "Juanes",
+   "year": 2007
   },
   {
    "title": "Persuasion",
@@ -374,12 +399,22 @@
    "year": 1969
   },
   {
-   "title": "La Primavera",
-   "artist": "Manu Chao",
-   "year": 2001
+   "title": "Dile",
+   "artist": "Don Omar",
+   "year": 2003
   },
   {
-   "title": "Amor de loca juventud",
+   "title": "Dos Locos",
+   "artist": "Monchy & Alexandra",
+   "year": 2002
+  },
+  {
+   "title": "Torero",
+   "artist": "Chayanne",
+   "year": 2002
+  },
+  {
+   "title": "Murmullo",
    "artist": "Buena Vista Social Club",
    "year": 1997
   },
@@ -389,9 +424,44 @@
    "year": 2017
   },
   {
+   "title": "Volare (Nel Blu Di Pinto Di Blu)",
+   "artist": "Gipsy Kings",
+   "year": 2011
+  },
+  {
    "title": "Orgullecida",
    "artist": "Buena Vista Social Club",
    "year": 1997
+  },
+  {
+   "title": "Me Llaman Calle",
+   "artist": "Manu Chao",
+   "year": 2007
+  },
+  {
+   "title": "Me Voy",
+   "artist": "Julieta Venegas",
+   "year": 2006
+  },
+  {
+   "title": "Subeme la radio",
+   "artist": "Enrique Iglesias",
+   "year": 2017
+  },
+  {
+   "title": "Lo Hecho Está Hecho",
+   "artist": "Shakira",
+   "year": 2009
+  },
+  {
+   "title": "Todo Se Transforma",
+   "artist": "Jorge Drexler",
+   "year": 2004
+  },
+  {
+   "title": "Salomé",
+   "artist": "Chayanne",
+   "year": 1998
   },
   {
    "title": "Hero",
@@ -399,69 +469,9 @@
    "year": 2001
   },
   {
-   "title": "Me muero",
-   "artist": "La Quinta Estación",
-   "year": 2006
-  },
-  {
-   "title": "Dreaming of You",
-   "artist": "Selena",
-   "year": 1995
-  },
-  {
-   "title": "Para Tu Amor",
-   "artist": "Juanes",
-   "year": 2004
-  },
-  {
-   "title": "Downtown",
-   "artist": "Anitta",
-   "year": 2017
-  },
-  {
-   "title": "Pepas",
-   "artist": "Farruko",
-   "year": 2021
-  },
-  {
-   "title": "Vuelve",
-   "artist": "Ricky Martin",
-   "year": 1993
-  },
-  {
-   "title": "Vivir Mi Vida",
-   "artist": "Marc Anthony",
-   "year": 2013
-  },
-  {
-   "title": "Rosas",
-   "artist": "La Oreja de Van Gogh",
-   "year": 2000
-  },
-  {
    "title": "Mi Gente",
    "artist": "J Balvin",
    "year": 2018
-  },
-  {
-   "title": "Procura",
-   "artist": "Chichi Peralta",
-   "year": 2001
-  },
-  {
-   "title": "Cuando nadie me ve",
-   "artist": "Alejandro Sanz",
-   "year": 2000
-  },
-  {
-   "title": "No Me Doy Por Vencido",
-   "artist": "Luis Fonsi",
-   "year": 2008
-  },
-  {
-   "title": "La Bayamesa",
-   "artist": "Buena Vista Social Club",
-   "year": 1997
   },
   {
    "title": "Macarena",
@@ -469,19 +479,59 @@
    "year": 1993
   },
   {
-   "title": "Un Beso",
-   "artist": "Aventura",
-   "year": 2005
+   "title": "Pepas",
+   "artist": "Farruko",
+   "year": 2021
   },
   {
-   "title": "Gimme Tha Power",
-   "artist": "Molotov",
+   "title": "Para Tu Amor",
+   "artist": "Juanes",
+   "year": 2004
+  },
+  {
+   "title": "Vuelve",
+   "artist": "Ricky Martin",
+   "year": 1993
+  },
+  {
+   "title": "No Me Doy Por Vencido",
+   "artist": "Luis Fonsi",
+   "year": 2008
+  },
+  {
+   "title": "Vivir Mi Vida",
+   "artist": "Marc Anthony",
+   "year": 2013
+  },
+  {
+   "title": "La Bayamesa",
+   "artist": "Buena Vista Social Club",
    "year": 1997
   },
   {
-   "title": "Labios Compartidos",
-   "artist": "Maná",
-   "year": 2006
+   "title": "La Primavera",
+   "artist": "Manu Chao",
+   "year": 2001
+  },
+  {
+   "title": "Downtown",
+   "artist": "Anitta",
+   "year": 2017
+  },
+  {
+   "title": "Dreaming of You",
+   "artist": "Selena",
+   "year": 1995
+  },
+  {
+   "title": "Procura",
+   "artist": "Chichi Peralta",
+   "year": 2001
+  },
+  {
+   "title": "Nunca Me Acuerdo de Olvidarte",
+   "artist": "Shakira",
+   "year": 2014
   },
   {
    "title": "Buena Vista Social Club",
@@ -489,39 +539,19 @@
    "year": 1997
   },
   {
-   "title": "Heaven",
-   "artist": "Los Lonely Boys",
-   "year": 2003
-  },
-  {
-   "title": "Ain't It Funny",
-   "artist": "Jennifer Lopez",
-   "year": 2001
-  },
-  {
    "title": "Vivir Sin Aire",
    "artist": "Maná",
    "year": 1992
   },
   {
-   "title": "Sale el Sol",
-   "artist": "Shakira",
-   "year": 2010
+   "title": "Rosas",
+   "artist": "La Oreja de Van Gogh",
+   "year": 2000
   },
   {
-   "title": "Mi Corazoncito",
+   "title": "Un Beso",
    "artist": "Aventura",
-   "year": 2006
-  },
-  {
-   "title": "Querida",
-   "artist": "Juan Gabriel",
-   "year": 1984
-  },
-  {
-   "title": "1977",
-   "artist": "Ana Tijoux",
-   "year": 2009
+   "year": 2005
   },
   {
    "title": "Objection (Tango)",
@@ -529,17 +559,87 @@
    "year": 2001
   },
   {
-   "title": "Piel Morena",
-   "artist": "Thalía",
-   "year": 1995
+   "title": "Labios Compartidos",
+   "artist": "Maná",
+   "year": 2006
   },
   {
-   "title": "I Need to Know",
-   "artist": "Marc Anthony",
+   "title": "Fruta Fresca",
+   "artist": "Carlos Vives",
    "year": 1999
   },
   {
-   "title": "Tú",
+   "title": "Heaven",
+   "artist": "Los Lonely Boys",
+   "year": 2003
+  },
+  {
+   "title": "Mi Corazoncito",
+   "artist": "Aventura",
+   "year": 2006
+  },
+  {
+   "title": "Ain't It Funny",
+   "artist": "Jennifer Lopez",
+   "year": 2001
+  },
+  {
+   "title": "Escape",
+   "artist": "Enrique Iglesias",
+   "year": 2001
+  },
+  {
+   "title": "Pero Me Acuerdo de Tí",
+   "artist": "Christina Aguilera",
+   "year": 2000
+  },
+  {
+   "title": "Magalenha",
+   "artist": "Sérgio Mendes",
+   "year": 1992
+  },
+  {
+   "title": "Cuando nadie me ve",
+   "artist": "Alejandro Sanz",
+   "year": 2000
+  },
+  {
+   "title": "Sale el Sol",
+   "artist": "Shakira",
+   "year": 2010
+  },
+  {
+   "title": "1977",
+   "artist": "Ana Tijoux",
+   "year": 2009
+  },
+  {
+   "title": "Octavo Día",
+   "artist": "Shakira",
+   "year": 1998
+  },
+  {
+   "title": "Black Magic Woman",
+   "artist": "Santana",
+   "year": 1970
+  },
+  {
+   "title": "Gimme Tha Power",
+   "artist": "Molotov",
+   "year": 1997
+  },
+  {
+   "title": "The Girl From Ipanema",
+   "artist": "Stan Getz",
+   "year": 1987
+  },
+  {
+   "title": "Lluvia",
+   "artist": "Eddie Santiago",
+   "year": 1987
+  },
+  {
+   "title": "No Creo",
    "artist": "Shakira",
    "year": 1998
   },
@@ -554,24 +654,9 @@
    "year": 2002
   },
   {
-   "title": "The Girl From Ipanema",
-   "artist": "Stan Getz",
-   "year": 1987
-  },
-  {
-   "title": "La Tortura",
-   "artist": "Shakira",
-   "year": 2005
-  },
-  {
-   "title": "A Mi Manera (Comme D'habitude)",
-   "artist": "Gipsy Kings",
-   "year": 2014
-  },
-  {
-   "title": "Con los Años Que Me Quedan",
-   "artist": "Gloria Estefan",
-   "year": 1993
+   "title": "Querida",
+   "artist": "Juan Gabriel",
+   "year": 1984
   },
   {
    "title": "María",
@@ -579,14 +664,29 @@
    "year": 1995
   },
   {
+   "title": "Piel Morena",
+   "artist": "Thalía",
+   "year": 1995
+  },
+  {
+   "title": "Smooth",
+   "artist": "Santana",
+   "year": 1992
+  },
+  {
    "title": "Ahora Es",
    "artist": "Wisin & Yandel",
    "year": 2008
   },
   {
-   "title": "La Negra Tiene Tumbao",
-   "artist": "Celia Cruz",
-   "year": 2012
+   "title": "Samba de Janeiro",
+   "artist": "Bellini",
+   "year": 1996
+  },
+  {
+   "title": "Con los Años Que Me Quedan",
+   "artist": "Gloria Estefan",
+   "year": 1993
   },
   {
    "title": "Donde Estas Corazon",
@@ -594,14 +694,14 @@
    "year": 1995
   },
   {
-   "title": "Pecado",
-   "artist": "Caetano Veloso",
-   "year": 1993
-  },
-  {
    "title": "La Cura",
    "artist": "Frankie Ruiz",
    "year": 1999
+  },
+  {
+   "title": "Pecado",
+   "artist": "Caetano Veloso",
+   "year": 1993
   },
   {
    "title": "Minha Galera",
@@ -609,24 +709,9 @@
    "year": 1998
   },
   {
-   "title": "Be With You",
-   "artist": "Enrique Iglesias",
-   "year": 1999
-  },
-  {
-   "title": "Petit Pays",
-   "artist": "Cesária Évora",
-   "year": 1995
-  },
-  {
-   "title": "Malagueña Salerosa",
-   "artist": "Chingon",
-   "year": 2004
-  },
-  {
-   "title": "Magalenha",
-   "artist": "Sérgio Mendes",
-   "year": 1992
+   "title": "Tú",
+   "artist": "Shakira",
+   "year": 1998
   },
   {
    "title": "Welcome to Tijuana",
@@ -634,13 +719,33 @@
    "year": 1998
   },
   {
-   "title": "Lluvia",
-   "artist": "Eddie Santiago",
-   "year": 1987
+   "title": "Dónde Están los Ladrones",
+   "artist": "Shakira",
+   "year": 1998
   },
   {
-   "title": "Mr Bobby",
-   "artist": "Manu Chao",
+   "title": "La Tortura",
+   "artist": "Shakira",
+   "year": 2005
+  },
+  {
+   "title": "Rompe",
+   "artist": "Daddy Yankee",
+   "year": 2005
+  },
+  {
+   "title": "Bailando",
+   "artist": "Paradisio",
+   "year": 1995
+  },
+  {
+   "title": "Mandinga",
+   "artist": "Rubén González",
+   "year": 1997
+  },
+  {
+   "title": "Que vuelvas",
+   "artist": "Shakira",
    "year": 1998
   },
   {
@@ -649,19 +754,54 @@
    "year": 2005
   },
   {
-   "title": "Azul",
-   "artist": "Cristian Castro",
+   "title": "Lloraras",
+   "artist": "Oscar D'León",
+   "year": 1989
+  },
+  {
+   "title": "A Mi Manera (Comme D'habitude)",
+   "artist": "Gipsy Kings",
+   "year": 2014
+  },
+  {
+   "title": "Malagueña Salerosa",
+   "artist": "Chingon",
+   "year": 2004
+  },
+  {
+   "title": "La Negra Tiene Tumbao",
+   "artist": "Celia Cruz",
+   "year": 2012
+  },
+  {
+   "title": "I Need to Know",
+   "artist": "Marc Anthony",
+   "year": 1999
+  },
+  {
+   "title": "Padre Nuestro",
+   "artist": "Los Fabulosos Cadillacs",
+   "year": 1995
+  },
+  {
+   "title": "Mr Bobby",
+   "artist": "Manu Chao",
+   "year": 1998
+  },
+  {
+   "title": "El Matador",
+   "artist": "Los Fabulosos Cadillacs",
    "year": 1996
   },
   {
-   "title": "Conga",
-   "artist": "Gloria Estefan",
-   "year": 1992
+   "title": "Tal Vez",
+   "artist": "Ricky Martin",
+   "year": 2003
   },
   {
-   "title": "Rompe",
-   "artist": "Daddy Yankee",
-   "year": 2005
+   "title": "Todo cambia",
+   "artist": "Mercedes Sosa",
+   "year": 1984
   },
   {
    "title": "PROVENZA",
@@ -669,74 +809,9 @@
    "year": 2022
   },
   {
-   "title": "Bailando",
-   "artist": "Paradisio",
-   "year": 1995
-  },
-  {
-   "title": "No Creo",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
-   "title": "Por El Suelo",
-   "artist": "Manu Chao",
-   "year": 1998
-  },
-  {
-   "title": "Lloraras",
-   "artist": "Oscar D'León",
-   "year": 1989
-  },
-  {
-   "title": "Samba de Janeiro",
-   "artist": "Bellini",
-   "year": 1996
-  },
-  {
-   "title": "Octavo Día",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
-   "title": "Volare",
-   "artist": "Gipsy Kings",
-   "year": 1998
-  },
-  {
-   "title": "Mandinga",
-   "artist": "Rubén González",
-   "year": 1997
-  },
-  {
-   "title": "Un Siglo Sin Ti",
-   "artist": "Chayanne",
-   "year": 2003
-  },
-  {
-   "title": "Felices los 4",
-   "artist": "Maluma",
-   "year": 2017
-  },
-  {
    "title": "Je ne t'aime plus",
    "artist": "Manu Chao",
    "year": 1998
-  },
-  {
-   "title": "Waiting for Tonight",
-   "artist": "Jennifer Lopez",
-   "year": 1999
-  },
-  {
-   "title": "Me Va a Extrañar",
-   "artist": "Ricardo Montaner",
-   "year": 2005
-  },
-  {
-   "title": "Impacto",
-   "artist": "Daddy Yankee",
-   "year": 2007
   },
   {
    "title": "La Vida Tombola",
@@ -744,24 +819,24 @@
    "year": 2007
   },
   {
-   "title": "Dónde Están los Ladrones",
-   "artist": "Shakira",
+   "title": "Por El Suelo",
+   "artist": "Manu Chao",
    "year": 1998
   },
   {
-   "title": "Maria Maria",
-   "artist": "Santana",
-   "year": 2000
+   "title": "Me Va a Extrañar",
+   "artist": "Ricardo Montaner",
+   "year": 2005
   },
   {
-   "title": "Un Poco de Amor",
-   "artist": "Shakira",
-   "year": 1995
+   "title": "Be With You",
+   "artist": "Enrique Iglesias",
+   "year": 1999
   },
   {
-   "title": "Que me quedes tú",
-   "artist": "Shakira",
-   "year": 2001
+   "title": "Azul",
+   "artist": "Cristian Castro",
+   "year": 1996
   },
   {
    "title": "Fiesta De Locos",
@@ -769,29 +844,54 @@
    "year": 2008
   },
   {
-   "title": "Black Magic Woman",
-   "artist": "Santana",
-   "year": 1970
-  },
-  {
-   "title": "En Tus Pupilas",
-   "artist": "Shakira",
-   "year": 2005
-  },
-  {
-   "title": "Denia",
-   "artist": "Manu Chao",
-   "year": 2001
-  },
-  {
-   "title": "Falsas Esperanzas",
-   "artist": "Christina Aguilera",
-   "year": 2000
-  },
-  {
    "title": "Takin' Back My Love",
    "artist": "Enrique Iglesias",
    "year": 2008
+  },
+  {
+   "title": "Un Siglo Sin Ti",
+   "artist": "Chayanne",
+   "year": 2003
+  },
+  {
+   "title": "Volare",
+   "artist": "Gipsy Kings",
+   "year": 1998
+  },
+  {
+   "title": "Impacto",
+   "artist": "Daddy Yankee",
+   "year": 2007
+  },
+  {
+   "title": "Infatuation",
+   "artist": "Christina Aguilera",
+   "year": 2002
+  },
+  {
+   "title": "Waiting for Tonight",
+   "artist": "Jennifer Lopez",
+   "year": 1999
+  },
+  {
+   "title": "Petit Pays",
+   "artist": "Cesária Évora",
+   "year": 1995
+  },
+  {
+   "title": "Conga",
+   "artist": "Gloria Estefan",
+   "year": 1992
+  },
+  {
+   "title": "Que me quedes tú",
+   "artist": "Shakira",
+   "year": 2001
+  },
+  {
+   "title": "Felices los 4",
+   "artist": "Maluma",
+   "year": 2017
   },
   {
    "title": "Aquellos Ojos Verdes",
@@ -799,29 +899,29 @@
    "year": 1999
   },
   {
-   "title": "Si Antes Te Hubiera Conocido",
-   "artist": "KAROL G",
-   "year": 2024
-  },
-  {
-   "title": "Gitana",
-   "artist": "Willie Colón",
-   "year": 1984
-  },
-  {
-   "title": "California Dreamin'",
-   "artist": "José Feliciano",
-   "year": 1968
-  },
-  {
-   "title": "Bixo",
+   "title": "Denia",
    "artist": "Manu Chao",
    "year": 2001
   },
   {
-   "title": "Invierno",
-   "artist": "Reik",
-   "year": 2006
+   "title": "Tu Con El",
+   "artist": "Frankie Ruiz",
+   "year": 1996
+  },
+  {
+   "title": "En Tus Pupilas",
+   "artist": "Shakira",
+   "year": 2005
+  },
+  {
+   "title": "Un Poco de Amor",
+   "artist": "Shakira",
+   "year": 1995
+  },
+  {
+   "title": "Si Antes Te Hubiera Conocido",
+   "artist": "KAROL G",
+   "year": 2024
   },
   {
    "title": "DÁKITI",
@@ -829,69 +929,9 @@
    "year": 2020
   },
   {
-   "title": "Fuera",
-   "artist": "RBD",
-   "year": 2005
-  },
-  {
-   "title": "Ahora Quien",
-   "artist": "Marc Anthony",
-   "year": 2004
-  },
-  {
-   "title": "Mi Buen Amor",
-   "artist": "Gloria Estefan",
-   "year": 1993
-  },
-  {
-   "title": "Te Mando Flores",
-   "artist": "Fonseca",
-   "year": 2005
-  },
-  {
-   "title": "Amarte Duele",
-   "artist": "Natalia Lafourcade",
-   "year": 2002
-  },
-  {
-   "title": "Suelta Mi Mano",
-   "artist": "Sin Bandera",
-   "year": 2005
-  },
-  {
-   "title": "Que vuelvas",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
-   "title": "Mas que nada",
-   "artist": "Sérgio Mendes",
-   "year": 1985
-  },
-  {
-   "title": "Fuego",
-   "artist": "Bomba Estéreo",
-   "year": 2008
-  },
-  {
-   "title": "Mi vida",
-   "artist": "Manu Chao",
-   "year": 2001
-  },
-  {
-   "title": "Mama Call",
+   "title": "La Despedida",
    "artist": "Manu Chao",
    "year": 1998
-  },
-  {
-   "title": "Mi Chico Latino",
-   "artist": "Geri Halliwell",
-   "year": 1999
-  },
-  {
-   "title": "Aunque no te pueda ver",
-   "artist": "Alex Ubago",
-   "year": 2003
   },
   {
    "title": "Lambada",
@@ -899,109 +939,69 @@
    "year": 1989
   },
   {
-   "title": "Merry blues",
-   "artist": "Manu Chao",
-   "year": 2001
-  },
-  {
-   "title": "La Carcacha",
-   "artist": "Selena",
-   "year": 1992
-  },
-  {
-   "title": "Y, ¿Si Fuera Ella?",
-   "artist": "Alejandro Sanz",
-   "year": 1997
-  },
-  {
    "title": "Contigo En La Distancia",
    "artist": "Caetano Veloso",
    "year": 1994
   },
   {
-   "title": "Djobi Djoba",
-   "artist": "Gipsy Kings",
-   "year": 1982
+   "title": "Suelta Mi Mano",
+   "artist": "Sin Bandera",
+   "year": 2005
   },
   {
-   "title": "Mujer Latina",
-   "artist": "Thalía",
-   "year": 1997
-  },
-  {
-   "title": "Así Es La Vida",
-   "artist": "Elefante",
+   "title": "La marea",
+   "artist": "Manu Chao",
    "year": 2001
   },
   {
-   "title": "Fotografía",
-   "artist": "Juanes",
-   "year": 2004
+   "title": "Merry blues",
+   "artist": "Manu Chao",
+   "year": 2001
+  },
+  {
+   "title": "Mas que nada",
+   "artist": "Sérgio Mendes",
+   "year": 1985
+  },
+  {
+   "title": "Maria Maria",
+   "artist": "Milton Nascimento",
+   "year": 1978
   },
   {
    "title": "La Despedida",
-   "artist": "Manu Chao",
-   "year": 1998
-  },
-  {
-   "title": "Me Enamoré",
-   "artist": "Shakira",
-   "year": 2017
-  },
-  {
-   "title": "Amiga Mía",
-   "artist": "Alejandro Sanz",
-   "year": 1997
-  },
-  {
-   "title": "Bonito",
-   "artist": "Jarabe de Palo",
-   "year": 1999
-  },
-  {
-   "title": "Sombra de Ti",
-   "artist": "Shakira",
-   "year": 1998
-  },
-  {
-   "title": "Mentira...",
-   "artist": "Manu Chao",
-   "year": 1998
-  },
-  {
-   "title": "Quizas, Quizas, Quizas (Perhaps, Perhaps, Perhaps)",
-   "artist": "Nat King Cole",
-   "year": 1958
-  },
-  {
-   "title": "Pose",
    "artist": "Daddy Yankee",
-   "year": 2008
+   "year": 2010
   },
   {
-   "title": "Could I Have This Kiss Forever",
-   "artist": "Enrique Iglesias",
-   "year": 1999
+   "title": "Amarte Duele",
+   "artist": "Natalia Lafourcade",
+   "year": 2002
   },
   {
-   "title": "Puerto Rico",
-   "artist": "Vaya Con Dios",
-   "year": 1988
+   "title": "Gitana",
+   "artist": "Willie Colón",
+   "year": 1984
   },
   {
-   "title": "Bamboleo",
-   "artist": "Gipsy Kings",
-   "year": 1987
+   "title": "Aunque no te pueda ver",
+   "artist": "Alex Ubago",
+   "year": 2003
   },
   {
-   "title": "Sin Documentos",
-   "artist": "Julieta Venegas",
+   "title": "Invierno",
+   "artist": "Reik",
    "year": 2006
   },
   {
-   "title": "Just Another Day",
-   "artist": "Jon Secada",
-   "year": 1992
+   "title": "Fuera",
+   "artist": "RBD",
+   "year": 2005
+  },
+  {
+   "title": "Fuego",
+   "artist": "Bomba Estéreo",
+   "year": 2008
   }
  ]
 }

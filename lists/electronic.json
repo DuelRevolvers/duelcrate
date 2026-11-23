@@ -1,7 +1,7 @@
 {
  "name": "Electronic",
  "tag": "electronic",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "On Melancholy Hill",
@@ -14,14 +14,14 @@
    "year": 2011
   },
   {
-   "title": "Clarity",
-   "artist": "Zedd",
-   "year": 2013
-  },
-  {
    "title": "We Are the People",
    "artist": "Empire of the Sun",
    "year": 2008
+  },
+  {
+   "title": "Clarity",
+   "artist": "Zedd",
+   "year": 2013
   },
   {
    "title": "Enjoy the Silence",
@@ -32,6 +32,11 @@
    "title": "Feel Good Inc.",
    "artist": "Gorillaz",
    "year": 2004
+  },
+  {
+   "title": "Crimewave",
+   "artist": "Crystal Castles",
+   "year": 2017
   },
   {
    "title": "Rhinestone Eyes",
@@ -54,19 +59,19 @@
    "year": 2005
   },
   {
-   "title": "Vanished",
-   "artist": "Crystal Castles",
-   "year": 2008
-  },
-  {
    "title": "One More Time",
    "artist": "Daft Punk",
    "year": 2000
   },
   {
-   "title": "Dance Yrself Clean",
-   "artist": "LCD Soundsystem",
-   "year": 2010
+   "title": "Disparate Youth",
+   "artist": "Santigold",
+   "year": 2012
+  },
+  {
+   "title": "Vanished",
+   "artist": "Crystal Castles",
+   "year": 2008
   },
   {
    "title": "Walking on a Dream",
@@ -74,9 +79,9 @@
    "year": 2008
   },
   {
-   "title": "Disparate Youth",
-   "artist": "Santigold",
-   "year": 2012
+   "title": "Dance Yrself Clean",
+   "artist": "LCD Soundsystem",
+   "year": 2010
   },
   {
    "title": "Veridis Quo",
@@ -89,11 +94,6 @@
    "year": 2000
   },
   {
-   "title": "Harder, Better, Faster, Stronger",
-   "artist": "Daft Punk",
-   "year": 2001
-  },
-  {
    "title": "Feel So Close",
    "artist": "Calvin Harris",
    "year": 2011
@@ -104,9 +104,9 @@
    "year": 1998
   },
   {
-   "title": "Electric Feel",
-   "artist": "MGMT",
-   "year": 2007
+   "title": "Harder, Better, Faster, Stronger",
+   "artist": "Daft Punk",
+   "year": 2001
   },
   {
    "title": "Time to Pretend",
@@ -119,19 +119,14 @@
    "year": 2011
   },
   {
-   "title": "I'm God",
-   "artist": "Clams Casino",
-   "year": 2012
+   "title": "Electric Feel",
+   "artist": "MGMT",
+   "year": 2007
   },
   {
-   "title": "The Hills",
-   "artist": "The Weeknd",
-   "year": 2015
-  },
-  {
-   "title": "Fireflies",
-   "artist": "Owl City",
-   "year": 2009
+   "title": "Something About Us",
+   "artist": "Daft Punk",
+   "year": 2001
   },
   {
    "title": "Don't Trust Me",
@@ -139,14 +134,24 @@
    "year": 2008
   },
   {
+   "title": "I'm God",
+   "artist": "Clams Casino",
+   "year": 2012
+  },
+  {
+   "title": "Fireflies",
+   "artist": "Owl City",
+   "year": 2009
+  },
+  {
+   "title": "The Hills",
+   "artist": "The Weeknd",
+   "year": 2015
+  },
+  {
    "title": "Angel",
    "artist": "Massive Attack",
    "year": 1998
-  },
-  {
-   "title": "Sleepyhead",
-   "artist": "Passion Pit",
-   "year": 2008
   },
   {
    "title": "Clint Eastwood",
@@ -154,9 +159,9 @@
    "year": 2000
   },
   {
-   "title": "Army of Me",
-   "artist": "Björk",
-   "year": 1994
+   "title": "Sleepyhead",
+   "artist": "Passion Pit",
+   "year": 2008
   },
   {
    "title": "Xtal",
@@ -164,19 +169,14 @@
    "year": 1992
   },
   {
+   "title": "Army of Me",
+   "artist": "Björk",
+   "year": 1994
+  },
+  {
    "title": "Dancing on My Own",
    "artist": "Robyn",
    "year": 2010
-  },
-  {
-   "title": "Aerodynamic",
-   "artist": "Daft Punk",
-   "year": 2001
-  },
-  {
-   "title": "Idioteque",
-   "artist": "Radiohead",
-   "year": 2000
   },
   {
    "title": "Digital Love",
@@ -184,34 +184,9 @@
    "year": 2001
   },
   {
-   "title": "Pulsewidth",
-   "artist": "Aphex Twin",
-   "year": 1992
-  },
-  {
-   "title": "Breathe",
-   "artist": "The Prodigy",
-   "year": 1996
-  },
-  {
-   "title": "Untrust Us",
-   "artist": "Crystal Castles",
-   "year": 2006
-  },
-  {
-   "title": "Around the World",
+   "title": "Aerodynamic",
    "artist": "Daft Punk",
-   "year": 1996
-  },
-  {
-   "title": "Motion Picture Soundtrack",
-   "artist": "Radiohead",
-   "year": 1997
-  },
-  {
-   "title": "Lights",
-   "artist": "Ellie Goulding",
-   "year": 2010
+   "year": 2001
   },
   {
    "title": "C U Next Tuesday",
@@ -219,34 +194,49 @@
    "year": 2010
   },
   {
-   "title": "Wake Me Up",
-   "artist": "Avicii",
-   "year": 2013
+   "title": "Idioteque",
+   "artist": "Radiohead",
+   "year": 2000
   },
   {
-   "title": "Paper Planes",
-   "artist": "M.I.A.",
-   "year": 2007
-  },
-  {
-   "title": "19-2000",
-   "artist": "Gorillaz",
-   "year": 2001
-  },
-  {
-   "title": "Knights",
+   "title": "Untrust Us",
    "artist": "Crystal Castles",
-   "year": 2007
+   "year": 2006
   },
   {
-   "title": "Venus as a Boy",
-   "artist": "Björk",
-   "year": 1993
+   "title": "Pulsewidth",
+   "artist": "Aphex Twin",
+   "year": 1992
   },
   {
-   "title": "Fall in Love",
-   "artist": "Phantogram",
-   "year": 2013
+   "title": "Motion Picture Soundtrack",
+   "artist": "Radiohead",
+   "year": 1997
+  },
+  {
+   "title": "Breathe",
+   "artist": "The Prodigy",
+   "year": 1996
+  },
+  {
+   "title": "Lights",
+   "artist": "Ellie Goulding",
+   "year": 2010
+  },
+  {
+   "title": "Around the World",
+   "artist": "Daft Punk",
+   "year": 1996
+  },
+  {
+   "title": "Empathy",
+   "artist": "Crystal Castles",
+   "year": 2010
+  },
+  {
+   "title": "Bloody Mary",
+   "artist": "Lady Gaga",
+   "year": 2011
   },
   {
    "title": "Rock That Body",
@@ -254,9 +244,54 @@
    "year": 2009
   },
   {
+   "title": "Paper Planes",
+   "artist": "M.I.A.",
+   "year": 2007
+  },
+  {
+   "title": "Wake Me Up",
+   "artist": "Avicii",
+   "year": 2013
+  },
+  {
+   "title": "19-2000",
+   "artist": "Gorillaz",
+   "year": 2001
+  },
+  {
+   "title": "Fall in Love",
+   "artist": "Phantogram",
+   "year": 2013
+  },
+  {
+   "title": "Knights",
+   "artist": "Crystal Castles",
+   "year": 2007
+  },
+  {
    "title": "Where's Your Head At",
    "artist": "Basement Jaxx",
    "year": 2001
+  },
+  {
+   "title": "Heads Will Roll",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2009
+  },
+  {
+   "title": "Bait & Switch",
+   "artist": "KMFDM",
+   "year": 2009
+  },
+  {
+   "title": "Playground Love",
+   "artist": "Air",
+   "year": 2003
+  },
+  {
+   "title": "Venus as a Boy",
+   "artist": "Björk",
+   "year": 1993
   },
   {
    "title": "Flim",
@@ -264,9 +299,9 @@
    "year": 1997
   },
   {
-   "title": "Bait & Switch",
-   "artist": "KMFDM",
-   "year": 2009
+   "title": "Cinnamon Girl",
+   "artist": "Lana Del Rey",
+   "year": 2019
   },
   {
    "title": "Suffocation",
@@ -279,29 +314,9 @@
    "year": 2005
   },
   {
-   "title": "Playground Love",
-   "artist": "Air",
-   "year": 2003
-  },
-  {
-   "title": "How Deep Is Your Love",
-   "artist": "Calvin Harris",
-   "year": 2015
-  },
-  {
-   "title": "Burn",
-   "artist": "Ellie Goulding",
-   "year": 2013
-  },
-  {
-   "title": "Transgender",
-   "artist": "Crystal Castles",
-   "year": 2012
-  },
-  {
-   "title": "Firestarter",
+   "title": "Smack My Bitch Up",
    "artist": "The Prodigy",
-   "year": 1995
+   "year": 1996
   },
   {
    "title": "The Look",
@@ -309,29 +324,34 @@
    "year": 2010
   },
   {
+   "title": "Transgender",
+   "artist": "Crystal Castles",
+   "year": 2012
+  },
+  {
+   "title": "Genesis",
+   "artist": "Justice",
+   "year": 2007
+  },
+  {
    "title": "After Dark",
    "artist": "Mr.Kitty",
    "year": 2014
   },
   {
-   "title": "Rocketeer",
-   "artist": "Far East Movement",
+   "title": "Bang Bang Bang Bang",
+   "artist": "Sohodolls",
+   "year": 2007
+  },
+  {
+   "title": "Party Rock Anthem",
+   "artist": "LMFAO",
    "year": 2011
   },
   {
-   "title": "Big Time Sensuality",
-   "artist": "Björk",
-   "year": 1993
-  },
-  {
-   "title": "Hyperballad",
-   "artist": "Björk",
-   "year": 1996
-  },
-  {
-   "title": "Heads Will Roll",
-   "artist": "Yeah Yeah Yeahs",
-   "year": 2009
+   "title": "Firestarter",
+   "artist": "The Prodigy",
+   "year": 1995
   },
   {
    "title": "D.A.N.C.E.",
@@ -339,14 +359,19 @@
    "year": 2006
   },
   {
-   "title": "Alberto Balsalm",
-   "artist": "Aphex Twin",
-   "year": 1995
+   "title": "Rocketeer",
+   "artist": "Far East Movement",
+   "year": 2011
   },
   {
-   "title": "Your Woman",
-   "artist": "White Town",
-   "year": 1996
+   "title": "Burn",
+   "artist": "Ellie Goulding",
+   "year": 2013
+  },
+  {
+   "title": "Ghosts 'n' Stuff",
+   "artist": "deadmau5",
+   "year": 2008
   },
   {
    "title": "Face to Face",
@@ -354,14 +379,14 @@
    "year": 2001
   },
   {
-   "title": "Pagan Poetry",
-   "artist": "Björk",
-   "year": 2001
-  },
-  {
    "title": "Crave you",
    "artist": "Flight Facilities",
    "year": 2010
+  },
+  {
+   "title": "Hyperballad",
+   "artist": "Björk",
+   "year": 1996
   },
   {
    "title": "Precious",
@@ -374,39 +399,29 @@
    "year": 2011
   },
   {
-   "title": "Party Rock Anthem",
-   "artist": "LMFAO",
-   "year": 2011
+   "title": "Big Time Sensuality",
+   "artist": "Björk",
+   "year": 1993
   },
   {
-   "title": "La La La",
-   "artist": "Naughty Boy",
-   "year": 2013
+   "title": "Pagan Poetry",
+   "artist": "Björk",
+   "year": 2001
   },
   {
-   "title": "Kids with Guns",
-   "artist": "Gorillaz",
-   "year": 2005
+   "title": "How Deep Is Your Love",
+   "artist": "Calvin Harris",
+   "year": 2015
   },
   {
-   "title": "What Do They Know?",
-   "artist": "Mindless Self Indulgence",
-   "year": 2005
+   "title": "Cherry Blossom Girl",
+   "artist": "Air",
+   "year": 2004
   },
   {
-   "title": "Bang Bang Bang Bang",
-   "artist": "Sohodolls",
-   "year": 2007
-  },
-  {
-   "title": "Since I Left You",
-   "artist": "The Avalanches",
-   "year": 2000
-  },
-  {
-   "title": "Ghosts 'n' Stuff",
-   "artist": "deadmau5",
-   "year": 2008
+   "title": "Your Woman",
+   "artist": "White Town",
+   "year": 1996
   },
   {
    "title": "Jóga",
@@ -414,44 +429,14 @@
    "year": 1996
   },
   {
-   "title": "Hidden Place",
-   "artist": "Björk",
-   "year": 2001
+   "title": "La La La",
+   "artist": "Naughty Boy",
+   "year": 2013
   },
   {
-   "title": "Bloody Mary",
-   "artist": "Lady Gaga",
-   "year": 2011
-  },
-  {
-   "title": "Ageispolis",
-   "artist": "Aphex Twin",
-   "year": 1992
-  },
-  {
-   "title": "Richman",
-   "artist": "3OH!3",
-   "year": 2008
-  },
-  {
-   "title": "Fingerbib",
-   "artist": "Aphex Twin",
-   "year": 1996
-  },
-  {
-   "title": "Within",
-   "artist": "Daft Punk",
-   "year": 2023
-  },
-  {
-   "title": "O Green World",
-   "artist": "Gorillaz",
-   "year": 2005
-  },
-  {
-   "title": "Superheroes",
-   "artist": "Daft Punk",
-   "year": 2001
+   "title": "Praise You",
+   "artist": "Fatboy Slim",
+   "year": 1998
   },
   {
    "title": "Bad Girls",
@@ -459,14 +444,19 @@
    "year": 2010
   },
   {
-   "title": "Voyager",
-   "artist": "Daft Punk",
-   "year": 2001
+   "title": "What Do They Know?",
+   "artist": "Mindless Self Indulgence",
+   "year": 2005
   },
   {
-   "title": "Policy of Truth",
-   "artist": "Depeche Mode",
-   "year": 1985
+   "title": "Kids with Guns",
+   "artist": "Gorillaz",
+   "year": 2005
+  },
+  {
+   "title": "Alberto Balsalm",
+   "artist": "Aphex Twin",
+   "year": 1995
   },
   {
    "title": "Courtship Dating",
@@ -474,44 +464,54 @@
    "year": 2008
   },
   {
-   "title": "400 Lux",
-   "artist": "Lorde",
-   "year": 2013
+   "title": "Blow",
+   "artist": "Ke$ha",
+   "year": 2010
   },
   {
-   "title": "Ribs",
-   "artist": "Lorde",
-   "year": 2013
+   "title": "Hidden Place",
+   "artist": "Björk",
+   "year": 2001
   },
   {
-   "title": "Omen",
-   "artist": "The Prodigy",
-   "year": 2009
-  },
-  {
-   "title": "Tennis Court",
-   "artist": "Lorde",
-   "year": 2012
-  },
-  {
-   "title": "Human After All",
-   "artist": "Daft Punk",
-   "year": 2005
-  },
-  {
-   "title": "It's No Good",
-   "artist": "Depeche Mode",
-   "year": 1997
-  },
-  {
-   "title": "DARE",
+   "title": "O Green World",
    "artist": "Gorillaz",
    "year": 2005
   },
   {
-   "title": "Giorgio by Moroder",
+   "title": "Policy of Truth",
+   "artist": "Depeche Mode",
+   "year": 1985
+  },
+  {
+   "title": "Ageispolis",
+   "artist": "Aphex Twin",
+   "year": 1992
+  },
+  {
+   "title": "Fingerbib",
+   "artist": "Aphex Twin",
+   "year": 1996
+  },
+  {
+   "title": "Voyager",
    "artist": "Daft Punk",
-   "year": 2016
+   "year": 2001
+  },
+  {
+   "title": "Richman",
+   "artist": "3OH!3",
+   "year": 2008
+  },
+  {
+   "title": "Kid A",
+   "artist": "Radiohead",
+   "year": 2000
+  },
+  {
+   "title": "Within",
+   "artist": "Daft Punk",
+   "year": 2023
   },
   {
    "title": "Hello",
@@ -519,12 +519,102 @@
    "year": 2010
   },
   {
+   "title": "Shake It",
+   "artist": "Metro Station",
+   "year": 2007
+  },
+  {
+   "title": "Omen",
+   "artist": "The Prodigy",
+   "year": 2009
+  },
+  {
+   "title": "Superheroes",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Tennis Court",
+   "artist": "Lorde",
+   "year": 2012
+  },
+  {
+   "title": "400 Lux",
+   "artist": "Lorde",
+   "year": 2013
+  },
+  {
+   "title": "It's No Good",
+   "artist": "Depeche Mode",
+   "year": 1997
+  },
+  {
+   "title": "Since I Left You",
+   "artist": "The Avalanches",
+   "year": 2000
+  },
+  {
+   "title": "Human After All",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
    "title": "Personal Jesus",
    "artist": "Depeche Mode",
    "year": 1985
   },
   {
+   "title": "Da Funk",
+   "artist": "Daft Punk",
+   "year": 1995
+  },
+  {
    "title": "Pluto",
+   "artist": "Björk",
+   "year": 1997
+  },
+  {
+   "title": "Contact",
+   "artist": "Daft Punk",
+   "year": 2023
+  },
+  {
+   "title": "Giorgio by Moroder",
+   "artist": "Daft Punk",
+   "year": 2016
+  },
+  {
+   "title": "Wait",
+   "artist": "M83",
+   "year": 2011
+  },
+  {
+   "title": "El Mañana",
+   "artist": "Gorillaz",
+   "year": 2005
+  },
+  {
+   "title": "Ribs",
+   "artist": "Lorde",
+   "year": 2013
+  },
+  {
+   "title": "Technologic",
+   "artist": "Daft Punk",
+   "year": 2005
+  },
+  {
+   "title": "The Game of Love",
+   "artist": "Daft Punk",
+   "year": 2013
+  },
+  {
+   "title": "Tomorrow Comes Today",
+   "artist": "Gorillaz",
+   "year": 2000
+  },
+  {
+   "title": "All Is Full of Love",
    "artist": "Björk",
    "year": 1997
   },
@@ -534,22 +624,12 @@
    "year": 2014
   },
   {
-   "title": "Da Funk",
-   "artist": "Daft Punk",
-   "year": 1995
+   "title": "Blackout",
+   "artist": "Breathe Carolina",
+   "year": 2011
   },
   {
-   "title": "The Game of Love",
-   "artist": "Daft Punk",
-   "year": 2013
-  },
-  {
-   "title": "Blow",
-   "artist": "Ke$ha",
-   "year": 2010
-  },
-  {
-   "title": "El Mañana",
+   "title": "DARE",
    "artist": "Gorillaz",
    "year": 2005
   },
@@ -559,54 +639,24 @@
    "year": 2001
   },
   {
-   "title": "Shake It",
-   "artist": "Metro Station",
-   "year": 2007
-  },
-  {
-   "title": "Tomorrow Comes Today",
-   "artist": "Gorillaz",
-   "year": 2000
-  },
-  {
-   "title": "Blackout",
-   "artist": "Breathe Carolina",
-   "year": 2011
-  },
-  {
-   "title": "Mouthful of Diamonds",
-   "artist": "Phantogram",
-   "year": 2008
-  },
-  {
-   "title": "Technologic",
-   "artist": "Daft Punk",
-   "year": 2005
-  },
-  {
-   "title": "Human Behaviour",
-   "artist": "Björk",
-   "year": 1993
-  },
-  {
-   "title": "Wait",
-   "artist": "M83",
-   "year": 2011
-  },
-  {
-   "title": "All Is Full of Love",
-   "artist": "Björk",
-   "year": 1997
-  },
-  {
    "title": "Heliosphan",
    "artist": "Aphex Twin",
    "year": 1992
   },
   {
-   "title": "Windowlicker",
-   "artist": "Aphex Twin",
+   "title": "Poker Face",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "Deceptacon",
+   "artist": "Le Tigre",
    "year": 1999
+  },
+  {
+   "title": "Baptism",
+   "artist": "Crystal Castles",
+   "year": 2008
   },
   {
    "title": "World in My Eyes",
@@ -614,18 +664,83 @@
    "year": 1990
   },
   {
+   "title": "Windowlicker",
+   "artist": "Aphex Twin",
+   "year": 1999
+  },
+  {
+   "title": "Mouthful of Diamonds",
+   "artist": "Phantogram",
+   "year": 2008
+  },
+  {
+   "title": "My Tears Are Becoming a Sea",
+   "artist": "M83",
+   "year": 2011
+  },
+  {
+   "title": "Right Here, Right Now",
+   "artist": "Fatboy Slim",
+   "year": 1998
+  },
+  {
    "title": "Faded",
    "artist": "Alan Walker",
    "year": 2015
   },
   {
-   "title": "Frontier Psychiatrist",
-   "artist": "The Avalanches",
-   "year": 2000
+   "title": "Born Slippy .NUXX",
+   "artist": "Underworld",
+   "year": 1995
   },
   {
-   "title": "Poker Face",
-   "artist": "Lady Gaga",
+   "title": "Human Behaviour",
+   "artist": "Björk",
+   "year": 1993
+  },
+  {
+   "title": "Stress",
+   "artist": "Justice",
+   "year": 2007
+  },
+  {
+   "title": "Galvanize",
+   "artist": "The Chemical Brothers",
+   "year": 2004
+  },
+  {
+   "title": "A Little Bit Harder",
+   "artist": "She Wants Revenge",
+   "year": 2009
+  },
+  {
+   "title": "QKThr",
+   "artist": "Aphex Twin",
+   "year": 2001
+  },
+  {
+   "title": "Pogo",
+   "artist": "Digitalism",
+   "year": 2007
+  },
+  {
+   "title": "Possibly Maybe",
+   "artist": "Björk",
+   "year": 1995
+  },
+  {
+   "title": "Sail",
+   "artist": "AWOLNATION",
+   "year": 2010
+  },
+  {
+   "title": "Magic Spells",
+   "artist": "Crystal Castles",
+   "year": 2007
+  },
+  {
+   "title": "Lights Out",
+   "artist": "Mindless Self Indulgence",
    "year": 2008
   },
   {
@@ -634,74 +749,19 @@
    "year": 1996
   },
   {
-   "title": "Baptism",
-   "artist": "Crystal Castles",
-   "year": 2008
-  },
-  {
-   "title": "Sail",
-   "artist": "AWOLNATION",
-   "year": 2010
-  },
-  {
-   "title": "QKThr",
-   "artist": "Aphex Twin",
-   "year": 2001
-  },
-  {
-   "title": "Born Slippy .NUXX",
-   "artist": "Underworld",
-   "year": 1995
-  },
-  {
-   "title": "Possibly Maybe",
-   "artist": "Björk",
-   "year": 1995
-  },
-  {
-   "title": "Extreme Ways",
-   "artist": "Moby",
-   "year": 2002
-  },
-  {
    "title": "High Life",
    "artist": "Daft Punk",
    "year": 2001
   },
   {
-   "title": "Right Here, Right Now",
-   "artist": "Fatboy Slim",
-   "year": 1998
-  },
-  {
-   "title": "Magic Spells",
-   "artist": "Crystal Castles",
-   "year": 2007
-  },
-  {
-   "title": "Vroom Vroom",
-   "artist": "Charli xcx",
-   "year": 2016
-  },
-  {
-   "title": "My Tears Are Becoming a Sea",
-   "artist": "M83",
-   "year": 2011
-  },
-  {
-   "title": "Enjoy",
-   "artist": "Björk",
-   "year": 1995
+   "title": "Have You Got It in You?",
+   "artist": "Imogen Heap",
+   "year": 2005
   },
   {
    "title": "i",
    "artist": "Aphex Twin",
    "year": 1992
-  },
-  {
-   "title": "Go",
-   "artist": "The Chemical Brothers",
-   "year": 2015
   },
   {
    "title": "Dissolved Girl",
@@ -714,14 +774,44 @@
    "year": 2010
   },
   {
-   "title": "Lights Out",
-   "artist": "Mindless Self Indulgence",
+   "title": "Frontier Psychiatrist",
+   "artist": "The Avalanches",
+   "year": 2000
+  },
+  {
+   "title": "Enjoy",
+   "artist": "Björk",
+   "year": 1995
+  },
+  {
+   "title": "Just Dance",
+   "artist": "Lady Gaga",
    "year": 2008
   },
   {
-   "title": "Cocoon",
+   "title": "Hunter",
    "artist": "Björk",
-   "year": 2001
+   "year": 1997
+  },
+  {
+   "title": "Vroom Vroom",
+   "artist": "Charli xcx",
+   "year": 2016
+  },
+  {
+   "title": "What You Know",
+   "artist": "Two Door Cinema Club",
+   "year": 2010
+  },
+  {
+   "title": "Extreme Ways",
+   "artist": "Moby",
+   "year": 2002
+  },
+  {
+   "title": "Lonely Star",
+   "artist": "The Weeknd",
+   "year": 2011
   },
   {
    "title": "Olson",
@@ -729,9 +819,44 @@
    "year": 1998
   },
   {
-   "title": "Two Hearts in 3/4 Time",
-   "artist": "The Avalanches",
-   "year": 2000
+   "title": "Revolution 909",
+   "artist": "Daft Punk",
+   "year": 1996
+  },
+  {
+   "title": "Hearing Damage",
+   "artist": "Thom Yorke",
+   "year": 2009
+  },
+  {
+   "title": "Shots",
+   "artist": "LMFAO",
+   "year": 2011
+  },
+  {
+   "title": "Motherboard",
+   "artist": "Daft Punk",
+   "year": 2013
+  },
+  {
+   "title": "Cocoon",
+   "artist": "Björk",
+   "year": 2001
+  },
+  {
+   "title": "Hey Boy Hey Girl",
+   "artist": "The Chemical Brothers",
+   "year": 1999
+  },
+  {
+   "title": "Celestica",
+   "artist": "Crystal Castles",
+   "year": 2010
+  },
+  {
+   "title": "Affection",
+   "artist": "Crystal Castles",
+   "year": 2012
   },
   {
    "title": "Two Weeks",
@@ -744,54 +869,9 @@
    "year": 2010
   },
   {
-   "title": "Revolution 909",
-   "artist": "Daft Punk",
-   "year": 1996
-  },
-  {
-   "title": "Hunter",
-   "artist": "Björk",
-   "year": 1997
-  },
-  {
-   "title": "Pogo",
-   "artist": "Digitalism",
-   "year": 2007
-  },
-  {
-   "title": "What You Know",
-   "artist": "Two Door Cinema Club",
-   "year": 2010
-  },
-  {
-   "title": "Lonely Star",
-   "artist": "The Weeknd",
-   "year": 2011
-  },
-  {
-   "title": "Just Dance",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Motherboard",
-   "artist": "Daft Punk",
-   "year": 2013
-  },
-  {
    "title": "Let There Be Light",
    "artist": "Justice",
    "year": 2005
-  },
-  {
-   "title": "Television Rules the Nation / Crescendolls",
-   "artist": "Daft Punk",
-   "year": 2006
-  },
-  {
-   "title": "Nuclear Seasons",
-   "artist": "Charli xcx",
-   "year": 2011
   },
   {
    "title": "Risingson",
@@ -799,34 +879,39 @@
    "year": 1994
   },
   {
-   "title": "Television Rules the Nation",
-   "artist": "Daft Punk",
-   "year": 2005
+   "title": "The Rockafeller Skank",
+   "artist": "Fatboy Slim",
+   "year": 1998
   },
   {
-   "title": "Celestica",
-   "artist": "Crystal Castles",
-   "year": 2010
+   "title": "Two Months Off",
+   "artist": "Underworld",
+   "year": 2002
   },
   {
-   "title": "Nightvision",
-   "artist": "Daft Punk",
-   "year": 2001
+   "title": "Your Love",
+   "artist": "She Wants Revenge",
+   "year": 2009
   },
   {
-   "title": "Bad Kingdom",
-   "artist": "Moderat",
+   "title": "Nuclear Seasons",
+   "artist": "Charli xcx",
+   "year": 2011
+  },
+  {
+   "title": "Addicted to You",
+   "artist": "Avicii",
    "year": 2013
   },
   {
-   "title": "Affection",
-   "artist": "Crystal Castles",
-   "year": 2012
+   "title": "Television Rules the Nation / Crescendolls",
+   "artist": "Daft Punk",
+   "year": 2006
   },
   {
-   "title": "Can You Feel My Heart",
-   "artist": "Bring Me the Horizon",
-   "year": 2013
+   "title": "Phantom",
+   "artist": "Justice",
+   "year": 2006
   },
   {
    "title": "Beyond",
@@ -834,9 +919,44 @@
    "year": 2013
   },
   {
-   "title": "Phantom",
-   "artist": "Justice",
-   "year": 2006
+   "title": "Nightvision",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Halcyon + On + On",
+   "artist": "Orbital",
+   "year": 1993
+  },
+  {
+   "title": "Can You Feel My Heart",
+   "artist": "Bring Me the Horizon",
+   "year": 2013
+  },
+  {
+   "title": "Around The World / Harder, Better, Faster, Stronger",
+   "artist": "Daft Punk",
+   "year": 2007
+  },
+  {
+   "title": "Year of Silence",
+   "artist": "Crystal Castles",
+   "year": 2010
+  },
+  {
+   "title": "Monster",
+   "artist": "Lady Gaga",
+   "year": 2009
+  },
+  {
+   "title": "Natural Blues",
+   "artist": "Moby",
+   "year": 1999
+  },
+  {
+   "title": "Television Rules the Nation",
+   "artist": "Daft Punk",
+   "year": 2005
   },
   {
    "title": "Halo",
@@ -849,79 +969,9 @@
    "year": 1997
   },
   {
-   "title": "The Rockafeller Skank",
-   "artist": "Fatboy Slim",
-   "year": 1998
-  },
-  {
-   "title": "Year of Silence",
-   "artist": "Crystal Castles",
+   "title": "E.T.",
+   "artist": "Katy Perry",
    "year": 2010
-  },
-  {
-   "title": "Your Love",
-   "artist": "She Wants Revenge",
-   "year": 2009
-  },
-  {
-   "title": "Halcyon + On + On",
-   "artist": "Orbital",
-   "year": 1993
-  },
-  {
-   "title": "Hearing Damage",
-   "artist": "Thom Yorke",
-   "year": 2009
-  },
-  {
-   "title": "Baby I'm Yours",
-   "artist": "Breakbot",
-   "year": 2012
-  },
-  {
-   "title": "Unison",
-   "artist": "Björk",
-   "year": 2001
-  },
-  {
-   "title": "Addicted to You",
-   "artist": "Avicii",
-   "year": 2013
-  },
-  {
-   "title": "Around The World / Harder, Better, Faster, Stronger",
-   "artist": "Daft Punk",
-   "year": 2007
-  },
-  {
-   "title": "Glitter Freeze",
-   "artist": "Gorillaz",
-   "year": 2010
-  },
-  {
-   "title": "We Are the Music Makers",
-   "artist": "Aphex Twin",
-   "year": 1992
-  },
-  {
-   "title": "Let Me Love You",
-   "artist": "DJ Snake",
-   "year": 2016
-  },
-  {
-   "title": "Heirloom",
-   "artist": "Björk",
-   "year": 2001
-  },
-  {
-   "title": "Crescendolls",
-   "artist": "Daft Punk",
-   "year": 2001
-  },
-  {
-   "title": "Radio",
-   "artist": "The Avalanches",
-   "year": 2000
   },
   {
    "title": "Hide and Seek",
@@ -929,34 +979,19 @@
    "year": 2005
   },
   {
-   "title": "Superfast Jellyfish",
-   "artist": "Gorillaz",
-   "year": 2010
+   "title": "Phantom Pt. II",
+   "artist": "Justice",
+   "year": 2007
   },
   {
-   "title": "Alice Practice",
-   "artist": "Crystal Castles",
-   "year": 2006
-  },
-  {
-   "title": "Shots",
-   "artist": "LMFAO",
-   "year": 2011
-  },
-  {
-   "title": "Undo",
-   "artist": "Björk",
-   "year": 2001
-  },
-  {
-   "title": "La femme d'argent",
-   "artist": "Air",
-   "year": 1998
-  },
-  {
-   "title": "Out of Space",
-   "artist": "The Prodigy",
+   "title": "We Are the Music Makers",
+   "artist": "Aphex Twin",
    "year": 1992
+  },
+  {
+   "title": "Two Hearts in 3/4 Time",
+   "artist": "The Avalanches",
+   "year": 2000
   },
   {
    "title": "Every Planet We Reach Is Dead",
@@ -964,44 +999,9 @@
    "year": 2005
   },
   {
-   "title": "Reckless",
-   "artist": "Crystal Castles",
-   "year": 2008
-  },
-  {
-   "title": "Kelly Watch the Stars",
-   "artist": "Air",
-   "year": 1998
-  },
-  {
-   "title": "Phantom Pt. II",
-   "artist": "Justice",
-   "year": 2007
-  },
-  {
-   "title": "Aurora",
-   "artist": "Björk",
-   "year": 2001
-  },
-  {
-   "title": "Heartbeats",
-   "artist": "The Knife",
-   "year": 2002
-  },
-  {
-   "title": "Starstrukk",
-   "artist": "3OH!3",
-   "year": 2008
-  },
-  {
-   "title": "Hideaway",
-   "artist": "Kiesza",
-   "year": 2014
-  },
-  {
-   "title": "Swine",
-   "artist": "Lady Gaga",
-   "year": 2013
+   "title": "Glitter Freeze",
+   "artist": "Gorillaz",
+   "year": 2010
   }
  ]
 }

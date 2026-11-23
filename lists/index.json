@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "genres": [
   {
    "name": "Pop",
@@ -137,79 +137,79 @@
    "name": "Reggae",
    "slug": "reggae",
    "tag": "reggae",
-   "count": 127
+   "count": 200
   },
   {
    "name": "Jazz",
    "slug": "jazz",
    "tag": "jazz",
-   "count": 40
+   "count": 200
   },
   {
    "name": "Blues",
    "slug": "blues",
    "tag": "blues",
-   "count": 13
+   "count": 200
   },
   {
    "name": "Folk & Acoustic",
    "slug": "folk-and-acoustic",
    "tag": "folk",
-   "count": 25
+   "count": 200
   },
   {
    "name": "Singer-Songwriter",
    "slug": "singer-songwriter",
    "tag": "singer-songwriter",
-   "count": 36
+   "count": 200
   },
   {
    "name": "Love Songs",
    "slug": "love-songs",
    "tag": "love",
-   "count": 92
+   "count": 200
   },
   {
    "name": "Soundtracks",
    "slug": "soundtracks",
    "tag": "soundtrack",
-   "count": 17
+   "count": 200
   },
   {
    "name": "60s",
    "slug": "60s",
    "tag": "60s",
-   "count": 50
+   "count": 200
   },
   {
    "name": "70s",
    "slug": "70s",
    "tag": "70s",
-   "count": 156
+   "count": 200
   },
   {
    "name": "80s",
    "slug": "80s",
    "tag": "80s",
-   "count": 71
+   "count": 200
   },
   {
    "name": "90s",
    "slug": "90s",
    "tag": "90s",
-   "count": 131
+   "count": 200
   },
   {
    "name": "2000s",
    "slug": "2000s",
    "tag": "00s",
-   "count": 73
+   "count": 200
   },
   {
    "name": "2010s",
    "slug": "2010s",
    "tag": "2010s",
-   "count": 34
+   "count": 200
   }
  ]
 }

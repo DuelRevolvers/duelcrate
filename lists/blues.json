@@ -1,17 +1,67 @@
 {
  "name": "Blues",
  "tag": "blues",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "I Put a Spell on You",
+   "artist": "Screamin' Jay Hawkins",
+   "year": 1956
+  },
+  {
+   "title": "The Thrill Is Gone",
+   "artist": "B.B. King",
+   "year": 1969
+  },
   {
    "title": "I'd Rather Go Blind",
    "artist": "Etta James",
    "year": 1967
   },
   {
-   "title": "Wonderful Tonight",
-   "artist": "Eric Clapton",
-   "year": 1977
+   "title": "From Eden",
+   "artist": "Hozier",
+   "year": 2014
+  },
+  {
+   "title": "Gravity",
+   "artist": "John Mayer",
+   "year": 2005
+  },
+  {
+   "title": "Mannish Boy",
+   "artist": "Muddy Waters",
+   "year": 1968
+  },
+  {
+   "title": "The Other Woman",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
+   "title": "Slow Dancing in a Burning Room",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "Smokestack Lightnin'",
+   "artist": "Howlin' Wolf",
+   "year": 1959
+  },
+  {
+   "title": "I Hope That I Don't Fall in Love With You",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "A Sunday Kind of Love",
+   "artist": "Etta James",
+   "year": 1960
+  },
+  {
+   "title": "Pride And Joy",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1979
   },
   {
    "title": "Roadhouse Blues",
@@ -19,13 +69,108 @@
    "year": 1970
   },
   {
+   "title": "Wonderful Tonight",
+   "artist": "Eric Clapton",
+   "year": 1977
+  },
+  {
+   "title": "Parisienne Walkways",
+   "artist": "Gary Moore",
+   "year": 1978
+  },
+  {
+   "title": "Stormy Weather",
+   "artist": "Etta James",
+   "year": 1960
+  },
+  {
+   "title": "Give Me One Reason",
+   "artist": "Tracy Chapman",
+   "year": 1995
+  },
+  {
+   "title": "Born Under a Bad Sign",
+   "artist": "Albert King",
+   "year": 1967
+  },
+  {
+   "title": "Fade to Black",
+   "artist": "Dire Straits",
+   "year": 1991
+  },
+  {
+   "title": "Spoonful",
+   "artist": "Howlin' Wolf",
+   "year": 1960
+  },
+  {
+   "title": "Tears in Heaven",
+   "artist": "Eric Clapton",
+   "year": 1992
+  },
+  {
+   "title": "Where Did You Sleep Last Night",
+   "artist": "Leadbelly",
+   "year": 1996
+  },
+  {
+   "title": "Martha",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Cars Hiss by My Window",
+   "artist": "The Doors",
+   "year": 1971
+  },
+  {
+   "title": "Vultures",
+   "artist": "John Mayer",
+   "year": 2005
+  },
+  {
+   "title": "Going Down",
+   "artist": "Freddie King",
+   "year": 1971
+  },
+  {
+   "title": "Chains And Things",
+   "artist": "B.B. King",
+   "year": 1970
+  },
+  {
+   "title": "Texas Flood",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1984
+  },
+  {
+   "title": "I Want Someone Badly",
+   "artist": "Jeff Buckley",
+   "year": 2010
+  },
+  {
+   "title": "I'd Rather Go Blind",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
+   "title": "Hound Dog",
+   "artist": "Big Mama Thornton",
+   "year": 1965
+  },
+  {
+   "title": "Ain't No Sunshine",
+   "artist": "Bill Withers",
+   "year": 1971
+  },
+  {
    "title": "Hit the Road Jack",
    "artist": "Ray Charles",
    "year": 1961
   },
   {
-   "title": "Ain't No Sunshine",
-   "artist": "Bill Withers",
+   "title": "Call Me The Breeze",
+   "artist": "J.J. Cale",
    "year": 1971
   },
   {
@@ -34,13 +179,263 @@
    "year": 1960
   },
   {
+   "title": "Call The Doctor",
+   "artist": "J.J. Cale",
+   "year": 1971
+  },
+  {
+   "title": "Seamus",
+   "artist": "Pink Floyd",
+   "year": 1971
+  },
+  {
+   "title": "Woke Up This Morning",
+   "artist": "Alabama 3",
+   "year": 1997
+  },
+  {
+   "title": "I Put a Spell on You",
+   "artist": "Nina Simone",
+   "year": 1965
+  },
+  {
+   "title": "Blues Boys Tune",
+   "artist": "B.B. King",
+   "year": 1998
+  },
+  {
+   "title": "After Midnight",
+   "artist": "J.J. Cale",
+   "year": 1966
+  },
+  {
+   "title": "Nobody Knows You When You're Down and Out",
+   "artist": "Derek and the Dominos",
+   "year": 1970
+  },
+  {
+   "title": "I'm Your Hoochie Coochie Man",
+   "artist": "Muddy Waters",
+   "year": 1954
+  },
+  {
+   "title": "Stand by Me",
+   "artist": "Ben E. King",
+   "year": 1962
+  },
+  {
+   "title": "Don't Know Why",
+   "artist": "Norah Jones",
+   "year": 2001
+  },
+  {
+   "title": "Pledging My Time",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "What a Wonderful World",
+   "artist": "Louis Armstrong",
+   "year": 1988
+  },
+  {
+   "title": "I'm Gonna Find Another You",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "Need Your Love so Bad",
+   "artist": "Fleetwood Mac",
+   "year": 1968
+  },
+  {
+   "title": "Junker's Blues",
+   "artist": "Champion Jack Dupree",
+   "year": 1941
+  },
+  {
+   "title": "One Bourbon, One Scotch, One Beer",
+   "artist": "John Lee Hooker",
+   "year": 1966
+  },
+  {
+   "title": "Let My Baby Ride",
+   "artist": "R.L. Burnside",
+   "year": 1998
+  },
+  {
+   "title": "How Blue Can You Get?",
+   "artist": "B.B. King",
+   "year": 1964
+  },
+  {
+   "title": "Lenny",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1984
+  },
+  {
+   "title": "Leopard-Skin Pill-Box Hat",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
    "title": "Little Wing",
    "artist": "Jimi Hendrix",
    "year": 1971
   },
   {
+   "title": "Little Drop Of Poison",
+   "artist": "Tom Waits",
+   "year": 1997
+  },
+  {
+   "title": "Maybe",
+   "artist": "Janis Joplin",
+   "year": 1969
+  },
+  {
+   "title": "Hummingbird",
+   "artist": "B.B. King",
+   "year": 1970
+  },
+  {
+   "title": "Sweet Home Chicago",
+   "artist": "The Blues Brothers",
+   "year": 1990
+  },
+  {
+   "title": "I Can't Make You Love Me",
+   "artist": "Bonnie Raitt",
+   "year": 1977
+  },
+  {
+   "title": "Crazy Mama",
+   "artist": "J.J. Cale",
+   "year": 1971
+  },
+  {
+   "title": "Chocolate Jesus",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "Why I Sing The Blues",
+   "artist": "B.B. King",
+   "year": 1969
+  },
+  {
+   "title": "Dust My Broom",
+   "artist": "Elmore James",
+   "year": 1965
+  },
+  {
+   "title": "Meet Me in the City",
+   "artist": "Junior Kimbrough",
+   "year": 1997
+  },
+  {
+   "title": "Moanin' At Midnight",
+   "artist": "Howlin' Wolf",
+   "year": 1951
+  },
+  {
+   "title": "Cross Road Blues",
+   "artist": "Robert Johnson",
+   "year": 1936
+  },
+  {
+   "title": "Midnight Blues",
+   "artist": "Gary Moore",
+   "year": 1990
+  },
+  {
+   "title": "I'm A Man",
+   "artist": "Bo Diddley",
+   "year": 1955
+  },
+  {
+   "title": "Lucille",
+   "artist": "B.B. King",
+   "year": 1968
+  },
+  {
+   "title": "Damn Right, I've Got The Blues",
+   "artist": "Buddy Guy",
+   "year": 1991
+  },
+  {
+   "title": "Dimples",
+   "artist": "John Lee Hooker",
+   "year": 1956
+  },
+  {
+   "title": "Summertime",
+   "artist": "Big Brother & The Holding Company",
+   "year": 1967
+  },
+  {
+   "title": "Old Shoes (& Picture Postcards)",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Such A Night",
+   "artist": "Dr. John",
+   "year": 1973
+  },
+  {
    "title": "Right Place Wrong Time",
    "artist": "Dr. John",
+   "year": 1973
+  },
+  {
+   "title": "Statesboro Blues",
+   "artist": "Taj Mahal",
+   "year": 1968
+  },
+  {
+   "title": "Howlin' for You",
+   "artist": "The Black Keys",
+   "year": 2010
+  },
+  {
+   "title": "I Want a Little Sugar in My Bowl",
+   "artist": "Nina Simone",
+   "year": 1962
+  },
+  {
+   "title": "I'm the One",
+   "artist": "Danzig",
+   "year": 1990
+  },
+  {
+   "title": "Sweet Home Chicago",
+   "artist": "Robert Johnson",
+   "year": 1936
+  },
+  {
+   "title": "The Red Rooster",
+   "artist": "Howlin' Wolf",
+   "year": 1962
+  },
+  {
+   "title": "I Loved Another Woman",
+   "artist": "Fleetwood Mac",
+   "year": 1968
+  },
+  {
+   "title": "Ball and Chain",
+   "artist": "Big Brother & The Holding Company",
+   "year": 1967
+  },
+  {
+   "title": "One Day",
+   "artist": "Gary Moore",
+   "year": 1994
+  },
+  {
+   "title": "Ol' 55",
+   "artist": "Tom Waits",
    "year": 1973
   },
   {
@@ -49,9 +444,94 @@
    "year": 1965
   },
   {
+   "title": "Meet Me in the Morning",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Mary Had A Little Lamb",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1983
+  },
+  {
+   "title": "Make Me A Pallet On Your Floor",
+   "artist": "Mississippi John Hurt",
+   "year": 1966
+  },
+  {
+   "title": "Hard Times (No One Knows Better Than I)",
+   "artist": "Ray Charles",
+   "year": 1961
+  },
+  {
+   "title": "On the Road Again",
+   "artist": "Canned Heat",
+   "year": 1977
+  },
+  {
+   "title": "Heartattack and Vine",
+   "artist": "Tom Waits",
+   "year": 1980
+  },
+  {
+   "title": "Heavy Soul",
+   "artist": "The Black Keys",
+   "year": 2002
+  },
+  {
+   "title": "The Loner",
+   "artist": "Gary Moore",
+   "year": 1987
+  },
+  {
+   "title": "Come on Up to the House",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
    "title": "Hey Joe",
    "artist": "Jimi Hendrix",
    "year": 1971
+  },
+  {
+   "title": "Me and the Devil",
+   "artist": "Gil Scott-Heron",
+   "year": 2010
+  },
+  {
+   "title": "Dark Was the Night, Cold Was the Ground",
+   "artist": "Blind Willie Johnson",
+   "year": 1928
+  },
+  {
+   "title": "Tin Pan Alley (AKA Roughest Place in Town)",
+   "artist": "Stevie Ray Vaughan",
+   "year": 2001
+  },
+  {
+   "title": "Little Girl Blue",
+   "artist": "Janis Joplin",
+   "year": 1969
+  },
+  {
+   "title": "Boogie Chillen'",
+   "artist": "John Lee Hooker",
+   "year": 1960
+  },
+  {
+   "title": "Change The World",
+   "artist": "Eric Clapton",
+   "year": 1996
+  },
+  {
+   "title": "Outlaw Blues",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "I'll Be Seeing You",
+   "artist": "Billie Holiday",
+   "year": 1944
   },
   {
    "title": "Bell Bottom Blues",
@@ -59,14 +539,469 @@
    "year": 1970
   },
   {
+   "title": "Reconsider Baby",
+   "artist": "Lowell Fulson",
+   "year": 1954
+  },
+  {
+   "title": "She Caught the Katy",
+   "artist": "The Blues Brothers",
+   "year": 1981
+  },
+  {
+   "title": "Travelin' Light",
+   "artist": "J.J. Cale",
+   "year": 1976
+  },
+  {
+   "title": "Baby What You Want Me to Do",
+   "artist": "Jimmy Reed",
+   "year": 1959
+  },
+  {
+   "title": "Solitude",
+   "artist": "Billie Holiday",
+   "year": 1941
+  },
+  {
+   "title": "I'm In The Mood",
+   "artist": "John Lee Hooker",
+   "year": 1951
+  },
+  {
+   "title": "New Coat of Paint",
+   "artist": "Tom Waits",
+   "year": 1974
+  },
+  {
+   "title": "Goin' Down South",
+   "artist": "R.L. Burnside",
+   "year": 1969
+  },
+  {
+   "title": "Devil Got My Woman",
+   "artist": "Skip James",
+   "year": 1931
+  },
+  {
+   "title": "Old Love",
+   "artist": "Eric Clapton",
+   "year": 1989
+  },
+  {
+   "title": "Backlash Blues",
+   "artist": "Nina Simone",
+   "year": 1967
+  },
+  {
+   "title": "I'm a King Bee",
+   "artist": "Slim Harpo",
+   "year": 1957
+  },
+  {
+   "title": "Ground On Down",
+   "artist": "Ben Harper",
+   "year": 1994
+  },
+  {
+   "title": "I Can't Be Satisfied",
+   "artist": "Muddy Waters",
+   "year": 1948
+  },
+  {
+   "title": "Mean Old World",
+   "artist": "T-Bone Walker",
+   "year": 1945
+  },
+  {
+   "title": "Christmas Card From a Hooker in Minneapolis",
+   "artist": "Tom Waits",
+   "year": 1978
+  },
+  {
+   "title": "Call It Stormy Monday",
+   "artist": "T-Bone Walker",
+   "year": 1954
+  },
+  {
+   "title": "Virginia Avenue",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Stone Crazy",
+   "artist": "Buddy Guy",
+   "year": 1962
+  },
+  {
+   "title": "Peter Gunn Theme",
+   "artist": "The Blues Brothers",
+   "year": 2014
+  },
+  {
+   "title": "Grapefruit Moon",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "My Home Is In The Delta",
+   "artist": "Muddy Waters",
+   "year": 1964
+  },
+  {
+   "title": "Do I Move You?",
+   "artist": "Nina Simone",
+   "year": 1967
+  },
+  {
+   "title": "Tennessee Whiskey",
+   "artist": "Chris Stapleton",
+   "year": 2012
+  },
+  {
+   "title": "God's Away on Business",
+   "artist": "Tom Waits",
+   "year": 2002
+  },
+  {
+   "title": "Whistlin' Past the Graveyard",
+   "artist": "Tom Waits",
+   "year": 1978
+  },
+  {
+   "title": "It's Nobody's Fault but Mine",
+   "artist": "Blind Willie Johnson",
+   "year": 1928
+  },
+  {
+   "title": "Lowside of the Road",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "Psychotic Girl",
+   "artist": "The Black Keys",
+   "year": 2008
+  },
+  {
+   "title": "River Runs Deep",
+   "artist": "J.J. Cale",
+   "year": 1971
+  },
+  {
+   "title": "You Upset Me Baby",
+   "artist": "B.B. King",
+   "year": 1964
+  },
+  {
+   "title": "Back Door Man",
+   "artist": "Howlin' Wolf",
+   "year": 1961
+  },
+  {
+   "title": "Mojo Hand",
+   "artist": "Lightnin' Hopkins",
+   "year": 1960
+  },
+  {
+   "title": "Run Right Back",
+   "artist": "The Black Keys",
+   "year": 2011
+  },
+  {
+   "title": "Alice",
+   "artist": "Tom Waits",
+   "year": 2002
+  },
+  {
+   "title": "Strange Fruit",
+   "artist": "Billie Holiday",
+   "year": 1939
+  },
+  {
+   "title": "Big in Japan",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "Take Out Some Insurance",
+   "artist": "Jimmy Reed",
+   "year": 1959
+  },
+  {
+   "title": "I'll Take Care Of You",
+   "artist": "Beth Hart & Joe Bonamassa",
+   "year": 2011
+  },
+  {
+   "title": "As The Years Go Passing By",
+   "artist": "Albert King",
+   "year": 1967
+  },
+  {
+   "title": "All the World Is Green",
+   "artist": "Tom Waits",
+   "year": 2002
+  },
+  {
+   "title": "Sweet Little Angel",
+   "artist": "B.B. King",
+   "year": 1957
+  },
+  {
+   "title": "Scuttle Buttin'",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1987
+  },
+  {
+   "title": "Look at Little Sister",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1987
+  },
+  {
+   "title": "Lonely Boy",
+   "artist": "The Black Keys",
+   "year": 2011
+  },
+  {
+   "title": "(Looking for) The Heart of Saturday Night",
+   "artist": "Tom Waits",
+   "year": 1974
+  },
+  {
+   "title": "Gimme Some Lovin'",
+   "artist": "The Blues Brothers",
+   "year": 1981
+  },
+  {
+   "title": "Hold On",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "You Done Lost Your Good Thing Now",
+   "artist": "B.B. King",
+   "year": 1961
+  },
+  {
+   "title": "Blue Hotel",
+   "artist": "Chris Isaak",
+   "year": 1986
+  },
+  {
+   "title": "Right Next Door (Because of Me)",
+   "artist": "Robert Cray",
+   "year": 1986
+  },
+  {
+   "title": "Lovin' in My Baby's Eyes",
+   "artist": "Taj Mahal",
+   "year": 1996
+  },
+  {
+   "title": "Cold Shot",
+   "artist": "Stevie Ray Vaughan",
+   "year": 1984
+  },
+  {
+   "title": "Rollin' Stone",
+   "artist": "Muddy Waters",
+   "year": 1950
+  },
+  {
+   "title": "Pride and Joy",
+   "artist": "Stevie Ray Vaughan and Double Trouble",
+   "year": 1978
+  },
+  {
+   "title": "In Repair",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "Rollin' And Tumblin'",
+   "artist": "Muddy Waters",
+   "year": 1966
+  },
+  {
+   "title": "Be Careful With a Fool",
+   "artist": "Johnny Winter",
+   "year": 1969
+  },
+  {
+   "title": "(I'm Your) Hoochie Coochie Man",
+   "artist": "Muddy Waters",
+   "year": 1972
+  },
+  {
+   "title": "Lonely Avenue",
+   "artist": "Ray Charles",
+   "year": 1958
+  },
+  {
+   "title": "Key to the Highway",
+   "artist": "Derek and the Dominos",
+   "year": 1970
+  },
+  {
+   "title": "Blue Valentines",
+   "artist": "Tom Waits",
+   "year": 1978
+  },
+  {
+   "title": "Freight Train",
+   "artist": "Elizabeth Cotten",
+   "year": 1958
+  },
+  {
    "title": "Cocaine",
    "artist": "Eric Clapton",
    "year": 1977
   },
   {
-   "title": "Cigarettes and Coffee",
-   "artist": "Otis Redding",
-   "year": 1966
+   "title": "The Bluest Blues",
+   "artist": "Alvin Lee",
+   "year": 1996
+  },
+  {
+   "title": "I Just Want To Make Love To You",
+   "artist": "Muddy Waters",
+   "year": 1958
+  },
+  {
+   "title": "A Woman Left Lonely",
+   "artist": "Janis Joplin",
+   "year": 1971
+  },
+  {
+   "title": "Ain't No Sunshine",
+   "artist": "Freddie King",
+   "year": 1972
+  },
+  {
+   "title": "Clyde",
+   "artist": "J.J. Cale",
+   "year": 1971
+  },
+  {
+   "title": "Green Onions",
+   "artist": "Booker T. & the MG's",
+   "year": 1967
+  },
+  {
+   "title": "Midnight Lullaby",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Most Things Haven't Worked Out",
+   "artist": "Junior Kimbrough",
+   "year": 1997
+  },
+  {
+   "title": "Come on in My Kitchen",
+   "artist": "Robert Johnson",
+   "year": 1937
+  },
+  {
+   "title": "Clap Hands",
+   "artist": "Tom Waits",
+   "year": 1985
+  },
+  {
+   "title": "Mercedes Benz",
+   "artist": "Janis Joplin",
+   "year": 1970
+  },
+  {
+   "title": "Lies",
+   "artist": "J.J. Cale",
+   "year": 1972
+  },
+  {
+   "title": "The Very Thought Of You",
+   "artist": "Albert King",
+   "year": 1967
+  },
+  {
+   "title": "Spoonful",
+   "artist": "Willie Dixon",
+   "year": 1970
+  },
+  {
+   "title": "It's My Own Fault",
+   "artist": "B.B. King",
+   "year": 1965
+  },
+  {
+   "title": "Worry, Worry",
+   "artist": "B.B. King",
+   "year": 1965
+  },
+  {
+   "title": "Gold To Me",
+   "artist": "Ben Harper",
+   "year": 1995
+  },
+  {
+   "title": "Ghetto Woman",
+   "artist": "B.B. King",
+   "year": 1971
+  },
+  {
+   "title": "Sinner's Prayer",
+   "artist": "Ray Charles",
+   "year": 1957
+  },
+  {
+   "title": "All Over Again",
+   "artist": "B.B. King",
+   "year": 1968
+  },
+  {
+   "title": "Hold On",
+   "artist": "Alabama Shakes",
+   "year": 2011
+  },
+  {
+   "title": "Hard Time Killing Floor Blues",
+   "artist": "Chris Thomas King",
+   "year": 2000
+  },
+  {
+   "title": "Born Under a Bad Sign",
+   "artist": "Jimi Hendrix",
+   "year": 1994
+  },
+  {
+   "title": "Evil (Is Going On)",
+   "artist": "Howlin' Wolf",
+   "year": 1954
+  },
+  {
+   "title": "Come Away with Me",
+   "artist": "Norah Jones",
+   "year": 2001
+  },
+  {
+   "title": "Kansas City",
+   "artist": "Albert King",
+   "year": 1967
+  },
+  {
+   "title": "Walkin' Blues",
+   "artist": "Robert Johnson",
+   "year": 1936
+  },
+  {
+   "title": "Cold Water",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "Help The Poor",
+   "artist": "B.B. King",
+   "year": 1964
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "name": "Jazz",
  "tag": "jazz",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Like a Tattoo",
@@ -9,9 +9,44 @@
    "year": 1992
   },
   {
+   "title": "Back to Black",
+   "artist": "Amy Winehouse",
+   "year": 2006
+  },
+  {
+   "title": "My Way",
+   "artist": "Frank Sinatra",
+   "year": 1968
+  },
+  {
+   "title": "Take Five",
+   "artist": "The Dave Brubeck Quartet",
+   "year": 1959
+  },
+  {
+   "title": "That's Life",
+   "artist": "Frank Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "The Other Woman",
+   "artist": "Lana Del Rey",
+   "year": 2014
+  },
+  {
    "title": "Paradise",
    "artist": "Sade",
    "year": 1988
+  },
+  {
+   "title": "Don't Know Why",
+   "artist": "Norah Jones",
+   "year": 2001
+  },
+  {
+   "title": "In A Sentimental Mood",
+   "artist": "Duke Ellington",
+   "year": 1953
   },
   {
    "title": "You Know I'm No Good",
@@ -19,14 +54,44 @@
    "year": 2006
   },
   {
-   "title": "Feeling Good",
+   "title": "My One And Only Love",
+   "artist": "John Coltrane",
+   "year": 2021
+  },
+  {
+   "title": "What a Wonderful World",
+   "artist": "Louis Armstrong",
+   "year": 1988
+  },
+  {
+   "title": "Just The Two Of Us",
+   "artist": "Grover Washington, Jr.",
+   "year": 2000
+  },
+  {
+   "title": "Strangers in the Night",
+   "artist": "Frank Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "It Had to Be You",
+   "artist": "Frank Sinatra",
+   "year": 1980
+  },
+  {
+   "title": "I Put a Spell on You",
    "artist": "Nina Simone",
    "year": 1965
   },
   {
-   "title": "Hit the Road Jack",
-   "artist": "Ray Charles",
-   "year": 1961
+   "title": "Sway",
+   "artist": "Michael Bublé",
+   "year": 2003
+  },
+  {
+   "title": "Feeling Good",
+   "artist": "Nina Simone",
+   "year": 1965
   },
   {
    "title": "Rehab",
@@ -34,12 +99,37 @@
    "year": 2006
   },
   {
+   "title": "Hit the Road Jack",
+   "artist": "Ray Charles",
+   "year": 1961
+  },
+  {
    "title": "Kiss Of Life",
    "artist": "Sade",
    "year": 1992
   },
   {
+   "title": "Moanin'",
+   "artist": "Art Blakey & The Jazz Messengers",
+   "year": 1958
+  },
+  {
+   "title": "L-O-V-E",
+   "artist": "Nat King Cole",
+   "year": 1964
+  },
+  {
    "title": "Tears Dry on Their Own",
+   "artist": "Amy Winehouse",
+   "year": 2006
+  },
+  {
+   "title": "Life in a Glasshouse",
+   "artist": "Radiohead",
+   "year": 2001
+  },
+  {
+   "title": "Me & Mr Jones",
    "artist": "Amy Winehouse",
    "year": 2006
   },
@@ -49,19 +139,9 @@
    "year": 2006
   },
   {
-   "title": "The Girl From Ipanema",
-   "artist": "Stan Getz",
-   "year": 1987
-  },
-  {
-   "title": "It's Oh So Quiet",
-   "artist": "Björk",
-   "year": 1995
-  },
-  {
-   "title": "Watermelon Man",
-   "artist": "Herbie Hancock",
-   "year": 1962
+   "title": "It Never Entered My Mind",
+   "artist": "Miles Davis Quintet",
+   "year": 1959
   },
   {
    "title": "Tar Baby",
@@ -69,9 +149,49 @@
    "year": 1985
   },
   {
-   "title": "No Ordinary Love",
-   "artist": "Sade",
-   "year": 1992
+   "title": "Goodbye Pork Pie Hat",
+   "artist": "Charles Mingus",
+   "year": 1959
+  },
+  {
+   "title": "The Girl From Ipanema",
+   "artist": "Stan Getz",
+   "year": 1987
+  },
+  {
+   "title": "Time After Time",
+   "artist": "Chet Baker",
+   "year": 1954
+  },
+  {
+   "title": "It's Oh So Quiet",
+   "artist": "Björk",
+   "year": 1995
+  },
+  {
+   "title": "My Favorite Things",
+   "artist": "John Coltrane",
+   "year": 1961
+  },
+  {
+   "title": "Watermelon Man",
+   "artist": "Herbie Hancock",
+   "year": 1962
+  },
+  {
+   "title": "Autumn Leaves",
+   "artist": "Cannonball Adderley",
+   "year": 1958
+  },
+  {
+   "title": "That Old Feeling",
+   "artist": "Chet Baker",
+   "year": 1956
+  },
+  {
+   "title": "Blue Train",
+   "artist": "John Coltrane",
+   "year": 1958
   },
   {
    "title": "At Last",
@@ -79,9 +199,59 @@
    "year": 1960
   },
   {
+   "title": "La vie en rose",
+   "artist": "Louis Armstrong",
+   "year": 1960
+  },
+  {
+   "title": "I Don't Want to Set the World on Fire",
+   "artist": "The Ink Spots",
+   "year": 1941
+  },
+  {
+   "title": "'Round Midnight",
+   "artist": "Thelonious Monk",
+   "year": 1957
+  },
+  {
+   "title": "Equinox",
+   "artist": "John Coltrane",
+   "year": 1964
+  },
+  {
+   "title": "No Ordinary Love",
+   "artist": "Sade",
+   "year": 1992
+  },
+  {
+   "title": "Blue Moon",
+   "artist": "Billie Holiday",
+   "year": 1952
+  },
+  {
+   "title": "So What",
+   "artist": "Miles Davis",
+   "year": 1959
+  },
+  {
+   "title": "My Funny Valentine",
+   "artist": "Frank Sinatra",
+   "year": 1954
+  },
+  {
+   "title": "Blue in Green",
+   "artist": "Miles Davis",
+   "year": 1959
+  },
+  {
    "title": "The Sweetest Taboo",
    "artist": "Sade",
    "year": 1985
+  },
+  {
+   "title": "Say It (Over And Over Again)",
+   "artist": "John Coltrane Quartet",
+   "year": 1963
   },
   {
    "title": "He Can Only Hold Her",
@@ -89,14 +259,29 @@
    "year": 2006
   },
   {
-   "title": "Stronger Than Me",
-   "artist": "Amy Winehouse",
-   "year": 2003
+   "title": "Fly Me to the Moon (In Other Words)",
+   "artist": "Frank Sinatra",
+   "year": 2006
   },
   {
-   "title": "Jezebel",
-   "artist": "Sade",
-   "year": 1985
+   "title": "My Little Brown Book",
+   "artist": "Duke Ellington",
+   "year": 1999
+  },
+  {
+   "title": "Come Away with Me",
+   "artist": "Norah Jones",
+   "year": 2001
+  },
+  {
+   "title": "Misty",
+   "artist": "Ella Fitzgerald",
+   "year": 1960
+  },
+  {
+   "title": "It's Easy To Remember",
+   "artist": "John Coltrane Quartet",
+   "year": 1961
   },
   {
    "title": "Is It a Crime",
@@ -104,14 +289,19 @@
    "year": 1984
   },
   {
-   "title": "Fuck Me Pumps",
-   "artist": "Amy Winehouse",
-   "year": 2003
+   "title": "I'm in the Mood for Love",
+   "artist": "Julie London",
+   "year": 1955
   },
   {
-   "title": "Smooth Operator",
+   "title": "Jezebel",
    "artist": "Sade",
-   "year": 1984
+   "year": 1985
+  },
+  {
+   "title": "My Ideal",
+   "artist": "Chet Baker",
+   "year": 1956
   },
   {
    "title": "Just Friends",
@@ -119,7 +309,72 @@
    "year": 2006
   },
   {
+   "title": "Sinnerman",
+   "artist": "Nina Simone",
+   "year": 1965
+  },
+  {
    "title": "Wake Up Alone",
+   "artist": "Amy Winehouse",
+   "year": 2006
+  },
+  {
+   "title": "Everything Happens to Me",
+   "artist": "Chet Baker",
+   "year": 1958
+  },
+  {
+   "title": "I'm Old Fashioned",
+   "artist": "John Coltrane",
+   "year": 1958
+  },
+  {
+   "title": "When I Fall in Love",
+   "artist": "Miles Davis Quintet",
+   "year": 1961
+  },
+  {
+   "title": "Moon Dreams",
+   "artist": "Miles Davis",
+   "year": 1954
+  },
+  {
+   "title": "Autumn in New York",
+   "artist": "Billie Holiday",
+   "year": 1991
+  },
+  {
+   "title": "Stronger Than Me",
+   "artist": "Amy Winehouse",
+   "year": 2003
+  },
+  {
+   "title": "Fuck Me Pumps",
+   "artist": "Amy Winehouse",
+   "year": 2003
+  },
+  {
+   "title": "Fever",
+   "artist": "Peggy Lee",
+   "year": 1958
+  },
+  {
+   "title": "Beyond the Sea",
+   "artist": "Bobby Darin",
+   "year": 1959
+  },
+  {
+   "title": "Cry Me a River",
+   "artist": "Julie London",
+   "year": 1955
+  },
+  {
+   "title": "Smooth Operator",
+   "artist": "Sade",
+   "year": 1984
+  },
+  {
+   "title": "Tears Dry (Original Version)",
    "artist": "Amy Winehouse",
    "year": 2006
   },
@@ -129,9 +384,74 @@
    "year": 2003
   },
   {
+   "title": "Cheek to Cheek",
+   "artist": "Ella Fitzgerald",
+   "year": 1958
+  },
+  {
+   "title": "Some Other Time",
+   "artist": "Bill Evans Trio",
+   "year": 1962
+  },
+  {
    "title": "I Couldn't Love You More",
    "artist": "Sade",
    "year": 1992
+  },
+  {
+   "title": "Misty",
+   "artist": "Sarah Vaughan",
+   "year": 1959
+  },
+  {
+   "title": "Fly Me to the Moon",
+   "artist": "Frank Sinatra",
+   "year": 1977
+  },
+  {
+   "title": "September in the Rain",
+   "artist": "Dinah Washington",
+   "year": 1960
+  },
+  {
+   "title": "Tenderly",
+   "artist": "Chet Baker",
+   "year": 1956
+  },
+  {
+   "title": "Somethin' Stupid",
+   "artist": "Frank Sinatra",
+   "year": 1972
+  },
+  {
+   "title": "Take Five",
+   "artist": "Dave Brubeck",
+   "year": 1963
+  },
+  {
+   "title": "Summertime",
+   "artist": "Ella Fitzgerald",
+   "year": 1960
+  },
+  {
+   "title": "Nancy (With The Laughing Face)",
+   "artist": "John Coltrane Quartet",
+   "year": 1963
+  },
+  {
+   "title": "Moonlight In Vermont",
+   "artist": "Stan Getz",
+   "year": 1983
+  },
+  {
+   "title": "The Way You Look Tonight",
+   "artist": "Frank Sinatra",
+   "year": 1944
+  },
+  {
+   "title": "Freddie Freeloader",
+   "artist": "Miles Davis",
+   "year": 1959
   },
   {
    "title": "Cherish the Day",
@@ -139,9 +459,79 @@
    "year": 1992
   },
   {
+   "title": "Moon Love",
+   "artist": "Chet Baker",
+   "year": 1988
+  },
+  {
+   "title": "Along Came Betty",
+   "artist": "Art Blakey & The Jazz Messengers",
+   "year": 1958
+  },
+  {
+   "title": "(There Is) No Greater Love",
+   "artist": "Amy Winehouse",
+   "year": 2003
+  },
+  {
+   "title": "Summertime",
+   "artist": "Charlie Parker",
+   "year": 1949
+  },
+  {
+   "title": "Mystic Brew",
+   "artist": "Ronnie Foster",
+   "year": 1972
+  },
+  {
+   "title": "Strange Meadow Lark",
+   "artist": "The Dave Brubeck Quartet",
+   "year": 1959
+  },
+  {
+   "title": "Let's Get Lost",
+   "artist": "Chet Baker",
+   "year": 1955
+  },
+  {
+   "title": "Blue Rondo à la turk",
+   "artist": "The Dave Brubeck Quartet",
+   "year": 1959
+  },
+  {
+   "title": "Peace Piece",
+   "artist": "Bill Evans",
+   "year": 1959
+  },
+  {
+   "title": "Moment's Notice",
+   "artist": "John Coltrane",
+   "year": 1958
+  },
+  {
+   "title": "Misty",
+   "artist": "Stan Getz",
+   "year": 1988
+  },
+  {
+   "title": "Why Try to Change Me Now",
+   "artist": "Fiona Apple",
+   "year": 2009
+  },
+  {
    "title": "Pearls",
    "artist": "Sade",
    "year": 1992
+  },
+  {
+   "title": "St. Thomas",
+   "artist": "Sonny Rollins",
+   "year": 1957
+  },
+  {
+   "title": "Theme from New York, New York",
+   "artist": "Frank Sinatra",
+   "year": 1980
   },
   {
    "title": "Chameleon",
@@ -149,9 +539,19 @@
    "year": 1973
   },
   {
-   "title": "Take the Box",
+   "title": "Some Unholy War",
    "artist": "Amy Winehouse",
-   "year": 2003
+   "year": 2006
+  },
+  {
+   "title": "Mack the Knife",
+   "artist": "Louis Armstrong",
+   "year": 1956
+  },
+  {
+   "title": "All Blues",
+   "artist": "Miles Davis",
+   "year": 1959
   },
   {
    "title": "Addicted",
@@ -159,9 +559,139 @@
    "year": 2006
   },
   {
+   "title": "Take the Box",
+   "artist": "Amy Winehouse",
+   "year": 2003
+  },
+  {
+   "title": "Ain't That a Kick in the Head",
+   "artist": "Dean Martin",
+   "year": 1967
+  },
+  {
+   "title": "Locomotion",
+   "artist": "John Coltrane",
+   "year": 1958
+  },
+  {
+   "title": "Tell Me a Bedtime Story",
+   "artist": "Herbie Hancock",
+   "year": 1969
+  },
+  {
+   "title": "In A Silent Way",
+   "artist": "Miles Davis",
+   "year": 1972
+  },
+  {
+   "title": "It Could Happen To You",
+   "artist": "Miles Davis Quintet",
+   "year": 1958
+  },
+  {
+   "title": "Spain",
+   "artist": "Chick Corea",
+   "year": 1985
+  },
+  {
+   "title": "Look for the Silver Lining",
+   "artist": "Chet Baker",
+   "year": 1954
+  },
+  {
+   "title": "Naima",
+   "artist": "John Coltrane",
+   "year": 1960
+  },
+  {
+   "title": "Turn Me On",
+   "artist": "Norah Jones",
+   "year": 2001
+  },
+  {
+   "title": "Summer Wind",
+   "artist": "Frank Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "Come Fly With Me",
+   "artist": "Frank Sinatra",
+   "year": 1958
+  },
+  {
+   "title": "Terrence Loves You",
+   "artist": "Lana Del Rey",
+   "year": 2015
+  },
+  {
+   "title": "Boplicity",
+   "artist": "Miles Davis",
+   "year": 1957
+  },
+  {
+   "title": "Autumn Leaves",
+   "artist": "Bill Evans",
+   "year": 1960
+  },
+  {
+   "title": "Dancing in the Dark",
+   "artist": "Cannonball Adderley",
+   "year": 1958
+  },
+  {
+   "title": "When I Fall in Love",
+   "artist": "Bill Evans",
+   "year": 1960
+  },
+  {
+   "title": "I Know You Know",
+   "artist": "Esperanza Spalding",
+   "year": 2008
+  },
+  {
+   "title": "Autumn Leaves",
+   "artist": "Chet Baker",
+   "year": 1974
+  },
+  {
+   "title": "Love for Sale",
+   "artist": "Cannonball Adderley",
+   "year": 1958
+  },
+  {
    "title": "Green Eyes",
    "artist": "Erykah Badu",
    "year": 2000
+  },
+  {
+   "title": "Central Park West",
+   "artist": "John Coltrane",
+   "year": 1964
+  },
+  {
+   "title": "Linus and Lucy",
+   "artist": "Vince Guaraldi",
+   "year": 1964
+  },
+  {
+   "title": "Ceora",
+   "artist": "Lee Morgan",
+   "year": 1965
+  },
+  {
+   "title": "Witchcraft",
+   "artist": "Frank Sinatra",
+   "year": 1957
+  },
+  {
+   "title": "The Nearness Of You",
+   "artist": "Ella Fitzgerald",
+   "year": 1990
+  },
+  {
+   "title": "Song For My Father",
+   "artist": "Horace Silver",
+   "year": 1968
   },
   {
    "title": "You Sent Me Flying / Cherry",
@@ -169,9 +699,224 @@
    "year": 2003
   },
   {
-   "title": "What Is It About Men",
+   "title": "I Will Be Your Friend",
+   "artist": "Sade",
+   "year": 1984
+  },
+  {
+   "title": "Ruby, My Dear",
+   "artist": "Thelonious Monk",
+   "year": 1951
+  },
+  {
+   "title": "O Grande Amor",
+   "artist": "Stan Getz",
+   "year": 1967
+  },
+  {
+   "title": "Nobody Knows You When You're Down and Out",
+   "artist": "Nina Simone",
+   "year": 1960
+  },
+  {
+   "title": "Kathy's Waltz",
+   "artist": "The Dave Brubeck Quartet",
+   "year": 1959
+  },
+  {
+   "title": "Hello, Dolly!",
+   "artist": "Louis Armstrong",
+   "year": 1962
+  },
+  {
+   "title": "You Go To My Head",
+   "artist": "Billie Holiday",
+   "year": 1952
+  },
+  {
+   "title": "Punch Drunk",
+   "artist": "Sade",
+   "year": 1985
+  },
+  {
+   "title": "A Foggy Day",
+   "artist": "Barney Kessel",
+   "year": 1954
+  },
+  {
+   "title": "Come Rain or Come Shine",
+   "artist": "Art Blakey & The Jazz Messengers",
+   "year": 1958
+  },
+  {
+   "title": "Let's Fall In Love",
+   "artist": "Ella Fitzgerald",
+   "year": 1959
+  },
+  {
+   "title": "Nature Boy",
+   "artist": "Nat King Cole",
+   "year": 1961
+  },
+  {
+   "title": "Mermaid",
+   "artist": "Sade",
+   "year": 1992
+  },
+  {
+   "title": "I'm A Fool To Want You",
+   "artist": "Dexter Gordon",
+   "year": 1979
+  },
+  {
+   "title": "Home",
+   "artist": "Michael Bublé",
+   "year": 2005
+  },
+  {
+   "title": "Lilac Wine",
+   "artist": "Nina Simone",
+   "year": 1966
+  },
+  {
+   "title": "They Can't Take That Away From Me",
+   "artist": "Ella Fitzgerald",
+   "year": 1959
+  },
+  {
+   "title": "Death of a Bachelor",
+   "artist": "Panic! at the Disco",
+   "year": 2016
+  },
+  {
+   "title": "My One and Only Love",
+   "artist": "Chick Corea",
+   "year": 1975
+  },
+  {
+   "title": "Summertime",
+   "artist": "John Coltrane",
+   "year": 1961
+  },
+  {
+   "title": "Out Of Nowhere",
+   "artist": "Charlie Parker",
+   "year": 1950
+  },
+  {
+   "title": "Mood Indigo",
+   "artist": "Charles Mingus",
+   "year": 1960
+  },
+  {
+   "title": "Those Sweet Words",
+   "artist": "Norah Jones",
+   "year": 2004
+  },
+  {
+   "title": "Fables of Faubus",
+   "artist": "Charles Mingus",
+   "year": 1959
+  },
+  {
+   "title": "Crazy He Calls Me",
+   "artist": "Billie Holiday",
+   "year": 1951
+  },
+  {
+   "title": "You Don't Know What Love Is",
+   "artist": "Chet Baker",
+   "year": 1954
+  },
+  {
+   "title": "Sly",
+   "artist": "Herbie Hancock",
+   "year": 1973
+  },
+  {
+   "title": "Move",
+   "artist": "Miles Davis",
+   "year": 1949
+  },
+  {
+   "title": "Dream a Little Dream of Me",
+   "artist": "Ella Fitzgerald",
+   "year": 1957
+  },
+  {
+   "title": "Intro / Stronger Than Me",
    "artist": "Amy Winehouse",
    "year": 2003
+  },
+  {
+   "title": "You Don't Know What Love Is",
+   "artist": "John Coltrane Quartet",
+   "year": 1963
+  },
+  {
+   "title": "A Day In The Life",
+   "artist": "Wes Montgomery",
+   "year": 1967
+  },
+  {
+   "title": "Moonlight Serenade",
+   "artist": "Glenn Miller",
+   "year": 1969
+  },
+  {
+   "title": "Breezin'",
+   "artist": "George Benson",
+   "year": 1976
+  },
+  {
+   "title": "Feelin' the Same Way",
+   "artist": "Norah Jones",
+   "year": 2002
+  },
+  {
+   "title": "Blue Skies",
+   "artist": "Ella Fitzgerald",
+   "year": 1959
+  },
+  {
+   "title": "Spring Is Here",
+   "artist": "Bill Evans",
+   "year": 1960
+  },
+  {
+   "title": "Stardust",
+   "artist": "Lester Young",
+   "year": 1989
+  },
+  {
+   "title": "It Never Entered My Mind",
+   "artist": "Miles Davis",
+   "year": 1954
+  },
+  {
+   "title": "Moanin'",
+   "artist": "Charles Mingus",
+   "year": 1960
+  },
+  {
+   "title": "I've Got You Under My Skin",
+   "artist": "Frank Sinatra",
+   "year": 1956
+  },
+  {
+   "title": "This Will Be (An Everlasting Love)",
+   "artist": "Natalie Cole",
+   "year": 1975
+  },
+  {
+   "title": "Haven't Met You Yet",
+   "artist": "Michael Bublé",
+   "year": 2009
+  },
+  {
+   "title": "Dance Me to the End of Love",
+   "artist": "Madeleine Peyroux",
+   "year": 2004
   },
   {
    "title": "Give Me the Night",
@@ -179,29 +924,84 @@
    "year": 1980
   },
   {
-   "title": "Your Love Is King",
-   "artist": "Sade",
-   "year": 1984
+   "title": "You Look Like Rain",
+   "artist": "Morphine",
+   "year": 1992
   },
   {
-   "title": "Hang On to Your Love",
-   "artist": "Sade",
-   "year": 1984
+   "title": "The Shoes of the Fisherman's Wife Are Some Jive Ass Slippers",
+   "artist": "Charles Mingus",
+   "year": 1972
   },
   {
-   "title": "Quizas, Quizas, Quizas (Perhaps, Perhaps, Perhaps)",
+   "title": "Everything",
+   "artist": "Michael Bublé",
+   "year": 2007
+  },
+  {
+   "title": "Mr. Syms",
+   "artist": "John Coltrane",
+   "year": 1962
+  },
+  {
+   "title": "Stardust",
    "artist": "Nat King Cole",
+   "year": 1957
+  },
+  {
+   "title": "Lazy Bird",
+   "artist": "John Coltrane",
    "year": 1958
   },
   {
-   "title": "Pretty When You Cry",
-   "artist": "Lana Del Rey",
-   "year": 2014
+   "title": "The Nearness of You",
+   "artist": "Norah Jones",
+   "year": 2002
   },
   {
-   "title": "Feel No Pain",
-   "artist": "Sade",
-   "year": 1992
+   "title": "Shoot the Moon",
+   "artist": "Norah Jones",
+   "year": 2002
+  },
+  {
+   "title": "After the Rain",
+   "artist": "John Coltrane",
+   "year": 1963
+  },
+  {
+   "title": "Are You Real",
+   "artist": "Art Blakey & The Jazz Messengers",
+   "year": 1988
+  },
+  {
+   "title": "Giant Steps",
+   "artist": "John Coltrane",
+   "year": 1960
+  },
+  {
+   "title": "If I Had You",
+   "artist": "Etta Jones",
+   "year": 1960
+  },
+  {
+   "title": "But Not for Me",
+   "artist": "John Coltrane",
+   "year": 1961
+  },
+  {
+   "title": "Someone to Watch Over Me",
+   "artist": "Ben Webster",
+   "year": 1964
+  },
+  {
+   "title": "Counting Stars",
+   "artist": "Nujabes",
+   "year": 2007
+  },
+  {
+   "title": "Jeru",
+   "artist": "Miles Davis",
+   "year": 1954
   }
  ]
 }

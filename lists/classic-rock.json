@@ -1,8 +1,13 @@
 {
  "name": "Classic Rock",
  "tag": "classic rock",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "(Don't Fear) The Reaper",
+   "artist": "Blue Öyster Cult",
+   "year": 1976
+  },
   {
    "title": "Bohemian Rhapsody",
    "artist": "Queen",
@@ -12,11 +17,6 @@
    "title": "A Horse With No Name",
    "artist": "America",
    "year": 1971
-  },
-  {
-   "title": "(Don't Fear) The Reaper",
-   "artist": "Blue Öyster Cult",
-   "year": 1976
   },
   {
    "title": "Paint It Black",
@@ -29,19 +29,14 @@
    "year": 1978
   },
   {
+   "title": "Have You Ever Seen the Rain",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1970
+  },
+  {
    "title": "Landslide",
    "artist": "Fleetwood Mac",
    "year": 1975
-  },
-  {
-   "title": "Wish You Were Here",
-   "artist": "Pink Floyd",
-   "year": 1975
-  },
-  {
-   "title": "Sultans of Swing",
-   "artist": "Dire Straits",
-   "year": 1979
   },
   {
    "title": "Killer Queen",
@@ -49,14 +44,19 @@
    "year": 1974
   },
   {
+   "title": "Sultans of Swing",
+   "artist": "Dire Straits",
+   "year": 1979
+  },
+  {
+   "title": "Wish You Were Here",
+   "artist": "Pink Floyd",
+   "year": 1975
+  },
+  {
    "title": "More Than a Feeling",
    "artist": "Boston",
    "year": 1976
-  },
-  {
-   "title": "Fortunate Son",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1969
   },
   {
    "title": "Mr. Blue Sky",
@@ -64,19 +64,9 @@
    "year": 1977
   },
   {
-   "title": "Piano Man",
-   "artist": "Billy Joel",
-   "year": 1973
-  },
-  {
-   "title": "The House of the Rising Sun",
-   "artist": "The Animals",
-   "year": 1964
-  },
-  {
-   "title": "Dream On",
-   "artist": "Aerosmith",
-   "year": 1973
+   "title": "Fortunate Son",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
   },
   {
    "title": "Rhiannon",
@@ -84,9 +74,24 @@
    "year": 1975
   },
   {
-   "title": "Another One Bites the Dust",
-   "artist": "Queen",
-   "year": 1980
+   "title": "Dirty Work",
+   "artist": "Steely Dan",
+   "year": 1972
+  },
+  {
+   "title": "The House of the Rising Sun",
+   "artist": "The Animals",
+   "year": 1964
+  },
+  {
+   "title": "Piano Man",
+   "artist": "Billy Joel",
+   "year": 1973
+  },
+  {
+   "title": "Dream On",
+   "artist": "Aerosmith",
+   "year": 1973
   },
   {
    "title": "Layla",
@@ -94,14 +99,14 @@
    "year": 1970
   },
   {
+   "title": "Another One Bites the Dust",
+   "artist": "Queen",
+   "year": 1980
+  },
+  {
    "title": "Carry on Wayward Son",
    "artist": "Kansas",
    "year": 1976
-  },
-  {
-   "title": "Vienna",
-   "artist": "Billy Joel",
-   "year": 1977
   },
   {
    "title": "Free Bird",
@@ -109,14 +114,9 @@
    "year": 1973
   },
   {
-   "title": "Another Brick in the Wall, Pt. 2",
-   "artist": "Pink Floyd",
-   "year": 1999
-  },
-  {
-   "title": "Hold the Line",
-   "artist": "Toto",
-   "year": 1978
+   "title": "Vienna",
+   "artist": "Billy Joel",
+   "year": 1977
   },
   {
    "title": "Gimme Shelter",
@@ -124,24 +124,19 @@
    "year": 1971
   },
   {
-   "title": "Dust in the Wind",
-   "artist": "Kansas",
-   "year": 1977
+   "title": "Bad Moon Rising",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
   },
   {
-   "title": "Do It Again",
-   "artist": "Steely Dan",
-   "year": 1972
+   "title": "Hold the Line",
+   "artist": "Toto",
+   "year": 1978
   },
   {
-   "title": "Gypsy",
-   "artist": "Fleetwood Mac",
-   "year": 1982
-  },
-  {
-   "title": "Somebody to Love",
-   "artist": "Queen",
-   "year": 1976
+   "title": "Another Brick in the Wall, Pt. 2",
+   "artist": "Pink Floyd",
+   "year": 1999
   },
   {
    "title": "People Are Strange",
@@ -149,9 +144,9 @@
    "year": 1967
   },
   {
-   "title": "Bad Moon Rising",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1969
+   "title": "Do It Again",
+   "artist": "Steely Dan",
+   "year": 1972
   },
   {
    "title": "Time",
@@ -159,9 +154,39 @@
    "year": 1974
   },
   {
+   "title": "Comfortably Numb",
+   "artist": "Pink Floyd",
+   "year": 1979
+  },
+  {
+   "title": "Highway to Hell",
+   "artist": "AC/DC",
+   "year": 1979
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Queen",
+   "year": 1976
+  },
+  {
+   "title": "Gypsy",
+   "artist": "Fleetwood Mac",
+   "year": 1982
+  },
+  {
+   "title": "Dust in the Wind",
+   "artist": "Kansas",
+   "year": 1977
+  },
+  {
    "title": "Knockin' on Heaven's Door",
    "artist": "Bob Dylan",
    "year": 1976
+  },
+  {
+   "title": "Wind of Change",
+   "artist": "Scorpions",
+   "year": 1990
   },
   {
    "title": "Every Breath You Take",
@@ -174,29 +199,14 @@
    "year": 1984
   },
   {
-   "title": "Africa",
-   "artist": "Toto",
-   "year": 1982
-  },
-  {
-   "title": "Mary Jane's Last Dance",
-   "artist": "Tom Petty and The Heartbreakers",
-   "year": 1993
-  },
-  {
-   "title": "Highway to Hell",
-   "artist": "AC/DC",
-   "year": 1979
-  },
-  {
    "title": "Simple Man",
    "artist": "Lynyrd Skynyrd",
    "year": 1973
   },
   {
-   "title": "All Along the Watchtower",
-   "artist": "Jimi Hendrix",
-   "year": 1971
+   "title": "Africa",
+   "artist": "Toto",
+   "year": 1982
   },
   {
    "title": "Reelin' In The Years",
@@ -209,19 +219,34 @@
    "year": 1981
   },
   {
+   "title": "Mary Jane's Last Dance",
+   "artist": "Tom Petty and The Heartbreakers",
+   "year": 1993
+  },
+  {
+   "title": "All Along the Watchtower",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "Werewolves of London",
+   "artist": "Warren Zevon",
+   "year": 1978
+  },
+  {
+   "title": "Only A Fool Would Say That",
+   "artist": "Steely Dan",
+   "year": 1972
+  },
+  {
    "title": "Baba O'Riley",
    "artist": "The Who",
    "year": 1971
   },
   {
-   "title": "Ventura Highway",
-   "artist": "America",
-   "year": 1972
-  },
-  {
-   "title": "American Pie",
-   "artist": "Don McLean",
-   "year": 1971
+   "title": "Hey Jude",
+   "artist": "The Beatles",
+   "year": 1968
   },
   {
    "title": "For What It's Worth",
@@ -234,14 +259,19 @@
    "year": 1979
   },
   {
-   "title": "Only A Fool Would Say That",
-   "artist": "Steely Dan",
+   "title": "You Really Got Me",
+   "artist": "The Kinks",
+   "year": 1964
+  },
+  {
+   "title": "Ventura Highway",
+   "artist": "America",
    "year": 1972
   },
   {
-   "title": "Our House",
-   "artist": "Crosby, Stills, Nash & Young",
-   "year": 1970
+   "title": "Right Down The Line",
+   "artist": "Gerry Rafferty",
+   "year": 1978
   },
   {
    "title": "Riders on the Storm",
@@ -249,9 +279,14 @@
    "year": 1971
   },
   {
-   "title": "You Really Got Me",
-   "artist": "The Kinks",
-   "year": 1964
+   "title": "American Pie",
+   "artist": "Don McLean",
+   "year": 1971
+  },
+  {
+   "title": "Our House",
+   "artist": "Crosby, Stills, Nash & Young",
+   "year": 1970
   },
   {
    "title": "Sunshine of Your Love",
@@ -264,6 +299,11 @@
    "year": 1979
   },
   {
+   "title": "Barracuda",
+   "artist": "Heart",
+   "year": 1977
+  },
+  {
    "title": "Last Train to London",
    "artist": "Electric Light Orchestra",
    "year": 1979
@@ -272,11 +312,6 @@
    "title": "White Room",
    "artist": "Cream",
    "year": 1968
-  },
-  {
-   "title": "Barracuda",
-   "artist": "Heart",
-   "year": 1977
   },
   {
    "title": "Movin' Out (Anthony's Song)",
@@ -289,39 +324,14 @@
    "year": 1967
   },
   {
-   "title": "Cool Cat",
-   "artist": "Queen",
-   "year": 1982
-  },
-  {
-   "title": "Crazy on You",
-   "artist": "Heart",
+   "title": "Sweet Home Alabama",
+   "artist": "Lynyrd Skynyrd",
    "year": 1975
   },
   {
-   "title": "Break on Through (to the Other Side)",
-   "artist": "The Doors",
-   "year": 1967
-  },
-  {
-   "title": "California Dreamin'",
-   "artist": "The Mamas & the Papas",
-   "year": 1967
-  },
-  {
-   "title": "Your Love",
-   "artist": "The Outfield",
-   "year": 1985
-  },
-  {
-   "title": "Stuck in the Middle With You",
-   "artist": "Stealers Wheel",
-   "year": 1972
-  },
-  {
-   "title": "I Want to Break Free",
-   "artist": "Queen",
-   "year": 1984
+   "title": "Evil Woman",
+   "artist": "Electric Light Orchestra",
+   "year": 1975
   },
   {
    "title": "Roxanne",
@@ -329,8 +339,23 @@
    "year": 1978
   },
   {
-   "title": "Have a Cigar",
-   "artist": "Pink Floyd",
+   "title": "Cool Cat",
+   "artist": "Queen",
+   "year": 1982
+  },
+  {
+   "title": "California Dreamin'",
+   "artist": "The Mamas & the Papas",
+   "year": 1967
+  },
+  {
+   "title": "Break on Through (to the Other Side)",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Crazy on You",
+   "artist": "Heart",
    "year": 1975
   },
   {
@@ -339,9 +364,9 @@
    "year": 1977
   },
   {
-   "title": "Burnin' for You",
-   "artist": "Blue Öyster Cult",
-   "year": 1981
+   "title": "Have a Cigar",
+   "artist": "Pink Floyd",
+   "year": 1975
   },
   {
    "title": "I'm Not in Love",
@@ -349,14 +374,39 @@
    "year": 1975
   },
   {
+   "title": "I Want to Break Free",
+   "artist": "Queen",
+   "year": 1984
+  },
+  {
+   "title": "Abracadabra",
+   "artist": "Steve Miller Band",
+   "year": 1982
+  },
+  {
+   "title": "Burnin' for You",
+   "artist": "Blue Öyster Cult",
+   "year": 1981
+  },
+  {
+   "title": "Your Love",
+   "artist": "The Outfield",
+   "year": 1985
+  },
+  {
+   "title": "The Joker",
+   "artist": "Steve Miller Band",
+   "year": 1973
+  },
+  {
+   "title": "Stuck in the Middle With You",
+   "artist": "Stealers Wheel",
+   "year": 1972
+  },
+  {
    "title": "Hey You",
    "artist": "Pink Floyd",
    "year": 1979
-  },
-  {
-   "title": "Run Through the Jungle",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1970
   },
   {
    "title": "Us and Them",
@@ -364,19 +414,14 @@
    "year": 1973
   },
   {
+   "title": "Run Through the Jungle",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1970
+  },
+  {
    "title": "What a Fool Believes",
    "artist": "The Doobie Brothers",
    "year": 1978
-  },
-  {
-   "title": "Behind Blue Eyes",
-   "artist": "The Who",
-   "year": 1971
-  },
-  {
-   "title": "The Joker",
-   "artist": "Steve Miller Band",
-   "year": 1973
   },
   {
    "title": "Cold as Ice",
@@ -389,6 +434,41 @@
    "year": 1971
   },
   {
+   "title": "Don't Bring Me Down",
+   "artist": "Electric Light Orchestra",
+   "year": 1979
+  },
+  {
+   "title": "Sister Golden Hair",
+   "artist": "America",
+   "year": 1975
+  },
+  {
+   "title": "Heart of Gold",
+   "artist": "Neil Young",
+   "year": 1971
+  },
+  {
+   "title": "Behind Blue Eyes",
+   "artist": "The Who",
+   "year": 1971
+  },
+  {
+   "title": "Listen to the Music",
+   "artist": "The Doobie Brothers",
+   "year": 1972
+  },
+  {
+   "title": "Little Wing",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "Like a Rolling Stone",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
    "title": "Black Betty",
    "artist": "Ram Jam",
    "year": 1977
@@ -399,54 +479,9 @@
    "year": 1969
   },
   {
-   "title": "Little Wing",
-   "artist": "Jimi Hendrix",
-   "year": 1971
-  },
-  {
-   "title": "Sister Golden Hair",
-   "artist": "America",
-   "year": 1975
-  },
-  {
-   "title": "Don't Bring Me Down",
-   "artist": "Electric Light Orchestra",
-   "year": 1979
-  },
-  {
-   "title": "Purple Haze",
-   "artist": "Jimi Hendrix",
-   "year": 1970
-  },
-  {
-   "title": "Listen to the Music",
-   "artist": "The Doobie Brothers",
-   "year": 1972
-  },
-  {
-   "title": "Like a Rolling Stone",
-   "artist": "Bob Dylan",
-   "year": 1963
-  },
-  {
-   "title": "Heart of Gold",
-   "artist": "Neil Young",
-   "year": 1971
-  },
-  {
-   "title": "Brown Eyed Girl",
-   "artist": "Van Morrison",
-   "year": 1967
-  },
-  {
-   "title": "Dreams",
-   "artist": "Fleetwood Mac",
-   "year": 1977
-  },
-  {
-   "title": "Evil Woman",
-   "artist": "Electric Light Orchestra",
-   "year": 1975
+   "title": "Don't Stop Believin'",
+   "artist": "Journey",
+   "year": 1981
   },
   {
    "title": "She's A Rainbow",
@@ -454,19 +489,19 @@
    "year": 1967
   },
   {
-   "title": "Fly Like an Eagle",
-   "artist": "Steve Miller Band",
+   "title": "Good Old-Fashioned Lover Boy",
+   "artist": "Queen",
    "year": 1976
   },
   {
-   "title": "I Was Made for Lovin' You",
-   "artist": "Kiss",
-   "year": 1979
+   "title": "Purple Haze",
+   "artist": "Jimi Hendrix",
+   "year": 1970
   },
   {
-   "title": "Sweet Emotion",
-   "artist": "Aerosmith",
-   "year": 1975
+   "title": "Dreams",
+   "artist": "Fleetwood Mac",
+   "year": 1977
   },
   {
    "title": "The Chain",
@@ -474,13 +509,28 @@
    "year": 1977
   },
   {
-   "title": "Renegade",
-   "artist": "Styx",
-   "year": 1978
+   "title": "Brown Eyed Girl",
+   "artist": "Van Morrison",
+   "year": 1967
   },
   {
-   "title": "Good Old-Fashioned Lover Boy",
-   "artist": "Queen",
+   "title": "I Was Made for Lovin' You",
+   "artist": "Kiss",
+   "year": 1979
+  },
+  {
+   "title": "Proud Mary",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
+  },
+  {
+   "title": "Perfect Day",
+   "artist": "Lou Reed",
+   "year": 1972
+  },
+  {
+   "title": "Hotel California",
+   "artist": "Eagles",
    "year": 1976
   },
   {
@@ -489,14 +539,14 @@
    "year": 1976
   },
   {
-   "title": "God Only Knows",
-   "artist": "The Beach Boys",
-   "year": 1966
+   "title": "Touch Me",
+   "artist": "The Doors",
+   "year": 1968
   },
   {
-   "title": "Perfect Day",
-   "artist": "Lou Reed",
-   "year": 1972
+   "title": "Renegade",
+   "artist": "Styx",
+   "year": 1978
   },
   {
    "title": "Green River",
@@ -504,19 +554,14 @@
    "year": 1969
   },
   {
+   "title": "Sweet Emotion",
+   "artist": "Aerosmith",
+   "year": 1975
+  },
+  {
    "title": "Free Fallin'",
    "artist": "Tom Petty",
    "year": 1989
-  },
-  {
-   "title": "Hotel California",
-   "artist": "Eagles",
-   "year": 1976
-  },
-  {
-   "title": "Roadhouse Blues",
-   "artist": "The Doors",
-   "year": 1970
   },
   {
    "title": "Love Her Madly",
@@ -524,19 +569,14 @@
    "year": 1971
   },
   {
-   "title": "Wonderful Tonight",
-   "artist": "Eric Clapton",
-   "year": 1977
+   "title": "God Only Knows",
+   "artist": "The Beach Boys",
+   "year": 1966
   },
   {
-   "title": "Six Blade Knife",
-   "artist": "Dire Straits",
-   "year": 1978
-  },
-  {
-   "title": "American Girl",
-   "artist": "Tom Petty and The Heartbreakers",
-   "year": 1976
+   "title": "Soul Kitchen",
+   "artist": "The Doors",
+   "year": 1967
   },
   {
    "title": "Surrender",
@@ -544,14 +584,9 @@
    "year": 1978
   },
   {
-   "title": "Sweet Child o' Mine",
-   "artist": "Guns N' Roses",
-   "year": 1988
-  },
-  {
-   "title": "I Won't Back Down",
-   "artist": "Tom Petty",
-   "year": 1989
+   "title": "Night Moves",
+   "artist": "Bob Seger",
+   "year": 2013
   },
   {
    "title": "Walk on the Wild Side",
@@ -559,34 +594,29 @@
    "year": 1972
   },
   {
-   "title": "Night Moves",
-   "artist": "Bob Seger",
-   "year": 2013
+   "title": "Six Blade Knife",
+   "artist": "Dire Straits",
+   "year": 1978
   },
   {
-   "title": "The Show Must Go On",
-   "artist": "Queen",
+   "title": "Roadhouse Blues",
+   "artist": "The Doors",
+   "year": 1970
+  },
+  {
+   "title": "Don't Cry (Original)",
+   "artist": "Guns N' Roses",
    "year": 1991
+  },
+  {
+   "title": "Sweet Child o' Mine",
+   "artist": "Guns N' Roses",
+   "year": 1988
   },
   {
    "title": "November Rain",
    "artist": "Guns N' Roses",
    "year": 1986
-  },
-  {
-   "title": "Long Train Runnin'",
-   "artist": "The Doobie Brothers",
-   "year": 1973
-  },
-  {
-   "title": "Touch Me",
-   "artist": "The Doors",
-   "year": 1968
-  },
-  {
-   "title": "Abracadabra",
-   "artist": "Steve Miller Band",
-   "year": 1982
   },
   {
    "title": "Voodoo Child (Slight Return)",
@@ -599,9 +629,24 @@
    "year": 1989
   },
   {
-   "title": "She's Always a Woman",
-   "artist": "Billy Joel",
+   "title": "The Show Must Go On",
+   "artist": "Queen",
+   "year": 1991
+  },
+  {
+   "title": "Young Lust",
+   "artist": "Pink Floyd",
+   "year": 1979
+  },
+  {
+   "title": "Wonderful Tonight",
+   "artist": "Eric Clapton",
    "year": 1977
+  },
+  {
+   "title": "Long Train Runnin'",
+   "artist": "The Doobie Brothers",
+   "year": 1973
   },
   {
    "title": "Love of My Life",
@@ -614,48 +659,38 @@
    "year": 1989
   },
   {
+   "title": "American Girl",
+   "artist": "Tom Petty and The Heartbreakers",
+   "year": 1976
+  },
+  {
+   "title": "Fly Like an Eagle",
+   "artist": "Steve Miller Band",
+   "year": 1976
+  },
+  {
+   "title": "I Won't Back Down",
+   "artist": "Tom Petty",
+   "year": 1989
+  },
+  {
+   "title": "Deacon Blues",
+   "artist": "Steely Dan",
+   "year": 1977
+  },
+  {
+   "title": "Sympathy for the Devil",
+   "artist": "The Rolling Stones",
+   "year": 1974
+  },
+  {
    "title": "Peace of Mind",
    "artist": "Boston",
    "year": 1976
   },
   {
-   "title": "Up Around the Bend",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1970
-  },
-  {
-   "title": "Lady Writer",
-   "artist": "Dire Straits",
-   "year": 1979
-  },
-  {
-   "title": "Cocaine",
-   "artist": "Eric Clapton",
-   "year": 1977
-  },
-  {
-   "title": "Werewolves of London",
-   "artist": "Warren Zevon",
-   "year": 1978
-  },
-  {
    "title": "Catch the Rainbow",
    "artist": "Rainbow",
-   "year": 1975
-  },
-  {
-   "title": "Peg",
-   "artist": "Steely Dan",
-   "year": 1977
-  },
-  {
-   "title": "Almost Cut My Hair",
-   "artist": "Crosby, Stills, Nash & Young",
-   "year": 1970
-  },
-  {
-   "title": "You're My Best Friend",
-   "artist": "Queen",
    "year": 1975
   },
   {
@@ -664,9 +699,44 @@
    "year": 1987
   },
   {
-   "title": "Hey Nineteen",
+   "title": "Eminence Front",
+   "artist": "The Who",
+   "year": 1982
+  },
+  {
+   "title": "She's Always a Woman",
+   "artist": "Billy Joel",
+   "year": 1977
+  },
+  {
+   "title": "Lady Writer",
+   "artist": "Dire Straits",
+   "year": 1979
+  },
+  {
+   "title": "Up Around the Bend",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1970
+  },
+  {
+   "title": "You're My Best Friend",
+   "artist": "Queen",
+   "year": 1975
+  },
+  {
+   "title": "Peg",
    "artist": "Steely Dan",
-   "year": 1980
+   "year": 1977
+  },
+  {
+   "title": "Season of the Witch",
+   "artist": "Donovan",
+   "year": 1966
+  },
+  {
+   "title": "Cocaine",
+   "artist": "Eric Clapton",
+   "year": 1977
   },
   {
    "title": "The Passenger",
@@ -674,9 +744,19 @@
    "year": 1977
   },
   {
-   "title": "Who'll Stop the Rain",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1970
+   "title": "Edge of Seventeen",
+   "artist": "Stevie Nicks",
+   "year": 1981
+  },
+  {
+   "title": "Hey Nineteen",
+   "artist": "Steely Dan",
+   "year": 1980
+  },
+  {
+   "title": "The Great Gig in the Sky",
+   "artist": "Pink Floyd",
+   "year": 1973
   },
   {
    "title": "L.A. Woman",
@@ -689,13 +769,73 @@
    "year": 1980
   },
   {
+   "title": "Born to Run",
+   "artist": "Bruce Springsteen",
+   "year": 1975
+  },
+  {
    "title": "Fat Bottomed Girls",
    "artist": "Queen",
    "year": 1978
   },
   {
-   "title": "Sympathy for the Devil",
+   "title": "If You Leave Me Now",
+   "artist": "Chicago",
+   "year": 1976
+  },
+  {
+   "title": "Almost Cut My Hair",
+   "artist": "Crosby, Stills, Nash & Young",
+   "year": 1970
+  },
+  {
+   "title": "White Rabbit",
+   "artist": "Jefferson Airplane",
+   "year": 1967
+  },
+  {
+   "title": "Who'll Stop the Rain",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1970
+  },
+  {
+   "title": "Send Me An Angel",
+   "artist": "Scorpions",
+   "year": 1990
+  },
+  {
+   "title": "Wild Horses",
    "artist": "The Rolling Stones",
+   "year": 1971
+  },
+  {
+   "title": "Message in a Bottle",
+   "artist": "The Police",
+   "year": 1979
+  },
+  {
+   "title": "Tom Sawyer",
+   "artist": "Rush",
+   "year": 1981
+  },
+  {
+   "title": "The Crystal Ship",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
+   "artist": "Elton John",
+   "year": 1972
+  },
+  {
+   "title": "All Day and All of the Night",
+   "artist": "The Kinks",
+   "year": 1964
+  },
+  {
+   "title": "Rikki Don't Lose That Number",
+   "artist": "Steely Dan",
    "year": 1974
   },
   {
@@ -704,29 +844,9 @@
    "year": 1976
   },
   {
-   "title": "Tom Sawyer",
-   "artist": "Rush",
-   "year": 1981
-  },
-  {
-   "title": "Wild Horses",
-   "artist": "The Rolling Stones",
-   "year": 1971
-  },
-  {
-   "title": "Rikki Don't Lose That Number",
-   "artist": "Steely Dan",
-   "year": 1974
-  },
-  {
-   "title": "Send Me An Angel",
-   "artist": "Scorpions",
-   "year": 1990
-  },
-  {
-   "title": "The Great Gig in the Sky",
-   "artist": "Pink Floyd",
-   "year": 1973
+   "title": "Down to the Waterline",
+   "artist": "Dire Straits",
+   "year": 1978
   },
   {
    "title": "Walk This Way",
@@ -734,9 +854,9 @@
    "year": 1975
   },
   {
-   "title": "Rocket Man (I Think It's Going to Be a Long, Long Time)",
-   "artist": "Elton John",
-   "year": 1972
+   "title": "Owner of a Lonely Heart",
+   "artist": "Yes",
+   "year": 1983
   },
   {
    "title": "Down on the Corner",
@@ -744,19 +864,29 @@
    "year": 1969
   },
   {
-   "title": "The Crystal Ship",
+   "title": "Magic Man",
+   "artist": "Heart",
+   "year": 1975
+  },
+  {
+   "title": "Peace Frog",
    "artist": "The Doors",
-   "year": 1967
+   "year": 1970
   },
   {
-   "title": "Baker Street",
-   "artist": "Gerry Rafferty",
-   "year": 1978
+   "title": "Tuesday's Gone",
+   "artist": "Lynyrd Skynyrd",
+   "year": 1973
   },
   {
-   "title": "All Day and All of the Night",
-   "artist": "The Kinks",
-   "year": 1964
+   "title": "Candy Says",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "Livin' on a Prayer",
+   "artist": "Bon Jovi",
+   "year": 1986
   },
   {
    "title": "Hey Joe",
@@ -769,49 +899,14 @@
    "year": 1990
   },
   {
-   "title": "Livin' on a Prayer",
-   "artist": "Bon Jovi",
-   "year": 1986
-  },
-  {
-   "title": "White Rabbit",
-   "artist": "Jefferson Airplane",
-   "year": 1967
-  },
-  {
-   "title": "Candy Says",
-   "artist": "The Velvet Underground",
-   "year": 1969
-  },
-  {
    "title": "Learning to Fly",
    "artist": "Tom Petty and The Heartbreakers",
    "year": 1991
   },
   {
-   "title": "Tuesday's Gone",
-   "artist": "Lynyrd Skynyrd",
-   "year": 1973
-  },
-  {
-   "title": "Bell Bottom Blues",
-   "artist": "Derek and the Dominos",
-   "year": 1970
-  },
-  {
-   "title": "Brandy (You're A Fine Girl)",
-   "artist": "Looking Glass",
-   "year": 1972
-  },
-  {
-   "title": "Who Are You",
-   "artist": "The Who",
-   "year": 1977
-  },
-  {
-   "title": "Born in the U.S.A.",
-   "artist": "Bruce Springsteen",
-   "year": 1984
+   "title": "Baker Street",
+   "artist": "Gerry Rafferty",
+   "year": 1978
   },
   {
    "title": "Rock You Like a Hurricane",
@@ -819,14 +914,9 @@
    "year": 1984
   },
   {
-   "title": "Down to the Waterline",
-   "artist": "Dire Straits",
-   "year": 1978
-  },
-  {
-   "title": "Peace Frog",
-   "artist": "The Doors",
-   "year": 1970
+   "title": "Give a Little Bit",
+   "artist": "Supertramp",
+   "year": 1977
   },
   {
    "title": "Crazy",
@@ -834,54 +924,14 @@
    "year": 1993
   },
   {
-   "title": "I Heard It Through the Grapevine",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1970
-  },
-  {
    "title": "Magic Carpet Ride",
    "artist": "Steppenwolf",
    "year": 1968
   },
   {
-   "title": "Everywhere",
-   "artist": "Fleetwood Mac",
-   "year": 1987
-  },
-  {
-   "title": "Give Me Love (Give Me Peace on Earth)",
-   "artist": "George Harrison",
-   "year": 1973
-  },
-  {
-   "title": "Fooled Around And Fell In Love",
-   "artist": "Elvin Bishop",
-   "year": 1975
-  },
-  {
-   "title": "Take It on the Run",
-   "artist": "REO Speedwagon",
-   "year": 1980
-  },
-  {
-   "title": "Give a Little Bit",
-   "artist": "Supertramp",
-   "year": 1977
-  },
-  {
-   "title": "Blue Sunday",
-   "artist": "The Doors",
-   "year": 1970
-  },
-  {
-   "title": "The End",
-   "artist": "The Doors",
-   "year": 1967
-  },
-  {
-   "title": "Under My Thumb",
-   "artist": "The Rolling Stones",
-   "year": 1966
+   "title": "Then Came the Last Days of May",
+   "artist": "Blue Öyster Cult",
+   "year": 1972
   },
   {
    "title": "Go Your Own Way",
@@ -889,9 +939,59 @@
    "year": 1976
   },
   {
-   "title": "Romeo and Juliet",
-   "artist": "Dire Straits",
+   "title": "Under My Thumb",
+   "artist": "The Rolling Stones",
+   "year": 1966
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Jefferson Airplane",
+   "year": 1967
+  },
+  {
+   "title": "Blue Sunday",
+   "artist": "The Doors",
+   "year": 1970
+  },
+  {
+   "title": "Born in the U.S.A.",
+   "artist": "Bruce Springsteen",
+   "year": 1984
+  },
+  {
+   "title": "Fooled Around And Fell In Love",
+   "artist": "Elvin Bishop",
+   "year": 1975
+  },
+  {
+   "title": "Who Are You",
+   "artist": "The Who",
+   "year": 1977
+  },
+  {
+   "title": "Waiting for a Girl Like You",
+   "artist": "Foreigner",
+   "year": 1981
+  },
+  {
+   "title": "Give Me Love (Give Me Peace on Earth)",
+   "artist": "George Harrison",
+   "year": 1973
+  },
+  {
+   "title": "I Heard It Through the Grapevine",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1970
+  },
+  {
+   "title": "Take It on the Run",
+   "artist": "REO Speedwagon",
    "year": 1980
+  },
+  {
+   "title": "Ohio",
+   "artist": "Crosby, Stills, Nash & Young",
+   "year": 1970
   },
   {
    "title": "All Right Now",
@@ -901,106 +1001,6 @@
   {
    "title": "Livin' Thing",
    "artist": "Electric Light Orchestra",
-   "year": 1976
-  },
-  {
-   "title": "Somebody to Love",
-   "artist": "Jefferson Airplane",
-   "year": 1967
-  },
-  {
-   "title": "Message in a Bottle",
-   "artist": "The Police",
-   "year": 1979
-  },
-  {
-   "title": "Pinball Wizard",
-   "artist": "The Who",
-   "year": 1973
-  },
-  {
-   "title": "Waiting for a Girl Like You",
-   "artist": "Foreigner",
-   "year": 1981
-  },
-  {
-   "title": "Don't Dream It's Over",
-   "artist": "Crowded House",
-   "year": 1986
-  },
-  {
-   "title": "Walk of Life",
-   "artist": "Dire Straits",
-   "year": 1985
-  },
-  {
-   "title": "Owner of a Lonely Heart",
-   "artist": "Yes",
-   "year": 1983
-  },
-  {
-   "title": "Juke Box Hero",
-   "artist": "Foreigner",
-   "year": 1981
-  },
-  {
-   "title": "Then Came the Last Days of May",
-   "artist": "Blue Öyster Cult",
-   "year": 1972
-  },
-  {
-   "title": "Ohio",
-   "artist": "Crosby, Stills, Nash & Young",
-   "year": 1970
-  },
-  {
-   "title": "Edge of Seventeen",
-   "artist": "Stevie Nicks",
-   "year": 1981
-  },
-  {
-   "title": "Waterloo Sunset",
-   "artist": "The Kinks",
-   "year": 1967
-  },
-  {
-   "title": "Heaven",
-   "artist": "Bryan Adams",
-   "year": 1984
-  },
-  {
-   "title": "Love Me Two Times",
-   "artist": "The Doors",
-   "year": 1967
-  },
-  {
-   "title": "Once Upon a Time in the West",
-   "artist": "Dire Straits",
-   "year": 1979
-  },
-  {
-   "title": "While My Guitar Gently Weeps",
-   "artist": "The Beatles",
-   "year": 1968
-  },
-  {
-   "title": "Lookin' Out My Back Door",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1970
-  },
-  {
-   "title": "Magic Man",
-   "artist": "Heart",
-   "year": 1975
-  },
-  {
-   "title": "Since You Been Gone",
-   "artist": "Rainbow",
-   "year": 1979
-  },
-  {
-   "title": "Rock'n Me",
-   "artist": "Steve Miller Band",
    "year": 1976
   }
  ]

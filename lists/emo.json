@@ -1,7 +1,7 @@
 {
  "name": "Emo",
  "tag": "emo",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Helena",
@@ -14,19 +14,24 @@
    "year": 2004
   },
   {
-   "title": "Never Meant",
-   "artist": "American Football",
-   "year": 1998
-  },
-  {
    "title": "The Ghost of You",
    "artist": "My Chemical Romance",
    "year": 2004
   },
   {
+   "title": "Never Meant",
+   "artist": "American Football",
+   "year": 1998
+  },
+  {
    "title": "A Match Into Water",
    "artist": "Pierce the Veil",
    "year": 2012
+  },
+  {
+   "title": "Yeah Boy and Doll Face",
+   "artist": "Pierce the Veil",
+   "year": 2007
   },
   {
    "title": "Pillars",
@@ -59,19 +64,14 @@
    "year": 2010
   },
   {
+   "title": "Stabilisers for Big Boys",
+   "artist": "Panchiko",
+   "year": 2000
+  },
+  {
    "title": "Oh Messy Life",
    "artist": "Cap'n Jazz",
    "year": 1995
-  },
-  {
-   "title": "Parking Lot",
-   "artist": "Mineral",
-   "year": 1995
-  },
-  {
-   "title": "Hang 'Em High",
-   "artist": "My Chemical Romance",
-   "year": 2004
   },
   {
    "title": "Vampires Will Never Hurt You",
@@ -79,19 +79,14 @@
    "year": 2001
   },
   {
-   "title": "Little League",
-   "artist": "Cap'n Jazz",
+   "title": "Hang 'Em High",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "Parking Lot",
+   "artist": "Mineral",
    "year": 1995
-  },
-  {
-   "title": "I'll See You When We're Both Not So Emotional",
-   "artist": "American Football",
-   "year": 1998
-  },
-  {
-   "title": "But the Regrets Are Killing Me",
-   "artist": "American Football",
-   "year": 1998
   },
   {
    "title": "I Never Told You What I Do for a Living",
@@ -99,9 +94,9 @@
    "year": 2004
   },
   {
-   "title": "The Taste of Ink",
-   "artist": "The Used",
-   "year": 2001
+   "title": "To the End",
+   "artist": "My Chemical Romance",
+   "year": 2004
   },
   {
    "title": "Welcome to the Black Parade",
@@ -109,14 +104,34 @@
    "year": 2006
   },
   {
-   "title": "Honestly?",
-   "artist": "American Football",
-   "year": 1999
+   "title": "The Taste of Ink",
+   "artist": "The Used",
+   "year": 2001
   },
   {
-   "title": "To the End",
+   "title": "I Don't Love You",
    "artist": "My Chemical Romance",
-   "year": 2004
+   "year": 2006
+  },
+  {
+   "title": "But the Regrets Are Killing Me",
+   "artist": "American Football",
+   "year": 1998
+  },
+  {
+   "title": "Little League",
+   "artist": "Cap'n Jazz",
+   "year": 1995
+  },
+  {
+   "title": "Our Lady of Sorrows",
+   "artist": "My Chemical Romance",
+   "year": 2002
+  },
+  {
+   "title": "I'll See You When We're Both Not So Emotional",
+   "artist": "American Football",
+   "year": 1998
   },
   {
    "title": "Plane vs. Tank vs. Submarine",
@@ -129,39 +144,14 @@
    "year": 2005
   },
   {
-   "title": "I Don't Love You",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Our Lady of Sorrows",
-   "artist": "My Chemical Romance",
-   "year": 2002
-  },
-  {
-   "title": "There's a Good Reason These Tables Are Numbered Honey, You Just Haven't Thought of It Yet",
-   "artist": "Panic! at the Disco",
-   "year": 2005
-  },
-  {
    "title": "Teenagers",
    "artist": "My Chemical Romance",
    "year": 2006
   },
   {
-   "title": "Thank You for the Venom",
-   "artist": "My Chemical Romance",
-   "year": 2004
-  },
-  {
-   "title": "For Sure",
+   "title": "Honestly?",
    "artist": "American Football",
-   "year": 1998
-  },
-  {
-   "title": "I Write Sins Not Tragedies",
-   "artist": "Panic! at the Disco",
-   "year": 2005
+   "year": 1999
   },
   {
    "title": "Headfirst for Halos",
@@ -169,14 +159,34 @@
    "year": 2002
   },
   {
+   "title": "Thank You for the Venom",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "There's a Good Reason These Tables Are Numbered Honey, You Just Haven't Thought of It Yet",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "I Write Sins Not Tragedies",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "Interlude",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
    "title": "London Beckoned Songs About Money Written by Machines",
    "artist": "Panic! at the Disco",
    "year": 2005
   },
   {
-   "title": "Gloria",
-   "artist": "Mineral",
-   "year": 1995
+   "title": "For Sure",
+   "artist": "American Football",
+   "year": 1998
   },
   {
    "title": "Demolition Lovers",
@@ -189,12 +199,22 @@
    "year": 2005
   },
   {
+   "title": "Dead!",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
    "title": "Cemetery Drive",
    "artist": "My Chemical Romance",
    "year": 2004
   },
   {
-   "title": "Dead!",
+   "title": "Gloria",
+   "artist": "Mineral",
+   "year": 1995
+  },
+  {
+   "title": "Cancer",
    "artist": "My Chemical Romance",
    "year": 2006
   },
@@ -204,24 +224,9 @@
    "year": 2012
   },
   {
-   "title": "Hold On Till May",
-   "artist": "Pierce the Veil",
-   "year": 2012
-  },
-  {
-   "title": "Cancer",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Act Appalled",
-   "artist": "Circa Survive",
-   "year": 2005
-  },
-  {
-   "title": "Sugar, We're Goin Down",
-   "artist": "Fall Out Boy",
-   "year": 2005
+   "title": "No Other One",
+   "artist": "Weezer",
+   "year": 1996
   },
   {
    "title": "Disenchanted",
@@ -229,9 +234,9 @@
    "year": 2006
   },
   {
-   "title": "Dance, Dance",
-   "artist": "Fall Out Boy",
-   "year": 2005
+   "title": "Hold On Till May",
+   "artist": "Pierce the Veil",
+   "year": 2012
   },
   {
    "title": "The Sharpest Lives",
@@ -239,14 +244,14 @@
    "year": 2006
   },
   {
-   "title": "Stay Home",
-   "artist": "American Football",
-   "year": 1998
+   "title": "Buried Myself Alive",
+   "artist": "The Used",
+   "year": 2002
   },
   {
-   "title": "All That I've Got",
-   "artist": "The Used",
-   "year": 2004
+   "title": "Act Appalled",
+   "artist": "Circa Survive",
+   "year": 2005
   },
   {
    "title": "The End.",
@@ -254,13 +259,18 @@
    "year": 2004
   },
   {
-   "title": "Buried Myself Alive",
-   "artist": "The Used",
-   "year": 2002
+   "title": "Sugar, We're Goin Down",
+   "artist": "Fall Out Boy",
+   "year": 2005
   },
   {
-   "title": "Face Down",
-   "artist": "The Red Jumpsuit Apparatus",
+   "title": "Dance, Dance",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "All That I've Got",
+   "artist": "The Used",
    "year": 2004
   },
   {
@@ -269,19 +279,14 @@
    "year": 2002
   },
   {
-   "title": "Safe In Your Skin",
-   "artist": "Title Fight",
-   "year": 2011
+   "title": "This Is How I Disappear",
+   "artist": "My Chemical Romance",
+   "year": 2006
   },
   {
-   "title": "Basil's Kite",
-   "artist": "Cap'n Jazz",
-   "year": 1995
-  },
-  {
-   "title": "But It's Better If You Do",
-   "artist": "Panic! at the Disco",
-   "year": 2005
+   "title": "Understanding In A Car Crash",
+   "artist": "Thursday",
+   "year": 2001
   },
   {
    "title": "Covet",
@@ -289,29 +294,14 @@
    "year": 2012
   },
   {
-   "title": "The Quiet Things That No One Ever Knows",
-   "artist": "Brand New",
-   "year": 2003
+   "title": "Face Down",
+   "artist": "The Red Jumpsuit Apparatus",
+   "year": 2004
   },
   {
-   "title": "Tears Over Beers",
-   "artist": "Modern Baseball",
-   "year": 2012
-  },
-  {
-   "title": "Get Busy Living or Get Busy Dying (Do Your Part to Save the Scene and Stop Going to Shows)",
-   "artist": "Fall Out Boy",
-   "year": 2005
-  },
-  {
-   "title": "This Is How I Disappear",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Dead on Arrival",
-   "artist": "Fall Out Boy",
-   "year": 2003
+   "title": "Safe In Your Skin",
+   "artist": "Title Fight",
+   "year": 2011
   },
   {
    "title": "The Foundations of Decay",
@@ -319,9 +309,34 @@
    "year": 2022
   },
   {
+   "title": "I Caught Fire",
+   "artist": "The Used",
+   "year": 2004
+  },
+  {
+   "title": "Get Busy Living or Get Busy Dying (Do Your Part to Save the Scene and Stop Going to Shows)",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "Stay Home",
+   "artist": "American Football",
+   "year": 1998
+  },
+  {
    "title": "Drowning Lessons",
    "artist": "My Chemical Romance",
    "year": 2002
+  },
+  {
+   "title": "But It's Better If You Do",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "The Quiet Things That No One Ever Knows",
+   "artist": "Brand New",
+   "year": 2003
   },
   {
    "title": "Give 'Em Hell, Kid",
@@ -329,44 +344,9 @@
    "year": 2004
   },
   {
-   "title": "Jesus Christ",
-   "artist": "Brand New",
-   "year": 2011
-  },
-  {
-   "title": "Disasterology",
-   "artist": "Pierce the Veil",
-   "year": 2010
-  },
-  {
-   "title": "Saying Sorry",
-   "artist": "Hawthorne Heights",
-   "year": 2005
-  },
-  {
-   "title": "Holiday",
-   "artist": "The Get Up Kids",
-   "year": 1999
-  },
-  {
-   "title": "Sophomore Slump or Comeback of the Year",
-   "artist": "Fall Out Boy",
-   "year": 2005
-  },
-  {
-   "title": "Star Shopping",
-   "artist": "Lil Peep",
-   "year": 2015
-  },
-  {
-   "title": "Accident Prone",
-   "artist": "Jawbreaker",
-   "year": 1994
-  },
-  {
-   "title": "Caraphernelia",
-   "artist": "Pierce the Veil",
-   "year": 2010
+   "title": "Tears Over Beers",
+   "artist": "Modern Baseball",
+   "year": 2012
   },
   {
    "title": "Liar (It Takes One to Know One)",
@@ -374,8 +354,43 @@
    "year": 2006
   },
   {
-   "title": "The Boy Who Blocked His Own Shot",
-   "artist": "Brand New",
+   "title": "Sophomore Slump or Comeback of the Year",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "Basil's Kite",
+   "artist": "Cap'n Jazz",
+   "year": 1995
+  },
+  {
+   "title": "Saying Sorry",
+   "artist": "Hawthorne Heights",
+   "year": 2005
+  },
+  {
+   "title": "Disasterology",
+   "artist": "Pierce the Veil",
+   "year": 2010
+  },
+  {
+   "title": "Holiday",
+   "artist": "The Get Up Kids",
+   "year": 1999
+  },
+  {
+   "title": "Cedo Ou Tarde",
+   "artist": "NX Zero",
+   "year": 2008
+  },
+  {
+   "title": "Fall for You",
+   "artist": "Secondhand Serenade",
+   "year": 2008
+  },
+  {
+   "title": "Dead on Arrival",
+   "artist": "Fall Out Boy",
    "year": 2003
   },
   {
@@ -384,13 +399,43 @@
    "year": 2004
   },
   {
-   "title": "Cedo Ou Tarde",
-   "artist": "NX Zero",
-   "year": 2008
+   "title": "Star Shopping",
+   "artist": "Lil Peep",
+   "year": 2015
+  },
+  {
+   "title": "Jesus Christ",
+   "artist": "Brand New",
+   "year": 2011
+  },
+  {
+   "title": "Caraphernelia",
+   "artist": "Pierce the Veil",
+   "year": 2010
+  },
+  {
+   "title": "Accident Prone",
+   "artist": "Jawbreaker",
+   "year": 1994
+  },
+  {
+   "title": "Theatre of Robots",
+   "artist": "LoveHateHero",
+   "year": 2005
+  },
+  {
+   "title": "The Boy Who Blocked His Own Shot",
+   "artist": "Brand New",
+   "year": 2003
   },
   {
    "title": "MakeDamnSure",
    "artist": "Taking Back Sunday",
+   "year": 2006
+  },
+  {
+   "title": "Can't Be Saved",
+   "artist": "Senses Fail",
    "year": 2006
   },
   {
@@ -404,14 +449,9 @@
    "year": 2001
   },
   {
-   "title": "Call It Karma",
-   "artist": "Silverstein",
-   "year": 2005
-  },
-  {
-   "title": "Back and to the Left",
-   "artist": "Texas Is the Reason",
-   "year": 1996
+   "title": "Cute Without the 'E' (Cut From the Team)",
+   "artist": "Taking Back Sunday",
+   "year": 2002
   },
   {
    "title": "Currents Convulsive",
@@ -419,9 +459,24 @@
    "year": 2007
   },
   {
-   "title": "Cute Without the 'E' (Cut From the Team)",
-   "artist": "Taking Back Sunday",
+   "title": "Call It Karma",
+   "artist": "Silverstein",
+   "year": 2005
+  },
+  {
+   "title": "Sleep",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Blue and Yellow",
+   "artist": "The Used",
    "year": 2002
+  },
+  {
+   "title": "Back and to the Left",
+   "artist": "Texas Is the Reason",
+   "year": 1996
   },
   {
    "title": "Death Cup",
@@ -429,13 +484,23 @@
    "year": 2016
   },
   {
+   "title": "Jude Law and a Semester Abroad",
+   "artist": "Brand New",
+   "year": 2000
+  },
+  {
    "title": "In Circles",
    "artist": "Sunny Day Real Estate",
    "year": 1994
   },
   {
-   "title": "Theatre of Robots",
-   "artist": "LoveHateHero",
+   "title": "Failure by Design",
+   "artist": "Brand New",
+   "year": 2001
+  },
+  {
+   "title": "Camisado",
+   "artist": "Panic! at the Disco",
    "year": 2005
   },
   {
@@ -449,58 +514,18 @@
    "year": 2004
   },
   {
-   "title": "Jude Law and a Semester Abroad",
-   "artist": "Brand New",
-   "year": 2000
-  },
-  {
-   "title": "Camisado",
-   "artist": "Panic! at the Disco",
+   "title": "The Truth About Heaven",
+   "artist": "Armor for Sleep",
    "year": 2005
-  },
-  {
-   "title": "Failure by Design",
-   "artist": "Brand New",
-   "year": 2001
-  },
-  {
-   "title": "Sleep",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Seven",
-   "artist": "Sunny Day Real Estate",
-   "year": 1994
-  },
-  {
-   "title": "Ooh Do I Love You",
-   "artist": "Cap'n Jazz",
-   "year": 1998
-  },
-  {
-   "title": "Devotion and Desire",
-   "artist": "Bayside",
-   "year": 2005
-  },
-  {
-   "title": "Guernica",
-   "artist": "Brand New",
-   "year": 2003
-  },
-  {
-   "title": "The Medic",
-   "artist": "Foxing",
-   "year": 2013
-  },
-  {
-   "title": "At Your Funeral",
-   "artist": "Saves the Day",
-   "year": 2001
   },
   {
    "title": "Time to Dance",
    "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "Devotion and Desire",
+   "artist": "Bayside",
    "year": 2005
   },
   {
@@ -509,14 +534,14 @@
    "year": 2006
   },
   {
+   "title": "Smile in Your Sleep",
+   "artist": "Silverstein",
+   "year": 2005
+  },
+  {
    "title": "You're Not Alone",
    "artist": "Saosin",
    "year": 2006
-  },
-  {
-   "title": "The Truth About Heaven",
-   "artist": "Armor for Sleep",
-   "year": 2005
   },
   {
    "title": "Five, Eight and Ten",
@@ -524,34 +549,19 @@
    "year": 1996
   },
   {
-   "title": "Re-Do",
-   "artist": "Modern Baseball",
-   "year": 2012
-  },
-  {
-   "title": "In The End",
-   "artist": "Black Veil Brides",
-   "year": 2012
-  },
-  {
-   "title": "Millstone",
+   "title": "Guernica",
    "artist": "Brand New",
-   "year": 2006
+   "year": 2003
   },
   {
-   "title": "Calling All Cars",
-   "artist": "Senses Fail",
-   "year": 2006
+   "title": "Ooh Do I Love You",
+   "artist": "Cap'n Jazz",
+   "year": 1998
   },
   {
-   "title": "Discovering the Waterfront",
-   "artist": "Silverstein",
-   "year": 2005
-  },
-  {
-   "title": "A Box Full of Sharp Objects",
-   "artist": "The Used",
-   "year": 2001
+   "title": "Seven",
+   "artist": "Sunny Day Real Estate",
+   "year": 1994
   },
   {
    "title": "Skylines and Turnstiles",
@@ -564,9 +574,34 @@
    "year": 2001
   },
   {
-   "title": "If I'm James Dean, You're Audrey Hepburn",
-   "artist": "Sleeping With Sirens",
-   "year": 2010
+   "title": "The Medic",
+   "artist": "Foxing",
+   "year": 2013
+  },
+  {
+   "title": "A Box Full of Sharp Objects",
+   "artist": "The Used",
+   "year": 2001
+  },
+  {
+   "title": "Re-Do",
+   "artist": "Modern Baseball",
+   "year": 2012
+  },
+  {
+   "title": "In The End",
+   "artist": "Black Veil Brides",
+   "year": 2012
+  },
+  {
+   "title": "At Your Funeral",
+   "artist": "Saves the Day",
+   "year": 2001
+  },
+  {
+   "title": "Calling All Cars",
+   "artist": "Senses Fail",
+   "year": 2006
   },
   {
    "title": "I Will Play My Game Beneath the Spin Light",
@@ -574,9 +609,24 @@
    "year": 2003
   },
   {
-   "title": "For Want Of",
-   "artist": "Rites of Spring",
-   "year": 1985
+   "title": "Discovering the Waterfront",
+   "artist": "Silverstein",
+   "year": 2005
+  },
+  {
+   "title": "Millstone",
+   "artist": "Brand New",
+   "year": 2006
+  },
+  {
+   "title": "This Is the Best Day Ever",
+   "artist": "My Chemical Romance",
+   "year": 2002
+  },
+  {
+   "title": "Car Underwater",
+   "artist": "Armor for Sleep",
+   "year": 2004
   },
   {
    "title": "Falling for You",
@@ -584,8 +634,23 @@
    "year": 1996
   },
   {
-   "title": "Car Underwater",
-   "artist": "Armor for Sleep",
+   "title": "If I'm James Dean, You're Audrey Hepburn",
+   "artist": "Sleeping With Sirens",
+   "year": 2010
+  },
+  {
+   "title": "Bulimic",
+   "artist": "The Used",
+   "year": 2001
+  },
+  {
+   "title": "For Want Of",
+   "artist": "Rites of Spring",
+   "year": 1985
+  },
+  {
+   "title": "Emily",
+   "artist": "From First to Last",
    "year": 2004
   },
   {
@@ -594,9 +659,14 @@
    "year": 2017
   },
   {
-   "title": "Emily",
-   "artist": "From First to Last",
-   "year": 2004
+   "title": "Nails for Breakfast, Tacks for Snacks",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "Shed",
+   "artist": "Title Fight",
+   "year": 2011
   },
   {
    "title": "Action & Action",
@@ -609,23 +679,8 @@
    "year": 2006
   },
   {
-   "title": "This Is the Best Day Ever",
-   "artist": "My Chemical Romance",
-   "year": 2002
-  },
-  {
-   "title": "Shed",
-   "artist": "Title Fight",
-   "year": 2011
-  },
-  {
-   "title": "Letters to You",
-   "artist": "Finch",
-   "year": 2001
-  },
-  {
-   "title": "Nails for Breakfast, Tacks for Snacks",
-   "artist": "Panic! at the Disco",
+   "title": "A Little Less Sixteen Candles, a Little More \"Touch Me\"",
+   "artist": "Fall Out Boy",
    "year": 2005
   },
   {
@@ -634,19 +689,14 @@
    "year": 2006
   },
   {
-   "title": "Smashed Into Pieces",
-   "artist": "Silverstein",
-   "year": 2003
-  },
-  {
    "title": "Me vs. Maradona vs. Elvis",
    "artist": "Brand New",
    "year": 2003
   },
   {
-   "title": "A Little Less Sixteen Candles, a Little More \"Touch Me\"",
+   "title": "The (After) Life of the Party",
    "artist": "Fall Out Boy",
-   "year": 2005
+   "year": 2007
   },
   {
    "title": "Sad!",
@@ -654,34 +704,54 @@
    "year": 2018
   },
   {
-   "title": "I'm a Loner Dottie, a Rebel",
-   "artist": "The Get Up Kids",
-   "year": 1997
+   "title": "Your Deep Rest",
+   "artist": "The Hotelier",
+   "year": 2014
   },
   {
-   "title": "Bulimic",
-   "artist": "The Used",
+   "title": "My Heroine",
+   "artist": "Silverstein",
+   "year": 2005
+  },
+  {
+   "title": "Smashed Into Pieces",
+   "artist": "Silverstein",
+   "year": 2003
+  },
+  {
+   "title": "The Middle",
+   "artist": "Jimmy Eat World",
+   "year": 2001
+  },
+  {
+   "title": "Famous Last Words",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Anthem of Our Dying Day",
+   "artist": "Story Of The Year",
+   "year": 2003
+  },
+  {
+   "title": "Spin",
+   "artist": "Taking Back Sunday",
+   "year": 2006
+  },
+  {
+   "title": "One-Eighty by Summer",
+   "artist": "Taking Back Sunday",
+   "year": 2004
+  },
+  {
+   "title": "Letters to You",
+   "artist": "Finch",
    "year": 2001
   },
   {
    "title": "Seven Years",
    "artist": "Saosin",
    "year": 2003
-  },
-  {
-   "title": "Your Deep Rest",
-   "artist": "The Hotelier",
-   "year": 2014
-  },
-  {
-   "title": "Set Phasers to Stun",
-   "artist": "Taking Back Sunday",
-   "year": 2004
-  },
-  {
-   "title": "The Middle",
-   "artist": "Jimmy Eat World",
-   "year": 2001
   },
   {
    "title": "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
@@ -694,27 +764,32 @@
    "year": 2001
   },
   {
+   "title": "I'm a Loner Dottie, a Rebel",
+   "artist": "The Get Up Kids",
+   "year": 1997
+  },
+  {
+   "title": "Number Five With a Bullet",
+   "artist": "Taking Back Sunday",
+   "year": 2004
+  },
+  {
+   "title": "Pens And Needles",
+   "artist": "Hawthorne Heights",
+   "year": 2005
+  },
+  {
+   "title": "Valentine",
+   "artist": "The Get Up Kids",
+   "year": 1999
+  },
+  {
    "title": "Wow, I Can Get Sexual Too",
    "artist": "Say Anything",
    "year": 2004
   },
   {
-   "title": "Anthem of Our Dying Day",
-   "artist": "Story Of The Year",
-   "year": 2003
-  },
-  {
-   "title": "The (After) Life of the Party",
-   "artist": "Fall Out Boy",
-   "year": 2007
-  },
-  {
-   "title": "One-Eighty by Summer",
-   "artist": "Taking Back Sunday",
-   "year": 2004
-  },
-  {
-   "title": "Number Five With a Bullet",
+   "title": "Set Phasers to Stun",
    "artist": "Taking Back Sunday",
    "year": 2004
   },
@@ -724,19 +799,9 @@
    "year": 2018
   },
   {
-   "title": "Valentine",
-   "artist": "The Get Up Kids",
-   "year": 1999
-  },
-  {
-   "title": "Famous Last Words",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Pens And Needles",
-   "artist": "Hawthorne Heights",
-   "year": 2005
+   "title": "It's Far Better To Learn",
+   "artist": "Saosin",
+   "year": 2003
   },
   {
    "title": "Bleeds No More",
@@ -744,37 +809,12 @@
    "year": 2002
   },
   {
-   "title": "Our Lawyer Made Us Change the Name of This Song So We Wouldn't Get Sued",
-   "artist": "Fall Out Boy",
-   "year": 2005
-  },
-  {
-   "title": "Bang the Doldrums",
-   "artist": "Fall Out Boy",
-   "year": 2007
-  },
-  {
-   "title": "Your Call",
-   "artist": "Secondhand Serenade",
-   "year": 2005
-  },
-  {
-   "title": "It's Far Better To Learn",
-   "artist": "Saosin",
+   "title": "Tautou",
+   "artist": "Brand New",
    "year": 2003
   },
   {
-   "title": "Until the Day I Die",
-   "artist": "Story Of The Year",
-   "year": 2003
-  },
-  {
-   "title": "Jocelyn Flores",
-   "artist": "XXXTENTACION",
-   "year": 2017
-  },
-  {
-   "title": "Coming Clean",
+   "title": "Don't Hate Me",
    "artist": "The Get Up Kids",
    "year": 1997
   },
@@ -784,9 +824,24 @@
    "year": 2004
   },
   {
-   "title": "Ten Minutes",
+   "title": "Bang the Doldrums",
+   "artist": "Fall Out Boy",
+   "year": 2007
+  },
+  {
+   "title": "Jaws Theme Swimming",
+   "artist": "Brand New",
+   "year": 2003
+  },
+  {
+   "title": "Our Lawyer Made Us Change the Name of This Song So We Wouldn't Get Sued",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "Coming Clean",
    "artist": "The Get Up Kids",
-   "year": 1998
+   "year": 1997
   },
   {
    "title": "A Decade Under the Influence",
@@ -794,24 +849,14 @@
    "year": 2004
   },
   {
-   "title": "life imitates life",
-   "artist": "quannnic",
-   "year": 2022
+   "title": "On My Own",
+   "artist": "The Used",
+   "year": 2002
   },
   {
-   "title": "Important Things (Specter Magic)",
-   "artist": "Snowing",
-   "year": 2009
-  },
-  {
-   "title": "First Day Back",
-   "artist": "Braid",
-   "year": 1998
-  },
-  {
-   "title": "Johnny on the Spot",
-   "artist": "Texas Is the Reason",
-   "year": 1996
+   "title": "Until the Day I Die",
+   "artist": "Story Of The Year",
+   "year": 2003
   },
   {
    "title": "Love On The Catwalk",
@@ -819,9 +864,14 @@
    "year": 2005
   },
   {
-   "title": "Mix Tape",
-   "artist": "Brand New",
-   "year": 2001
+   "title": "The Pros and Cons of Breathing",
+   "artist": "Fall Out Boy",
+   "year": 2003
+  },
+  {
+   "title": "Jocelyn Flores",
+   "artist": "XXXTENTACION",
+   "year": 2017
   },
   {
    "title": "Damn Regret",
@@ -829,29 +879,14 @@
    "year": 2006
   },
   {
-   "title": "The Pros and Cons of Breathing",
-   "artist": "Fall Out Boy",
-   "year": 2003
-  },
-  {
-   "title": "Juneau",
-   "artist": "Funeral For A Friend",
-   "year": 2003
-  },
-  {
-   "title": "I Constantly Thank God for Esteban",
-   "artist": "Panic! at the Disco",
+   "title": "Your Call",
+   "artist": "Secondhand Serenade",
    "year": 2005
   },
   {
-   "title": "On My Own",
-   "artist": "The Used",
-   "year": 2002
-  },
-  {
-   "title": "Jamie All Over",
-   "artist": "Mayday Parade",
-   "year": 2007
+   "title": "life imitates life",
+   "artist": "quannnic",
+   "year": 2022
   },
   {
    "title": "I'm a Fake",
@@ -859,69 +894,19 @@
    "year": 2004
   },
   {
+   "title": "Note to Self",
+   "artist": "From First to Last",
+   "year": 2004
+  },
+  {
+   "title": "Slow Down",
+   "artist": "The Academy Is...",
+   "year": 2005
+  },
+  {
    "title": "You're So Last Summer",
    "artist": "Taking Back Sunday",
    "year": 2002
-  },
-  {
-   "title": "Diamonds and Why Men Buy Them",
-   "artist": "Pierce the Veil",
-   "year": 2007
-  },
-  {
-   "title": "I'll Catch You",
-   "artist": "The Get Up Kids",
-   "year": 1999
-  },
-  {
-   "title": "I Don't Care",
-   "artist": "Fall Out Boy",
-   "year": 2008
-  },
-  {
-   "title": "Tired of Sex",
-   "artist": "Weezer",
-   "year": 1995
-  },
-  {
-   "title": "Sam Rudich",
-   "artist": "Snowing",
-   "year": 2009
-  },
-  {
-   "title": "Sweetness",
-   "artist": "Jimmy Eat World",
-   "year": 2000
-  },
-  {
-   "title": "Song About an Angel",
-   "artist": "Sunny Day Real Estate",
-   "year": 1994
-  },
-  {
-   "title": "Chemical Kids and Mechanical Brides",
-   "artist": "Pierce the Veil",
-   "year": 2007
-  },
-  {
-   "title": "Nobody Here Is Leaving Priscilla Brooke Alive",
-   "artist": "Her Words Kill",
-   "year": 2005
-  },
-  {
-   "title": "This Is Who We Are",
-   "artist": "Hawthorne Heights",
-   "year": 2006
-  },
-  {
-   "title": "Take The Picture Now",
-   "artist": "Mineral",
-   "year": 1996
-  },
-  {
-   "title": "Roses for the Dead",
-   "artist": "Funeral For A Friend",
-   "year": 2005
   },
   {
    "title": "Say Days Ago",
@@ -929,9 +914,19 @@
    "year": 2001
   },
   {
-   "title": "We Don't Have To Dance",
-   "artist": "Andy Black",
-   "year": 2016
+   "title": "Ten Minutes",
+   "artist": "The Get Up Kids",
+   "year": 1998
+  },
+  {
+   "title": "Jamie All Over",
+   "artist": "Mayday Parade",
+   "year": 2007
+  },
+  {
+   "title": "I Constantly Thank God for Esteban",
+   "artist": "Panic! at the Disco",
+   "year": 2005
   },
   {
    "title": "Let It Bleed",
@@ -939,39 +934,44 @@
    "year": 2004
   },
   {
-   "title": "I'd Hate to Be You When People Find Out What This Song Is About",
-   "artist": "Mayday Parade",
-   "year": 2007
-  },
-  {
-   "title": "47",
-   "artist": "Sunny Day Real Estate",
-   "year": 1994
-  },
-  {
-   "title": "Long Goodnight",
-   "artist": "The Get Up Kids",
-   "year": 1999
-  },
-  {
-   "title": "My Blue Heaven",
-   "artist": "Taking Back Sunday",
-   "year": 2006
-  },
-  {
-   "title": "Bury Your Head",
-   "artist": "Saosin",
+   "title": "Juneau",
+   "artist": "Funeral For A Friend",
    "year": 2003
   },
   {
-   "title": "Pump Fake",
-   "artist": "Snowing",
-   "year": 2009
+   "title": "Nobody Puts Baby in the Corner",
+   "artist": "Fall Out Boy",
+   "year": 2004
   },
   {
-   "title": "Spit Fountain",
-   "artist": "Algernon Cadwallader",
-   "year": 2009
+   "title": "I Slept With Someone in Fall Out Boy and All I Got Was This Stupid Song Written About Me",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "I Don't Care",
+   "artist": "Fall Out Boy",
+   "year": 2008
+  },
+  {
+   "title": "First Day Back",
+   "artist": "Braid",
+   "year": 1998
+  },
+  {
+   "title": "Nobody Here Is Leaving Priscilla Brooke Alive",
+   "artist": "Her Words Kill",
+   "year": 2005
+  },
+  {
+   "title": "Sweetness",
+   "artist": "Jimmy Eat World",
+   "year": 2000
+  },
+  {
+   "title": "What's It Feel Like to Be a Ghost?",
+   "artist": "Taking Back Sunday",
+   "year": 2006
   },
   {
    "title": "Greener With the Scenery",
@@ -984,24 +984,24 @@
    "year": 2005
   },
   {
-   "title": "Thnks fr th Mmrs",
-   "artist": "Fall Out Boy",
+   "title": "I'll Catch You",
+   "artist": "The Get Up Kids",
+   "year": 1999
+  },
+  {
+   "title": "Chemical Kids and Mechanical Brides",
+   "artist": "Pierce the Veil",
    "year": 2007
   },
   {
-   "title": "Your Pain Is Mine Now",
-   "artist": "Title Fight",
-   "year": 2015
+   "title": "Diamonds and Why Men Buy Them",
+   "artist": "Pierce the Veil",
+   "year": 2007
   },
   {
-   "title": "80-37",
-   "artist": "Mineral",
-   "year": 1996
-  },
-  {
-   "title": "Freakish",
-   "artist": "Saves the Day",
-   "year": 2001
+   "title": "Spit Fountain",
+   "artist": "Algernon Cadwallader",
+   "year": 2009
   }
  ]
 }

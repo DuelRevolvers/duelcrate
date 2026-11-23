@@ -1,7 +1,7 @@
 {
  "name": "Pop",
  "tag": "pop",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "The One That Got Away",
@@ -9,7 +9,17 @@
    "year": 2010
   },
   {
+   "title": "Toxic",
+   "artist": "Britney Spears",
+   "year": 2003
+  },
+  {
    "title": "no tears left to cry",
+   "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "thank u, next",
    "artist": "Ariana Grande",
    "year": 2018
   },
@@ -19,19 +29,9 @@
    "year": 2001
   },
   {
-   "title": "Locked Out of Heaven",
-   "artist": "Bruno Mars",
-   "year": 2012
-  },
-  {
-   "title": "deja vu",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
-  },
-  {
-   "title": "Toxic",
-   "artist": "Britney Spears",
-   "year": 2003
+   "title": "Thriller",
+   "artist": "Michael Jackson",
+   "year": 1982
   },
   {
    "title": "Love You Like a Love Song",
@@ -39,9 +39,29 @@
    "year": 2011
   },
   {
+   "title": "Locked Out of Heaven",
+   "artist": "Bruno Mars",
+   "year": 2012
+  },
+  {
    "title": "Paparazzi",
    "artist": "Lady Gaga",
    "year": 2008
+  },
+  {
+   "title": "deja vu",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
+   "title": "Maneater",
+   "artist": "Nelly Furtado",
+   "year": 2006
+  },
+  {
+   "title": "Judas",
+   "artist": "Lady Gaga",
+   "year": 2011
   },
   {
    "title": "Jealousy",
@@ -49,9 +69,24 @@
    "year": 2006
   },
   {
-   "title": "Judas",
-   "artist": "Lady Gaga",
-   "year": 2011
+   "title": "Beauty and a Beat",
+   "artist": "Justin Bieber",
+   "year": 2012
+  },
+  {
+   "title": "Last Friday Night (T.G.I.F.)",
+   "artist": "Katy Perry",
+   "year": 2010
+  },
+  {
+   "title": "Circus",
+   "artist": "Britney Spears",
+   "year": 2008
+  },
+  {
+   "title": "Gimme More",
+   "artist": "Britney Spears",
+   "year": 2007
   },
   {
    "title": "Pink Pony Club",
@@ -64,69 +99,9 @@
    "year": 2011
   },
   {
-   "title": "Maneater",
-   "artist": "Nelly Furtado",
-   "year": 2006
-  },
-  {
-   "title": "Beauty and a Beat",
-   "artist": "Justin Bieber",
-   "year": 2012
-  },
-  {
-   "title": "Style",
-   "artist": "Taylor Swift",
-   "year": 2014
-  },
-  {
-   "title": "Oops!...I Did It Again",
-   "artist": "Britney Spears",
-   "year": 2000
-  },
-  {
-   "title": "Last Friday Night (T.G.I.F.)",
-   "artist": "Katy Perry",
-   "year": 2010
-  },
-  {
-   "title": "Gimme More",
-   "artist": "Britney Spears",
-   "year": 2007
-  },
-  {
-   "title": "Into You",
-   "artist": "Ariana Grande",
-   "year": 2016
-  },
-  {
-   "title": "Lovefool",
-   "artist": "The Cardigans",
-   "year": 1996
-  },
-  {
-   "title": "Circus",
-   "artist": "Britney Spears",
-   "year": 2008
-  },
-  {
    "title": "...Baby One More Time",
    "artist": "Britney Spears",
    "year": 1998
-  },
-  {
-   "title": "Blank Space",
-   "artist": "Taylor Swift",
-   "year": 2014
-  },
-  {
-   "title": "Mirrors",
-   "artist": "Justin Timberlake",
-   "year": 2013
-  },
-  {
-   "title": "Bad Romance",
-   "artist": "Lady Gaga",
-   "year": 2009
   },
   {
    "title": "Womanizer",
@@ -134,19 +109,24 @@
    "year": 2008
   },
   {
-   "title": "Legendary Lovers",
-   "artist": "Katy Perry",
+   "title": "Oops!...I Did It Again",
+   "artist": "Britney Spears",
+   "year": 2000
+  },
+  {
+   "title": "Into You",
+   "artist": "Ariana Grande",
+   "year": 2016
+  },
+  {
+   "title": "Mirrors",
+   "artist": "Justin Timberlake",
    "year": 2013
   },
   {
-   "title": "Billie Jean",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "traitor",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
+   "title": "Disturbia",
+   "artist": "Rihanna",
+   "year": 2008
   },
   {
    "title": "Beat It",
@@ -154,13 +134,53 @@
    "year": 1982
   },
   {
+   "title": "E.T.",
+   "artist": "Katy Perry",
+   "year": 2010
+  },
+  {
+   "title": "Blank Space",
+   "artist": "Taylor Swift",
+   "year": 2014
+  },
+  {
+   "title": "Style",
+   "artist": "Taylor Swift",
+   "year": 2014
+  },
+  {
+   "title": "Billie Jean",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Look What You Made Me Do",
+   "artist": "Taylor Swift",
+   "year": 2017
+  },
+  {
+   "title": "Bad Romance",
+   "artist": "Lady Gaga",
+   "year": 2009
+  },
+  {
+   "title": "Lovefool",
+   "artist": "The Cardigans",
+   "year": 1996
+  },
+  {
+   "title": "Rock Your Body",
+   "artist": "Justin Timberlake",
+   "year": 2002
+  },
+  {
    "title": "Hot n Cold",
    "artist": "Katy Perry",
    "year": 2008
   },
   {
-   "title": "One Last Time",
-   "artist": "Ariana Grande",
+   "title": "Dark Horse",
+   "artist": "Katy Perry",
    "year": 2014
   },
   {
@@ -169,14 +189,29 @@
    "year": 2008
   },
   {
-   "title": "Kiss Me",
-   "artist": "Sixpence None the Richer",
-   "year": 1997
+   "title": "One Last Time",
+   "artist": "Ariana Grande",
+   "year": 2014
   },
   {
-   "title": "hate that i made you love me",
-   "artist": "Ariana Grande",
-   "year": 2026
+   "title": "Legendary Lovers",
+   "artist": "Katy Perry",
+   "year": 2013
+  },
+  {
+   "title": "traitor",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
+   "title": "Pocketful of Sunshine",
+   "artist": "Natasha Bedingfield",
+   "year": 2008
+  },
+  {
+   "title": "Stitches",
+   "artist": "Shawn Mendes",
+   "year": 2015
   },
   {
    "title": "Teenage Dream",
@@ -184,22 +219,52 @@
    "year": 2010
   },
   {
-   "title": "Look What You Made Me Do",
-   "artist": "Taylor Swift",
-   "year": 2017
+   "title": "Promiscuous",
+   "artist": "Nelly Furtado",
+   "year": 2006
   },
   {
-   "title": "E.T.",
-   "artist": "Katy Perry",
+   "title": "hate that i made you love me",
+   "artist": "Ariana Grande",
+   "year": 2026
+  },
+  {
+   "title": "Criminal",
+   "artist": "Britney Spears",
+   "year": 2011
+  },
+  {
+   "title": "Kiss Me",
+   "artist": "Sixpence None the Richer",
+   "year": 1997
+  },
+  {
+   "title": "S&M",
+   "artist": "Rihanna",
    "year": 2010
   },
   {
-   "title": "Everything Is Embarrassing",
-   "artist": "Sky Ferreira",
+   "title": "Blow",
+   "artist": "Ke$ha",
+   "year": 2010
+  },
+  {
+   "title": "Since U Been Gone",
+   "artist": "Kelly Clarkson",
+   "year": 2003
+  },
+  {
+   "title": "Just Dance",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "One More Night",
+   "artist": "Maroon 5",
    "year": 2012
   },
   {
-   "title": "Promiscuous",
+   "title": "Say It Right",
    "artist": "Nelly Furtado",
    "year": 2006
   },
@@ -209,9 +274,9 @@
    "year": 2021
   },
   {
-   "title": "Since U Been Gone",
-   "artist": "Kelly Clarkson",
-   "year": 2003
+   "title": "Only Girl (In the World)",
+   "artist": "Rihanna",
+   "year": 2009
   },
   {
    "title": "Genie in a Bottle",
@@ -219,24 +284,9 @@
    "year": 1999
   },
   {
-   "title": "One More Night",
-   "artist": "Maroon 5",
-   "year": 2012
-  },
-  {
-   "title": "The Winner Takes It All",
-   "artist": "ABBA",
-   "year": 1980
-  },
-  {
-   "title": "S&M",
-   "artist": "Rihanna",
-   "year": 2010
-  },
-  {
-   "title": "Attention",
-   "artist": "Charlie Puth",
-   "year": 2017
+   "title": "Wildest Dreams",
+   "artist": "Taylor Swift",
+   "year": 2014
   },
   {
    "title": "Side to Side",
@@ -244,58 +294,23 @@
    "year": 2017
   },
   {
-   "title": "Thinking of You",
-   "artist": "Katy Perry",
-   "year": 2008
-  },
-  {
-   "title": "Thriller",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "happier",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
-  },
-  {
-   "title": "Only Girl (In the World)",
-   "artist": "Rihanna",
-   "year": 2009
-  },
-  {
-   "title": "Just Dance",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Colors",
-   "artist": "Halsey",
-   "year": 2015
-  },
-  {
-   "title": "Say It Right",
-   "artist": "Nelly Furtado",
-   "year": 2006
-  },
-  {
    "title": "Grenade",
    "artist": "Bruno Mars",
    "year": 2010
   },
   {
-   "title": "Wildest Dreams",
-   "artist": "Taylor Swift",
-   "year": 2014
+   "title": "The Winner Takes It All",
+   "artist": "ABBA",
+   "year": 1980
   },
   {
-   "title": "Remember the Time",
-   "artist": "Michael Jackson",
-   "year": 1991
+   "title": "Thinking of You",
+   "artist": "Katy Perry",
+   "year": 2008
   },
   {
-   "title": "Disturbia",
-   "artist": "Rihanna",
+   "title": "I Kissed a Girl",
+   "artist": "Katy Perry",
    "year": 2008
   },
   {
@@ -304,29 +319,34 @@
    "year": 2010
   },
   {
-   "title": "Casual",
-   "artist": "Chappell Roan",
-   "year": 2022
-  },
-  {
-   "title": "I Kissed a Girl",
-   "artist": "Katy Perry",
-   "year": 2008
-  },
-  {
-   "title": "Never Be the Same",
-   "artist": "Camila Cabello",
-   "year": 2017
-  },
-  {
-   "title": "PILLOWTALK",
-   "artist": "ZAYN",
+   "title": "Dangerous Woman",
+   "artist": "Ariana Grande",
    "year": 2016
   },
   {
-   "title": "What Makes You Beautiful",
-   "artist": "One Direction",
+   "title": "Remember the Time",
+   "artist": "Michael Jackson",
+   "year": 1991
+  },
+  {
+   "title": "Bloody Mary",
+   "artist": "Lady Gaga",
    "year": 2011
+  },
+  {
+   "title": "happier",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
+   "title": "Everything Is Embarrassing",
+   "artist": "Sky Ferreira",
+   "year": 2012
+  },
+  {
+   "title": "Attention",
+   "artist": "Charlie Puth",
+   "year": 2017
   },
   {
    "title": "The Sweet Escape",
@@ -334,64 +354,14 @@
    "year": 2006
   },
   {
-   "title": "Blow",
-   "artist": "Ke$ha",
-   "year": 2010
-  },
-  {
-   "title": "Luxurious",
-   "artist": "Gwen Stefani",
-   "year": 2004
-  },
-  {
    "title": "Payphone",
    "artist": "Maroon 5",
    "year": 2012
   },
   {
-   "title": "Human Nature",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "Unwritten",
-   "artist": "Natasha Bedingfield",
-   "year": 2004
-  },
-  {
-   "title": "Smile",
-   "artist": "Lily Allen",
-   "year": 1995
-  },
-  {
-   "title": "Heartbeat",
-   "artist": "Childish Gambino",
-   "year": 2011
-  },
-  {
-   "title": "Hold On, We're Going Home",
-   "artist": "Drake",
-   "year": 2013
-  },
-  {
-   "title": "Talking Body",
-   "artist": "Tove Lo",
-   "year": 2014
-  },
-  {
-   "title": "Firework",
-   "artist": "Katy Perry",
-   "year": 2010
-  },
-  {
-   "title": "Break Free",
-   "artist": "Ariana Grande",
-   "year": 2017
-  },
-  {
-   "title": "There's Nothing Holdin' Me Back",
-   "artist": "Shawn Mendes",
-   "year": 2016
+   "title": "Can't Get You Out of My Head",
+   "artist": "Kylie Minogue",
+   "year": 2001
   },
   {
    "title": "If U Seek Amy",
@@ -399,39 +369,14 @@
    "year": 2008
   },
   {
-   "title": "Bad Blood",
-   "artist": "Taylor Swift",
-   "year": 2014
+   "title": "What Makes You Beautiful",
+   "artist": "One Direction",
+   "year": 2011
   },
   {
-   "title": "Umbrella",
-   "artist": "Rihanna",
-   "year": 2007
-  },
-  {
-   "title": "Guilty as Sin?",
-   "artist": "Taylor Swift",
-   "year": 2024
-  },
-  {
-   "title": "This Love",
-   "artist": "Maroon 5",
-   "year": 2002
-  },
-  {
-   "title": "Say So",
-   "artist": "Doja Cat",
-   "year": 2019
-  },
-  {
-   "title": "I'm a Slave 4 U",
-   "artist": "Britney Spears",
-   "year": 2001
-  },
-  {
-   "title": "You Rock My World",
-   "artist": "Michael Jackson",
-   "year": 2001
+   "title": "Party in the U.S.A.",
+   "artist": "Miley Cyrus",
+   "year": 2009
   },
   {
    "title": "Sports car",
@@ -439,94 +384,34 @@
    "year": 2025
   },
   {
-   "title": "jealousy, jealousy",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
-  },
-  {
-   "title": "What You Waiting For?",
-   "artist": "Gwen Stefani",
-   "year": 2004
-  },
-  {
-   "title": "As It Was",
-   "artist": "Harry Styles",
-   "year": 2022
-  },
-  {
-   "title": "Don't Stop 'Til You Get Enough",
-   "artist": "Michael Jackson",
-   "year": 1979
-  },
-  {
-   "title": "When I Was Your Man",
-   "artist": "Bruno Mars",
-   "year": 2012
-  },
-  {
-   "title": "LoveGame",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Meet Me Halfway",
-   "artist": "Black Eyed Peas",
-   "year": 2009
-  },
-  {
-   "title": "Still Into You",
-   "artist": "Paramore",
-   "year": 2013
-  },
-  {
-   "title": "Shut Up and Drive",
-   "artist": "Rihanna",
-   "year": 2007
-  },
-  {
-   "title": "Midnight Rain",
-   "artist": "Taylor Swift",
-   "year": 2022
-  },
-  {
-   "title": "Wide Awake",
-   "artist": "Katy Perry",
-   "year": 2012
-  },
-  {
-   "title": "Maps",
-   "artist": "Maroon 5",
-   "year": 2014
-  },
-  {
-   "title": "God is a woman",
-   "artist": "Ariana Grande",
-   "year": 2018
-  },
-  {
    "title": "Sweet but Psycho",
    "artist": "Ava Max",
    "year": 2018
   },
   {
-   "title": "P.Y.T. (Pretty Young Thing)",
-   "artist": "Michael Jackson",
-   "year": 1982
+   "title": "Firework",
+   "artist": "Katy Perry",
+   "year": 2010
   },
   {
-   "title": "Cake by the Ocean",
-   "artist": "DNCE",
+   "title": "Never Be the Same",
+   "artist": "Camila Cabello",
+   "year": 2017
+  },
+  {
+   "title": "Colors",
+   "artist": "Halsey",
    "year": 2015
   },
   {
-   "title": "Alejandro",
-   "artist": "Lady Gaga",
-   "year": 2009
+   "title": "Hold On, We're Going Home",
+   "artist": "Drake",
+   "year": 2013
   },
   {
-   "title": "Taste",
-   "artist": "Sabrina Carpenter",
-   "year": 2024
+   "title": "Unwritten",
+   "artist": "Natasha Bedingfield",
+   "year": 2004
   },
   {
    "title": "Abracadabra",
@@ -534,44 +419,104 @@
    "year": 2025
   },
   {
-   "title": "Starboy",
-   "artist": "The Weeknd",
-   "year": 2023
+   "title": "Break Free",
+   "artist": "Ariana Grande",
+   "year": 2017
   },
   {
-   "title": "Rocketeer",
-   "artist": "Far East Movement",
-   "year": 2011
-  },
-  {
-   "title": "Marry You",
-   "artist": "Bruno Mars",
-   "year": 2010
-  },
-  {
-   "title": "Video Games",
-   "artist": "Lana Del Rey",
-   "year": 2011
-  },
-  {
-   "title": "Am I Wrong",
-   "artist": "Nico & Vinz",
-   "year": 2013
-  },
-  {
-   "title": "They Don't Care About Us",
+   "title": "Human Nature",
    "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Smile",
+   "artist": "Lily Allen",
    "year": 1995
   },
   {
-   "title": "Heart Attack",
-   "artist": "Demi Lovato",
-   "year": 2013
+   "title": "Bad Blood",
+   "artist": "Taylor Swift",
+   "year": 2014
   },
   {
-   "title": "7 rings",
-   "artist": "Ariana Grande",
-   "year": 2019
+   "title": "Shut Up and Drive",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Casual",
+   "artist": "Chappell Roan",
+   "year": 2022
+  },
+  {
+   "title": "Don't Stop the Music",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Luxurious",
+   "artist": "Gwen Stefani",
+   "year": 2004
+  },
+  {
+   "title": "PILLOWTALK",
+   "artist": "ZAYN",
+   "year": 2016
+  },
+  {
+   "title": "This Love",
+   "artist": "Maroon 5",
+   "year": 2002
+  },
+  {
+   "title": "LoveGame",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "Heartbeat",
+   "artist": "Childish Gambino",
+   "year": 2011
+  },
+  {
+   "title": "Umbrella",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "What You Waiting For?",
+   "artist": "Gwen Stefani",
+   "year": 2004
+  },
+  {
+   "title": "I'm a Slave 4 U",
+   "artist": "Britney Spears",
+   "year": 2001
+  },
+  {
+   "title": "Part of Me",
+   "artist": "Katy Perry",
+   "year": 2012
+  },
+  {
+   "title": "You Rock My World",
+   "artist": "Michael Jackson",
+   "year": 2001
+  },
+  {
+   "title": "Meet Me Halfway",
+   "artist": "Black Eyed Peas",
+   "year": 2009
+  },
+  {
+   "title": "Alejandro",
+   "artist": "Lady Gaga",
+   "year": 2009
+  },
+  {
+   "title": "Die Young",
+   "artist": "Ke$ha",
+   "year": 2012
   },
   {
    "title": "Tik Tok",
@@ -579,9 +524,169 @@
    "year": 2009
   },
   {
+   "title": "When I Was Your Man",
+   "artist": "Bruno Mars",
+   "year": 2012
+  },
+  {
+   "title": "Guilty as Sin?",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Don't Stop 'Til You Get Enough",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Say So",
+   "artist": "Doja Cat",
+   "year": 2019
+  },
+  {
+   "title": "There's Nothing Holdin' Me Back",
+   "artist": "Shawn Mendes",
+   "year": 2016
+  },
+  {
+   "title": "P.Y.T. (Pretty Young Thing)",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Maps",
+   "artist": "Maroon 5",
+   "year": 2014
+  },
+  {
+   "title": "Wide Awake",
+   "artist": "Katy Perry",
+   "year": 2012
+  },
+  {
+   "title": "As It Was",
+   "artist": "Harry Styles",
+   "year": 2022
+  },
+  {
+   "title": "Summerboy",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "jealousy, jealousy",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
+   "title": "Talking Body",
+   "artist": "Tove Lo",
+   "year": 2014
+  },
+  {
+   "title": "Marry You",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Cake by the Ocean",
+   "artist": "DNCE",
+   "year": 2015
+  },
+  {
+   "title": "Hung Up",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "God is a woman",
+   "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "Monster",
+   "artist": "Lady Gaga",
+   "year": 2009
+  },
+  {
+   "title": "Heart Attack",
+   "artist": "Demi Lovato",
+   "year": 2013
+  },
+  {
+   "title": "C U Next Tuesday",
+   "artist": "Ke$ha",
+   "year": 2010
+  },
+  {
+   "title": "Still Into You",
+   "artist": "Paramore",
+   "year": 2013
+  },
+  {
+   "title": "Lush Life",
+   "artist": "Zara Larsson",
+   "year": 2015
+  },
+  {
+   "title": "Delicate",
+   "artist": "Taylor Swift",
+   "year": 2017
+  },
+  {
+   "title": "Starboy",
+   "artist": "The Weeknd",
+   "year": 2023
+  },
+  {
+   "title": "Hollaback Girl",
+   "artist": "Gwen Stefani",
+   "year": 2004
+  },
+  {
+   "title": "7 rings",
+   "artist": "Ariana Grande",
+   "year": 2019
+  },
+  {
    "title": "Diamonds",
    "artist": "Rihanna",
    "year": 2012
+  },
+  {
+   "title": "Baby",
+   "artist": "Justin Bieber",
+   "year": 2010
+  },
+  {
+   "title": "Backstabber",
+   "artist": "Ke$ha",
+   "year": 2010
+  },
+  {
+   "title": "The Man Who Can't Be Moved",
+   "artist": "The Script",
+   "year": 2008
+  },
+  {
+   "title": "Rocketeer",
+   "artist": "Far East Movement",
+   "year": 2011
+  },
+  {
+   "title": "we can't be friends (wait for your love)",
+   "artist": "Ariana Grande",
+   "year": 2024
+  },
+  {
+   "title": "Taste",
+   "artist": "Sabrina Carpenter",
+   "year": 2024
+  },
+  {
+   "title": "SOS",
+   "artist": "Rihanna",
+   "year": 2006
   },
   {
    "title": "Habits (Stay High)",
@@ -594,69 +699,9 @@
    "year": 2017
   },
   {
-   "title": "Summerboy",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Heaven Can Wait",
-   "artist": "Michael Jackson",
-   "year": 2001
-  },
-  {
-   "title": "Die Young",
+   "title": "Your Love Is My Drug",
    "artist": "Ke$ha",
-   "year": 2012
-  },
-  {
-   "title": "Hung Up",
-   "artist": "Madonna",
-   "year": 2005
-  },
-  {
-   "title": "Summertime Sadness",
-   "artist": "Lana Del Rey",
-   "year": 2012
-  },
-  {
-   "title": "Hollaback Girl",
-   "artist": "Gwen Stefani",
-   "year": 2004
-  },
-  {
-   "title": "SOS",
-   "artist": "Rihanna",
-   "year": 2006
-  },
-  {
-   "title": "Lights",
-   "artist": "Ellie Goulding",
-   "year": 2010
-  },
-  {
-   "title": "Without Me",
-   "artist": "Halsey",
-   "year": 2018
-  },
-  {
-   "title": "C U Next Tuesday",
-   "artist": "Ke$ha",
-   "year": 2010
-  },
-  {
-   "title": "Bye Bye Bye",
-   "artist": "*NSYNC",
-   "year": 2000
-  },
-  {
-   "title": "Rude",
-   "artist": "MAGIC!",
-   "year": 2013
-  },
-  {
-   "title": "Human Nature",
-   "artist": "Madonna",
-   "year": 1994
+   "year": 2009
   },
   {
    "title": "We Can't Stop",
@@ -664,44 +709,44 @@
    "year": 2013
   },
   {
-   "title": "drop dead",
-   "artist": "Olivia Rodrigo",
-   "year": 2026
-  },
-  {
-   "title": "Shape of You",
-   "artist": "Ed Sheeran",
-   "year": 2017
-  },
-  {
    "title": "Like a Prayer",
    "artist": "Madonna",
    "year": 1989
   },
   {
-   "title": "West Coast",
+   "title": "Video Games",
    "artist": "Lana Del Rey",
-   "year": 2014
+   "year": 2011
   },
   {
-   "title": "The Girl Is Mine (with Paul McCartney)",
+   "title": "Human Nature",
+   "artist": "Madonna",
+   "year": 1994
+  },
+  {
+   "title": "Summertime Sadness",
+   "artist": "Lana Del Rey",
+   "year": 2012
+  },
+  {
+   "title": "Lights",
+   "artist": "Ellie Goulding",
+   "year": 2010
+  },
+  {
+   "title": "Heaven Can Wait",
    "artist": "Michael Jackson",
-   "year": 2022
-  },
-  {
-   "title": "Complicated",
-   "artist": "Avril Lavigne",
    "year": 2001
   },
   {
-   "title": "Night Changes",
-   "artist": "One Direction",
-   "year": 2014
+   "title": "They Don't Care About Us",
+   "artist": "Michael Jackson",
+   "year": 1995
   },
   {
-   "title": "I Want It That Way",
-   "artist": "Backstreet Boys",
-   "year": 1999
+   "title": "Kiss It Better",
+   "artist": "Rihanna",
+   "year": 2016
   },
   {
    "title": "Applause",
@@ -709,19 +754,39 @@
    "year": 2013
   },
   {
-   "title": "Harleys in Hawaii",
-   "artist": "Katy Perry",
+   "title": "I Want It That Way",
+   "artist": "Backstreet Boys",
+   "year": 1999
+  },
+  {
+   "title": "break up with your girlfriend, i'm bored",
+   "artist": "Ariana Grande",
    "year": 2019
   },
   {
-   "title": "Adventure of a Lifetime",
-   "artist": "Coldplay",
-   "year": 2015
+   "title": "Bye Bye Bye",
+   "artist": "*NSYNC",
+   "year": 2000
   },
   {
-   "title": "Boyfriend",
-   "artist": "Justin Bieber",
-   "year": 2012
+   "title": "The Girl Is Mine (with Paul McCartney)",
+   "artist": "Michael Jackson",
+   "year": 2022
+  },
+  {
+   "title": "Am I Wrong",
+   "artist": "Nico & Vinz",
+   "year": 2013
+  },
+  {
+   "title": "Complicated",
+   "artist": "Avril Lavigne",
+   "year": 2001
+  },
+  {
+   "title": "Rude",
+   "artist": "MAGIC!",
+   "year": 2013
   },
   {
    "title": "Roar",
@@ -729,44 +794,19 @@
    "year": 2013
   },
   {
-   "title": "Lay All Your Love on Me",
-   "artist": "ABBA",
-   "year": 1980
-  },
-  {
-   "title": "Lavender Haze",
-   "artist": "Taylor Swift",
-   "year": 2022
-  },
-  {
-   "title": "Sorry",
-   "artist": "Justin Bieber",
-   "year": 2015
-  },
-  {
-   "title": "New Rules",
-   "artist": "Dua Lipa",
-   "year": 2017
-  },
-  {
-   "title": "Where Have You Been",
+   "title": "Breakin' Dishes",
    "artist": "Rihanna",
-   "year": 2011
+   "year": 2007
   },
   {
-   "title": "Problem",
-   "artist": "Ariana Grande",
-   "year": 2014
+   "title": "Without Me",
+   "artist": "Halsey",
+   "year": 2018
   },
   {
-   "title": "Your Love Is My Drug",
-   "artist": "Ke$ha",
-   "year": 2009
-  },
-  {
-   "title": "You're on Your Own, Kid",
-   "artist": "Taylor Swift",
-   "year": 2022
+   "title": "Diet Pepsi",
+   "artist": "Addison Rae",
+   "year": 2024
   },
   {
    "title": "Bubble Pop Electric",
@@ -774,34 +814,49 @@
    "year": 2006
   },
   {
-   "title": "Dancing Queen",
-   "artist": "ABBA",
-   "year": 1976
+   "title": "West Coast",
+   "artist": "Lana Del Rey",
+   "year": 2014
   },
   {
-   "title": "What Do You Mean?",
+   "title": "New Rules",
+   "artist": "Dua Lipa",
+   "year": 2017
+  },
+  {
+   "title": "drop dead",
+   "artist": "Olivia Rodrigo",
+   "year": 2026
+  },
+  {
+   "title": "Adventure of a Lifetime",
+   "artist": "Coldplay",
+   "year": 2015
+  },
+  {
+   "title": "Harleys in Hawaii",
+   "artist": "Katy Perry",
+   "year": 2019
+  },
+  {
+   "title": "Where Have You Been",
+   "artist": "Rihanna",
+   "year": 2011
+  },
+  {
+   "title": "Sorry",
    "artist": "Justin Bieber",
    "year": 2015
   },
   {
-   "title": "Monster",
-   "artist": "Lady Gaga",
-   "year": 2009
+   "title": "Midnight Rain",
+   "artist": "Taylor Swift",
+   "year": 2022
   },
   {
-   "title": "Love Me Again",
-   "artist": "John Newman",
-   "year": 2013
-  },
-  {
-   "title": "Bloody Mary",
-   "artist": "Lady Gaga",
-   "year": 2011
-  },
-  {
-   "title": "drivers license",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
+   "title": "Shape of You",
+   "artist": "Ed Sheeran",
+   "year": 2017
   },
   {
    "title": "Girlfriend",
@@ -814,8 +869,83 @@
    "year": 2008
   },
   {
+   "title": "Boyfriend",
+   "artist": "Justin Bieber",
+   "year": 2012
+  },
+  {
+   "title": "Glad You Came",
+   "artist": "The Wanted",
+   "year": 2011
+  },
+  {
+   "title": "Lay All Your Love on Me",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Lucky",
+   "artist": "Britney Spears",
+   "year": 2000
+  },
+  {
+   "title": "Troublemaker",
+   "artist": "Olly Murs",
+   "year": 2012
+  },
+  {
+   "title": "Problem",
+   "artist": "Ariana Grande",
+   "year": 2014
+  },
+  {
+   "title": "Night Changes",
+   "artist": "One Direction",
+   "year": 2014
+  },
+  {
+   "title": "Dancing Queen",
+   "artist": "ABBA",
+   "year": 1976
+  },
+  {
+   "title": "What Do You Mean?",
+   "artist": "Justin Bieber",
+   "year": 2015
+  },
+  {
+   "title": "I Wanna Go",
+   "artist": "Britney Spears",
+   "year": 2011
+  },
+  {
+   "title": "Treat You Better",
+   "artist": "Shawn Mendes",
+   "year": 2016
+  },
+  {
+   "title": "Love Me Again",
+   "artist": "John Newman",
+   "year": 2013
+  },
+  {
+   "title": "I'm Still Standing",
+   "artist": "Elton John",
+   "year": 1983
+  },
+  {
+   "title": "drivers license",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
    "title": "Please Please Please",
    "artist": "Sabrina Carpenter",
+   "year": 2024
+  },
+  {
+   "title": "Down Bad",
+   "artist": "Taylor Swift",
    "year": 2024
   },
   {
@@ -824,69 +954,9 @@
    "year": 2012
   },
   {
-   "title": "Chandelier",
-   "artist": "Sia",
-   "year": 2014
-  },
-  {
-   "title": "Lucky",
-   "artist": "Britney Spears",
-   "year": 2000
-  },
-  {
-   "title": "Rich Girl",
-   "artist": "Gwen Stefani",
-   "year": 2005
-  },
-  {
-   "title": "Troublemaker",
-   "artist": "Olly Murs",
-   "year": 2012
-  },
-  {
-   "title": "I'm Still Standing",
-   "artist": "Elton John",
-   "year": 1983
-  },
-  {
-   "title": "Cry Me a River",
-   "artist": "Justin Timberlake",
-   "year": 2002
-  },
-  {
-   "title": "Team",
-   "artist": "Lorde",
-   "year": 2013
-  },
-  {
-   "title": "Gorgeous",
-   "artist": "Taylor Swift",
-   "year": 2017
-  },
-  {
-   "title": "My Boy Only Breaks His Favorite Toys",
-   "artist": "Taylor Swift",
-   "year": 2024
-  },
-  {
-   "title": "Glad You Came",
-   "artist": "The Wanted",
-   "year": 2011
-  },
-  {
-   "title": "I Wanna Go",
-   "artist": "Britney Spears",
-   "year": 2011
-  },
-  {
    "title": "It Will Rain",
    "artist": "Bruno Mars",
    "year": 2011
-  },
-  {
-   "title": "Shameless",
-   "artist": "Camila Cabello",
-   "year": 2019
   },
   {
    "title": "Runaway Baby",
@@ -894,24 +964,19 @@
    "year": 2010
   },
   {
-   "title": "Disease",
-   "artist": "Lady Gaga",
-   "year": 2024
+   "title": "Gorgeous",
+   "artist": "Taylor Swift",
+   "year": 2017
   },
   {
-   "title": "Manchild",
-   "artist": "Sabrina Carpenter",
-   "year": 2025
-  },
-  {
-   "title": "Buttons",
-   "artist": "The Pussycat Dolls",
+   "title": "Rich Girl",
+   "artist": "Gwen Stefani",
    "year": 2005
   },
   {
-   "title": "Don't Dream It's Over",
-   "artist": "Crowded House",
-   "year": 1986
+   "title": "Classic",
+   "artist": "MKTO",
+   "year": 2013
   },
   {
    "title": "Stay",
@@ -919,89 +984,24 @@
    "year": 2013
   },
   {
-   "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
-   "artist": "ABBA",
-   "year": 1979
+   "title": "Scream & Shout",
+   "artist": "will.i.am",
+   "year": 2012
   },
   {
-   "title": "Kill Bill",
-   "artist": "SZA",
-   "year": 2022
+   "title": "Purple Rain",
+   "artist": "Prince",
+   "year": 1990
   },
   {
-   "title": "Talking to the Moon",
-   "artist": "Bruno Mars",
-   "year": 2010
-  },
-  {
-   "title": "The Sign",
-   "artist": "Ace of Base",
-   "year": 1993
-  },
-  {
-   "title": "Fresh Out the Slammer",
-   "artist": "Taylor Swift",
-   "year": 2024
-  },
-  {
-   "title": "Story of My Life",
-   "artist": "One Direction",
+   "title": "Team",
+   "artist": "Lorde",
    "year": 2013
   },
   {
-   "title": "Born to Die",
-   "artist": "Lana Del Rey",
-   "year": 2011
-  },
-  {
-   "title": "What Goes Around.../...Comes Around (Interlude)",
-   "artist": "Justin Timberlake",
-   "year": 2006
-  },
-  {
-   "title": "Save Your Tears",
-   "artist": "The Weeknd",
-   "year": 2019
-  },
-  {
-   "title": "A Thousand Miles",
-   "artist": "Vanessa Carlton",
-   "year": 2000
-  },
-  {
-   "title": "Born This Way",
-   "artist": "Lady Gaga",
-   "year": 2011
-  },
-  {
-   "title": "...Ready for It?",
-   "artist": "Taylor Swift",
-   "year": 2017
-  },
-  {
-   "title": "We R Who We R",
-   "artist": "Ke$ha",
-   "year": 2010
-  },
-  {
-   "title": "National Anthem",
-   "artist": "Lana Del Rey",
-   "year": 2012
-  },
-  {
-   "title": "Glamorous",
-   "artist": "Fergie",
-   "year": 2007
-  },
-  {
-   "title": "Starships",
-   "artist": "Nicki Minaj",
-   "year": 2012
-  },
-  {
-   "title": "hope ur ok",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
+   "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+   "artist": "ABBA",
+   "year": 1979
   }
  ]
 }

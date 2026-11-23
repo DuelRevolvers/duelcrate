@@ -1,8 +1,18 @@
 {
  "name": "80s",
  "tag": "80s",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "Eyes Without a Face",
+   "artist": "Billy Idol",
+   "year": 1983
+  },
+  {
+   "title": "Everybody Wants to Rule the World",
+   "artist": "Tears for Fears",
+   "year": 1985
+  },
   {
    "title": "Don't Dream It's Over",
    "artist": "Crowded House",
@@ -14,9 +24,34 @@
    "year": 1990
   },
   {
+   "title": "Take on Me",
+   "artist": "a-ha",
+   "year": 1984
+  },
+  {
    "title": "Every Breath You Take",
    "artist": "The Police",
    "year": 1983
+  },
+  {
+   "title": "Wicked Game",
+   "artist": "Chris Isaak",
+   "year": 1989
+  },
+  {
+   "title": "Thriller",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Head Over Heels",
+   "artist": "Tears for Fears",
+   "year": 1985
+  },
+  {
+   "title": "(I Just) Died in Your Arms",
+   "artist": "Cutting Crew",
+   "year": 1986
   },
   {
    "title": "Your Love",
@@ -24,18 +59,23 @@
    "year": 1985
   },
   {
+   "title": "Just Like Heaven",
+   "artist": "The Cure",
+   "year": 1987
+  },
+  {
+   "title": "Smalltown Boy",
+   "artist": "Bronski Beat",
+   "year": 1984
+  },
+  {
    "title": "Billie Jean",
    "artist": "Michael Jackson",
    "year": 1982
   },
   {
-   "title": "Africa",
-   "artist": "Toto",
-   "year": 1982
-  },
-  {
-   "title": "Enjoy the Silence",
-   "artist": "Depeche Mode",
+   "title": "Running Up That Hill (A Deal with God)",
+   "artist": "Kate Bush",
    "year": 1985
   },
   {
@@ -44,9 +84,49 @@
    "year": 1982
   },
   {
+   "title": "Enjoy the Silence",
+   "artist": "Depeche Mode",
+   "year": 1985
+  },
+  {
+   "title": "Africa",
+   "artist": "Toto",
+   "year": 1982
+  },
+  {
+   "title": "Everything She Wants",
+   "artist": "Wham!",
+   "year": 1984
+  },
+  {
+   "title": "Boys Don't Cry",
+   "artist": "The Cure",
+   "year": 1979
+  },
+  {
+   "title": "Golden Brown",
+   "artist": "The Stranglers",
+   "year": 1981
+  },
+  {
+   "title": "Call Me",
+   "artist": "Blondie",
+   "year": 1980
+  },
+  {
+   "title": "The Promise",
+   "artist": "When In Rome",
+   "year": 1988
+  },
+  {
    "title": "Friday I'm in Love",
    "artist": "The Cure",
    "year": 1992
+  },
+  {
+   "title": "Maneater",
+   "artist": "Daryl Hall & John Oates",
+   "year": 1982
   },
   {
    "title": "I'm Still Standing",
@@ -54,9 +134,29 @@
    "year": 1983
   },
   {
-   "title": "Thriller",
-   "artist": "Michael Jackson",
-   "year": 1982
+   "title": "Careless Whisper",
+   "artist": "George Michael",
+   "year": 1984
+  },
+  {
+   "title": "Forever Young",
+   "artist": "Alphaville",
+   "year": 1984
+  },
+  {
+   "title": "Psycho Killer",
+   "artist": "Talking Heads",
+   "year": 1976
+  },
+  {
+   "title": "You Spin Me Round (Like a Record)",
+   "artist": "Dead or Alive",
+   "year": 1984
+  },
+  {
+   "title": "Ghostbusters",
+   "artist": "Ray Parker Jr.",
+   "year": 1984
   },
   {
    "title": "Like a Prayer",
@@ -64,9 +164,24 @@
    "year": 1989
   },
   {
-   "title": "The Winner Takes It All",
-   "artist": "ABBA",
-   "year": 1980
+   "title": "Shout",
+   "artist": "Tears for Fears",
+   "year": 1984
+  },
+  {
+   "title": "Uptown Girl",
+   "artist": "Billy Joel",
+   "year": 1983
+  },
+  {
+   "title": "Time After Time",
+   "artist": "Cyndi Lauper",
+   "year": 1983
+  },
+  {
+   "title": "Girls Just Want to Have Fun",
+   "artist": "Cyndi Lauper",
+   "year": 1983
   },
   {
    "title": "Human Nature",
@@ -74,9 +189,34 @@
    "year": 1982
   },
   {
+   "title": "Don't You (Forget About Me)",
+   "artist": "Simple Minds",
+   "year": 1985
+  },
+  {
+   "title": "The Winner Takes It All",
+   "artist": "ABBA",
+   "year": 1980
+  },
+  {
+   "title": "Blue Monday",
+   "artist": "New Order",
+   "year": 1983
+  },
+  {
+   "title": "I Ran (So Far Away)",
+   "artist": "A Flock of Seagulls",
+   "year": 1982
+  },
+  {
    "title": "Livin' on a Prayer",
    "artist": "Bon Jovi",
    "year": 1986
+  },
+  {
+   "title": "Message in a Bottle",
+   "artist": "The Police",
+   "year": 1979
   },
   {
    "title": "Rebel Yell",
@@ -89,9 +229,39 @@
    "year": 1982
   },
   {
-   "title": "Message in a Bottle",
-   "artist": "The Police",
+   "title": "Love My Way",
+   "artist": "The Psychedelic Furs",
+   "year": 1982
+  },
+  {
+   "title": "Mad World",
+   "artist": "Tears for Fears",
+   "year": 1982
+  },
+  {
+   "title": "Video Killed the Radio Star",
+   "artist": "The Buggles",
    "year": 1979
+  },
+  {
+   "title": "Lullaby",
+   "artist": "The Cure",
+   "year": 1989
+  },
+  {
+   "title": "One Way or Another",
+   "artist": "Blondie",
+   "year": 1978
+  },
+  {
+   "title": "Self Control",
+   "artist": "Laura Branigan",
+   "year": 1984
+  },
+  {
+   "title": "Nothing's Gonna Stop Us Now",
+   "artist": "Starship",
+   "year": 1987
   },
   {
    "title": "Heart of Glass",
@@ -99,9 +269,44 @@
    "year": 1978
   },
   {
+   "title": "Material Girl",
+   "artist": "Madonna",
+   "year": 1984
+  },
+  {
+   "title": "Wake Me Up Before You Go-Go",
+   "artist": "Wham!",
+   "year": 1984
+  },
+  {
    "title": "Heaven",
    "artist": "Bryan Adams",
    "year": 1984
+  },
+  {
+   "title": "Maniac",
+   "artist": "Michael Sembello",
+   "year": 1983
+  },
+  {
+   "title": "La Isla Bonita",
+   "artist": "Madonna",
+   "year": 1986
+  },
+  {
+   "title": "Caribbean Queen (No More Love on the Run)",
+   "artist": "Billy Ocean",
+   "year": 1984
+  },
+  {
+   "title": "Eye of the Tiger",
+   "artist": "Survivor",
+   "year": 1982
+  },
+  {
+   "title": "Don't You Want Me",
+   "artist": "The Human League",
+   "year": 1981
   },
   {
    "title": "You Give Love a Bad Name",
@@ -109,9 +314,19 @@
    "year": 1986
   },
   {
+   "title": "Pictures of You",
+   "artist": "The Cure",
+   "year": 1989
+  },
+  {
    "title": "Cheri Cheri Lady",
    "artist": "Modern Talking",
    "year": 1985
+  },
+  {
+   "title": "Come Undone",
+   "artist": "Duran Duran",
+   "year": 1993
   },
   {
    "title": "Hold the Line",
@@ -119,9 +334,44 @@
    "year": 1978
   },
   {
-   "title": "When Doves Cry",
-   "artist": "Prince",
+   "title": "99 Luftballons",
+   "artist": "Nena",
+   "year": 1983
+  },
+  {
+   "title": "Dead Man's Party",
+   "artist": "Oingo Boingo",
+   "year": 1985
+  },
+  {
+   "title": "I Think We're Alone Now",
+   "artist": "Tiffany",
+   "year": 1987
+  },
+  {
+   "title": "Voyage voyage",
+   "artist": "Desireless",
+   "year": 1986
+  },
+  {
+   "title": "Bizarre Love Triangle",
+   "artist": "New Order",
+   "year": 1986
+  },
+  {
+   "title": "Super Freak",
+   "artist": "Rick James",
+   "year": 1981
+  },
+  {
+   "title": "Big In Japan",
+   "artist": "Alphaville",
    "year": 1984
+  },
+  {
+   "title": "Jessie's Girl",
+   "artist": "Rick Springfield",
+   "year": 1980
   },
   {
    "title": "Owner of a Lonely Heart",
@@ -129,9 +379,99 @@
    "year": 1983
   },
   {
+   "title": "Gold",
+   "artist": "Spandau Ballet",
+   "year": 1983
+  },
+  {
+   "title": "Burning Down the House",
+   "artist": "Talking Heads",
+   "year": 1983
+  },
+  {
+   "title": "Goo Goo Muck",
+   "artist": "The Cramps",
+   "year": 1980
+  },
+  {
+   "title": "When Doves Cry",
+   "artist": "Prince",
+   "year": 1984
+  },
+  {
+   "title": "Just Can't Get Enough",
+   "artist": "Depeche Mode",
+   "year": 1981
+  },
+  {
+   "title": "I'm on Fire",
+   "artist": "Bruce Springsteen",
+   "year": 1984
+  },
+  {
+   "title": "Hungry Like the Wolf",
+   "artist": "Duran Duran",
+   "year": 1982
+  },
+  {
+   "title": "Cities in Dust",
+   "artist": "Siouxsie and the Banshees",
+   "year": 1985
+  },
+  {
+   "title": "Abracadabra",
+   "artist": "Steve Miller Band",
+   "year": 1982
+  },
+  {
+   "title": "Need You Tonight",
+   "artist": "INXS",
+   "year": 1987
+  },
+  {
+   "title": "Drive",
+   "artist": "The Cars",
+   "year": 1984
+  },
+  {
+   "title": "Tempo Perdido",
+   "artist": "Legião Urbana",
+   "year": 1986
+  },
+  {
+   "title": "Dancing in the Dark",
+   "artist": "Bruce Springsteen",
+   "year": 1984
+  },
+  {
+   "title": "True Faith",
+   "artist": "New Order",
+   "year": 1987
+  },
+  {
+   "title": "Close to Me",
+   "artist": "The Cure",
+   "year": 1985
+  },
+  {
+   "title": "Strangelove",
+   "artist": "Depeche Mode",
+   "year": 1987
+  },
+  {
    "title": "The Final Countdown",
    "artist": "Europe",
    "year": 1986
+  },
+  {
+   "title": "Space Age Love Song",
+   "artist": "A Flock of Seagulls",
+   "year": 1982
+  },
+  {
+   "title": "Into the Groove",
+   "artist": "Madonna",
+   "year": 1984
   },
   {
    "title": "Personal Jesus",
@@ -139,9 +479,74 @@
    "year": 1985
   },
   {
+   "title": "We Built This City",
+   "artist": "Starship",
+   "year": 1985
+  },
+  {
+   "title": "Last Christmas",
+   "artist": "Wham!",
+   "year": 1984
+  },
+  {
+   "title": "Walking on Sunshine",
+   "artist": "Katrina and the Waves",
+   "year": 1983
+  },
+  {
+   "title": "Summer of '69",
+   "artist": "Bryan Adams",
+   "year": 1984
+  },
+  {
+   "title": "Private Eyes",
+   "artist": "Hall & Oates",
+   "year": 2003
+  },
+  {
+   "title": "Inbetween Days",
+   "artist": "The Cure",
+   "year": 1990
+  },
+  {
+   "title": "Sunglasses at Night",
+   "artist": "Corey Hart",
+   "year": 1983
+  },
+  {
+   "title": "Baby Be Mine",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
    "title": "Gypsy",
    "artist": "Fleetwood Mac",
    "year": 1982
+  },
+  {
+   "title": "Temptation",
+   "artist": "New Order",
+   "year": 1982
+  },
+  {
+   "title": "Love Is a Battlefield",
+   "artist": "Pat Benatar",
+   "year": 1983
+  },
+  {
+   "title": "Weird Science",
+   "artist": "Oingo Boingo",
+   "year": 1985
+  },
+  {
+   "title": "O Tempo Não Pára",
+   "artist": "Cazuza",
+   "year": 1988
+  },
+  {
+   "title": "I'm Gonna Miss You",
+   "artist": "Milli Vanilli",
+   "year": 1988
   },
   {
    "title": "Kiss",
@@ -149,9 +554,99 @@
    "year": 1986
   },
   {
-   "title": "Everywhere",
-   "artist": "Fleetwood Mac",
+   "title": "Rock Lobster",
+   "artist": "The B-52's",
+   "year": 1979
+  },
+  {
+   "title": "Here Comes the Rain Again",
+   "artist": "Eurythmics",
+   "year": 1983
+  },
+  {
+   "title": "She Drives Me Crazy",
+   "artist": "Fine Young Cannibals",
+   "year": 1988
+  },
+  {
+   "title": "More Than This",
+   "artist": "Roxy Music",
+   "year": 1982
+  },
+  {
+   "title": "Eye in the Sky",
+   "artist": "The Alan Parsons Project",
+   "year": 1982
+  },
+  {
+   "title": "Rock Me Amadeus",
+   "artist": "Falco",
+   "year": 1985
+  },
+  {
+   "title": "Rosanna",
+   "artist": "Toto",
+   "year": 1982
+  },
+  {
+   "title": "Don't Stop Believin'",
+   "artist": "Journey",
+   "year": 1981
+  },
+  {
+   "title": "You Can Call Me Al",
+   "artist": "Paul Simon",
+   "year": 1986
+  },
+  {
+   "title": "Englishman in New York",
+   "artist": "Sting",
    "year": 1987
+  },
+  {
+   "title": "Take Me Home Tonight",
+   "artist": "Eddie Money",
+   "year": 1993
+  },
+  {
+   "title": "I Like It",
+   "artist": "DeBarge",
+   "year": 1982
+  },
+  {
+   "title": "Hold Me Now",
+   "artist": "Thompson Twins",
+   "year": 1983
+  },
+  {
+   "title": "Dirty Diana",
+   "artist": "Michael Jackson",
+   "year": 1987
+  },
+  {
+   "title": "Flesh for Fantasy",
+   "artist": "Billy Idol",
+   "year": 1983
+  },
+  {
+   "title": "I'm Gonna Be (500 Miles)",
+   "artist": "The Proclaimers",
+   "year": 1987
+  },
+  {
+   "title": "Venus",
+   "artist": "Bananarama",
+   "year": 1986
+  },
+  {
+   "title": "Puttin' on the Ritz",
+   "artist": "Taco",
+   "year": 1982
+  },
+  {
+   "title": "The Lovecats",
+   "artist": "The Cure",
+   "year": 1983
   },
   {
    "title": "Blister In The Sun",
@@ -159,8 +654,43 @@
    "year": 1983
   },
   {
-   "title": "Abracadabra",
-   "artist": "Steve Miller Band",
+   "title": "Alone",
+   "artist": "Heart",
+   "year": 1983
+  },
+  {
+   "title": "Everywhere",
+   "artist": "Fleetwood Mac",
+   "year": 1987
+  },
+  {
+   "title": "Lips Like Sugar",
+   "artist": "Echo & the Bunnymen",
+   "year": 1987
+  },
+  {
+   "title": "Waiting for a Girl Like You",
+   "artist": "Foreigner",
+   "year": 1981
+  },
+  {
+   "title": "Pass the Dutchie",
+   "artist": "Musical Youth",
+   "year": 1982
+  },
+  {
+   "title": "Cloudbusting",
+   "artist": "Kate Bush",
+   "year": 1985
+  },
+  {
+   "title": "People Are People",
+   "artist": "Depeche Mode",
+   "year": 1984
+  },
+  {
+   "title": "Too Shy",
+   "artist": "Kajagoogoo",
    "year": 1982
   },
   {
@@ -169,19 +699,74 @@
    "year": 1986
   },
   {
-   "title": "Waiting for a Girl Like You",
-   "artist": "Foreigner",
-   "year": 1981
-  },
-  {
    "title": "Sweet Child o' Mine",
    "artist": "Guns N' Roses",
    "year": 1988
   },
   {
-   "title": "Super Freak",
-   "artist": "Rick James",
+   "title": "Listen to Your Heart",
+   "artist": "Roxette",
+   "year": 1988
+  },
+  {
+   "title": "I Love Rock 'n' Roll",
+   "artist": "Joan Jett and the Blackhearts",
+   "year": 1992
+  },
+  {
+   "title": "Sowing the Seeds of Love",
+   "artist": "Tears for Fears",
+   "year": 1989
+  },
+  {
+   "title": "Dance Hall Days",
+   "artist": "Wang Chung",
+   "year": 1983
+  },
+  {
+   "title": "Kids in America",
+   "artist": "Kim Wilde",
    "year": 1981
+  },
+  {
+   "title": "Cruel Summer",
+   "artist": "Bananarama",
+   "year": 1983
+  },
+  {
+   "title": "Lovesong",
+   "artist": "The Cure",
+   "year": 1989
+  },
+  {
+   "title": "Only You",
+   "artist": "Yazoo",
+   "year": 1982
+  },
+  {
+   "title": "Ghost Town",
+   "artist": "The Specials",
+   "year": 1981
+  },
+  {
+   "title": "Karma Chameleon",
+   "artist": "Culture Club",
+   "year": 1983
+  },
+  {
+   "title": "Manic Monday",
+   "artist": "The Bangles",
+   "year": 1986
+  },
+  {
+   "title": "Never Gonna Give You Up",
+   "artist": "Rick Astley",
+   "year": 1987
+  },
+  {
+   "title": "Always on My Mind",
+   "artist": "Pet Shop Boys",
+   "year": 1987
   },
   {
    "title": "Upside Down",
@@ -189,9 +774,54 @@
    "year": 1980
   },
   {
+   "title": "Footloose",
+   "artist": "Kenny Loggins",
+   "year": 1984
+  },
+  {
    "title": "9 to 5",
    "artist": "Dolly Parton",
    "year": 1980
+  },
+  {
+   "title": "The Riddle",
+   "artist": "Nik Kershaw",
+   "year": 1984
+  },
+  {
+   "title": "True",
+   "artist": "Spandau Ballet",
+   "year": 1983
+  },
+  {
+   "title": "Let's Go to Bed",
+   "artist": "The Cure",
+   "year": 1987
+  },
+  {
+   "title": "The Look",
+   "artist": "Roxette",
+   "year": 1988
+  },
+  {
+   "title": "Don't Go",
+   "artist": "Yazoo",
+   "year": 1981
+  },
+  {
+   "title": "Send Me an Angel",
+   "artist": "Real Life",
+   "year": 1983
+  },
+  {
+   "title": "Papa Don't Preach",
+   "artist": "Madonna",
+   "year": 1986
+  },
+  {
+   "title": "I Melt with You",
+   "artist": "Modern English",
+   "year": 1982
   },
   {
    "title": "Photograph",
@@ -199,58 +829,78 @@
    "year": 1983
   },
   {
-   "title": "Free Fallin'",
-   "artist": "Tom Petty",
-   "year": 1989
+   "title": "Geração Coca-Cola",
+   "artist": "Legião Urbana",
+   "year": 1985
   },
   {
-   "title": "Sultans of Swing",
-   "artist": "Dire Straits",
-   "year": 1979
-  },
-  {
-   "title": "Red Red Wine",
-   "artist": "UB40",
-   "year": 1983
-  },
-  {
-   "title": "Another One Bites the Dust",
-   "artist": "Queen",
-   "year": 1980
-  },
-  {
-   "title": "I Would Die 4 U",
-   "artist": "Prince",
-   "year": 1992
-  },
-  {
-   "title": "Don't Stop 'Til You Get Enough",
-   "artist": "Michael Jackson",
-   "year": 1979
-  },
-  {
-   "title": "Roxanne",
-   "artist": "The Police",
+   "title": "Just What I Needed",
+   "artist": "The Cars",
    "year": 1978
   },
   {
-   "title": "Welcome to the Jungle",
-   "artist": "Guns N' Roses",
-   "year": 1986
+   "title": "Eternal Flame",
+   "artist": "The Bangles",
+   "year": 1999
   },
   {
-   "title": "Take It on the Run",
-   "artist": "REO Speedwagon",
-   "year": 1980
-  },
-  {
-   "title": "It's Raining Men",
-   "artist": "The Weather Girls",
+   "title": "Our House",
+   "artist": "Madness",
    "year": 1982
   },
   {
-   "title": "Electric Avenue",
-   "artist": "Eddy Grant",
+   "title": "Raspberry Beret",
+   "artist": "Prince",
+   "year": 1991
+  },
+  {
+   "title": "Part-Time Lover",
+   "artist": "Stevie Wonder",
+   "year": 1985
+  },
+  {
+   "title": "Making Love Out of Nothing at All",
+   "artist": "Air Supply",
+   "year": 1983
+  },
+  {
+   "title": "Hysteria",
+   "artist": "Def Leppard",
+   "year": 1987
+  },
+  {
+   "title": "Girls on Film",
+   "artist": "Duran Duran",
+   "year": 1981
+  },
+  {
+   "title": "Domino Dancing",
+   "artist": "Pet Shop Boys",
+   "year": 1988
+  },
+  {
+   "title": "Stay",
+   "artist": "Oingo Boingo",
+   "year": 1985
+  },
+  {
+   "title": "Let's Go Crazy",
+   "artist": "Prince",
+   "year": 1991
+  },
+  {
+   "title": "Missing You",
+   "artist": "John Waite",
+   "year": 1984
+  },
+  {
+   "title": "There Is a Light That Never Goes Out",
+   "artist": "The Smiths",
+   "year": 1985
+  },
+  {
+   "title": "Gloria",
+   "artist": "Laura Branigan",
    "year": 1982
   },
   {
@@ -259,104 +909,99 @@
    "year": 1981
   },
   {
-   "title": "I'm So Excited",
-   "artist": "The Pointer Sisters",
-   "year": 1982
-  },
-  {
-   "title": "18 and Life",
-   "artist": "Skid Row",
+   "title": "Advice for the Young at Heart",
+   "artist": "Tears for Fears",
    "year": 1989
   },
   {
-   "title": "Got My Mind Set on You",
-   "artist": "George Harrison",
-   "year": 1987
-  },
-  {
-   "title": "I Just Called to Say I Love You",
-   "artist": "Stevie Wonder",
+   "title": "Heartbeat City",
+   "artist": "The Cars",
    "year": 1984
   },
   {
-   "title": "You're My Heart, You're My Soul",
-   "artist": "Modern Talking",
-   "year": 1984
+   "title": "Kiss on My List",
+   "artist": "Hall & Oates",
+   "year": 1988
   },
   {
-   "title": "Pump Up the Jam",
-   "artist": "Technotronic",
-   "year": 1989
+   "title": "Genius of Love",
+   "artist": "Tom Tom Club",
+   "year": 1981
   },
   {
-   "title": "Girls, Girls, Girls",
-   "artist": "Mötley Crüe",
-   "year": 1987
-  },
-  {
-   "title": "Any Way You Want It",
-   "artist": "Journey",
+   "title": "Hit Me with Your Best Shot",
+   "artist": "Pat Benatar",
    "year": 1980
   },
   {
-   "title": "Dancing With Myself",
-   "artist": "Generation X",
-   "year": 1995
+   "title": "Angel of the Morning",
+   "artist": "Juice Newton",
+   "year": 1981
   },
   {
-   "title": "Still Loving You",
-   "artist": "Scorpions",
+   "title": "Free Fallin'",
+   "artist": "Tom Petty",
+   "year": 1989
+  },
+  {
+   "title": "Angel",
+   "artist": "Madonna",
    "year": 1984
   },
   {
-   "title": "Kickstart My Heart",
-   "artist": "Mötley Crüe",
-   "year": 1982
+   "title": "The Downtown Lights",
+   "artist": "The Blue Nile",
+   "year": 1989
   },
   {
-   "title": "Home Sweet Home",
-   "artist": "Mötley Crüe",
+   "title": "Party All the Time",
+   "artist": "Eddie Murphy",
    "year": 1985
   },
   {
-   "title": "Little Red Corvette",
-   "artist": "Prince",
-   "year": 1982
+   "title": "This Charming Man",
+   "artist": "The Smiths",
+   "year": 1983
   },
   {
-   "title": "Paradise City",
-   "artist": "Guns N' Roses",
-   "year": 1986
-  },
-  {
-   "title": "We're Not Gonna Take It",
-   "artist": "Twisted Sister",
+   "title": "How Soon Is Now?",
+   "artist": "The Smiths",
    "year": 1984
   },
   {
-   "title": "Funkytown",
-   "artist": "Lipps, Inc.",
+   "title": "Heaven Is a Place on Earth",
+   "artist": "Belinda Carlisle",
+   "year": 1987
+  },
+  {
+   "title": "Another One Bites the Dust",
+   "artist": "Queen",
+   "year": 1980
+  },
+  {
+   "title": "Sultans of Swing",
+   "artist": "Dire Straits",
    "year": 1979
   },
   {
-   "title": "Policy of Truth",
+   "title": "Keep on Loving You",
+   "artist": "REO Speedwagon",
+   "year": 1980
+  },
+  {
+   "title": "Shake the Disease",
    "artist": "Depeche Mode",
    "year": 1985
   },
   {
-   "title": "Pour Some Sugar on Me",
-   "artist": "Def Leppard",
-   "year": 1987
-  },
-  {
-   "title": "Cum on Feel the Noize",
-   "artist": "Quiet Riot",
+   "title": "Menina Veneno",
+   "artist": "Ritchie",
    "year": 1983
   },
   {
-   "title": "Let's Groove",
-   "artist": "Earth, Wind & Fire",
-   "year": 1981
+   "title": "Borderline",
+   "artist": "Madonna",
+   "year": 1983
   }
  ]
 }

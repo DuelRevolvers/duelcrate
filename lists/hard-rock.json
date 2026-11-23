@@ -1,7 +1,7 @@
 {
  "name": "Hard Rock",
  "tag": "hard rock",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Highway to Hell",
@@ -14,14 +14,14 @@
    "year": 1990
   },
   {
-   "title": "Welcome to the Jungle",
-   "artist": "Guns N' Roses",
-   "year": 1986
-  },
-  {
    "title": "Sweet Child o' Mine",
    "artist": "Guns N' Roses",
    "year": 1988
+  },
+  {
+   "title": "Welcome to the Jungle",
+   "artist": "Guns N' Roses",
+   "year": 1986
   },
   {
    "title": "I Was Made for Lovin' You",
@@ -49,14 +49,9 @@
    "year": 2002
   },
   {
-   "title": "You Shook Me All Night Long",
+   "title": "T.N.T.",
    "artist": "AC/DC",
-   "year": 1980
-  },
-  {
-   "title": "Buried Alive",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
+   "year": 1976
   },
   {
    "title": "Paradise City",
@@ -64,9 +59,9 @@
    "year": 1986
   },
   {
-   "title": "Don't Cry (Original)",
-   "artist": "Guns N' Roses",
-   "year": 1991
+   "title": "Buried Alive",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
   },
   {
    "title": "Hells Bells",
@@ -74,19 +69,14 @@
    "year": 1980
   },
   {
+   "title": "Don't Cry (Original)",
+   "artist": "Guns N' Roses",
+   "year": 1991
+  },
+  {
    "title": "So Far Away",
    "artist": "Avenged Sevenfold",
    "year": 2010
-  },
-  {
-   "title": "Click Click Boom",
-   "artist": "Saliva",
-   "year": 2000
-  },
-  {
-   "title": "Almost Easy",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
   },
   {
    "title": "Knockin' on Heaven's Door",
@@ -94,9 +84,19 @@
    "year": 1988
   },
   {
+   "title": "Almost Easy",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
    "title": "Animal I Have Become",
    "artist": "Three Days Grace",
    "year": 2006
+  },
+  {
+   "title": "Click Click Boom",
+   "artist": "Saliva",
+   "year": 2000
   },
   {
    "title": "No More Tears",
@@ -104,14 +104,19 @@
    "year": 1991
   },
   {
+   "title": "Mother",
+   "artist": "Danzig",
+   "year": 1988
+  },
+  {
    "title": "Crazy Train",
    "artist": "Ozzy Osbourne",
    "year": 1980
   },
   {
-   "title": "Gunslinger",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
+   "title": "Poison",
+   "artist": "Alice Cooper",
+   "year": 1989
   },
   {
    "title": "The Red",
@@ -119,9 +124,9 @@
    "year": 2002
   },
   {
-   "title": "Send the Pain Below",
-   "artist": "Chevelle",
-   "year": 2002
+   "title": "Gunslinger",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
   },
   {
    "title": "Shoot to Thrill",
@@ -129,9 +134,29 @@
    "year": 1980
   },
   {
+   "title": "In The End",
+   "artist": "Black Veil Brides",
+   "year": 2012
+  },
+  {
+   "title": "Send the Pain Below",
+   "artist": "Chevelle",
+   "year": 2002
+  },
+  {
+   "title": "Still Loving You",
+   "artist": "Scorpions",
+   "year": 1984
+  },
+  {
    "title": "Ace of Spades",
    "artist": "Motörhead",
    "year": 1980
+  },
+  {
+   "title": "Photograph",
+   "artist": "Def Leppard",
+   "year": 1983
   },
   {
    "title": "I Hate Everything About You",
@@ -144,21 +169,6 @@
    "year": 1991
   },
   {
-   "title": "Still Loving You",
-   "artist": "Scorpions",
-   "year": 1984
-  },
-  {
-   "title": "Poison",
-   "artist": "Alice Cooper",
-   "year": 1989
-  },
-  {
-   "title": "Photograph",
-   "artist": "Def Leppard",
-   "year": 1983
-  },
-  {
    "title": "Metalingus",
    "artist": "Alter Bridge",
    "year": 2004
@@ -169,9 +179,9 @@
    "year": 2002
   },
   {
-   "title": "Closure",
-   "artist": "Chevelle",
-   "year": 2002
+   "title": "Estranged",
+   "artist": "Guns N' Roses",
+   "year": 1991
   },
   {
    "title": "Nightrain",
@@ -179,19 +189,14 @@
    "year": 1987
   },
   {
+   "title": "Feed My Frankenstein",
+   "artist": "Alice Cooper",
+   "year": 1991
+  },
+  {
    "title": "Seize the Day",
    "artist": "Avenged Sevenfold",
    "year": 2005
-  },
-  {
-   "title": "Sound of Madness",
-   "artist": "Shinedown",
-   "year": 2008
-  },
-  {
-   "title": "No One Like You",
-   "artist": "Scorpions",
-   "year": 1981
   },
   {
    "title": "It's My Life",
@@ -199,8 +204,23 @@
    "year": 1993
   },
   {
+   "title": "No One Like You",
+   "artist": "Scorpions",
+   "year": 1981
+  },
+  {
    "title": "Burn It To The Ground",
    "artist": "Nickelback",
+   "year": 2008
+  },
+  {
+   "title": "Closure",
+   "artist": "Chevelle",
+   "year": 2002
+  },
+  {
+   "title": "Sound of Madness",
+   "artist": "Shinedown",
    "year": 2008
   },
   {
@@ -214,24 +234,14 @@
    "year": 1987
   },
   {
-   "title": "I'm So Sick",
-   "artist": "Flyleaf",
-   "year": 2005
-  },
-  {
-   "title": "Rock You Like a Hurricane",
-   "artist": "Scorpions",
-   "year": 1984
-  },
-  {
-   "title": "18 and Life",
-   "artist": "Skid Row",
-   "year": 1989
-  },
-  {
-   "title": "This I Love",
+   "title": "Civil War",
    "artist": "Guns N' Roses",
-   "year": 2008
+   "year": 1990
+  },
+  {
+   "title": "Dr. Feelgood",
+   "artist": "Mötley Crüe",
+   "year": 1989
   },
   {
    "title": "Detroit Rock City",
@@ -239,9 +249,24 @@
    "year": 1980
   },
   {
-   "title": "We're Not Gonna Take It",
-   "artist": "Twisted Sister",
+   "title": "Rock You Like a Hurricane",
+   "artist": "Scorpions",
    "year": 1984
+  },
+  {
+   "title": "I'm So Sick",
+   "artist": "Flyleaf",
+   "year": 2005
+  },
+  {
+   "title": "This I Love",
+   "artist": "Guns N' Roses",
+   "year": 2008
+  },
+  {
+   "title": "18 and Life",
+   "artist": "Skid Row",
+   "year": 1989
   },
   {
    "title": "It's a Long Way to the Top (If You Wanna Rock 'N' Roll)",
@@ -249,64 +274,14 @@
    "year": 1975
   },
   {
-   "title": "I'm Eighteen",
-   "artist": "Alice Cooper",
-   "year": 1970
-  },
-  {
-   "title": "Show Me How To Live",
-   "artist": "Audioslave",
-   "year": 2002
-  },
-  {
-   "title": "I Miss the Misery",
-   "artist": "Halestorm",
-   "year": 2012
-  },
-  {
-   "title": "Nightmare",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
-  },
-  {
-   "title": "Family System",
-   "artist": "Chevelle",
-   "year": 2002
-  },
-  {
-   "title": "You Give Love a Bad Name",
-   "artist": "Bon Jovi",
-   "year": 1986
-  },
-  {
-   "title": "Livin' on a Prayer",
-   "artist": "Bon Jovi",
-   "year": 1986
-  },
-  {
-   "title": "It's So Easy",
-   "artist": "Guns N' Roses",
-   "year": 1987
-  },
-  {
-   "title": "Bat Country",
-   "artist": "Avenged Sevenfold",
-   "year": 2005
-  },
-  {
-   "title": "Girls, Girls, Girls",
-   "artist": "Mötley Crüe",
-   "year": 1987
-  },
-  {
-   "title": "Danger Line",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
-  },
-  {
    "title": "Rats",
    "artist": "Ghost",
    "year": 2018
+  },
+  {
+   "title": "We're Not Gonna Take It",
+   "artist": "Twisted Sister",
+   "year": 1984
   },
   {
    "title": "Live and Let Die",
@@ -314,44 +289,39 @@
    "year": 1991
   },
   {
-   "title": "Man in the Box",
-   "artist": "Alice in Chains",
-   "year": 1990
-  },
-  {
-   "title": "Bleed the Freak",
-   "artist": "Alice in Chains",
-   "year": 1989
-  },
-  {
-   "title": "Don't Fake This",
+   "title": "Family System",
    "artist": "Chevelle",
    "year": 2002
   },
   {
-   "title": "Dream On",
-   "artist": "Aerosmith",
-   "year": 1973
+   "title": "Girls, Girls, Girls",
+   "artist": "Mötley Crüe",
+   "year": 1987
   },
   {
-   "title": "Something In Your Mouth",
-   "artist": "Nickelback",
-   "year": 2008
+   "title": "Love Bites (So Do I)",
+   "artist": "Halestorm",
+   "year": 2012
   },
   {
-   "title": "96 Quite Bitter Beings",
-   "artist": "CKY",
-   "year": 1999
+   "title": "It's So Easy",
+   "artist": "Guns N' Roses",
+   "year": 1987
   },
   {
-   "title": "Monster",
-   "artist": "Skillet",
-   "year": 2009
+   "title": "I Miss the Misery",
+   "artist": "Halestorm",
+   "year": 2012
   },
   {
-   "title": "Saferwaters",
-   "artist": "Chevelle",
-   "year": 2007
+   "title": "I'm Eighteen",
+   "artist": "Alice Cooper",
+   "year": 1970
+  },
+  {
+   "title": "Nightmare",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
   },
   {
    "title": "Shout at the Devil",
@@ -359,14 +329,79 @@
    "year": 1982
   },
   {
-   "title": "Grab Thy Hand",
-   "artist": "Chevelle",
+   "title": "Bat Country",
+   "artist": "Avenged Sevenfold",
+   "year": 2005
+  },
+  {
+   "title": "You Give Love a Bad Name",
+   "artist": "Bon Jovi",
+   "year": 1986
+  },
+  {
+   "title": "Danger Line",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
+  },
+  {
+   "title": "Show Me How To Live",
+   "artist": "Audioslave",
    "year": 2002
   },
   {
-   "title": "Cum on Feel the Noize",
-   "artist": "Quiet Riot",
-   "year": 1983
+   "title": "Livin' on a Prayer",
+   "artist": "Bon Jovi",
+   "year": 1986
+  },
+  {
+   "title": "Man in the Box",
+   "artist": "Alice in Chains",
+   "year": 1990
+  },
+  {
+   "title": "Saferwaters",
+   "artist": "Chevelle",
+   "year": 2007
+  },
+  {
+   "title": "Bleed the Freak",
+   "artist": "Alice in Chains",
+   "year": 1989
+  },
+  {
+   "title": "Something In Your Mouth",
+   "artist": "Nickelback",
+   "year": 2008
+  },
+  {
+   "title": "Dance Macabre",
+   "artist": "Ghost",
+   "year": 2018
+  },
+  {
+   "title": "Slither",
+   "artist": "Velvet Revolver",
+   "year": 2004
+  },
+  {
+   "title": "Dream On",
+   "artist": "Aerosmith",
+   "year": 1973
+  },
+  {
+   "title": "Monster",
+   "artist": "Skillet",
+   "year": 2009
+  },
+  {
+   "title": "Always Somewhere",
+   "artist": "Scorpions",
+   "year": 1978
+  },
+  {
+   "title": "96 Quite Bitter Beings",
+   "artist": "CKY",
+   "year": 1999
   },
   {
    "title": "Voodoo",
@@ -374,14 +409,9 @@
    "year": 1998
   },
   {
-   "title": "Go With the Flow",
-   "artist": "Queens of the Stone Age",
-   "year": 2002
-  },
-  {
-   "title": "I Wanna Rock",
-   "artist": "Twisted Sister",
-   "year": 1984
+   "title": "Then Came the Last Days of May",
+   "artist": "Blue Öyster Cult",
+   "year": 1972
   },
   {
    "title": "Dead End Friends",
@@ -389,23 +419,23 @@
    "year": 2009
   },
   {
+   "title": "Go With the Flow",
+   "artist": "Queens of the Stone Age",
+   "year": 2002
+  },
+  {
    "title": "Brompton Cocktail",
    "artist": "Avenged Sevenfold",
    "year": 2007
   },
   {
-   "title": "Patience",
-   "artist": "Guns N' Roses",
-   "year": 1988
-  },
-  {
-   "title": "Admirável Chip Novo",
-   "artist": "Pitty",
-   "year": 2003
-  },
-  {
    "title": "If You Want Blood (You've Got It)",
    "artist": "AC/DC",
+   "year": 1976
+  },
+  {
+   "title": "Stargazer",
+   "artist": "Rainbow",
    "year": 1976
   },
   {
@@ -414,44 +444,19 @@
    "year": 2005
   },
   {
-   "title": "Slither",
-   "artist": "Velvet Revolver",
-   "year": 2004
+   "title": "Patience",
+   "artist": "Guns N' Roses",
+   "year": 1988
   },
   {
-   "title": "Dancing Dead",
-   "artist": "Avenged Sevenfold",
-   "year": 2008
+   "title": "Cum on Feel the Noize",
+   "artist": "Quiet Riot",
+   "year": 1983
   },
   {
-   "title": "Then Came the Last Days of May",
-   "artist": "Blue Öyster Cult",
-   "year": 1972
-  },
-  {
-   "title": "Afterlife",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "Crazy Bitch",
-   "artist": "Buckcherry",
-   "year": 2006
-  },
-  {
-   "title": "Dance Macabre",
-   "artist": "Ghost",
-   "year": 2018
-  },
-  {
-   "title": "For Those About to Rock (We Salute You)",
-   "artist": "AC/DC",
-   "year": 1981
-  },
-  {
-   "title": "Awake",
-   "artist": "Godsmack",
-   "year": 2000
+   "title": "Grab Thy Hand",
+   "artist": "Chevelle",
+   "year": 2002
   },
   {
    "title": "Bodies",
@@ -459,9 +464,64 @@
    "year": 2000
   },
   {
-   "title": "Home Sweet Home",
-   "artist": "Mötley Crüe",
-   "year": 1985
+   "title": "Don't Fake This",
+   "artist": "Chevelle",
+   "year": 2002
+  },
+  {
+   "title": "Dancing Dead",
+   "artist": "Avenged Sevenfold",
+   "year": 2008
+  },
+  {
+   "title": "I Wanna Rock",
+   "artist": "Twisted Sister",
+   "year": 1984
+  },
+  {
+   "title": "For Those About to Rock (We Salute You)",
+   "artist": "AC/DC",
+   "year": 1981
+  },
+  {
+   "title": "Afterlife",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
+   "title": "(Don't Fear) The Reaper",
+   "artist": "Blue Öyster Cult",
+   "year": 1976
+  },
+  {
+   "title": "Awake",
+   "artist": "Godsmack",
+   "year": 2000
+  },
+  {
+   "title": "Mama, I'm Coming Home",
+   "artist": "Ozzy Osbourne",
+   "year": 1991
+  },
+  {
+   "title": "Face to the Floor",
+   "artist": "Chevelle",
+   "year": 2011
+  },
+  {
+   "title": "Mr. Crowley",
+   "artist": "Ozzy Osbourne",
+   "year": 1980
+  },
+  {
+   "title": "Runnin' Wild",
+   "artist": "Airbourne",
+   "year": 2007
+  },
+  {
+   "title": "Admirável Chip Novo",
+   "artist": "Pitty",
+   "year": 2003
   },
   {
    "title": "No One Knows",
@@ -474,9 +534,14 @@
    "year": 1998
   },
   {
-   "title": "Mama, I'm Coming Home",
-   "artist": "Ozzy Osbourne",
-   "year": 1991
+   "title": "Home Sweet Home",
+   "artist": "Mötley Crüe",
+   "year": 1985
+  },
+  {
+   "title": "Crazy Bitch",
+   "artist": "Buckcherry",
+   "year": 2006
   },
   {
    "title": "Whole Lotta Rosie",
@@ -484,13 +549,8 @@
    "year": 1977
   },
   {
-   "title": "How You Remind Me",
-   "artist": "Nickelback",
-   "year": 2000
-  },
-  {
-   "title": "Rainbow in the Dark",
-   "artist": "Dio",
+   "title": "Bark at the Moon",
+   "artist": "Ozzy Osbourne",
    "year": 1983
   },
   {
@@ -499,34 +559,9 @@
    "year": 1984
   },
   {
-   "title": "Home",
-   "artist": "Three Days Grace",
-   "year": 2003
-  },
-  {
-   "title": "Holy Diver",
-   "artist": "Dio",
-   "year": 1983
-  },
-  {
-   "title": "Girls Got Rhythm",
-   "artist": "AC/DC",
-   "year": 1979
-  },
-  {
-   "title": "Runaway",
-   "artist": "Bon Jovi",
-   "year": 1984
-  },
-  {
-   "title": "Touch Too Much",
-   "artist": "AC/DC",
-   "year": 1976
-  },
-  {
-   "title": "Girl on the Moon",
-   "artist": "Foreigner",
-   "year": 1981
+   "title": "Unbound (The Wild Ride)",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
   },
   {
    "title": "Let There Be Rock",
@@ -534,74 +569,24 @@
    "year": 1977
   },
   {
-   "title": "Unbound (The Wild Ride)",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
+   "title": "Rainbow in the Dark",
+   "artist": "Dio",
+   "year": 1983
   },
   {
-   "title": "Catch the Rainbow",
-   "artist": "Rainbow",
-   "year": 1975
+   "title": "Touch Too Much",
+   "artist": "AC/DC",
+   "year": 1976
   },
   {
-   "title": "Wild Side",
-   "artist": "Mötley Crüe",
-   "year": 1987
+   "title": "How You Remind Me",
+   "artist": "Nickelback",
+   "year": 2000
   },
   {
-   "title": "Looks That Kill",
-   "artist": "Mötley Crüe",
-   "year": 1982
-  },
-  {
-   "title": "Feed My Frankenstein",
-   "artist": "Alice Cooper",
-   "year": 1991
-  },
-  {
-   "title": "Man on the Silver Mountain",
-   "artist": "Rainbow",
-   "year": 1975
-  },
-  {
-   "title": "Youth Gone Wild",
-   "artist": "Skid Row",
-   "year": 1989
-  },
-  {
-   "title": "Always",
-   "artist": "Saliva",
-   "year": 2002
-  },
-  {
-   "title": "You're Going Down",
-   "artist": "Sick Puppies",
-   "year": 2009
-  },
-  {
-   "title": "Live Wire",
-   "artist": "Mötley Crüe",
-   "year": 1981
-  },
-  {
-   "title": "Moon Baby",
-   "artist": "Godsmack",
-   "year": 1997
-  },
-  {
-   "title": "Lost",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "Mr. Crowley",
-   "artist": "Ozzy Osbourne",
-   "year": 1980
-  },
-  {
-   "title": "Out ta Get Me",
-   "artist": "Guns N' Roses",
-   "year": 1987
+   "title": "Holy Diver",
+   "artist": "Dio",
+   "year": 1983
   },
   {
    "title": "You Think I Ain't Worth a Dollar, but I Feel Like a Millionaire",
@@ -609,14 +594,59 @@
    "year": 2002
   },
   {
-   "title": "Vitamin R (Leading Us Along)",
-   "artist": "Chevelle",
-   "year": 2004
+   "title": "Home",
+   "artist": "Three Days Grace",
+   "year": 2003
   },
   {
-   "title": "Sleep Apnea",
-   "artist": "Chevelle",
-   "year": 2009
+   "title": "Catch the Rainbow",
+   "artist": "Rainbow",
+   "year": 1975
+  },
+  {
+   "title": "Girls Got Rhythm",
+   "artist": "AC/DC",
+   "year": 1979
+  },
+  {
+   "title": "Looks That Kill",
+   "artist": "Mötley Crüe",
+   "year": 1982
+  },
+  {
+   "title": "Runaway",
+   "artist": "Bon Jovi",
+   "year": 1984
+  },
+  {
+   "title": "Wild Side",
+   "artist": "Mötley Crüe",
+   "year": 1987
+  },
+  {
+   "title": "Man on the Silver Mountain",
+   "artist": "Rainbow",
+   "year": 1975
+  },
+  {
+   "title": "Absolute Zero",
+   "artist": "Stone Sour",
+   "year": 2012
+  },
+  {
+   "title": "Live Wire",
+   "artist": "Mötley Crüe",
+   "year": 1981
+  },
+  {
+   "title": "Blackbird",
+   "artist": "Alter Bridge",
+   "year": 2007
+  },
+  {
+   "title": "Youth Gone Wild",
+   "artist": "Skid Row",
+   "year": 1989
   },
   {
    "title": "Moneytalks",
@@ -624,79 +654,39 @@
    "year": 1990
   },
   {
-   "title": "Highway Star",
-   "artist": "Deep Purple",
-   "year": 1972
-  },
-  {
-   "title": "Riot",
-   "artist": "Three Days Grace",
-   "year": 2006
-  },
-  {
-   "title": "Critical Acclaim",
+   "title": "Lost",
    "artist": "Avenged Sevenfold",
    "year": 2007
   },
   {
-   "title": "Keep Away",
+   "title": "Girl on the Moon",
+   "artist": "Foreigner",
+   "year": 1981
+  },
+  {
+   "title": "You're Going Down",
+   "artist": "Sick Puppies",
+   "year": 2009
+  },
+  {
+   "title": "Vitamin R (Leading Us Along)",
+   "artist": "Chevelle",
+   "year": 2004
+  },
+  {
+   "title": "Moon Baby",
    "artist": "Godsmack",
    "year": 1997
   },
   {
-   "title": "Wonder What's Next",
-   "artist": "Chevelle",
-   "year": 2002
+   "title": "Whatever",
+   "artist": "Godsmack",
+   "year": 1996
   },
   {
-   "title": "Round and Round",
-   "artist": "Ratt",
-   "year": 1984
-  },
-  {
-   "title": "Welcome to the Family",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
-  },
-  {
-   "title": "Since You Been Gone",
-   "artist": "Rainbow",
-   "year": 1979
-  },
-  {
-   "title": "Lick It Up",
-   "artist": "Kiss",
-   "year": 1984
-  },
-  {
-   "title": "Jars",
-   "artist": "Chevelle",
-   "year": 2009
-  },
-  {
-   "title": "Rock N Roll Train",
-   "artist": "AC/DC",
-   "year": 2008
-  },
-  {
-   "title": "(Don't Fear) The Reaper",
-   "artist": "Blue Öyster Cult",
-   "year": 1976
-  },
-  {
-   "title": "Love Gun",
-   "artist": "Kiss",
-   "year": 1977
-  },
-  {
-   "title": "Rock of Ages",
-   "artist": "Def Leppard",
-   "year": 1983
-  },
-  {
-   "title": "Pain",
-   "artist": "Three Days Grace",
-   "year": 2006
+   "title": "We Die Young",
+   "artist": "Alice in Chains",
+   "year": 1989
   },
   {
    "title": "In a Darkened Room",
@@ -704,114 +694,39 @@
    "year": 1991
   },
   {
-   "title": "Woman",
-   "artist": "Wolfmother",
-   "year": 2004
+   "title": "Always",
+   "artist": "Saliva",
+   "year": 2002
   },
   {
-   "title": "Perfect Strangers",
-   "artist": "Deep Purple",
-   "year": 1984
-  },
-  {
-   "title": "Too Young to Fall in Love",
-   "artist": "Mötley Crüe",
-   "year": 1983
-  },
-  {
-   "title": "Bark at the Moon",
+   "title": "Shot in the Dark",
    "artist": "Ozzy Osbourne",
-   "year": 1983
-  },
-  {
-   "title": "School's Out",
-   "artist": "Alice Cooper",
-   "year": 1972
-  },
-  {
-   "title": "Pour Some Sugar on Me",
-   "artist": "Def Leppard",
-   "year": 1987
-  },
-  {
-   "title": "You're Crazy",
-   "artist": "Guns N' Roses",
    "year": 1986
   },
   {
-   "title": "Better",
-   "artist": "Guns N' Roses",
-   "year": 2006
-  },
-  {
-   "title": "Stricken",
-   "artist": "Disturbed",
-   "year": 2005
-  },
-  {
-   "title": "I Get Off",
-   "artist": "Halestorm",
-   "year": 2009
-  },
-  {
-   "title": "Rock and Roll Ain't Noise Pollution",
-   "artist": "AC/DC",
-   "year": 1980
-  },
-  {
-   "title": "Have a Drink on Me",
-   "artist": "AC/DC",
-   "year": 1980
-  },
-  {
-   "title": "Never Too Late",
+   "title": "Riot",
    "artist": "Three Days Grace",
    "year": 2006
   },
   {
-   "title": "The Clincher",
-   "artist": "Chevelle",
-   "year": 2004
-  },
-  {
-   "title": "Too Late for Love",
-   "artist": "Def Leppard",
-   "year": 1983
-  },
-  {
-   "title": "High Voltage",
-   "artist": "AC/DC",
-   "year": 1975
-  },
-  {
-   "title": "Smoke on the Water",
-   "artist": "Deep Purple",
-   "year": 1972
-  },
-  {
-   "title": "Walk All Over You",
-   "artist": "AC/DC",
-   "year": 1979
-  },
-  {
-   "title": "It Ain't Like That",
-   "artist": "Alice in Chains",
-   "year": 1990
-  },
-  {
-   "title": "Think About You",
+   "title": "Out ta Get Me",
    "artist": "Guns N' Roses",
-   "year": 1985
+   "year": 1987
   },
   {
-   "title": "I Remember You",
-   "artist": "Skid Row",
-   "year": 1989
+   "title": "Sleep Apnea",
+   "artist": "Chevelle",
+   "year": 2009
   },
   {
-   "title": "She's Gone",
-   "artist": "Steelheart",
-   "year": 1990
+   "title": "Critical Acclaim",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
+   "title": "Round and Round",
+   "artist": "Ratt",
+   "year": 1984
   },
   {
    "title": "No One Loves Me & Neither Do I",
@@ -819,34 +734,24 @@
    "year": 2009
   },
   {
-   "title": "Animal",
-   "artist": "Def Leppard",
-   "year": 1987
+   "title": "Welcome to the Family",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
   },
   {
-   "title": "14 Years",
-   "artist": "Guns N' Roses",
-   "year": 1991
+   "title": "Jars",
+   "artist": "Chevelle",
+   "year": 2009
   },
   {
-   "title": "No More Mr. Nice Guy",
+   "title": "School's Out",
    "artist": "Alice Cooper",
-   "year": 1973
+   "year": 1972
   },
   {
-   "title": "Bad Girlfriend",
-   "artist": "Theory of a Deadman",
-   "year": 2008
-  },
-  {
-   "title": "Mz. Hyde",
-   "artist": "Halestorm",
-   "year": 2012
-  },
-  {
-   "title": "Wind of Change",
-   "artist": "Scorpions",
-   "year": 1990
+   "title": "Keep Away",
+   "artist": "Godsmack",
+   "year": 1997
   },
   {
    "title": "Song For The Dead",
@@ -854,44 +759,139 @@
    "year": 2002
   },
   {
-   "title": "Who Made Who",
+   "title": "Pain",
+   "artist": "Three Days Grace",
+   "year": 2006
+  },
+  {
+   "title": "Perfect Strangers",
+   "artist": "Deep Purple",
+   "year": 1984
+  },
+  {
+   "title": "Since You Been Gone",
+   "artist": "Rainbow",
+   "year": 1979
+  },
+  {
+   "title": "Woman",
+   "artist": "Wolfmother",
+   "year": 2004
+  },
+  {
+   "title": "Love Gun",
+   "artist": "Kiss",
+   "year": 1977
+  },
+  {
+   "title": "Too Young to Fall in Love",
+   "artist": "Mötley Crüe",
+   "year": 1983
+  },
+  {
+   "title": "Highway Star",
+   "artist": "Deep Purple",
+   "year": 1972
+  },
+  {
+   "title": "Rock N Roll Train",
    "artist": "AC/DC",
+   "year": 2008
+  },
+  {
+   "title": "Dude (Looks Like a Lady)",
+   "artist": "Aerosmith",
+   "year": 1987
+  },
+  {
+   "title": "Stricken",
+   "artist": "Disturbed",
+   "year": 2005
+  },
+  {
+   "title": "Lick It Up",
+   "artist": "Kiss",
+   "year": 1984
+  },
+  {
+   "title": "I Get Off",
+   "artist": "Halestorm",
+   "year": 2009
+  },
+  {
+   "title": "You're Crazy",
+   "artist": "Guns N' Roses",
    "year": 1986
   },
   {
-   "title": "What Do You Do for Money Honey",
-   "artist": "AC/DC",
-   "year": 1980
-  },
-  {
-   "title": "The Final Countdown",
-   "artist": "Europe",
-   "year": 1986
-  },
-  {
-   "title": "Iron Man",
-   "artist": "Black Sabbath",
-   "year": 1971
-  },
-  {
-   "title": "Scream",
-   "artist": "Avenged Sevenfold",
+   "title": "Life Is Beautiful",
+   "artist": "Sixx:A.M.",
    "year": 2007
   },
   {
-   "title": "Heaven and Hell",
-   "artist": "Black Sabbath",
-   "year": 1980
-  },
-  {
-   "title": "Gasoline",
-   "artist": "Seether",
+   "title": "Wonder What's Next",
+   "artist": "Chevelle",
    "year": 2002
   },
   {
-   "title": "Fly From the Inside",
-   "artist": "Shinedown",
-   "year": 2003
+   "title": "Rock of Ages",
+   "artist": "Def Leppard",
+   "year": 1983
+  },
+  {
+   "title": "Never Too Late",
+   "artist": "Three Days Grace",
+   "year": 2006
+  },
+  {
+   "title": "Godzilla",
+   "artist": "Blue Öyster Cult",
+   "year": 1977
+  },
+  {
+   "title": "Pour Some Sugar on Me",
+   "artist": "Def Leppard",
+   "year": 1987
+  },
+  {
+   "title": "The Clincher",
+   "artist": "Chevelle",
+   "year": 2004
+  },
+  {
+   "title": "It Ain't Like That",
+   "artist": "Alice in Chains",
+   "year": 1990
+  },
+  {
+   "title": "Rock and Roll Ain't Noise Pollution",
+   "artist": "AC/DC",
+   "year": 1980
+  },
+  {
+   "title": "She's Gone",
+   "artist": "Steelheart",
+   "year": 1990
+  },
+  {
+   "title": "High Voltage",
+   "artist": "AC/DC",
+   "year": 1975
+  },
+  {
+   "title": "Ready To Die",
+   "artist": "Andrew W.K.",
+   "year": 2001
+  },
+  {
+   "title": "Smoke on the Water",
+   "artist": "Deep Purple",
+   "year": 1972
+  },
+  {
+   "title": "Animal",
+   "artist": "Def Leppard",
+   "year": 1987
   },
   {
    "title": "Call Me Little Sunshine",
@@ -899,24 +899,39 @@
    "year": 2022
   },
   {
-   "title": "Breath",
-   "artist": "Breaking Benjamin",
-   "year": 2006
+   "title": "No More Mr. Nice Guy",
+   "artist": "Alice Cooper",
+   "year": 1973
   },
   {
-   "title": "Foolin'",
+   "title": "Iron Man",
+   "artist": "Black Sabbath",
+   "year": 1971
+  },
+  {
+   "title": "Too Late for Love",
    "artist": "Def Leppard",
    "year": 1983
   },
   {
-   "title": "Time of Dying",
-   "artist": "Three Days Grace",
+   "title": "Mz. Hyde",
+   "artist": "Halestorm",
+   "year": 2012
+  },
+  {
+   "title": "Better",
+   "artist": "Guns N' Roses",
    "year": 2006
   },
   {
-   "title": "Dear God",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
+   "title": "14 Years",
+   "artist": "Guns N' Roses",
+   "year": 1991
+  },
+  {
+   "title": "I Remember You",
+   "artist": "Skid Row",
+   "year": 1989
   },
   {
    "title": "Hellraiser",
@@ -924,84 +939,69 @@
    "year": 1991
   },
   {
-   "title": "Double Talkin' Jive",
-   "artist": "Guns N' Roses",
-   "year": 1991
+   "title": "Heaven and Hell",
+   "artist": "Black Sabbath",
+   "year": 1980
   },
   {
-   "title": "Stone Cold Crazy",
-   "artist": "Queen",
-   "year": 1974
+   "title": "Walk All Over You",
+   "artist": "AC/DC",
+   "year": 1979
   },
   {
-   "title": "Walk This Way",
-   "artist": "Aerosmith",
-   "year": 1975
-  },
-  {
-   "title": "Stranglehold",
-   "artist": "Ted Nugent",
-   "year": 1975
-  },
-  {
-   "title": "Since I Don't Have You",
-   "artist": "Guns N' Roses",
-   "year": 1993
-  },
-  {
-   "title": "Bad Obsession",
-   "artist": "Guns N' Roses",
+   "title": "Wind of Change",
+   "artist": "Scorpions",
    "year": 1990
   },
   {
-   "title": "Sweet Emotion",
-   "artist": "Aerosmith",
-   "year": 1975
+   "title": "Have a Drink on Me",
+   "artist": "AC/DC",
+   "year": 1980
   },
   {
-   "title": "Fire Woman",
-   "artist": "The Cult",
-   "year": 1989
-  },
-  {
-   "title": "First It Giveth",
-   "artist": "Queens of the Stone Age",
-   "year": 2002
-  },
-  {
-   "title": "For You",
-   "artist": "Staind",
-   "year": 2001
-  },
-  {
-   "title": "Superstar",
-   "artist": "Saliva",
-   "year": 2001
-  },
-  {
-   "title": "Anything Goes",
+   "title": "Think About You",
    "artist": "Guns N' Roses",
    "year": 1985
   },
   {
-   "title": "Why Can't This Be Love",
+   "title": "Shot Down in Flames",
+   "artist": "AC/DC",
+   "year": 1979
+  },
+  {
+   "title": "Runnin' With the Devil",
    "artist": "Van Halen",
+   "year": 1978
+  },
+  {
+   "title": "The Final Countdown",
+   "artist": "Europe",
    "year": 1986
   },
   {
-   "title": "Remedy",
-   "artist": "Seether",
-   "year": 2005
+   "title": "He's Back (The Man Behind the Mask)",
+   "artist": "Alice Cooper",
+   "year": 1986
   },
   {
-   "title": "Same Ol' Situation (S.O.S.)",
-   "artist": "Mötley Crüe",
-   "year": 1989
+   "title": "Who Made Who",
+   "artist": "AC/DC",
+   "year": 1986
   },
   {
-   "title": "Immigrant Song",
-   "artist": "Led Zeppelin",
-   "year": 1990
+   "title": "Fly From the Inside",
+   "artist": "Shinedown",
+   "year": 2003
+  },
+  {
+   "title": "Bad Girlfriend",
+   "artist": "Theory of a Deadman",
+   "year": 2008
+  },
+  {
+   "title": "Scream",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
   }
  ]
 }

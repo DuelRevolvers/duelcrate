@@ -1,7 +1,7 @@
 {
  "name": "90s",
  "tag": "90s",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Lovefool",
@@ -14,14 +14,14 @@
    "year": 1997
   },
   {
-   "title": "No Scrubs",
-   "artist": "TLC",
-   "year": 1999
-  },
-  {
    "title": "Black Hole Sun",
    "artist": "Soundgarden",
    "year": 1994
+  },
+  {
+   "title": "No Scrubs",
+   "artist": "TLC",
+   "year": 1999
   },
   {
    "title": "Don't Speak",
@@ -34,9 +34,19 @@
    "year": 1999
   },
   {
+   "title": "You Get What You Give",
+   "artist": "New Radicals",
+   "year": 1998
+  },
+  {
    "title": "...Baby One More Time",
    "artist": "Britney Spears",
    "year": 1998
+  },
+  {
+   "title": "Two Princes",
+   "artist": "Spin Doctors",
+   "year": 1991
   },
   {
    "title": "Losing My Religion",
@@ -59,14 +69,39 @@
    "year": 1992
   },
   {
-   "title": "The Sign",
-   "artist": "Ace of Base",
-   "year": 1993
+   "title": "Poison",
+   "artist": "Bell Biv DeVoe",
+   "year": 1989
+  },
+  {
+   "title": "Everybody (Backstreet's Back)",
+   "artist": "Backstreet Boys",
+   "year": 1997
+  },
+  {
+   "title": "Gangsta's Paradise",
+   "artist": "Coolio",
+   "year": 1995
   },
   {
    "title": "Iris",
    "artist": "Goo Goo Dolls",
    "year": 1998
+  },
+  {
+   "title": "The Sign",
+   "artist": "Ace of Base",
+   "year": 1993
+  },
+  {
+   "title": "I Want It That Way",
+   "artist": "Backstreet Boys",
+   "year": 1999
+  },
+  {
+   "title": "Here's Where the Story Ends",
+   "artist": "The Sundays",
+   "year": 1990
   },
   {
    "title": "Loser",
@@ -79,9 +114,14 @@
    "year": 1999
   },
   {
-   "title": "I Want It That Way",
-   "artist": "Backstreet Boys",
-   "year": 1999
+   "title": "Just a Girl",
+   "artist": "No Doubt",
+   "year": 1995
+  },
+  {
+   "title": "What's Up?",
+   "artist": "4 Non Blondes",
+   "year": 1992
   },
   {
    "title": "Return of the Mack",
@@ -94,9 +134,14 @@
    "year": 1988
   },
   {
-   "title": "Be My Lover",
-   "artist": "La Bouche",
-   "year": 1994
+   "title": "Pepper",
+   "artist": "Butthole Surfers",
+   "year": 1996
+  },
+  {
+   "title": "Wannabe",
+   "artist": "Spice Girls",
+   "year": 1996
   },
   {
    "title": "Buddy Holly",
@@ -104,14 +149,24 @@
    "year": 1994
   },
   {
-   "title": "The Boy Is Mine",
-   "artist": "Brandy",
-   "year": 1998
-  },
-  {
    "title": "The Rhythm of the Night",
    "artist": "Corona",
    "year": 1993
+  },
+  {
+   "title": "Tubthumping",
+   "artist": "Chumbawamba",
+   "year": 1997
+  },
+  {
+   "title": "Be My Lover",
+   "artist": "La Bouche",
+   "year": 1994
+  },
+  {
+   "title": "Fantasy",
+   "artist": "Mariah Carey",
+   "year": 1995
   },
   {
    "title": "Kiss from a Rose",
@@ -119,9 +174,39 @@
    "year": 1994
   },
   {
+   "title": "Summertime",
+   "artist": "The Sundays",
+   "year": 1997
+  },
+  {
+   "title": "Flagpole Sitta",
+   "artist": "Harvey Danger",
+   "year": 1996
+  },
+  {
    "title": "Everlong",
    "artist": "Foo Fighters",
    "year": 1997
+  },
+  {
+   "title": "The Boy Is Mine",
+   "artist": "Brandy",
+   "year": 1998
+  },
+  {
+   "title": "Sex and Candy",
+   "artist": "Marcy Playground",
+   "year": 1995
+  },
+  {
+   "title": "Carnival",
+   "artist": "The Cardigans",
+   "year": 1995
+  },
+  {
+   "title": "Fake Plastic Trees",
+   "artist": "Radiohead",
+   "year": 1994
   },
   {
    "title": "Bye Bye Bye",
@@ -129,9 +214,24 @@
    "year": 2000
   },
   {
+   "title": "There She Goes",
+   "artist": "The La's",
+   "year": 1990
+  },
+  {
    "title": "Come as You Are",
    "artist": "Nirvana",
    "year": 1991
+  },
+  {
+   "title": "Linger",
+   "artist": "The Cranberries",
+   "year": 1993
+  },
+  {
+   "title": "Walkin' on the Sun",
+   "artist": "Smash Mouth",
+   "year": 1997
   },
   {
    "title": "Boom, Boom, Boom, Boom!!",
@@ -139,13 +239,18 @@
    "year": 1998
   },
   {
+   "title": "Smells Like Teen Spirit",
+   "artist": "Nirvana",
+   "year": 1991
+  },
+  {
    "title": "Waterfalls",
    "artist": "TLC",
    "year": 1994
   },
   {
-   "title": "Smells Like Teen Spirit",
-   "artist": "Nirvana",
+   "title": "Mr. Jones",
+   "artist": "Counting Crows",
    "year": 1991
   },
   {
@@ -154,14 +259,29 @@
    "year": 1993
   },
   {
+   "title": "Blue Light",
+   "artist": "Mazzy Star",
+   "year": 1993
+  },
+  {
    "title": "Rhythm Is a Dancer",
    "artist": "Snap!",
    "year": 1992
   },
   {
-   "title": "High and Dry",
-   "artist": "Radiohead",
-   "year": 1994
+   "title": "Freed from Desire",
+   "artist": "Gala",
+   "year": 1996
+  },
+  {
+   "title": "No Rain",
+   "artist": "Blind Melon",
+   "year": 1992
+  },
+  {
+   "title": "She's So High",
+   "artist": "Tal Bachman",
+   "year": 1998
   },
   {
    "title": "Pony",
@@ -169,19 +289,24 @@
    "year": 1996
   },
   {
-   "title": "Teenage Dirtbag",
-   "artist": "Wheatus",
-   "year": 2000
-  },
-  {
-   "title": "Violet",
-   "artist": "Hole",
-   "year": 1991
-  },
-  {
-   "title": "Mr. Vain",
-   "artist": "Culture Beat",
+   "title": "Another Night",
+   "artist": "Real McCoy",
    "year": 1993
+  },
+  {
+   "title": "When You're Gone",
+   "artist": "The Cranberries",
+   "year": 1996
+  },
+  {
+   "title": "High and Dry",
+   "artist": "Radiohead",
+   "year": 1994
+  },
+  {
+   "title": "All Star",
+   "artist": "Smash Mouth",
+   "year": 1997
   },
   {
    "title": "Just",
@@ -189,14 +314,29 @@
    "year": 1994
   },
   {
+   "title": "I Wish",
+   "artist": "Skee-Lo",
+   "year": 1995
+  },
+  {
+   "title": "Violet",
+   "artist": "Hole",
+   "year": 1991
+  },
+  {
+   "title": "Teenage Dirtbag",
+   "artist": "Wheatus",
+   "year": 2000
+  },
+  {
    "title": "Candy Rain",
    "artist": "Soul for Real",
    "year": 1994
   },
   {
-   "title": "Freed from Desire",
-   "artist": "Gala",
-   "year": 1996
+   "title": "Mambo No. 5 (A Little Bit Of...)",
+   "artist": "Lou Bega",
+   "year": 1999
   },
   {
    "title": "Groove Is in the Heart",
@@ -209,14 +349,29 @@
    "year": 1998
   },
   {
+   "title": "Mr. Vain",
+   "artist": "Culture Beat",
+   "year": 1993
+  },
+  {
+   "title": "A Girl Like You",
+   "artist": "Edwyn Collins",
+   "year": 1994
+  },
+  {
+   "title": "Would I Lie to You?",
+   "artist": "Charles & Eddie",
+   "year": 1992
+  },
+  {
    "title": "Remember the Time",
    "artist": "Michael Jackson",
    "year": 1991
   },
   {
-   "title": "Another Night",
-   "artist": "Real McCoy",
-   "year": 1993
+   "title": "Happy Nation",
+   "artist": "Ace of Base",
+   "year": 1992
   },
   {
    "title": "Lithium",
@@ -224,9 +379,39 @@
    "year": 1990
   },
   {
+   "title": "1979",
+   "artist": "The Smashing Pumpkins",
+   "year": 1996
+  },
+  {
+   "title": "Lemon Tree",
+   "artist": "Fool's Garden",
+   "year": 1995
+  },
+  {
+   "title": "One Week",
+   "artist": "Barenaked Ladies",
+   "year": 1998
+  },
+  {
+   "title": "Nutshell",
+   "artist": "Alice in Chains",
+   "year": 1994
+  },
+  {
+   "title": "Every Morning",
+   "artist": "Sugar Ray",
+   "year": 1997
+  },
+  {
    "title": "Sabotage",
    "artist": "Beastie Boys",
    "year": 1994
+  },
+  {
+   "title": "Jeremy",
+   "artist": "Pearl Jam",
+   "year": 1991
   },
   {
    "title": "Even Flow",
@@ -239,18 +424,23 @@
    "year": 1996
   },
   {
-   "title": "Anti-Hero",
-   "artist": "Taylor Swift",
-   "year": 2022
+   "title": "Basket Case",
+   "artist": "Green Day",
+   "year": 1993
   },
   {
-   "title": "Jeremy",
-   "artist": "Pearl Jam",
-   "year": 1991
+   "title": "One Headlight",
+   "artist": "The Wallflowers",
+   "year": 1996
   },
   {
-   "title": "Nutshell",
-   "artist": "Alice in Chains",
+   "title": "Lump",
+   "artist": "The Presidents of the United States of America",
+   "year": 1994
+  },
+  {
+   "title": "I Want You",
+   "artist": "Savage Garden",
    "year": 1994
   },
   {
@@ -259,14 +449,29 @@
    "year": 1990
   },
   {
-   "title": "Basket Case",
-   "artist": "Green Day",
+   "title": "Frozen",
+   "artist": "Madonna",
    "year": 1993
   },
   {
-   "title": "In Bloom",
-   "artist": "Nirvana",
+   "title": "Shine",
+   "artist": "Collective Soul",
+   "year": 1993
+  },
+  {
+   "title": "Crucified",
+   "artist": "Army of Lovers",
    "year": 1991
+  },
+  {
+   "title": "Doll Parts",
+   "artist": "Hole",
+   "year": 1991
+  },
+  {
+   "title": "Santa Monica",
+   "artist": "Everclear",
+   "year": 1995
   },
   {
    "title": "Far Behind",
@@ -274,28 +479,8 @@
    "year": 1992
   },
   {
-   "title": "Brain Stew",
-   "artist": "Green Day",
-   "year": 1995
-  },
-  {
-   "title": "Wonderwall",
-   "artist": "Oasis",
-   "year": 1995
-  },
-  {
-   "title": "Malibu",
-   "artist": "Hole",
-   "year": 1991
-  },
-  {
-   "title": "Baby, I Love Your Way",
-   "artist": "Big Mountain",
-   "year": 1994
-  },
-  {
-   "title": "Drain You",
-   "artist": "Nirvana",
+   "title": "Under the Bridge",
+   "artist": "Red Hot Chili Peppers",
    "year": 1991
   },
   {
@@ -304,9 +489,49 @@
    "year": 1995
   },
   {
+   "title": "Wonderwall",
+   "artist": "Oasis",
+   "year": 1995
+  },
+  {
+   "title": "In Bloom",
+   "artist": "Nirvana",
+   "year": 1991
+  },
+  {
+   "title": "How's It Going To Be",
+   "artist": "Third Eye Blind",
+   "year": 1995
+  },
+  {
+   "title": "Disco 2000",
+   "artist": "Pulp",
+   "year": 1995
+  },
+  {
+   "title": "Anti-Hero",
+   "artist": "Taylor Swift",
+   "year": 2022
+  },
+  {
+   "title": "Brain Stew",
+   "artist": "Green Day",
+   "year": 1995
+  },
+  {
+   "title": "Drain You",
+   "artist": "Nirvana",
+   "year": 1991
+  },
+  {
    "title": "End of the Road",
    "artist": "Boyz II Men",
    "year": 1992
+  },
+  {
+   "title": "As Long as You Love Me",
+   "artist": "Backstreet Boys",
+   "year": 1997
   },
   {
    "title": "All Apologies",
@@ -314,9 +539,19 @@
    "year": 1993
   },
   {
+   "title": "Malibu",
+   "artist": "Hole",
+   "year": 1991
+  },
+  {
    "title": "Hunger Strike",
    "artist": "Temple of the Dog",
    "year": 1990
+  },
+  {
+   "title": "Only Wanna Be With You",
+   "artist": "Hootie & The Blowfish",
+   "year": 1992
   },
   {
    "title": "Can I Kick It?",
@@ -324,24 +559,59 @@
    "year": 1990
   },
   {
+   "title": "Laid",
+   "artist": "James",
+   "year": 1993
+  },
+  {
+   "title": "This Is How We Do It",
+   "artist": "Montell Jordan",
+   "year": 1995
+  },
+  {
+   "title": "Unbelievable",
+   "artist": "EMF",
+   "year": 1988
+  },
+  {
+   "title": "If You Could Only See",
+   "artist": "Tonic",
+   "year": 1996
+  },
+  {
+   "title": "Let Her Cry",
+   "artist": "Hootie & The Blowfish",
+   "year": 1994
+  },
+  {
+   "title": "You Oughta Know",
+   "artist": "Alanis Morissette",
+   "year": 1994
+  },
+  {
+   "title": "Baby, I Love Your Way",
+   "artist": "Big Mountain",
+   "year": 1994
+  },
+  {
+   "title": "Hey Jealousy",
+   "artist": "Gin Blossoms",
+   "year": 1989
+  },
+  {
    "title": "Aneurysm",
    "artist": "Nirvana",
    "year": 1991
   },
   {
-   "title": "No Excuses",
-   "artist": "Alice in Chains",
-   "year": 1993
+   "title": "How Bizarre",
+   "artist": "OMC",
+   "year": 1995
   },
   {
-   "title": "My Favourite Game",
-   "artist": "The Cardigans",
-   "year": 1998
-  },
-  {
-   "title": "Creep",
-   "artist": "Stone Temple Pilots",
-   "year": 1992
+   "title": "Always Be My Baby",
+   "artist": "Mariah Carey",
+   "year": 1995
   },
   {
    "title": "Check the Rhime",
@@ -349,13 +619,33 @@
    "year": 1991
   },
   {
-   "title": "Ready or Not",
-   "artist": "Fugees",
-   "year": 1996
+   "title": "Peaches",
+   "artist": "The Presidents of the United States of America",
+   "year": 1995
   },
   {
-   "title": "Santeria",
-   "artist": "Sublime",
+   "title": "My Favourite Game",
+   "artist": "The Cardigans",
+   "year": 1998
+  },
+  {
+   "title": "No Excuses",
+   "artist": "Alice in Chains",
+   "year": 1993
+  },
+  {
+   "title": "Creep",
+   "artist": "Stone Temple Pilots",
+   "year": 1992
+  },
+  {
+   "title": "Father Of Mine",
+   "artist": "Everclear",
+   "year": 1994
+  },
+  {
+   "title": "Ready or Not",
+   "artist": "Fugees",
    "year": 1996
   },
   {
@@ -364,29 +654,19 @@
    "year": 1994
   },
   {
-   "title": "Can We Talk",
-   "artist": "Tevin Campbell",
-   "year": 1993
+   "title": "Possum Kingdom",
+   "artist": "Toadies",
+   "year": 1992
   },
   {
-   "title": "Blow Up the Outside World",
-   "artist": "Soundgarden",
+   "title": "Think About The Way",
+   "artist": "Ice MC",
+   "year": 1994
+  },
+  {
+   "title": "Coco Jamboo",
+   "artist": "Mr. President",
    "year": 1996
-  },
-  {
-   "title": "Killing Me Softly with His Song",
-   "artist": "Fugees",
-   "year": 2010
-  },
-  {
-   "title": "Wrong Way",
-   "artist": "Sublime",
-   "year": 1995
-  },
-  {
-   "title": "Show Me Love",
-   "artist": "Robin S",
-   "year": 1993
   },
   {
    "title": "Zombie",
@@ -394,19 +674,74 @@
    "year": 1994
   },
   {
-   "title": "November Rain",
-   "artist": "Guns N' Roses",
-   "year": 1986
+   "title": "Get A Way",
+   "artist": "Maxx",
+   "year": 1993
   },
   {
-   "title": "Criminal",
-   "artist": "Fiona Apple",
+   "title": "Torn",
+   "artist": "Natalie Imbruglia",
+   "year": 1997
+  },
+  {
+   "title": "There She Goes",
+   "artist": "Sixpence None the Richer",
+   "year": 1998
+  },
+  {
+   "title": "Set Adrift on Memory Bliss",
+   "artist": "P.M. Dawn",
+   "year": 1991
+  },
+  {
+   "title": "Larger Than Life",
+   "artist": "Backstreet Boys",
+   "year": 1999
+  },
+  {
+   "title": "Santeria",
+   "artist": "Sublime",
    "year": 1996
   },
   {
-   "title": "Something in the Way",
-   "artist": "Nirvana",
-   "year": 1991
+   "title": "Show Me Love",
+   "artist": "Robin S",
+   "year": 1993
+  },
+  {
+   "title": "Can We Talk",
+   "artist": "Tevin Campbell",
+   "year": 1993
+  },
+  {
+   "title": "A Long December",
+   "artist": "Counting Crows",
+   "year": 1996
+  },
+  {
+   "title": "Do You Remember the First Time?",
+   "artist": "Pulp",
+   "year": 1994
+  },
+  {
+   "title": "Ice Ice Baby",
+   "artist": "Vanilla Ice",
+   "year": 1990
+  },
+  {
+   "title": "Name",
+   "artist": "Goo Goo Dolls",
+   "year": 1990
+  },
+  {
+   "title": "Thief of Hearts",
+   "artist": "Madonna",
+   "year": 1992
+  },
+  {
+   "title": "It's a Fine Day",
+   "artist": "Opus III",
+   "year": 1992
   },
   {
    "title": "Dead & Bloated",
@@ -414,64 +749,9 @@
    "year": 1992
   },
   {
-   "title": "Say My Name",
-   "artist": "Destiny's Child",
-   "year": 1998
-  },
-  {
-   "title": "Celebrity Skin",
-   "artist": "Hole",
-   "year": 1991
-  },
-  {
-   "title": "Rosa Parks",
-   "artist": "OutKast",
-   "year": 1998
-  },
-  {
-   "title": "Marigold",
-   "artist": "Nirvana",
-   "year": 1993
-  },
-  {
-   "title": "Alive",
-   "artist": "Pearl Jam",
-   "year": 1992
-  },
-  {
-   "title": "Self Esteem",
-   "artist": "The Offspring",
+   "title": "My Iron Lung",
+   "artist": "Radiohead",
    "year": 1994
-  },
-  {
-   "title": "Fell on Black Days",
-   "artist": "Soundgarden",
-   "year": 1994
-  },
-  {
-   "title": "Last Kiss",
-   "artist": "Pearl Jam",
-   "year": 1999
-  },
-  {
-   "title": "Burden in My Hand",
-   "artist": "Soundgarden",
-   "year": 1996
-  },
-  {
-   "title": "Any Time, Any Place",
-   "artist": "Janet Jackson",
-   "year": 1994
-  },
-  {
-   "title": "Believe",
-   "artist": "Cher",
-   "year": 1998
-  },
-  {
-   "title": "Ray of Light",
-   "artist": "Madonna",
-   "year": 1998
   },
   {
    "title": "Feel It",
@@ -479,184 +759,249 @@
    "year": 1998
   },
   {
-   "title": "Breakin' My Heart (Pretty Brown Eyes)",
-   "artist": "Mint Condition",
-   "year": 1991
+   "title": "Truly Madly Deeply",
+   "artist": "Savage Garden",
+   "year": 1997
   },
   {
-   "title": "Scentless Apprentice",
-   "artist": "Nirvana",
-   "year": 1993
-  },
-  {
-   "title": "Perfect",
-   "artist": "The Smashing Pumpkins",
-   "year": 1998
-  },
-  {
-   "title": "The Distance",
-   "artist": "Cake",
-   "year": 1996
-  },
-  {
-   "title": "Fu-Gee-La",
-   "artist": "Fugees",
+   "title": "To the Moon & Back",
+   "artist": "Savage Garden",
    "year": 1995
   },
   {
-   "title": "Plush",
-   "artist": "Stone Temple Pilots",
-   "year": 1992
-  },
-  {
-   "title": "Baby Got Back",
-   "artist": "Sir Mix-A-Lot",
-   "year": 1992
-  },
-  {
-   "title": "Electric Relaxation",
-   "artist": "A Tribe Called Quest",
+   "title": "Low",
+   "artist": "Cracker",
    "year": 1993
   },
   {
-   "title": "Boombastic",
-   "artist": "Shaggy",
-   "year": 1994
+   "title": "November Rain",
+   "artist": "Guns N' Roses",
+   "year": 1986
   },
   {
-   "title": "Asking for It",
-   "artist": "Hole",
-   "year": 1994
+   "title": "What It's Like",
+   "artist": "Everlast",
+   "year": 1997
   },
   {
-   "title": "Would?",
-   "artist": "Alice in Chains",
-   "year": 1992
+   "title": "Killing Me Softly with His Song",
+   "artist": "Fugees",
+   "year": 2010
   },
   {
-   "title": "Miss World",
-   "artist": "Hole",
+   "title": "Emotions",
+   "artist": "Mariah Carey",
    "year": 1991
   },
   {
-   "title": "You Know You're Right",
-   "artist": "Nirvana",
-   "year": 1996
-  },
-  {
-   "title": "Big Time Sensuality",
-   "artist": "Björk",
-   "year": 1993
-  },
-  {
-   "title": "Bleed the Freak",
-   "artist": "Alice in Chains",
-   "year": 1989
-  },
-  {
-   "title": "Nuthin' But a \"G\" Thang",
-   "artist": "Dr. Dre",
-   "year": 1992
-  },
-  {
-   "title": "Livin' La Vida Loca",
-   "artist": "Ricky Martin",
-   "year": 1999
-  },
-  {
-   "title": "Pretty Noose",
+   "title": "Blow Up the Outside World",
    "artist": "Soundgarden",
    "year": 1996
   },
   {
-   "title": "Kool Thing",
-   "artist": "Sonic Youth",
-   "year": 1990
-  },
-  {
-   "title": "Doin' Time",
+   "title": "Wrong Way",
    "artist": "Sublime",
-   "year": 1996
+   "year": 1995
   },
   {
-   "title": "Bills, Bills, Bills",
-   "artist": "Destiny's Child",
-   "year": 1999
-  },
-  {
-   "title": "Age Ain't Nothing but a Number",
-   "artist": "Aaliyah",
-   "year": 1994
-  },
-  {
-   "title": "Just Another Day",
-   "artist": "Jon Secada",
-   "year": 1992
-  },
-  {
-   "title": "Macarena",
-   "artist": "Los Del Rio",
+   "title": "Mmm Mmm Mmm Mmm",
+   "artist": "Crash Test Dummies",
    "year": 1993
   },
   {
-   "title": "Come Out and Play",
-   "artist": "The Offspring",
-   "year": 1994
-  },
-  {
-   "title": "100% Pure Love",
-   "artist": "Crystal Waters",
-   "year": 1994
-  },
-  {
-   "title": "Territorial Pissings",
+   "title": "Something in the Way",
    "artist": "Nirvana",
    "year": 1991
   },
   {
-   "title": "Yellow Ledbetter",
-   "artist": "Pearl Jam",
-   "year": 1995
+   "title": "I Swear",
+   "artist": "All-4-One",
+   "year": 1994
   },
   {
-   "title": "Virtual Insanity",
-   "artist": "Jamiroquai",
-   "year": 1996
-  },
-  {
-   "title": "He's Mine",
-   "artist": "MoKenStef",
-   "year": 1995
-  },
-  {
-   "title": "Soldier Of Love",
-   "artist": "Pearl Jam",
+   "title": "Drowned World / Substitute for Love",
+   "artist": "Madonna",
    "year": 1998
   },
   {
-   "title": "Undone - The Sweater Song",
+   "title": "No One Else",
    "artist": "Weezer",
    "year": 1994
   },
   {
-   "title": "Insane in the Brain",
-   "artist": "Cypress Hill",
-   "year": 1993
-  },
-  {
-   "title": "Runnin'",
-   "artist": "The Pharcyde",
+   "title": "Spiderwebs",
+   "artist": "No Doubt",
    "year": 1995
   },
   {
-   "title": "Spoonman",
+   "title": "Steal My Sunshine",
+   "artist": "Len",
+   "year": 1999
+  },
+  {
+   "title": "I Will Buy You A New Life",
+   "artist": "Everclear",
+   "year": 1997
+  },
+  {
+   "title": "Secret",
+   "artist": "Madonna",
+   "year": 1992
+  },
+  {
+   "title": "Rosa Parks",
+   "artist": "OutKast",
+   "year": 1998
+  },
+  {
+   "title": "Criminal",
+   "artist": "Fiona Apple",
+   "year": 1996
+  },
+  {
+   "title": "Run-Around",
+   "artist": "Blues Traveler",
+   "year": 1994
+  },
+  {
+   "title": "Cumbersome",
+   "artist": "Seven Mary Three",
+   "year": 1994
+  },
+  {
+   "title": "Miami",
+   "artist": "Will Smith",
+   "year": 1997
+  },
+  {
+   "title": "Honey",
+   "artist": "Mariah Carey",
+   "year": 1997
+  },
+  {
+   "title": "Sometimes Always",
+   "artist": "The Jesus and Mary Chain",
+   "year": 1994
+  },
+  {
+   "title": "Missing",
+   "artist": "Everything But the Girl",
+   "year": 1994
+  },
+  {
+   "title": "Self Esteem",
+   "artist": "The Offspring",
+   "year": 1994
+  },
+  {
+   "title": "Only Love Can Break Your Heart",
+   "artist": "Saint Etienne",
+   "year": 1990
+  },
+  {
+   "title": "Mmmbop",
+   "artist": "Hanson",
+   "year": 1996
+  },
+  {
+   "title": "Sweet Harmony",
+   "artist": "The Beloved",
+   "year": 1992
+  },
+  {
+   "title": "Bad Girl",
+   "artist": "Madonna",
+   "year": 1992
+  },
+  {
+   "title": "Celebrity Skin",
+   "artist": "Hole",
+   "year": 1991
+  },
+  {
+   "title": "Alive",
+   "artist": "Pearl Jam",
+   "year": 1992
+  },
+  {
+   "title": "Marigold",
+   "artist": "Nirvana",
+   "year": 1993
+  },
+  {
+   "title": "Say My Name",
+   "artist": "Destiny's Child",
+   "year": 1998
+  },
+  {
+   "title": "Don't Look Back in Anger",
+   "artist": "Oasis",
+   "year": 1995
+  },
+  {
+   "title": "It's Gonna Be Me",
+   "artist": "*NSYNC",
+   "year": 2000
+  },
+  {
+   "title": "Fly",
+   "artist": "Sugar Ray",
+   "year": 1997
+  },
+  {
+   "title": "Last Kiss",
+   "artist": "Pearl Jam",
+   "year": 1999
+  },
+  {
+   "title": "Fell on Black Days",
    "artist": "Soundgarden",
    "year": 1994
   },
   {
-   "title": "Dying",
-   "artist": "Hole",
-   "year": 1991
+   "title": "Where Life Begins",
+   "artist": "Madonna",
+   "year": 1992
+  },
+  {
+   "title": "Found Out About You",
+   "artist": "Gin Blossoms",
+   "year": 1989
+  },
+  {
+   "title": "Touch, Peel And Stand",
+   "artist": "Days of the New",
+   "year": 1997
+  },
+  {
+   "title": "Creep",
+   "artist": "TLC",
+   "year": 1994
+  },
+  {
+   "title": "100%",
+   "artist": "Sonic Youth",
+   "year": 1992
+  },
+  {
+   "title": "She Don't Use Jelly",
+   "artist": "The Flaming Lips",
+   "year": 1993
+  },
+  {
+   "title": "Ordinary World",
+   "artist": "Duran Duran",
+   "year": 1993
+  },
+  {
+   "title": "93 'til Infinity",
+   "artist": "Souls of Mischief",
+   "year": 1993
+  },
+  {
+   "title": "Are You Gonna Go My Way",
+   "artist": "Lenny Kravitz",
+   "year": 1993
   }
  ]
 }

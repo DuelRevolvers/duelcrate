@@ -1,7 +1,7 @@
 {
  "name": "Love Songs",
  "tag": "love",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "The Only Exception",
@@ -19,6 +19,11 @@
    "year": 2011
   },
   {
+   "title": "Lover, You Should've Come Over",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
    "title": "Kiss Me",
    "artist": "Sixpence None the Richer",
    "year": 1997
@@ -29,9 +34,19 @@
    "year": 2014
   },
   {
+   "title": "Everybody Here Wants You",
+   "artist": "Jeff Buckley",
+   "year": 1998
+  },
+  {
    "title": "Love",
    "artist": "Keyshia Cole",
    "year": 2005
+  },
+  {
+   "title": "You & I",
+   "artist": "One Direction",
+   "year": 2013
   },
   {
    "title": "Hey There Delilah",
@@ -39,18 +54,18 @@
    "year": 2005
   },
   {
-   "title": "Night Changes",
-   "artist": "One Direction",
-   "year": 2014
-  },
-  {
-   "title": "Thinking of You",
-   "artist": "Katy Perry",
+   "title": "Fall for You",
+   "artist": "Secondhand Serenade",
    "year": 2008
   },
   {
    "title": "The Man Who Can't Be Moved",
    "artist": "The Script",
+   "year": 2008
+  },
+  {
+   "title": "Thinking of You",
+   "artist": "Katy Perry",
    "year": 2008
   },
   {
@@ -64,9 +79,34 @@
    "year": 2011
   },
   {
+   "title": "Night Changes",
+   "artist": "One Direction",
+   "year": 2014
+  },
+  {
    "title": "Hold On, We're Going Home",
    "artist": "Drake",
    "year": 2013
+  },
+  {
+   "title": "I'll Be",
+   "artist": "Edwin McCain",
+   "year": 1997
+  },
+  {
+   "title": "Can't Take My Eyes Off You",
+   "artist": "Frankie Valli",
+   "year": 1967
+  },
+  {
+   "title": "True Love Waits",
+   "artist": "Radiohead",
+   "year": 2000
+  },
+  {
+   "title": "Criminal",
+   "artist": "Britney Spears",
+   "year": 2011
   },
   {
    "title": "Love Story",
@@ -74,9 +114,44 @@
    "year": 2008
   },
   {
+   "title": "Kinky Love",
+   "artist": "Pale Saints",
+   "year": 1991
+  },
+  {
+   "title": "Can't Help Falling in Love",
+   "artist": "Elvis Presley",
+   "year": 1969
+  },
+  {
+   "title": "Edge of Desire",
+   "artist": "John Mayer",
+   "year": 2009
+  },
+  {
+   "title": "Lucky",
+   "artist": "Jason Mraz",
+   "year": 2008
+  },
+  {
+   "title": "Crazier",
+   "artist": "Taylor Swift",
+   "year": 2009
+  },
+  {
    "title": "Need You Now",
    "artist": "Lady Antebellum",
    "year": 2009
+  },
+  {
+   "title": "Just the Way You Are",
+   "artist": "Bruno Mars",
+   "year": 2010
+  },
+  {
+   "title": "Moonlight",
+   "artist": "Ariana Grande",
+   "year": 2016
   },
   {
    "title": "Tattooed Heart",
@@ -84,9 +159,9 @@
    "year": 2013
   },
   {
-   "title": "Just the Way You Are",
-   "artist": "Bruno Mars",
-   "year": 2010
+   "title": "I Won't Give Up",
+   "artist": "Jason Mraz",
+   "year": 2012
   },
   {
    "title": "Iris",
@@ -104,6 +179,21 @@
    "year": 2010
   },
   {
+   "title": "Always Remember Us This Way",
+   "artist": "Lady Gaga",
+   "year": 2018
+  },
+  {
+   "title": "Heavenly",
+   "artist": "Cigarettes After Sex",
+   "year": 2019
+  },
+  {
+   "title": "Baby",
+   "artist": "Justin Bieber",
+   "year": 2010
+  },
+  {
    "title": "Radio",
    "artist": "Lana Del Rey",
    "year": 2012
@@ -114,9 +204,39 @@
    "year": 2004
   },
   {
+   "title": "Bleeding Love",
+   "artist": "Leona Lewis",
+   "year": 2007
+  },
+  {
+   "title": "Sea of Love",
+   "artist": "Cat Power",
+   "year": 1999
+  },
+  {
    "title": "All of Me",
    "artist": "John Legend",
    "year": 2013
+  },
+  {
+   "title": "We Belong Together",
+   "artist": "Ritchie Valens",
+   "year": 1959
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Justin Bieber",
+   "year": 2010
+  },
+  {
+   "title": "You and Me",
+   "artist": "Penny & the Quarters",
+   "year": 2007
+  },
+  {
+   "title": "Baby I'm Yours",
+   "artist": "Arctic Monkeys",
+   "year": 2006
   },
   {
    "title": "How Do I Live",
@@ -124,9 +244,34 @@
    "year": 1997
   },
   {
+   "title": "Unchained Melody",
+   "artist": "The Righteous Brothers",
+   "year": 1965
+  },
+  {
+   "title": "You're Beautiful",
+   "artist": "James Blunt",
+   "year": 2004
+  },
+  {
    "title": "I Will Follow You Into The Dark",
    "artist": "Death Cab for Cutie",
    "year": 2005
+  },
+  {
+   "title": "XO",
+   "artist": "Beyoncé",
+   "year": 2013
+  },
+  {
+   "title": "Mistletoe",
+   "artist": "Justin Bieber",
+   "year": 2011
+  },
+  {
+   "title": "Endless Love",
+   "artist": "Lionel Richie",
+   "year": 1992
   },
   {
    "title": "Lover",
@@ -134,14 +279,59 @@
    "year": 2019
   },
   {
+   "title": "Big Girls Don't Cry (Personal)",
+   "artist": "Fergie",
+   "year": 2024
+  },
+  {
+   "title": "Love Me Like You Do",
+   "artist": "Ellie Goulding",
+   "year": 2015
+  },
+  {
+   "title": "You Are in Love",
+   "artist": "Taylor Swift",
+   "year": 2014
+  },
+  {
+   "title": "Jar of Hearts",
+   "artist": "Christina Perri",
+   "year": 2010
+  },
+  {
    "title": "My Love Mine All Mine",
    "artist": "Mitski",
    "year": 2023
   },
   {
+   "title": "Accidentally in Love",
+   "artist": "Counting Crows",
+   "year": 2003
+  },
+  {
+   "title": "A Year Without Rain",
+   "artist": "Selena Gomez & the Scene",
+   "year": 2010
+  },
+  {
+   "title": "When You Say Nothing at All",
+   "artist": "Ronan Keating",
+   "year": 1999
+  },
+  {
+   "title": "She",
+   "artist": "Elvis Costello",
+   "year": 1999
+  },
+  {
    "title": "With You",
    "artist": "Chris Brown",
    "year": 2007
+  },
+  {
+   "title": "Hate That I Love You",
+   "artist": "Rihanna",
+   "year": 2008
   },
   {
    "title": "Lovefool",
@@ -154,14 +344,34 @@
    "year": 2013
   },
   {
+   "title": "L-O-V-E",
+   "artist": "Nat King Cole",
+   "year": 1964
+  },
+  {
+   "title": "One Less Lonely Girl",
+   "artist": "Justin Bieber",
+   "year": 2009
+  },
+  {
+   "title": "Careless Whisper",
+   "artist": "George Michael",
+   "year": 1984
+  },
+  {
    "title": "Lovin' You",
    "artist": "Minnie Riperton",
    "year": 1974
   },
   {
-   "title": "Hate That I Love You",
-   "artist": "Rihanna",
-   "year": 2008
+   "title": "Geeks in Love",
+   "artist": "Lemon Demon",
+   "year": 2005
+  },
+  {
+   "title": "My Love",
+   "artist": "Paul McCartney",
+   "year": 1976
   },
   {
    "title": "Chasing Cars",
@@ -169,14 +379,69 @@
    "year": 2005
   },
   {
+   "title": "Love Me",
+   "artist": "Justin Bieber",
+   "year": 2009
+  },
+  {
+   "title": "Truly Madly Deeply",
+   "artist": "Savage Garden",
+   "year": 1997
+  },
+  {
    "title": "Let's Stay Together",
    "artist": "Al Green",
    "year": 1971
   },
   {
+   "title": "Falling In Love At A Coffee Shop",
+   "artist": "Landon Pigg",
+   "year": 2007
+  },
+  {
+   "title": "Eres",
+   "artist": "Café Tacvba",
+   "year": 2003
+  },
+  {
+   "title": "Smash Into You",
+   "artist": "Beyoncé",
+   "year": 2008
+  },
+  {
    "title": "Sure Thing",
    "artist": "Miguel",
    "year": 2010
+  },
+  {
+   "title": "One Time",
+   "artist": "Justin Bieber",
+   "year": 2009
+  },
+  {
+   "title": "Bubbly",
+   "artist": "Colbie Caillat",
+   "year": 2007
+  },
+  {
+   "title": "PPP",
+   "artist": "Beach House",
+   "year": 2015
+  },
+  {
+   "title": "Kissing In Cars",
+   "artist": "Pierce the Veil",
+   "year": 2010
+  },
+  {
+   "title": "Three Cheers for Five Years",
+   "artist": "Mayday Parade",
+   "year": 2006
+  },
+  {
+   "title": "Our Way to Fall",
+   "artist": "Yo La Tengo",
+   "year": 2000
   },
   {
    "title": "Tim McGraw",
@@ -189,14 +454,34 @@
    "year": 1992
   },
   {
-   "title": "Begin Again",
-   "artist": "Taylor Swift",
-   "year": 2012
+   "title": "How Am I Supposed to Live Without You",
+   "artist": "Michael Bolton",
+   "year": 1989
   },
   {
    "title": "You Belong with Me",
    "artist": "Taylor Swift",
    "year": 2008
+  },
+  {
+   "title": "Perfect",
+   "artist": "Ed Sheeran",
+   "year": 2017
+  },
+  {
+   "title": "Begin Again",
+   "artist": "Taylor Swift",
+   "year": 2012
+  },
+  {
+   "title": "Fireproof",
+   "artist": "One Direction",
+   "year": 2014
+  },
+  {
+   "title": "Right Now",
+   "artist": "One Direction",
+   "year": 2013
   },
   {
    "title": "I Don't Want to Get Over You",
@@ -209,14 +494,79 @@
    "year": 2012
   },
   {
+   "title": "About a Girl",
+   "artist": "The Academy Is...",
+   "year": 2008
+  },
+  {
+   "title": "Club To Your Arms",
+   "artist": "Rose Gray",
+   "year": 2026
+  },
+  {
+   "title": "The Girl",
+   "artist": "City and Colour",
+   "year": 2008
+  },
+  {
    "title": "Burn",
    "artist": "Usher",
    "year": 2004
   },
   {
-   "title": "Hero",
-   "artist": "Enrique Iglesias",
+   "title": "Thinking Bout You",
+   "artist": "Ariana Grande",
+   "year": 2016
+  },
+  {
+   "title": "The Luckiest",
+   "artist": "Ben Folds",
    "year": 2001
+  },
+  {
+   "title": "I Want Someone Badly",
+   "artist": "Jeff Buckley",
+   "year": 2010
+  },
+  {
+   "title": "Knock You Down",
+   "artist": "Keri Hilson",
+   "year": 2009
+  },
+  {
+   "title": "Be Your Everything",
+   "artist": "Boys Like Girls",
+   "year": 2012
+  },
+  {
+   "title": "Eternal Flame",
+   "artist": "The Bangles",
+   "year": 1999
+  },
+  {
+   "title": "Come Back... Be Here",
+   "artist": "Taylor Swift",
+   "year": 2012
+  },
+  {
+   "title": "You And I",
+   "artist": "Ingrid Michaelson",
+   "year": 2008
+  },
+  {
+   "title": "I Knew I Loved You",
+   "artist": "Savage Garden",
+   "year": 1999
+  },
+  {
+   "title": "Stranger",
+   "artist": "Secondhand Serenade",
+   "year": 2008
+  },
+  {
+   "title": "Heaven on Earth",
+   "artist": "Britney Spears",
+   "year": 2007
   },
   {
    "title": "Love, Love, Love",
@@ -224,9 +574,49 @@
    "year": 1973
   },
   {
+   "title": "Hero",
+   "artist": "Enrique Iglesias",
+   "year": 2001
+  },
+  {
+   "title": "No One's Gonna Love You",
+   "artist": "Band of Horses",
+   "year": 2007
+  },
+  {
+   "title": "Lovers Rock",
+   "artist": "TV Girl",
+   "year": 2014
+  },
+  {
+   "title": "Insatiable",
+   "artist": "Darren Hayes",
+   "year": 2001
+  },
+  {
+   "title": "My Everything",
+   "artist": "Ariana Grande",
+   "year": 2014
+  },
+  {
    "title": "Sálvame",
    "artist": "RBD",
    "year": 2004
+  },
+  {
+   "title": "Love",
+   "artist": "John Lennon",
+   "year": 1971
+  },
+  {
+   "title": "Your Magic Is Working",
+   "artist": "of Montreal",
+   "year": 2004
+  },
+  {
+   "title": "Vanilla Twilight",
+   "artist": "Owl City",
+   "year": 2009
   },
   {
    "title": "Neon Moon",
@@ -234,9 +624,9 @@
    "year": 1991
   },
   {
-   "title": "Treacherous",
-   "artist": "Taylor Swift",
-   "year": 2012
+   "title": "Your Love",
+   "artist": "Nicki Minaj",
+   "year": 2010
   },
   {
    "title": "You're Still the One",
@@ -244,9 +634,59 @@
    "year": 1997
   },
   {
-   "title": "Friday I'm in Love",
-   "artist": "The Cure",
-   "year": 1992
+   "title": "Let's Go Out Tonight",
+   "artist": "The Blue Nile",
+   "year": 1989
+  },
+  {
+   "title": "Come On Get Higher",
+   "artist": "Matt Nathanson",
+   "year": 2007
+  },
+  {
+   "title": "P.U.N.K. Girl",
+   "artist": "Heavenly",
+   "year": 1993
+  },
+  {
+   "title": "He Loves Me (Lyzel In E Flat)",
+   "artist": "Jill Scott",
+   "year": 2000
+  },
+  {
+   "title": "Taken",
+   "artist": "One Direction",
+   "year": 2011
+  },
+  {
+   "title": "Chest Pain (I Love)",
+   "artist": "Malcolm Todd",
+   "year": 2024
+  },
+  {
+   "title": "Love",
+   "artist": "Musiq",
+   "year": 2000
+  },
+  {
+   "title": "I Want to Know Your Plans",
+   "artist": "Say Anything",
+   "year": 2003
+  },
+  {
+   "title": "Treacherous",
+   "artist": "Taylor Swift",
+   "year": 2012
+  },
+  {
+   "title": "You Be the Anchor That Keeps My Feet on the Ground, I'll Be the Wings That Keep Your Heart in the Clouds",
+   "artist": "Mayday Parade",
+   "year": 2007
+  },
+  {
+   "title": "Boats & Birds",
+   "artist": "Gregory and the Hawk",
+   "year": 2005
   },
   {
    "title": "The Reason",
@@ -254,9 +694,44 @@
    "year": 2003
   },
   {
+   "title": "Friday I'm in Love",
+   "artist": "The Cure",
+   "year": 1992
+  },
+  {
+   "title": "Love Me Dead",
+   "artist": "Ludo",
+   "year": 2008
+  },
+  {
+   "title": "Angel",
+   "artist": "Theory of a Deadman",
+   "year": 2014
+  },
+  {
+   "title": "Without You",
+   "artist": "Mariah Carey",
+   "year": 1991
+  },
+  {
    "title": "Pink + White",
    "artist": "Frank Ocean",
    "year": 2014
+  },
+  {
+   "title": "Inevitable",
+   "artist": "Anberlin",
+   "year": 2007
+  },
+  {
+   "title": "Love Tried to Welcome Me",
+   "artist": "Madonna",
+   "year": 1994
+  },
+  {
+   "title": "When You're Smiling And Astride Me",
+   "artist": "Father John Misty",
+   "year": 2015
   },
   {
    "title": "Ho Hey",
@@ -264,39 +739,39 @@
    "year": 2011
   },
   {
+   "title": "Replay",
+   "artist": "Iyaz",
+   "year": 2009
+  },
+  {
+   "title": "I Miss You",
+   "artist": "Incubus",
+   "year": 1999
+  },
+  {
+   "title": "I Must Be Dreaming",
+   "artist": "The Maine",
+   "year": 2008
+  },
+  {
    "title": "Anyone Else But You",
    "artist": "The Moldy Peaches",
    "year": 2001
   },
   {
-   "title": "Yellow",
-   "artist": "Coldplay",
-   "year": 2000
+   "title": "Nobody Knows",
+   "artist": "The Tony Rich Project",
+   "year": 1995
   },
   {
-   "title": "Here Without You",
-   "artist": "3 Doors Down",
-   "year": 2000
+   "title": "Flaws and All",
+   "artist": "Beyoncé",
+   "year": 2007
   },
   {
-   "title": "Northern Downpour",
-   "artist": "Panic! at the Disco",
-   "year": 2008
-  },
-  {
-   "title": "No. 1 Party Anthem",
-   "artist": "Arctic Monkeys",
-   "year": 2013
-  },
-  {
-   "title": "All My Little Words",
-   "artist": "The Magnetic Fields",
-   "year": 1999
-  },
-  {
-   "title": "Your Call",
-   "artist": "Secondhand Serenade",
-   "year": 2005
+   "title": "Last Night on Earth",
+   "artist": "Green Day",
+   "year": 2009
   },
   {
    "title": "Love Never Felt So Good",
@@ -304,9 +779,124 @@
    "year": 2007
   },
   {
+   "title": "Yellow",
+   "artist": "Coldplay",
+   "year": 2000
+  },
+  {
+   "title": "No. 1 Party Anthem",
+   "artist": "Arctic Monkeys",
+   "year": 2013
+  },
+  {
+   "title": "4 in the Morning",
+   "artist": "Gwen Stefani",
+   "year": 2006
+  },
+  {
+   "title": "Twilight",
+   "artist": "Elliott Smith",
+   "year": 2004
+  },
+  {
+   "title": "Northern Downpour",
+   "artist": "Panic! at the Disco",
+   "year": 2008
+  },
+  {
+   "title": "Here Without You",
+   "artist": "3 Doors Down",
+   "year": 2000
+  },
+  {
+   "title": "Past Lives",
+   "artist": "BØRNS",
+   "year": 2014
+  },
+  {
+   "title": "Dangerously in Love 2",
+   "artist": "Beyoncé",
+   "year": 2003
+  },
+  {
+   "title": "Say You Love Me",
+   "artist": "Jessie Ware",
+   "year": 2014
+  },
+  {
+   "title": "All My Little Words",
+   "artist": "The Magnetic Fields",
+   "year": 1999
+  },
+  {
    "title": "I'm Not in Love",
    "artist": "10cc",
    "year": 1975
+  },
+  {
+   "title": "Epilogue",
+   "artist": "Justin Hurwitz",
+   "year": 2016
+  },
+  {
+   "title": "You Found Me",
+   "artist": "The Fray",
+   "year": 2008
+  },
+  {
+   "title": "Eyes",
+   "artist": "Rogue Wave",
+   "year": 2005
+  },
+  {
+   "title": "Close",
+   "artist": "Bladee",
+   "year": 2018
+  },
+  {
+   "title": "Little Bit",
+   "artist": "Lykke Li",
+   "year": 2007
+  },
+  {
+   "title": "Jump Then Fall",
+   "artist": "Taylor Swift",
+   "year": 2009
+  },
+  {
+   "title": "The Saltwater Room",
+   "artist": "Owl City",
+   "year": 2008
+  },
+  {
+   "title": "Your Call",
+   "artist": "Secondhand Serenade",
+   "year": 2005
+  },
+  {
+   "title": "Ramona",
+   "artist": "Beck",
+   "year": 2010
+  },
+  {
+   "title": "Let Me Love You (Until You Learn to Love Yourself)",
+   "artist": "Ne-Yo",
+   "year": 2012
+  },
+  {
+   "title": "I Believe (When I Fall in Love It Will Be Forever)",
+   "artist": "Stevie Wonder",
+   "year": 1972
+  },
+  {
+   "title": "Your Love Is My Drug",
+   "artist": "Ke$ha",
+   "year": 2009
+  },
+  {
+   "title": "Pushing It Down and Praying",
+   "artist": "Lizzy McAlpine",
+   "year": 2024
   },
   {
    "title": "Our Song",
@@ -314,9 +904,34 @@
    "year": 2006
   },
   {
-   "title": "You Found Me",
-   "artist": "The Fray",
+   "title": "Hey Stephen",
+   "artist": "Taylor Swift",
    "year": 2008
+  },
+  {
+   "title": "j's lullaby (darlin' i'd wait for you)",
+   "artist": "Delaney Bailey",
+   "year": 2022
+  },
+  {
+   "title": "Stupid in Love",
+   "artist": "Rihanna",
+   "year": 2009
+  },
+  {
+   "title": "Alive with the Glory of Love",
+   "artist": "Say Anything",
+   "year": 2004
+  },
+  {
+   "title": "The Engine Driver",
+   "artist": "The Decemberists",
+   "year": 2005
+  },
+  {
+   "title": "King of My Heart",
+   "artist": "Taylor Swift",
+   "year": 2017
   },
   {
    "title": "Cool Cat",
@@ -329,9 +944,14 @@
    "year": 2009
   },
   {
-   "title": "Your Man",
-   "artist": "Josh Turner",
-   "year": 2005
+   "title": "Do It to Me",
+   "artist": "Lionel Richie",
+   "year": 1992
+  },
+  {
+   "title": "Anywhere But Here",
+   "artist": "SafetySuit",
+   "year": 2008
   },
   {
    "title": "This Love",
@@ -339,24 +959,14 @@
    "year": 2002
   },
   {
-   "title": "I'll Believe in Anything",
-   "artist": "Wolf Parade",
-   "year": 2005
+   "title": "When A Man Loves A Woman",
+   "artist": "Percy Sledge",
+   "year": 1965
   },
   {
-   "title": "I Will Always Love You",
-   "artist": "Dolly Parton",
-   "year": 1974
-  },
-  {
-   "title": "Best I Ever Had",
-   "artist": "Drake",
-   "year": 2009
-  },
-  {
-   "title": "Your Love Is My Drug",
-   "artist": "Ke$ha",
-   "year": 2009
+   "title": "Moments",
+   "artist": "One Direction",
+   "year": 2011
   },
   {
    "title": "Look After You",
@@ -364,104 +974,34 @@
    "year": 2005
   },
   {
-   "title": "Futile Devices",
-   "artist": "Sufjan Stevens",
-   "year": 2010
-  },
-  {
-   "title": "Stay",
-   "artist": "Rihanna",
-   "year": 2013
-  },
-  {
-   "title": "Heaven",
-   "artist": "Bryan Adams",
-   "year": 1984
-  },
-  {
-   "title": "At Last",
-   "artist": "Etta James",
-   "year": 1960
-  },
-  {
-   "title": "Turn Your Lights Down Low",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
-  },
-  {
-   "title": "Is This Love",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
-  },
-  {
-   "title": "We Belong Together",
-   "artist": "Mariah Carey",
+   "title": "Your Man",
+   "artist": "Josh Turner",
    "year": 2005
   },
   {
-   "title": "Love of My Life",
-   "artist": "Queen",
-   "year": 1975
-  },
-  {
-   "title": "Marry You",
-   "artist": "Bruno Mars",
-   "year": 2010
-  },
-  {
-   "title": "Dreaming of You",
-   "artist": "Selena",
-   "year": 1995
-  },
-  {
-   "title": "I'd Hate to Be You When People Find Out What This Song Is About",
-   "artist": "Mayday Parade",
-   "year": 2007
-  },
-  {
-   "title": "My Boo",
-   "artist": "Usher",
-   "year": 2005
-  },
-  {
-   "title": "Digital Love",
-   "artist": "Daft Punk",
-   "year": 2001
-  },
-  {
-   "title": "Should've Said No",
-   "artist": "Taylor Swift",
+   "title": "I Call It Love",
+   "artist": "Lionel Richie",
    "year": 2006
   },
   {
-   "title": "Strawberry Wine",
-   "artist": "Deana Carter",
-   "year": 1996
+   "title": "I'm Kissing You",
+   "artist": "Des'ree",
+   "year": 1997
   },
   {
-   "title": "Last Goodbye",
-   "artist": "Jeff Buckley",
-   "year": 1994
+   "title": "Baby",
+   "artist": "Devendra Banhart",
+   "year": 2009
   },
   {
-   "title": "Romeo and Juliet",
-   "artist": "Dire Straits",
-   "year": 1980
+   "title": "Always Be My Baby",
+   "artist": "Mariah Carey",
+   "year": 1995
   },
   {
-   "title": "Back to December",
-   "artist": "Taylor Swift",
-   "year": 2010
-  },
-  {
-   "title": "Make You Feel My Love",
-   "artist": "Adele",
-   "year": 2008
-  },
-  {
-   "title": "A Thousand Miles",
-   "artist": "Vanessa Carlton",
-   "year": 2000
+   "title": "Love In December",
+   "artist": "Club 8",
+   "year": 2001
   }
  ]
 }

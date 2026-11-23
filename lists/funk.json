@@ -1,7 +1,7 @@
 {
  "name": "Funk",
  "tag": "funk",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "24K Magic",
@@ -9,14 +9,14 @@
    "year": 2016
   },
   {
-   "title": "September",
-   "artist": "Earth, Wind & Fire",
-   "year": 1978
-  },
-  {
    "title": "Super Freak",
    "artist": "Rick James",
    "year": 1981
+  },
+  {
+   "title": "September",
+   "artist": "Earth, Wind & Fire",
+   "year": 1978
   },
   {
    "title": "Let's Groove",
@@ -24,9 +24,9 @@
    "year": 1981
   },
   {
-   "title": "Hey Ya!",
-   "artist": "OutKast",
-   "year": 2003
+   "title": "Wesley's Theory",
+   "artist": "Kendrick Lamar",
+   "year": 2015
   },
   {
    "title": "Canned Heat",
@@ -49,9 +49,24 @@
    "year": 2015
   },
   {
+   "title": "Love Never Felt So Good",
+   "artist": "Michael Jackson",
+   "year": 2007
+  },
+  {
    "title": "Virtual Insanity",
    "artist": "Jamiroquai",
    "year": 1996
+  },
+  {
+   "title": "Them Changes",
+   "artist": "Thundercat",
+   "year": 2014
+  },
+  {
+   "title": "Superstition",
+   "artist": "Stevie Wonder",
+   "year": 1972
   },
   {
    "title": "Crazy",
@@ -62,16 +77,6 @@
    "title": "King Kunta",
    "artist": "Kendrick Lamar",
    "year": 2015
-  },
-  {
-   "title": "Them Changes",
-   "artist": "Thundercat",
-   "year": 2014
-  },
-  {
-   "title": "Love Never Felt So Good",
-   "artist": "Michael Jackson",
-   "year": 2007
   },
   {
    "title": "i",
@@ -89,14 +94,9 @@
    "year": 1976
   },
   {
-   "title": "Superstition",
-   "artist": "Stevie Wonder",
-   "year": 1972
-  },
-  {
-   "title": "Can't Stop",
-   "artist": "Red Hot Chili Peppers",
-   "year": 2001
+   "title": "Outstanding",
+   "artist": "The Gap Band",
+   "year": 1982
   },
   {
    "title": "I Wish",
@@ -104,14 +104,19 @@
    "year": 1976
   },
   {
-   "title": "Get Down On It",
-   "artist": "Kool & the Gang",
-   "year": 1985
-  },
-  {
    "title": "Soft and Wet",
    "artist": "Prince",
    "year": 1978
+  },
+  {
+   "title": "Can't Stop",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2001
+  },
+  {
+   "title": "Get Down On It",
+   "artist": "Kool & the Gang",
+   "year": 1985
   },
   {
    "title": "Sir Duke",
@@ -124,16 +129,6 @@
    "year": 2001
   },
   {
-   "title": "That's What I Like",
-   "artist": "Bruno Mars",
-   "year": 2016
-  },
-  {
-   "title": "Outstanding",
-   "artist": "The Gap Band",
-   "year": 1982
-  },
-  {
    "title": "Give Life Back to Music",
    "artist": "Daft Punk",
    "year": 2014
@@ -144,14 +139,19 @@
    "year": 1979
   },
   {
+   "title": "That's What I Like",
+   "artist": "Bruno Mars",
+   "year": 2016
+  },
+  {
+   "title": "Space Cowboy",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
    "title": "Can You Get to That",
    "artist": "Funkadelic",
    "year": 1971
-  },
-  {
-   "title": "Let It Whip",
-   "artist": "Dazz Band",
-   "year": 1982
   },
   {
    "title": "Seven Days in Sunny June",
@@ -159,9 +159,19 @@
    "year": 2005
   },
   {
+   "title": "Let It Whip",
+   "artist": "Dazz Band",
+   "year": 1982
+  },
+  {
    "title": "When Doves Cry",
    "artist": "Prince",
    "year": 1984
+  },
+  {
+   "title": "I Wanna Be Your Lover",
+   "artist": "Prince",
+   "year": 1979
   },
   {
    "title": "Redbone",
@@ -174,24 +184,19 @@
    "year": 2012
   },
   {
-   "title": "I Wanna Be Your Lover",
-   "artist": "Prince",
-   "year": 1979
-  },
-  {
    "title": "CUFF IT",
    "artist": "Beyoncé",
    "year": 2022
   },
   {
-   "title": "Kiss",
-   "artist": "Prince",
-   "year": 1986
-  },
-  {
    "title": "Too Young to Die",
    "artist": "Jamiroquai",
    "year": 1993
+  },
+  {
+   "title": "Kiss",
+   "artist": "Prince",
+   "year": 1986
   },
   {
    "title": "You Dropped A Bomb On Me",
@@ -204,19 +209,9 @@
    "year": 1978
   },
   {
-   "title": "Baby I'm Yours",
-   "artist": "Breakbot",
-   "year": 2012
-  },
-  {
-   "title": "Workin' Day and Night",
-   "artist": "Michael Jackson",
-   "year": 1979
-  },
-  {
-   "title": "Hit It and Quit It",
-   "artist": "Funkadelic",
-   "year": 1971
+   "title": "Give Me the Night",
+   "artist": "George Benson",
+   "year": 1980
   },
   {
    "title": "Jungle Boogie",
@@ -224,9 +219,9 @@
    "year": 1973
   },
   {
-   "title": "Scar Tissue",
-   "artist": "Red Hot Chili Peppers",
-   "year": 1999
+   "title": "Workin' Day and Night",
+   "artist": "Michael Jackson",
+   "year": 1979
   },
   {
    "title": "Chicago",
@@ -234,19 +229,19 @@
    "year": 2014
   },
   {
-   "title": "Give Me the Night",
-   "artist": "George Benson",
-   "year": 1980
+   "title": "Baby I'm Yours",
+   "artist": "Breakbot",
+   "year": 2012
   },
   {
-   "title": "Give Up The Funk (Tear The Roof Off The Sucker)",
-   "artist": "Parliament",
-   "year": 1975
+   "title": "Scar Tissue",
+   "artist": "Red Hot Chili Peppers",
+   "year": 1999
   },
   {
-   "title": "Get Up Offa That Thing",
-   "artist": "James Brown",
-   "year": 1976
+   "title": "Hit It and Quit It",
+   "artist": "Funkadelic",
+   "year": 1971
   },
   {
    "title": "Butterfly",
@@ -259,14 +254,44 @@
    "year": 2001
   },
   {
+   "title": "Give Up The Funk (Tear The Roof Off The Sucker)",
+   "artist": "Parliament",
+   "year": 1975
+  },
+  {
+   "title": "Get Up Offa That Thing",
+   "artist": "James Brown",
+   "year": 1976
+  },
+  {
+   "title": "Love Rollercoaster",
+   "artist": "Ohio Players",
+   "year": 1975
+  },
+  {
    "title": "If You Want Me To Stay",
    "artist": "Sly & The Family Stone",
    "year": 1973
   },
   {
+   "title": "Falling",
+   "artist": "Jamiroquai",
+   "year": 1999
+  },
+  {
    "title": "Maggot Brain",
    "artist": "Funkadelic",
    "year": 1971
+  },
+  {
+   "title": "The Boss",
+   "artist": "James Brown",
+   "year": 1973
+  },
+  {
+   "title": "Flash Light",
+   "artist": "Parliament",
+   "year": 1977
   },
   {
    "title": "Shining Star",
@@ -279,23 +304,8 @@
    "year": 1996
   },
   {
-   "title": "Falling",
-   "artist": "Jamiroquai",
-   "year": 1999
-  },
-  {
-   "title": "Flash Light",
-   "artist": "Parliament",
-   "year": 1977
-  },
-  {
-   "title": "The Boss",
-   "artist": "James Brown",
-   "year": 1973
-  },
-  {
-   "title": "Love Rollercoaster",
-   "artist": "Ohio Players",
+   "title": "Why Can't We Be Friends",
+   "artist": "War",
    "year": 1975
   },
   {
@@ -304,14 +314,9 @@
    "year": 1993
   },
   {
-   "title": "Pusherman",
-   "artist": "Curtis Mayfield",
-   "year": 1972
-  },
-  {
-   "title": "Why Can't We Be Friends",
-   "artist": "War",
-   "year": 1975
+   "title": "Make Me Feel",
+   "artist": "Janelle Monáe",
+   "year": 2018
   },
   {
    "title": "Candy",
@@ -319,24 +324,9 @@
    "year": 1986
   },
   {
-   "title": "Early In The Morning",
-   "artist": "The Gap Band",
-   "year": 1982
-  },
-  {
-   "title": "Brick House",
-   "artist": "Commodores",
-   "year": 1977
-  },
-  {
-   "title": "Brothers On The Slide",
-   "artist": "Cymande",
-   "year": 1974
-  },
-  {
-   "title": "Summer Madness",
-   "artist": "Kool & the Gang",
-   "year": 1974
+   "title": "Pusherman",
+   "artist": "Curtis Mayfield",
+   "year": 1972
   },
   {
    "title": "Stillness in Time",
@@ -344,9 +334,39 @@
    "year": 1994
   },
   {
+   "title": "Early In The Morning",
+   "artist": "The Gap Band",
+   "year": 1982
+  },
+  {
    "title": "I Would Die 4 U",
    "artist": "Prince",
    "year": 1992
+  },
+  {
+   "title": "Summer Madness",
+   "artist": "Kool & the Gang",
+   "year": 1974
+  },
+  {
+   "title": "Brick House",
+   "artist": "Commodores",
+   "year": 1977
+  },
+  {
+   "title": "Manifest Destiny",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "Got To Be Real",
+   "artist": "Cheryl Lynn",
+   "year": 1978
+  },
+  {
+   "title": "Soul Education",
+   "artist": "Jamiroquai",
+   "year": 1999
   },
   {
    "title": "Super Stupid",
@@ -364,34 +384,14 @@
    "year": 1998
   },
   {
-   "title": "In the Stone",
-   "artist": "Earth, Wind & Fire",
-   "year": 1979
+   "title": "Brothers On The Slide",
+   "artist": "Cymande",
+   "year": 1974
   },
   {
-   "title": "Superfly",
-   "artist": "Curtis Mayfield",
-   "year": 1972
-  },
-  {
-   "title": "Soul Education",
-   "artist": "Jamiroquai",
-   "year": 1999
-  },
-  {
-   "title": "How You Like Me Now",
-   "artist": "The Heavy",
-   "year": 2001
-  },
-  {
-   "title": "Got To Be Real",
-   "artist": "Cheryl Lynn",
-   "year": 1978
-  },
-  {
-   "title": "You and Your Folks, Me and My Folks",
-   "artist": "Funkadelic",
-   "year": 1971
+   "title": "Strawberry Letter 23",
+   "artist": "Brothers Johnson",
+   "year": 1977
   },
   {
    "title": "Snow (Hey Oh)",
@@ -399,39 +399,19 @@
    "year": 2006
   },
   {
+   "title": "How You Like Me Now",
+   "artist": "The Heavy",
+   "year": 2001
+  },
+  {
    "title": "Come Down",
    "artist": "Anderson .Paak",
    "year": 2016
   },
   {
-   "title": "The Game of Love",
-   "artist": "Daft Punk",
-   "year": 2013
-  },
-  {
-   "title": "Pick Up the Pieces",
-   "artist": "Average White Band",
-   "year": 1973
-  },
-  {
-   "title": "Black Man",
-   "artist": "Stevie Wonder",
-   "year": 1976
-  },
-  {
-   "title": "P.Y.T. (Pretty Young Thing)",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "The Payback",
-   "artist": "James Brown",
-   "year": 1973
-  },
-  {
-   "title": "Soup for One",
-   "artist": "Chic",
-   "year": 1982
+   "title": "In the Stone",
+   "artist": "Earth, Wind & Fire",
+   "year": 1979
   },
   {
    "title": "You Know What",
@@ -439,29 +419,14 @@
    "year": 2008
   },
   {
-   "title": "Tommy the Cat",
-   "artist": "Primus",
-   "year": 1986
+   "title": "Black Man",
+   "artist": "Stevie Wonder",
+   "year": 1976
   },
   {
-   "title": "Fresh",
-   "artist": "Kool & the Gang",
-   "year": 1984
-  },
-  {
-   "title": "Celebration",
-   "artist": "Kool & the Gang",
-   "year": 1980
-  },
-  {
-   "title": "Back in Our Minds",
-   "artist": "Funkadelic",
-   "year": 1971
-  },
-  {
-   "title": "Fantasy",
-   "artist": "Earth, Wind & Fire",
-   "year": 1977
+   "title": "The Game of Love",
+   "artist": "Daft Punk",
+   "year": 2013
   },
   {
    "title": "Cissy Strut",
@@ -469,19 +434,29 @@
    "year": 1969
   },
   {
-   "title": "Everyday People",
-   "artist": "Sly & The Family Stone",
-   "year": 1968
+   "title": "You and Your Folks, Me and My Folks",
+   "artist": "Funkadelic",
+   "year": 1971
   },
   {
-   "title": "Computer Blue",
-   "artist": "Prince",
-   "year": 1985
+   "title": "The Payback",
+   "artist": "James Brown",
+   "year": 1973
   },
   {
-   "title": "Blow Your Mind",
-   "artist": "Jamiroquai",
-   "year": 1993
+   "title": "Hollywood Swinging",
+   "artist": "Kool & the Gang",
+   "year": 1973
+  },
+  {
+   "title": "Blame It on the Boogie",
+   "artist": "The Jacksons",
+   "year": 1978
+  },
+  {
+   "title": "Ain't Nobody",
+   "artist": "Rufus",
+   "year": 1996
   },
   {
    "title": "Boogieman",
@@ -489,29 +464,39 @@
    "year": 2016
   },
   {
-   "title": "Dove",
-   "artist": "Cymande",
+   "title": "P.Y.T. (Pretty Young Thing)",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Fresh",
+   "artist": "Kool & the Gang",
+   "year": 1984
+  },
+  {
+   "title": "Everyday People",
+   "artist": "Sly & The Family Stone",
+   "year": 1968
+  },
+  {
+   "title": "Give It Away",
+   "artist": "Red Hot Chili Peppers",
+   "year": 1991
+  },
+  {
+   "title": "Superfly",
+   "artist": "Curtis Mayfield",
    "year": 1972
   },
   {
-   "title": "(Don't) Give Hate a Chance",
-   "artist": "Jamiroquai",
-   "year": 2005
+   "title": "Pick Up the Pieces",
+   "artist": "Average White Band",
+   "year": 1973
   },
   {
-   "title": "I'm Every Woman",
-   "artist": "Chaka Khan",
-   "year": 1978
-  },
-  {
-   "title": "Baby I'm a Star",
-   "artist": "Prince",
-   "year": 1992
-  },
-  {
-   "title": "I'd Rather Be With You",
-   "artist": "Bootsy Collins",
-   "year": 1976
+   "title": "Celebration",
+   "artist": "Kool & the Gang",
+   "year": 1980
   },
   {
    "title": "Another Star",
@@ -519,49 +504,44 @@
    "year": 1976
   },
   {
+   "title": "Blow Your Mind",
+   "artist": "Jamiroquai",
+   "year": 1993
+  },
+  {
+   "title": "Tommy the Cat",
+   "artist": "Primus",
+   "year": 1986
+  },
+  {
+   "title": "I'd Rather Be With You",
+   "artist": "Bootsy Collins",
+   "year": 1976
+  },
+  {
+   "title": "Back in Our Minds",
+   "artist": "Funkadelic",
+   "year": 1971
+  },
+  {
+   "title": "Computer Blue",
+   "artist": "Prince",
+   "year": 1985
+  },
+  {
    "title": "Express Yourself",
    "artist": "Charles Wright & The Watts 103rd Street Rhythm Band",
    "year": 1970
   },
   {
-   "title": "You Ain't Gotta Lie (Momma Said)",
-   "artist": "Kendrick Lamar",
-   "year": 2015
+   "title": "I'm Every Woman",
+   "artist": "Chaka Khan",
+   "year": 1978
   },
   {
-   "title": "The Beautiful Ones",
-   "artist": "Prince",
-   "year": 1985
-  },
-  {
-   "title": "Roses",
-   "artist": "OutKast",
-   "year": 2003
-  },
-  {
-   "title": "Chameleon",
-   "artist": "Herbie Hancock",
-   "year": 1973
-  },
-  {
-   "title": "A Lonely Night",
-   "artist": "The Weeknd",
-   "year": 2016
-  },
-  {
-   "title": "Revolution 1993",
-   "artist": "Jamiroquai",
-   "year": 1993
-  },
-  {
-   "title": "Mothership Connection (Star Child)",
-   "artist": "Parliament",
-   "year": 1975
-  },
-  {
-   "title": "Around the World",
-   "artist": "Red Hot Chili Peppers",
-   "year": 1999
+   "title": "Soup for One",
+   "artist": "Chic",
+   "year": 1982
   },
   {
    "title": "Get Down Saturday Night",
@@ -569,19 +549,19 @@
    "year": 1983
   },
   {
-   "title": "Ghetto Life",
-   "artist": "Rick James",
-   "year": 1981
+   "title": "Baby I'm a Star",
+   "artist": "Prince",
+   "year": 1992
   },
   {
-   "title": "Get on the Floor",
-   "artist": "Michael Jackson",
-   "year": 1979
+   "title": "You Ain't Gotta Lie (Momma Said)",
+   "artist": "Kendrick Lamar",
+   "year": 2015
   },
   {
-   "title": "How Long Do I Have To Wait For You?",
-   "artist": "Sharon Jones and the Dap-Kings",
-   "year": 2005
+   "title": "Fantasy",
+   "artist": "Earth, Wind & Fire",
+   "year": 1977
   },
   {
    "title": "Could Heaven Ever Be Like This",
@@ -589,19 +569,39 @@
    "year": 1977
   },
   {
-   "title": "Little Red Corvette",
-   "artist": "Prince",
-   "year": 1982
-  },
-  {
-   "title": "More Bounce to the Ounce",
-   "artist": "Zapp",
-   "year": 1980
-  },
-  {
-   "title": "Black Capricorn Day",
+   "title": "(Don't) Give Hate a Chance",
    "artist": "Jamiroquai",
+   "year": 2005
+  },
+  {
+   "title": "The Beautiful Ones",
+   "artist": "Prince",
+   "year": 1985
+  },
+  {
+   "title": "A Lonely Night",
+   "artist": "The Weeknd",
+   "year": 2016
+  },
+  {
+   "title": "Roses",
+   "artist": "OutKast",
+   "year": 2003
+  },
+  {
+   "title": "Revolution 1993",
+   "artist": "Jamiroquai",
+   "year": 1993
+  },
+  {
+   "title": "Around the World",
+   "artist": "Red Hot Chili Peppers",
    "year": 1999
+  },
+  {
+   "title": "Chameleon",
+   "artist": "Herbie Hancock",
+   "year": 1973
   },
   {
    "title": "White Knuckle Ride",
@@ -609,69 +609,34 @@
    "year": 2010
   },
   {
-   "title": "The Revolution Will Not Be Televised",
-   "artist": "Gil Scott-Heron",
-   "year": 1970
+   "title": "How Long Do I Have To Wait For You?",
+   "artist": "Sharon Jones and the Dap-Kings",
+   "year": 2005
   },
   {
-   "title": "1999",
+   "title": "Dove",
+   "artist": "Cymande",
+   "year": 1972
+  },
+  {
+   "title": "Get on the Floor",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Little Red Corvette",
    "artist": "Prince",
    "year": 1982
   },
   {
-   "title": "By the Way",
-   "artist": "Red Hot Chili Peppers",
-   "year": 2001
-  },
-  {
-   "title": "She's A Bad Mama Jama (She's Built, She's Stacked)",
-   "artist": "Carl Carlton",
+   "title": "Ghetto Life",
+   "artist": "Rick James",
    "year": 1981
   },
   {
-   "title": "Controversy",
-   "artist": "Prince",
-   "year": 1981
-  },
-  {
-   "title": "Half the Man",
-   "artist": "Jamiroquai",
-   "year": 1994
-  },
-  {
-   "title": "Purple Rain",
-   "artist": "Prince",
-   "year": 1990
-  },
-  {
-   "title": "Fate",
-   "artist": "Chaka Khan",
-   "year": 1981
-  },
-  {
-   "title": "Unfunky UFO",
-   "artist": "Parliament",
-   "year": 1975
-  },
-  {
-   "title": "Move On Up",
-   "artist": "Curtis Mayfield",
-   "year": 1970
-  },
-  {
-   "title": "All Night Long",
-   "artist": "Mary Jane Girls",
-   "year": 1983
-  },
-  {
-   "title": "Planet Home",
-   "artist": "Jamiroquai",
-   "year": 1999
-  },
-  {
-   "title": "War",
-   "artist": "Edwin Starr",
-   "year": 1970
+   "title": "Ladies Night",
+   "artist": "Kool & the Gang",
+   "year": 1979
   },
   {
    "title": "Feels Just Like It Should",
@@ -679,9 +644,74 @@
    "year": 2005
   },
   {
-   "title": "The Zephyr Song",
+   "title": "1999",
+   "artist": "Prince",
+   "year": 1982
+  },
+  {
+   "title": "Half the Man",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "Just Kissed My Baby",
+   "artist": "The Meters",
+   "year": 1974
+  },
+  {
+   "title": "Controversy",
+   "artist": "Prince",
+   "year": 1981
+  },
+  {
+   "title": "The Revolution Will Not Be Televised",
+   "artist": "Gil Scott-Heron",
+   "year": 1970
+  },
+  {
+   "title": "Just Another Story",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "By the Way",
    "artist": "Red Hot Chili Peppers",
    "year": 2001
+  },
+  {
+   "title": "Mothership Connection (Star Child)",
+   "artist": "Parliament",
+   "year": 1975
+  },
+  {
+   "title": "Black Capricorn Day",
+   "artist": "Jamiroquai",
+   "year": 1999
+  },
+  {
+   "title": "Move On Up",
+   "artist": "Curtis Mayfield",
+   "year": 1970
+  },
+  {
+   "title": "Nothing From Nothing",
+   "artist": "Billy Preston",
+   "year": 1974
+  },
+  {
+   "title": "Purple Rain",
+   "artist": "Prince",
+   "year": 1990
+  },
+  {
+   "title": "I Feel for You",
+   "artist": "Prince",
+   "year": 1979
+  },
+  {
+   "title": "Planet Home",
+   "artist": "Jamiroquai",
+   "year": 1999
   },
   {
    "title": "Time Won't Wait",
@@ -689,8 +719,118 @@
    "year": 2005
   },
   {
-   "title": "I Feel for You",
+   "title": "Too High",
+   "artist": "Stevie Wonder",
+   "year": 1973
+  },
+  {
+   "title": "More Bounce to the Ounce",
+   "artist": "Zapp",
+   "year": 1980
+  },
+  {
+   "title": "Atomic Dog",
+   "artist": "George Clinton",
+   "year": 1982
+  },
+  {
+   "title": "She's A Bad Mama Jama (She's Built, She's Stacked)",
+   "artist": "Carl Carlton",
+   "year": 1981
+  },
+  {
+   "title": "Deeper Underground",
+   "artist": "Jamiroquai",
+   "year": 1998
+  },
+  {
+   "title": "Where Do We Go from Here?",
+   "artist": "Jamiroquai",
+   "year": 1999
+  },
+  {
+   "title": "All Night Long",
+   "artist": "Mary Jane Girls",
+   "year": 1983
+  },
+  {
+   "title": "Mr Moon",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "Light Years",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "Unfunky UFO",
+   "artist": "Parliament",
+   "year": 1975
+  },
+  {
+   "title": "War",
+   "artist": "Edwin Starr",
+   "year": 1970
+  },
+  {
+   "title": "Fate",
+   "artist": "Chaka Khan",
+   "year": 1981
+  },
+  {
+   "title": "What Is Hip?",
+   "artist": "Tower of Power",
+   "year": 1973
+  },
+  {
+   "title": "The Zephyr Song",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2001
+  },
+  {
+   "title": "Funkin' for Jamaica",
+   "artist": "Tom Browne",
+   "year": 1981
+  },
+  {
+   "title": "Lovely Day",
+   "artist": "Bill Withers",
+   "year": 1977
+  },
+  {
+   "title": "Bra",
+   "artist": "Cymande",
+   "year": 1972
+  },
+  {
+   "title": "Sign 'O' the Times",
    "artist": "Prince",
+   "year": 1990
+  },
+  {
+   "title": "Funk Rave",
+   "artist": "Anitta",
+   "year": 2023
+  },
+  {
+   "title": "If I Like It, I Do It",
+   "artist": "Jamiroquai",
+   "year": 1993
+  },
+  {
+   "title": "Scam",
+   "artist": "Jamiroquai",
+   "year": 1994
+  },
+  {
+   "title": "Hooked Up",
+   "artist": "Jamiroquai",
+   "year": 1993
+  },
+  {
+   "title": "And the Beat Goes On",
+   "artist": "The Whispers",
    "year": 1979
   },
   {
@@ -699,13 +839,28 @@
    "year": 1980
   },
   {
-   "title": "Too High",
+   "title": "As",
    "artist": "Stevie Wonder",
-   "year": 1973
+   "year": 1976
   },
   {
-   "title": "Atomic Dog",
-   "artist": "George Clinton",
+   "title": "Fantastic Voyage",
+   "artist": "Lakeside",
+   "year": 1980
+  },
+  {
+   "title": "Tape You",
+   "artist": "N*E*R*D",
+   "year": 2001
+  },
+  {
+   "title": "Be Alright",
+   "artist": "Zapp",
+   "year": 1980
+  },
+  {
+   "title": "Do I Do",
+   "artist": "Stevie Wonder",
    "year": 1982
   },
   {
@@ -714,169 +869,9 @@
    "year": 1974
   },
   {
-   "title": "Mr Moon",
-   "artist": "Jamiroquai",
-   "year": 1994
-  },
-  {
-   "title": "Just Another Story",
-   "artist": "Jamiroquai",
-   "year": 1994
-  },
-  {
-   "title": "Lovely Day",
-   "artist": "Bill Withers",
-   "year": 1977
-  },
-  {
-   "title": "Nothing From Nothing",
-   "artist": "Billy Preston",
-   "year": 1974
-  },
-  {
-   "title": "Where Do We Go from Here?",
-   "artist": "Jamiroquai",
-   "year": 1999
-  },
-  {
-   "title": "If I Like It, I Do It",
-   "artist": "Jamiroquai",
-   "year": 1993
-  },
-  {
-   "title": "Funk Rave",
-   "artist": "Anitta",
-   "year": 2023
-  },
-  {
-   "title": "Light Years",
-   "artist": "Jamiroquai",
-   "year": 1994
-  },
-  {
-   "title": "Cross The Tracks (We Better Go Back)",
-   "artist": "Maceo & The Macks",
-   "year": 1999
-  },
-  {
-   "title": "As",
-   "artist": "Stevie Wonder",
-   "year": 1976
-  },
-  {
-   "title": "Forget Me Nots",
-   "artist": "Patrice Rushen",
-   "year": 1982
-  },
-  {
-   "title": "What Is Hip?",
-   "artist": "Tower of Power",
-   "year": 1973
-  },
-  {
-   "title": "Hooked Up",
-   "artist": "Jamiroquai",
-   "year": 1993
-  },
-  {
-   "title": "Fantastic Voyage",
-   "artist": "Lakeside",
-   "year": 1980
-  },
-  {
-   "title": "Sign 'O' the Times",
-   "artist": "Prince",
-   "year": 1990
-  },
-  {
-   "title": "Scam",
-   "artist": "Jamiroquai",
-   "year": 1994
-  },
-  {
-   "title": "Cutie Pie",
-   "artist": "One Way",
-   "year": 1982
-  },
-  {
-   "title": "Wars of Armageddon",
-   "artist": "Funkadelic",
-   "year": 1971
-  },
-  {
-   "title": "And the Beat Goes On",
-   "artist": "The Whispers",
-   "year": 1979
-  },
-  {
-   "title": "Bola Rebola",
-   "artist": "Tropkillaz",
-   "year": 2019
-  },
-  {
-   "title": "Watermelon Man",
-   "artist": "Herbie Hancock",
-   "year": 1962
-  },
-  {
    "title": "Starchild",
    "artist": "Jamiroquai",
    "year": 2005
-  },
-  {
-   "title": "Higher Ground",
-   "artist": "Stevie Wonder",
-   "year": 1973
-  },
-  {
-   "title": "Tape You",
-   "artist": "N*E*R*D",
-   "year": 2001
-  },
-  {
-   "title": "Have Some Love",
-   "artist": "Childish Gambino",
-   "year": 2016
-  },
-  {
-   "title": "Love, Love, Love",
-   "artist": "Donny Hathaway",
-   "year": 1973
-  },
-  {
-   "title": "Boogie on Reggae Woman",
-   "artist": "Stevie Wonder",
-   "year": 1974
-  },
-  {
-   "title": "Bra",
-   "artist": "Cymande",
-   "year": 1972
-  },
-  {
-   "title": "Hot Tequila Brown",
-   "artist": "Jamiroquai",
-   "year": 2005
-  },
-  {
-   "title": "Fire",
-   "artist": "Ohio Players",
-   "year": 1974
-  },
-  {
-   "title": "Be Alright",
-   "artist": "Zapp",
-   "year": 1980
-  },
-  {
-   "title": "Main Vein",
-   "artist": "Jamiroquai",
-   "year": 2001
-  },
-  {
-   "title": "Corner of the Earth",
-   "artist": "Jamiroquai",
-   "year": 2001
   },
   {
    "title": "Dynamite",
@@ -884,29 +879,9 @@
    "year": 2005
   },
   {
-   "title": "Between the Sheets",
-   "artist": "The Isley Brothers",
-   "year": 1983
-  },
-  {
-   "title": "Jerry Was a Race Car Driver",
-   "artist": "Primus",
-   "year": 1991
-  },
-  {
-   "title": "Music Of The Earth",
-   "artist": "Patrice Rushen",
-   "year": 1978
-  },
-  {
-   "title": "Got To Give It Up",
-   "artist": "Marvin Gaye",
-   "year": 1977
-  },
-  {
-   "title": "I'll Stay",
-   "artist": "Funkadelic",
-   "year": 1974
+   "title": "Cross The Tracks (We Better Go Back)",
+   "artist": "Maceo & The Macks",
+   "year": 1999
   },
   {
    "title": "Maybe Your Baby",
@@ -914,14 +889,69 @@
    "year": 1972
   },
   {
-   "title": "Alright",
-   "artist": "Jamiroquai",
-   "year": 1996
+   "title": "Tell Me Something Good",
+   "artist": "Rufus",
+   "year": 1974
   },
   {
-   "title": "Do I Do",
+   "title": "Fire",
+   "artist": "Ohio Players",
+   "year": 1974
+  },
+  {
+   "title": "They Say I'm Different",
+   "artist": "Betty Davis",
+   "year": 1974
+  },
+  {
+   "title": "The Cisco Kid",
+   "artist": "War",
+   "year": 1972
+  },
+  {
+   "title": "Wars of Armageddon",
+   "artist": "Funkadelic",
+   "year": 1971
+  },
+  {
+   "title": "Boogie on Reggae Woman",
    "artist": "Stevie Wonder",
+   "year": 1974
+  },
+  {
+   "title": "Watermelon Man",
+   "artist": "Herbie Hancock",
+   "year": 1962
+  },
+  {
+   "title": "Corner of the Earth",
+   "artist": "Jamiroquai",
+   "year": 2001
+  },
+  {
+   "title": "Music Of The Earth",
+   "artist": "Patrice Rushen",
+   "year": 1978
+  },
+  {
+   "title": "Love, Love, Love",
+   "artist": "Donny Hathaway",
+   "year": 1973
+  },
+  {
+   "title": "Cutie Pie",
+   "artist": "One Way",
    "year": 1982
+  },
+  {
+   "title": "Higher Ground",
+   "artist": "Stevie Wonder",
+   "year": 1973
+  },
+  {
+   "title": "Have Some Love",
+   "artist": "Childish Gambino",
+   "year": 2016
   },
   {
    "title": "What's the Use?",
@@ -929,19 +959,34 @@
    "year": 2018
   },
   {
+   "title": "Between the Sheets",
+   "artist": "The Isley Brothers",
+   "year": 1983
+  },
+  {
+   "title": "Main Vein",
+   "artist": "Jamiroquai",
+   "year": 2001
+  },
+  {
+   "title": "Forget Me Nots",
+   "artist": "Patrice Rushen",
+   "year": 1982
+  },
+  {
+   "title": "I'll Stay",
+   "artist": "Funkadelic",
+   "year": 1974
+  },
+  {
+   "title": "Hot Tequila Brown",
+   "artist": "Jamiroquai",
+   "year": 2005
+  },
+  {
    "title": "Burn Rubber On Me (Why You Wanna Hurt Me)",
    "artist": "The Gap Band",
    "year": 1991
-  },
-  {
-   "title": "I Got You (I Feel Good)",
-   "artist": "James Brown",
-   "year": 1966
-  },
-  {
-   "title": "Right Place Wrong Time",
-   "artist": "Dr. John",
-   "year": 1973
   },
   {
    "title": "Uptown",
@@ -949,59 +994,14 @@
    "year": 1980
   },
   {
-   "title": "You Haven't Done Nothin'",
-   "artist": "Stevie Wonder",
-   "year": 1974
-  },
-  {
-   "title": "Penitentiary Philosophy",
-   "artist": "Erykah Badu",
-   "year": 2000
-  },
-  {
-   "title": "Dance to the Music",
-   "artist": "Sly & The Family Stone",
-   "year": 1967
-  },
-  {
-   "title": "California Dreamin'",
-   "artist": "Eddie Hazel",
-   "year": 1977
-  },
-  {
-   "title": "Groove Is in the Heart",
-   "artist": "Deee-Lite",
-   "year": 1990
-  },
-  {
-   "title": "That's the Way of the World",
-   "artist": "Earth, Wind & Fire",
-   "year": 1975
-  },
-  {
    "title": "Take Your Time (Do It Right)",
    "artist": "S.O.S. Band",
    "year": 1980
   },
   {
-   "title": "Standing on the Verge of Getting It On",
-   "artist": "Funkadelic",
-   "year": 1974
-  },
-  {
-   "title": "I Want You",
-   "artist": "Marvin Gaye",
-   "year": 1976
-  },
-  {
-   "title": "Cantaloop (Flip Fantasia)",
-   "artist": "Us3",
-   "year": 1992
-  },
-  {
-   "title": "Up From the South",
-   "artist": "The Budos Band",
-   "year": 2005
+   "title": "Bola Rebola",
+   "artist": "Tropkillaz",
+   "year": 2019
   }
  ]
 }

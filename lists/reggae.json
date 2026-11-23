@@ -1,12 +1,17 @@
 {
  "name": "Reggae",
  "tag": "reggae",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Could You Be Loved",
    "artist": "Bob Marley & The Wailers",
    "year": 1979
+  },
+  {
+   "title": "Three Little Birds",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
   },
   {
    "title": "It Wasn't Me",
@@ -19,14 +24,19 @@
    "year": 1977
   },
   {
+   "title": "Jamming",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
    "title": "Santeria",
    "artist": "Sublime",
    "year": 1996
   },
   {
-   "title": "Jamming",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
+   "title": "Man Down",
+   "artist": "Rihanna",
+   "year": 2009
   },
   {
    "title": "Welcome to Jamrock",
@@ -34,9 +44,9 @@
    "year": 2005
   },
   {
-   "title": "Man Down",
-   "artist": "Rihanna",
-   "year": 2009
+   "title": "Angel",
+   "artist": "Shaggy",
+   "year": 2000
   },
   {
    "title": "Me gustas tú",
@@ -54,14 +64,24 @@
    "year": 1983
   },
   {
+   "title": "Bam Bam",
+   "artist": "Sister Nancy",
+   "year": 1982
+  },
+  {
    "title": "Baby, I Love Your Way",
    "artist": "Big Mountain",
    "year": 1994
   },
   {
-   "title": "Bam Bam",
-   "artist": "Sister Nancy",
-   "year": 1982
+   "title": "Waiting In Vain",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "Boombastic",
+   "artist": "Shaggy",
+   "year": 1994
   },
   {
    "title": "Natural Mystic",
@@ -74,24 +94,9 @@
    "year": 2001
   },
   {
-   "title": "Boombastic",
-   "artist": "Shaggy",
-   "year": 1994
-  },
-  {
-   "title": "Sun Is Shining",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1970
-  },
-  {
    "title": "Caress Me Down",
    "artist": "Sublime",
    "year": 1995
-  },
-  {
-   "title": "Doin' Time",
-   "artist": "Sublime",
-   "year": 1996
   },
   {
    "title": "Beautiful Girls",
@@ -99,14 +104,24 @@
    "year": 2007
   },
   {
+   "title": "Doin' Time",
+   "artist": "Sublime",
+   "year": 1996
+  },
+  {
+   "title": "Sun Is Shining",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1970
+  },
+  {
+   "title": "Pass the Dutchie",
+   "artist": "Musical Youth",
+   "year": 1982
+  },
+  {
    "title": "Red Red Wine",
    "artist": "UB40",
    "year": 1983
-  },
-  {
-   "title": "Wrong Way",
-   "artist": "Sublime",
-   "year": 1995
   },
   {
    "title": "One Love/People Get Ready",
@@ -114,34 +129,14 @@
    "year": 1977
   },
   {
-   "title": "Sweat (A La La La La Long)",
-   "artist": "Inner Circle",
-   "year": 1992
-  },
-  {
-   "title": "Satisfy My Soul",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1978
-  },
-  {
-   "title": "I Chase The Devil",
-   "artist": "Max Romeo",
+   "title": "Wrong Way",
+   "artist": "Sublime",
    "year": 1995
   },
   {
-   "title": "Ride",
-   "artist": "Twenty One Pilots",
-   "year": 2015
-  },
-  {
-   "title": "I Shot The Sheriff",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1973
-  },
-  {
-   "title": "Bad Boys",
+   "title": "Sweat (A La La La La Long)",
    "artist": "Inner Circle",
-   "year": 1987
+   "year": 1992
   },
   {
    "title": "Get Busy",
@@ -149,9 +144,34 @@
    "year": 2002
   },
   {
+   "title": "Satisfy My Soul",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1978
+  },
+  {
    "title": "Redemption Song",
    "artist": "Bob Marley & The Wailers",
    "year": 1979
+  },
+  {
+   "title": "Ride",
+   "artist": "Twenty One Pilots",
+   "year": 2015
+  },
+  {
+   "title": "Bad Boys",
+   "artist": "Inner Circle",
+   "year": 1987
+  },
+  {
+   "title": "I Chase The Devil",
+   "artist": "Max Romeo",
+   "year": 1995
+  },
+  {
+   "title": "I Shot The Sheriff",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
   },
   {
    "title": "Bongo Bong",
@@ -169,14 +189,19 @@
    "year": 1973
   },
   {
-   "title": "Night Nurse",
-   "artist": "Gregory Isaacs",
-   "year": 1982
+   "title": "Ganja Smuggling",
+   "artist": "Eek-a-Mouse",
+   "year": 1981
   },
   {
    "title": "Badfish",
    "artist": "Sublime",
    "year": 1991
+  },
+  {
+   "title": "Night Nurse",
+   "artist": "Gregory Isaacs",
+   "year": 1982
   },
   {
    "title": "Smoke Two Joints",
@@ -189,14 +214,9 @@
    "year": 1989
   },
   {
-   "title": "Exodus",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
-  },
-  {
-   "title": "Quero Ser Feliz Também",
-   "artist": "Natiruts",
-   "year": 2005
+   "title": "Who Let the Dogs Out",
+   "artist": "Baha Men",
+   "year": 2000
   },
   {
    "title": "Murder She Wrote",
@@ -204,9 +224,9 @@
    "year": 1992
   },
   {
-   "title": "Who Let the Dogs Out",
-   "artist": "Baha Men",
-   "year": 2000
+   "title": "Quero Ser Feliz Também",
+   "artist": "Natiruts",
+   "year": 2005
   },
   {
    "title": "Your House",
@@ -214,17 +234,12 @@
    "year": 1982
   },
   {
-   "title": "Pimper's Paradise",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1980
+   "title": "Turn Me On",
+   "artist": "Kevin Lyttle",
+   "year": 2001
   },
   {
    "title": "Get Up, Stand Up",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1973
-  },
-  {
-   "title": "Concrete Jungle",
    "artist": "Bob Marley & The Wailers",
    "year": 1973
   },
@@ -234,14 +249,14 @@
    "year": 2016
   },
   {
-   "title": "Electric Avenue",
-   "artist": "Eddy Grant",
-   "year": 1982
+   "title": "Pimper's Paradise",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1980
   },
   {
-   "title": "Don't Worry Be Happy",
-   "artist": "Bobby McFerrin",
-   "year": 1988
+   "title": "Concrete Jungle",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
   },
   {
    "title": "Eu Juro",
@@ -249,9 +264,19 @@
    "year": 2006
   },
   {
+   "title": "Don't Worry Be Happy",
+   "artist": "Bobby McFerrin",
+   "year": 1988
+  },
+  {
    "title": "Road To Zion",
    "artist": "Damian Marley",
    "year": 2005
+  },
+  {
+   "title": "Electric Avenue",
+   "artist": "Eddy Grant",
+   "year": 1982
   },
   {
    "title": "Hey Sexy Lady",
@@ -259,14 +284,24 @@
    "year": 2002
   },
   {
+   "title": "Turn Your Lights Down Low",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "Do Lado De Cá",
+   "artist": "Chimarruts",
+   "year": 2010
+  },
+  {
    "title": "Roots, Rock, Reggae",
    "artist": "Bob Marley & The Wailers",
    "year": 1973
   },
   {
-   "title": "Dreadlock Holiday",
-   "artist": "10cc",
-   "year": 1978
+   "title": "2 AM",
+   "artist": "Slightly Stoopid",
+   "year": 2007
   },
   {
    "title": "Police In Helicopter",
@@ -274,23 +309,33 @@
    "year": 1983
   },
   {
-   "title": "No Love Allowed",
-   "artist": "Rihanna",
-   "year": 2012
-  },
-  {
    "title": "Side to Side",
    "artist": "Ariana Grande",
    "year": 2017
   },
   {
-   "title": "Turn Your Lights Down Low",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
+   "title": "Pescador De Ilusões",
+   "artist": "O Rappa",
+   "year": 1996
+  },
+  {
+   "title": "Dreadlock Holiday",
+   "artist": "10cc",
+   "year": 1978
   },
   {
    "title": "So Much Things To Say",
    "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "No Love Allowed",
+   "artist": "Rihanna",
+   "year": 2012
+  },
+  {
+   "title": "Police & Thieves",
+   "artist": "Junior Murvin",
    "year": 1977
   },
   {
@@ -299,29 +344,14 @@
    "year": 1976
   },
   {
-   "title": "One Day",
-   "artist": "Matisyahu",
-   "year": 2009
-  },
-  {
-   "title": "Do Lado De Cá",
-   "artist": "Chimarruts",
-   "year": 2010
-  },
-  {
-   "title": "Pescador",
-   "artist": "Armandinho",
-   "year": 2004
-  },
-  {
    "title": "Attention Span",
    "artist": "Rebelution",
    "year": 2006
   },
   {
-   "title": "Here I Come",
-   "artist": "Barrington Levy",
-   "year": 1985
+   "title": "One Day",
+   "artist": "Matisyahu",
+   "year": 2009
   },
   {
    "title": "You Can Get It If You Really Want",
@@ -329,9 +359,9 @@
    "year": 1971
   },
   {
-   "title": "Pescador De Ilusões",
-   "artist": "O Rappa",
-   "year": 1996
+   "title": "Slow Ride",
+   "artist": "Sublime",
+   "year": 1990
   },
   {
    "title": "Bad Boys (Theme From Cops)",
@@ -339,34 +369,19 @@
    "year": 1993
   },
   {
-   "title": "Slow Ride",
-   "artist": "Sublime",
-   "year": 1990
-  },
-  {
-   "title": "Police & Thieves",
-   "artist": "Junior Murvin",
-   "year": 1977
-  },
-  {
-   "title": "Zungguzungguguzungguzeng",
-   "artist": "Yellowman",
-   "year": 1983
-  },
-  {
-   "title": "Kingston Town",
-   "artist": "Alborosie",
-   "year": 2007
-  },
-  {
    "title": "Don't Push",
    "artist": "Sublime",
    "year": 1990
   },
   {
-   "title": "Cool Down the Pace",
-   "artist": "Gregory Isaacs",
-   "year": 1982
+   "title": "Pescador",
+   "artist": "Armandinho",
+   "year": 2004
+  },
+  {
+   "title": "Here I Come",
+   "artist": "Barrington Levy",
+   "year": 1985
   },
   {
    "title": "Pawn Shop",
@@ -374,9 +389,14 @@
    "year": 1995
   },
   {
-   "title": "Forever Loving Jah",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1980
+   "title": "Zungguzungguguzungguzeng",
+   "artist": "Yellowman",
+   "year": 1983
+  },
+  {
+   "title": "Cool Down the Pace",
+   "artist": "Gregory Isaacs",
+   "year": 1982
   },
   {
    "title": "Give It Up to Me",
@@ -384,9 +404,24 @@
    "year": 2005
   },
   {
-   "title": "Easy Skanking",
+   "title": "Closer To The Sun",
+   "artist": "Slightly Stoopid",
+   "year": 2005
+  },
+  {
+   "title": "Forever Loving Jah",
    "artist": "Bob Marley & The Wailers",
-   "year": 1978
+   "year": 1980
+  },
+  {
+   "title": "Kingston Town",
+   "artist": "Alborosie",
+   "year": 2007
+  },
+  {
+   "title": "No Letting Go",
+   "artist": "Wayne Wonder",
+   "year": 2002
   },
   {
    "title": "One Drop",
@@ -404,34 +439,9 @@
    "year": 1989
   },
   {
-   "title": "Burnin' and Lootin'",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1973
-  },
-  {
    "title": "The Harder They Come",
    "artist": "Jimmy Cliff",
    "year": 1972
-  },
-  {
-   "title": "Kaya",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1970
-  },
-  {
-   "title": "I Can See Clearly Now",
-   "artist": "Jimmy Cliff",
-   "year": 1993
-  },
-  {
-   "title": "Guiltiness",
-   "artist": "Bob Marley & The Wailers",
-   "year": 1977
-  },
-  {
-   "title": "Garden Grove",
-   "artist": "Sublime",
-   "year": 1995
   },
   {
    "title": "Black Roses",
@@ -439,14 +449,24 @@
    "year": 1997
   },
   {
-   "title": "Bowl For Two",
-   "artist": "The Expendables",
-   "year": 2004
-  },
-  {
    "title": "Je ne t'aime plus",
    "artist": "Manu Chao",
    "year": 1998
+  },
+  {
+   "title": "She Doesn't Mind",
+   "artist": "Sean Paul",
+   "year": 2011
+  },
+  {
+   "title": "Easy Skanking",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1978
+  },
+  {
+   "title": "Kaya",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1970
   },
   {
    "title": "Wavin' Flag",
@@ -454,29 +474,9 @@
    "year": 2009
   },
   {
-   "title": "Hey Baby",
-   "artist": "Stephen Marley",
-   "year": 2005
-  },
-  {
-   "title": "Wa-Do-Dem",
-   "artist": "Eek-a-Mouse",
-   "year": 1981
-  },
-  {
-   "title": "Could You Be Loved",
-   "artist": "Bob Marley",
-   "year": 1990
-  },
-  {
-   "title": "Coming In From The Cold",
+   "title": "Burnin' and Lootin'",
    "artist": "Bob Marley & The Wailers",
-   "year": 1980
-  },
-  {
-   "title": "Let's Go Get Stoned",
-   "artist": "Sublime",
-   "year": 1994
+   "year": 1973
   },
   {
    "title": "Them Belly Full (But We Hungry)",
@@ -484,23 +484,63 @@
    "year": 1973
   },
   {
-   "title": "Jah Calling",
-   "artist": "Bad Brains",
-   "year": 1982
+   "title": "She's Gone",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1978
   },
   {
-   "title": "No Letting Go",
-   "artist": "Wayne Wonder",
+   "title": "Garden Grove",
+   "artist": "Sublime",
+   "year": 1995
+  },
+  {
+   "title": "No Woman, No Cry",
+   "artist": "Fugees",
+   "year": 1995
+  },
+  {
+   "title": "Wa-Do-Dem",
+   "artist": "Eek-a-Mouse",
+   "year": 1981
+  },
+  {
+   "title": "Hey Baby",
+   "artist": "Stephen Marley",
+   "year": 2005
+  },
+  {
+   "title": "Pressure Drop",
+   "artist": "Toots and The Maytals",
+   "year": 2008
+  },
+  {
+   "title": "Bowl For Two",
+   "artist": "The Expendables",
+   "year": 2004
+  },
+  {
+   "title": "I Can See Clearly Now",
+   "artist": "Jimmy Cliff",
+   "year": 1993
+  },
+  {
+   "title": "Outra Noite Que Se Vai",
+   "artist": "Armandinho",
    "year": 2002
+  },
+  {
+   "title": "Guiltiness",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "Coming In From The Cold",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1980
   },
   {
    "title": "Bandelero",
    "artist": "Slightly Stoopid",
-   "year": 2005
-  },
-  {
-   "title": "Pupilas Lejanas",
-   "artist": "Los Pericos",
    "year": 2005
   },
   {
@@ -509,9 +549,9 @@
    "year": 1998
   },
   {
-   "title": "Chant A Psalm",
-   "artist": "Steel Pulse",
-   "year": 1982
+   "title": "Why So Lonely",
+   "artist": "Wonder Girls",
+   "year": 2016
   },
   {
    "title": "Michael Talbot Affair",
@@ -519,14 +559,14 @@
    "year": 1974
   },
   {
-   "title": "Outra Noite Que Se Vai",
-   "artist": "Armandinho",
-   "year": 2002
+   "title": "Hills And Valleys",
+   "artist": "Buju Banton",
+   "year": 1997
   },
   {
-   "title": "Andei Só",
-   "artist": "Natiruts",
-   "year": 2001
+   "title": "Jah Calling",
+   "artist": "Bad Brains",
+   "year": 1982
   },
   {
    "title": "Lively Up Yourself",
@@ -534,44 +574,34 @@
    "year": 1974
   },
   {
-   "title": "I Wish You Were Here",
-   "artist": "Alpha Blondy",
-   "year": 2007
+   "title": "True To Myself",
+   "artist": "Ziggy Marley",
+   "year": 2003
   },
   {
-   "title": "The Way You Do The Things You Do",
-   "artist": "UB40",
-   "year": 1989
-  },
-  {
-   "title": "Here Comes the Hotstepper",
+   "title": "World a Music",
    "artist": "Ini Kamoze",
-   "year": 1994
+   "year": 1984
   },
   {
-   "title": "Jailhouse",
+   "title": "Pupilas Lejanas",
+   "artist": "Los Pericos",
+   "year": 2005
+  },
+  {
+   "title": "Let's Go Get Stoned",
    "artist": "Sublime",
    "year": 1994
   },
   {
-   "title": "Felicidad",
-   "artist": "Gondwana",
-   "year": 2002
+   "title": "Could You Be Loved",
+   "artist": "Bob Marley",
+   "year": 1990
   },
   {
-   "title": "Hills And Valleys",
-   "artist": "Buju Banton",
-   "year": 1997
-  },
-  {
-   "title": "Show Me",
-   "artist": "Bruno Mars",
-   "year": 2012
-  },
-  {
-   "title": "Nobody Move Nobody Get Hurt",
-   "artist": "Yellowman",
-   "year": 1984
+   "title": "Andei Só",
+   "artist": "Natiruts",
+   "year": 2001
   },
   {
    "title": "The Lazy Song",
@@ -579,9 +609,24 @@
    "year": 2010
   },
   {
-   "title": "Солдат",
-   "artist": "5'nizza",
-   "year": 2003
+   "title": "Many Rivers to Cross",
+   "artist": "Jimmy Cliff",
+   "year": 1969
+  },
+  {
+   "title": "Show Me",
+   "artist": "Bruno Mars",
+   "year": 2012
+  },
+  {
+   "title": "Jailhouse",
+   "artist": "Sublime",
+   "year": 1994
+  },
+  {
+   "title": "Here Comes the Hotstepper",
+   "artist": "Ini Kamoze",
+   "year": 1994
   },
   {
    "title": "Africa Unite",
@@ -589,9 +634,204 @@
    "year": 1979
   },
   {
+   "title": "Chant A Psalm",
+   "artist": "Steel Pulse",
+   "year": 1982
+  },
+  {
+   "title": "The Way You Do The Things You Do",
+   "artist": "UB40",
+   "year": 1989
+  },
+  {
+   "title": "Funky Kingston",
+   "artist": "Toots and The Maytals",
+   "year": 2023
+  },
+  {
+   "title": "Liberdade Pra Dentro Da Cabeça",
+   "artist": "Natiruts",
+   "year": 2003
+  },
+  {
+   "title": "Things In Life",
+   "artist": "Dennis Brown",
+   "year": 1986
+  },
+  {
+   "title": "I Wish You Were Here",
+   "artist": "Alpha Blondy",
+   "year": 2007
+  },
+  {
+   "title": "A Sombra Da Maldade",
+   "artist": "Cidade Negra",
+   "year": 1994
+  },
+  {
+   "title": "Fisherman",
+   "artist": "The Congos",
+   "year": 1977
+  },
+  {
+   "title": "Time Tough",
+   "artist": "Toots and The Maytals",
+   "year": 2008
+  },
+  {
+   "title": "There For You",
+   "artist": "Damian Marley",
+   "year": 2005
+  },
+  {
+   "title": "Felicidad",
+   "artist": "Gondwana",
+   "year": 2002
+  },
+  {
+   "title": "Rivers Of Babylon",
+   "artist": "The Melodians",
+   "year": 1970
+  },
+  {
+   "title": "Murderer",
+   "artist": "Barrington Levy",
+   "year": 1992
+  },
+  {
+   "title": "No More Trouble",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
    "title": "Rude",
    "artist": "MAGIC!",
    "year": 2013
+  },
+  {
+   "title": "Nobody Move Nobody Get Hurt",
+   "artist": "Yellowman",
+   "year": 1984
+  },
+  {
+   "title": "Informer",
+   "artist": "Snow",
+   "year": 1992
+  },
+  {
+   "title": "Master Blaster (Jammin')",
+   "artist": "Stevie Wonder",
+   "year": 1980
+  },
+  {
+   "title": "Солдат",
+   "artist": "5'nizza",
+   "year": 2003
+  },
+  {
+   "title": "Feeling Alright",
+   "artist": "Rebelution",
+   "year": 2007
+  },
+  {
+   "title": "Jackie Tequila",
+   "artist": "Skank",
+   "year": 1994
+  },
+  {
+   "title": "Rat Race",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "Zimbabwe",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1979
+  },
+  {
+   "title": "Rat In Mi Kitchen",
+   "artist": "UB40",
+   "year": 1986
+  },
+  {
+   "title": "Running Away",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1977
+  },
+  {
+   "title": "War",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "April 29, 1992 (Miami)",
+   "artist": "Sublime",
+   "year": 1996
+  },
+  {
+   "title": "Runaway",
+   "artist": "Los Pericos",
+   "year": 2017
+  },
+  {
+   "title": "Ice Cream Love",
+   "artist": "Johnny Osbourne",
+   "year": 1980
+  },
+  {
+   "title": "Food For Thought",
+   "artist": "UB40",
+   "year": 1980
+  },
+  {
+   "title": "I'll Be Here Awhile",
+   "artist": "311",
+   "year": 2001
+  },
+  {
+   "title": "Uptown Top Ranking",
+   "artist": "Althea & Donna",
+   "year": 1977
+  },
+  {
+   "title": "Crazy Baldhead",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "Natty Dread",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1974
+  },
+  {
+   "title": "Kinky Reggae",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "Games People Play",
+   "artist": "Inner Circle",
+   "year": 1994
+  },
+  {
+   "title": "Wonderful Life",
+   "artist": "Seeed",
+   "year": 2011
+  },
+  {
+   "title": "Stand Tall",
+   "artist": "The Dirty Heads",
+   "year": 2007
+  },
+  {
+   "title": "Who The Cap Fit",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "Dream Land",
+   "artist": "Bunny Wailer",
+   "year": 1976
   },
   {
    "title": "Mr Bobby",
@@ -599,44 +839,169 @@
    "year": 1998
   },
   {
+   "title": "Close to You",
+   "artist": "Maxi Priest",
+   "year": 1990
+  },
+  {
+   "title": "Bad Card",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1980
+  },
+  {
+   "title": "I Shot The Sheriff",
+   "artist": "Eric Clapton",
+   "year": 1974
+  },
+  {
+   "title": "Stone Love",
+   "artist": "Pepper",
+   "year": 2002
+  },
+  {
+   "title": "Beach In Hawaii",
+   "artist": "Ziggy Marley",
+   "year": 2006
+  },
+  {
+   "title": "Na szczycie",
+   "artist": "GrubSon",
+   "year": 2009
+  },
+  {
+   "title": "More Justice",
+   "artist": "Damian Marley",
+   "year": 2005
+  },
+  {
+   "title": "Money In My Pocket",
+   "artist": "Dennis Brown",
+   "year": 1973
+  },
+  {
+   "title": "Misty Morning",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1978
+  },
+  {
+   "title": "Revolution",
+   "artist": "Dennis Brown",
+   "year": 1984
+  },
+  {
    "title": "Hold Up",
    "artist": "Beyoncé",
    "year": 2016
   },
   {
-   "title": "Desaparecido",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Súplica Cearense",
+   "artist": "O Rappa",
+   "year": 2008
   },
   {
-   "title": "Mentira...",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Iron Lion Zion",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1974
   },
   {
-   "title": "Por El Suelo",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Milk & Honey",
+   "artist": "Hollie Cook",
+   "year": 2011
   },
   {
-   "title": "Welcome to Tijuana",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "In The Summertime",
+   "artist": "Shaggy",
+   "year": 1995
   },
   {
-   "title": "Minha Galera",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Ding",
+   "artist": "Seeed",
+   "year": 2005
   },
   {
-   "title": "Mama Call",
-   "artist": "Manu Chao",
-   "year": 1998
+   "title": "Too Experienced",
+   "artist": "Barrington Levy",
+   "year": 1990
   },
   {
-   "title": "Te Siento",
-   "artist": "Wisin & Yandel",
-   "year": 2009
+   "title": "Champion",
+   "artist": "Buju Banton",
+   "year": 1994
+  },
+  {
+   "title": "Slave Driver",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1973
+  },
+  {
+   "title": "The Bed's Too Big Without You",
+   "artist": "The Police",
+   "year": 1979
+  },
+  {
+   "title": "Time Will Tell",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1978
+  },
+  {
+   "title": "Under Mi Sensi",
+   "artist": "Barrington Levy",
+   "year": 1984
+  },
+  {
+   "title": "Gimme the Light",
+   "artist": "Sean Paul",
+   "year": 2001
+  },
+  {
+   "title": "Herbalist",
+   "artist": "Alborosie",
+   "year": 2006
+  },
+  {
+   "title": "No Cocaine",
+   "artist": "Slightly Stoopid",
+   "year": 2008
+  },
+  {
+   "title": "Officer",
+   "artist": "Slightly Stoopid",
+   "year": 2003
+  },
+  {
+   "title": "Like Glue",
+   "artist": "Sean Paul",
+   "year": 2001
+  },
+  {
+   "title": "King Without a Crown",
+   "artist": "Matisyahu",
+   "year": 2004
+  },
+  {
+   "title": "Sinsemilla",
+   "artist": "Black Uhuru",
+   "year": 1980
+  },
+  {
+   "title": "Roller Skates",
+   "artist": "Steel Pulse",
+   "year": 1984
+  },
+  {
+   "title": "Ambush In The Night",
+   "artist": "Bob Marley & The Wailers",
+   "year": 1979
+  },
+  {
+   "title": "I Got You Babe",
+   "artist": "UB40",
+   "year": 1985
+  },
+  {
+   "title": "Ursinho De Dormir",
+   "artist": "Armandinho",
+   "year": 2002
   }
  ]
 }

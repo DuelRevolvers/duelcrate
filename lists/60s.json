@@ -1,12 +1,22 @@
 {
  "name": "60s",
  "tag": "60s",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "Be My Baby",
+   "artist": "The Ronettes",
+   "year": 1963
+  },
   {
    "title": "The House of the Rising Sun",
    "artist": "The Animals",
    "year": 1964
+  },
+  {
+   "title": "Happy Together",
+   "artist": "The Turtles",
+   "year": 1966
   },
   {
    "title": "California Dreamin'",
@@ -14,14 +24,39 @@
    "year": 1967
   },
   {
+   "title": "Can't Help Falling in Love",
+   "artist": "Elvis Presley",
+   "year": 1969
+  },
+  {
    "title": "God Only Knows",
    "artist": "The Beach Boys",
    "year": 1966
   },
   {
-   "title": "Pale Blue Eyes",
+   "title": "These Boots Are Made for Walkin'",
+   "artist": "Nancy Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "Femme Fatale",
    "artist": "The Velvet Underground",
-   "year": 1969
+   "year": 1966
+  },
+  {
+   "title": "Sunday Morning",
+   "artist": "The Velvet Underground",
+   "year": 1972
+  },
+  {
+   "title": "You Don't Own Me",
+   "artist": "Lesley Gore",
+   "year": 1963
+  },
+  {
+   "title": "Hey Jude",
+   "artist": "The Beatles",
+   "year": 1968
   },
   {
    "title": "You Really Got Me",
@@ -29,14 +64,34 @@
    "year": 1964
   },
   {
+   "title": "Pale Blue Eyes",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
    "title": "For What It's Worth",
    "artist": "Buffalo Springfield",
    "year": 1966
   },
   {
+   "title": "500 Miles",
+   "artist": "Peter, Paul & Mary",
+   "year": 1962
+  },
+  {
    "title": "Paint It Black",
    "artist": "The Rolling Stones",
    "year": 1966
+  },
+  {
+   "title": "Season of the Witch",
+   "artist": "Donovan",
+   "year": 1966
+  },
+  {
+   "title": "Put Your Head on My Shoulder",
+   "artist": "Paul Anka",
+   "year": 1959
   },
   {
    "title": "Waterloo Sunset",
@@ -49,9 +104,24 @@
    "year": 1969
   },
   {
+   "title": "Dedicated To The One I Love",
+   "artist": "The Mamas & the Papas",
+   "year": 1967
+  },
+  {
+   "title": "In Dreams",
+   "artist": "Roy Orbison",
+   "year": 1963
+  },
+  {
    "title": "She's A Rainbow",
    "artist": "The Rolling Stones",
    "year": 1967
+  },
+  {
+   "title": "The Boxer",
+   "artist": "Simon & Garfunkel",
+   "year": 1969
   },
   {
    "title": "Bad Moon Rising",
@@ -59,9 +129,64 @@
    "year": 1969
   },
   {
+   "title": "It's My Party",
+   "artist": "Lesley Gore",
+   "year": 1963
+  },
+  {
+   "title": "A Man Without Love",
+   "artist": "Engelbert Humperdinck",
+   "year": 1968
+  },
+  {
+   "title": "Stand by Me",
+   "artist": "Ben E. King",
+   "year": 1962
+  },
+  {
+   "title": "Puppy Love",
+   "artist": "Paul Anka",
+   "year": 1960
+  },
+  {
+   "title": "Don't Talk (Put Your Head on My Shoulder)",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Spooky",
+   "artist": "Dusty Springfield",
+   "year": 1970
+  },
+  {
    "title": "All Day and All of the Night",
    "artist": "The Kinks",
    "year": 1964
+  },
+  {
+   "title": "Oh, Pretty Woman",
+   "artist": "Roy Orbison",
+   "year": 1964
+  },
+  {
+   "title": "Soldier Boy",
+   "artist": "The Shirelles",
+   "year": 1962
+  },
+  {
+   "title": "Unchained Melody",
+   "artist": "The Righteous Brothers",
+   "year": 1965
+  },
+  {
+   "title": "Daydream Believer",
+   "artist": "The Monkees",
+   "year": 1967
+  },
+  {
+   "title": "Sunshine, Lollipops And Rainbows",
+   "artist": "Lesley Gore",
+   "year": 1963
   },
   {
    "title": "Son of a Preacher Man",
@@ -69,23 +194,23 @@
    "year": 1968
   },
   {
+   "title": "Venus in Furs",
+   "artist": "The Velvet Underground",
+   "year": 1966
+  },
+  {
+   "title": "You Still Believe in Me",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Good Vibrations",
+   "artist": "The Beach Boys",
+   "year": 1970
+  },
+  {
    "title": "Sunshine of Your Love",
    "artist": "Cream",
-   "year": 1967
-  },
-  {
-   "title": "Fortunate Son",
-   "artist": "Creedence Clearwater Revival",
-   "year": 1969
-  },
-  {
-   "title": "White Room",
-   "artist": "Cream",
-   "year": 1968
-  },
-  {
-   "title": "Somebody to Love",
-   "artist": "Jefferson Airplane",
    "year": 1967
   },
   {
@@ -94,9 +219,39 @@
    "year": 1996
   },
   {
-   "title": "Brown Eyed Girl",
-   "artist": "Van Morrison",
+   "title": "Eleanor Rigby",
+   "artist": "The Beatles",
+   "year": 1966
+  },
+  {
+   "title": "Fortunate Son",
+   "artist": "Creedence Clearwater Revival",
+   "year": 1969
+  },
+  {
+   "title": "Somebody to Love",
+   "artist": "Jefferson Airplane",
    "year": 1967
+  },
+  {
+   "title": "America",
+   "artist": "Simon & Garfunkel",
+   "year": 1968
+  },
+  {
+   "title": "White Room",
+   "artist": "Cream",
+   "year": 1968
+  },
+  {
+   "title": "Caroline, No",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Monster Mash",
+   "artist": "Bobby 'Boris' Pickett",
+   "year": 1973
   },
   {
    "title": "People Are Strange",
@@ -104,14 +259,79 @@
    "year": 1967
   },
   {
+   "title": "April Come She Will",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Do You Believe In Magic?",
+   "artist": "The Lovin' Spoonful",
+   "year": 1965
+  },
+  {
+   "title": "Brown Eyed Girl",
+   "artist": "Van Morrison",
+   "year": 1967
+  },
+  {
+   "title": "These Days",
+   "artist": "Nico",
+   "year": 1967
+  },
+  {
+   "title": "A Well Respected Man",
+   "artist": "The Kinks",
+   "year": 1965
+  },
+  {
+   "title": "Time of the Season",
+   "artist": "The Zombies",
+   "year": 1968
+  },
+  {
    "title": "Like a Rolling Stone",
    "artist": "Bob Dylan",
    "year": 1963
   },
   {
-   "title": "Light My Fire",
-   "artist": "The Doors",
+   "title": "The Wanderer",
+   "artist": "Dion",
+   "year": 1961
+  },
+  {
+   "title": "Bang Bang (My Baby Shot Me Down)",
+   "artist": "Nancy Sinatra",
+   "year": 1966
+  },
+  {
+   "title": "Homeward Bound",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Turn! Turn! Turn! (To Everything There Is a Season)",
+   "artist": "The Byrds",
+   "year": 1965
+  },
+  {
+   "title": "San Francisco (Be Sure to Wear Flowers in Your Hair)",
+   "artist": "Scott McKenzie",
    "year": 1967
+  },
+  {
+   "title": "I'm Waiting for the Day",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Strawberry Fields Forever",
+   "artist": "The Beatles",
+   "year": 1967
+  },
+  {
+   "title": "Mr. Tambourine Man",
+   "artist": "Bob Dylan",
+   "year": 1965
   },
   {
    "title": "Under My Thumb",
@@ -119,13 +339,23 @@
    "year": 1966
   },
   {
+   "title": "Light My Fire",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Elenore",
+   "artist": "The Turtles",
+   "year": 1967
+  },
+  {
    "title": "Gimme Shelter",
    "artist": "The Rolling Stones",
    "year": 1971
   },
   {
-   "title": "Break on Through (to the Other Side)",
-   "artist": "The Doors",
+   "title": "There She Goes Again",
+   "artist": "The Velvet Underground",
    "year": 1967
   },
   {
@@ -134,19 +364,64 @@
    "year": 1967
   },
   {
-   "title": "Ring of Fire",
-   "artist": "Johnny Cash",
+   "title": "I Get Around",
+   "artist": "The Beach Boys",
+   "year": 1964
+  },
+  {
+   "title": "Come A Little Bit Closer",
+   "artist": "Jay & The Americans",
+   "year": 1964
+  },
+  {
+   "title": "Lay Lady Lay",
+   "artist": "Bob Dylan",
+   "year": 1969
+  },
+  {
+   "title": "Sugar Sugar",
+   "artist": "The Archies",
+   "year": 1975
+  },
+  {
+   "title": "I Only Want To Be With You",
+   "artist": "Dusty Springfield",
    "year": 1963
   },
   {
-   "title": "Respect",
-   "artist": "Aretha Franklin",
+   "title": "Break on Through (to the Other Side)",
+   "artist": "The Doors",
    "year": 1967
   },
   {
-   "title": "All Along the Watchtower",
-   "artist": "Jimi Hendrix",
-   "year": 1971
+   "title": "The Sound of Silence",
+   "artist": "Simon & Garfunkel",
+   "year": 1964
+  },
+  {
+   "title": "Subterranean Homesick Blues",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Heroes and Villains",
+   "artist": "The Beach Boys",
+   "year": 1967
+  },
+  {
+   "title": "Crystal Blue Persuasion",
+   "artist": "Tommy James & The Shondells",
+   "year": 1969
+  },
+  {
+   "title": "Penny Lane",
+   "artist": "The Beatles",
+   "year": 1967
+  },
+  {
+   "title": "Groovin'",
+   "artist": "The Young Rascals",
+   "year": 1967
   },
   {
    "title": "Bring It on Home to Me",
@@ -154,9 +429,239 @@
    "year": 1962
   },
   {
+   "title": "Venus",
+   "artist": "Shocking Blue",
+   "year": 1969
+  },
+  {
+   "title": "Here Comes the Sun",
+   "artist": "The Beatles",
+   "year": 1969
+  },
+  {
+   "title": "In My Life",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "The Letter",
+   "artist": "The Box Tops",
+   "year": 1967
+  },
+  {
+   "title": "Runaway",
+   "artist": "Del Shannon",
+   "year": 1970
+  },
+  {
+   "title": "Blue Velvet",
+   "artist": "Bobby Vinton",
+   "year": 1963
+  },
+  {
+   "title": "Girl From the North Country",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "Surfin' Bird",
+   "artist": "The Trashmen",
+   "year": 1963
+  },
+  {
+   "title": "All Tomorrow's Parties",
+   "artist": "The Velvet Underground",
+   "year": 1966
+  },
+  {
+   "title": "Ring of Fire",
+   "artist": "Johnny Cash",
+   "year": 1963
+  },
+  {
+   "title": "Something",
+   "artist": "The Beatles",
+   "year": 1969
+  },
+  {
+   "title": "Norwegian Wood (This Bird Has Flown)",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "Downtown",
+   "artist": "Petula Clark",
+   "year": 1964
+  },
+  {
+   "title": "The Times They Are a-Changin'",
+   "artist": "Bob Dylan",
+   "year": 1978
+  },
+  {
+   "title": "Lil' Red Riding Hood",
+   "artist": "Sam the Sham & The Pharaohs",
+   "year": 1986
+  },
+  {
+   "title": "Then He Kissed Me",
+   "artist": "The Crystals",
+   "year": 1963
+  },
+  {
+   "title": "Spooky",
+   "artist": "Classics IV",
+   "year": 1968
+  },
+  {
+   "title": "I'm a Believer",
+   "artist": "The Monkees",
+   "year": 1966
+  },
+  {
+   "title": "All Along the Watchtower",
+   "artist": "Jimi Hendrix",
+   "year": 1971
+  },
+  {
+   "title": "I Am a Rock",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "A Day in the Life",
+   "artist": "The Beatles",
+   "year": 1967
+  },
+  {
+   "title": "You Are My Destiny",
+   "artist": "Paul Anka",
+   "year": 1957
+  },
+  {
+   "title": "One",
+   "artist": "Harry Nilsson",
+   "year": 2005
+  },
+  {
+   "title": "Help!",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "Respect",
+   "artist": "Aretha Franklin",
+   "year": 1967
+  },
+  {
+   "title": "I Want You",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "I Remember You",
+   "artist": "Frank Ifield",
+   "year": 1962
+  },
+  {
+   "title": "Mr. Tambourine Man",
+   "artist": "The Byrds",
+   "year": 1969
+  },
+  {
+   "title": "Michelle",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "It Ain't Me Babe",
+   "artist": "Bob Dylan",
+   "year": 1964
+  },
+  {
+   "title": "Scarborough Fair / Canticle",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Surf's Up",
+   "artist": "The Beach Boys",
+   "year": 1971
+  },
+  {
+   "title": "Crying",
+   "artist": "Roy Orbison",
+   "year": 1961
+  },
+  {
    "title": "A Change Is Gonna Come",
    "artist": "Sam Cooke",
    "year": 1964
+  },
+  {
+   "title": "Run Run Run",
+   "artist": "The Velvet Underground",
+   "year": 1966
+  },
+  {
+   "title": "Pet Sounds",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Don't Worry Baby",
+   "artist": "The Beach Boys",
+   "year": 1964
+  },
+  {
+   "title": "What Goes On",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "Nothing Can Change This Love",
+   "artist": "Sam Cooke",
+   "year": 1963
+  },
+  {
+   "title": "Drive My Car",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "Let It Be",
+   "artist": "The Beatles",
+   "year": 1969
+  },
+  {
+   "title": "Queen Jane Approximately",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Will You Love Me Tomorrow",
+   "artist": "The Shirelles",
+   "year": 1963
+  },
+  {
+   "title": "Emotions",
+   "artist": "Brenda Lee",
+   "year": 1961
+  },
+  {
+   "title": "It's All Over Now, Baby Blue",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Piece of My Heart",
+   "artist": "Big Brother & The Holding Company",
+   "year": 1968
+  },
+  {
+   "title": "Girl",
+   "artist": "The Beatles",
+   "year": 1965
   },
   {
    "title": "My Girl",
@@ -164,13 +669,113 @@
    "year": 1964
   },
   {
+   "title": "Here, There and Everywhere",
+   "artist": "The Beatles",
+   "year": 1966
+  },
+  {
+   "title": "You'll Never Walk Alone",
+   "artist": "Gerry & The Pacemakers",
+   "year": 1964
+  },
+  {
+   "title": "Soul Kitchen",
+   "artist": "The Doors",
+   "year": 1967
+  },
+  {
+   "title": "Rhythm of the Rain",
+   "artist": "The Cascades",
+   "year": 1962
+  },
+  {
+   "title": "Touch Me",
+   "artist": "The Doors",
+   "year": 1968
+  },
+  {
+   "title": "Visions of Johanna",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "Yesterday",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "Hurdy Gurdy Man",
+   "artist": "Donovan",
+   "year": 1968
+  },
+  {
+   "title": "Wednesday Morning, 3 A.M.",
+   "artist": "Simon & Garfunkel",
+   "year": 1964
+  },
+  {
+   "title": "In the Ghetto",
+   "artist": "Elvis Presley",
+   "year": 1969
+  },
+  {
+   "title": "Mrs. Robinson",
+   "artist": "Simon & Garfunkel",
+   "year": 1968
+  },
+  {
+   "title": "A Hazy Shade of Winter",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
    "title": "Purple Haze",
    "artist": "Jimi Hendrix",
    "year": 1970
   },
   {
-   "title": "Touch Me",
-   "artist": "The Doors",
+   "title": "Expecting To Fly",
+   "artist": "Buffalo Springfield",
+   "year": 1967
+  },
+  {
+   "title": "Surfin' U.S.A.",
+   "artist": "The Beach Boys",
+   "year": 1963
+  },
+  {
+   "title": "Sunny",
+   "artist": "Bobby Hebb",
+   "year": 1966
+  },
+  {
+   "title": "Wild Thing",
+   "artist": "The Troggs",
+   "year": 1973
+  },
+  {
+   "title": "Let's Go Away for Awhile",
+   "artist": "The Beach Boys",
+   "year": 1966
+  },
+  {
+   "title": "Barbara Ann",
+   "artist": "The Beach Boys",
+   "year": 1965
+  },
+  {
+   "title": "Forever",
+   "artist": "The Little Dippers",
+   "year": 1959
+  },
+  {
+   "title": "The Witch",
+   "artist": "The Sonics",
+   "year": 1964
+  },
+  {
+   "title": "Magic Carpet Ride",
+   "artist": "Steppenwolf",
    "year": 1968
   },
   {
@@ -179,9 +784,44 @@
    "year": 1971
   },
   {
-   "title": "Magic Carpet Ride",
-   "artist": "Steppenwolf",
-   "year": 1968
+   "title": "I'm Set Free",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "Under the Boardwalk",
+   "artist": "The Drifters",
+   "year": 1965
+  },
+  {
+   "title": "Cigarettes and Coffee",
+   "artist": "Otis Redding",
+   "year": 1966
+  },
+  {
+   "title": "Suzanne",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Jesus",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "Bus Stop",
+   "artist": "The Hollies",
+   "year": 1966
+  },
+  {
+   "title": "Taxman",
+   "artist": "The Beatles",
+   "year": 1966
+  },
+  {
+   "title": "She's Not There",
+   "artist": "The Zombies",
+   "year": 1973
   },
   {
    "title": "The Crystal Ship",
@@ -189,8 +829,118 @@
    "year": 1967
   },
   {
-   "title": "Cigarettes and Coffee",
-   "artist": "Otis Redding",
+   "title": "The 59th Street Bridge Song (Feelin' Groovy)",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Runaround Sue",
+   "artist": "Dion",
+   "year": 1971
+  },
+  {
+   "title": "Baby, I Love You",
+   "artist": "The Ronettes",
+   "year": 1963
+  },
+  {
+   "title": "A Hard Rain's a-Gonna Fall",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "She Belongs to Me",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "The Windmills of Your Mind",
+   "artist": "Dusty Springfield",
+   "year": 1969
+  },
+  {
+   "title": "Ticket to Ride",
+   "artist": "The Beatles",
+   "year": 1965
+  },
+  {
+   "title": "All My Loving",
+   "artist": "The Beatles",
+   "year": 1963
+  },
+  {
+   "title": "To Love Somebody",
+   "artist": "Bee Gees",
+   "year": 1967
+  },
+  {
+   "title": "I Am the Walrus",
+   "artist": "The Beatles",
+   "year": 1967
+  },
+  {
+   "title": "Eve Of Destruction",
+   "artist": "Barry McGuire",
+   "year": 1965
+  },
+  {
+   "title": "Once I Was",
+   "artist": "Tim Buckley",
+   "year": 1967
+  },
+  {
+   "title": "Twist and Shout",
+   "artist": "The Beatles",
+   "year": 1963
+  },
+  {
+   "title": "Desolation Row",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "I Feel Free",
+   "artist": "Cream",
+   "year": 1966
+  },
+  {
+   "title": "Hello Goodbye",
+   "artist": "The Beatles",
+   "year": 1967
+  },
+  {
+   "title": "Me and Bobby McGee",
+   "artist": "Janis Joplin",
+   "year": 1970
+  },
+  {
+   "title": "Fire",
+   "artist": "The Crazy World Of Arthur Brown",
+   "year": 1968
+  },
+  {
+   "title": "Some Kinda Love",
+   "artist": "The Velvet Underground",
+   "year": 1969
+  },
+  {
+   "title": "Different Drum",
+   "artist": "The Stone Poneys",
+   "year": 1967
+  },
+  {
+   "title": "Voodoo Child (Slight Return)",
+   "artist": "Jimi Hendrix",
+   "year": 1968
+  },
+  {
+   "title": "One of Us Must Know (Sooner or Later)",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "Just Like a Woman",
+   "artist": "Bob Dylan",
    "year": 1966
   },
   {
@@ -199,59 +949,59 @@
    "year": 1968
   },
   {
-   "title": "Voodoo Child (Slight Return)",
-   "artist": "Jimi Hendrix",
+   "title": "California Girls",
+   "artist": "The Beach Boys",
+   "year": 1965
+  },
+  {
+   "title": "Mr. Soul",
+   "artist": "Buffalo Springfield",
+   "year": 1967
+  },
+  {
+   "title": "You Don't Have To Say You Love Me",
+   "artist": "Dusty Springfield",
+   "year": 1966
+  },
+  {
+   "title": "Delilah",
+   "artist": "Tom Jones",
    "year": 1968
   },
   {
-   "title": "The End",
-   "artist": "The Doors",
-   "year": 1967
+   "title": "Happiness Is a Warm Gun",
+   "artist": "The Beatles",
+   "year": 1968
   },
   {
-   "title": "Love Me Two Times",
-   "artist": "The Doors",
-   "year": 1967
-  },
-  {
-   "title": "Try a Little Tenderness",
-   "artist": "Otis Redding",
-   "year": 1964
-  },
-  {
-   "title": "Green River",
-   "artist": "Creedence Clearwater Revival",
+   "title": "Baby Driver",
+   "artist": "Simon & Garfunkel",
    "year": 1969
   },
   {
-   "title": "I Say a Little Prayer",
-   "artist": "Aretha Franklin",
-   "year": 1968
+   "title": "Blowin' in the Wind",
+   "artist": "Bob Dylan",
+   "year": 1963
   },
   {
-   "title": "Sympathy for the Devil",
-   "artist": "The Rolling Stones",
-   "year": 1974
-  },
-  {
-   "title": "Love Her Madly",
-   "artist": "The Doors",
-   "year": 1971
-  },
-  {
-   "title": "I Heard It Through the Grapevine",
-   "artist": "Marvin Gaye",
-   "year": 1968
-  },
-  {
-   "title": "Pinball Wizard",
-   "artist": "The Who",
-   "year": 1973
-  },
-  {
-   "title": "Hold On, I'm Comin'",
-   "artist": "Sam & Dave",
+   "title": "Nights in White Satin",
+   "artist": "The Moody Blues",
    "year": 1967
+  },
+  {
+   "title": "Dear Prudence",
+   "artist": "The Beatles",
+   "year": 1968
+  },
+  {
+   "title": "Incense And Peppermints",
+   "artist": "Strawberry Alarm Clock",
+   "year": 1967
+  },
+  {
+   "title": "Louie Louie",
+   "artist": "The Kingsmen",
+   "year": 1963
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "name": "Rock",
  "tag": "rock",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Everlong",
@@ -9,9 +9,14 @@
    "year": 1997
   },
   {
-   "title": "Still Into You",
-   "artist": "Paramore",
-   "year": 2013
+   "title": "Bring Me to Life",
+   "artist": "Evanescence",
+   "year": 2002
+  },
+  {
+   "title": "Lover, You Should've Come Over",
+   "artist": "Jeff Buckley",
+   "year": 1994
   },
   {
    "title": "Sign of the Times",
@@ -19,9 +24,9 @@
    "year": 2017
   },
   {
-   "title": "Bring Me to Life",
-   "artist": "Evanescence",
-   "year": 2002
+   "title": "Still Into You",
+   "artist": "Paramore",
+   "year": 2013
   },
   {
    "title": "All I Wanted",
@@ -39,6 +44,11 @@
    "year": 1998
   },
   {
+   "title": "Helena",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
    "title": "In the End",
    "artist": "Linkin Park",
    "year": 2000
@@ -49,24 +59,9 @@
    "year": 2000
   },
   {
-   "title": "Helena",
+   "title": "I Don't Love You",
    "artist": "My Chemical Romance",
-   "year": 2004
-  },
-  {
-   "title": "Misery Business",
-   "artist": "Paramore",
-   "year": 2007
-  },
-  {
-   "title": "Faint",
-   "artist": "Linkin Park",
-   "year": 2003
-  },
-  {
-   "title": "Numb",
-   "artist": "Linkin Park",
-   "year": 2003
+   "year": 2006
   },
   {
    "title": "Welcome to the Black Parade",
@@ -74,9 +69,19 @@
    "year": 2006
   },
   {
-   "title": "I Don't Love You",
+   "title": "Numb",
+   "artist": "Linkin Park",
+   "year": 2003
+  },
+  {
+   "title": "Teenagers",
    "artist": "My Chemical Romance",
    "year": 2006
+  },
+  {
+   "title": "Faint",
+   "artist": "Linkin Park",
+   "year": 2003
   },
   {
    "title": "The Reason",
@@ -84,9 +89,9 @@
    "year": 2003
   },
   {
-   "title": "Teenagers",
-   "artist": "My Chemical Romance",
-   "year": 2006
+   "title": "Misery Business",
+   "artist": "Paramore",
+   "year": 2007
   },
   {
    "title": "Decode",
@@ -104,19 +109,9 @@
    "year": 2013
   },
   {
-   "title": "How You Remind Me",
-   "artist": "Nickelback",
-   "year": 2000
-  },
-  {
    "title": "No. 1 Party Anthem",
    "artist": "Arctic Monkeys",
    "year": 2013
-  },
-  {
-   "title": "Smells Like Teen Spirit",
-   "artist": "Nirvana",
-   "year": 1991
   },
   {
    "title": "Somewhere I Belong",
@@ -124,9 +119,44 @@
    "year": 2003
   },
   {
+   "title": "Supermassive Black Hole",
+   "artist": "Muse",
+   "year": 2006
+  },
+  {
+   "title": "How You Remind Me",
+   "artist": "Nickelback",
+   "year": 2000
+  },
+  {
+   "title": "Smells Like Teen Spirit",
+   "artist": "Nirvana",
+   "year": 1991
+  },
+  {
+   "title": "Dead!",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "The Ghost of You",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
    "title": "Animal I Have Become",
    "artist": "Three Days Grace",
    "year": 2006
+  },
+  {
+   "title": "What I've Done",
+   "artist": "Linkin Park",
+   "year": 2007
+  },
+  {
+   "title": "Like a Stone",
+   "artist": "Audioslave",
+   "year": 2002
   },
   {
    "title": "Can't Stop",
@@ -139,34 +169,19 @@
    "year": 2005
   },
   {
-   "title": "Teenage Dirtbag",
-   "artist": "Wheatus",
-   "year": 2000
-  },
-  {
-   "title": "Supermassive Black Hole",
-   "artist": "Muse",
-   "year": 2006
-  },
-  {
-   "title": "Like a Stone",
-   "artist": "Audioslave",
-   "year": 2002
-  },
-  {
-   "title": "What I've Done",
-   "artist": "Linkin Park",
-   "year": 2007
-  },
-  {
-   "title": "Buddy Holly",
-   "artist": "Weezer",
-   "year": 1994
-  },
-  {
    "title": "I'm Not Okay (I Promise)",
    "artist": "My Chemical Romance",
    "year": 2004
+  },
+  {
+   "title": "Change (In the House of Flies)",
+   "artist": "Deftones",
+   "year": 2000
+  },
+  {
+   "title": "Scar Tissue",
+   "artist": "Red Hot Chili Peppers",
+   "year": 1999
   },
   {
    "title": "Going Under",
@@ -174,23 +189,13 @@
    "year": 2003
   },
   {
-   "title": "The Ghost of You",
-   "artist": "My Chemical Romance",
-   "year": 2004
-  },
-  {
    "title": "Every Breath You Take",
    "artist": "The Police",
    "year": 1983
   },
   {
-   "title": "Dead!",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Change (In the House of Flies)",
-   "artist": "Deftones",
+   "title": "Teenage Dirtbag",
+   "artist": "Wheatus",
    "year": 2000
   },
   {
@@ -199,14 +204,59 @@
    "year": 2002
   },
   {
-   "title": "Yellow",
-   "artist": "Coldplay",
-   "year": 2000
+   "title": "Buddy Holly",
+   "artist": "Weezer",
+   "year": 1994
   },
   {
    "title": "Californication",
    "artist": "Red Hot Chili Peppers",
    "year": 1999
+  },
+  {
+   "title": "Sex on Fire",
+   "artist": "Kings of Leon",
+   "year": 2008
+  },
+  {
+   "title": "Come as You Are",
+   "artist": "Nirvana",
+   "year": 1991
+  },
+  {
+   "title": "Yellow",
+   "artist": "Coldplay",
+   "year": 2000
+  },
+  {
+   "title": "Somebody Told Me",
+   "artist": "The Killers",
+   "year": 2004
+  },
+  {
+   "title": "Bohemian Rhapsody",
+   "artist": "Queen",
+   "year": 1976
+  },
+  {
+   "title": "Creep",
+   "artist": "Radiohead",
+   "year": 1993
+  },
+  {
+   "title": "Cancer",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Given Up",
+   "artist": "Linkin Park",
+   "year": 2007
+  },
+  {
+   "title": "Under the Bridge",
+   "artist": "Red Hot Chili Peppers",
+   "year": 1991
   },
   {
    "title": "Livin' on a Prayer",
@@ -219,48 +269,8 @@
    "year": 1999
   },
   {
-   "title": "Bohemian Rhapsody",
-   "artist": "Queen",
-   "year": 1976
-  },
-  {
-   "title": "Sex on Fire",
-   "artist": "Kings of Leon",
-   "year": 2008
-  },
-  {
    "title": "Dance, Dance",
    "artist": "Fall Out Boy",
-   "year": 2005
-  },
-  {
-   "title": "Creep",
-   "artist": "Radiohead",
-   "year": 1993
-  },
-  {
-   "title": "Somebody Told Me",
-   "artist": "The Killers",
-   "year": 2004
-  },
-  {
-   "title": "Given Up",
-   "artist": "Linkin Park",
-   "year": 2007
-  },
-  {
-   "title": "Losing My Religion",
-   "artist": "R.E.M.",
-   "year": 1991
-  },
-  {
-   "title": "Cancer",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "I Write Sins Not Tragedies",
-   "artist": "Panic! at the Disco",
    "year": 2005
   },
   {
@@ -269,9 +279,39 @@
    "year": 1991
   },
   {
-   "title": "One Step Closer",
-   "artist": "Linkin Park",
-   "year": 2000
+   "title": "You Know What They Do to Guys Like Us in Prison",
+   "artist": "My Chemical Romance",
+   "year": 2004
+  },
+  {
+   "title": "This Is How I Disappear",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Thnks fr th Mmrs",
+   "artist": "Fall Out Boy",
+   "year": 2007
+  },
+  {
+   "title": "Famous Last Words",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Reptilia",
+   "artist": "The Strokes",
+   "year": 2003
+  },
+  {
+   "title": "I Write Sins Not Tragedies",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "Losing My Religion",
+   "artist": "R.E.M.",
+   "year": 1991
   },
   {
    "title": "Sweet Child o' Mine",
@@ -279,9 +319,14 @@
    "year": 1988
   },
   {
-   "title": "crushcrushcrush",
-   "artist": "Paramore",
-   "year": 2007
+   "title": "One Step Closer",
+   "artist": "Linkin Park",
+   "year": 2000
+  },
+  {
+   "title": "One Last Breath",
+   "artist": "Creed",
+   "year": 2001
   },
   {
    "title": "good 4 u",
@@ -289,34 +334,14 @@
    "year": 2021
   },
   {
-   "title": "You Know What They Do to Guys Like Us in Prison",
-   "artist": "My Chemical Romance",
+   "title": "Boulevard of Broken Dreams",
+   "artist": "Green Day",
    "year": 2004
   },
   {
    "title": "Send the Pain Below",
    "artist": "Chevelle",
    "year": 2002
-  },
-  {
-   "title": "brutal",
-   "artist": "Olivia Rodrigo",
-   "year": 2021
-  },
-  {
-   "title": "New Perspective",
-   "artist": "Panic! at the Disco",
-   "year": 2009
-  },
-  {
-   "title": "Boulevard of Broken Dreams",
-   "artist": "Green Day",
-   "year": 2004
-  },
-  {
-   "title": "Famous Last Words",
-   "artist": "My Chemical Romance",
-   "year": 2006
   },
   {
    "title": "No One Knows",
@@ -329,19 +354,19 @@
    "year": 2003
   },
   {
-   "title": "Crawling",
-   "artist": "Linkin Park",
-   "year": 2000
-  },
-  {
-   "title": "One Last Breath",
-   "artist": "Creed",
-   "year": 2001
+   "title": "crushcrushcrush",
+   "artist": "Paramore",
+   "year": 2007
   },
   {
    "title": "Breaking the Habit",
    "artist": "Linkin Park",
    "year": 2003
+  },
+  {
+   "title": "New Perspective",
+   "artist": "Panic! at the Disco",
+   "year": 2009
   },
   {
    "title": "Lonely Day",
@@ -354,29 +379,9 @@
    "year": 2007
   },
   {
-   "title": "Kryptonite",
-   "artist": "3 Doors Down",
-   "year": 1997
-  },
-  {
-   "title": "Pressure",
+   "title": "That's What You Get",
    "artist": "Paramore",
-   "year": 2005
-  },
-  {
-   "title": "Lying Is the Most Fun a Girl Can Have Without Taking Her Clothes Off",
-   "artist": "Panic! at the Disco",
-   "year": 2005
-  },
-  {
-   "title": "I'm So Sick",
-   "artist": "Flyleaf",
-   "year": 2005
-  },
-  {
-   "title": "This Is How I Disappear",
-   "artist": "My Chemical Romance",
-   "year": 2006
+   "year": 2007
   },
   {
    "title": "Otherside",
@@ -384,9 +389,34 @@
    "year": 1999
   },
   {
-   "title": "That's What You Get",
-   "artist": "Paramore",
-   "year": 2007
+   "title": "Crawling",
+   "artist": "Linkin Park",
+   "year": 2000
+  },
+  {
+   "title": "Kryptonite",
+   "artist": "3 Doors Down",
+   "year": 1997
+  },
+  {
+   "title": "Centuries",
+   "artist": "Fall Out Boy",
+   "year": 2014
+  },
+  {
+   "title": "brutal",
+   "artist": "Olivia Rodrigo",
+   "year": 2021
+  },
+  {
+   "title": "November Rain",
+   "artist": "Guns N' Roses",
+   "year": 1986
+  },
+  {
+   "title": "The Sharpest Lives",
+   "artist": "My Chemical Romance",
+   "year": 2006
   },
   {
    "title": "Dani California",
@@ -394,19 +424,9 @@
    "year": 2006
   },
   {
-   "title": "Sugar, We're Goin Down",
-   "artist": "Fall Out Boy",
-   "year": 2005
-  },
-  {
-   "title": "Bleed It Out",
-   "artist": "Linkin Park",
-   "year": 2007
-  },
-  {
-   "title": "Lying from You",
-   "artist": "Linkin Park",
-   "year": 2003
+   "title": "Sk8er Boi",
+   "artist": "Avril Lavigne",
+   "year": 2001
   },
   {
    "title": "Last Nite",
@@ -414,9 +434,14 @@
    "year": 2000
   },
   {
-   "title": "The Middle",
-   "artist": "Jimmy Eat World",
-   "year": 2001
+   "title": "Bleed It Out",
+   "artist": "Linkin Park",
+   "year": 2007
+  },
+  {
+   "title": "Killer Queen",
+   "artist": "Queen",
+   "year": 1974
   },
   {
    "title": "Hysteria",
@@ -424,9 +449,39 @@
    "year": 2002
   },
   {
+   "title": "Mama",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "I'm So Sick",
+   "artist": "Flyleaf",
+   "year": 2005
+  },
+  {
+   "title": "The Middle",
+   "artist": "Jimmy Eat World",
+   "year": 2001
+  },
+  {
    "title": "Don't Stop Me Now",
    "artist": "Queen",
    "year": 1978
+  },
+  {
+   "title": "Lying Is the Most Fun a Girl Can Have Without Taking Her Clothes Off",
+   "artist": "Panic! at the Disco",
+   "year": 2005
+  },
+  {
+   "title": "Pressure",
+   "artist": "Paramore",
+   "year": 2005
+  },
+  {
+   "title": "Thank You for the Venom",
+   "artist": "My Chemical Romance",
+   "year": 2004
   },
   {
    "title": "Monster",
@@ -434,12 +489,32 @@
    "year": 2009
   },
   {
+   "title": "Lying from You",
+   "artist": "Linkin Park",
+   "year": 2003
+  },
+  {
+   "title": "Sugar, We're Goin Down",
+   "artist": "Fall Out Boy",
+   "year": 2005
+  },
+  {
+   "title": "My Hero",
+   "artist": "Foo Fighters",
+   "year": 1995
+  },
+  {
    "title": "Last Resort",
    "artist": "Papa Roach",
    "year": 2000
   },
   {
-   "title": "The Sharpest Lives",
+   "title": "Paralyzer",
+   "artist": "Finger Eleven",
+   "year": 2007
+  },
+  {
+   "title": "House of Wolves",
    "artist": "My Chemical Romance",
    "year": 2006
   },
@@ -449,58 +524,13 @@
    "year": 2001
   },
   {
-   "title": "My Hero",
-   "artist": "Foo Fighters",
-   "year": 1995
-  },
-  {
-   "title": "Mama",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Paralyzer",
-   "artist": "Finger Eleven",
-   "year": 2007
-  },
-  {
-   "title": "Knee Socks",
-   "artist": "Arctic Monkeys",
-   "year": 2013
-  },
-  {
-   "title": "Ignorance",
-   "artist": "Paramore",
-   "year": 2009
-  },
-  {
    "title": "Forget Her",
    "artist": "Jeff Buckley",
    "year": 1994
   },
   {
-   "title": "Rollin' (Air Raid Vehicle)",
-   "artist": "Limp Bizkit",
-   "year": 2000
-  },
-  {
    "title": "Cemetery Drive",
    "artist": "My Chemical Romance",
-   "year": 2004
-  },
-  {
-   "title": "Killer Queen",
-   "artist": "Queen",
-   "year": 1974
-  },
-  {
-   "title": "Counting Stars",
-   "artist": "OneRepublic",
-   "year": 2013
-  },
-  {
-   "title": "Wake Me Up When September Ends",
-   "artist": "Green Day",
    "year": 2004
   },
   {
@@ -509,14 +539,19 @@
    "year": 1995
   },
   {
-   "title": "Use Somebody",
-   "artist": "Kings of Leon",
-   "year": 2008
+   "title": "Knee Socks",
+   "artist": "Arctic Monkeys",
+   "year": 2013
   },
   {
-   "title": "House of Wolves",
-   "artist": "My Chemical Romance",
-   "year": 2006
+   "title": "Wake Me Up When September Ends",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Ignorance",
+   "artist": "Paramore",
+   "year": 2009
   },
   {
    "title": "This Love",
@@ -524,13 +559,23 @@
    "year": 2002
   },
   {
-   "title": "Blurry",
-   "artist": "Puddle of Mudd",
-   "year": 2001
+   "title": "Sleep",
+   "artist": "My Chemical Romance",
+   "year": 2006
   },
   {
-   "title": "American Idiot",
-   "artist": "Green Day",
+   "title": "Counting Stars",
+   "artist": "OneRepublic",
+   "year": 2013
+  },
+  {
+   "title": "Rollin' (Air Raid Vehicle)",
+   "artist": "Limp Bizkit",
+   "year": 2000
+  },
+  {
+   "title": "The End.",
+   "artist": "My Chemical Romance",
    "year": 2004
   },
   {
@@ -539,19 +584,9 @@
    "year": 1988
   },
   {
-   "title": "When You Were Young",
-   "artist": "The Killers",
-   "year": 2006
-  },
-  {
-   "title": "Heart-Shaped Box",
-   "artist": "Nirvana",
-   "year": 1993
-  },
-  {
-   "title": "Brick by Boring Brick",
-   "artist": "Paramore",
-   "year": 2009
+   "title": "The Red",
+   "artist": "Chevelle",
+   "year": 2002
   },
   {
    "title": "The Scientist",
@@ -564,14 +599,44 @@
    "year": 1996
   },
   {
-   "title": "The Red",
-   "artist": "Chevelle",
-   "year": 2002
-  },
-  {
-   "title": "Sleep",
+   "title": "Disenchanted",
    "artist": "My Chemical Romance",
    "year": 2006
+  },
+  {
+   "title": "Brick by Boring Brick",
+   "artist": "Paramore",
+   "year": 2009
+  },
+  {
+   "title": "American Idiot",
+   "artist": "Green Day",
+   "year": 2004
+  },
+  {
+   "title": "Use Somebody",
+   "artist": "Kings of Leon",
+   "year": 2008
+  },
+  {
+   "title": "Message in a Bottle",
+   "artist": "The Police",
+   "year": 1979
+  },
+  {
+   "title": "So Real",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "Blurry",
+   "artist": "Puddle of Mudd",
+   "year": 2001
+  },
+  {
+   "title": "Papercut",
+   "artist": "Linkin Park",
+   "year": 2000
   },
   {
    "title": "You Give Love a Bad Name",
@@ -589,24 +654,9 @@
    "year": 2006
   },
   {
-   "title": "Drive",
-   "artist": "Incubus",
-   "year": 1999
-  },
-  {
-   "title": "Fly Away",
-   "artist": "Lenny Kravitz",
-   "year": 1998
-  },
-  {
-   "title": "The End.",
-   "artist": "My Chemical Romance",
-   "year": 2004
-  },
-  {
-   "title": "Undone - The Sweater Song",
-   "artist": "Weezer",
-   "year": 1994
+   "title": "Heart-Shaped Box",
+   "artist": "Nirvana",
+   "year": 1993
   },
   {
    "title": "Paint It Black",
@@ -614,49 +664,14 @@
    "year": 1966
   },
   {
-   "title": "I Was Made for Lovin' You",
-   "artist": "Kiss",
-   "year": 1979
+   "title": "Fly Away",
+   "artist": "Lenny Kravitz",
+   "year": 1998
   },
   {
-   "title": "Lithium",
-   "artist": "Nirvana",
-   "year": 1990
-  },
-  {
-   "title": "Figure.09",
-   "artist": "Linkin Park",
-   "year": 2003
-  },
-  {
-   "title": "Demolition Lovers",
-   "artist": "My Chemical Romance",
-   "year": 2002
-  },
-  {
-   "title": "Burn It Down",
-   "artist": "Linkin Park",
-   "year": 2012
-  },
-  {
-   "title": "The Kill",
-   "artist": "30 Seconds to Mars",
-   "year": 2006
-  },
-  {
-   "title": "Call Me When You're Sober",
-   "artist": "Evanescence",
-   "year": 2006
-  },
-  {
-   "title": "Girlfriend",
-   "artist": "Avril Lavigne",
-   "year": 2007
-  },
-  {
-   "title": "Another One Bites the Dust",
-   "artist": "Queen",
-   "year": 1980
+   "title": "Drive",
+   "artist": "Incubus",
+   "year": 1999
   },
   {
    "title": "To the End",
@@ -664,43 +679,43 @@
    "year": 2004
   },
   {
-   "title": "Are You Gonna Be My Girl",
-   "artist": "Jet",
-   "year": 2003
+   "title": "Girlfriend",
+   "artist": "Avril Lavigne",
+   "year": 2007
   },
   {
-   "title": "Clocks",
-   "artist": "Coldplay",
+   "title": "When You Were Young",
+   "artist": "The Killers",
+   "year": 2006
+  },
+  {
+   "title": "Demolition Lovers",
+   "artist": "My Chemical Romance",
    "year": 2002
   },
   {
-   "title": "Grace",
-   "artist": "Jeff Buckley",
+   "title": "I Was Made for Lovin' You",
+   "artist": "Kiss",
+   "year": 1979
+  },
+  {
+   "title": "Undone - The Sweater Song",
+   "artist": "Weezer",
    "year": 1994
   },
   {
-   "title": "(One of Those) Crazy Girls",
-   "artist": "Paramore",
-   "year": 2013
+   "title": "Burn It Down",
+   "artist": "Linkin Park",
+   "year": 2012
   },
   {
-   "title": "Wonderwall",
-   "artist": "Oasis",
-   "year": 1995
+   "title": "(Don't Fear) The Reaper",
+   "artist": "Blue Öyster Cult",
+   "year": 1976
   },
   {
-   "title": "Dream On",
-   "artist": "Aerosmith",
-   "year": 1973
-  },
-  {
-   "title": "Everybody's Fool",
-   "artist": "Evanescence",
-   "year": 2002
-  },
-  {
-   "title": "Gives You Hell",
-   "artist": "The All-American Rejects",
+   "title": "Viva la Vida",
+   "artist": "Coldplay",
    "year": 2008
   },
   {
@@ -709,13 +724,63 @@
    "year": 2006
   },
   {
-   "title": "About a Girl",
+   "title": "The Kill",
+   "artist": "30 Seconds to Mars",
+   "year": 2006
+  },
+  {
+   "title": "Grace",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "Hard to Explain",
+   "artist": "The Strokes",
+   "year": 2001
+  },
+  {
+   "title": "Zombie",
+   "artist": "The Cranberries",
+   "year": 1994
+  },
+  {
+   "title": "Wonderwall",
+   "artist": "Oasis",
+   "year": 1995
+  },
+  {
+   "title": "Another One Bites the Dust",
+   "artist": "Queen",
+   "year": 1980
+  },
+  {
+   "title": "Lithium",
    "artist": "Nirvana",
    "year": 1990
   },
   {
-   "title": "The Man Who Can't Be Moved",
-   "artist": "The Script",
+   "title": "How to Save a Life",
+   "artist": "The Fray",
+   "year": 2005
+  },
+  {
+   "title": "Are You Gonna Be My Girl",
+   "artist": "Jet",
+   "year": 2003
+  },
+  {
+   "title": "Everybody's Fool",
+   "artist": "Evanescence",
+   "year": 2002
+  },
+  {
+   "title": "Figure.09",
+   "artist": "Linkin Park",
+   "year": 2003
+  },
+  {
+   "title": "Gives You Hell",
+   "artist": "The All-American Rejects",
    "year": 2008
   },
   {
@@ -724,34 +789,19 @@
    "year": 2009
   },
   {
-   "title": "Pet",
-   "artist": "A Perfect Circle",
-   "year": 2003
-  },
-  {
-   "title": "Plug In Baby",
-   "artist": "Muse",
-   "year": 2001
-  },
-  {
    "title": "Give 'Em Hell, Kid",
    "artist": "My Chemical Romance",
    "year": 2004
   },
   {
-   "title": "Show Me How To Live",
-   "artist": "Audioslave",
-   "year": 2002
+   "title": "About a Girl",
+   "artist": "Nirvana",
+   "year": 1990
   },
   {
-   "title": "Sultans of Swing",
-   "artist": "Dire Straits",
-   "year": 1979
-  },
-  {
-   "title": "Never Too Late",
-   "artist": "Three Days Grace",
-   "year": 2006
+   "title": "Dream On",
+   "artist": "Aerosmith",
+   "year": 1973
   },
   {
    "title": "I Don't Care",
@@ -759,14 +809,14 @@
    "year": 2008
   },
   {
-   "title": "Hella Good",
-   "artist": "No Doubt",
-   "year": 2001
+   "title": "(One of Those) Crazy Girls",
+   "artist": "Paramore",
+   "year": 2013
   },
   {
-   "title": "All Around Me",
-   "artist": "Flyleaf",
-   "year": 2005
+   "title": "The Man Who Can't Be Moved",
+   "artist": "The Script",
+   "year": 2008
   },
   {
    "title": "Petals",
@@ -774,9 +824,64 @@
    "year": 1998
   },
   {
-   "title": "The Adults Are Talking",
-   "artist": "The Strokes",
-   "year": 2020
+   "title": "Dancing in the Dark",
+   "artist": "Bruce Springsteen",
+   "year": 1984
+  },
+  {
+   "title": "Kill All Your Friends",
+   "artist": "My Chemical Romance",
+   "year": 2006
+  },
+  {
+   "title": "Plug In Baby",
+   "artist": "Muse",
+   "year": 2001
+  },
+  {
+   "title": "Good Old-Fashioned Lover Boy",
+   "artist": "Queen",
+   "year": 1976
+  },
+  {
+   "title": "Hella Good",
+   "artist": "No Doubt",
+   "year": 2001
+  },
+  {
+   "title": "Just a Girl",
+   "artist": "No Doubt",
+   "year": 1995
+  },
+  {
+   "title": "Clocks",
+   "artist": "Coldplay",
+   "year": 2002
+  },
+  {
+   "title": "Call Me When You're Sober",
+   "artist": "Evanescence",
+   "year": 2006
+  },
+  {
+   "title": "Never Too Late",
+   "artist": "Three Days Grace",
+   "year": 2006
+  },
+  {
+   "title": "Pet",
+   "artist": "A Perfect Circle",
+   "year": 2003
+  },
+  {
+   "title": "Sultans of Swing",
+   "artist": "Dire Straits",
+   "year": 1979
+  },
+  {
+   "title": "I Miss You",
+   "artist": "blink-182",
+   "year": 2003
   },
   {
    "title": "Build God, Then We'll Talk",
@@ -789,44 +894,14 @@
    "year": 2008
   },
   {
-   "title": "Jigsaw Falling Into Place",
-   "artist": "Radiohead",
-   "year": 2007
-  },
-  {
-   "title": "By the Way",
-   "artist": "Red Hot Chili Peppers",
-   "year": 2001
-  },
-  {
-   "title": "Good Old-Fashioned Lover Boy",
-   "artist": "Queen",
-   "year": 1976
-  },
-  {
-   "title": "I Miss You",
-   "artist": "blink-182",
-   "year": 2003
-  },
-  {
-   "title": "Emergency",
-   "artist": "Paramore",
+   "title": "All Around Me",
+   "artist": "Flyleaf",
    "year": 2005
   },
   {
-   "title": "Even Flow",
-   "artist": "Pearl Jam",
-   "year": 1990
-  },
-  {
-   "title": "Immortals",
-   "artist": "Fall Out Boy",
-   "year": 2014
-  },
-  {
-   "title": "Last Goodbye",
-   "artist": "Jeff Buckley",
-   "year": 1994
+   "title": "The Adults Are Talking",
+   "artist": "The Strokes",
+   "year": 2020
   },
   {
    "title": "Face Down",
@@ -834,24 +909,29 @@
    "year": 2004
   },
   {
+   "title": "By the Way",
+   "artist": "Red Hot Chili Peppers",
+   "year": 2001
+  },
+  {
+   "title": "Jigsaw Falling Into Place",
+   "artist": "Radiohead",
+   "year": 2007
+  },
+  {
+   "title": "Show Me How To Live",
+   "artist": "Audioslave",
+   "year": 2002
+  },
+  {
+   "title": "Even Flow",
+   "artist": "Pearl Jam",
+   "year": 1990
+  },
+  {
    "title": "Learn to Fly",
    "artist": "Foo Fighters",
    "year": 1999
-  },
-  {
-   "title": "My Songs Know What You Did in the Dark (Light Em Up)",
-   "artist": "Fall Out Boy",
-   "year": 2013
-  },
-  {
-   "title": "Kill All Your Friends",
-   "artist": "My Chemical Romance",
-   "year": 2006
-  },
-  {
-   "title": "Perfect",
-   "artist": "The Smashing Pumpkins",
-   "year": 1998
   },
   {
    "title": "My Immortal",
@@ -859,24 +939,19 @@
    "year": 1998
   },
   {
-   "title": "But It's Better If You Do",
-   "artist": "Panic! at the Disco",
+   "title": "Immortals",
+   "artist": "Fall Out Boy",
+   "year": 2014
+  },
+  {
+   "title": "Emergency",
+   "artist": "Paramore",
    "year": 2005
   },
   {
-   "title": "Pain",
-   "artist": "Three Days Grace",
-   "year": 2006
-  },
-  {
-   "title": "Heaven",
-   "artist": "Bryan Adams",
-   "year": 1984
-  },
-  {
-   "title": "Mojo Pin",
-   "artist": "Jeff Buckley",
-   "year": 1993
+   "title": "My Songs Know What You Did in the Dark (Light Em Up)",
+   "artist": "Fall Out Boy",
+   "year": 2013
   },
   {
    "title": "Wherever You Will Go",
@@ -884,54 +959,14 @@
    "year": 2001
   },
   {
-   "title": "My Way",
-   "artist": "Limp Bizkit",
-   "year": 2000
-  },
-  {
-   "title": "Time Is Running Out",
-   "artist": "Muse",
-   "year": 2003
-  },
-  {
-   "title": "A Place for My Head",
-   "artist": "Linkin Park",
-   "year": 1999
-  },
-  {
-   "title": "Rebel Yell",
-   "artist": "Billy Idol",
-   "year": 1983
-  },
-  {
    "title": "This Ain't a Scene, It's an Arms Race",
    "artist": "Fall Out Boy",
    "year": 2006
   },
   {
-   "title": "Arabella",
-   "artist": "Arctic Monkeys",
-   "year": 2013
-  },
-  {
-   "title": "The Zephyr Song",
-   "artist": "Red Hot Chili Peppers",
-   "year": 2001
-  },
-  {
-   "title": "Uprising",
-   "artist": "Muse",
-   "year": 2009
-  },
-  {
-   "title": "Black Hole Sun",
-   "artist": "Soundgarden",
-   "year": 1994
-  },
-  {
-   "title": "Here Without You",
-   "artist": "3 Doors Down",
-   "year": 2000
+   "title": "Pain",
+   "artist": "Three Days Grace",
+   "year": 2006
   },
   {
    "title": "The Jetset Life Is Gonna Kill You",
@@ -939,39 +974,24 @@
    "year": 2004
   },
   {
-   "title": "Grand Theft Autumn / Where Is Your Boy",
-   "artist": "Fall Out Boy",
-   "year": 2004
+   "title": "Uprising",
+   "artist": "Muse",
+   "year": 2009
   },
   {
-   "title": "My Favourite Game",
-   "artist": "The Cardigans",
-   "year": 1998
+   "title": "Last Goodbye",
+   "artist": "Jeff Buckley",
+   "year": 1994
   },
   {
-   "title": "Higher",
-   "artist": "Creed",
-   "year": 1999
+   "title": "Heaven",
+   "artist": "Bryan Adams",
+   "year": 1984
   },
   {
-   "title": "In Bloom",
-   "artist": "Nirvana",
-   "year": 1991
-  },
-  {
-   "title": "Man in the Box",
-   "artist": "Alice in Chains",
-   "year": 1990
-  },
-  {
-   "title": "The Ballad of Mona Lisa",
-   "artist": "Panic! at the Disco",
-   "year": 2011
-  },
-  {
-   "title": "You're Gonna Go Far, Kid",
-   "artist": "The Offspring",
-   "year": 2008
+   "title": "Time Is Running Out",
+   "artist": "Muse",
+   "year": 2003
   },
   {
    "title": "Take Me Out",
@@ -979,28 +999,8 @@
    "year": 2003
   },
   {
-   "title": "I'm Not A Vampire",
-   "artist": "Falling in Reverse",
-   "year": 2011
-  },
-  {
-   "title": "Bulls on Parade",
-   "artist": "Rage Against the Machine",
-   "year": 1996
-  },
-  {
-   "title": "(Don't Fear) The Reaper",
-   "artist": "Blue Öyster Cult",
-   "year": 1976
-  },
-  {
-   "title": "Thunderstruck",
-   "artist": "AC/DC",
-   "year": 1990
-  },
-  {
-   "title": "Nutshell",
-   "artist": "Alice in Chains",
+   "title": "Black Hole Sun",
+   "artist": "Soundgarden",
    "year": 1994
   }
  ]

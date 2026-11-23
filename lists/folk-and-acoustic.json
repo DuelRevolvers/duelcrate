@@ -1,7 +1,7 @@
 {
  "name": "Folk & Acoustic",
  "tag": "folk",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Riptide",
@@ -14,6 +14,41 @@
    "year": 1997
   },
   {
+   "title": "King of Carrot Flowers Pt. 1",
+   "artist": "Neutral Milk Hotel",
+   "year": 1998
+  },
+  {
+   "title": "cardigan",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "seven",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "Pink Moon",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Time in a Bottle",
+   "artist": "Jim Croce",
+   "year": 1972
+  },
+  {
+   "title": "Let Her Go",
+   "artist": "Passenger",
+   "year": 2012
+  },
+  {
+   "title": "lacy",
+   "artist": "Olivia Rodrigo",
+   "year": 2023
+  },
+  {
    "title": "White Winter Hymnal",
    "artist": "Fleet Foxes",
    "year": 2008
@@ -24,9 +59,34 @@
    "year": 1976
   },
   {
+   "title": "I'd Like to Walk Around in Your Mind",
+   "artist": "Vashti Bunyan",
+   "year": 1990
+  },
+  {
+   "title": "Alameda",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Don't Think Twice, It's All Right",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
    "title": "For Emma",
    "artist": "Bon Iver",
    "year": 2007
+  },
+  {
+   "title": "Little Lion Man",
+   "artist": "Mumford & Sons",
+   "year": 2008
+  },
+  {
+   "title": "Carry Me Ohio",
+   "artist": "Sun Kil Moon",
+   "year": 2003
   },
   {
    "title": "Ho Hey",
@@ -39,9 +99,19 @@
    "year": 1963
   },
   {
+   "title": "Budapest",
+   "artist": "George Ezra",
+   "year": 2013
+  },
+  {
    "title": "Little Talks",
    "artist": "Of Monsters and Men",
    "year": 2010
+  },
+  {
+   "title": "Big Black Car",
+   "artist": "Gregory Alan Isakov",
+   "year": 2009
   },
   {
    "title": "Skinny Love",
@@ -49,14 +119,29 @@
    "year": 2007
   },
   {
+   "title": "Suzanne",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
    "title": "Futile Devices",
    "artist": "Sufjan Stevens",
    "year": 2010
   },
   {
-   "title": "Two-Headed Boy",
-   "artist": "Neutral Milk Hotel",
-   "year": 1997
+   "title": "Blowin' in the Wind",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "Gone, Gone, Gone",
+   "artist": "Phillip Phillips",
+   "year": 2012
+  },
+  {
+   "title": "California",
+   "artist": "Joni Mitchell",
+   "year": 1971
   },
   {
    "title": "I Thought I Saw Your Face Today",
@@ -64,9 +149,179 @@
    "year": 2008
   },
   {
+   "title": "Two-Headed Boy",
+   "artist": "Neutral Milk Hotel",
+   "year": 1997
+  },
+  {
+   "title": "The Boxer",
+   "artist": "Simon & Garfunkel",
+   "year": 1969
+  },
+  {
+   "title": "august",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "Girl From the North Country",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "River Man",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "Things Behind the Sun",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Which Will",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "These Days",
+   "artist": "Nico",
+   "year": 1967
+  },
+  {
+   "title": "Northern Sky",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Hey, That's No Way to Say Goodbye",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Hazey Jane II",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "One of These Things First",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Flume",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "The Cave",
+   "artist": "Mumford & Sons",
+   "year": 2009
+  },
+  {
+   "title": "From the Morning",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Mr. Tambourine Man",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "the 1",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "Once I Was",
+   "artist": "Tim Buckley",
+   "year": 1967
+  },
+  {
+   "title": "Simple Twist of Fate",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
    "title": "Chicago",
    "artist": "Sufjan Stevens",
    "year": 2005
+  },
+  {
+   "title": "Tangled Up in Blue",
+   "artist": "Bob Dylan",
+   "year": 1978
+  },
+  {
+   "title": "Operator (That's Not the Way It Feels)",
+   "artist": "Jim Croce",
+   "year": 1972
+  },
+  {
+   "title": "I Want Wind to Blow",
+   "artist": "The Microphones",
+   "year": 2001
+  },
+  {
+   "title": "Ghost",
+   "artist": "Sky Ferreira",
+   "year": 2012
+  },
+  {
+   "title": "forwards beckon rebound",
+   "artist": "Adrianne Lenker",
+   "year": 2020
+  },
+  {
+   "title": "Scarborough Fair / Canticle",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Blue Ridge Mountains",
+   "artist": "Fleet Foxes",
+   "year": 2008
+  },
+  {
+   "title": "Hazey Jane I",
+   "artist": "Nick Drake",
+   "year": 1970
+  },
+  {
+   "title": "A Case of You",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Stubborn Love",
+   "artist": "The Lumineers",
+   "year": 2012
+  },
+  {
+   "title": "So Long, Marianne",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Dirty Paws",
+   "artist": "Of Monsters and Men",
+   "year": 2011
+  },
+  {
+   "title": "At the Chime of a City Clock",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Harvest Moon",
+   "artist": "Neil Young",
+   "year": 1992
+  },
+  {
+   "title": "Ragged Wood",
+   "artist": "Fleet Foxes",
+   "year": 2008
   },
   {
    "title": "Mykonos",
@@ -74,9 +329,179 @@
    "year": 2008
   },
   {
+   "title": "Shelter from the Storm",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Flightless Bird, American Mouth",
+   "artist": "Iron & Wine",
+   "year": 2007
+  },
+  {
+   "title": "All I Want",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Hurricane",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "The Biggest Lie",
+   "artist": "Elliott Smith",
+   "year": 1995
+  },
+  {
+   "title": "April Come She Will",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "America",
+   "artist": "Simon & Garfunkel",
+   "year": 1968
+  },
+  {
+   "title": "Free Ride",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "re: stacks",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Horn",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Rosyln",
+   "artist": "Bon Iver",
+   "year": 2009
+  },
+  {
+   "title": "I Want You",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "Vincent",
+   "artist": "Don McLean",
+   "year": 1971
+  },
+  {
+   "title": "Famous Blue Raincoat",
+   "artist": "Leonard Cohen",
+   "year": 1971
+  },
+  {
+   "title": "Space Travel Is Boring",
+   "artist": "Sun Kil Moon",
+   "year": 2005
+  },
+  {
+   "title": "Subterranean Homesick Blues",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "It Ain't Me Babe",
+   "artist": "Bob Dylan",
+   "year": 1964
+  },
+  {
+   "title": "Peter",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
    "title": "Wash.",
    "artist": "Bon Iver",
    "year": 2011
+  },
+  {
+   "title": "Both Sides Now",
+   "artist": "Joni Mitchell",
+   "year": 1968
+  },
+  {
+   "title": "Diamonds and Rust",
+   "artist": "Joan Baez",
+   "year": 1975
+  },
+  {
+   "title": "Headless Horseman",
+   "artist": "The Microphones",
+   "year": 2001
+  },
+  {
+   "title": "The Stable Song",
+   "artist": "Gregory Alan Isakov",
+   "year": 2007
+  },
+  {
+   "title": "Oh Comely",
+   "artist": "Neutral Milk Hotel",
+   "year": 1996
+  },
+  {
+   "title": "Mountain Sound",
+   "artist": "Of Monsters and Men",
+   "year": 2012
+  },
+  {
+   "title": "Winter Lady",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "A Hard Rain's a-Gonna Fall",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "How Did It End?",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "To Be Alone With You",
+   "artist": "Sufjan Stevens",
+   "year": 2004
+  },
+  {
+   "title": "Know",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Diamond Day",
+   "artist": "Vashti Bunyan",
+   "year": 1970
+  },
+  {
+   "title": "It Ain't Me Babe",
+   "artist": "Joan Baez",
+   "year": 1964
+  },
+  {
+   "title": "Lump Sum",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Flowers in Your Hair",
+   "artist": "The Lumineers",
+   "year": 2009
+  },
+  {
+   "title": "Rose Parade",
+   "artist": "Elliott Smith",
+   "year": 1997
   },
   {
    "title": "Big Jet Plane",
@@ -84,14 +509,169 @@
    "year": 2010
   },
   {
+   "title": "It's All Over Now, Baby Blue",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Cecilia",
+   "artist": "Simon & Garfunkel",
+   "year": 1970
+  },
+  {
+   "title": "Blindsided",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Last Tide",
+   "artist": "Sun Kil Moon",
+   "year": 2003
+  },
+  {
+   "title": "Poor Boy",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Carey",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Lay Lady Lay",
+   "artist": "Bob Dylan",
+   "year": 1969
+  },
+  {
+   "title": "Sisters of Mercy",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Saturday Sun",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "Mariners Apartment Complex",
+   "artist": "Lana Del Rey",
+   "year": 2018
+  },
+  {
+   "title": "Montezuma",
+   "artist": "Fleet Foxes",
+   "year": 2011
+  },
+  {
+   "title": "Homeward Bound",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "Meet Me in the Morning",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Chelsea Hotel #2",
+   "artist": "Leonard Cohen",
+   "year": 1974
+  },
+  {
+   "title": "I Felt Your Shape",
+   "artist": "The Microphones",
+   "year": 2001
+  },
+  {
+   "title": "Buzzin' Fly",
+   "artist": "Tim Buckley",
+   "year": 1969
+  },
+  {
+   "title": "The Predatory Wasp of the Palisades Is Out to Get Us!",
+   "artist": "Sufjan Stevens",
+   "year": 2005
+  },
+  {
    "title": "Take Me Home, Country Roads",
    "artist": "John Denver",
    "year": 1971
   },
   {
-   "title": "American Pie",
-   "artist": "Don McLean",
+   "title": "Day Is Done",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "This Town",
+   "artist": "Niall Horan",
+   "year": 2016
+  },
+  {
+   "title": "Something On Your Mind",
+   "artist": "Karen Dalton",
    "year": 1971
+  },
+  {
+   "title": "King and Lionheart",
+   "artist": "Of Monsters and Men",
+   "year": 2011
+  },
+  {
+   "title": "Old Pine",
+   "artist": "Ben Howard",
+   "year": 2011
+  },
+  {
+   "title": "Talkin' Bout a Revolution",
+   "artist": "Tracy Chapman",
+   "year": 1988
+  },
+  {
+   "title": "They Are Night Zombies!! They Are Neighbors!! They Have Come Back From the Dead!! Ahhhh!",
+   "artist": "Sufjan Stevens",
+   "year": 2005
+  },
+  {
+   "title": "One of Us Cannot Be Wrong",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Idiot Wind",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "If You See Her, Say Hello",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "5 Years Time",
+   "artist": "Noah and the Whale",
+   "year": 2007
+  },
+  {
+   "title": "Introduction",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Just Like a Woman",
+   "artist": "Bob Dylan",
+   "year": 1966
+  },
+  {
+   "title": "The Partisan",
+   "artist": "Leonard Cohen",
+   "year": 1969
+  },
+  {
+   "title": "Jacksonville",
+   "artist": "Sufjan Stevens",
+   "year": 2005
   },
   {
    "title": "Angeles",
@@ -99,9 +679,319 @@
    "year": 1996
   },
   {
+   "title": "Three Hours",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "Coyote",
+   "artist": "Joni Mitchell",
+   "year": 1976
+  },
+  {
+   "title": "Me and Julio Down by the Schoolyard",
+   "artist": "Paul Simon",
+   "year": 1972
+  },
+  {
+   "title": "Your Protector",
+   "artist": "Fleet Foxes",
+   "year": 2008
+  },
+  {
+   "title": "Leaving on a Jet Plane",
+   "artist": "Peter, Paul & Mary",
+   "year": 1967
+  },
+  {
+   "title": "Stories of the Street",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Should Have Known Better",
+   "artist": "Sufjan Stevens",
+   "year": 2015
+  },
+  {
+   "title": "American Pie",
+   "artist": "Don McLean",
+   "year": 1971
+  },
+  {
+   "title": "Death With Dignity",
+   "artist": "Sufjan Stevens",
+   "year": 2015
+  },
+  {
+   "title": "Nantes",
+   "artist": "Beirut",
+   "year": 2007
+  },
+  {
+   "title": "Perth",
+   "artist": "Bon Iver",
+   "year": 2011
+  },
+  {
+   "title": "Home",
+   "artist": "Phillip Phillips",
+   "year": 2012
+  },
+  {
+   "title": "Glow Worms",
+   "artist": "Vashti Bunyan",
+   "year": 1970
+  },
+  {
+   "title": "The Sound of Silence",
+   "artist": "Simon & Garfunkel",
+   "year": 1964
+  },
+  {
+   "title": "My Old Man",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Cactus Tree",
+   "artist": "Joni Mitchell",
+   "year": 1968
+  },
+  {
+   "title": "The Night We Met",
+   "artist": "Lord Huron",
+   "year": 2015
+  },
+  {
    "title": "Holland, 1945",
    "artist": "Neutral Milk Hotel",
    "year": 1997
+  },
+  {
+   "title": "Old Man",
+   "artist": "Neil Young",
+   "year": 1971
+  },
+  {
+   "title": "The Prophecy",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Awake My Soul",
+   "artist": "Mumford & Sons",
+   "year": 2008
+  },
+  {
+   "title": "Boots of Spanish Leather",
+   "artist": "Bob Dylan",
+   "year": 1964
+  },
+  {
+   "title": "Avalanche",
+   "artist": "Leonard Cohen",
+   "year": 1971
+  },
+  {
+   "title": "Somebody That I Used to Know",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "2:45 AM",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Dance Me to the End of Love",
+   "artist": "Leonard Cohen",
+   "year": 1984
+  },
+  {
+   "title": "New York's Not My Home",
+   "artist": "Jim Croce",
+   "year": 1972
+  },
+  {
+   "title": "Blood Bank",
+   "artist": "Bon Iver",
+   "year": 2009
+  },
+  {
+   "title": "One Too Many Mornings",
+   "artist": "Bob Dylan",
+   "year": 1964
+  },
+  {
+   "title": "The Mansion",
+   "artist": "The Microphones",
+   "year": 2001
+  },
+  {
+   "title": "Angel in the Snow",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "El Condor Pasa (If I Could)",
+   "artist": "Simon & Garfunkel",
+   "year": 1970
+  },
+  {
+   "title": "Queen Jane Approximately",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Lily, Rosemary and the Jack of Hearts",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Only Love",
+   "artist": "Ben Howard",
+   "year": 2011
+  },
+  {
+   "title": "Way to Blue",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "Positively 4th Street",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Fourth Time Around",
+   "artist": "Bob Dylan",
+   "year": 1990
+  },
+  {
+   "title": "Romulus",
+   "artist": "Sufjan Stevens",
+   "year": 2003
+  },
+  {
+   "title": "Ballad of a Thin Man",
+   "artist": "Bob Dylan",
+   "year": 1965
+  },
+  {
+   "title": "Welcome Home",
+   "artist": "Radical Face",
+   "year": 2006
+  },
+  {
+   "title": "Who by Fire",
+   "artist": "Leonard Cohen",
+   "year": 1974
+  },
+  {
+   "title": "All I Want Is You",
+   "artist": "Barry Louis Polisar",
+   "year": 1977
+  },
+  {
+   "title": "illicit affairs",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "Oats in the Water",
+   "artist": "Ben Howard",
+   "year": 2012
+  },
+  {
+   "title": "Elephant Gun",
+   "artist": "Beirut",
+   "year": 2006
+  },
+  {
+   "title": "Chinese Translation",
+   "artist": "M. Ward",
+   "year": 2006
+  },
+  {
+   "title": "Lorelai",
+   "artist": "Fleet Foxes",
+   "year": 2011
+  },
+  {
+   "title": "Creature Fear",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Concerning the UFO Sighting Near Highland, Illinois",
+   "artist": "Sufjan Stevens",
+   "year": 2005
+  },
+  {
+   "title": "Real Love Baby",
+   "artist": "Father John Misty",
+   "year": 2016
+  },
+  {
+   "title": "betty",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "Team",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "Dirty Old Town",
+   "artist": "The Pogues",
+   "year": 1985
+  },
+  {
+   "title": "I Hate It Here",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Cat's in the Cradle",
+   "artist": "Harry Chapin",
+   "year": 1974
+  },
+  {
+   "title": "I Am a Rock",
+   "artist": "Simon & Garfunkel",
+   "year": 1966
+  },
+  {
+   "title": "It's Alright, Ma (I'm Only Bleeding)",
+   "artist": "Bob Dylan",
+   "year": 1978
+  },
+  {
+   "title": "Oliver James",
+   "artist": "Fleet Foxes",
+   "year": 2008
+  },
+  {
+   "title": "half return",
+   "artist": "Adrianne Lenker",
+   "year": 2020
+  },
+  {
+   "title": "People Help the People",
+   "artist": "Birdy",
+   "year": 2011
+  },
+  {
+   "title": "Wolf",
+   "artist": "First Aid Kit",
+   "year": 2012
+  },
+  {
+   "title": "The Thoughts of Mary Jane",
+   "artist": "Nick Drake",
+   "year": 1969
   },
   {
    "title": "Waltz #2 (XO)",
@@ -109,24 +999,9 @@
    "year": 1998
   },
   {
-   "title": "God's Gonna Cut You Down",
-   "artist": "Johnny Cash",
-   "year": 2006
-  },
-  {
-   "title": "Folsom Prison Blues",
-   "artist": "Johnny Cash",
-   "year": 1964
-  },
-  {
-   "title": "Jolene",
-   "artist": "Dolly Parton",
-   "year": 1973
-  },
-  {
-   "title": "Our House",
-   "artist": "Crosby, Stills, Nash & Young",
-   "year": 1970
+   "title": "All Along the Watchtower",
+   "artist": "Bob Dylan",
+   "year": 1994
   }
  ]
 }

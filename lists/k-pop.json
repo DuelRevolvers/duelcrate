@@ -1,7 +1,7 @@
 {
  "name": "K-Pop",
  "tag": "k-pop",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Ditto",
@@ -14,24 +14,24 @@
    "year": 2009
   },
   {
-   "title": "ANTIFRAGILE",
-   "artist": "LE SSERAFIM",
-   "year": 2022
-  },
-  {
-   "title": "POP/STARS",
-   "artist": "K/DA",
-   "year": 2018
-  },
-  {
    "title": "FANCY",
    "artist": "TWICE",
    "year": 2019
   },
   {
+   "title": "ANTIFRAGILE",
+   "artist": "LE SSERAFIM",
+   "year": 2022
+  },
+  {
    "title": "GENIE",
    "artist": "소녀시대",
    "year": 2009
+  },
+  {
+   "title": "Tell Me",
+   "artist": "Wonder Girls",
+   "year": 2007
   },
   {
    "title": "The Boys",
@@ -49,19 +49,29 @@
    "year": 2018
   },
   {
-   "title": "Pink Venom",
-   "artist": "BLACKPINK",
-   "year": 2022
-  },
-  {
    "title": "까탈레나 (Catallena)",
    "artist": "Orange Caramel",
    "year": 2014
   },
   {
+   "title": "Pink Venom",
+   "artist": "BLACKPINK",
+   "year": 2022
+  },
+  {
+   "title": "POP/STARS",
+   "artist": "K/DA",
+   "year": 2018
+  },
+  {
    "title": "DNA",
    "artist": "BTS",
    "year": 2017
+  },
+  {
+   "title": "FAKE LOVE",
+   "artist": "BTS",
+   "year": 2018
   },
   {
    "title": "Supernova",
@@ -74,9 +84,9 @@
    "year": 2018
   },
   {
-   "title": "FAKE LOVE",
-   "artist": "BTS",
-   "year": 2018
+   "title": "AS IF IT'S YOUR LAST",
+   "artist": "BLACKPINK",
+   "year": 2017
   },
   {
    "title": "Lemonade",
@@ -84,9 +94,9 @@
    "year": 2026
   },
   {
-   "title": "LUCIFER",
-   "artist": "SHINee",
-   "year": 2010
+   "title": "러시안 룰렛 Russian Roulette",
+   "artist": "Red Velvet",
+   "year": 2016
   },
   {
    "title": "Next Level",
@@ -94,9 +104,9 @@
    "year": 2021
   },
   {
-   "title": "I Got a Boy",
-   "artist": "소녀시대",
-   "year": 2013
+   "title": "LUCIFER",
+   "artist": "SHINee",
+   "year": 2010
   },
   {
    "title": "Kingdom Come",
@@ -104,24 +114,14 @@
    "year": 2017
   },
   {
-   "title": "러시안 룰렛 Russian Roulette",
-   "artist": "Red Velvet",
-   "year": 2016
-  },
-  {
-   "title": "Mr. Boogie",
-   "artist": "f(x)",
+   "title": "Oh!",
+   "artist": "소녀시대",
    "year": 2010
   },
   {
-   "title": "Replay",
-   "artist": "SHINee",
-   "year": 2018
-  },
-  {
-   "title": "LIKEY",
-   "artist": "TWICE",
-   "year": 2017
+   "title": "I Got a Boy",
+   "artist": "소녀시대",
+   "year": 2013
   },
   {
    "title": "Electric Shock",
@@ -129,13 +129,13 @@
    "year": 2012
   },
   {
-   "title": "PLAYING WITH FIRE",
-   "artist": "BLACKPINK",
+   "title": "LIKEY",
+   "artist": "TWICE",
    "year": 2017
   },
   {
-   "title": "Run Devil Run",
-   "artist": "소녀시대",
+   "title": "Mr. Boogie",
+   "artist": "f(x)",
    "year": 2010
   },
   {
@@ -144,9 +144,24 @@
    "year": 2017
   },
   {
-   "title": "Mr.Mr.",
+   "title": "Replay",
+   "artist": "SHINee",
+   "year": 2018
+  },
+  {
+   "title": "Run Devil Run",
    "artist": "소녀시대",
-   "year": 2014
+   "year": 2010
+  },
+  {
+   "title": "PLAYING WITH FIRE",
+   "artist": "BLACKPINK",
+   "year": 2017
+  },
+  {
+   "title": "DDU-DU DDU-DU",
+   "artist": "BLACKPINK",
+   "year": 2018
   },
   {
    "title": "강남스타일",
@@ -154,9 +169,9 @@
    "year": 2012
   },
   {
-   "title": "LALISA",
-   "artist": "Lisa",
-   "year": 2021
+   "title": "Mr.Mr.",
+   "artist": "소녀시대",
+   "year": 2014
   },
   {
    "title": "Abracadabra",
@@ -169,14 +184,19 @@
    "year": 2010
   },
   {
+   "title": "Super Shy",
+   "artist": "NewJeans",
+   "year": 2023
+  },
+  {
    "title": "Bo Peep Bo Peep",
    "artist": "T-ARA",
    "year": 2009
   },
   {
-   "title": "Super Shy",
-   "artist": "NewJeans",
-   "year": 2023
+   "title": "Gentleman",
+   "artist": "Psy",
+   "year": 2013
   },
   {
    "title": "Hype Boy",
@@ -184,9 +204,14 @@
    "year": 2022
   },
   {
-   "title": "첫 사랑니 (Rum Pum Pum Pum)",
-   "artist": "f(x)",
-   "year": 2013
+   "title": "LALISA",
+   "artist": "Lisa",
+   "year": 2021
+  },
+  {
+   "title": "SOLO",
+   "artist": "Jennie",
+   "year": 2018
   },
   {
    "title": "FANTASTIC BABY",
@@ -199,24 +224,9 @@
    "year": 2016
   },
   {
-   "title": "CALL ME BABY",
-   "artist": "Exo",
-   "year": 2015
-  },
-  {
    "title": "After LIKE",
    "artist": "IVE",
    "year": 2022
-  },
-  {
-   "title": "Roly-Poly",
-   "artist": "T-ARA",
-   "year": 2011
-  },
-  {
-   "title": "Forever Young",
-   "artist": "BLACKPINK",
-   "year": 2018
   },
   {
    "title": "Golden",
@@ -224,9 +234,44 @@
    "year": 2026
   },
   {
-   "title": "Gentleman",
-   "artist": "Psy",
+   "title": "CALL ME BABY",
+   "artist": "Exo",
+   "year": 2015
+  },
+  {
+   "title": "Roly-Poly",
+   "artist": "T-ARA",
+   "year": 2011
+  },
+  {
+   "title": "첫 사랑니 (Rum Pum Pum Pum)",
+   "artist": "f(x)",
    "year": 2013
+  },
+  {
+   "title": "Hush",
+   "artist": "miss A",
+   "year": 2013
+  },
+  {
+   "title": "Forever Young",
+   "artist": "BLACKPINK",
+   "year": 2018
+  },
+  {
+   "title": "RUN",
+   "artist": "BTS",
+   "year": 2015
+  },
+  {
+   "title": "Trouble Maker",
+   "artist": "Trouble Maker",
+   "year": 2011
+  },
+  {
+   "title": "IDOL",
+   "artist": "BTS",
+   "year": 2018
   },
   {
    "title": "Hot Summer",
@@ -239,9 +284,44 @@
    "year": 2022
   },
   {
-   "title": "Trouble Maker",
-   "artist": "Trouble Maker",
+   "title": "Psycho",
+   "artist": "Red Velvet",
+   "year": 2019
+  },
+  {
+   "title": "TT",
+   "artist": "TWICE",
+   "year": 2016
+  },
+  {
+   "title": "I Am the Best",
+   "artist": "2NE1",
    "year": 2011
+  },
+  {
+   "title": "Ring Ding Dong",
+   "artist": "SHINee",
+   "year": 2009
+  },
+  {
+   "title": "Kill This Love",
+   "artist": "BLACKPINK",
+   "year": 2019
+  },
+  {
+   "title": "MANIAC",
+   "artist": "Stray Kids",
+   "year": 2022
+  },
+  {
+   "title": "Red Light",
+   "artist": "f(x)",
+   "year": 2014
+  },
+  {
+   "title": "OMG",
+   "artist": "NewJeans",
+   "year": 2023
   },
   {
    "title": "So Hot",
@@ -254,69 +334,9 @@
    "year": 2008
   },
   {
-   "title": "RUN",
-   "artist": "BTS",
-   "year": 2015
-  },
-  {
-   "title": "Ring Ding Dong",
-   "artist": "SHINee",
-   "year": 2009
-  },
-  {
-   "title": "I Am the Best",
-   "artist": "2NE1",
-   "year": 2011
-  },
-  {
-   "title": "MANIAC",
-   "artist": "Stray Kids",
-   "year": 2022
-  },
-  {
-   "title": "Psycho",
-   "artist": "Red Velvet",
-   "year": 2019
-  },
-  {
-   "title": "Kill This Love",
-   "artist": "BLACKPINK",
-   "year": 2019
-  },
-  {
    "title": "ELEVEN",
    "artist": "IVE",
    "year": 2021
-  },
-  {
-   "title": "Red Light",
-   "artist": "f(x)",
-   "year": 2014
-  },
-  {
-   "title": "I CAN'T STOP ME",
-   "artist": "TWICE",
-   "year": 2020
-  },
-  {
-   "title": "OMG",
-   "artist": "NewJeans",
-   "year": 2023
-  },
-  {
-   "title": "Hoot",
-   "artist": "소녀시대",
-   "year": 2010
-  },
-  {
-   "title": "4 Walls",
-   "artist": "f(x)",
-   "year": 2015
-  },
-  {
-   "title": "Attention",
-   "artist": "NewJeans",
-   "year": 2022
   },
   {
    "title": "Dumb Dumb",
@@ -324,14 +344,19 @@
    "year": 2015
   },
   {
-   "title": "CROWN",
-   "artist": "TOMORROW X TOGETHER",
-   "year": 2019
+   "title": "I CAN'T STOP ME",
+   "artist": "TWICE",
+   "year": 2020
   },
   {
-   "title": "중독 (Overdose)",
-   "artist": "EXO-K",
-   "year": 2014
+   "title": "Good-bye Baby",
+   "artist": "miss A",
+   "year": 2011
+  },
+  {
+   "title": "Hoot",
+   "artist": "소녀시대",
+   "year": 2010
   },
   {
    "title": "Save ME",
@@ -339,9 +364,34 @@
    "year": 2016
   },
   {
+   "title": "NEON",
+   "artist": "A2O LITE",
+   "year": 2026
+  },
+  {
+   "title": "4 Walls",
+   "artist": "f(x)",
+   "year": 2015
+  },
+  {
+   "title": "중독 (Overdose)",
+   "artist": "EXO-K",
+   "year": 2014
+  },
+  {
+   "title": "Attention",
+   "artist": "NewJeans",
+   "year": 2022
+  },
+  {
    "title": "Rookie",
    "artist": "Red Velvet",
    "year": 2017
+  },
+  {
+   "title": "CROWN",
+   "artist": "TOMORROW X TOGETHER",
+   "year": 2019
   },
   {
    "title": "MAMA",
@@ -349,14 +399,14 @@
    "year": 2012
   },
   {
+   "title": "WHISTLE",
+   "artist": "BLACKPINK",
+   "year": 2017
+  },
+  {
    "title": "LA DI DA",
    "artist": "Everglow",
    "year": 2020
-  },
-  {
-   "title": "Something",
-   "artist": "Girl's Day",
-   "year": 2014
   },
   {
    "title": "샹하이 로맨스 (上海之戀)",
@@ -369,9 +419,39 @@
    "year": 2025
   },
   {
+   "title": "Miniskirt",
+   "artist": "AOA",
+   "year": 2014
+  },
+  {
+   "title": "NU ABO",
+   "artist": "f(x)",
+   "year": 2016
+  },
+  {
+   "title": "Something",
+   "artist": "Girl's Day",
+   "year": 2014
+  },
+  {
+   "title": "No More Dream",
+   "artist": "BTS",
+   "year": 2013
+  },
+  {
+   "title": "Like OOH-AHH",
+   "artist": "TWICE",
+   "year": 2015
+  },
+  {
    "title": "Don't Know What to Do",
    "artist": "BLACKPINK",
    "year": 2019
+  },
+  {
+   "title": "행복 (Happiness)",
+   "artist": "Red Velvet",
+   "year": 2014
   },
   {
    "title": "Rich Man",
@@ -384,21 +464,6 @@
    "year": 2024
   },
   {
-   "title": "Miniskirt",
-   "artist": "AOA",
-   "year": 2014
-  },
-  {
-   "title": "Like OOH-AHH",
-   "artist": "TWICE",
-   "year": 2015
-  },
-  {
-   "title": "MONEY",
-   "artist": "Lisa",
-   "year": 2013
-  },
-  {
    "title": "Savage",
    "artist": "aespa",
    "year": 2021
@@ -409,8 +474,23 @@
    "year": 2010
   },
   {
-   "title": "No More Dream",
-   "artist": "BTS",
+   "title": "미행 (그림자; Shadow)",
+   "artist": "f(x)",
+   "year": 2013
+  },
+  {
+   "title": "Lil’ Touch",
+   "artist": "Girls' Generation-Oh!GG",
+   "year": 2018
+  },
+  {
+   "title": "난리나",
+   "artist": "Block B",
+   "year": 2012
+  },
+  {
+   "title": "MONEY",
+   "artist": "Lisa",
    "year": 2013
   },
   {
@@ -419,24 +499,14 @@
    "year": 2009
   },
   {
+   "title": "Dope",
+   "artist": "BTS",
+   "year": 2025
+  },
+  {
    "title": "Mr. Simple",
    "artist": "SUPER JUNIOR",
    "year": 2011
-  },
-  {
-   "title": "Dreams Come True",
-   "artist": "aespa",
-   "year": 2021
-  },
-  {
-   "title": "난리나",
-   "artist": "Block B",
-   "year": 2012
-  },
-  {
-   "title": "행복 (Happiness)",
-   "artist": "Red Velvet",
-   "year": 2014
   },
   {
    "title": "View",
@@ -444,24 +514,9 @@
    "year": 2015
   },
   {
-   "title": "미행 (그림자; Shadow)",
-   "artist": "f(x)",
-   "year": 2013
-  },
-  {
-   "title": "Hurt",
-   "artist": "NewJeans",
-   "year": 2022
-  },
-  {
-   "title": "BBoom BBoom",
-   "artist": "MOMOLAND",
-   "year": 2018
-  },
-  {
-   "title": "REALLY",
-   "artist": "BLACKPINK",
-   "year": 2018
+   "title": "Dreams Come True",
+   "artist": "aespa",
+   "year": 2021
   },
   {
    "title": "STEP",
@@ -469,34 +524,9 @@
    "year": 2011
   },
   {
-   "title": "Lil’ Touch",
-   "artist": "Girls' Generation-Oh!GG",
-   "year": 2018
-  },
-  {
-   "title": "Dope",
-   "artist": "BTS",
-   "year": 2025
-  },
-  {
-   "title": "Ma Boy",
-   "artist": "SISTAR19",
-   "year": 2011
-  },
-  {
-   "title": "Sour Grapes",
-   "artist": "LE SSERAFIM",
+   "title": "Hurt",
+   "artist": "NewJeans",
    "year": 2022
-  },
-  {
-   "title": "기대해",
-   "artist": "Girl's Day",
-   "year": 2013
-  },
-  {
-   "title": "134340",
-   "artist": "BTS",
-   "year": 2018
   },
   {
    "title": "I NEED U",
@@ -504,19 +534,9 @@
    "year": 2015
   },
   {
-   "title": "Fiction",
-   "artist": "Beast",
-   "year": 2011
-  },
-  {
-   "title": "All Night",
-   "artist": "f(x)",
-   "year": 2014
-  },
-  {
-   "title": "Fire",
-   "artist": "2NE1",
-   "year": 2009
+   "title": "BBoom BBoom",
+   "artist": "MOMOLAND",
+   "year": 2018
   },
   {
    "title": "Danger",
@@ -524,49 +544,19 @@
    "year": 2014
   },
   {
-   "title": "립스틱 (LIPSTICK)",
-   "artist": "Orange Caramel",
-   "year": 2012
+   "title": "REALLY",
+   "artist": "BLACKPINK",
+   "year": 2018
   },
   {
-   "title": "WANNABE",
-   "artist": "ITZY",
-   "year": 2020
-  },
-  {
-   "title": "Best of Me",
+   "title": "134340",
    "artist": "BTS",
-   "year": 2017
+   "year": 2018
   },
   {
-   "title": "What You Want",
-   "artist": "CORTIS",
-   "year": 2025
-  },
-  {
-   "title": "Pretty Girl",
-   "artist": "Kara",
-   "year": 2008
-  },
-  {
-   "title": "New Jeans",
-   "artist": "NewJeans",
-   "year": 2023
-  },
-  {
-   "title": "Ko Ko Bop",
-   "artist": "Exo",
-   "year": 2017
-  },
-  {
-   "title": "TTYL",
-   "artist": "Loossemble",
-   "year": 2024
-  },
-  {
-   "title": "FEARLESS",
-   "artist": "LE SSERAFIM",
-   "year": 2022
+   "title": "기대해",
+   "artist": "Girl's Day",
+   "year": 2013
   },
   {
    "title": "SIGNAL",
@@ -574,9 +564,54 @@
    "year": 2017
   },
   {
-   "title": "Very Good",
-   "artist": "Block B",
+   "title": "All Night",
+   "artist": "f(x)",
+   "year": 2014
+  },
+  {
+   "title": "Pretty Girl",
+   "artist": "Kara",
+   "year": 2008
+  },
+  {
+   "title": "Ma Boy",
+   "artist": "SISTAR19",
+   "year": 2011
+  },
+  {
+   "title": "Blood Sweat & Tears",
+   "artist": "BTS",
+   "year": 2018
+  },
+  {
+   "title": "Fiction",
+   "artist": "Beast",
+   "year": 2011
+  },
+  {
+   "title": "Whiplash",
+   "artist": "aespa",
+   "year": 2024
+  },
+  {
+   "title": "TTYL",
+   "artist": "Loossemble",
+   "year": 2024
+  },
+  {
+   "title": "Kissing You",
+   "artist": "소녀시대",
    "year": 2013
+  },
+  {
+   "title": "Fire",
+   "artist": "2NE1",
+   "year": 2009
+  },
+  {
+   "title": "Sour Grapes",
+   "artist": "LE SSERAFIM",
+   "year": 2022
   },
   {
    "title": "Good Day",
@@ -584,38 +619,33 @@
    "year": 2011
   },
   {
-   "title": "Hands Up",
-   "artist": "2PM",
-   "year": 2011
+   "title": "What You Want",
+   "artist": "CORTIS",
+   "year": 2025
   },
   {
-   "title": "POP!",
-   "artist": "NAYEON",
-   "year": 2022
+   "title": "New Jeans",
+   "artist": "NewJeans",
+   "year": 2023
   },
   {
-   "title": "Pied Piper",
+   "title": "Best of Me",
    "artist": "BTS",
    "year": 2017
   },
   {
-   "title": "Magic Shop",
-   "artist": "BTS",
-   "year": 2018
-  },
-  {
-   "title": "COME BACK HOME",
-   "artist": "2NE1",
-   "year": 2014
-  },
-  {
-   "title": "Hi High",
-   "artist": "Loona",
+   "title": "FEARLESS",
+   "artist": "LE SSERAFIM",
    "year": 2022
   },
   {
-   "title": "Cherry Bomb",
-   "artist": "NCT 127",
+   "title": "Ko Ko Bop",
+   "artist": "Exo",
+   "year": 2017
+  },
+  {
+   "title": "Pied Piper",
+   "artist": "BTS",
    "year": 2017
   },
   {
@@ -624,19 +654,44 @@
    "year": 2022
   },
   {
+   "title": "Shut Down",
+   "artist": "BLACKPINK",
+   "year": 2022
+  },
+  {
+   "title": "Magic Shop",
+   "artist": "BTS",
+   "year": 2018
+  },
+  {
+   "title": "립스틱 (LIPSTICK)",
+   "artist": "Orange Caramel",
+   "year": 2012
+  },
+  {
+   "title": "POP!",
+   "artist": "NAYEON",
+   "year": 2022
+  },
+  {
    "title": "Anpanman",
    "artist": "BTS",
    "year": 2018
   },
   {
-   "title": "Perfect Night",
-   "artist": "LE SSERAFIM",
-   "year": 2023
+   "title": "Jamais Vu",
+   "artist": "BTS",
+   "year": 2019
   },
   {
-   "title": "Hot Issue",
-   "artist": "4minute",
-   "year": 2009
+   "title": "Only cry in the rain",
+   "artist": "CHUU",
+   "year": 2025
+  },
+  {
+   "title": "WANNABE",
+   "artist": "ITZY",
+   "year": 2020
   },
   {
    "title": "Lovesick Girls",
@@ -644,19 +699,19 @@
    "year": 2020
   },
   {
-   "title": "Pirate",
-   "artist": "Everglow",
-   "year": 2021
+   "title": "Very Good",
+   "artist": "Block B",
+   "year": 2013
   },
   {
-   "title": "Zimzalabim",
-   "artist": "Red Velvet",
-   "year": 2019
+   "title": "Hands Up",
+   "artist": "2PM",
+   "year": 2011
   },
   {
-   "title": "Like a Cat",
-   "artist": "AOA",
-   "year": 2015
+   "title": "Cookie",
+   "artist": "NewJeans",
+   "year": 2022
   },
   {
    "title": "Takedown",
@@ -664,24 +719,14 @@
    "year": 2025
   },
   {
-   "title": "Tomorrow",
-   "artist": "BTS",
-   "year": 2014
-  },
-  {
-   "title": "Up & Down",
-   "artist": "EXID",
-   "year": 2013
-  },
-  {
-   "title": "MIROH",
-   "artist": "Stray Kids",
+   "title": "Zimzalabim",
+   "artist": "Red Velvet",
    "year": 2019
   },
   {
-   "title": "Ice Cream Cake",
-   "artist": "Red Velvet",
-   "year": 2015
+   "title": "Tomorrow",
+   "artist": "BTS",
+   "year": 2014
   },
   {
    "title": "ME+U",
@@ -689,29 +734,39 @@
    "year": 2010
   },
   {
+   "title": "Hot Issue",
+   "artist": "4minute",
+   "year": 2009
+  },
+  {
+   "title": "Perfect Night",
+   "artist": "LE SSERAFIM",
+   "year": 2023
+  },
+  {
+   "title": "Ice Cream Cake",
+   "artist": "Red Velvet",
+   "year": 2015
+  },
+  {
+   "title": "Like a Cat",
+   "artist": "AOA",
+   "year": 2015
+  },
+  {
    "title": "KNOCK KNOCK",
    "artist": "TWICE",
    "year": 2017
   },
   {
-   "title": "God’s Menu",
-   "artist": "Stray Kids",
-   "year": 2020
+   "title": "COME BACK HOME",
+   "artist": "2NE1",
+   "year": 2014
   },
   {
-   "title": "TRICK",
-   "artist": "소녀시대",
-   "year": 2011
-  },
-  {
-   "title": "HIP",
-   "artist": "MAMAMOO",
-   "year": 2019
-  },
-  {
-   "title": "Show! Show! Show!",
-   "artist": "소녀시대",
-   "year": 2010
+   "title": "Cherry Bomb",
+   "artist": "NCT 127",
+   "year": 2017
   },
   {
    "title": "Honey",
@@ -719,24 +774,29 @@
    "year": 2010
   },
   {
-   "title": "Thunderous",
+   "title": "Hard To Love",
+   "artist": "BLACKPINK",
+   "year": 2022
+  },
+  {
+   "title": "MIROH",
    "artist": "Stray Kids",
+   "year": 2019
+  },
+  {
+   "title": "Pirate",
+   "artist": "Everglow",
    "year": 2021
   },
   {
-   "title": "Diva",
-   "artist": "After School",
-   "year": 2009
+   "title": "Up & Down",
+   "artist": "EXID",
+   "year": 2013
   },
   {
-   "title": "AH",
-   "artist": "After School",
-   "year": 2009
-  },
-  {
-   "title": "Rollin'",
-   "artist": "Brave Girls",
-   "year": 2017
+   "title": "I AM",
+   "artist": "IVE",
+   "year": 2023
   },
   {
    "title": "Magnetic",
@@ -744,14 +804,34 @@
    "year": 2024
   },
   {
-   "title": "Crazy Over You",
-   "artist": "BLACKPINK",
-   "year": 2020
+   "title": "Rollin'",
+   "artist": "Brave Girls",
+   "year": 2017
   },
   {
-   "title": "ETA",
-   "artist": "NewJeans",
-   "year": 2023
+   "title": "Thunderous",
+   "artist": "Stray Kids",
+   "year": 2021
+  },
+  {
+   "title": "TRICK",
+   "artist": "소녀시대",
+   "year": 2011
+  },
+  {
+   "title": "AH",
+   "artist": "After School",
+   "year": 2009
+  },
+  {
+   "title": "Hi High",
+   "artist": "Loona",
+   "year": 2022
+  },
+  {
+   "title": "Show! Show! Show!",
+   "artist": "소녀시대",
+   "year": 2010
   },
   {
    "title": "Let Me Know",
@@ -764,8 +844,48 @@
    "year": 2012
   },
   {
-   "title": "Love Shot",
-   "artist": "Exo",
+   "title": "HOME",
+   "artist": "BTS",
+   "year": 2017
+  },
+  {
+   "title": "MILK",
+   "artist": "f(x)",
+   "year": 2014
+  },
+  {
+   "title": "God’s Menu",
+   "artist": "Stray Kids",
+   "year": 2020
+  },
+  {
+   "title": "No",
+   "artist": "CLC",
+   "year": 2016
+  },
+  {
+   "title": "N.O",
+   "artist": "BTS",
+   "year": 2013
+  },
+  {
+   "title": "ETA",
+   "artist": "NewJeans",
+   "year": 2023
+  },
+  {
+   "title": "Crazy Over You",
+   "artist": "BLACKPINK",
+   "year": 2020
+  },
+  {
+   "title": "FOCUS",
+   "artist": "Hearts2Hearts",
+   "year": 2025
+  },
+  {
+   "title": "Euphoria",
+   "artist": "BTS",
    "year": 2018
   },
   {
@@ -774,14 +894,9 @@
    "year": 2018
   },
   {
-   "title": "N.O",
-   "artist": "BTS",
-   "year": 2013
-  },
-  {
-   "title": "HOME",
-   "artist": "BTS",
-   "year": 2017
+   "title": "Volume Up",
+   "artist": "4minute",
+   "year": 2012
   },
   {
    "title": "Alcohol-Free",
@@ -789,19 +904,14 @@
    "year": 2021
   },
   {
-   "title": "MILK",
-   "artist": "f(x)",
-   "year": 2014
+   "title": "HIP",
+   "artist": "MAMAMOO",
+   "year": 2019
   },
   {
-   "title": "Euphoria",
-   "artist": "BTS",
-   "year": 2018
-  },
-  {
-   "title": "Sherlock (Clue + Note)",
-   "artist": "SHINee",
-   "year": 2018
+   "title": "Diva",
+   "artist": "After School",
+   "year": 2009
   },
   {
    "title": "제트별 (Jet)",
@@ -809,8 +919,8 @@
    "year": 2012
   },
   {
-   "title": "반짝반짝",
-   "artist": "Girl's Day",
+   "title": "Dangerous",
+   "artist": "f(x)",
    "year": 2011
   },
   {
@@ -819,64 +929,9 @@
    "year": 2012
   },
   {
-   "title": "Dressing Room",
-   "artist": "After School",
-   "year": 2013
-  },
-  {
-   "title": "No",
-   "artist": "CLC",
-   "year": 2016
-  },
-  {
-   "title": "Spicy",
-   "artist": "aespa",
-   "year": 2023
-  },
-  {
-   "title": "Spring Day",
-   "artist": "BTS",
-   "year": 2017
-  },
-  {
-   "title": "ASAP",
-   "artist": "STAYC",
-   "year": 2021
-  },
-  {
-   "title": "DAY BY DAY",
-   "artist": "T-ARA",
-   "year": 2012
-  },
-  {
-   "title": "Hate You",
-   "artist": "2NE1",
-   "year": 2011
-  },
-  {
-   "title": "Roller Coaster",
-   "artist": "NMIXX",
-   "year": 2023
-  },
-  {
-   "title": "Dangerous",
+   "title": "나비 (Butterfly)",
    "artist": "f(x)",
-   "year": 2011
-  },
-  {
-   "title": "Pretty Girl",
-   "artist": "f(x)",
-   "year": 2013
-  },
-  {
-   "title": "Feel Special",
-   "artist": "TWICE",
-   "year": 2019
-  },
-  {
-   "title": "LOCO",
-   "artist": "ITZY",
-   "year": 2021
+   "year": 2014
   },
   {
    "title": "Airplane",
@@ -884,19 +939,34 @@
    "year": 2013
   },
   {
-   "title": "Volume Up",
-   "artist": "4minute",
-   "year": 2012
+   "title": "반짝반짝",
+   "artist": "Girl's Day",
+   "year": 2011
   },
   {
-   "title": "HIGH HIGH",
-   "artist": "GD&TOP",
-   "year": 2010
+   "title": "Spring Day",
+   "artist": "BTS",
+   "year": 2017
   },
   {
-   "title": "나비 (Butterfly)",
-   "artist": "f(x)",
+   "title": "Sherlock (Clue + Note)",
+   "artist": "SHINee",
+   "year": 2018
+  },
+  {
+   "title": "Touch My Body",
+   "artist": "SISTAR",
    "year": 2014
+  },
+  {
+   "title": "Firestarter",
+   "artist": "K/DA",
+   "year": 2026
+  },
+  {
+   "title": "Touch",
+   "artist": "miss A",
+   "year": 2012
   },
   {
    "title": "Monster",
@@ -904,104 +974,34 @@
    "year": 2020
   },
   {
-   "title": "Basics",
+   "title": "Feel Special",
+   "artist": "TWICE",
+   "year": 2019
+  },
+  {
+   "title": "Talk that Talk",
    "artist": "TWICE",
    "year": 2022
   },
   {
-   "title": "ICON",
-   "artist": "TWICE",
-   "year": 2021
-  },
-  {
-   "title": "LAST DANCE",
-   "artist": "Bigbang",
+   "title": "Monster",
+   "artist": "Exo",
    "year": 2016
   },
   {
-   "title": "Be My Baby",
-   "artist": "Wonder Girls",
-   "year": 2011
-  },
-  {
-   "title": "What Is Love",
-   "artist": "EXO-K",
-   "year": 2012
-  },
-  {
-   "title": "I Love You",
-   "artist": "EXID",
-   "year": 2020
-  },
-  {
-   "title": "Tally",
-   "artist": "BLACKPINK",
-   "year": 2022
-  },
-  {
-   "title": "La Vie en Rose",
-   "artist": "IZ*ONE",
+   "title": "Love Shot",
+   "artist": "Exo",
    "year": 2018
   },
   {
-   "title": "Pandora",
-   "artist": "Kara",
+   "title": "DAY BY DAY",
+   "artist": "T-ARA",
    "year": 2012
   },
   {
-   "title": "Toy",
-   "artist": "f(x)",
+   "title": "Dressing Room",
+   "artist": "After School",
    "year": 2013
-  },
-  {
-   "title": "말해봐 (Talk Talk)",
-   "artist": "소녀시대",
-   "year": 2013
-  },
-  {
-   "title": "Dance the Night Away",
-   "artist": "TWICE",
-   "year": 2018
-  },
-  {
-   "title": "Mr.",
-   "artist": "Kara",
-   "year": 2012
-  },
-  {
-   "title": "SCIENTIST",
-   "artist": "TWICE",
-   "year": 2021
-  },
-  {
-   "title": "Irony",
-   "artist": "Wonder Girls",
-   "year": 2007
-  },
-  {
-   "title": "Heartbeat",
-   "artist": "2PM",
-   "year": 2009
-  },
-  {
-   "title": "Lonely",
-   "artist": "2NE1",
-   "year": 2011
-  },
-  {
-   "title": "Ugly",
-   "artist": "2NE1",
-   "year": 2011
-  },
-  {
-   "title": "I Love You",
-   "artist": "2NE1",
-   "year": 2012
-  },
-  {
-   "title": "Bon Bon Chocolat",
-   "artist": "Everglow",
-   "year": 2019
   }
  ]
 }

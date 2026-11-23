@@ -1,15 +1,35 @@
 {
  "name": "Singer-Songwriter",
  "tag": "singer-songwriter",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
+  {
+   "title": "Lover, You Should've Come Over",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
   {
    "title": "Ballad of Big Nothing",
    "artist": "Elliott Smith",
    "year": 1997
   },
   {
+   "title": "Harvest Moon",
+   "artist": "Neil Young",
+   "year": 1992
+  },
+  {
+   "title": "Everybody Here Wants You",
+   "artist": "Jeff Buckley",
+   "year": 1998
+  },
+  {
    "title": "Last Goodbye",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "So Real",
    "artist": "Jeff Buckley",
    "year": 1994
   },
@@ -29,9 +49,39 @@
    "year": 1994
   },
   {
+   "title": "The Smallest Man Who Ever Lived",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "I'm Your Man",
+   "artist": "Leonard Cohen",
+   "year": 1988
+  },
+  {
    "title": "Son of Sam",
    "artist": "Elliott Smith",
    "year": 1999
+  },
+  {
+   "title": "Carry Me Ohio",
+   "artist": "Sun Kil Moon",
+   "year": 2003
+  },
+  {
+   "title": "Paper Bag",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "Place to Be",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "My Moon My Man",
+   "artist": "Feist",
+   "year": 2007
   },
   {
    "title": "Mojo Pin",
@@ -39,9 +89,49 @@
    "year": 1993
   },
   {
+   "title": "I Know",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "Everything Means Nothing to Me",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "Lilac Wine",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
    "title": "Forget Her",
    "artist": "Jeff Buckley",
    "year": 1994
+  },
+  {
+   "title": "I Can Fix Him (No Really I Can)",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Alameda",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Get Gone",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "Pictures of Me",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Kyoto",
+   "artist": "Phoebe Bridgers",
+   "year": 2020
   },
   {
    "title": "Miss Misery",
@@ -54,6 +144,16 @@
    "year": 1977
   },
   {
+   "title": "loml",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "2:45 AM",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
    "title": "Piano Man",
    "artist": "Billy Joel",
    "year": 1973
@@ -64,9 +164,119 @@
    "year": 1996
   },
   {
+   "title": "Which Will",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Somebody That I Used to Know",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "Clementine",
+   "artist": "Elliott Smith",
+   "year": 1995
+  },
+  {
+   "title": "the cure",
+   "artist": "Olivia Rodrigo",
+   "year": 2026
+  },
+  {
+   "title": "Dream Brother",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "Suzanne",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
    "title": "On the Bound",
    "artist": "Fiona Apple",
    "year": 1999
+  },
+  {
+   "title": "Jim Cain",
+   "artist": "Bill Callahan",
+   "year": 2009
+  },
+  {
+   "title": "Cupid's Trick",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
+   "title": "Things Behind the Sun",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Northern Sky",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "The Prophecy",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Hey, That's No Way to Say Goodbye",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "L.A.",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "Glue Song",
+   "artist": "beabadoobee",
+   "year": 2023
+  },
+  {
+   "title": "Parasite",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Time in a Bottle",
+   "artist": "Jim Croce",
+   "year": 1972
+  },
+  {
+   "title": "Limp",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "Class of 2013",
+   "artist": "Mitski",
+   "year": 2013
+  },
+  {
+   "title": "Junk Bond Trader",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "Pink Moon",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Hazey Jane II",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Once I Was",
+   "artist": "Tim Buckley",
+   "year": 1967
   },
   {
    "title": "Baby Britain",
@@ -74,9 +284,64 @@
    "year": 1998
   },
   {
+   "title": "Slow Dancing in a Burning Room",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "I Know It's Over",
+   "artist": "Jeff Buckley",
+   "year": 2002
+  },
+  {
+   "title": "Twilight",
+   "artist": "Elliott Smith",
+   "year": 2004
+  },
+  {
+   "title": "Pretty (Ugly Before)",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "So Long, Marianne",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Easy Way Out",
+   "artist": "Elliott Smith",
+   "year": 1999
+  },
+  {
+   "title": "River Man",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "One of These Things First",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "True Love Will Find You In The End",
+   "artist": "Daniel Johnston",
+   "year": 1987
+  },
+  {
    "title": "Fresh Out the Slammer",
    "artist": "Taylor Swift",
    "year": 2024
+  },
+  {
+   "title": "Stupidity Tries",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Vancouver",
+   "artist": "Jeff Buckley",
+   "year": 1998
   },
   {
    "title": "Angeles",
@@ -84,14 +349,69 @@
    "year": 1996
   },
   {
+   "title": "All Too Well (10 Minute Version) (Taylor's Version) (From the Vault)",
+   "artist": "Taylor Swift",
+   "year": 2021
+  },
+  {
+   "title": "Candy",
+   "artist": "Paolo Nutini",
+   "year": 2009
+  },
+  {
+   "title": "I Didn't Understand",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Free Ride",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "Gravity",
+   "artist": "John Mayer",
+   "year": 2005
+  },
+  {
+   "title": "Bled White",
+   "artist": "Elliott Smith",
+   "year": 1997
+  },
+  {
    "title": "Guilty as Sin?",
    "artist": "Taylor Swift",
    "year": 2024
   },
   {
-   "title": "Independence Day",
+   "title": "Tangled Up in Blue",
+   "artist": "Bob Dylan",
+   "year": 1978
+  },
+  {
+   "title": "The Ocean",
+   "artist": "Richard Hawley",
+   "year": 2005
+  },
+  {
+   "title": "Sweet Adeline",
    "artist": "Elliott Smith",
    "year": 1998
+  },
+  {
+   "title": "I Better Be Quiet Now",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "Clara Bow",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Dance Me to the End of Love",
+   "artist": "Leonard Cohen",
+   "year": 1984
   },
   {
    "title": "Knockin' on Heaven's Door",
@@ -99,19 +419,94 @@
    "year": 1976
   },
   {
+   "title": "Corpus Christi Carol",
+   "artist": "Jeff Buckley",
+   "year": 1994
+  },
+  {
+   "title": "Waltz #1",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Independence Day",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Oh Well, Okay",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "cardigan",
+   "artist": "Taylor Swift",
+   "year": 2020
+  },
+  {
+   "title": "White Ferrari",
+   "artist": "Frank Ocean",
+   "year": 2016
+  },
+  {
+   "title": "Last Words of a Shooting Star",
+   "artist": "Mitski",
+   "year": 2014
+  },
+  {
+   "title": "Beach Baby",
+   "artist": "Bon Iver",
+   "year": 2008
+  },
+  {
+   "title": "Hazey Jane I",
+   "artist": "Nick Drake",
+   "year": 1970
+  },
+  {
+   "title": "Famous Blue Raincoat",
+   "artist": "Leonard Cohen",
+   "year": 1971
+  },
+  {
+   "title": "i wanna be your girlfriend",
+   "artist": "girl in red",
+   "year": 2017
+  },
+  {
+   "title": "Saturday Sun",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "Chloe or Sam or Sophia or Marcus",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
    "title": "American Pie",
    "artist": "Don McLean",
    "year": 1971
   },
   {
-   "title": "Criminal",
-   "artist": "Fiona Apple",
-   "year": 1996
-  },
-  {
-   "title": "Pitseleh",
+   "title": "Everybody Cares, Everybody Understands",
    "artist": "Elliott Smith",
    "year": 1998
+  },
+  {
+   "title": "Blue",
+   "artist": "Joni Mitchell",
+   "year": 1968
+  },
+  {
+   "title": "The Wreck of the Edmund Fitzgerald",
+   "artist": "Gordon Lightfoot",
+   "year": 1976
+  },
+  {
+   "title": "Time Has Told Me",
+   "artist": "Nick Drake",
+   "year": 1969
   },
   {
    "title": "For Emma",
@@ -119,14 +514,74 @@
    "year": 2007
   },
   {
+   "title": "Master Song",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Criminal",
+   "artist": "Fiona Apple",
+   "year": 1996
+  },
+  {
+   "title": "Stop This Train",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "At the Chime of a City Clock",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Every Single Night",
+   "artist": "Fiona Apple",
+   "year": 2012
+  },
+  {
+   "title": "Labour",
+   "artist": "Paris Paloma",
+   "year": 2023
+  },
+  {
+   "title": "Chelsea Hotel #2",
+   "artist": "Leonard Cohen",
+   "year": 1974
+  },
+  {
+   "title": "A Question Mark",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Everybody Knows",
+   "artist": "Leonard Cohen",
+   "year": 1988
+  },
+  {
+   "title": "Fly",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Carey",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Simple Twist of Fate",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Daredevil",
+   "artist": "Fiona Apple",
+   "year": 2012
+  },
+  {
    "title": "Work Song",
    "artist": "Hozier",
    "year": 2014
-  },
-  {
-   "title": "Fast as You Can",
-   "artist": "Fiona Apple",
-   "year": 1999
   },
   {
    "title": "The First Taste",
@@ -134,44 +589,69 @@
    "year": 1996
   },
   {
-   "title": "Like a Rolling Stone",
-   "artist": "Bob Dylan",
-   "year": 1963
+   "title": "A Fond Farewell",
+   "artist": "Elliott Smith",
+   "year": 2004
   },
   {
-   "title": "Skinny Love",
-   "artist": "Bon Iver",
-   "year": 2007
-  },
-  {
-   "title": "A Thousand Miles",
-   "artist": "Vanessa Carlton",
-   "year": 2000
-  },
-  {
-   "title": "Heart of Gold",
-   "artist": "Neil Young",
+   "title": "Avalanche",
+   "artist": "Leonard Cohen",
    "year": 1971
   },
   {
-   "title": "Perfect Day",
-   "artist": "Lou Reed",
-   "year": 1972
+   "title": "Sitting, Waiting, Wishing",
+   "artist": "Jack Johnson",
+   "year": 2004
   },
   {
-   "title": "Chicago",
-   "artist": "Sufjan Stevens",
+   "title": "Only Love Can Break Your Heart",
+   "artist": "Neil Young",
+   "year": 1970
+  },
+  {
+   "title": "Fast as You Can",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "Pitseleh",
+   "artist": "Elliott Smith",
+   "year": 1998
+  },
+  {
+   "title": "Carrion",
+   "artist": "Fiona Apple",
+   "year": 1996
+  },
+  {
+   "title": "Going Nowhere",
+   "artist": "Elliott Smith",
    "year": 2005
   },
   {
-   "title": "Give Me Love (Give Me Peace on Earth)",
-   "artist": "George Harrison",
-   "year": 1973
+   "title": "Shadowboxer",
+   "artist": "Fiona Apple",
+   "year": 1996
   },
   {
-   "title": "Walk on the Wild Side",
-   "artist": "Lou Reed",
-   "year": 1972
+   "title": "St. Ides Heaven",
+   "artist": "Elliott Smith",
+   "year": 1995
+  },
+  {
+   "title": "New York State Of Mind",
+   "artist": "Billy Joel",
+   "year": 1976
+  },
+  {
+   "title": "Day Is Done",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "I Hope That I Don't Fall in Love With You",
+   "artist": "Tom Waits",
+   "year": 1973
   },
   {
    "title": "Werewolves of London",
@@ -179,9 +659,349 @@
    "year": 1978
   },
   {
-   "title": "Love Is A Long Road",
-   "artist": "Tom Petty",
-   "year": 1989
+   "title": "Please Please Please",
+   "artist": "Fiona Apple",
+   "year": 2005
+  },
+  {
+   "title": "Vincent",
+   "artist": "Don McLean",
+   "year": 1971
+  },
+  {
+   "title": "Not About Love",
+   "artist": "Fiona Apple",
+   "year": 2005
+  },
+  {
+   "title": "Like a Rolling Stone",
+   "artist": "Bob Dylan",
+   "year": 1963
+  },
+  {
+   "title": "Crosses",
+   "artist": "José González",
+   "year": 2003
+  },
+  {
+   "title": "Suddenly I See",
+   "artist": "KT Tunstall",
+   "year": 2004
+  },
+  {
+   "title": "Color Bars",
+   "artist": "Elliott Smith",
+   "year": 2000
+  },
+  {
+   "title": "The Garden",
+   "artist": "PJ Harvey",
+   "year": 1998
+  },
+  {
+   "title": "A Mistake",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "A Thousand Miles",
+   "artist": "Vanessa Carlton",
+   "year": 2000
+  },
+  {
+   "title": "The Partisan",
+   "artist": "Leonard Cohen",
+   "year": 1969
+  },
+  {
+   "title": "From the Morning",
+   "artist": "Nick Drake",
+   "year": 1972
+  },
+  {
+   "title": "One of Us Cannot Be Wrong",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Sisters of Mercy",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Winter Lady",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Help Me",
+   "artist": "Joni Mitchell",
+   "year": 1974
+  },
+  {
+   "title": "Morning Theft",
+   "artist": "Jeff Buckley",
+   "year": 1998
+  },
+  {
+   "title": "You're So Vain",
+   "artist": "Carly Simon",
+   "year": 1972
+  },
+  {
+   "title": "Carolina in My Mind",
+   "artist": "James Taylor",
+   "year": 1968
+  },
+  {
+   "title": "Diamonds on the Soles of Her Shoes",
+   "artist": "Paul Simon",
+   "year": 1986
+  },
+  {
+   "title": "Talkin' Bout a Revolution",
+   "artist": "Tracy Chapman",
+   "year": 1988
+  },
+  {
+   "title": "Coyote",
+   "artist": "Joni Mitchell",
+   "year": 1976
+  },
+  {
+   "title": "Babylon",
+   "artist": "David Gray",
+   "year": 1998
+  },
+  {
+   "title": "Skinny Love",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "My Old Man",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Hope Is a Dangerous Thing for a Woman Like Me to Have - But I Have It",
+   "artist": "Lana Del Rey",
+   "year": 2019
+  },
+  {
+   "title": "So Long, London",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "Stories of the Street",
+   "artist": "Leonard Cohen",
+   "year": 1967
+  },
+  {
+   "title": "Who by Fire",
+   "artist": "Leonard Cohen",
+   "year": 1974
+  },
+  {
+   "title": "Hold On",
+   "artist": "Tom Waits",
+   "year": 1999
+  },
+  {
+   "title": "Drawn to the Blood",
+   "artist": "Sufjan Stevens",
+   "year": 2015
+  },
+  {
+   "title": "The Boxer",
+   "artist": "Simon & Garfunkel",
+   "year": 1969
+  },
+  {
+   "title": "Please Forgive Me",
+   "artist": "David Gray",
+   "year": 1998
+  },
+  {
+   "title": "Little Green",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Shelter from the Storm",
+   "artist": "Bob Dylan",
+   "year": 1975
+  },
+  {
+   "title": "Flume",
+   "artist": "Bon Iver",
+   "year": 2007
+  },
+  {
+   "title": "It's Too Late",
+   "artist": "Carole King",
+   "year": 1971
+  },
+  {
+   "title": "Bird on the Wire",
+   "artist": "Leonard Cohen",
+   "year": 1968
+  },
+  {
+   "title": "Red Red Red",
+   "artist": "Fiona Apple",
+   "year": 2005
+  },
+  {
+   "title": "King's Crossing",
+   "artist": "Elliott Smith",
+   "year": 2004
+  },
+  {
+   "title": "Paris",
+   "artist": "Taylor Swift",
+   "year": 2022
+  },
+  {
+   "title": "Sweet Nothing",
+   "artist": "Taylor Swift",
+   "year": 2022
+  },
+  {
+   "title": "Three Hours",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "I Wish You Would",
+   "artist": "Taylor Swift",
+   "year": 2014
+  },
+  {
+   "title": "The Man In Me",
+   "artist": "Bob Dylan",
+   "year": 1970
+  },
+  {
+   "title": "Martha",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Poor Boy",
+   "artist": "Nick Drake",
+   "year": 1971
+  },
+  {
+   "title": "Eternal Life",
+   "artist": "Jeff Buckley",
+   "year": 1993
+  },
+  {
+   "title": "Heart of Gold",
+   "artist": "Neil Young",
+   "year": 1971
+  },
+  {
+   "title": "Kodachrome",
+   "artist": "Paul Simon",
+   "year": 1973
+  },
+  {
+   "title": "Days Like This",
+   "artist": "Van Morrison",
+   "year": 1995
+  },
+  {
+   "title": "To Your Love",
+   "artist": "Fiona Apple",
+   "year": 1999
+  },
+  {
+   "title": "You Can Call Me Al",
+   "artist": "Paul Simon",
+   "year": 1986
+  },
+  {
+   "title": "Me and Julio Down by the Schoolyard",
+   "artist": "Paul Simon",
+   "year": 1972
+  },
+  {
+   "title": "After the Gold Rush",
+   "artist": "Neil Young",
+   "year": 1978
+  },
+  {
+   "title": "Sail Away",
+   "artist": "David Gray",
+   "year": 1998
+  },
+  {
+   "title": "Ol' 55",
+   "artist": "Tom Waits",
+   "year": 1973
+  },
+  {
+   "title": "Tell Me Why",
+   "artist": "Neil Young",
+   "year": 1970
+  },
+  {
+   "title": "Bartender",
+   "artist": "Lana Del Rey",
+   "year": 2019
+  },
+  {
+   "title": "Robin",
+   "artist": "Taylor Swift",
+   "year": 2024
+  },
+  {
+   "title": "The Thoughts of Mary Jane",
+   "artist": "Nick Drake",
+   "year": 1969
+  },
+  {
+   "title": "A Case of You",
+   "artist": "Joni Mitchell",
+   "year": 1971
+  },
+  {
+   "title": "Walking in Memphis",
+   "artist": "Marc Cohn",
+   "year": 1991
+  },
+  {
+   "title": "Clarity",
+   "artist": "John Mayer",
+   "year": 2003
+  },
+  {
+   "title": "Bridge Over Troubled Water",
+   "artist": "Simon & Garfunkel",
+   "year": 1970
+  },
+  {
+   "title": "Waltz (Better Than Fine)",
+   "artist": "Fiona Apple",
+   "year": 2005
+  },
+  {
+   "title": "Sweet",
+   "artist": "Lana Del Rey",
+   "year": 2021
+  },
+  {
+   "title": "The Heart of Life",
+   "artist": "John Mayer",
+   "year": 2006
+  },
+  {
+   "title": "Last Request",
+   "artist": "Paolo Nutini",
+   "year": 2006
   }
  ]
 }

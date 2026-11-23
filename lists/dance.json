@@ -1,12 +1,17 @@
 {
  "name": "Dance",
  "tag": "dance",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Just Dance",
    "artist": "Lady Gaga",
    "year": 2008
+  },
+  {
+   "title": "Don't Stop the Music",
+   "artist": "Rihanna",
+   "year": 2007
   },
   {
    "title": "Only Girl (In the World)",
@@ -24,13 +29,8 @@
    "year": 2009
   },
   {
-   "title": "S&M",
+   "title": "Disturbia",
    "artist": "Rihanna",
-   "year": 2010
-  },
-  {
-   "title": "Paparazzi",
-   "artist": "Lady Gaga",
    "year": 2008
   },
   {
@@ -39,14 +39,19 @@
    "year": 2011
   },
   {
+   "title": "Paparazzi",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "S&M",
+   "artist": "Rihanna",
+   "year": 2010
+  },
+  {
    "title": "Gimme More",
    "artist": "Britney Spears",
    "year": 2007
-  },
-  {
-   "title": "Where Have You Been",
-   "artist": "Rihanna",
-   "year": 2011
   },
   {
    "title": "LoveGame",
@@ -59,9 +64,9 @@
    "year": 2009
   },
   {
-   "title": "Promiscuous",
-   "artist": "Nelly Furtado",
-   "year": 2006
+   "title": "Where Have You Been",
+   "artist": "Rihanna",
+   "year": 2011
   },
   {
    "title": "Toxic",
@@ -69,19 +74,14 @@
    "year": 2003
   },
   {
-   "title": "Disturbia",
-   "artist": "Rihanna",
-   "year": 2008
-  },
-  {
    "title": "Blow",
    "artist": "Ke$ha",
    "year": 2010
   },
   {
-   "title": "Can't Get You Out of My Head",
-   "artist": "Kylie Minogue",
-   "year": 2001
+   "title": "Promiscuous",
+   "artist": "Nelly Furtado",
+   "year": 2006
   },
   {
    "title": "Hotel Room Service",
@@ -89,9 +89,9 @@
    "year": 2009
   },
   {
-   "title": "Hung Up",
-   "artist": "Madonna",
-   "year": 2005
+   "title": "Maneater",
+   "artist": "Nelly Furtado",
+   "year": 2006
   },
   {
    "title": "Circus",
@@ -99,14 +99,24 @@
    "year": 2008
   },
   {
-   "title": "Maneater",
-   "artist": "Nelly Furtado",
-   "year": 2006
+   "title": "Hung Up",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "Like a G6",
+   "artist": "Far East Movement",
+   "year": 2011
   },
   {
    "title": "Rock That Body",
    "artist": "Black Eyed Peas",
    "year": 2009
+  },
+  {
+   "title": "Can't Get You Out of My Head",
+   "artist": "Kylie Minogue",
+   "year": 2001
   },
   {
    "title": "Sexy Bitch (feat. Akon)",
@@ -119,14 +129,14 @@
    "year": 2008
   },
   {
-   "title": "All the Things She Said",
-   "artist": "t.A.T.u.",
-   "year": 2001
-  },
-  {
    "title": "Better Off Alone",
    "artist": "Alice Deejay",
    "year": 1999
+  },
+  {
+   "title": "Just The Way You Are",
+   "artist": "Milky",
+   "year": 2001
   },
   {
    "title": "Hey Baby (Drop It to the Floor)",
@@ -134,9 +144,9 @@
    "year": 2008
   },
   {
-   "title": "Alors on danse",
-   "artist": "Stromae",
-   "year": 2009
+   "title": "All the Things She Said",
+   "artist": "t.A.T.u.",
+   "year": 2001
   },
   {
    "title": "Summer",
@@ -144,8 +154,18 @@
    "year": 2014
   },
   {
+   "title": "Alors on danse",
+   "artist": "Stromae",
+   "year": 2009
+  },
+  {
    "title": "Lady (Hear Me Tonight)",
    "artist": "Modjo",
+   "year": 2000
+  },
+  {
+   "title": "One More Time",
+   "artist": "Daft Punk",
    "year": 2000
   },
   {
@@ -159,9 +179,9 @@
    "year": 2011
   },
   {
-   "title": "One More Time",
-   "artist": "Daft Punk",
-   "year": 2000
+   "title": "Party Rock Anthem",
+   "artist": "LMFAO",
+   "year": 2011
   },
   {
    "title": "Stereo Love",
@@ -169,14 +189,14 @@
    "year": 2009
   },
   {
-   "title": "Mr. Saxobeat",
-   "artist": "Alexandra Stan",
-   "year": 2011
-  },
-  {
    "title": "Womanizer",
    "artist": "Britney Spears",
    "year": 2008
+  },
+  {
+   "title": "The Nights",
+   "artist": "Avicii",
+   "year": 2014
   },
   {
    "title": "Die Young",
@@ -184,9 +204,9 @@
    "year": 2012
   },
   {
-   "title": "Everytime We Touch",
-   "artist": "Cascada",
-   "year": 2005
+   "title": "Cannibal",
+   "artist": "Ke$ha",
+   "year": 2010
   },
   {
    "title": "Last Friday Night (T.G.I.F.)",
@@ -194,9 +214,59 @@
    "year": 2010
   },
   {
+   "title": "Mr. Saxobeat",
+   "artist": "Alexandra Stan",
+   "year": 2011
+  },
+  {
+   "title": "Monster",
+   "artist": "Lady Gaga",
+   "year": 2009
+  },
+  {
+   "title": "Scream & Shout",
+   "artist": "will.i.am",
+   "year": 2012
+  },
+  {
    "title": "Scheiße",
    "artist": "Lady Gaga",
    "year": 2011
+  },
+  {
+   "title": "Timber",
+   "artist": "Pitbull",
+   "year": 2013
+  },
+  {
+   "title": "Everytime We Touch",
+   "artist": "Cascada",
+   "year": 2005
+  },
+  {
+   "title": "Shut Up and Drive",
+   "artist": "Rihanna",
+   "year": 2007
+  },
+  {
+   "title": "Dynamite",
+   "artist": "Taio Cruz",
+   "year": 2010
+  },
+  {
+   "title": "Your Love Is My Drug",
+   "artist": "Ke$ha",
+   "year": 2009
+  },
+  {
+   "title": "Pon de Replay",
+   "artist": "Rihanna",
+   "year": 2005
+  },
+  {
+   "title": "L'Amour Toujours",
+   "artist": "Gigi D'Agostino",
+   "year": 1999
   },
   {
    "title": "Call Me Maybe",
@@ -209,19 +279,14 @@
    "year": 2005
   },
   {
-   "title": "Timber",
-   "artist": "Pitbull",
-   "year": 2013
+   "title": "Hot n Cold",
+   "artist": "Katy Perry",
+   "year": 2008
   },
   {
-   "title": "Scream & Shout",
-   "artist": "will.i.am",
-   "year": 2012
-  },
-  {
-   "title": "L'Amour Toujours",
-   "artist": "Gigi D'Agostino",
-   "year": 1999
+   "title": "We R Who We R",
+   "artist": "Ke$ha",
+   "year": 2010
   },
   {
    "title": "Wake Me Up",
@@ -229,37 +294,7 @@
    "year": 2013
   },
   {
-   "title": "Dynamite",
-   "artist": "Taio Cruz",
-   "year": 2010
-  },
-  {
-   "title": "Hot n Cold",
-   "artist": "Katy Perry",
-   "year": 2008
-  },
-  {
-   "title": "Shut Up and Drive",
-   "artist": "Rihanna",
-   "year": 2007
-  },
-  {
-   "title": "Your Love Is My Drug",
-   "artist": "Ke$ha",
-   "year": 2009
-  },
-  {
-   "title": "Evacuate the Dancefloor",
-   "artist": "Cascada",
-   "year": 2008
-  },
-  {
-   "title": "Monster",
-   "artist": "Lady Gaga",
-   "year": 2009
-  },
-  {
-   "title": "We R Who We R",
+   "title": "Backstabber",
    "artist": "Ke$ha",
    "year": 2010
   },
@@ -269,19 +304,9 @@
    "year": 2013
   },
   {
-   "title": "All I Ever Wanted",
-   "artist": "Basshunter",
+   "title": "Evacuate the Dancefloor",
+   "artist": "Cascada",
    "year": 2008
-  },
-  {
-   "title": "I Wanna Go",
-   "artist": "Britney Spears",
-   "year": 2011
-  },
-  {
-   "title": "Be My Lover",
-   "artist": "La Bouche",
-   "year": 1994
   },
   {
    "title": "Starships",
@@ -289,9 +314,14 @@
    "year": 2012
   },
   {
-   "title": "Cannibal",
-   "artist": "Ke$ha",
-   "year": 2010
+   "title": "Shake It",
+   "artist": "Metro Station",
+   "year": 2007
+  },
+  {
+   "title": "I Wanna Go",
+   "artist": "Britney Spears",
+   "year": 2011
   },
   {
    "title": "Don't Trust Me",
@@ -299,14 +329,39 @@
    "year": 2008
   },
   {
-   "title": "Cry for You",
-   "artist": "September",
-   "year": 2005
+   "title": "All I Ever Wanted",
+   "artist": "Basshunter",
+   "year": 2008
+  },
+  {
+   "title": "I Know You Want Me (Calle Ocho)",
+   "artist": "Pitbull",
+   "year": 2007
+  },
+  {
+   "title": "Summerboy",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "Show Me Love",
+   "artist": "Robin S",
+   "year": 1993
   },
   {
    "title": "4 Minutes",
    "artist": "Madonna",
    "year": 2008
+  },
+  {
+   "title": "Murder on the Dancefloor",
+   "artist": "Sophie Ellis-Bextor",
+   "year": 2001
+  },
+  {
+   "title": "What You Waiting For?",
+   "artist": "Gwen Stefani",
+   "year": 2004
   },
   {
    "title": "Caramelldansen",
@@ -319,54 +374,9 @@
    "year": 2001
   },
   {
-   "title": "Shake It",
-   "artist": "Metro Station",
-   "year": 2007
-  },
-  {
-   "title": "What You Waiting For?",
-   "artist": "Gwen Stefani",
-   "year": 2004
-  },
-  {
-   "title": "Show Me Love",
-   "artist": "Robin S",
-   "year": 1993
-  },
-  {
-   "title": "Summerboy",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Buttons",
-   "artist": "The Pussycat Dolls",
-   "year": 2005
-  },
-  {
-   "title": "Murder on the Dancefloor",
-   "artist": "Sophie Ellis-Bextor",
-   "year": 2001
-  },
-  {
-   "title": "Canned Heat",
-   "artist": "Jamiroquai",
-   "year": 1984
-  },
-  {
-   "title": "I Know You Want Me (Calle Ocho)",
-   "artist": "Pitbull",
-   "year": 2007
-  },
-  {
-   "title": "Bad Boy",
-   "artist": "Cascada",
-   "year": 2004
-  },
-  {
-   "title": "SOS",
-   "artist": "Rihanna",
-   "year": 2006
+   "title": "She Wolf",
+   "artist": "Shakira",
+   "year": 2009
   },
   {
    "title": "Memories (feat. Kid Cudi)",
@@ -374,14 +384,14 @@
    "year": 2009
   },
   {
-   "title": "Beauty and a Beat",
-   "artist": "Justin Bieber",
-   "year": 2012
+   "title": "Bad Boy",
+   "artist": "Cascada",
+   "year": 2004
   },
   {
-   "title": "Harder, Better, Faster, Stronger",
-   "artist": "Daft Punk",
-   "year": 2001
+   "title": "Cry for You",
+   "artist": "September",
+   "year": 2005
   },
   {
    "title": "If U Seek Amy",
@@ -389,8 +399,48 @@
    "year": 2008
   },
   {
+   "title": "Be My Lover",
+   "artist": "La Bouche",
+   "year": 1994
+  },
+  {
+   "title": "Buttons",
+   "artist": "The Pussycat Dolls",
+   "year": 2005
+  },
+  {
+   "title": "Beauty and a Beat",
+   "artist": "Justin Bieber",
+   "year": 2012
+  },
+  {
+   "title": "Canned Heat",
+   "artist": "Jamiroquai",
+   "year": 1984
+  },
+  {
+   "title": "SOS",
+   "artist": "Rihanna",
+   "year": 2006
+  },
+  {
    "title": "Government Hooker",
    "artist": "Lady Gaga",
+   "year": 2011
+  },
+  {
+   "title": "Harder, Better, Faster, Stronger",
+   "artist": "Daft Punk",
+   "year": 2001
+  },
+  {
+   "title": "Bubble Pop Electric",
+   "artist": "Gwen Stefani",
+   "year": 2006
+  },
+  {
+   "title": "Glad You Came",
+   "artist": "The Wanted",
    "year": 2011
   },
   {
@@ -399,23 +449,13 @@
    "year": 2009
   },
   {
-   "title": "Bubble Pop Electric",
-   "artist": "Gwen Stefani",
-   "year": 2006
-  },
-  {
-   "title": "G.U.Y.",
-   "artist": "Lady Gaga",
-   "year": 2013
-  },
-  {
    "title": "Sexy and I Know It",
    "artist": "LMFAO",
    "year": 2011
   },
   {
-   "title": "Glad You Came",
-   "artist": "The Wanted",
+   "title": "Heavy Metal Lover",
+   "artist": "Lady Gaga",
    "year": 2011
   },
   {
@@ -424,14 +464,9 @@
    "year": 2013
   },
   {
-   "title": "Heavy Metal Lover",
+   "title": "G.U.Y.",
    "artist": "Lady Gaga",
-   "year": 2011
-  },
-  {
-   "title": "Boom, Boom, Boom, Boom!!",
-   "artist": "Vengaboys",
-   "year": 1998
+   "year": 2013
   },
   {
    "title": "Born This Way",
@@ -444,19 +479,24 @@
    "year": 2004
   },
   {
+   "title": "Right Round",
+   "artist": "Flo Rida",
+   "year": 2009
+  },
+  {
    "title": "Sorry",
    "artist": "Madonna",
    "year": 2005
   },
   {
-   "title": "Vogue",
-   "artist": "Madonna",
-   "year": 1990
+   "title": "Thriller",
+   "artist": "Michael Jackson",
+   "year": 1982
   },
   {
-   "title": "Right Round",
-   "artist": "Flo Rida",
-   "year": 2009
+   "title": "Boom, Boom, Boom, Boom!!",
+   "artist": "Vengaboys",
+   "year": 1998
   },
   {
    "title": "Digital Love",
@@ -464,14 +504,9 @@
    "year": 2001
   },
   {
-   "title": "강남스타일",
-   "artist": "Psy",
-   "year": 2012
-  },
-  {
-   "title": "Rich Girl",
-   "artist": "Gwen Stefani",
-   "year": 2005
+   "title": "Levels",
+   "artist": "Avicii",
+   "year": 2011
   },
   {
    "title": "The Time (Dirty Bit)",
@@ -479,24 +514,24 @@
    "year": 2010
   },
   {
-   "title": "Levels",
-   "artist": "Avicii",
-   "year": 2011
+   "title": "Breakin' Dishes",
+   "artist": "Rihanna",
+   "year": 2007
   },
   {
-   "title": "The Rhythm of the Night",
-   "artist": "Corona",
-   "year": 1993
+   "title": "Freed from Desire",
+   "artist": "Gala",
+   "year": 1996
   },
   {
-   "title": "Hideaway",
-   "artist": "Kiesza",
-   "year": 2014
+   "title": "Vogue",
+   "artist": "Madonna",
+   "year": 1990
   },
   {
-   "title": "We Can't Stop",
-   "artist": "Miley Cyrus",
-   "year": 2013
+   "title": "강남스타일",
+   "artist": "Psy",
+   "year": 2012
   },
   {
    "title": "Boom Boom Pow",
@@ -504,9 +539,44 @@
    "year": 2009
   },
   {
-   "title": "She Wolf",
-   "artist": "Shakira",
-   "year": 2009
+   "title": "We Can't Stop",
+   "artist": "Miley Cyrus",
+   "year": 2013
+  },
+  {
+   "title": "Hideaway",
+   "artist": "Kiesza",
+   "year": 2014
+  },
+  {
+   "title": "The Rhythm of the Night",
+   "artist": "Corona",
+   "year": 1993
+  },
+  {
+   "title": "Dance Yrself Clean",
+   "artist": "LCD Soundsystem",
+   "year": 2010
+  },
+  {
+   "title": "Rich Girl",
+   "artist": "Gwen Stefani",
+   "year": 2005
+  },
+  {
+   "title": "The Way I Are",
+   "artist": "Timbaland",
+   "year": 2007
+  },
+  {
+   "title": "Sorry for Party Rocking",
+   "artist": "LMFAO",
+   "year": 2011
+  },
+  {
+   "title": "Billie Jean",
+   "artist": "Michael Jackson",
+   "year": 1982
   },
   {
    "title": "Fire Burning",
@@ -519,14 +589,14 @@
    "year": 1998
   },
   {
-   "title": "Freed from Desire",
-   "artist": "Gala",
-   "year": 1996
+   "title": "When I Grow Up",
+   "artist": "The Pussycat Dolls",
+   "year": 2008
   },
   {
-   "title": "The Way I Are",
-   "artist": "Timbaland",
-   "year": 2007
+   "title": "Heads Will Roll (A-Trak Remix)",
+   "artist": "Yeah Yeah Yeahs",
+   "year": 2009
   },
   {
    "title": "Domino",
@@ -539,44 +609,14 @@
    "year": 2016
   },
   {
-   "title": "Rhythm Is a Dancer",
-   "artist": "Snap!",
-   "year": 1992
-  },
-  {
-   "title": "Billie Jean",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "Me & U",
-   "artist": "Cassie",
-   "year": 2006
-  },
-  {
-   "title": "Sorry for Party Rocking",
-   "artist": "LMFAO",
-   "year": 2011
-  },
-  {
-   "title": "Danceteria",
-   "artist": "Madonna",
-   "year": 2026
-  },
-  {
-   "title": "When I Grow Up",
-   "artist": "The Pussycat Dolls",
-   "year": 2008
-  },
-  {
-   "title": "Hey Brother",
-   "artist": "Avicii",
-   "year": 2013
-  },
-  {
    "title": "Dragostea Din Tei",
    "artist": "O-Zone",
    "year": 2004
+  },
+  {
+   "title": "Rhythm Is a Dancer",
+   "artist": "Snap!",
+   "year": 1992
   },
   {
    "title": "Break Your Heart",
@@ -584,24 +624,24 @@
    "year": 2009
   },
   {
-   "title": "I Like It",
-   "artist": "Enrique Iglesias",
-   "year": 2010
-  },
-  {
-   "title": "Hey Ya!",
-   "artist": "OutKast",
-   "year": 2003
-  },
-  {
    "title": "Piece of Me",
    "artist": "Britney Spears",
    "year": 2007
   },
   {
-   "title": "Starstruck",
-   "artist": "Lady Gaga",
-   "year": 2008
+   "title": "I Like It",
+   "artist": "Enrique Iglesias",
+   "year": 2010
+  },
+  {
+   "title": "Me & U",
+   "artist": "Cassie",
+   "year": 2006
+  },
+  {
+   "title": "Around the World",
+   "artist": "Daft Punk",
+   "year": 1996
   },
   {
    "title": "New Rules",
@@ -609,84 +649,39 @@
    "year": 2017
   },
   {
-   "title": "In Your Eyes",
-   "artist": "Kylie Minogue",
-   "year": 2001
-  },
-  {
-   "title": "Summer Love",
-   "artist": "Justin Timberlake",
-   "year": 2006
-  },
-  {
-   "title": "Pound the Alarm",
-   "artist": "Nicki Minaj",
-   "year": 2012
-  },
-  {
-   "title": "Pump Up the Jam",
-   "artist": "Technotronic",
-   "year": 1989
-  },
-  {
-   "title": "Believe",
-   "artist": "Cher",
-   "year": 1998
-  },
-  {
-   "title": "Bailando",
-   "artist": "Paradisio",
-   "year": 1995
-  },
-  {
-   "title": "Music",
-   "artist": "Madonna",
-   "year": 2000
-  },
-  {
-   "title": "Americano",
-   "artist": "Lady Gaga",
-   "year": 2011
-  },
-  {
-   "title": "Alejandro",
-   "artist": "Lady Gaga",
-   "year": 2009
-  },
-  {
-   "title": "Move Your Feet",
-   "artist": "Junior Senior",
-   "year": 2002
-  },
-  {
-   "title": "Glamorous",
-   "artist": "Fergie",
-   "year": 2007
-  },
-  {
-   "title": "Whenever, Wherever",
-   "artist": "Shakira",
-   "year": 2001
-  },
-  {
    "title": "Dance in the Dark",
    "artist": "Lady Gaga",
    "year": 2009
   },
   {
-   "title": "Mr. Vain",
-   "artist": "Culture Beat",
-   "year": 1993
-  },
-  {
-   "title": "Till the World Ends",
-   "artist": "Britney Spears",
-   "year": 2011
-  },
-  {
-   "title": "Ray of Light",
+   "title": "Danceteria",
    "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Slow Down",
+   "artist": "Selena Gomez",
+   "year": 2013
+  },
+  {
+   "title": "Groove Is in the Heart",
+   "artist": "Deee-Lite",
+   "year": 1990
+  },
+  {
+   "title": "Feel It",
+   "artist": "The Tamperer",
    "year": 1998
+  },
+  {
+   "title": "Talk That Talk",
+   "artist": "Rihanna",
+   "year": 2013
+  },
+  {
+   "title": "Hey Brother",
+   "artist": "Avicii",
+   "year": 2013
   },
   {
    "title": "Another Night",
@@ -694,79 +689,79 @@
    "year": 1993
   },
   {
-   "title": "Marry the Night",
-   "artist": "Lady Gaga",
-   "year": 2011
+   "title": "Bailando",
+   "artist": "Paradisio",
+   "year": 1995
   },
   {
-   "title": "Infinity 2008 (Klaas Vocal Edit)",
-   "artist": "Guru Josh Project",
-   "year": 2005
-  },
-  {
-   "title": "Heads Will Roll (A-Trak Remix)",
-   "artist": "Yeah Yeah Yeahs",
-   "year": 2009
-  },
-  {
-   "title": "Get Together",
-   "artist": "Madonna",
-   "year": 2005
-  },
-  {
-   "title": "Trust Me",
-   "artist": "Pandora",
-   "year": 1994
-  },
-  {
-   "title": "Love at First Sight",
-   "artist": "Kylie Minogue",
-   "year": 1988
-  },
-  {
-   "title": "no tears left to cry",
-   "artist": "Ariana Grande",
-   "year": 2018
-  },
-  {
-   "title": "Don't Stop 'Til You Get Enough",
-   "artist": "Michael Jackson",
-   "year": 1979
-  },
-  {
-   "title": "Commander",
-   "artist": "Kelly Rowland",
+   "title": "Bumpy Ride",
+   "artist": "Mohombi",
    "year": 2010
   },
   {
-   "title": "Hot",
-   "artist": "Inna",
+   "title": "In Your Eyes",
+   "artist": "Kylie Minogue",
+   "year": 2001
+  },
+  {
+   "title": "Starstruck",
+   "artist": "Lady Gaga",
    "year": 2008
   },
   {
-   "title": "Clarity",
-   "artist": "Zedd",
-   "year": 2013
+   "title": "Alejandro",
+   "artist": "Lady Gaga",
+   "year": 2009
   },
   {
-   "title": "Thriller",
-   "artist": "Michael Jackson",
-   "year": 1982
+   "title": "Summer Love",
+   "artist": "Justin Timberlake",
+   "year": 2006
   },
   {
-   "title": "Va Va Voom",
+   "title": "Pump Up the Jam",
+   "artist": "Technotronic",
+   "year": 1989
+  },
+  {
+   "title": "Pound the Alarm",
    "artist": "Nicki Minaj",
    "year": 2012
   },
   {
-   "title": "Beautiful, Dirty, Rich",
-   "artist": "Lady Gaga",
-   "year": 2007
+   "title": "Till the World Ends",
+   "artist": "Britney Spears",
+   "year": 2011
   },
   {
-   "title": "...Baby One More Time",
-   "artist": "Britney Spears",
+   "title": "Believe",
+   "artist": "Cher",
    "year": 1998
+  },
+  {
+   "title": "Move Your Feet",
+   "artist": "Junior Senior",
+   "year": 2002
+  },
+  {
+   "title": "Americano",
+   "artist": "Lady Gaga",
+   "year": 2011
+  },
+  {
+   "title": "Whenever, Wherever",
+   "artist": "Shakira",
+   "year": 2001
+  },
+  {
+   "title": "Music",
+   "artist": "Madonna",
+   "year": 2000
+  },
+  {
+   "title": "Marry the Night",
+   "artist": "Lady Gaga",
+   "year": 2011
   },
   {
    "title": "So Happy I Could Die",
@@ -774,9 +769,94 @@
    "year": 2009
   },
   {
-   "title": "Better Left Unsaid",
+   "title": "Blah Blah Blah",
+   "artist": "Ke$ha",
+   "year": 2010
+  },
+  {
+   "title": "Glamorous",
+   "artist": "Fergie",
+   "year": 2007
+  },
+  {
+   "title": "Runaway (U & I)",
+   "artist": "Galantis",
+   "year": 2014
+  },
+  {
+   "title": "Mr. Vain",
+   "artist": "Culture Beat",
+   "year": 1993
+  },
+  {
+   "title": "no tears left to cry",
    "artist": "Ariana Grande",
+   "year": 2018
+  },
+  {
+   "title": "Infinity 2008 (Klaas Vocal Edit)",
+   "artist": "Guru Josh Project",
+   "year": 2005
+  },
+  {
+   "title": "...Baby One More Time",
+   "artist": "Britney Spears",
+   "year": 1998
+  },
+  {
+   "title": "Ray of Light",
+   "artist": "Madonna",
+   "year": 1998
+  },
+  {
+   "title": "Commander",
+   "artist": "Kelly Rowland",
+   "year": 2010
+  },
+  {
+   "title": "Get Together",
+   "artist": "Madonna",
+   "year": 2005
+  },
+  {
+   "title": "Beat It",
+   "artist": "Michael Jackson",
+   "year": 1982
+  },
+  {
+   "title": "Don't Stop 'Til You Get Enough",
+   "artist": "Michael Jackson",
+   "year": 1979
+  },
+  {
+   "title": "Trust Me",
+   "artist": "Pandora",
+   "year": 1994
+  },
+  {
+   "title": "Blood on the Dance Floor",
+   "artist": "Michael Jackson",
+   "year": 1997
+  },
+  {
+   "title": "Clarity",
+   "artist": "Zedd",
    "year": 2013
+  },
+  {
+   "title": "Va Va Voom",
+   "artist": "Nicki Minaj",
+   "year": 2012
+  },
+  {
+   "title": "Love at First Sight",
+   "artist": "Kylie Minogue",
+   "year": 1988
+  },
+  {
+   "title": "Beautiful, Dirty, Rich",
+   "artist": "Lady Gaga",
+   "year": 2007
   },
   {
    "title": "Let It Rock",
@@ -784,8 +864,23 @@
    "year": 2012
   },
   {
-   "title": "Dancing on My Own",
-   "artist": "Robyn",
+   "title": "Aura",
+   "artist": "Lady Gaga",
+   "year": 2013
+  },
+  {
+   "title": "It Feels So Good",
+   "artist": "Sonique",
+   "year": 1999
+  },
+  {
+   "title": "Hot",
+   "artist": "Inna",
+   "year": 2008
+  },
+  {
+   "title": "Hello",
+   "artist": "Martin Solveig",
    "year": 2010
   },
   {
@@ -794,34 +889,9 @@
    "year": 2001
   },
   {
-   "title": "Beat It",
-   "artist": "Michael Jackson",
-   "year": 1982
-  },
-  {
-   "title": "Butterfly",
-   "artist": "SMiLE.dk",
-   "year": 1998
-  },
-  {
-   "title": "Blah Blah Blah",
-   "artist": "Ke$ha",
-   "year": 2010
-  },
-  {
-   "title": "Love Without Words",
-   "artist": "Madonna",
-   "year": 2026
-  },
-  {
-   "title": "Money Honey",
-   "artist": "Lady Gaga",
-   "year": 2008
-  },
-  {
-   "title": "Feel It",
-   "artist": "The Tamperer",
-   "year": 1998
+   "title": "Break Free",
+   "artist": "Ariana Grande",
+   "year": 2017
   },
   {
    "title": "Oops!...I Did It Again",
@@ -829,14 +899,44 @@
    "year": 2000
   },
   {
-   "title": "Media Naranja",
-   "artist": "Fey",
-   "year": 1995
+   "title": "Gentleman",
+   "artist": "Psy",
+   "year": 2013
   },
   {
-   "title": "Heroes (We Could Be)",
-   "artist": "Alesso",
-   "year": 2014
+   "title": "Better Left Unsaid",
+   "artist": "Ariana Grande",
+   "year": 2013
+  },
+  {
+   "title": "Dancing on My Own",
+   "artist": "Robyn",
+   "year": 2010
+  },
+  {
+   "title": "Money Honey",
+   "artist": "Lady Gaga",
+   "year": 2008
+  },
+  {
+   "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+   "artist": "Scatman John",
+   "year": 1994
+  },
+  {
+   "title": "Love Without Words",
+   "artist": "Madonna",
+   "year": 2026
+  },
+  {
+   "title": "Butterfly",
+   "artist": "SMiLE.dk",
+   "year": 1998
+  },
+  {
+   "title": "Destination Calabria",
+   "artist": "Alex Gaudino",
+   "year": 2006
   },
   {
    "title": "Amazing",
@@ -844,94 +944,9 @@
    "year": 2009
   },
   {
-   "title": "Hello",
-   "artist": "Martin Solveig",
-   "year": 2010
-  },
-  {
-   "title": "The Sign",
-   "artist": "Ace of Base",
-   "year": 1993
-  },
-  {
-   "title": "Release Me",
-   "artist": "Agnes",
-   "year": 2008
-  },
-  {
-   "title": "Break Free",
-   "artist": "Ariana Grande",
-   "year": 2017
-  },
-  {
-   "title": "Lovers on the Sun (feat. Sam Martin)",
-   "artist": "David Guetta",
-   "year": 2015
-  },
-  {
-   "title": "Feedback",
-   "artist": "Janet Jackson",
-   "year": 2007
-  },
-  {
-   "title": "Blood on the Dance Floor",
-   "artist": "Michael Jackson",
-   "year": 1997
-  },
-  {
-   "title": "Closer",
-   "artist": "Ne-Yo",
-   "year": 2008
-  },
-  {
-   "title": "Bla Bla Bla",
-   "artist": "Gigi D'Agostino",
-   "year": 1999
-  },
-  {
-   "title": "Teeth",
-   "artist": "5 Seconds of Summer",
-   "year": 2019
-  },
-  {
-   "title": "Long Way 2 Go",
-   "artist": "Cassie",
-   "year": 2006
-  },
-  {
-   "title": "Kids",
-   "artist": "MGMT",
-   "year": 2005
-  },
-  {
-   "title": "Green Light",
-   "artist": "Lorde",
-   "year": 2017
-  },
-  {
-   "title": "BOOMBAYAH",
-   "artist": "BLACKPINK",
-   "year": 2017
-  },
-  {
-   "title": "Free",
-   "artist": "Ultra Naté",
-   "year": 1997
-  },
-  {
-   "title": "Gentleman",
-   "artist": "Psy",
-   "year": 2013
-  },
-  {
-   "title": "Girl Gone Wild",
-   "artist": "Madonna",
-   "year": 2012
-  },
-  {
-   "title": "Jump",
-   "artist": "Madonna",
-   "year": 2005
+   "title": "Media Naranja",
+   "artist": "Fey",
+   "year": 1995
   },
   {
    "title": "Radar",
@@ -939,19 +954,14 @@
    "year": 2007
   },
   {
-   "title": "Run the World (Girls)",
-   "artist": "Beyoncé",
-   "year": 2011
+   "title": "Feedback",
+   "artist": "Janet Jackson",
+   "year": 2007
   },
   {
-   "title": "Rocketeer",
-   "artist": "Far East Movement",
-   "year": 2011
-  },
-  {
-   "title": "I'll Do It",
-   "artist": "Heidi Montag",
-   "year": 2010
+   "title": "Heroes (We Could Be)",
+   "artist": "Alesso",
+   "year": 2014
   },
   {
    "title": "Don't Cha",
@@ -959,48 +969,38 @@
    "year": 2005
   },
   {
-   "title": "100% Pure Love",
-   "artist": "Crystal Waters",
-   "year": 1994
-  },
-  {
-   "title": "Chained to the Rhythm",
-   "artist": "Katy Perry",
-   "year": 2017
-  },
-  {
-   "title": "Dance Yrself Clean",
-   "artist": "LCD Soundsystem",
+   "title": "I'll Do It",
+   "artist": "Heidi Montag",
    "year": 2010
   },
   {
-   "title": "Move Ya Body",
-   "artist": "Nina Sky",
-   "year": 2004
+   "title": "Closer",
+   "artist": "Ne-Yo",
+   "year": 2008
   },
   {
-   "title": "3",
-   "artist": "Britney Spears",
-   "year": 2002
+   "title": "Kids",
+   "artist": "MGMT",
+   "year": 2005
   },
   {
-   "title": "Stronger",
-   "artist": "Kanye West",
-   "year": 2007
+   "title": "Free",
+   "artist": "Ultra Naté",
+   "year": 1997
   },
   {
-   "title": "Lucky",
-   "artist": "Lucky Twice",
-   "year": 2006
+   "title": "BOOMBAYAH",
+   "artist": "BLACKPINK",
+   "year": 2017
   },
   {
-   "title": "The Sweet Escape",
-   "artist": "Gwen Stefani",
-   "year": 2006
+   "title": "Sun Is Up",
+   "artist": "Inna",
+   "year": 2009
   },
   {
-   "title": "9pm (Till I Come)",
-   "artist": "ATB",
+   "title": "Bla Bla Bla",
+   "artist": "Gigi D'Agostino",
    "year": 1999
   }
  ]

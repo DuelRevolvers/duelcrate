@@ -1,7 +1,7 @@
 {
  "name": "Metal",
  "tag": "metal",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "My Own Summer (Shove It)",
@@ -19,24 +19,24 @@
    "year": 2010
   },
   {
-   "title": "Toxicity",
-   "artist": "System of a Down",
-   "year": 2001
-  },
-  {
    "title": "Change (In the House of Flies)",
    "artist": "Deftones",
    "year": 2000
   },
   {
-   "title": "Duality",
-   "artist": "Slipknot",
-   "year": 2004
+   "title": "Toxicity",
+   "artist": "System of a Down",
+   "year": 2001
   },
   {
    "title": "Blind",
    "artist": "Korn",
    "year": 1993
+  },
+  {
+   "title": "Duality",
+   "artist": "Slipknot",
+   "year": 2004
   },
   {
    "title": "Aerials",
@@ -59,19 +59,19 @@
    "year": 2010
   },
   {
-   "title": "Wait and Bleed",
-   "artist": "Slipknot",
-   "year": 1998
-  },
-  {
    "title": "B.Y.O.B.",
    "artist": "System of a Down",
    "year": 2005
   },
   {
-   "title": "Before I Forget",
+   "title": "Wait and Bleed",
    "artist": "Slipknot",
-   "year": 2004
+   "year": 1998
+  },
+  {
+   "title": "Dragula",
+   "artist": "Rob Zombie",
+   "year": 1998
   },
   {
    "title": "Mascara",
@@ -79,12 +79,17 @@
    "year": 1997
   },
   {
+   "title": "Before I Forget",
+   "artist": "Slipknot",
+   "year": 2004
+  },
+  {
    "title": "Bodies",
    "artist": "Drowning Pool",
    "year": 2000
   },
   {
-   "title": "Dragula",
+   "title": "Living Dead Girl",
    "artist": "Rob Zombie",
    "year": 1998
   },
@@ -94,14 +99,14 @@
    "year": 2013
   },
   {
-   "title": "Sugar",
-   "artist": "System of a Down",
-   "year": 1995
-  },
-  {
    "title": "Hail to the King",
    "artist": "Avenged Sevenfold",
    "year": 2013
+  },
+  {
+   "title": "Sugar",
+   "artist": "System of a Down",
+   "year": 1995
   },
   {
    "title": "Custer",
@@ -109,14 +114,19 @@
    "year": 2014
   },
   {
-   "title": "Living Dead Girl",
-   "artist": "Rob Zombie",
-   "year": 1998
-  },
-  {
    "title": "Around the Fur",
    "artist": "Deftones",
    "year": 1997
+  },
+  {
+   "title": "Xerces",
+   "artist": "Deftones",
+   "year": 2006
+  },
+  {
+   "title": "Beauty School",
+   "artist": "Deftones",
+   "year": 2010
   },
   {
    "title": "Nightmare",
@@ -129,9 +139,9 @@
    "year": 2007
   },
   {
-   "title": "Xerces",
-   "artist": "Deftones",
-   "year": 2006
+   "title": "Snuff",
+   "artist": "Slipknot",
+   "year": 2008
   },
   {
    "title": "Sonne",
@@ -139,24 +149,24 @@
    "year": 2001
   },
   {
-   "title": "Beauty School",
-   "artist": "Deftones",
-   "year": 2010
-  },
-  {
    "title": "Eyeless",
    "artist": "Slipknot",
    "year": 1999
   },
   {
-   "title": "Prison Song",
-   "artist": "System of a Down",
-   "year": 2001
+   "title": "I Don't Wanna Be Me",
+   "artist": "Type O Negative",
+   "year": 2003
   },
   {
    "title": "Bat Country",
    "artist": "Avenged Sevenfold",
    "year": 2005
+  },
+  {
+   "title": "Prison Song",
+   "artist": "System of a Down",
+   "year": 2001
   },
   {
    "title": "I-E-A-I-A-I-O",
@@ -174,14 +184,9 @@
    "year": 1989
   },
   {
-   "title": "Be Quiet and Drive (Far Away)",
-   "artist": "Deftones",
-   "year": 1997
-  },
-  {
-   "title": "Tears Don't Fall",
-   "artist": "Bullet for My Valentine",
-   "year": 2005
+   "title": "Walk",
+   "artist": "Pantera",
+   "year": 1992
   },
   {
    "title": "Down With the Sickness",
@@ -189,9 +194,9 @@
    "year": 1998
   },
   {
-   "title": "Master of Puppets",
-   "artist": "Metallica",
-   "year": 1989
+   "title": "Tears Don't Fall",
+   "artist": "Bullet for My Valentine",
+   "year": 2005
   },
   {
    "title": "Gimme Chocolate!!",
@@ -199,9 +204,19 @@
    "year": 2015
   },
   {
-   "title": "Borderline",
-   "artist": "Tame Impala",
-   "year": 2019
+   "title": "Be Quiet and Drive (Far Away)",
+   "artist": "Deftones",
+   "year": 1997
+  },
+  {
+   "title": "ATWA",
+   "artist": "System of a Down",
+   "year": 2001
+  },
+  {
+   "title": "Master of Puppets",
+   "artist": "Metallica",
+   "year": 1989
   },
   {
    "title": "Hypnotize",
@@ -214,19 +229,9 @@
    "year": 2005
   },
   {
-   "title": "Deer Dance",
-   "artist": "System of a Down",
-   "year": 2001
-  },
-  {
-   "title": "Fuel",
-   "artist": "Metallica",
-   "year": 1997
-  },
-  {
-   "title": "Brackish",
-   "artist": "Kittie",
-   "year": 1999
+   "title": "Borderline",
+   "artist": "Tame Impala",
+   "year": 2019
   },
   {
    "title": "Knife Prty",
@@ -234,9 +239,29 @@
    "year": 2000
   },
   {
+   "title": "Stricken",
+   "artist": "Disturbed",
+   "year": 2005
+  },
+  {
+   "title": "Brackish",
+   "artist": "Kittie",
+   "year": 1999
+  },
+  {
+   "title": "Deer Dance",
+   "artist": "System of a Down",
+   "year": 2001
+  },
+  {
    "title": "Got the Life",
    "artist": "Korn",
    "year": 1998
+  },
+  {
+   "title": "Fuel",
+   "artist": "Metallica",
+   "year": 1997
   },
   {
    "title": "(Sic)",
@@ -254,9 +279,19 @@
    "year": 1998
   },
   {
+   "title": "Twisted Transistor",
+   "artist": "Korn",
+   "year": 2005
+  },
+  {
    "title": "The Devil in I",
    "artist": "Slipknot",
    "year": 2014
+  },
+  {
+   "title": "Falling Away From Me",
+   "artist": "Korn",
+   "year": 1999
   },
   {
    "title": "Denial",
@@ -264,19 +299,24 @@
    "year": 1999
   },
   {
+   "title": "Critical Acclaim",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
    "title": "Danger Line",
    "artist": "Avenged Sevenfold",
    "year": 2010
   },
   {
-   "title": "Twisted Transistor",
-   "artist": "Korn",
-   "year": 2005
+   "title": "People = Shit",
+   "artist": "Slipknot",
+   "year": 2001
   },
   {
-   "title": "Falling Away From Me",
+   "title": "Y'all Want A Single",
    "artist": "Korn",
-   "year": 1999
+   "year": 2003
   },
   {
    "title": "Chic 'N' Stu",
@@ -289,9 +329,19 @@
    "year": 2005
   },
   {
+   "title": "Bored",
+   "artist": "Deftones",
+   "year": 1995
+  },
+  {
    "title": "Vermilion",
    "artist": "Slipknot",
    "year": 2004
+  },
+  {
+   "title": "Love You to Death",
+   "artist": "Type O Negative",
+   "year": 1996
   },
   {
    "title": "Vicinity of Obscenity",
@@ -299,24 +349,24 @@
    "year": 2005
   },
   {
-   "title": "Bored",
-   "artist": "Deftones",
-   "year": 1995
-  },
-  {
    "title": "Cigaro",
    "artist": "System of a Down",
    "year": 2005
   },
   {
-   "title": "Y'all Want A Single",
-   "artist": "Korn",
-   "year": 2003
+   "title": "Spiders",
+   "artist": "System of a Down",
+   "year": 1998
   },
   {
    "title": "Du hast",
    "artist": "Rammstein",
    "year": 1997
+  },
+  {
+   "title": "Forest",
+   "artist": "System of a Down",
+   "year": 2001
   },
   {
    "title": "Cherry Waves",
@@ -329,19 +379,24 @@
    "year": 2003
   },
   {
-   "title": "Forest",
-   "artist": "System of a Down",
-   "year": 2001
-  },
-  {
-   "title": "Spiders",
-   "artist": "System of a Down",
-   "year": 1998
-  },
-  {
    "title": "Royal",
    "artist": "Deftones",
    "year": 2010
+  },
+  {
+   "title": "RX Queen",
+   "artist": "Deftones",
+   "year": 2000
+  },
+  {
+   "title": "Welcome to the Family",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
+  },
+  {
+   "title": "Innervision",
+   "artist": "System of a Down",
+   "year": 2001
   },
   {
    "title": "Beast and the Harlot",
@@ -349,12 +404,12 @@
    "year": 2005
   },
   {
-   "title": "Buried Alive",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
+   "title": "Nero Forte",
+   "artist": "Slipknot",
+   "year": 2019
   },
   {
-   "title": "Welcome to the Family",
+   "title": "Buried Alive",
    "artist": "Avenged Sevenfold",
    "year": 2010
   },
@@ -364,24 +419,9 @@
    "year": 2014
   },
   {
-   "title": "Innervision",
-   "artist": "System of a Down",
-   "year": 2001
-  },
-  {
-   "title": "Love You to Death",
-   "artist": "Type O Negative",
-   "year": 1996
-  },
-  {
    "title": "Dead Memories",
    "artist": "Slipknot",
    "year": 2008
-  },
-  {
-   "title": "This Place Is Death",
-   "artist": "Deftones",
-   "year": 2010
   },
   {
    "title": "Gunslinger",
@@ -389,29 +429,9 @@
    "year": 2007
   },
   {
-   "title": "RX Queen",
-   "artist": "Deftones",
-   "year": 2000
-  },
-  {
-   "title": "You've Seen the Butcher",
+   "title": "This Place Is Death",
    "artist": "Deftones",
    "year": 2010
-  },
-  {
-   "title": "Rein Raus",
-   "artist": "Rammstein",
-   "year": 2001
-  },
-  {
-   "title": "Sad Statue",
-   "artist": "System of a Down",
-   "year": 2005
-  },
-  {
-   "title": "Bounce",
-   "artist": "System of a Down",
-   "year": 2001
   },
   {
    "title": "Vermilion, Pt. 2",
@@ -419,14 +439,9 @@
    "year": 2004
   },
   {
-   "title": "A Little Piece of Heaven",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "Needles",
-   "artist": "System of a Down",
-   "year": 2001
+   "title": "Kimdracula",
+   "artist": "Deftones",
+   "year": 2006
   },
   {
    "title": "Dai the Flu",
@@ -434,44 +449,44 @@
    "year": 1997
   },
   {
-   "title": "Kimdracula",
+   "title": "You've Seen the Butcher",
    "artist": "Deftones",
-   "year": 2006
+   "year": 2010
   },
   {
-   "title": "Sulfur",
+   "title": "Sad Statue",
+   "artist": "System of a Down",
+   "year": 2005
+  },
+  {
+   "title": "Surfacing",
    "artist": "Slipknot",
-   "year": 2008
+   "year": 1999
   },
   {
-   "title": "Suite-Pee",
-   "artist": "System of a Down",
-   "year": 1995
+   "title": "Rein Raus",
+   "artist": "Rammstein",
+   "year": 2001
   },
   {
-   "title": "This Means War",
+   "title": "A Little Piece of Heaven",
    "artist": "Avenged Sevenfold",
-   "year": 2013
+   "year": 2007
   },
   {
-   "title": "Hole in the Earth",
-   "artist": "Deftones",
-   "year": 2006
-  },
-  {
-   "title": "Revenga",
+   "title": "Bounce",
    "artist": "System of a Down",
-   "year": 2005
+   "year": 2001
   },
   {
-   "title": "Roots Bloody Roots",
-   "artist": "Sepultura",
-   "year": 1996
+   "title": "Your Betrayal",
+   "artist": "Bullet for My Valentine",
+   "year": 2010
   },
   {
-   "title": "M.I.A.",
-   "artist": "Avenged Sevenfold",
-   "year": 2005
+   "title": "Needles",
+   "artist": "System of a Down",
+   "year": 2001
   },
   {
    "title": "Superbeast",
@@ -479,9 +494,19 @@
    "year": 1998
   },
   {
-   "title": "Killpop",
-   "artist": "Slipknot",
-   "year": 2014
+   "title": "Hole in the Earth",
+   "artist": "Deftones",
+   "year": 2006
+  },
+  {
+   "title": "Suite-Pee",
+   "artist": "System of a Down",
+   "year": 1995
+  },
+  {
+   "title": "Roots Bloody Roots",
+   "artist": "Sepultura",
+   "year": 1996
   },
   {
    "title": "Killing in the Name",
@@ -489,39 +514,34 @@
    "year": 1991
   },
   {
-   "title": "Save Me",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
+   "title": "Killpop",
+   "artist": "Slipknot",
+   "year": 2014
   },
   {
-   "title": "Rocket Skates",
-   "artist": "Deftones",
-   "year": 2010
+   "title": "Sulfur",
+   "artist": "Slipknot",
+   "year": 2008
   },
   {
-   "title": "Scream",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "Lost in Hollywood",
+   "title": "Revenga",
    "artist": "System of a Down",
    "year": 2005
   },
   {
-   "title": "Here to Stay",
-   "artist": "Korn",
-   "year": 2002
+   "title": "This Means War",
+   "artist": "Avenged Sevenfold",
+   "year": 2013
   },
   {
-   "title": "Hollow",
-   "artist": "Pantera",
-   "year": 1992
+   "title": "Coming Home",
+   "artist": "Avenged Sevenfold",
+   "year": 2013
   },
   {
-   "title": "Digital Bath",
-   "artist": "Deftones",
-   "year": 2000
+   "title": "Break Stuff",
+   "artist": "Limp Bizkit",
+   "year": 1999
   },
   {
    "title": "Megitsune",
@@ -529,9 +549,9 @@
    "year": 2015
   },
   {
-   "title": "Soldier Side",
-   "artist": "System of a Down",
-   "year": 2005
+   "title": "Digital Bath",
+   "artist": "Deftones",
+   "year": 2000
   },
   {
    "title": "Check My Brain",
@@ -539,14 +559,39 @@
    "year": 2009
   },
   {
+   "title": "War?",
+   "artist": "System of a Down",
+   "year": 1996
+  },
+  {
+   "title": "Lost in Hollywood",
+   "artist": "System of a Down",
+   "year": 2005
+  },
+  {
+   "title": "M.I.A.",
+   "artist": "Avenged Sevenfold",
+   "year": 2005
+  },
+  {
+   "title": "Scream",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
+   "title": "Here to Stay",
+   "artist": "Korn",
+   "year": 2002
+  },
+  {
+   "title": "Save Me",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
+  },
+  {
    "title": "The Heretic Anthem",
    "artist": "Slipknot",
    "year": 1997
-  },
-  {
-   "title": "Left Behind",
-   "artist": "Slipknot",
-   "year": 2000
   },
   {
    "title": "Shame",
@@ -554,19 +599,24 @@
    "year": 2001
   },
   {
+   "title": "Rocket Skates",
+   "artist": "Deftones",
+   "year": 2010
+  },
+  {
    "title": "Blinded in Chains",
    "artist": "Avenged Sevenfold",
    "year": 2005
   },
   {
-   "title": "Trashed and Scattered",
-   "artist": "Avenged Sevenfold",
-   "year": 2005
+   "title": "Left Behind",
+   "artist": "Slipknot",
+   "year": 2000
   },
   {
-   "title": "Jet Pilot",
-   "artist": "System of a Down",
-   "year": 2001
+   "title": "Hollow",
+   "artist": "Pantera",
+   "year": 1992
   },
   {
    "title": "Cemetery Gates",
@@ -574,24 +624,14 @@
    "year": 1990
   },
   {
-   "title": "I Stand Alone",
-   "artist": "Godsmack",
-   "year": 2002
-  },
-  {
-   "title": "The Vengeful One",
-   "artist": "Disturbed",
-   "year": 2015
-  },
-  {
-   "title": "Pink Maggit",
-   "artist": "Deftones",
-   "year": 2000
-  },
-  {
    "title": "Unbound (The Wild Ride)",
    "artist": "Avenged Sevenfold",
    "year": 2007
+  },
+  {
+   "title": "Soldier Side",
+   "artist": "System of a Down",
+   "year": 2005
   },
   {
    "title": "Battle-Axe",
@@ -599,19 +639,69 @@
    "year": 2003
   },
   {
+   "title": "Trashed and Scattered",
+   "artist": "Avenged Sevenfold",
+   "year": 2005
+  },
+  {
+   "title": "This Love",
+   "artist": "Pantera",
+   "year": 1992
+  },
+  {
+   "title": "Psycho",
+   "artist": "System of a Down",
+   "year": 2001
+  },
+  {
+   "title": "Natural Born Killer",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
+  },
+  {
+   "title": "Jet Pilot",
+   "artist": "System of a Down",
+   "year": 2001
+  },
+  {
+   "title": "Pink Maggit",
+   "artist": "Deftones",
+   "year": 2000
+  },
+  {
+   "title": "I Stand Alone",
+   "artist": "Godsmack",
+   "year": 2002
+  },
+  {
    "title": "Seize the Day",
    "artist": "Avenged Sevenfold",
    "year": 2005
   },
   {
-   "title": "Holy Mountains",
-   "artist": "System of a Down",
-   "year": 2005
+   "title": "The End of Heartache",
+   "artist": "Killswitch Engage",
+   "year": 2004
   },
   {
-   "title": "Decadence",
+   "title": "The Vengeful One",
    "artist": "Disturbed",
-   "year": 2005
+   "year": 2015
+  },
+  {
+   "title": "Victim",
+   "artist": "Avenged Sevenfold",
+   "year": 2010
+  },
+  {
+   "title": "Acid Rain",
+   "artist": "Avenged Sevenfold",
+   "year": 2013
+  },
+  {
+   "title": "The Beautiful People",
+   "artist": "Marilyn Manson",
+   "year": 1996
   },
   {
    "title": "Enter Sandman",
@@ -624,29 +714,9 @@
    "year": 2001
   },
   {
-   "title": "Betrayed",
-   "artist": "Avenged Sevenfold",
+   "title": "Holy Mountains",
+   "artist": "System of a Down",
    "year": 2005
-  },
-  {
-   "title": "Victim",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
-  },
-  {
-   "title": "This Love",
-   "artist": "Pantera",
-   "year": 1992
-  },
-  {
-   "title": "Prince",
-   "artist": "Deftones",
-   "year": 2010
-  },
-  {
-   "title": "My Curse",
-   "artist": "Killswitch Engage",
-   "year": 2006
   },
   {
    "title": "Know",
@@ -654,9 +724,24 @@
    "year": 1996
   },
   {
-   "title": "The Beautiful People",
-   "artist": "Marilyn Manson",
-   "year": 1996
+   "title": "Betrayed",
+   "artist": "Avenged Sevenfold",
+   "year": 2005
+  },
+  {
+   "title": "Prince",
+   "artist": "Deftones",
+   "year": 2010
+  },
+  {
+   "title": "Unholy Confessions",
+   "artist": "Avenged Sevenfold",
+   "year": 2003
+  },
+  {
+   "title": "Thunder Kiss '65",
+   "artist": "White Zombie",
+   "year": 1992
   },
   {
    "title": "My Plague",
@@ -669,12 +754,7 @@
    "year": 1993
   },
   {
-   "title": "Beware",
-   "artist": "Deftones",
-   "year": 2006
-  },
-  {
-   "title": "God Hates Us",
+   "title": "Tonight the World Dies",
    "artist": "Avenged Sevenfold",
    "year": 2010
   },
@@ -684,34 +764,19 @@
    "year": 2001
   },
   {
-   "title": "Fuck the System",
-   "artist": "System of a Down",
-   "year": 2001
+   "title": "My Curse",
+   "artist": "Killswitch Engage",
+   "year": 2006
   },
   {
-   "title": "Tonight the World Dies",
+   "title": "Decadence",
+   "artist": "Disturbed",
+   "year": 2005
+  },
+  {
+   "title": "God Hates Us",
    "artist": "Avenged Sevenfold",
    "year": 2010
-  },
-  {
-   "title": "Purity",
-   "artist": "Slipknot",
-   "year": 1999
-  },
-  {
-   "title": "Get Off (You Can Eat a Dick)",
-   "artist": "Kittie",
-   "year": 1999
-  },
-  {
-   "title": "Root",
-   "artist": "Deftones",
-   "year": 1992
-  },
-  {
-   "title": "Engel",
-   "artist": "Rammstein",
-   "year": 1997
   },
   {
    "title": "Science",
@@ -724,9 +789,39 @@
    "year": 2007
   },
   {
-   "title": "X",
+   "title": "Whiskey in the Jar",
+   "artist": "Metallica",
+   "year": 1998
+  },
+  {
+   "title": "Engel",
+   "artist": "Rammstein",
+   "year": 1997
+  },
+  {
+   "title": "Beware",
+   "artist": "Deftones",
+   "year": 2006
+  },
+  {
+   "title": "Get Off (You Can Eat a Dick)",
+   "artist": "Kittie",
+   "year": 1999
+  },
+  {
+   "title": "Fuck the System",
    "artist": "System of a Down",
-   "year": 2000
+   "year": 2001
+  },
+  {
+   "title": "Purity",
+   "artist": "Slipknot",
+   "year": 1999
+  },
+  {
+   "title": "Root",
+   "artist": "Deftones",
+   "year": 1992
   },
   {
    "title": "Diamond Eyes",
@@ -734,19 +829,9 @@
    "year": 2010
   },
   {
-   "title": "Thunder Kiss '65",
-   "artist": "White Zombie",
-   "year": 1992
-  },
-  {
-   "title": "Whiskey in the Jar",
-   "artist": "Metallica",
-   "year": 1998
-  },
-  {
-   "title": "Bad Company",
-   "artist": "Five Finger Death Punch",
-   "year": 2009
+   "title": "Nüguns",
+   "artist": "System of a Down",
+   "year": 2002
   },
   {
    "title": "Street Carp",
@@ -754,9 +839,24 @@
    "year": 2000
   },
   {
-   "title": "This Fire",
-   "artist": "Killswitch Engage",
-   "year": 2006
+   "title": "Twist",
+   "artist": "Korn",
+   "year": 1996
+  },
+  {
+   "title": "Bad Company",
+   "artist": "Five Finger Death Punch",
+   "year": 2009
+  },
+  {
+   "title": "X",
+   "artist": "System of a Down",
+   "year": 2000
+  },
+  {
+   "title": "Feel So Numb",
+   "artist": "Rob Zombie",
+   "year": 2001
   },
   {
    "title": "The Wicked End",
@@ -769,24 +869,14 @@
    "year": 2005
   },
   {
-   "title": "Twist",
-   "artist": "Korn",
-   "year": 1996
-  },
-  {
-   "title": "Mr. Jack",
-   "artist": "System of a Down",
-   "year": 2002
-  },
-  {
-   "title": "Burn It Down",
-   "artist": "Avenged Sevenfold",
-   "year": 2005
-  },
-  {
    "title": "Blood and Thunder",
    "artist": "Mastodon",
    "year": 2004
+  },
+  {
+   "title": "This Fire",
+   "artist": "Killswitch Engage",
+   "year": 2006
   },
   {
    "title": "Awake",
@@ -794,19 +884,9 @@
    "year": 2000
   },
   {
-   "title": "The Day That Never Comes",
-   "artist": "Metallica",
-   "year": 2007
-  },
-  {
-   "title": "CMND/CTRL",
-   "artist": "Deftones",
-   "year": 2010
-  },
-  {
-   "title": "Feel So Numb",
-   "artist": "Rob Zombie",
-   "year": 2001
+   "title": "Liberate",
+   "artist": "Slipknot",
+   "year": 1999
   },
   {
    "title": "Darts",
@@ -814,19 +894,19 @@
    "year": 1997
   },
   {
-   "title": "Liberate",
-   "artist": "Slipknot",
-   "year": 1999
+   "title": "CMND/CTRL",
+   "artist": "Deftones",
+   "year": 2010
   },
   {
-   "title": "Mein Herz brennt",
-   "artist": "Rammstein",
-   "year": 2001
+   "title": "No More Tears",
+   "artist": "Ozzy Osbourne",
+   "year": 1991
   },
   {
-   "title": "Spit",
-   "artist": "Kittie",
-   "year": 1999
+   "title": "Mr. Jack",
+   "artist": "System of a Down",
+   "year": 2002
   },
   {
    "title": "This Cocaine Makes Me Feel Like I'm On This Song",
@@ -834,18 +914,53 @@
    "year": 2005
   },
   {
+   "title": "Dig",
+   "artist": "Mudvayne",
+   "year": 2000
+  },
+  {
+   "title": "Spit",
+   "artist": "Kittie",
+   "year": 1999
+  },
+  {
+   "title": "Burn It Down",
+   "artist": "Avenged Sevenfold",
+   "year": 2005
+  },
+  {
+   "title": "Brompton Cocktail",
+   "artist": "Avenged Sevenfold",
+   "year": 2007
+  },
+  {
+   "title": "Mein Herz brennt",
+   "artist": "Rammstein",
+   "year": 2001
+  },
+  {
+   "title": "The Day That Never Comes",
+   "artist": "Metallica",
+   "year": 2007
+  },
+  {
+   "title": "Tear Away",
+   "artist": "Drowning Pool",
+   "year": 2000
+  },
+  {
    "title": "Push It",
    "artist": "Static-X",
    "year": 1997
   },
   {
-   "title": "Soil",
-   "artist": "System of a Down",
-   "year": 1996
+   "title": "Engine No. 9",
+   "artist": "Deftones",
+   "year": 1992
   },
   {
-   "title": "Sidewinder",
-   "artist": "Avenged Sevenfold",
+   "title": "Coming Undone",
+   "artist": "Korn",
    "year": 2005
   },
   {
@@ -854,94 +969,9 @@
    "year": 2008
   },
   {
-   "title": "Dig",
-   "artist": "Mudvayne",
-   "year": 2000
-  },
-  {
-   "title": "Nothing Else Matters",
-   "artist": "Metallica",
-   "year": 1992
-  },
-  {
-   "title": "Brompton Cocktail",
-   "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "KARATE",
-   "artist": "BABYMETAL",
-   "year": 2016
-  },
-  {
-   "title": "Engine No. 9",
-   "artist": "Deftones",
-   "year": 1992
-  },
-  {
-   "title": "Strength of the World",
-   "artist": "Avenged Sevenfold",
-   "year": 2005
-  },
-  {
-   "title": "Headbangeeeeerrrrr!!!!!",
-   "artist": "BABYMETAL",
-   "year": 2015
-  },
-  {
    "title": "I Won't See You Tonight Part 2",
    "artist": "Avenged Sevenfold",
    "year": 2003
-  },
-  {
-   "title": "No More Tears",
-   "artist": "Ozzy Osbourne",
-   "year": 1991
-  },
-  {
-   "title": "Tear Away",
-   "artist": "Drowning Pool",
-   "year": 2000
-  },
-  {
-   "title": "Battery",
-   "artist": "Metallica",
-   "year": 1992
-  },
-  {
-   "title": "Ich will",
-   "artist": "Rammstein",
-   "year": 2001
-  },
-  {
-   "title": "Forty Six & 2",
-   "artist": "Tool",
-   "year": 1996
-  },
-  {
-   "title": "Coming Undone",
-   "artist": "Korn",
-   "year": 2005
-  },
-  {
-   "title": "Attack",
-   "artist": "System of a Down",
-   "year": 2005
-  },
-  {
-   "title": "Tentative",
-   "artist": "System of a Down",
-   "year": 2005
-  },
-  {
-   "title": "Fiction",
-   "artist": "Avenged Sevenfold",
-   "year": 2010
-  },
-  {
-   "title": "Angel of Death",
-   "artist": "Slayer",
-   "year": 1986
   },
   {
    "title": "She's Like Heroin",
@@ -949,24 +979,19 @@
    "year": 2005
   },
   {
-   "title": "Boom!",
-   "artist": "System of a Down",
-   "year": 2002
+   "title": "Black No. 1 (Little Miss Scare-All)",
+   "artist": "Type O Negative",
+   "year": 1993
   },
   {
-   "title": "Almost Easy",
+   "title": "All These Things I Hate (Revolve Around Me)",
+   "artist": "Bullet for My Valentine",
+   "year": 2005
+  },
+  {
+   "title": "Sidewinder",
    "artist": "Avenged Sevenfold",
-   "year": 2007
-  },
-  {
-   "title": "Black Gives Way to Blue",
-   "artist": "Alice in Chains",
-   "year": 2009
-  },
-  {
-   "title": "Inside the Fire",
-   "artist": "Disturbed",
-   "year": 2008
+   "year": 2005
   },
   {
    "title": "Crazy Train",
@@ -974,34 +999,9 @@
    "year": 1980
   },
   {
-   "title": "Pictures",
+   "title": "Soil",
    "artist": "System of a Down",
-   "year": 2002
-  },
-  {
-   "title": "Prosthetics",
-   "artist": "Slipknot",
-   "year": 1997
-  },
-  {
-   "title": "Kill Rock 'n Roll",
-   "artist": "System of a Down",
-   "year": 2005
-  },
-  {
-   "title": "Snot",
-   "artist": "Snot",
-   "year": 1997
-  },
-  {
-   "title": "The Blister Exists",
-   "artist": "Slipknot",
-   "year": 1999
-  },
-  {
-   "title": "Indestructible",
-   "artist": "Disturbed",
-   "year": 2008
+   "year": 1996
   }
  ]
 }

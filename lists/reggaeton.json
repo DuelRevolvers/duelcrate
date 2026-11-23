@@ -1,7 +1,7 @@
 {
  "name": "Reggaeton",
  "tag": "reggaeton",
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "songs": [
   {
    "title": "Rakata",
@@ -27,6 +27,11 @@
    "title": "ANTIFRAGILE",
    "artist": "LE SSERAFIM",
    "year": 2022
+  },
+  {
+   "title": "EoO",
+   "artist": "Bad Bunny",
+   "year": 2025
   },
   {
    "title": "Rompe",
@@ -59,9 +64,9 @@
    "year": 2010
   },
   {
-   "title": "Downtown",
-   "artist": "Anitta",
-   "year": 2017
+   "title": "Dale Don Dale",
+   "artist": "Don Omar",
+   "year": 2003
   },
   {
    "title": "Danza Kuduro",
@@ -69,24 +74,14 @@
    "year": 2010
   },
   {
-   "title": "Dale Don Dale",
-   "artist": "Don Omar",
-   "year": 2003
-  },
-  {
-   "title": "Sensacion Del Bloque",
-   "artist": "De La Ghetto",
-   "year": 2006
-  },
-  {
-   "title": "Moscow Mule",
-   "artist": "Bad Bunny",
-   "year": 2022
-  },
-  {
    "title": "Punto Y Aparte",
    "artist": "Tego Calderón",
    "year": 2004
+  },
+  {
+   "title": "Downtown",
+   "artist": "Anitta",
+   "year": 2017
   },
   {
    "title": "Abusadora",
@@ -94,19 +89,24 @@
    "year": 2009
   },
   {
-   "title": "VOY A LLeVARTE PA PR",
-   "artist": "Bad Bunny",
-   "year": 2025
-  },
-  {
    "title": "Besos Mojados",
    "artist": "Wisin & Yandel",
    "year": 2009
   },
   {
-   "title": "VeLDÁ",
+   "title": "Moscow Mule",
    "artist": "Bad Bunny",
-   "year": 2025
+   "year": 2022
+  },
+  {
+   "title": "Sensacion Del Bloque",
+   "artist": "De La Ghetto",
+   "year": 2006
+  },
+  {
+   "title": "Sexy Movimiento",
+   "artist": "Wisin & Yandel",
+   "year": 2008
   },
   {
    "title": "Pam Pam",
@@ -114,9 +114,24 @@
    "year": 2006
   },
   {
+   "title": "VOY A LLeVARTE PA PR",
+   "artist": "Bad Bunny",
+   "year": 2025
+  },
+  {
+   "title": "VeLDÁ",
+   "artist": "Bad Bunny",
+   "year": 2025
+  },
+  {
    "title": "No Me Dejes Solo",
    "artist": "Daddy Yankee",
    "year": 2005
+  },
+  {
+   "title": "Pobre Diabla",
+   "artist": "Don Omar",
+   "year": 2003
   },
   {
    "title": "Llamado De Emergencia",
@@ -154,49 +169,19 @@
    "year": 2022
   },
   {
-   "title": "Ojitos Chiquitos",
-   "artist": "Don Omar",
-   "year": 2006
-  },
-  {
-   "title": "Oye Mi Canto",
-   "artist": "N.O.R.E.",
-   "year": 2004
-  },
-  {
-   "title": "Sexy Robotica",
-   "artist": "Don Omar",
-   "year": 2009
-  },
-  {
    "title": "Noche De Entierro",
    "artist": "Luny Tunes",
    "year": 2007
   },
   {
-   "title": "Hasta Abajo",
+   "title": "Ojitos Chiquitos",
    "artist": "Don Omar",
-   "year": 2009
+   "year": 2006
   },
   {
-   "title": "La Botella",
-   "artist": "Mach & Daddy",
-   "year": 2005
-  },
-  {
-   "title": "KLOuFRENS",
+   "title": "NUEVAYoL",
    "artist": "Bad Bunny",
    "year": 2025
-  },
-  {
-   "title": "Con Altura",
-   "artist": "ROSALÍA",
-   "year": 2019
-  },
-  {
-   "title": "Es un Secreto",
-   "artist": "Plan B",
-   "year": 2010
   },
   {
    "title": "The Anthem",
@@ -204,9 +189,64 @@
    "year": 2007
   },
   {
+   "title": "Oye Mi Canto",
+   "artist": "N.O.R.E.",
+   "year": 2004
+  },
+  {
+   "title": "La Botella",
+   "artist": "Mach & Daddy",
+   "year": 2005
+  },
+  {
+   "title": "Sexy Robotica",
+   "artist": "Don Omar",
+   "year": 2009
+  },
+  {
+   "title": "Hasta Abajo",
+   "artist": "Don Omar",
+   "year": 2009
+  },
+  {
+   "title": "KLOuFRENS",
+   "artist": "Bad Bunny",
+   "year": 2025
+  },
+  {
+   "title": "5 Letras",
+   "artist": "Alexis y Fido",
+   "year": 2008
+  },
+  {
+   "title": "Es un Secreto",
+   "artist": "Plan B",
+   "year": 2010
+  },
+  {
+   "title": "Con Altura",
+   "artist": "ROSALÍA",
+   "year": 2019
+  },
+  {
+   "title": "Quiero Saber",
+   "artist": "Ivy Queen",
+   "year": 2002
+  },
+  {
    "title": "Impacto",
    "artist": "Daddy Yankee",
    "year": 2007
+  },
+  {
+   "title": "Ay Vamos",
+   "artist": "J Balvin",
+   "year": 2014
+  },
+  {
+   "title": "Callaita",
+   "artist": "Bad Bunny",
+   "year": 2019
   },
   {
    "title": "Quizas",
@@ -219,24 +259,9 @@
    "year": 2017
   },
   {
-   "title": "Callaita",
-   "artist": "Bad Bunny",
-   "year": 2019
-  },
-  {
    "title": "BIZCOCHITO",
    "artist": "ROSALÍA",
    "year": 2022
-  },
-  {
-   "title": "Ay Vamos",
-   "artist": "J Balvin",
-   "year": 2014
-  },
-  {
-   "title": "5 Letras",
-   "artist": "Alexis y Fido",
-   "year": 2008
   },
   {
    "title": "Ojitos Lindos",
@@ -254,29 +279,19 @@
    "year": 2006
   },
   {
-   "title": "Estoy Enamorado",
-   "artist": "Wisin & Yandel",
-   "year": 2010
-  },
-  {
    "title": "Party",
    "artist": "Bad Bunny",
    "year": 2026
   },
   {
-   "title": "Dale Caliente",
-   "artist": "Daddy Yankee",
-   "year": 2004
+   "title": "Yo Perreo Sola",
+   "artist": "Bad Bunny",
+   "year": 2020
   },
   {
    "title": "Perdóname",
    "artist": "La Factoria",
    "year": 2006
-  },
-  {
-   "title": "Yo Perreo Sola",
-   "artist": "Bad Bunny",
-   "year": 2020
   },
   {
    "title": "PROVENZA",
@@ -289,6 +304,16 @@
    "year": 2003
   },
   {
+   "title": "Ayer La Vi",
+   "artist": "Don Omar",
+   "year": 2006
+  },
+  {
+   "title": "Estoy Enamorado",
+   "artist": "Wisin & Yandel",
+   "year": 2010
+  },
+  {
    "title": "Felices los 4",
    "artist": "Maluma",
    "year": 2017
@@ -299,14 +324,24 @@
    "year": 2015
   },
   {
-   "title": "Ayer La Vi",
-   "artist": "Don Omar",
-   "year": 2006
+   "title": "CHICKEN TERIYAKI",
+   "artist": "ROSALÍA",
+   "year": 2022
+  },
+  {
+   "title": "Dale Caliente",
+   "artist": "Daddy Yankee",
+   "year": 2004
   },
   {
    "title": "Vete",
    "artist": "Bad Bunny",
    "year": 2019
+  },
+  {
+   "title": "Yo Quiero Bailar",
+   "artist": "Ivy Queen",
+   "year": 2002
   },
   {
    "title": "VOLVER",
@@ -319,19 +354,9 @@
    "year": 2024
   },
   {
-   "title": "Mis Ojos Lloran Por Ti",
-   "artist": "Big Boy",
-   "year": 1996
-  },
-  {
    "title": "TQG",
    "artist": "KAROL G",
    "year": 2023
-  },
-  {
-   "title": "Con Calma",
-   "artist": "Daddy Yankee",
-   "year": 2020
   },
   {
    "title": "FANTASMA | AVC",
@@ -339,9 +364,24 @@
    "year": 2023
   },
   {
+   "title": "Mis Ojos Lloran Por Ti",
+   "artist": "Big Boy",
+   "year": 1996
+  },
+  {
+   "title": "Con Calma",
+   "artist": "Daddy Yankee",
+   "year": 2020
+  },
+  {
    "title": "Te Quiero",
    "artist": "Flex",
    "year": 2007
+  },
+  {
+   "title": "Safaera",
+   "artist": "Bad Bunny",
+   "year": 2023
   },
   {
    "title": "DIABLO",
@@ -349,9 +389,14 @@
    "year": 2022
   },
   {
-   "title": "Safaera",
-   "artist": "Bad Bunny",
-   "year": 2023
+   "title": "6 AM",
+   "artist": "J Balvin",
+   "year": 2013
+  },
+  {
+   "title": "Te He Querido, Te He Llorado",
+   "artist": "Ivy Queen",
+   "year": 2005
   },
   {
    "title": "Chulo PT.2",
@@ -364,34 +409,19 @@
    "year": 2005
   },
   {
-   "title": "MIA",
-   "artist": "Bad Bunny",
-   "year": 2018
-  },
-  {
-   "title": "Te He Querido, Te He Llorado",
-   "artist": "Ivy Queen",
-   "year": 2005
-  },
-  {
-   "title": "Classy 101",
-   "artist": "Feid",
-   "year": 2023
-  },
-  {
    "title": "Solita",
    "artist": "Kali Uchis",
    "year": 2019
   },
   {
-   "title": "Frikitona",
-   "artist": "Plan B",
-   "year": 2005
+   "title": "MIA",
+   "artist": "Bad Bunny",
+   "year": 2018
   },
   {
-   "title": "Limbo",
-   "artist": "Daddy Yankee",
-   "year": 2012
+   "title": "Como Me Duele",
+   "artist": "La Factoria",
+   "year": 2009
   },
   {
    "title": "Culo",
@@ -399,9 +429,14 @@
    "year": 2004
   },
   {
-   "title": "Ginza",
-   "artist": "J Balvin",
-   "year": 2015
+   "title": "Classy 101",
+   "artist": "Feid",
+   "year": 2023
+  },
+  {
+   "title": "Limbo",
+   "artist": "Daddy Yankee",
+   "year": 2012
   },
   {
    "title": "Pegao",
@@ -414,29 +449,24 @@
    "year": 2008
   },
   {
+   "title": "Frikitona",
+   "artist": "Plan B",
+   "year": 2005
+  },
+  {
+   "title": "Ginza",
+   "artist": "J Balvin",
+   "year": 2015
+  },
+  {
    "title": "Candy",
    "artist": "Plan B",
    "year": 2013
   },
   {
-   "title": "Wait On Me",
-   "artist": "Kai",
-   "year": 2025
-  },
-  {
-   "title": "Gata Only",
-   "artist": "FloyyMenor",
-   "year": 2024
-  },
-  {
-   "title": "Lo Que Pasó, Pasó",
-   "artist": "Daddy Yankee",
-   "year": 2004
-  },
-  {
-   "title": "Obsesion",
-   "artist": "Aventura",
-   "year": 2002
+   "title": "Envolver",
+   "artist": "Anitta",
+   "year": 2021
   },
   {
    "title": "Ella Me Levantó",
@@ -444,19 +474,29 @@
    "year": 2007
   },
   {
-   "title": "Lento",
-   "artist": "RBD",
-   "year": 2006
+   "title": "Lo Que Pasó, Pasó",
+   "artist": "Daddy Yankee",
+   "year": 2004
   },
   {
-   "title": "Quiero Bailar",
-   "artist": "Ivy Queen",
+   "title": "Hotel Room Service",
+   "artist": "Pitbull",
+   "year": 2009
+  },
+  {
+   "title": "Obsesion",
+   "artist": "Aventura",
    "year": 2002
   },
   {
-   "title": "Niña Bonita",
-   "artist": "Chino & Nacho",
-   "year": 2009
+   "title": "Gata Only",
+   "artist": "FloyyMenor",
+   "year": 2024
+  },
+  {
+   "title": "Wait On Me",
+   "artist": "Kai",
+   "year": 2025
   },
   {
    "title": "BAILE INoLVIDABLE",
@@ -469,14 +509,24 @@
    "year": 2005
   },
   {
+   "title": "Lovumba",
+   "artist": "Daddy Yankee",
+   "year": 2011
+  },
+  {
+   "title": "Niña Bonita",
+   "artist": "Chino & Nacho",
+   "year": 2009
+  },
+  {
    "title": "KLK",
    "artist": "Arca",
    "year": 2020
   },
   {
-   "title": "QUE PRETENDES",
-   "artist": "J Balvin",
-   "year": 2019
+   "title": "Quiero Bailar",
+   "artist": "Ivy Queen",
+   "year": 2002
   },
   {
    "title": "Rakata",
@@ -484,14 +534,9 @@
    "year": 2021
   },
   {
-   "title": "Hotel Room Service",
-   "artist": "Pitbull",
-   "year": 2009
-  },
-  {
-   "title": "Como Me Duele",
-   "artist": "La Factoria",
-   "year": 2009
+   "title": "QUE PRETENDES",
+   "artist": "J Balvin",
+   "year": 2019
   },
   {
    "title": "LA CANCIÓN",
@@ -504,6 +549,11 @@
    "year": 2024
   },
   {
+   "title": "Salgo Pa' La Calle",
+   "artist": "Daddy Yankee",
+   "year": 2008
+  },
+  {
    "title": "Cúrame",
    "artist": "Rauw Alejandro",
    "year": 2021
@@ -514,29 +564,19 @@
    "year": 2022
   },
   {
-   "title": "Atopos",
-   "artist": "Björk",
-   "year": 2022
-  },
-  {
    "title": "Ignorantes",
    "artist": "Bad Bunny",
    "year": 2020
   },
   {
-   "title": "Salgo Pa' La Calle",
-   "artist": "Daddy Yankee",
+   "title": "Atopos",
+   "artist": "Björk",
+   "year": 2022
+  },
+  {
+   "title": "Pa' Que La Pases Bien",
+   "artist": "Arcangel",
    "year": 2008
-  },
-  {
-   "title": "Yo Te Quiero",
-   "artist": "Wisin & Yandel",
-   "year": 2006
-  },
-  {
-   "title": "Mayor Que Yo",
-   "artist": "Baby Ranks",
-   "year": 2012
   },
   {
    "title": "La Difícil",
@@ -544,9 +584,9 @@
    "year": 2020
   },
   {
-   "title": "Permitame",
-   "artist": "Tony Dize",
-   "year": 2008
+   "title": "Yo Te Quiero",
+   "artist": "Wisin & Yandel",
+   "year": 2006
   },
   {
    "title": "Paradinha",
@@ -554,9 +594,19 @@
    "year": 2017
   },
   {
-   "title": "GATÚBELA",
-   "artist": "KAROL G",
-   "year": 2022
+   "title": "Permitame",
+   "artist": "Tony Dize",
+   "year": 2008
+  },
+  {
+   "title": "Periodico De Ayer",
+   "artist": "Zion",
+   "year": 2007
+  },
+  {
+   "title": "Medicina",
+   "artist": "Anitta",
+   "year": 2018
   },
   {
    "title": "ROMEO",
@@ -564,7 +614,22 @@
    "year": 2025
   },
   {
-   "title": "En Su Nota",
+   "title": "El Doctorado",
+   "artist": "Tony Dize",
+   "year": 2009
+  },
+  {
+   "title": "GATÚBELA",
+   "artist": "KAROL G",
+   "year": 2022
+  },
+  {
+   "title": "Mayor Que Yo",
+   "artist": "Baby Ranks",
+   "year": 2012
+  },
+  {
+   "title": "Salio El Sol",
    "artist": "Don Omar",
    "year": 2006
   },
@@ -574,24 +639,24 @@
    "year": 2017
   },
   {
+   "title": "KETU TeCRÉ",
+   "artist": "Bad Bunny",
+   "year": 2025
+  },
+  {
+   "title": "LATINA FOREVA",
+   "artist": "KAROL G",
+   "year": 2025
+  },
+  {
    "title": "Travesuras",
    "artist": "Nicky Jam",
    "year": 2014
   },
   {
-   "title": "Nuestro Amor Es Asi",
-   "artist": "Magnate",
-   "year": 2007
-  },
-  {
-   "title": "El Doctorado",
-   "artist": "Tony Dize",
-   "year": 2009
-  },
-  {
-   "title": "KETU TeCRÉ",
-   "artist": "Bad Bunny",
-   "year": 2025
+   "title": "En Su Nota",
+   "artist": "Don Omar",
+   "year": 2006
   },
   {
    "title": "Muévelo",
@@ -599,9 +664,9 @@
    "year": 2025
   },
   {
-   "title": "Salio El Sol",
-   "artist": "Don Omar",
-   "year": 2006
+   "title": "Échame La Culpa",
+   "artist": "Luis Fonsi",
+   "year": 2017
   },
   {
    "title": "Un Millón",
@@ -614,18 +679,28 @@
    "year": 2018
   },
   {
-   "title": "Periodico De Ayer",
-   "artist": "Zion",
-   "year": 2007
-  },
-  {
-   "title": "SAOKO",
-   "artist": "ROSALÍA",
-   "year": 2022
+   "title": "Hasta el Amanecer",
+   "artist": "Nicky Jam",
+   "year": 2016
   },
   {
    "title": "Gatita",
    "artist": "Bellakath",
+   "year": 2022
+  },
+  {
+   "title": "Nuestro Amor Es Asi",
+   "artist": "Magnate",
+   "year": 2007
+  },
+  {
+   "title": "te pongo mal(prendelo)",
+   "artist": "Kali Uchis",
+   "year": 2020
+  },
+  {
+   "title": "SAOKO",
+   "artist": "ROSALÍA",
    "year": 2022
   },
   {
@@ -634,14 +709,19 @@
    "year": 2022
   },
   {
-   "title": "te pongo mal(prendelo)",
-   "artist": "Kali Uchis",
-   "year": 2020
+   "title": "Caile",
+   "artist": "Tito El Bambino",
+   "year": 2006
   },
   {
-   "title": "Rover",
-   "artist": "Kai",
-   "year": 2023
+   "title": "Double Team",
+   "artist": "Anitta",
+   "year": 2024
+  },
+  {
+   "title": "La Prendo",
+   "artist": "Bad Gyal",
+   "year": 2022
   },
   {
    "title": "Efecto",
@@ -649,8 +729,8 @@
    "year": 2022
   },
   {
-   "title": "mañana",
-   "artist": "Tainy",
+   "title": "Rover",
+   "artist": "Kai",
    "year": 2023
   },
   {
@@ -664,29 +744,9 @@
    "year": 2022
   },
   {
-   "title": "Hasta el Amanecer",
-   "artist": "Nicky Jam",
-   "year": 2016
-  },
-  {
-   "title": "Double Team",
-   "artist": "Anitta",
-   "year": 2024
-  },
-  {
    "title": "Yo x Ti, Tu x Mi",
    "artist": "ROSALÍA",
    "year": 2019
-  },
-  {
-   "title": "King Daddy",
-   "artist": "Daddy Yankee",
-   "year": 2004
-  },
-  {
-   "title": "Que Malo",
-   "artist": "Bad Bunny",
-   "year": 2020
   },
   {
    "title": "Amorfoda",
@@ -694,44 +754,19 @@
    "year": 2018
   },
   {
-   "title": "Perros Salvajes",
+   "title": "King Daddy",
    "artist": "Daddy Yankee",
-   "year": 2012
+   "year": 2004
   },
   {
-   "title": "Desesperados",
-   "artist": "Rauw Alejandro",
-   "year": 2021
+   "title": "mañana",
+   "artist": "Tainy",
+   "year": 2023
   },
   {
-   "title": "5 Letras",
-   "artist": "Alexis & Fido",
-   "year": 2007
-  },
-  {
-   "title": "Criminal",
-   "artist": "Natti Natasha",
-   "year": 2022
-  },
-  {
-   "title": "Hooka",
-   "artist": "Don Omar",
-   "year": 2010
-  },
-  {
-   "title": "Ojos Que No Ven",
-   "artist": "Alexis & Fido",
-   "year": 2008
-  },
-  {
-   "title": "La Pregunta",
-   "artist": "J Alvarez",
-   "year": 2011
-  },
-  {
-   "title": "Caile",
-   "artist": "Tito El Bambino",
-   "year": 2006
+   "title": "Que Malo",
+   "artist": "Bad Bunny",
+   "year": 2020
   },
   {
    "title": "Se Vale To-To",
@@ -739,14 +774,24 @@
    "year": 2005
   },
   {
-   "title": "Veneno",
-   "artist": "Anitta",
-   "year": 2018
+   "title": "Ella Y Yo",
+   "artist": "Aventura",
+   "year": 2005
   },
   {
-   "title": "COLMILLO",
-   "artist": "Tainy",
-   "year": 2023
+   "title": "Algo Me Gusta De Ti",
+   "artist": "Wisin & Yandel",
+   "year": 2012
+  },
+  {
+   "title": "La Pregunta",
+   "artist": "J Alvarez",
+   "year": 2011
+  },
+  {
+   "title": "Lento",
+   "artist": "RBD",
+   "year": 2006
   },
   {
    "title": "China",
@@ -754,29 +799,39 @@
    "year": 2020
   },
   {
+   "title": "5 Letras",
+   "artist": "Alexis & Fido",
+   "year": 2007
+  },
+  {
+   "title": "Hooka",
+   "artist": "Don Omar",
+   "year": 2010
+  },
+  {
+   "title": "Desesperados",
+   "artist": "Rauw Alejandro",
+   "year": 2021
+  },
+  {
+   "title": "Perros Salvajes",
+   "artist": "Daddy Yankee",
+   "year": 2012
+  },
+  {
    "title": "Junto Al Amanecer",
    "artist": "J Alvarez",
    "year": 2010
   },
   {
-   "title": "Te Siento",
-   "artist": "Wisin & Yandel",
-   "year": 2009
+   "title": "Criminal",
+   "artist": "Natti Natasha",
+   "year": 2022
   },
   {
-   "title": "RITMO (Bad Boys For Life)",
-   "artist": "Black Eyed Peas",
-   "year": 2019
-  },
-  {
-   "title": "Mi Vecinita",
-   "artist": "Plan B",
-   "year": 2014
-  },
-  {
-   "title": "Descará",
-   "artist": "Yomo",
-   "year": 2008
+   "title": "COLMILLO",
+   "artist": "Tainy",
+   "year": 2023
   },
   {
    "title": "Choca",
@@ -784,9 +839,44 @@
    "year": 2014
   },
   {
+   "title": "Mi Vecinita",
+   "artist": "Plan B",
+   "year": 2014
+  },
+  {
+   "title": "RITMO (Bad Boys For Life)",
+   "artist": "Black Eyed Peas",
+   "year": 2019
+  },
+  {
+   "title": "Descara",
+   "artist": "Yomo",
+   "year": 2008
+  },
+  {
+   "title": "Te Siento",
+   "artist": "Wisin & Yandel",
+   "year": 2009
+  },
+  {
+   "title": "So Fine",
+   "artist": "Sean Paul",
+   "year": 2009
+  },
+  {
+   "title": "Chichabeba",
+   "artist": "La Obsesion",
+   "year": 2025
+  },
+  {
    "title": "Somos De Calle",
    "artist": "Daddy Yankee",
    "year": 2008
+  },
+  {
+   "title": "Veneno",
+   "artist": "Anitta",
+   "year": 2018
   },
   {
    "title": "Bandoleros",
@@ -799,19 +889,19 @@
    "year": 2015
   },
   {
+   "title": "Toma",
+   "artist": "Pitbull",
+   "year": 2005
+  },
+  {
    "title": "Belly Danza",
    "artist": "Don Omar",
    "year": 2006
   },
   {
-   "title": "Chichabeba",
-   "artist": "La Obsesion",
-   "year": 2025
-  },
-  {
-   "title": "So Fine",
-   "artist": "Sean Paul",
-   "year": 2009
+   "title": "Ella Me Levanto",
+   "artist": "Daddy Yankee",
+   "year": 2007
   },
   {
    "title": "Hipnotízame",
@@ -819,29 +909,9 @@
    "year": 2012
   },
   {
-   "title": "Estamos Bien",
-   "artist": "Bad Bunny",
-   "year": 2018
-  },
-  {
-   "title": "La Corriente",
-   "artist": "Bad Bunny",
-   "year": 2022
-  },
-  {
-   "title": "Like You",
-   "artist": "Daddy Yankee",
-   "year": 2004
-  },
-  {
-   "title": "Se Preparó",
-   "artist": "Ozuna",
-   "year": 2017
-  },
-  {
-   "title": "Lo Siento BB:/",
-   "artist": "Tainy",
-   "year": 2021
+   "title": "Ojos Que No Ven",
+   "artist": "Alexis & Fido",
+   "year": 2008
   },
   {
    "title": "SiNoMeLloranVivo",
@@ -849,9 +919,29 @@
    "year": 2025
   },
   {
-   "title": "Bonita",
-   "artist": "Arcangel",
-   "year": 2007
+   "title": "La Señal",
+   "artist": "Daddy Yankee",
+   "year": 2010
+  },
+  {
+   "title": "Estamos Bien",
+   "artist": "Bad Bunny",
+   "year": 2018
+  },
+  {
+   "title": "Like You",
+   "artist": "Daddy Yankee",
+   "year": 2004
+  },
+  {
+   "title": "Lo Siento BB:/",
+   "artist": "Tainy",
+   "year": 2021
+  },
+  {
+   "title": "Se Preparó",
+   "artist": "Ozuna",
+   "year": 2017
   },
   {
    "title": "Aparentemente",
@@ -859,29 +949,24 @@
    "year": 2007
   },
   {
-   "title": "La Jumpa",
-   "artist": "Arcángel",
+   "title": "La Corriente",
+   "artist": "Bad Bunny",
    "year": 2022
   },
   {
-   "title": "Safari",
-   "artist": "J Balvin",
-   "year": 2017
+   "title": "Amor",
+   "artist": "Zion",
+   "year": 2007
   },
   {
-   "title": "Money Money",
-   "artist": "RBD",
-   "year": 2006
+   "title": "AMARGURA",
+   "artist": "KAROL G",
+   "year": 2023
   },
   {
-   "title": "Entregate",
-   "artist": "Wisin & Yandel",
-   "year": 2006
-  },
-  {
-   "title": "La Respuesta",
-   "artist": "Becky G",
-   "year": 2019
+   "title": "La Jumpa",
+   "artist": "Arcángel",
+   "year": 2022
   },
   {
    "title": "La Santa",
@@ -889,9 +974,14 @@
    "year": 2020
   },
   {
-   "title": "Descara",
-   "artist": "Yomo",
-   "year": 2008
+   "title": "Money Money",
+   "artist": "RBD",
+   "year": 2006
+  },
+  {
+   "title": "Sígueme y Te Sigo",
+   "artist": "Daddy Yankee",
+   "year": 2015
   },
   {
    "title": "Todo De Ti",
@@ -899,109 +989,19 @@
    "year": 2021
   },
   {
-   "title": "para siempre(｡>﹏<)",
-   "artist": "AKRIILA",
-   "year": 2024
+   "title": "Safari",
+   "artist": "J Balvin",
+   "year": 2017
   },
   {
-   "title": "LA NOCHE DE ANOCHE",
-   "artist": "Bad Bunny",
-   "year": 2020
-  },
-  {
-   "title": "Reloj",
-   "artist": "Rauw Alejandro",
-   "year": 2020
-  },
-  {
-   "title": "EL BARCO",
-   "artist": "KAROL G",
-   "year": 2021
+   "title": "Exclusive.mp3",
+   "artist": "Emilia",
+   "year": 2023
   },
   {
    "title": "Llori Pari",
    "artist": "Alvaro Diaz",
    "year": 2021
-  },
-  {
-   "title": "Pa Que La Pases Bien",
-   "artist": "Arcangel",
-   "year": 2008
-  },
-  {
-   "title": "Mariposa",
-   "artist": "Isabella Lovestory",
-   "year": 2020
-  },
-  {
-   "title": "DtMF",
-   "artist": "Bad Bunny",
-   "year": 2025
-  },
-  {
-   "title": "Una Vez",
-   "artist": "Bad Bunny",
-   "year": 2020
-  },
-  {
-   "title": "Oral",
-   "artist": "Björk",
-   "year": 2023
-  },
-  {
-   "title": "Clandestino",
-   "artist": "Shakira",
-   "year": 2018
-  },
-  {
-   "title": "Hello",
-   "artist": "Zion",
-   "year": 2006
-  },
-  {
-   "title": "A Tu Merced",
-   "artist": "Bad Bunny",
-   "year": 2020
-  },
-  {
-   "title": "Linda",
-   "artist": "Tokischa",
-   "year": 2021
-  },
-  {
-   "title": "Yo Te Lo Dije",
-   "artist": "J Balvin",
-   "year": 2012
-  },
-  {
-   "title": "Mala Mía",
-   "artist": "Maluma",
-   "year": 2018
-  },
-  {
-   "title": "Besos Moja2",
-   "artist": "Wisin & Yandel",
-   "year": 2022
-  },
-  {
-   "title": "BbY WOW",
-   "artist": "KAROL G",
-   "year": 2026
-  },
-  {
-   "title": "Luna",
-   "artist": "Eddy Lover",
-   "year": 2008
-  },
-  {
-   "title": "OKI DOKI",
-   "artist": "KAROL G",
-   "year": 2023
-  },
-  {
-   "title": "LA BABY",
-   "artist": "Tainy",
-   "year": 2023
   }
  ]
 }
